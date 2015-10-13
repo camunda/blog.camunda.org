@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+  <div class="page-content col-xs-12 col-sm-8">
+    <article>
+      {{ partial "post-header.html" . }}
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+
+      {{ partial "post-footer.html" . }}
+    </article>
+  </div>
+
+{{ partial "sidebar.html" . }}
+
+{{ partial "footer.html" . }}

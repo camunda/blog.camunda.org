@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<!--
+  {{ range $bim, $bam := .Site.Taxonomies.categories }}
+    <div>{{ $bim }}</div>
+    <div>{{ $bam }}</div>
+    <pre>{{ printf "%T" . }}</pre>
+    <pre>{{ printf "%#v" . }}</pre>
+    {{ . }}
+  {{ end }}
+ -->
+  <div class="page-content col-xs-12 col-sm-8">
+  {{ range first 20 .Data.Pages }}
+    <article>
+      {{ partial "post-header.html" . }}
+
+      <div class="content">
+        {{ .Summary }}
+      </div>
+
+      {{ partial "readmore.html" . }}
+    </article>
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+  </div>
+
+{{ partial "sidebar.html" . }}
+
+{{ partial "footer.html" . }}

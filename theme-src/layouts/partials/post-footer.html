@@ -1,0 +1,13 @@
+<footer class="row">
+  <div class="col-xs-3 previous-post">{{ if .Prev }}<a href="{{ .Prev }}">Previous post</a>{{ end }}</div>
+
+  <div class="tags col-xs-6">
+    <!-- <ul class="list-inline">
+    {{ range .Params.tags }}
+      <li><a href="/tags/{{ . | urlize }}">{{ . }}</a> </li>
+    {{ end }}
+    </ul> -->
+  </div>
+
+  <div class="col-xs-3 next-post">{{ if .Next }}<a href="{{ .Next }}">Next post</a>{{ end }}</div>
+</footer>

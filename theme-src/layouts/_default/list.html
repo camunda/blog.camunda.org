@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+  <!-- <pre>{{ printf "%#v" . }}</pre> -->
+
+
+  <div class="page-content col-xs-12 col-sm-8">
+  {{ range first 5 .Data.Pages }}
+    <article>
+      {{ partial "post-header.html" . }}
+
+      <div class="content">
+        {{ .Summary }}
+      </div>
+
+      <footer>
+        {{ partial "readmore.html" . }}
+      </footer>
+    </article>
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+  </div>
+
+{{ partial "sidebar.html" . }}
+
+{{ partial "footer.html" . }}

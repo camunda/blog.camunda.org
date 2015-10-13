@@ -1,0 +1,24 @@
+---
+title: "Sneak Preview for new Online Training"
+date: "2014-04-28T01:39:00+02:00"
+author: "Jakob Freund"
+
+categories:
+  - "Development"
+tags: 
+
+aliases:
+  - "/2014/04/sneak-preview-for-new-online-training.html"
+
+---
+
+<p>
+Our tireless consulting team will publish a new online-training for camunda BPM very soon. We’ve been asked for that again and again, which is why I am more than happy that it’s finally available.
+</p>
+<p>
+There is a little sneak preview available already: You can enjoy the first module (basically a video tutorial) for free!
+</p>
+<p>
+Get it here: <a href="http://camunda.com/landing/camunda-beginners/">http://camunda.com/landing/camunda-beginners/</a>
+</p>
+And have fun!

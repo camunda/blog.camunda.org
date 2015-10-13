@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "blog.camunda.org",
+  "version": "0.0.1",
+  "description": "Hugo theme for the 'Friedrichshain hilft' website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt build && grunt optimize && hugo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camunda/blog.camunda.org.git"
+  },
+  "keywords": [
+    "camunda",
+    "blog"
+  ],
+  "author": "Valentin Vago <zeropaper@irata.ch>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/camunda/blog.camunda.org/issues"
+  },
+  "homepage": "https://github.com/camunda/blog.camunda.org",
+  "setup": {
+    "source": "./theme-src",
+    "target": "./themes/blogcamundaorg"
+  },
+  "devDependencies": {
+    "bootstrap": "3.3.5",
+    "camunda-commons-ui": "camunda/camunda-commons-ui#master",
+    "grunt": "0.4.5",
+    "grunt-browserify": "4.0.0",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-cssmin": "0.13.0",
+    "grunt-contrib-less": "1.0.1",
+    "grunt-contrib-uglify": "0.9.1",
+    "grunt-contrib-watch": "0.6.1",
+    "load-grunt-tasks": "3.2.0",
+    "prismjs": "1.2.0"
+  }
+}

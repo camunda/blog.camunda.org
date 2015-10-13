@@ -1,0 +1,11 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Camunda BPM Team Blog"
+theme = "blogcamundaorg"
+disqusShortname = "camundabpm"
+# uglyurls = true
+
+# pagination setup
+# http://gohugo.io/extras/pagination/
+
+Paginate = 5
