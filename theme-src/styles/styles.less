@@ -58,6 +58,14 @@ h5 {
     box-shadow: 0 0 0 fade(@gray, 0);
     transition: height 0.218s ease,
                 box-shadow 0.218s ease;
+    > .row {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .bpmn-icon-bpmn-io:before {
+      margin-left: 0;
+    }
 
     h1 {
       margin: 0;
@@ -65,12 +73,14 @@ h5 {
       line-height: @navbar-height-at-top;
       transition: font-size 0.218s ease,
                   line-height 0.218s ease;
+      .font-light;
     }
 
     a {
       color: @navbar-inverse-link-color;
       &:hover {
         color: @navbar-inverse-link-hover-color;
+        text-decoration: none;
       }
     }
   }
@@ -103,8 +113,13 @@ h5 {
     padding: 0 0 0 (@grid-gutter-width * 0.5);
   }
 
-  li {
-
+  .tags li {
+    display: inline;
+    &:after {
+      display: inline;
+      content: '|';
+      color: @gray-light;
+    }
   }
 }
 
@@ -135,16 +150,34 @@ article {
     margin-bottom: (@grid-gutter-width * 0.5);
   }
 
+  .tags-list {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      &:after {
+        display: inline;
+        content: ', ';
+      }
+      &:last-of-type:after {
+        display: none;
+      }
+    }
+  }
+
   > .content {
     margin-top: (@grid-gutter-width * 0.5);
     margin-bottom: (@grid-gutter-width * 0.5);
 
-    &:first-letter {
-      font-size: 56px;
-      line-height: 44px;
-      font-weight: 100;
-      vertical-align: text-bottom;
-    }
+    // &:first-letter {
+    //   font-size: 56px;
+    //   line-height: 44px;
+    //   font-weight: 100;
+    //   vertical-align: text-bottom;
+    // }
   }
 
   > footer nav ul,
@@ -207,6 +240,7 @@ article {
     h1 {
       font-size: (@navbar-height * 0.5);
       line-height: @navbar-height;
+      .font-regular;
     }
   }
 }
@@ -260,19 +294,9 @@ body.scrolled {
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'cam-blog';
-    src: url('@{fonts-path}cam-blog.svg#cam-blog') format('svg');
-  }
-}
-*/
 
- [class^="bpmn-icon-"]:before, [class*=" bpmn-icon-"]:before,
- [class^="cam-blog-"]:before, [class*=" cam-blog-"]:before {
+[class^="bpmn-icon-"]:before, [class*=" bpmn-icon-"]:before,
+[class^="cam-blog-"]:before, [class*=" cam-blog-"]:before {
   font-family: "cam-blog";
   font-style: normal;
   font-weight: normal;

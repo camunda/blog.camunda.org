@@ -8,17 +8,6 @@
     </ul>
   </div>
 
-  <div class="tags">
-    <h5>Tags</h5>
-    <ul>
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
-    {{ end }}
-    </ul>
-  </div>
-  <!--
-  -->
-
   <div class="blogroll">
     <h5>Links</h5>
     <ul>
@@ -26,6 +15,15 @@
       <li><a href="http://github.com/camunda">Camunda on github</a></li>
       <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
       <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+    </ul>
+  </div>
+
+  <div class="tags">
+    <h5>Tags</h5>
+    <ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
+    {{ end }}
     </ul>
   </div>
 </div>
