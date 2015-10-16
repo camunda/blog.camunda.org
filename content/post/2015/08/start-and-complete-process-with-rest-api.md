@@ -1,17 +1,19 @@
 ---
 title: "Start and Complete a process with the REST API"
-date: "2015-08-05T16:34:00+02:00"
+date: "2015-08-05"
 author: "Niall Deehan"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/start-and-complete-process-with-rest-api.html"
 
 ---
 
+<div>
 <div class="MsoNormal">
 <span style="color: #1f497d;"><br /></span></div>
 <div class="MsoNormal">
@@ -252,3 +254,5 @@ code 204 and doesn’t return any data. The token will then move onto the next t
 <br /></div>
 <div class="MsoNormal">
 <br /></div>
+
+</div>

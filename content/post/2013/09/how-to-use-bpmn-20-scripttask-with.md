@@ -1,19 +1,19 @@
 ---
 title: "How to use BPMN 2.0 ScriptTask with Groovy in JBoss"
-date: "2013-09-05T19:30:00+02:00"
+date: "2013-09-05"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "how-to"
+  - "Release Note"
 
 aliases:
   - "/2013/09/how-to-use-bpmn-20-scripttask-with.html"
 
 ---
 
+<div>
 <b><span style="color: red;">Note: </span>this blogpost only applies to camunda BPM version &nbsp;&lt; 7.1.0. Starting from camunda BPM 7.2.0 we ship Groovy as part of the pre-packaged distribution.</b><br />
 <br />
 Recently at a customer we added a <a href="http://docs.camunda.org/latest/api-references/bpmn20/#tasks-script-task">ScriptTask </a>to a process and wanted to run a <a href="http://groovy.codehaus.org/">Groovy</a> script. Pretty easy with <a href="http://www.camunda.org/">camunda BPM</a> - but in the JBoss environment you have to know how to correctly put Groovy on the classpath - as we correctly use the <a href="http://www.jcp.org/en/jsr/detail?id=223">JSR 223</a> stuff to recognize existing Scripting Languages.<br />
@@ -140,4 +140,5 @@ services="import" export="true" /&gt;</span><span style="font-family: &quot;Aria
 <br /></div>
 <div class="MsoNormal">
 <span style="font-family: inherit;"><br /></span></div>
+</div>
 </div>

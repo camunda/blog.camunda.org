@@ -1,20 +1,19 @@
 ---
 title: "Deploy a Camunda BPM Docker Image with Amazon Web Services"
-date: "2015-06-26T08:55:00+02:00"
+date: "2015-06-26"
 author: "Niall Deehan"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "amazon web services"
-  - "camunda bpm platform"
-  - "docker"
+  - "Release Note"
 
 aliases:
   - "/2015/06/deploy-camunda-bpm-docker-image-with.html"
 
 ---
 
+<div>
 <br />
 No one could argue that deploying the Camunda BPM platform to a web server is unmatched in its adrenaline-inducing excitement, but we should spare a thought for those people whose aversion to scripts and consoles has meant that they have never had the opportunity to enjoy Camunda BPM deployments to their fullest. Until now...<br />
 <br />
@@ -247,3 +246,5 @@ to the end of the link will bring to what we've all been waiting for - the Camun
 Now you can relax and enjoy playing with skillfully-automated processes all thanks to me (and to a lesser extent AWS)!<br />
 <br />
 <br /></div>
+
+</div>

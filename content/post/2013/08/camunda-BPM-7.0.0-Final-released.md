@@ -1,18 +1,19 @@
 ---
 title: "It's done: camunda BPM 7.0.0-Final released"
-date: "2013-08-31T16:28:00+02:00"
+date: "2013-08-31"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/08/camunda-BPM-7.0.0-Final-released.html"
 
 ---
 
+<div>
 We are happy to announce the first major release of camunda BPM: 7.0.0-Final. The highlights of this release are
 <br />
 <ul>
@@ -83,3 +84,4 @@ And other than that, we will forge ahead for the 7.1 release!<br />
 <br />
 <div style="text-align: center;">
 <b>Do not miss our Webinars: webinars now passed.</b></div>
+</div>

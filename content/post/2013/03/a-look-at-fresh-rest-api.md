@@ -1,17 +1,19 @@
 ---
 title: "A look at the fresh REST API"
-date: "2013-03-19T17:52:00+01:00"
+date: "2013-03-19"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/03/a-look-at-fresh-rest-api.html"
 
 ---
 
+<div>
 camunda BPM comes with a fresh REST API based on JAX-RS. Its goal is to expose the process engine services as broadly as possible. That means we aim to enable you to interact with process engine services via REST with similar expressiveness as in plain Java. With 7.0.0-alpha1, we provide methods such as <a href="http://docs.camunda.org/latest/api-references/rest/#task">task querying</a> that already realize our desired degree of detail (similar for process definitions and instances). For future releases, we plan to broaden the scope to reach the afore-mentioned goal.<br />
 <h3>
 Use it with a prebuilt distro </h3>
@@ -34,3 +36,4 @@ Got your embedded engine and want to quickly add REST capabilities to it? You ma
 Then you can choose which of the resources you want to include. Have a look <a href="http://docs.camunda.org/latest/api-references/rest/#overview-embedding-the-api">here</a> to see how this can be done. (The alternative is to use a JAX-RS implementation provided by your application server.)<br />
 <br />
 Being an alpha release, we are aware that essential features such as authentication are still missing. However, this is on our roadmap to 7.0.0 final, so stay tuned and explore the <a href="http://docs.camunda.org/latest/">docs</a> meanwhile!
+</div>

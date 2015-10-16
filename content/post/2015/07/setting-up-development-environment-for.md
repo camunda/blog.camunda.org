@@ -1,17 +1,19 @@
 ---
 title: "Setting up a Development Environment for Camunda HTML Forms"
-date: "2015-07-28T12:05:00+02:00"
+date: "2015-07-28"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/07/setting-up-development-environment-for.html"
 
 ---
 
+<div>
 Are you developing HTML forms for Camunda Tasklist? Are you re-packaging your application with maven and re-deploying it to Tomcat or Wildfly for each HMTL form change? Are you annoyed by this? :)<br />
 <br />
 There is hope: this post explains how to setup a development environment which allows you to develop forms inside Camunda Tasklist and refresh your changes without re-packaging and re-deploying your application.<br />
@@ -122,3 +124,5 @@ If you now change your HTML forms or Javascript resources, you can simply refres
 Enjoy!<br />
 <br />
 <br />
+
+</div>

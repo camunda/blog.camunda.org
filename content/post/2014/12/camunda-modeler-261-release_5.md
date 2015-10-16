@@ -1,19 +1,19 @@
 ---
 title: "Camunda Modeler 2.6.1 release"
-date: "2014-12-05T11:51:00+01:00"
+date: "2014-12-05"
 author: "Robert Gimbel"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "Eclipse"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/12/camunda-modeler-261-release_5.html"
 
 ---
 
+<div>
 It's been a while since our last eclipse Modeler release. We are happy to announce the new Camunda Modeler release 2.6.1.<br />
 <br />
 <h3>
@@ -34,3 +34,5 @@ Additionally, we are happy that two pull requests from our great community are i
 What's next?</h3>
 <div>
 Currently we are working on the 2.7.0 version of our Modeler, which will expose the attributes we have added with 2.6.1 on the properties panel, namely i/o mapping, scripts and asyncBefore/asyncAfter.&nbsp;</div>
+
+</div>

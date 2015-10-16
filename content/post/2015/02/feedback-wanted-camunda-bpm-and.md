@@ -1,17 +1,19 @@
 ---
 title: "Feedback wanted: Camunda BPM and Business Rules"
-date: "2015-02-17T14:38:00+01:00"
+date: "2015-02-17"
 author: "Robert Gimbel"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/02/feedback-wanted-camunda-bpm-and.html"
 
 ---
 
+<div>
 <div class="MsoNormal">
 <span lang="EN-US"><span style="font-family: inherit;">Have you ever used the business rules task in BPMN? <o:p></o:p></span></span></div>
 <div class="MsoNormal">
@@ -65,3 +67,5 @@ business rules.<o:p></o:p></span></span></div>
 <span style="font-family: inherit;"><br /></span></div>
 <div class="MsoNormal">
 <span style="font-family: inherit;">Thanks for taking part and for helping us decide.&nbsp;</span></div>
+
+</div>

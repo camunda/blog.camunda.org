@@ -1,20 +1,19 @@
 ---
 title: "Hello ${name}! - Templating with camunda BPM"
-date: "2014-07-25T12:58:00+02:00"
+date: "2014-07-25"
 author: "Sebastian Menski"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "scripting"
-  - "templating"
+  - "Release Note"
 
 aliases:
   - "/2014/07/hello-name-templating-with-camunda-bpm.html"
 
 ---
 
+<div>
 As part of our <a href="http://blog.camunda.org/2014/07/scripting-everywhere-in-camunda-bpm.html" target="_blank">scripting improvements</a>&nbsp;we also addressed templating as a new feature of camunda BPM. With the new <a href="http://blog.camunda.org/2014/07/camunda-bpm-720-alpha3-released.html" target="_blank">camunda BPM 7.2.0-alpha3</a> release it is now also possible to use <a href="http://freemarker.org/" target="_blank">FreeMarker</a> or <a href="https://velocity.apache.org/" target="_blank">Apache Velocity</a> templates inside your BPMN process.<br />
 <br />
 <a name='more'></a><br />
@@ -49,3 +48,4 @@ Another interesting use case for templates are camunda connectors (added in <a h
 As a side effect of this new feature we have demonstrated that you can now easily integrate own scripting-like languages in camunda BPM. If it is possible to create a JSR 223 compatible wrapper it can be used in camunda BPM.<br />
 <br />
 To read more technical details about templating please visit our <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-templating" target="_blank">user guide</a>. And please let us know what you think about this new feature.
+</div>

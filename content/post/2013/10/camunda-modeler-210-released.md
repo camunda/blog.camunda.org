@@ -1,19 +1,19 @@
 ---
 title: "camunda Modeler 2.1.0 released"
-date: "2013-10-15T12:07:00+02:00"
+date: "2013-10-15"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "camunda-modeler"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/10/camunda-modeler-210-released.html"
 
 ---
 
+<div>
 Today we relased a new version of the camunda Modeler. It provides better property editing support for BPMN 2.0 and camunda BPM properties, improvements in pool and lane handling and fixes a number of important bugs.<br />
 <br />
 <a name='more'></a><br />
@@ -75,3 +75,4 @@ What is lying ahead of us? For the next modeler release we look into Eclipse Kep
 <br /></div>
 <div>
 Feel free to <a href="http://camunda.org/download/modeler/">try out the new modeler</a> and give us feedback via <a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">our forums</a> or <a href="https://twitter.com/camundaBPM">twitter</a>.</div>
+</div>

@@ -1,17 +1,19 @@
 ---
 title: "What a wonderful community day in Prague"
-date: "2013-10-23T12:05:00+02:00"
+date: "2013-10-23"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/10/what-wonderful-community-day-in-prague.html"
 
 ---
 
+<div>
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://2.bp.blogspot.com/-eaHq26kz2j8/UmZzUedPaRI/AAAAAAAAAJI/AUH3kL6Rt-4/s1600/CIMG0680.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-eaHq26kz2j8/UmZzUedPaRI/AAAAAAAAAJI/AUH3kL6Rt-4/s320/CIMG0680.JPG" height="240" width="320" /></a></div>
@@ -159,3 +161,4 @@ But as vegetarian I have to add that Prague offered a good choice of vegetarian 
 </tbody></table>
 <br />
 <br />
+</div>

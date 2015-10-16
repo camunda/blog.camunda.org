@@ -1,22 +1,19 @@
 ---
 title: "camunda Modeler 2.5.0 released: Extension elements, properties panel and bug fixes"
-date: "2014-04-04T15:30:00+02:00"
+date: "2014-04-04"
 author: "Michael Schöttes"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "camunda-modeler-standalone"
-  - "Eclipse"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/04/camunda-modeler-250-released-extension.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <br />
 The camunda BPM team is pleased to announce the release of camunda Modeler 2.5.0. This release is dedicated to align the latest improvements of camunda BPM 7.1 with the modelers properties panel. Furthermore we implemented a new properties tab for extension elements and of course we fixed bugs.<br />
@@ -77,5 +74,6 @@ information about extension elements in our <a href="http://docs.camunda.org/lat
 <span lang="EN-US"><br /></span></div>
 <div class="MsoNormal">
 <span lang="EN-US"><a href="http://camunda.org/download/modeler/">T<span style="font-family: Times New Roman, Times, FreeSerif, serif;"><span style="background-color: white; font-size: 15px; line-height: 21.559999465942383px;">ry out the new modeler</span></span></a><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">&nbsp;and tell us what you think via&nbsp;</span><a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users" style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">our forums</a><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">&nbsp;or&nbsp;on&nbsp;</span><a href="https://twitter.com/camundaBPM" style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">twitter</a><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">.</span></span></div>
+</div>
 </div>
 </div>

@@ -1,20 +1,19 @@
 ---
 title: "Job Suspension - Powerful Operations with Camunda BPM"
-date: "2014-11-07T15:45:00+01:00"
+date: "2014-11-07"
 author: "Robert Gimbel"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "async"
-  - "cockpit"
-  - "engine"
+  - "Release Note"
 
 aliases:
   - "/2014/11/job-suspension-powerful-operations-with.html"
 
 ---
 
+<div>
 This blogpost is about a very powerful feature in <a href="http://camunda.org/">camunda BPM</a> for operating critical processes which are in production. Given a core process which operates under high volume, almost any problem is critical in a way. The more options you have to deal with those problem the better. I am going to show you one of those options, namely <b>job suspension</b>.<br />
 <br />
 <a name='more'></a><br />
@@ -95,3 +94,5 @@ Related Readings</h1>
 </div>
 <div>
 <br /></div>
+
+</div>

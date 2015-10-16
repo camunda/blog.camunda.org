@@ -1,17 +1,19 @@
 ---
 title: "The camunda Hypothesis"
-date: "2013-04-07T17:19:00+02:00"
+date: "2013-04-07"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/04/the-camunda-hypothesis.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <br />
@@ -121,3 +123,4 @@ I suppose this is some hard piece of work, but I know it's worth it.<br />
 <br />
 <br />
 <br />
+</div>

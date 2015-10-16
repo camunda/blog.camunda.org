@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM camunda BPM 7.0.0-alpha8 released"
-date: "2013-07-19T18:04:00+02:00"
+date: "2013-07-19"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/07/camunda-bpm-camunda-bpm-700-alpha8.html"
 
 ---
 
+<div>
 <a href="http://www.camunda.org/download/">Here</a> comes the latest camunda BPM alpha release with the following highlights:<br />
 <br />
 New features in cockpit webapplication:<br />
@@ -190,3 +191,4 @@ What's coming up next?</h3>
 - Merge new history branch (<a href="https://github.com/camunda/camunda-bpm-platform/tree/history">https://github.com/camunda/camunda-bpm-platform/tree/history</a>)</div>
 <div>
 - Many awesome features in cockpit :)</div>
+</div>

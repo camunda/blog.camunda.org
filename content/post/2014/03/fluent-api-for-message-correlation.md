@@ -1,17 +1,19 @@
 ---
 title: "Fluent API for Message Correlation"
-date: "2014-03-17T08:25:00+01:00"
+date: "2014-03-17"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/03/fluent-api-for-message-correlation.html"
 
 ---
 
+<div>
 camunda BPM 7.1.0-alpha4 features a new fluent API for message correlation.<br />
 <br />
 BPMN 2.0 defines events and tasks catching messages. The following is a fragment of a process waiting for an order to be cancelled:<br />
@@ -81,3 +83,5 @@ The Query&nbsp;+ Trigger pattern has two disadvantages:<br />
 <li>More lines of code :)</li>
 <li>Two process engine commands instead of a single one. This makes it less efficient in terms of performance.</li>
 </ol>
+
+</div>

@@ -1,17 +1,19 @@
 ---
 title: "Camunda 7.2 Hands-on Webinars: Recordings available"
-date: "2015-01-14T18:03:00+01:00"
+date: "2015-01-14"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/01/camunda-72-hands-on-webinars-recordings.html"
 
 ---
 
+<div>
 Camunda 7.2 is packed with new features, which is why we just ran a series of developer-oriented webinars about the most important ones.<br />
 <br />
 We hope you like what we built! The best way to let us know what we can do in order to provide you with the best BPM technology in the universe is to<br />
@@ -55,3 +57,5 @@ Thank you so much!&nbsp;</div>
 </div>
 <div>
 <br /></div>
+
+</div>

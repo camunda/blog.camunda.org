@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0-alpha5 released"
-date: "2013-05-31T16:52:00+02:00"
+date: "2013-05-31"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/05/camunda-bpm-70-alpha5-released.html"
 
 ---
 
+<div>
 Two weeks after the last alpha release we bring you the freshly baked* alpha5 version of the<a href="http://www.camunda.org/download/"> camunda BPM platform</a>. The highlights of this crispy new release are:<br />
 <br />
 <ul>
@@ -167,3 +168,4 @@ Or you can address individual process variables through PUT/ GET / DELETE:</div>
 <br /></div>
 <div>
 <br /></div>
+</div>

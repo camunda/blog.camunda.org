@@ -1,17 +1,19 @@
 ---
 title: "Introducing an Activity Instance Model to the core Process Engine"
-date: "2013-06-17T09:40:00+02:00"
+date: "2013-06-17"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/06/introducing-activity-instance-model-to.html"
 
 ---
 
+<div>
 <span style="font-weight: normal;"><i><br /></i></span>
 <span style="font-weight: normal;"><i>(this post was originally part of the <a href="http://camundabpm.blogspot.de/2013/06/camunda-bpm-700-alpha6-released.html">7.0.0-alpha6 release blog post</a> but later extracted into an own post).</i></span><br />
 <span style="font-weight: normal;"><i><br /></i></span>
@@ -225,3 +227,5 @@ Currently you can retrieve the activity instance tree only for a whole process i
 Will executions be deprecated?</h3>
 <div>
 I am not sure yet but my gut feeling is yes. The concept of "Execution" is a proprietary internal process engine concern and will gradually be replaced by the activity instance model. We might go down a road where you can still query for executions but you will in fact get activity instances as result, in order not to break the API. But not before 7.1 or probably 8.0 :)</div>
+
+</div>

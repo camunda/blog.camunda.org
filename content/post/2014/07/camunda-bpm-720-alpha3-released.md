@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.2.0-alpha3 released: CMMN, Scripting, Async, Correlation, Model Api, Forms"
-date: "2014-07-17T15:18:00+02:00"
+date: "2014-07-17"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/07/camunda-bpm-720-alpha3-released.html"
 
 ---
 
+<div>
 Today we release camunda BPM 7.2.0-alpha3. Usually when we do a new alpha release, I write a Blogpost which gives an overview over the new features added in that release. But this time I cannot do that: there are simply too many new features to cover in a single blog post! So this time I will just give a bullet point list with the highlights and you guys will just have to wait for additional blogposts to come out in the next days.<br />
 <br />
 So what is in the new Release?<br />
@@ -56,3 +57,5 @@ Over the last 4 Weeks, over 70 Issues were closed. See the <a href="https://app.
 <b><a href="http://camunda.org/download/">Download camunda BPM 7.2.0-alpha3 now!</a></b></div>
 <div style="text-align: center;">
 <br /></div>
+
+</div>

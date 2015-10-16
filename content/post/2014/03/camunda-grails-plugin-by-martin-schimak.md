@@ -1,17 +1,19 @@
 ---
 title: "camunda Grails Plugin by Martin Schimak"
-date: "2014-03-13T16:49:00+01:00"
+date: "2014-03-13"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/03/camunda-grails-plugin-by-martin-schimak.html"
 
 ---
 
+<div>
 <a href="http://plexiti.com/planet">Martin Schimak</a> (who is a community member and contributor) has written a <a href="http://grails.org/">Grails</a> plugin which allows users to get started quickly with <a href="http://camunda.org/">camunda</a> on grails.<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -33,3 +35,4 @@ camunda Grails Plugin 0.1.0 released: <a href="http://t.co/cy539EHEUV">http://t.
 The code is pushed to github:&nbsp;<a href="https://github.com/plexiti/camunda-grails-plugin">https://github.com/plexiti/camunda-grails-plugin</a><br />
 <br />
 Amazing Stuff!!
+</div>

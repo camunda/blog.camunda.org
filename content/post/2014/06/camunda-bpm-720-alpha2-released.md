@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.2.0-alpha2 released"
-date: "2014-06-12T18:28:00+02:00"
+date: "2014-06-12"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/06/camunda-bpm-720-alpha2-released.html"
 
 ---
 
+<div>
 Today we announce the next alpha release of camunda BPM platform.
 
 The highlights of this release are:
@@ -87,3 +88,5 @@ On top of directly using Spin in El expressions or script code, we plan on using
 Connecting Soap Webservices</h3>
 <div>
 Alpha 2 also provides a buit-in, low level webservice connector which allows you to invoke SOAP-based webservices directly from BPMN Xml. There is a <a href="https://github.com/camunda/camunda-bpm-examples/tree/master/servicetask/soap-service">preliminary usage example</a>. The connector implementation is provided in the <a href="https://github.com/camunda/camunda-connect">camunda Connect</a> github repository.</div>
+
+</div>

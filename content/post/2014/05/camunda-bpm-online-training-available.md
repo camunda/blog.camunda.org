@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM Online Training available"
-date: "2014-05-24T00:36:00+02:00"
+date: "2014-05-23"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/05/camunda-bpm-online-training-available.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-_Z0oXk2Fuys/U3_MpoU-Z7I/AAAAAAAAAWg/TJ9g_aJGa80/s1600/ichhabs.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-_Z0oXk2Fuys/U3_MpoU-Z7I/AAAAAAAAAWg/TJ9g_aJGa80/s1600/ichhabs.jpg" /></a></div>
 <p>
 I am happy to share that our super-awesome camunda BPM Online Training is finally available. 
@@ -28,3 +30,4 @@ Would be great to get your feedback on this - if you think the training is a goo
 <p>
 Just <a href="https://groups.google.com/forum/#!forum/camunda-bpm-users">post in the forum</a> or <a href="mailto:community@camunda.org">send us an email</a> - thanks a lot - and happy processing!
 </p>
+</div>

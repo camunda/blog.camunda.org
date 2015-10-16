@@ -1,17 +1,19 @@
 ---
 title: "How to clean up/purge the camunda history tables"
-date: "2015-07-07T16:19:00+02:00"
+date: "2015-07-07"
 author: "Ingo Richtsmeier"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/07/how-to-clean-uppurge-camunda-history.html"
 
 ---
 
+<div>
 We get this question very often from customers: <b>How can we get rid of old history data that we don't need anymore?</b>&nbsp;First it's important to ask: "What do you mean by 'old data'?". This is completely business focused and depends on the use of cockpit, who is working with the history data, how reports are generated and maybe even constraints due to legislation.<br />
 <br />
 One of our customers - Hamburger Sparkasse (<a href="http://www.haspa.de/" target="_blank">Haspa</a>) - built a solution that is flexible enough to address the issues raised by the questions above:<br />
@@ -73,3 +75,5 @@ If there are any, the data are moved, too.<br />
 The restore/rollback function does it the other way around and moves the data from the archive table back into the history table. Now they appear in the cockpit again.
 
 
+
+</div>

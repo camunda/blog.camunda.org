@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM platform 7.2.0-alpha6 released"
-date: "2014-11-14T16:06:00+01:00"
+date: "2014-11-14"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/11/camunda-bpm-720-alpha6-released.html"
 
 ---
 
+<div>
 6 weeks after the last release we release camunda BPM 7.2.0-alpha6. The release ships<br />
 <br />
 <ul>
@@ -148,3 +149,5 @@ There is so much more stuff in alpha6 which deserves more than a bullet point bu
 <br /></div>
 <div>
 <br /></div>
+
+</div>

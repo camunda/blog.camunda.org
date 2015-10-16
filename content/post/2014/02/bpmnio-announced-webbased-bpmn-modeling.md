@@ -1,17 +1,19 @@
 ---
 title: "bpmn.io announced - a webbased BPMN modeling toolkit as part of camunda BPM"
-date: "2014-02-25T14:16:00+01:00"
+date: "2014-02-25"
 author: "Robert Gimbel"
 
 categories:
-  - "Development"
+  - "Modeling"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/02/bpmnio-announced-webbased-bpmn-modeling.html"
 
 ---
 
+<div>
 <br />
 Last week camunda and zalando announced <a href="http://bpmn.io/">bpmn.io</a>.<br />
 <br />
@@ -42,3 +44,4 @@ Subscribe to the newsletter on <a href="http://bpmn.io/">bpmn.io</a> to stay up 
 <br />
 And be patient until we present you with the first prototype.<br />
 <br />
+</div>

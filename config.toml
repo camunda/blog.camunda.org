@@ -1,11 +1,20 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Camunda BPM Team Blog"
+title = "Camunda Team Blog"
 theme = "blogcamundaorg"
 disqusShortname = "camundabpm"
 # uglyurls = true
 
+
+# [taxonomies]
+#   tag = "tags"
+#   category = "categories"
+#   author = "authors"
+
 # pagination setup
 # http://gohugo.io/extras/pagination/
-
 Paginate = 5
+
+
+[params]
+  repo = "camunda/blog.camunda.org"

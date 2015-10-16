@@ -1,18 +1,19 @@
 ---
 title: "Announcing the Release Date of camunda BPM 7.1.0 GA"
-date: "2014-02-13T10:27:00+01:00"
+date: "2014-02-13"
 author: "Robert Gimbel"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/02/announcing-release-date-of-camunda-bpm.html"
 
 ---
 
+<div>
 The next release date of <a href="http://www.camunda.org/">camunda BPM</a>&nbsp;has been fixed:<br />
 <h3>
 <span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif;">7.1. GA* will ship on March 31</span><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif;">st,</span><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif;">&nbsp;2014</span></h3>
@@ -53,3 +54,4 @@ The next release date of <a href="http://www.camunda.org/">camunda BPM</a>&nbsp;
 </div>
 <div>
 <span style="font-size: medium;">Join Daniel Mayer and Jakob Freund in our <a href="http://www.camunda.com/webinar/2014-03/">release webinar</a> on March&nbsp;</span><span style="font-size: medium;">21st</span><span style="font-size: medium;">, 2014.</span></div>
+</div>

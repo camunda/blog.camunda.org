@@ -1,19 +1,19 @@
 ---
 title: "camunda Modeler 2.2.0 released: Kepler support and modeling improvements"
-date: "2013-11-08T17:09:00+01:00"
+date: "2013-11-08"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "camunda-modeler"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/11/camunda-modeler-220-released-kepler.html"
 
 ---
 
+<div>
 Today we are happy to announce the new release of the camunda Modeler. This version adds official support for Eclipse Kepler. On top of that it ships with the ability to change the type of tasks, events and gateways as well as a simplified connection of elements. <br />
 <a name='more'></a><h3>
 Eclipse Kepler Support</h3>
@@ -100,3 +100,4 @@ Michael has done a great job on improving our Jubula QA. The others in the team 
 <br /></div>
 <div>
 For now, feel free to <a href="http://camunda.org/download/modeler/">try out the new modeler</a>. Is there anything you particularily liked or a feature that is still missing? Tell us on via&nbsp;<a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">our forums</a>&nbsp;or&nbsp;on&nbsp;<a href="https://twitter.com/camundaBPM">twitter</a>.</div>
+</div>

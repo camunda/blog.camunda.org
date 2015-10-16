@@ -1,19 +1,19 @@
 ---
 title: "Synchronous vs. Asynchronous Service Invocations - BPMN Service Task (1)"
-date: "2013-11-10T20:33:00+01:00"
+date: "2013-11-10"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "service task"
+  - "Release Note"
 
 aliases:
   - "/2013/11/bpmn-service-synchronous-asynchronous.html"
 
 ---
 
+<div>
 <div class="MsoNormal">
 <span lang="EN-US">The BPMN
 2.0 Specification provides the Service Task activity allowing users to invoke
@@ -126,4 +126,6 @@ Check out this&nbsp;<a href="https://github.com/camunda/camunda-quickstarts/tree
 <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" style="border-width: 0;" /></a><br />
 This blogpost including images &amp; illustrations is licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US" rel="license">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 </div>
+</div>
+
 </div>

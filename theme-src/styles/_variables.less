@@ -1,10 +1,23 @@
-@commons-ui-path: "node_modules/camunda-commons-ui/";
-@bootstrap-path: "@{commons-ui-path}node_modules/bootstrap/less/";
-@import (reference) "@{commons-ui-path}resources/less/common-variables.less";
-@navbar-height-at-top: @navbar-height * 2;
-@fonts-path: @icon-font-path;
+@commons-ui-path:             "node_modules/camunda-commons-ui/";
+@bootstrap-path:              "@{commons-ui-path}node_modules/bootstrap/less/";
 
-// @link-color: @brand-primary;
-// @font-size-base: 16px;
-// @font-family-base: 'open_sansregular', Helvetica, Arial, Verdana, sans-serif;
-// @line-height-base: 1.6;
+@import (reference) "@{commons-ui-path}resources/less/common-variables.less";
+
+@navbar-height-at-top:        @navbar-height * 2;
+@fonts-path:                  @icon-font-path;
+
+@sidebar-width:               250px;
+
+@footer-height:               90px;
+
+@link-color:                  darken(@brand-primary, 10);
+
+@font-family-sans-serif:      'open_sansregular', Helvetica, Arial, Verdana, sans-serif;
+@font-size-base:              16px;
+@line-height-base:            1.6;
+
+@headings-font-weight:        400;
+@headings-font-family:        @font-family-base;
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;

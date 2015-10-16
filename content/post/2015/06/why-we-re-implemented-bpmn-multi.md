@@ -1,17 +1,19 @@
 ---
 title: "Why we Re-Implemented BPMN Multi-Instance Support in 7.3"
-date: "2015-06-11T13:53:00+02:00"
+date: "2015-06-11"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/06/why-we-re-implemented-bpmn-multi.html"
 
 ---
 
+<div>
 <div class="markdown-body">
 Have you ever experienced bugs with multi-instance activities? You may choose from any of these: <a href="https://app.camunda.com/jira/browse/CAM-986">CAM-986</a>, <a href="https://app.camunda.com/jira/browse/CAM-1731">CAM-1731</a>, <a href="https://app.camunda.com/jira/browse/CAM-2075">CAM-2075</a>, <a href="https://app.camunda.com/jira/browse/CAM-2338">CAM-2338</a>, <a href="https://app.camunda.com/jira/browse/CAM-2787">CAM-2787</a>, <a href="https://app.camunda.com/jira/browse/CAM-2897">CAM-2897</a>, <a href="https://app.camunda.com/jira/browse/CAM-3851">CAM-3851</a>, <a href="https://app.camunda.com/jira/browse/CAM-3925">CAM-3925</a>.<br />
 From the engine's early beginnings, its multi-instance implementation was more of a quick hack than a durable solution. Yet, it was carried from release to release, the pile of bugs and hair lost by desperate developers growing steadily. With <a href="http://blog.camunda.org/2015/05/camunda-bpm-730-final-released.html">Camunda BPM 7.3</a>, we have <a href="https://github.com/camunda/camunda-bpm-platform/commit/8a33d5037dd11181430cea8d9f775a65e5322ce1#diff-87938bc1730f8f4d5356659ed486eb7d">refactored multi-instance</a> fundamentally, drying one of the largest bug sources and fighting developer bald-headedness.<br />
@@ -150,3 +152,4 @@ In 7.2 and earlier, it is impossible to tell if both instances of MI Subprocess 
 <b>Process Instance Modification</b>: The re-implementation made it possible to <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-instance-modification">modify active multi-instance activities</a> with our new 7.3 feature. We had literally no idea how to build this with the pre 7.3 multi-instance concept.<br />
 <b>Asnychronous Continuation</b>: While not yet implemented, it is going to be possible to make either the multi-instance body (already works) or the inner activity asynchronous (does not work yet). The latter is a useful addition in cases of true parallelism since synchronization of inner instances can then be asynchronously performed after their actual work is done.<br />
 <b>Explaining Multi-Instance</b>: Summing up the previous points: It is now much easier to relate execution aspects to either the multi-instance body or the inner activity instances. Multi-instance and its behavior in Camunda can now be easier communicated and understood by both users and developers.
+</div>

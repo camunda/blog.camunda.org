@@ -1,19 +1,19 @@
 ---
 title: "camunda BPM Community Day 2014"
-date: "2014-09-22T08:37:00+02:00"
+date: "2014-09-22"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
-  - "community"
-  - "Open Source"
+  - "Release Note"
 
 aliases:
   - "/2014/09/camunda-bpm-community-day.html"
 
 ---
 
+<div>
 Last Thursday we organized the 2nd <a href="http://network.camunda.org/meetings/32">camunda BPM community Day</a>. After visiting <a href="http://blog.camunda.org/2013/10/what-wonderful-community-day-in-prague.html">Prague last year</a> we went for the home game and invited the community to our Berlin offices. So we put all our desks and chairs and other stuff away to make room for the attendees. Around 65 people had registered and without doing an exact headcount, I suppose that more than 50 attended which Bernd described as "the biggest open source community day he ever attended".<br />
 <div>
 <br /></div>
@@ -95,3 +95,5 @@ Personally, I took away many very interesting ideas and lots of user feedback. I
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://4.bp.blogspot.com/-hyl10QqY6QA/VB_BrC7zASI/AAAAAAAAAdQ/3m7Y40O6e7w/s1600/IMG_20140918_203230.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-hyl10QqY6QA/VB_BrC7zASI/AAAAAAAAAdQ/3m7Y40O6e7w/s1600/IMG_20140918_203230.jpg" height="240" width="320" /></a></div>
 <br /></div>
+
+</div>

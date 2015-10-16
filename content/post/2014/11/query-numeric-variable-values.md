@@ -1,18 +1,19 @@
 ---
 title: "Who cares about Types? Querying with Numeric Variable Values"
-date: "2014-11-25T11:34:00+01:00"
+date: "2014-11-25"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "engine"
+  - "Release Note"
 
 aliases:
   - "/2014/11/query-numeric-variable-values.html"
 
 ---
 
+<div>
 The final camunda 7.2 release is a stone's throw away and ships a ton of new features. One of these is the <i>typed variable value API</i>. You may already know the plain-value-based API that exists since the process engine's very first days. A variable can be set on an execution/task/... as follows:
 <pre class="prettyprint">execution.setVariable("var", 42);</pre>
 
@@ -53,3 +54,4 @@ This query returns all four process instances. The process engine detects that t
 Why should you care? Sometimes you don't know the type a variable in question has. In Cockpit, users specify a numeric value to query with. Its exact type is of little interest. While some MyBatis and SQL hacks made this possible in Cockpit before 7.2, it is now a well-defined API feature. And the best: You can use it in your own queries, wherever variable values can be specified.<br />
 <br />
 That is not all to it; the typed value API has much more to offer. To learn more about it, stay tuned for the <a href="http://camunda.com/landing/webinar-release72/">release webinar</a>, blog posts, tutorials, and examples to follow. Of course, you can right now have a look at the <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-variables-typed-value-api">documentation</a> and discover the typed value API.
+</div>

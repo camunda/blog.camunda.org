@@ -1,21 +1,19 @@
 ---
 title: "The symbiosis of test and documentation"
-date: "2015-02-03T14:26:00+01:00"
+date: "2015-02-03"
 author: "Sebastian Stamm"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "e2e test"
-  - "JavaScript"
-  - "testing"
-  - "UI test"
+  - "Release Note"
 
 aliases:
   - "/2015/02/the-symbiosis-of-test-and-documentation.html"
 
 ---
 
+<div>
 We want to build a library of reusable widgets, which are tested and documented. The components of the tasklist search are examples for such widgets:<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -61,3 +59,5 @@ Try It Out!</h3>
 <li><span style="font-family: inherit;">Navigate to the .spec.html file of the widget (e.g. http://localhost:8070/lib/widgets/search-pill/test/search-pill.spec.html)</span></li>
 </ol>
 </ol>
+
+</div>

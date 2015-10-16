@@ -1,17 +1,19 @@
 ---
 title: "camunda @bpmNEXT 2013"
-date: "2013-03-23T03:23:00+01:00"
+date: "2013-03-23"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/03/camunda-bpmnext-2013.html"
 
 ---
 
+<div>
 bpmNEXT has definetely been a Home Run, as <a href="http://brsilver.com/bpmnext-2013-a-home-run/">Bruce Silver puts it</a>. Bruce has impressively succeeded in creating a real think tank event for BPM thought leaders sharing their ideas, visions and quite a lot of crazy new stuff around BPM. For those of you who do not know him: Bruce Silver is <b>the</b> BPMN Guru in the US, and I really admire him for both his competence and all that he has done for the standard. Rest assured that a good deal of BPMN's amazing success is due to him.<br />
 <br />
 That said, it should not be surprising how excited I was when discovering in his <a href="http://brsilver.com/bpmnext-review/">Review Post</a> a comment about my presentation of <a href="http://www.camunda.org/design/cycle-tutorial.html">camunda Cycle</a>, one of the numerous components that we have open sourced when launching camunda BPM on Monday. Actually I cannot help but spending that quote the visual apperance it deserves:<br />
@@ -26,3 +28,4 @@ But why should I need Cycle anyway? There is a nice BPMN modeler included with c
 <br />
 But right now I am finally enjoying myself in San Francisco, after I got some very interesting insights in the startup scene of Silicon Valley. Have you ever realized that BPM is the perfect tool for IT-based startups that want to scale up their business model? Oh my, I am already having visions again...<br />
 <br />
+</div>

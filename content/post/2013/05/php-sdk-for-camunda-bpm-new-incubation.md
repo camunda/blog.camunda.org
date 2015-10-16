@@ -1,19 +1,19 @@
 ---
 title: "PHP SDK for camunda BPM: new Incubation Project started"
-date: "2013-05-24T18:58:00+02:00"
+date: "2013-05-24"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "php"
-  - "polyglot"
+  - "Release Note"
 
 aliases:
   - "/2013/05/php-sdk-for-camunda-bpm-new-incubation.html"
 
 ---
 
+<div>
 If you want to do BPM / Workflow and BPMN 2.0 in PHP then we have good news for you: as part of our camunda BPM polyglot initiative we started a new incubation project which aims at providing a <a href="http://camunda.github.io/camunda-bpm-php-sdk/">PHP SDK for camunda BPM</a>. This SDK will facilitate the development of <a href="http://php.net/">PHP</a>-based applications that use the camunda BPM middleware services. The project will provide a client library which authenticates against the REST Api and provide PHP developers with a native API for interacting with the process engine:<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -52,3 +52,4 @@ Jira:<br />
 Github repository:<br />
 <a href="https://github.com/camunda/camunda-bpm-php-sdk">https://github.com/camunda/camunda-bpm-php-sdk</a><br />
 <br />
+</div>

@@ -1,20 +1,19 @@
 ---
 title: "Cockpit and Deployments"
-date: "2014-12-01T06:59:00+01:00"
+date: "2014-12-01"
 author: "Ingo Richtsmeier"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "plugins"
-  - "store"
+  - "Release Note"
 
 aliases:
   - "/2014/12/cockpit-and-deployments.html"
 
 ---
 
+<div>
 The last days before I traveled to Hong Kong I built a cockpit plugin to 
 show and delete deployments.<br />
 <div>
@@ -112,3 +111,5 @@ that I can improve my JavaScript code. <span style="background-color: rgba(255,2
 <br /></div>
 <div>
 And for 7.2 production environments, <a href="http://docs.camunda.org/7.1/api-references/rest/#overview-configuring-authentication" target="_blank">secure your rest api with the filters</a> in your production environment.</div>
+
+</div>

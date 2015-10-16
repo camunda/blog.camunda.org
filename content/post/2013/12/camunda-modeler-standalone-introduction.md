@@ -1,19 +1,19 @@
 ---
 title: "camunda Modeler as a standalone tool"
-date: "2013-12-19T15:08:00+01:00"
+date: "2013-12-19"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler"
+  - "Release Note"
 
 aliases:
   - "/2013/12/camunda-modeler-standalone-introduction.html"
 
 ---
 
+<div>
 As a small little side project I was working on a <a href="https://github.com/Nikku/camunda-modeler-standalone" target="_blank">standalone version</a> of the camunda BPMN 2.0 modeling plugin for Eclipse. The camunda Modeler standalone offers nice little features to better integrate with the operating system and focuses 100% on process modeling. It is available for Mac, Linux and Windows.<br />
 <a name='more'></a><h2>
 Update (2014-02-05)</h2>
@@ -53,3 +53,5 @@ Do you find the camunda Modeler without the Eclipse IDE part useful? Try it out 
 <br />
 <br />
 <b>PS: </b><span style="font-weight: normal;">This is not an official part of our product offering. Contact <a href="https://twitter.com/nrehwaldt" target="_blank">me</a>&nbsp;for support or file an issue in the <a href="https://github.com/Nikku/camunda-modeler-standalone/issues" target="_blank">projects issue tracker</a>.&nbsp;</span></div>
+
+</div>

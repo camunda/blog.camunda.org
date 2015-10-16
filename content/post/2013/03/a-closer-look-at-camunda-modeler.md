@@ -1,18 +1,19 @@
 ---
 title: "A closer look at the camunda modeler"
-date: "2013-03-22T12:28:00+01:00"
+date: "2013-03-22"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "camunda-modeler"
+  - "Release Note"
 
 aliases:
   - "/2013/03/a-closer-look-at-camunda-modeler.html"
 
 ---
 
+<div>
 Along with the <a href="http://camundabpm.blogspot.de/2013/03/camunda-forks-activiti-and-launches.html">launch</a> of our <a href="http://camunda.org/">open-source BPM platform</a> we made the camunda modeler available to the public, both as <a href="http://camunda.org/download/modeler/">a&nbsp;software</a> and as&nbsp;<a href="https://github.com/camunda/camunda-modeler" target="_blank">source code</a>.<br />
 <br />
 With the camunda modeler, you get at free modeling tool that integrates in your Eclipse IDE and <span style="font-family: inherit;"><span style="background-color: white; line-height: 24.44444465637207px;">focuses on seamless modeling of process and collaboration</span><span style="background-color: white; line-height: 24.44444465637207px;">&nbsp;diagrams.&nbsp;</span></span>But see yourself:<br />
@@ -51,4 +52,5 @@ We highly encourage you to contribute to the modeler if you share our vision of 
 Stay tuned for frequent camunda modeler releases and upcomming blog posts.</div>
 <div>
 In the mean time, we will continue to code with quality in mind.</div>
+</div>
 </div>

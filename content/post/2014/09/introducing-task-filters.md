@@ -1,18 +1,19 @@
 ---
 title: "Introducing Task Filters"
-date: "2014-09-30T19:05:00+02:00"
+date: "2014-09-30"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "tasklist"
+  - "Release Note"
 
 aliases:
   - "/2014/09/introducing-task-filters.html"
 
 ---
 
+<div>
 With Camunda BPM 7.2.0-alpha5, we introduce Task Filters. Task filters are TaskQueries which can be saved to the database so that you can run them repeatedly.<br />
 <br />
 <a name='more'></a><h3>
@@ -94,3 +95,5 @@ With Camunda 7.2 we limit out of the box support for filters to Task Filters. If
 <br /></div>
 <div>
 <br /></div>
+
+</div>

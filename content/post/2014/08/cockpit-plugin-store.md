@@ -1,19 +1,19 @@
 ---
 title: "cockpit plugin store"
-date: "2014-08-15T10:11:00+02:00"
+date: "2014-08-15"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "plugins"
+  - "Release Note"
 
 aliases:
   - "/2014/08/cockpit-plugin-store.html"
 
 ---
 
+<div>
 We have Camunda Cockpit as a great tool for monitoring and operations. But roles and requirements for monitoring and operations always differ in our real-life projects -&nbsp;so we allow plugins for Cockpit. In the last 48 hours (on our Camunda hackdays) we implemented a "plugin store" for the existing community plugins - so everybody can much easier try out plugins or see what plugins exist.<br />
 <br />
 <a name='more'></a><br />
@@ -53,3 +53,5 @@ Thanks guys (Christian, Falko and Ingo) - we were a great team. Cant't wait for 
 <a href="http://2.bp.blogspot.com/-qKDSXydTC_8/U-2s3pgLb8I/AAAAAAAAAPs/fo3C5Ffvhek/s1600/team.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-qKDSXydTC_8/U-2s3pgLb8I/AAAAAAAAAPs/fo3C5Ffvhek/s1600/team.png" height="213" width="320" /></a></div>
 <div>
 <br /></div>
+
+</div>

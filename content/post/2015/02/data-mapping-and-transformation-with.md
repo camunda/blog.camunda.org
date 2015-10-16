@@ -1,20 +1,19 @@
 ---
 title: "Data mapping and transformation with Camunda Spin and Java 8"
-date: "2015-02-05T16:19:00+01:00"
+date: "2015-02-05"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "data mapping"
-  - "data transformations"
-  - "spin"
+  - "Release Note"
 
 aliases:
   - "/2015/02/data-mapping-and-transformation-with.html"
 
 ---
 
+<div>
 <div>Working with text based data formats such as Xml and Json is a common requirement when implementing BPMN processes.<br />
 <br />
 Since version 7.2 Camunda provides an optional library which is called Camunda Spin. Spin is a lightweight wrapper library which provides a easy to use API when working with text based data formats such as XML and Json.</div><div><br />
@@ -139,3 +138,5 @@ A more functional approach would use a <span style="font-family: Courier New, Co
   .collect(asJsonList());
 </code></pre><br />
 The <span style="font-family: Courier New, Courier, monospace;">SpinCollectors.asJsonList()</span> method does not exist yet. This would be something the Spin library could provide. In case anybody would use this? <br />
+
+</div>

@@ -1,17 +1,19 @@
 ---
 title: "Impressions from Camunda Community Day 2015"
-date: "2015-09-24T18:38:00+02:00"
+date: "2015-09-24"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/09/impressions-from-camunda-community-day.html"
 
 ---
 
+<div>
 Or in other words: Our most awesome community day yet!<br />
 <br />
 Last week our annual Camunda Community Day took place. I always enjoy that day very much because it gives me the opportunity to get in touch with community contributors and users. I always learn a lot during these days and I take a lot of engergy away from it.<br />
@@ -45,3 +47,5 @@ After this, finally, Nastasja removed the locks from the fridge and the beers we
 <br />
 <blockquote class="twitter-tweet" lang="en"><div dir="ltr" lang="en"><a href="https://twitter.com/hashtag/camunity?src=hash">#camunity</a> still alive - interesting discussions going on. I love our community :-) <a href="http://t.co/8J0hUfhZkK">pic.twitter.com/8J0hUfhZkK</a></div>— Bernd Ruecker (@berndruecker) <a href="https://twitter.com/berndruecker/status/644606611449901056">September 17, 2015</a></blockquote><br />
 And that was our community day! <a href="https://network.camunda.org/meetings/55">Slides are already available in Camunda Network</a>&nbsp;(scroll to the bottom of the page) and Valentin promised that he will publish all the video recordings he made.<br />
+
+</div>

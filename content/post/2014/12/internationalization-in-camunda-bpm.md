@@ -1,19 +1,19 @@
 ---
 title: "Internationalization in the Camunda BPM Tasklist"
-date: "2014-12-04T15:07:00+01:00"
+date: "2014-12-04"
 author: "Robert Gimbel"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "tasklist"
-  - "web-app"
+  - "Release Note"
 
 aliases:
   - "/2014/12/internationalization-in-camunda-bpm.html"
 
 ---
 
+<div>
 In an international open source project like ours, the users speak a huge variety of languages. When building our new <a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist" target="">Tasklist </a>we had to adress the question of how to deal with internationalization.<br />
 <br />
 <h3>
@@ -45,3 +45,5 @@ The solution to this issue are language specific filters and process application
 Further readings</h4>
 <div>
 Read our user guide to find our more about other <a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist-customizing" target="_blank">customization capabilities of the Tasklist</a>.</div>
+
+</div>

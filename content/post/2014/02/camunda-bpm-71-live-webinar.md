@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM 7.1 Live Webinar"
-date: "2014-02-28T11:57:00+01:00"
+date: "2014-02-28"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/02/camunda-bpm-71-live-webinar.html"
 
 ---
 
+<div>
 <p>
 On March 21 we will present to you the brand new version 7.1 of camunda BPM – the open source platform for process automation with Java and BPMN 2.0.
 </p>
@@ -27,3 +29,4 @@ See for yourself what our heroic team has been working on for more than 6 months
 <p>
 See you there!
 </p>
+</div>

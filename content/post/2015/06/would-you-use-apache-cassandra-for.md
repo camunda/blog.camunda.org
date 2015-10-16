@@ -1,17 +1,19 @@
 ---
 title: "Would you use Apache Cassandra for Camunda persistence?"
-date: "2015-06-15T14:57:00+02:00"
+date: "2015-06-15"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/06/would-you-use-apache-cassandra-for.html"
 
 ---
 
+<div>
 I am currently planning a hack session with people who are interested in using <a href="http://cassandra.apache.org/">Apache Cassandra</a> as database for Camunda Process engine.<br />
 Their main motivation for supporting us is that their whole application is running on Apache Cassandra and they want to use Cassandra as persistence provider for their workflows as well.<br />
 They have extensive experience with Cassandra and want to contribute their work as open source.<br />
@@ -28,3 +30,5 @@ If true, maybe you can provide some feedback of the following questions:<br />
 </ol><br />
 If you have any comments on this, please get in touch with us by commenting here or pinging me on twitter <a href="https://twitter.com/meyerdan">@meyerdan</a>.<br />
 <br />
+
+</div>

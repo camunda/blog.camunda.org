@@ -1,17 +1,15 @@
 {{ partial "header.html" . }}
 
-  <div class="page-content col-xs-12 col-sm-8">
-    <article>
-      {{ partial "post-header.html" . }}
+  <div class="page-content default">
+    <section>
+      <header class="row">
+        <h1 class="col-xs-12"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      </header>
 
       <div class="content">
         {{ .Content }}
       </div>
-
-      {{ partial "post-footer.html" . }}
-    </article>
+    </section>
   </div>
-
-{{ partial "sidebar.html" . }}
 
 {{ partial "footer.html" . }}

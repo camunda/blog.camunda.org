@@ -1,20 +1,19 @@
 ---
 title: "Advanced Asynchronous Continuations in camunda BPM"
-date: "2014-07-18T14:24:00+02:00"
+date: "2014-07-18"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "async"
-  - "BPMN"
-  - "engine"
+  - "Release Note"
 
 aliases:
   - "/2014/07/advanced-asynchronous-continuations.html"
 
 ---
 
+<div>
 <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-transactions-in-processes-asynchronous-continuations">Asynchronous continuations</a> are a a very powerful process engine feature. Up until now you could use asynchronous continuations in two ways:
 <br />
 <ol>
@@ -81,3 +80,4 @@ I think that currently camunda BPM is the most advanced open source process engi
 ----<br />
 As a side-note: the concept which makes asynchronous continuations possible is the "Atomic Operation". When the process engine executes a process, it will progress though the graph as a sequence of Atomic Operations. It then becomes possible to break execution between two atomic operations being executed. We are implementing <b>CMMN (The new standard for adaptive case management, ACM)</b> with the&nbsp;<a href="https://github.com/camunda/camunda-bpm-platform/tree/master/engine/src/main/java/org/camunda/bpm/engine/impl/cmmn/operation">same programming model</a>. As a result, it will also be possible to implement Async for CMMN as well :)<br />
 <br />
+</div>

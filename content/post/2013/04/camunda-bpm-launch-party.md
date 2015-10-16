@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM Launch Party"
-date: "2013-04-10T16:58:00+02:00"
+date: "2013-04-10"
 author: "Nastasja Johnston"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/04/camunda-bpm-launch-party.html"
 
 ---
 
+<div>
 After launching our open source platform camunda BPM on 18th March, we gave it a proper welcoming to the BPM community last week. 55 people showed up to the launch party held at camunda HQ, which coincided with our 5th birthday.<br />
 <div>
 It was a great night, during which the hard-working team around camunda BPM had the chance to demonstrate some of the platform's great features and advantages followed by good discussions with the guests afterwards.<br />
@@ -40,4 +42,6 @@ Take a look at some pictures we took on the night and make sure to sign up<a hre
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://4.bp.blogspot.com/-xuQYFQG0784/UWV95ScuGhI/AAAAAAAAAB8/aOzTIc-HZW0/s1600/P1170541.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://4.bp.blogspot.com/-xuQYFQG0784/UWV95ScuGhI/AAAAAAAAAB8/aOzTIc-HZW0/s320/P1170541.JPG" width="320" /></a></div>
+</div>
+
 </div>

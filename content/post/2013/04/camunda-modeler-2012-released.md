@@ -1,19 +1,19 @@
 ---
 title: "camunda modeler 2.0.12 released"
-date: "2013-04-05T12:14:00+02:00"
+date: "2013-04-05"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "camunda-modeler"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/04/camunda-modeler-2012-released.html"
 
 ---
 
+<div>
 <div>
 Yesterday we released version 2.0.12 of our modeler with a number of bug fixes as well as layout and usability improvements. One highlight is splitting layouted sequence flows to insert new flow elements between two connected nodes.
 <br />
@@ -48,3 +48,4 @@ For details refer to the <a href="https://app.camunda.com/jira/secure/IssueNavig
 <br />
 As always, <a href="http://camunda.org/download/modeler/" target="_blank">upgrade your modeler</a> installation and tell us what you think!<br />
 <br /></div>
+</div>

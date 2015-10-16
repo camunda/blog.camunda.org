@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0.0-alpha3 released"
-date: "2013-05-03T16:24:00+02:00"
+date: "2013-05-03"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/05/camunda-bpm-700-alpha3-released.html"
 
 ---
 
+<div>
 <p><a href="http://www.camunda.org/download/">camunda BPM 7.0.0-alpha3</a> is out now! It packs a bunch of new features such as support for Spring Process Applications and correlation via the engine's Java API.</p>
 <p>
 First things first: Get it <a href="http://www.camunda.org/download/">here</a>!
@@ -38,3 +39,4 @@ Shortly, we will also offer this through the REST API and publish a more detaile
 <p>
 A number of bug fixes. Check our <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=12790">release notes</a> to see what ships in alpha3.
 </p>
+</div>

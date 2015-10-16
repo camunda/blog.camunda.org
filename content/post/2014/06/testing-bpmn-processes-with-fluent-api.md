@@ -1,20 +1,19 @@
 ---
 title: "Testing BPMN processes with fluent assertions: Awesome!"
-date: "2014-06-03T09:01:00+02:00"
+date: "2014-06-03"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "community-extensions"
-  - "testing"
+  - "Release Note"
 
 aliases:
   - "/2014/06/testing-bpmn-processes-with-fluent-api.html"
 
 ---
 
+<div>
 <div>
 Sometimes this topic comes up in the <a href="https://groups.google.com/forum/#!topic/camunda-bpm-users/8j-ZrGW4LM4">camunda BPM foums</a> and I cannot stress &amp; highlight this enough! :)<br />
 <br />
@@ -41,4 +40,6 @@ From a project management perspective, the project is very mature (it is the res
 <br /></div>
 <div>
 Enjoy.</div>
+</div>
+
 </div>

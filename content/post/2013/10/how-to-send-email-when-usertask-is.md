@@ -1,17 +1,19 @@
 ---
 title: "How to send an email when a usertask is assigned"
-date: "2013-10-31T10:28:00+01:00"
+date: "2013-10-31"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/10/how-to-send-email-when-usertask-is.html"
 
 ---
 
+<div>
 <blockquote class="tr_bq">
 "I don't want to watch my camunda Tasklist all day. When there is something to do, I want to get an email containing a link that takes me directly to the respective task!"</blockquote>
 <br />
@@ -126,3 +128,4 @@ From a user perspective, it will look like this:<br />
 <br />
 Have fun with camunda :)<br />
 <br />
+</div>

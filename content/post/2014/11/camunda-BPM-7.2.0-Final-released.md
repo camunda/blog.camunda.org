@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.2.0 Final Released"
-date: "2014-11-28T12:34:00+01:00"
+date: "2014-11-28"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/11/camunda-BPM-7.2.0-Final-released.html"
 
 ---
 
+<div>
 Today we announce the official release of Camunda BPM 7.2.0 Final. This version constitutes the latest production-ready release of Camunda BPM platform and will be supported with patch updates in the the Camunda Enterprise Subscription.<br />
 <br />
 <b>Camunda BPM is open source</b>, you can <a href="http://camunda.org/download">download the distribution from camunda.org</a> and <a href="http://github.com/camunda">inspect the sources on GitHub</a>.<br />
@@ -243,3 +244,5 @@ What's Next?</h2>
 <br />
 <div class="MsoNormal">
 <br /></div>
+
+</div>

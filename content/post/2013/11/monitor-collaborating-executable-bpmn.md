@@ -1,19 +1,19 @@
 ---
 title: "Monitor collaborating executable BPMN 2.0 processes in cockpit"
-date: "2013-11-29T14:30:00+01:00"
+date: "2013-11-29"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "cockpit"
+  - "Release Note"
 
 aliases:
   - "/2013/11/monitor-collaborating-executable-bpmn.html"
 
 ---
 
+<div>
 In a current customer project we faced the issue that there were two executable processes - independent of each other. So far - so normal. But these two processes had to sync status here and there - so they were clearly related, but not by using a&nbsp;<a href="http://docs.camunda.org/latest/api-references/bpmn20/#subprocesses-call-activity" target="_blank">Call Activity</a>. BPMN 2.0 allows this by <b>communication via messages</b>&nbsp;as shown in the following example. But how to keep track of this in monitoring? We developed a small c<b>ockpit plugin</b> to show the related process instances - see below.<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -38,3 +38,4 @@ Check it out yourself:<br />
 <span style="font-size: large;"><a href="https://github.com/camunda/camunda-consulting/tree/master/snippets/cockpit-plugin-bpmn-collaboration">https://github.com/camunda/camunda-consulting/tree/master/snippets/cockpit-plugin-bpmn-collaboration</a></span><br />
 <br />
 Feedback always welcome - use our <a href="http://camunda.org/community/forum.html" target="_blank">forum</a>.
+</div>

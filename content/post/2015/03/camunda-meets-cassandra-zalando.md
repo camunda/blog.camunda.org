@@ -1,22 +1,19 @@
 ---
 title: "Camunda meets Cassandra @Zalando: Community Meeting Write-up"
-date: "2015-03-11T10:37:00+01:00"
+date: "2015-03-11"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
-  - "big data"
-  - "cassandra"
-  - "community"
-  - "horizontal scalability"
-  - "zalando"
+  - "Release Note"
 
 aliases:
   - "/2015/03/camunda-meets-cassandra-zalando.html"
 
 ---
 
+<div>
 Jorn Horstman, André Hartmann and Lukas Niemeier from Zalando Tech visited us yesterday evening to present their prototype for running Camunda engine on Apache Cassandra.<br />
 They published their <a href="https://docs.google.com/presentation/d/1fvo9doqffDoR96yeat_wZNusQFacXi0GgF0kV4_mAbQ/edit?usp=sharing">slides</a>.<br />
 <br />
@@ -78,3 +75,4 @@ From this the following model results:<br />
 Consequences: No intra-process instance concurrency (concurrency inside a single process instance) involving different process engine instances (a single process engine can still lock the row, do things in multiple threads, join the operations and do one atomic update, releasing the lock).<br />
 <br />
 Discussing all of this was a lot of fun! <a href="https://network.camunda.org/meetings/">More Meetings are scheduled</a>
+</div>

@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM 7.0 on WebLogic 12c"
-date: "2013-05-14T10:08:00+02:00"
+date: "2013-05-14"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/05/camunda-bpm-70-on-weblogic-12c.html"
 
 ---
 
+<div>
 If we go <a href="http://camundabpm.blogspot.de/2013/05/camunda-vs-oracle-shootout-roadshow.html" target="_blank">on tour together with Oracle</a>&nbsp;I think we have to have <a href="http://www.camunda.org/">camunda BPM</a> running on the Oracle WebLogic application server 12c (WLS in short). And one of our enterprise customers asked - so I invested a&nbsp;Sunday&nbsp;and got it running (okay - to be honest - I needed quite some help from our Java EE server guru&nbsp;<a href="http://camunda.org/community/team.html">Christian</a>). In this blog post I give a step by step description how run camunda BPM on WLS. Please note that this is not an official distribution (which would include a <a href="http://camundabpm.blogspot.de/2013/04/camunda-bpm-700-alpha2-released.html">sophisticated QA</a>, a <a href="http://docs.camunda.org/latest/">comprehensive documentation</a> and a <a href="http://www.camunda.org/release/camunda-bpm/">proper distribution</a>) - it was my personal hobby. And I did not fire the whole test suite agains WLS - so there might be some issues. We will do the real productization as soon as we have a customer for it (let us know if this is&nbsp;interesting&nbsp;for you).<br />
 <br />
 <a name='more'></a><b>Update (March 31, 2014)</b><br />
@@ -205,4 +207,6 @@ And starting a process instance via REST:</div>
 <span style="font-family: inherit;">Feedback welcome</span></h3>
 <div>
 <span style="font-family: inherit;">We welcome every feedback on this - best use our forum (</span><a href="http://camunda.org/community/forum.html">http://camunda.org/community/forum.html</a>, can be used by sending mails to it as well: <a href="mailto:camunda-bpm-users@googlegroups.com">camunda-bpm-users@googlegroups.com</a>). Let us now if you want to use this in production - then we can place a proper enterprise distribution on our roadmap...</div>
+</div>
+
 </div>

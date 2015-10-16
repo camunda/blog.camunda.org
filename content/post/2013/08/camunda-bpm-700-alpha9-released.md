@@ -1,19 +1,19 @@
 ---
 title: "camunda BPM 7.0.0-alpha9 released"
-date: "2013-08-09T17:37:00+02:00"
+date: "2013-08-09"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/08/camunda-bpm-700-alpha9-released.html"
 
 ---
 
+<div>
 Today we are happy to announce the next alpha version of camunda BPM. Get it&nbsp;<a href="http://camunda.org/download/" target="_blank">here</a>.<br />
 <div>
 <br />
@@ -110,3 +110,5 @@ Last but not least, we created a process instance filter that tells you exactly 
 </div>
 <div>
 As always, tell us what you think on our <a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">mailing list</a>.</div>
+
+</div>

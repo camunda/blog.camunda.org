@@ -1,17 +1,19 @@
 ---
 title: "The HTML5 parts in camunda BPM"
-date: "2013-03-20T18:18:00+01:00"
+date: "2013-03-20"
 author: "Andreas Drobisch"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/03/the-html5-parts-in-camunda-bpm.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 The camunda bpm stacks currently includes three web apps: cycle, cockpit, tasklist. All of them are rewrites from a JSF 2.0 ancestor version and with this post I want to explain the decision to built them on a HTML5 plus REST architecture and not with <span style="font-family: Courier New, Courier, monospace;">&lt;insert java web framework here&gt;</span>.<br />
 <br />
@@ -83,4 +85,5 @@ We are really happy with the results and this setup is a future proof foundation
 <br /></div>
 <div>
 <br /></div>
+</div>
 </div>

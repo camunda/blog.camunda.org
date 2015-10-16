@@ -1,19 +1,19 @@
 ---
 title: "Gracefully Cancelling a Process Instance"
-date: "2015-02-02T13:38:00+01:00"
+date: "2015-02-02"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "compensation"
+  - "Release Note"
 
 aliases:
   - "/2015/02/gracefully-cancelling-process-instance.html"
 
 ---
 
+<div>
 Cancelling a running process instance in Camunda is easy:
 <br />
 <pre>DELETE /process-instance/{id}
@@ -92,3 +92,5 @@ The compensation process can load the variables of the main process from history
 <br /></div>
 <div>
 Any thoughts?</div>
+
+</div>

@@ -1,19 +1,19 @@
 ---
 title: "Build your own camunda task explorer with CDI and JSF"
-date: "2015-06-02T11:59:00+02:00"
+date: "2015-06-02"
 author: "Ingo Richtsmeier"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "jsf"
-  - "tasklist"
+  - "Release Note"
 
 aliases:
   - "/2015/06/build-your-own-camunda-task-explorer.html"
 
 ---
 
+<div>
 There's a lot of interest in how to write a task list with CDI and JSF, and not a lot of up-to-date examples available. Until now! - In this blog post I'm going to show you how you can build your own task list with Camunda BPM<br />
 <a name='more'></a><br />
 <br />
@@ -223,4 +223,5 @@ Of course, you can change the cryptic IDs against businessKeys and display more 
 <br />
 Have fun with JSF-Tasklists.<br />
 <br />
+</div>
 </div>

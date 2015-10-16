@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM incubation space launched with contribution by plexiti"
-date: "2013-04-24T18:57:00+02:00"
+date: "2013-04-24"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/04/camunda-bpm-incubation-space-launched.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: left;">
 I am happy to announce the official launch of the camunda BPM incubation space with the first large community contribution by <a href="http://plexiti.com/">plexiti</a>.</div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -112,6 +114,7 @@ And add the camunda BPM repository:</div>
 <h3>
 More contributions welcome!</h3>
 <span style="font-family: inherit; font-size: small; font-weight: normal;">If you have an interesting idea for an incubation project, <a href="https://github.com/camunda/camunda-bpm-incubation/blob/master/README.md">read the technical guidelines in Github</a> and <a href="https://groups.google.com/forum/?fromgroups=#!forum/camunda-bpm-dev">talk to us on the DEV mailing list</a>!</span></div>
+</div>
 </div>
 </div>
 </div>

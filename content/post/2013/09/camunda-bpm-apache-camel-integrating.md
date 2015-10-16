@@ -1,17 +1,19 @@
 ---
 title: "camunda BPM + Apache Camel: Integrating two Open Source frameworks for a lightweight BPM+SOA infrastructure"
-date: "2013-09-25T10:20:00+02:00"
+date: "2013-09-25"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/09/camunda-bpm-apache-camel-integrating.html"
 
 ---
 
+<div>
 <a href="http://camel.apache.org/">Apache Camel</a> is a well known Open Source framework solving a lot of integration problems and implementing the <a href="http://www.eaipatterns.com/">Enterprise Integration Patterns</a>. So combining it with <a href="http://camunda.org/">camunda BPM</a> is a perfect match: solve workflow and BPM requirements with camunda and integration requirements with Camel.<br />
 <br />
 Together with <a href="http://rafael.cordones.me/">Rafael Cordones</a>&nbsp;we took the existing&nbsp;<a href="https://github.com/Activiti/Activiti/tree/master/modules/activiti-camel">Activiti Camel Module</a>&nbsp;as a basis and did a huge refactoring. For everybody knowing this module I compiled the changes at the end of this article. For everybody else: Lean back and enjoy the show while I quickly walk you through the features. I do this based on our&nbsp;<a href="https://github.com/camunda/camunda-bpm-camel">"camel use cases" example</a>&nbsp;which is available on GitHub (by the way - you can discuss this process model on <a href="http://camunda.org/share/#/process/f54a4ff9-4cc1-428c-829b-a4002dcdd81f">camunda share</a>):<br />
@@ -208,3 +210,4 @@ And for everybody familiar with the Activiti Camel Module it might be interestin
 <li>Refactored the core code base to make it easier understandable.</li>
 <li>Added examples.</li>
 </ul>
+</div>

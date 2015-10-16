@@ -1,17 +1,19 @@
 ---
 title: "Migrate Process Versions"
-date: "2015-08-10T12:19:00+02:00"
+date: "2015-08-10"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/migrate-process-versions.html"
 
 ---
 
+<div>
 My colleague Ingo just finished a new cockpit plugin allowing to easily migrate a running process instance to a new version of the process definition:<br />
 <br />
 <iframe allowfullscreen="" frameborder="0" height="350" mozallowfullscreen="" src="https://player.vimeo.com/video/135853242" webkitallowfullscreen="" width="500"></iframe> <br />
@@ -32,3 +34,5 @@ Please note that version migration has limitations and risks - we collected them
 <br /></div>
 <div>
 <br /></div>
+
+</div>

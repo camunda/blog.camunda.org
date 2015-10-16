@@ -111,6 +111,26 @@ module.exports = function (grunt) {
           dest: '<%= setup.target %>/static/js/scripts.js'
         }]
       }
+    },
+
+    responsive_images: {
+      site: {
+        options: {
+          engine: 'im',
+          sizes: [
+            { name: 'small', width: 320 },
+            { name: 'medium', width: 640 },
+            { name: 'large', width: 1024 },
+            { name: 'xlarge', width: 1280 }
+          ]
+        },
+        files: [{
+          cwd:  'static/',
+          src:  'post/**/*.{jpg,png}',
+          expand:  true,
+          dest: 'public/'
+        }]
+      }
     }
   });
 
@@ -120,36 +140,53 @@ module.exports = function (grunt) {
     var jsonContent = grunt.file.readJSON('./camunda-blog-posts.json');
     var postTemplate = [
       '---',
-      // '',
       'title: "<%= title.split(\'\\"\').join(\'\\\\"\') %>"',
-      'date: "<%= published %>"',
+      'date: "<%= (new Date(published)).toISOString().split("T").shift() %>"',
       'author: "<%= author.displayName %>"',
       '',
       'categories:',
       '  - "<%= category %>"',
-      'tags: <%= labels.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
+      'tags: <%= tags.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
       '',
       'aliases:',
       '  - "<%= alias %>"',
       '',
       '---',
       '',
-      '<%= content %>'
+      '<div>',
+      '<%= content %>',
+      '</div>'
     ].join('\n');
 
-    var weight = jsonContent.items.length;
     jsonContent.items.forEach(function (post) {
       var nameParts = post.url.split('/');
       var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
-      // post.year = (new Date(post.published)).getFullYear();
-      // post.weight = weight;
 
-      post.category = post.title.toLowerCase().indexOf('release') < 0 ? 'Development' : 'Release';
+      post.tags = [];
+      if (post.title.toLowerCase().indexOf('release')) {
+        post.tags.push('Release Note');
+      }
+
+      post.category = 'Execution';
+      if (post.title.toLowerCase().indexOf('community') > -1) {
+        post.category = 'Community';
+      }
+      else if (post.title.toLowerCase().indexOf('bpmn.io') > -1 ||
+               post.title.toLowerCase().indexOf('dmn.io') > -1) {
+        post.category = 'Modeling';
+      }
+
       post.labels = post.labels || [];
       post.alias = post.url.split('blog.camunda.org').pop();
 
+      post.content
+        .split('href="http://blog.camunda.org/')
+        .join('href="/')
+        .split('href="http://camundabpm.blogspot.de/')
+        .join('href="/')
+      ;
+
       grunt.file.write(name, grunt.template.process(postTemplate, {data: post}));
-      weight--;
     });
 
   });

@@ -1,18 +1,19 @@
 ---
 title: "camunda share: Discuss your BPMN 2.0 process model in the cloud"
-date: "2013-09-13T16:28:00+02:00"
+date: "2013-09-13"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
+  - "Release Note"
 
 aliases:
   - "/2013/09/camunda-share-discuss-your-bpmn-20.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://1.bp.blogspot.com/-MvXUG5rgDhg/UjL8aVA19FI/AAAAAAAAAGc/LZzu6Ijyt9M/s1600/screenshot.png" imageanchor="1" style="clear: left; display: inline !important; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-MvXUG5rgDhg/UjL8aVA19FI/AAAAAAAAAGc/LZzu6Ijyt9M/s200/screenshot.png" height="148" width="200" /></a></div>
 Once a year the whole camunda team does a ShipIt-Day (<a href="https://www.atlassian.com/de/company/about/shipit">inspired by Atlassian</a>) - developing something awesome within 24 hours. This year, <a href="http://camunda.org/community/team.html">Kristin, Falko and me</a> did "camunda share" - a web application in the cloud to share and discuss BPMN 2.0 process models. And we shipped it! It is live.<br />
@@ -74,3 +75,4 @@ The idea of camunda share inspired us to create a <a href="http://network.camund
 <tr><td class="tr-caption" style="text-align: center;">The camunda team at the ShipItDay 2013 in Mamerow</td></tr>
 </tbody></table>
 No need to - we had a lot of fun! But tell all your friends how awesome camunda share, camunda BPM and the whole camunda team is :-)
+</div>

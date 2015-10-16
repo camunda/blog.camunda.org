@@ -1,17 +1,19 @@
 ---
 title: "Scaling Camunda BPM in a Cluster: Job Executors and Coordination"
-date: "2015-09-11T15:16:00+02:00"
+date: "2015-09-11"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/09/scaling-camunda-bpm-in-cluster-job.html"
 
 ---
 
+<div>
 Throughout development of Camunda 7.4, one of our focus points is job executor features and improvements. The <i>job executor</i> is the process engine's component to perform deferred actions, such as executing an intermediate timer event or an asynchronous continuation. Thus it is central in the Camunda architecture and central for scaling the BPM platform in a cluster. In this post we provide insight in job executor behavior and how job executor instances be coordinated by employing a backoff strategy that is part of the upcoming Camunad 7.4.0-alpha2 release.<br />
 <a name='more'></a><br />
 <h2>
@@ -114,3 +116,4 @@ This leads to the following conclusions:<br />
 <h2>
 <a aria-hidden="true" class="anchor" href="https://www.blogger.com/blogger.g?blogID=2414043640680427770#background-reading-and-resources" id="user-content-background-reading-and-resources"><span class="octicon octicon-link"></span></a>Background Reading and Resources</h2>
 In order to try out the backoff configuration settings, you may wait for our upcoming alpha2 release or use a <a href="https://app.camunda.com/nexus/content/groups/public/org/camunda/bpm/tomcat/camunda-bpm-tomcat/7.4.0-SNAPSHOT/">nightly SNAPSHOT build</a>. For all the job executor configuration options have a look at our <code>bpm-platform.xml</code> <a href="http://docs.camunda.org/manual/latest/reference/deployment-descriptors/tags/job-executor">deployment descriptor reference</a>. For engine and job acquisition metrics, the <a href="http://docs.camunda.org/manual/latest/user-guide/process-engine/metrics/">user guide</a> provides insight into which metrics are collected out of the box, among these the number of job acquisition cycles and job locking failures that were used in this blogpost.
+</div>

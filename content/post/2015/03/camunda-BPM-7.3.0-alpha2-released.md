@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.3.0-alpha2 released"
-date: "2015-03-05T17:37:00+01:00"
+date: "2015-03-05"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/03/camunda-BPM-7.3.0-alpha2-released.html"
 
 ---
 
+<div>
 A new alpha release of our open source BPM and Workflow platform is available for download. The highlights of this release are:<br />
 <ul><li>Process Engine and Rest Api</li>
 <ul><li>Native JSON and XML Variable Value Types</li>
@@ -116,3 +117,5 @@ for (Execution e : executions) {
     .execute();
 }
 </code></pre>And that is just the beginning... :=)<br />
+
+</div>

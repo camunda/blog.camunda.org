@@ -1,18 +1,19 @@
 ---
 title: "7.2.0-alpha1 Released: Rest API, Bugfixes and Refactorings"
-date: "2014-05-20T19:07:00+02:00"
+date: "2014-05-20"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/05/720-alpha1-released-rest-api-bugfixes.html"
 
 ---
 
+<div>
 The first alpha release of camunda BPM 7.2.0 is out. The release brings<br />
 <div>
 <ul>
@@ -94,3 +95,5 @@ Right now it's not much but this is what it looks like:</div>
 Exciting times ahead!</div>
 <div>
 <br /></div>
+
+</div>

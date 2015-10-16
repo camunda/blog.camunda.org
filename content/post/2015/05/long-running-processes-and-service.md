@@ -1,17 +1,19 @@
 ---
 title: "Long running processes and service authentication - SAML tokens to the rescue?"
-date: "2015-05-07T21:29:00+02:00"
+date: "2015-05-07"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/05/long-running-processes-and-service.html"
 
 ---
 
+<div>
 <span id="goog_1013781958"></span><span id="goog_1013781959"></span>When executing long running business processes which include service invocations you often have to solve a problem: What credentials should you use when calling the service?<br />
 <br />
 Let's have a look at a simple example: <br />
@@ -684,3 +686,4 @@ To use security tokens in camunda BPM you simply have to hook in the necessary f
 This can be packaged as "<a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-engine-plugins" target="_blank">Process Engine Plugin</a>" and added to camunda BPM in a generic way. The concept is applicable to all environments, even using propriatary security tokens, but may differ in details of the source code. <br />
 <br />
 If you are interested in any details, <a href="http://camunda.com/bpm/consultation/" target="_blank">contact us</a> - as we cannot publish the code due to NDA agreements. We are happy to assist - so are our <a href="http://camunda.com/bpm/consulting/" target="_blank">competent partners</a> - as for example Novatec.
+</div>

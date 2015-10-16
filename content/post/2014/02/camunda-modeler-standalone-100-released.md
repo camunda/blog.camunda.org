@@ -1,20 +1,19 @@
 ---
 title: "camunda Modeler Standalone 1.0.0 released as an official part of camunda BPM"
-date: "2014-02-06T16:16:00+01:00"
+date: "2014-02-06"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler-standalone"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/02/camunda-modeler-standalone-100-released.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: left;">
 The camunda Modeler Standalone&nbsp;is a tool that allows you to create, view and edit&nbsp;<a href="https://en.wikipedia.org/wiki/Business_Process_Modeling_Notation"><span id="goog_1978039880"></span>BPMN<span id="goog_1978039881"></span></a>&nbsp;process and collaboration diagrams in a seamless way. I am happy to say that the project,&nbsp;<a href="http://blog.camunda.org/2013/12/camunda-modeler-standalone-introduction.html" target="_blank">previously a side project of mine</a>,&nbsp;is now an official part of camunda BPM. Today we released version 1.0.0 as the first stable version of the modeler. <a href="http://camunda.org/download/modeler/" target="_blank">Get it now</a>.</div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -70,3 +69,4 @@ In the mean time, <a href="http://camunda.org/download/modeler/" target="_blank"
 <br /></div>
 <div>
 You like what we are doing or have ideas for improvements? Tell us <a href="https://twitter.com/camundaBPM" target="_blank">via twitter</a> or <a href="https://groups.google.com/forum/#!forum/camunda-bpm-users" target="_blank">on our forums</a>.</div>
+</div>

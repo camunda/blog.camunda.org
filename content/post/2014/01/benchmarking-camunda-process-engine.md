@@ -1,17 +1,19 @@
 ---
 title: "Benchmarking Performance of camunda Process Engine - Broken SSDs and some Numbers"
-date: "2014-01-22T17:31:00+01:00"
+date: "2014-01-22"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/01/benchmarking-camunda-process-engine.html"
 
 ---
 
+<div>
 <a href="http://blog.camunda.org/2014/01/gaining-insight-into-performance-of.html">Yesterday morning I posted some details</a> about our current performance testing efforts. At that point I was still developing the <a href="https://github.com/camunda/camunda-bpm-platform/tree/master/qa/performance-tests-engine">performance testing framework</a> and using the H2 in-memory database when running tests, just to check whether everything runs clean. Yesterday evening, finally, I wanted to run some tests on a "real" database. &nbsp;I hadn't done any serious performance testing since a couple of month back when we released camunda BPM 7.0 Final and in the meantime I have switched my operating system from Windows 7 to Ubuntu Linux. Turns out that Linux is much more serious when it comes to I/O errors and broken SSDs. But more on that later. Let's start with some numbers.<br />
 <br />
 <br />
@@ -276,3 +278,4 @@ The Perspective</h3>
 <div>
 As discussed in this previous post we want to further extend the test suite and integrate it into CI. This will allow us to systematically track the performance of the process engine as we add more features in the future.</div>
 <br />
+</div>

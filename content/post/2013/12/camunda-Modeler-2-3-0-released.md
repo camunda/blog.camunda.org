@@ -1,19 +1,19 @@
 ---
 title: "camunda Modeler 2.3.0 released: Custom Tasks, Form Fields and better Subprocess Modeling"
-date: "2013-12-05T17:34:00+01:00"
+date: "2013-12-05"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "camunda-modeler"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/12/camunda-Modeler-2-3-0-released.html"
 
 ---
 
+<div>
 We are happy to announce the new release of the camunda Modeler. This version adds the ability to extend the modeler with custom tasks. Furthermore it adds editing support for form fields that were recently <a href="http://blog.camunda.org/2013/11/camunda-BPM-7.1.0-alpha1-released.html">re-introduced</a> into the camunda BPM platform. Last but not least, it improves the handling of subprocesses.
 <br />
 <a name='more'></a><br />
@@ -58,3 +58,4 @@ We fixed a number of bugs, too, including the sudden popup of error markers on B
 Checkout the complete list of issues <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13003">solved in this release</a>. And of course, <a href="http://camunda.org/download/modeler/">try out the new modeler</a>&nbsp;and tell us what you thing via&nbsp;<a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">our forums</a>&nbsp;or&nbsp;on&nbsp;<a href="https://twitter.com/camundaBPM">twitter</a>.<br />
 <br />
 Thanks go to&nbsp;<a href="https://twitter.com/hawky4s">Christian</a>, <a href="https://twitter.com/meyerdan">Daniel </a>and <a href="https://twitter.com/_mschoe">Michael </a>for <a href="https://twitter.com/meyerdan/status/408633474992459776">getting this Release through QA</a>.</div>
+</div>

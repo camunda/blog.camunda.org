@@ -1,20 +1,19 @@
 ---
 title: "Extending camunda Cockpit through Plugins"
-date: "2013-05-17T16:07:00+02:00"
+date: "2013-05-17"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "how-to"
-  - "plugins"
+  - "Release Note"
 
 aliases:
   - "/2013/05/extending-camunda-cockpit-through.html"
 
 ---
 
+<div>
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
 <tr><td style="text-align: center;"><a href="http://3.bp.blogspot.com/-3aUtRwmI7r0/UZYiaqXKtnI/AAAAAAAAAIE/uQJtXCXHAeg/s1600/cockpit-plugin-yea.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="282" src="http://3.bp.blogspot.com/-3aUtRwmI7r0/UZYiaqXKtnI/AAAAAAAAAIE/uQJtXCXHAeg/s400/cockpit-plugin-yea.png" width="400" /></a></td></tr>
@@ -28,3 +27,4 @@ With the latest relase of camunda BPM a first version of a plugin system for cam
 I created an article on&nbsp;<a href="http://docs.camunda.org/latest/real-life/how-to/#cockpit-how-to-develop-a-cockpit-plugin" target="_blank">how to develop a plugin</a>&nbsp;for everyone who is interested in all the details.&nbsp;Another good start to get right into the matter may be the <a href="https://github.com/Nikku/cockpit-sample-plugin" target="_blank">sample plugin</a>&nbsp;that gets developed in the article.<br />
 <br />
 The whole plugin matter is brand new and you can expect more source code, documentation and articles on the matter. Up to then we welcome your feedback on our <a href="https://groups.google.com/forum/#!forum/camunda-bpm-dev" target="_blank">dev mailing list</a>.
+</div>

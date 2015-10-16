@@ -1,19 +1,19 @@
 ---
 title: "camunda BPM: Power to Embedded Taskforms"
-date: "2013-10-07T11:01:00+02:00"
+date: "2013-10-07"
 author: "Nico Rehwaldt"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "task forms"
-  - "tasklist"
+  - "Release Note"
 
 aliases:
   - "/2013/10/camunda-bpm-power-to-embedded-taskforms.html"
 
 ---
 
+<div>
 For everyone out there using <a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist-task-forms-embedded-task-forms">embedded task forms</a>&nbsp;in the&nbsp;<a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist">camunda tasklist</a>&nbsp;there is great news:<br />
 The forms are getting way more powerful.<br />
 <br />
@@ -113,3 +113,4 @@ Find all of this including an improved <a href="http://stage.docs.camunda.org/gu
 <br /></div>
 <div>
 Power to the forms!</div>
+</div>

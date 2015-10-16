@@ -1,19 +1,19 @@
 ---
 title: "camunda BPM PHP SDK v1.1.0 released"
-date: "2013-11-15T13:16:00+01:00"
+date: "2013-11-15"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "php"
-  - "polyglot"
+  - "Release Note"
 
 aliases:
   - "/2013/11/camunda-bpm-php-sdk-v110-released.html"
 
 ---
 
+<div>
 Today we released version 1.1.0 of the PHP SDK. The highlights of this release are:<br />
 <br />
 <ul>
@@ -34,3 +34,5 @@ camunda PHP SDK allows PHP users to interact with the process engine and build B
 <a href="http://camunda.github.io/camunda-bpm-php-sdk/">Start reading the documentation.</a></div>
 <div>
 <br /></div>
+
+</div>

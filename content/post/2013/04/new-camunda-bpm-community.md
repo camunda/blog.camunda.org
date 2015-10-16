@@ -1,17 +1,19 @@
 ---
 title: "New: camunda BPM-Community"
-date: "2013-04-09T17:58:00+02:00"
+date: "2013-04-09"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/04/new-camunda-bpm-community.html"
 
 ---
 
+<div>
 <br />
 Process management is not a bureaucratic evil but can be a key instrument for scalable business models.<br />
 But to do so we need to get rid of our old ways of thinking. Need an example? The whole <a href="http://camundabpm.blogspot.de/2013/04/the-camunda-hypothesis.html">Zero Code BPM – Illusion</a>, is one of many errors that have dominated process management in the past.<br />
@@ -33,3 +35,4 @@ Are we doing this without self-interest? Not quite. camunda will profit as this 
 <br />
 Therefore: let’s do it :-)<br />
 <br />
+</div>

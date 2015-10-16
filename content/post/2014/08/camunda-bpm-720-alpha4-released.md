@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.2.0-alpha4 released: CMMN Listener, Tasklist, Spin, Connect"
-date: "2014-08-07T16:11:00+02:00"
+date: "2014-08-07"
 author: "Sebastian Menski"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/08/camunda-bpm-720-alpha4-released.html"
 
 ---
 
+<div>
 Today we release the next alpha release of camunda BPM platform. The highlights of this release are:<br />
 <br />
 <ul>
@@ -67,4 +68,6 @@ Accessing REST APIs with camunda Connect</h3>
 <div>
 <div style="text-align: left;">
 With the new camunda Connect REST HTTP Connector we provide a low level connector to access REST APIs from a BPMN process. A simple example process which demonstrates the new connector in combination with variable mappings and script execution can be found in our <a href="https://github.com/camunda/camunda-bpm-examples/tree/master/servicetask/rest-service" target="_blank">examples repository</a>.</div>
+</div>
+
 </div>

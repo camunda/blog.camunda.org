@@ -1,22 +1,19 @@
 ---
 title: "Feedback Request: Process Implementation with XML & JSON Data and Scripting Languages"
-date: "2014-05-02T15:52:00+02:00"
+date: "2014-05-02"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "classless"
-  - "feedback"
-  - "JSON"
-  - "spin"
-  - "XML"
+  - "Release Note"
 
 aliases:
   - "/2014/05/feedback-request-process-implementation.html"
 
 ---
 
+<div>
 One of our largest customers approached us with the following requirement:<br />
 <br />
 <i>"We want to implement BPMN processes, such that&nbsp;</i><br />
@@ -58,3 +55,5 @@ In order to render this more concrete, we developed an example which attempts to
 <br /></div>
 <div>
 <i>(Note: I am not sure whether the example is easy to understand. If not, let us know then we can improve it.)</i></div>
+
+</div>

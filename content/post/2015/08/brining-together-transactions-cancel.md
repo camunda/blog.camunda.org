@@ -1,17 +1,19 @@
 ---
 title: "Bringing Together: Transactions, Cancel Events and Compensation Tasks"
-date: "2015-08-10T09:34:00+02:00"
+date: "2015-08-10"
 author: "Niall Deehan"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/brining-together-transactions-cancel.html"
 
 ---
 
+<div>
 If you've ever been lucky enough to enjoy <a href="http://camunda.com/bpmn/training/#tab1">Camunda's BPMN training</a> then you probably have fond memories of the slide featuring Compensation tasks and Cancel events. It happens to be the very last slide in the symbol set section and is traditionally follows by a well deserved break. It also happens to be a very well implemented part of the Camunda engine.<br />
 <br />
 This post is going to be all about how a process containing a transaction, cancel end event and compensation task are all implemented. The process I'm going to be describing is available <a href="https://github.com/camunda/camunda-consulting/tree/master/snippets/bpmn-transaction">on github to download</a> and play with yourself. the process itself looks like this:<br />
@@ -70,3 +72,4 @@ For more information on these events<a href="http://docs.camunda.org/7.3/api-ref
 <br />
 <br />
 <br />
+</div>

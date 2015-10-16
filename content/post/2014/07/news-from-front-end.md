@@ -1,28 +1,19 @@
 ---
 title: "News from the front-(end)"
-date: "2014-07-23T09:25:00+02:00"
+date: "2014-07-23"
 author: "Valentin Vago"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "embedded forms"
-  - "JavaScript"
-  - "node.js"
-  - "SDK"
-  - "task forms"
-  - "tasklist"
-  - "toolkit"
-  - "UI"
-  - "web-app"
-  - "webapp"
+  - "Release Note"
 
 aliases:
   - "/2014/07/news-from-front-end.html"
 
 ---
 
+<div>
 The front-end of the camunda BPM platform has been under heavy development.<br />
 The web-apps have been externalized and separated into different projects,<br />
 which means that the "<a href="https://github.com/camunda/camunda-admin-ui" target="_blank">admin</a>", the "<a href="https://github.com/camunda/camunda-cockpit-ui" target="_blank">cockpit</a>" and the upcoming "<a href="https://github.com/camunda/camunda-tasklist-ui" target="_blank">tasklist</a>" have their own repositories,<br />
@@ -94,3 +85,4 @@ As mentioned, there is a lot of work done (and to be done) on the different aspe
 We have a plan, we started implementing it and we will, within a few weeks, add API client resources, support additional form field types, improve the stability of our code and provide a brand new web-based user interface for the tasklist.<br />
 <br />
 By the way... if you want to work on those kind of projects, with a small but great team and play some kicker: we are still <a href="http://camunda.com/about/jobs/frontend-developer.php">looking for front-end developers</a>.
+</div>

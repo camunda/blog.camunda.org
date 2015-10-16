@@ -1,18 +1,19 @@
 ---
 title: "Announcing the Release Date of camunda BPM 7.2.0 GA"
-date: "2014-09-30T15:13:00+02:00"
+date: "2014-09-30"
 author: "Robert Gimbel"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/09/announcing-release-date-of-camunda-bpm.html"
 
 ---
 
+<div>
 <span style="font-family: Arial, Helvetica, sans-serif;"><span style="background-color: white; color: #333333; font-size: 15px; line-height: 23.1000003814697px;">The next release date of&nbsp;</span><a href="http://www.camunda.org/" style="background-color: white; color: #b5152b; font-size: 15px; line-height: 23.1000003814697px; text-decoration: none;">camunda BPM</a><span style="background-color: white; color: #333333; font-size: 15px; line-height: 23.1000003814697px;">&nbsp;has been finalized:</span></span><br />
 <h3>
 <span style="font-family: Arial, Helvetica, sans-serif;"><span style="color: #333333; line-height: 23.1000003814697px;">7.2.0 GA* will ship on November 30</span><span style="color: #333333; line-height: 23.1000003814697px;">,</span><span style="color: #333333; line-height: 23.1000003814697px;">&nbsp;2014</span></span></h3>
@@ -49,3 +50,5 @@ You want to know more? We will announce the release webinar dates soon on this b
 <span style="font-family: Arial, Helvetica, sans-serif;"><br /></span></div>
 <div>
 <span style="font-family: Arial, Helvetica, sans-serif;">Looking forward to a really awesome release!</span></div>
+
+</div>

@@ -1,22 +1,19 @@
 ---
 title: "camunda Modeler 2.6.0 released: Field Injection, properties panel and bug fixes"
-date: "2014-05-26T17:36:00+02:00"
+date: "2014-05-26"
 author: "Michael Schöttes"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "camunda-modeler-standalone"
-  - "Eclipse"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/05/camunda-modeler-260-released-field.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 The camunda BPM team is happy to announce the release of camunda Modeler 2.6.0. This release contains updates on the properties panel, a new properties tab, bpmn 2.0 alignment and bug fixes.<br />
 Find a complete list of issues solved in this release in <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13192">JIRA</a>.<br />
@@ -39,3 +36,4 @@ The new modeler offers you the possibility to edit expressions without the xsi:t
 Download the <a href="http://camunda.org/release/camunda-modeler/kepler/camunda-modeler-kepler-latest.zip">prepackaged modeler</a>, update your <a href="http://camunda.org/download/modeler/">Eclipse plugin</a> or check out the <a href="http://camunda.org/bpmn/tool/">standalone version</a> <b>NOW</b>! Give us feedback in our&nbsp;<a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users" style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">our forums</a><span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">&nbsp;or&nbsp;on&nbsp;</span><a href="https://twitter.com/camundaBPM" style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">twitter</a>.<br />
 <br />
 Happy modeling!!!&nbsp;</div>
+</div>

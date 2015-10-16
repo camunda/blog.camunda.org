@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0-alpha7 released"
-date: "2013-07-04T16:49:00+02:00"
+date: "2013-07-04"
 author: "Roman Smirnov"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/07/camunda-bpm-70-alpha7-released.html"
 
 ---
 
+<div>
 <a href="http://camunda.org/download/">camunda BPM 7.0.0-alpha7</a> is out now!<br />
 <br />
 The highlights of this new release are:
@@ -77,3 +78,4 @@ The variable instance query is also exposed via the <a href="http://docs.camunda
 <br />
 <br />
 <br /></div>
+</div>

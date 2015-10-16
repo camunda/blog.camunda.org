@@ -1,24 +1,19 @@
 ---
 title: "The Case for Open Source Embedded Case Management"
-date: "2014-07-19T10:00:00+02:00"
+date: "2014-07-19"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "ACM"
-  - "adaptive case management"
-  - "BPMN"
-  - "case management"
-  - "CMMN"
-  - "dynamic case management"
-  - "Open Source"
+  - "Release Note"
 
 aliases:
   - "/2014/07/open-source-embedded-case-management.html"
 
 ---
 
+<div>
 <div>
 In camunda BPM we enhance our lightweight embedded BPMN Process Engine with <a href="http://docs.camunda.org/latest/api-references/cmmn10/">case management features</a> based on CMMN. CMMN is the new emerging industry standard for (Adaptive) Case Management (ACM) developed by the OMG (Object Management Group), the same consortium which is also behind &nbsp;the BPMN 2.0 standard. I believe that lightweight open source solutions based on open standards can make a difference in the case management space. This is why.</div>
 <h3>
@@ -62,3 +57,5 @@ So traditionally, enterprises had to choose between either developing everything
 </div>
 <div>
 We have published a&nbsp;<a href="http://blog.camunda.org/2014/12/getting-started-cmmn-and-camunda.html">getting started guide for CMMN</a>.</div>
+
+</div>

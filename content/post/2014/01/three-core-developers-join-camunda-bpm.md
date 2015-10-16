@@ -1,17 +1,19 @@
 ---
 title: "Three new core Developers join camunda BPM Team"
-date: "2014-01-07T12:57:00+01:00"
+date: "2014-01-07"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/01/three-core-developers-join-camunda-bpm.html"
 
 ---
 
+<div>
 A warm welcome to the new guys!<br />
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
@@ -89,3 +91,4 @@ If you are interested in joining our team, have a look at our jobs page:&nbsp;<a
 </tbody></table>
 Thanks to <a href="https://twitter.com/falko_menge">Falko Menge</a> for taking the pictures!<br />
 <br />
+</div>

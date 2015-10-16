@@ -1,29 +1,23 @@
 {{ partial "header.html" . }}
-<!--
-  {{ range $bim, $bam := .Site.Taxonomies.categories }}
-    <div>{{ $bim }}</div>
-    <div>{{ $bam }}</div>
-    <pre>{{ printf "%T" . }}</pre>
-    <pre>{{ printf "%#v" . }}</pre>
-    {{ . }}
-  {{ end }}
- -->
-  <div class="page-content col-xs-12 col-sm-8">
-  {{ range first 20 .Data.Pages }}
-    <article>
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 10 }}
+
+
+  <div class="page-content mixed-list list">
+  {{ range (.Paginator 10).Pages }}
+    {{ if eq .Section "post" }}<article>{{ else }}<section>{{ end }}
       {{ partial "post-header.html" . }}
 
-      <div class="content">
-        {{ .Summary }}
+      <div class="content summary">
+        <div>{{ .Summary }}</div>
       </div>
 
-      {{ partial "readmore.html" . }}
-    </article>
+      <footer>
+        {{ partial "readmore.html" . }}
+      </footer>
+    {{ if eq .Section "post" }}</article>{{ else }}</section>{{ end }}
   {{ end }}
 
   {{ template "_internal/pagination.html" . }}
   </div>
-
-{{ partial "sidebar.html" . }}
 
 {{ partial "footer.html" . }}

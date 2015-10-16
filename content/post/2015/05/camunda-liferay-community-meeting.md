@@ -1,17 +1,19 @@
 ---
 title: "Camunda + Liferay Community Meeting"
-date: "2015-05-06T09:30:00+02:00"
+date: "2015-05-06"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/05/camunda-liferay-community-meeting.html"
 
 ---
 
+<div>
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://4.bp.blogspot.com/-_yEfasSmK58/VUj4Agr-ITI/AAAAAAAAAQQ/DXUeeauUQK4/s1600/ancud.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-_yEfasSmK58/VUj4Agr-ITI/AAAAAAAAAQQ/DXUeeauUQK4/s1600/ancud.jpg" height="150" width="200" /></a></div>
 Yesterday evening we met at our Partner Ancud IT in Nurremberg (Germany). Ancud presented their experiences using Portals (namely the Open Source Portal Liferay) in combination with Process Engines (namely camunda :-)). That was already a topic in a recent webinar, you can check out the recording online: <a href="https://network.camunda.org/webinars/21" target="_blank">English </a>or <a href="https://network.camunda.org/webinars/3" target="_blank">German</a>. Afterwards we had interessting discussions about <b>DMN use cases</b> and a "social collaboration hub" research project. But let's start from the beginning.<br />
@@ -65,3 +67,4 @@ Another example was from automotive: If your car breaks down you might have a lo
 <b>Thanks for reading</b><br />
 <br />
 If you want to join community meetings go to <a href="https://network.camunda.org/meetings/" target="_blank">Camunda Network</a>, you can register for the newsletter easily to stay informed. If you want to host some or even offer a presentation / experience report let us know!
+</div>

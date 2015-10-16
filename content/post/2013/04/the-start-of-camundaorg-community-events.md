@@ -1,17 +1,19 @@
 ---
 title: "The start of camunda.org community events"
-date: "2013-04-24T10:02:00+02:00"
+date: "2013-04-24"
 author: "Nastasja Johnston"
 
 categories:
-  - "Development"
+  - "Community"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/04/the-start-of-camundaorg-community-events.html"
 
 ---
 
+<div>
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://2.bp.blogspot.com/-QEpaHJiZRDs/UXeQf1HMc1I/AAAAAAAAACc/M8dyx9yK5NU/s1600/20130417_210530.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="150" src="http://2.bp.blogspot.com/-QEpaHJiZRDs/UXeQf1HMc1I/AAAAAAAAACc/M8dyx9yK5NU/s200/20130417_210530.jpg" width="200" /></a></div>
@@ -35,3 +37,4 @@ And last but not least, our partners <a href="http://plexiti.com/" target="_blan
 <img height="240" src="https://pbs.twimg.com/media/BIeiHhXCUAEyOJp.jpg:large" width="320" /><br />
 <br />
 <br />
+</div>

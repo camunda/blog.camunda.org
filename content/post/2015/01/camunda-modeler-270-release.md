@@ -1,22 +1,19 @@
 ---
 title: "Camunda Modeler 2.7.0 release"
-date: "2015-01-06T14:53:00+01:00"
+date: "2015-01-06"
 author: "Michael Schöttes"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "Eclipse"
-  - "modeling"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/01/camunda-modeler-270-release.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">The camunda BPM team is pleased to announce the release of camunda Modeler 2.7.0. This release is dedicated to align the latest improvements of camunda BPM 7.2 with the modelers properties panel.&nbsp;</span><br />
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;"><br /></span>
@@ -69,3 +66,5 @@ Where to download?</h3>
 <br /></div>
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;"><br /></span>
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;"><br /></span></div>
+
+</div>

@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.3.0-alpha3 released"
-date: "2015-04-24T11:46:00+02:00"
+date: "2015-04-24"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/04/camunda-bpm-730-alpha3-released.html"
 
 ---
 
+<div>
 A new alpha release of our open source BPM and Workflow platform is available for <a href="http://camunda.org/download/#latest">download</a>. The highlights of this release are:<br />
 <ul>
 <li>Process Engine Java and Rest Api</li>
@@ -157,3 +158,5 @@ This will be completed before we release the 7.3.0 Final release.</div>
 <br /></div>
 <div>
 We believe this is a big step for Camunda as it will allow users to deploy the Rest API and web applications in the could and other untrusted networks and restrict access to resources on a per user or group level.</div>
+
+</div>

@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.1.0-alpha4 released - BPMN coverage, Performance & Cockpit"
-date: "2014-03-11T19:09:00+01:00"
+date: "2014-03-11"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/03/camunda-bpm-710-alpha4-released.html"
 
 ---
 
+<div>
 Today we released camunda BPM 7.1.0-alpha4. This release provides many improvements and bug fixes:<br />
 <ul>
 <li><b>Process Engine:</b></li>
@@ -201,3 +202,4 @@ What else is gioing on?</h3>
 <br />
 <br />
 <br />
+</div>

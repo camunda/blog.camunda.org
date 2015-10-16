@@ -1,18 +1,19 @@
 ---
 title: "Use camunda bom for maven Dependency Management"
-date: "2014-04-15T10:42:00+02:00"
+date: "2014-04-15"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "maven"
+  - "Release Note"
 
 aliases:
   - "/2014/04/use-camunda-bom-for-maven-dependency.html"
 
 ---
 
+<div>
 Sometimes you need to include multiple camunda BPM maven dependencies in your project. The <a href="http://maven.apache.org/">apache maven</a> best practice &nbsp;is to use a bom ("<a href="http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html">Bill of Materials</a>") which ensures that you get the matching versions for multiple dependencies. For camunda bpm we prepared the <span style="font-family: Courier New, Courier, monospace; font-size: x-small;">camunda-bom</span> to make sure you get the right versions for all camunda dependencies and our transitive dependencies.<br />
 <br />
 First, import the <span style="font-family: Courier New, Courier, monospace; font-size: x-small;">camunda-bom</span> in the <span style="font-family: Courier New, Courier, monospace; font-size: x-small;">dependencyManagement</span> section of your maven pom:<br />
@@ -68,3 +69,4 @@ What's more: we also give you the versions for the the required dependencies of 
 <br />
 Note that most of our maven artifacts are pushed to <a href="http://search.maven.org/#browse%7C-713420858">maven central</a>.<br />
 <br />
+</div>

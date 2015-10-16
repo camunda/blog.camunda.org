@@ -1,17 +1,19 @@
 ---
 title: "First Version of dmn.io Released"
-date: "2015-08-06T14:40:00+02:00"
+date: "2015-08-06"
 author: "Sebastian Stamm"
 
 categories:
-  - "Release"
+  - "Modeling"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/first-version-of-dmnio-released.html"
 
 ---
 
+<div>
 Today we release the first version of dmn.io, our new DMN modeling toolkit. dmn.io allows you to view and model decisions with the DMN 1.0 standard directly on the web. The dmn.io library provides a viewer and an editor that can be embedded into web applications. With this release we provide the front-end element for the <a href="http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html" target="_blank">latest Camunda BPM 7.4.0 alpha release</a>, which introduced support for DMN.<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -60,3 +62,5 @@ What's next?</h2>
 <li>Authorizations (e.g. allow editing certain cells only)</li>
 <li>Integration with Camunda Cockpit</li>
 </ul>
+
+</div>

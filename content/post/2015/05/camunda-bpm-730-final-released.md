@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.3.0 Final Released"
-date: "2015-05-29T13:00:00+02:00"
+date: "2015-05-29"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/05/camunda-bpm-730-final-released.html"
 
 ---
 
+<div>
 I’m pleased to announce the availability of Camunda 7.3.0 Final. The release focuses on improving Camunda BPM for large production deployments. The highlights are:<br />
 <ul><li>Process instance repair and modification: go back or skip ahead in a process.</li>
 <li>Authorizations: restrict access to processes, tasks and administrative actions.</li>
@@ -112,3 +113,4 @@ minification of HTML and Javascript resources</li>
 <a href="http://camunda.github.io/camunda-commons-ui/latest/">Reusable Widget library</a> including widgets for displaying BPMN diagrams, editing Variables ...</li>
 </ul><br />
 <h2>Thank You</h2>I want to take this opportunity to thank everybody who contributed to the new release including our community members and our amazing <a href="http://camunda.org/team/">team</a> at Camunda.
+</div>

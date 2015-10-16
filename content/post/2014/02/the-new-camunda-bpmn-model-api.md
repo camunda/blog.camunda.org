@@ -1,18 +1,19 @@
 ---
 title: "The new camunda BPMN model API"
-date: "2014-02-07T17:16:00+01:00"
+date: "2014-02-07"
 author: "Sebastian Menski"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "bpmn-model-api"
+  - "Release Note"
 
 aliases:
   - "/2014/02/the-new-camunda-bpmn-model-api.html"
 
 ---
 
+<div>
 As already mentioned in our <a href="http://blog.camunda.org/2014/01/camunda-bpm-710-alpha2-released.html" target="_blank">last alpha release blog post</a>&nbsp;we are currently working on a BPMN model API to parse, create, edit and write BPMN 2.0 XML files. Last Friday we opened our <a href="https://github.com/camunda/camunda-bpmn-model" target="_blank">GitHub repository</a>&nbsp;and have since then created a <a href="http://docs.camunda.org/guides/user-guide/#bpmn-model-api" target="_blank">userguide</a> and some <a href="https://github.com/camunda/camunda-quickstarts/tree/master/bpmn-model-api" target="_blank">quickstarts</a>.<br />
 <br />
 The BPMN model API offers you a simple and straightforward way to interact with an BPMN 2.0 model. It enables you to gather information from an existing model, edit and extend them. Of course you can also create completely new ones.<br />
@@ -184,3 +185,5 @@ To learn how to use the fluent builder API &nbsp;have a look at our&nbsp;<a href
 <br /></div>
 <div>
 Well, what more can I say then to&nbsp;<a href="https://github.com/camunda/camunda-bpmn-model" target="_blank">check it out</a> and and give us feedback!</div>
+
+</div>

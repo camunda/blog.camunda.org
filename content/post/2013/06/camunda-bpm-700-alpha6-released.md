@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0.0-alpha6 released"
-date: "2013-06-14T18:04:00+02:00"
+date: "2013-06-14"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/06/camunda-bpm-700-alpha6-released.html"
 
 ---
 
+<div>
 <div>
 <br /></div>
 <div>
@@ -91,3 +92,4 @@ We will visualize the Activity Instance tree in the process instance detail view
 See&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-719">CAM-719</a></div>
 <h3>
 <a href="http://camundabpm.blogspot.de/2013/06/introducing-activity-instance-model-to.html">Read more about the activity instance tree in this follow up blog post</a>.</h3>
+</div>

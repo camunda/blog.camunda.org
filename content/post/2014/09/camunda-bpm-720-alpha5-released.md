@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.2.0-alpha5 released"
-date: "2014-09-30T16:33:00+02:00"
+date: "2014-09-30"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/09/camunda-bpm-720-alpha5-released.html"
 
 ---
 
+<div>
 Camunda BPM 7.2.0-alpha5 has been released. This alpha release contains<br />
 <ul>
 <li>Tasklist:&nbsp;</li>
@@ -47,3 +48,5 @@ All in all, 120 issues were closed. <a href="https://app.camunda.com/jira/secure
 <a href="http://camunda.org/download/#latest">Download Camunda BPM 7.2.0-alpha5 now!</a><br />
 <br />
 Note that this may be the last alpha version before the <a href="http://blog.camunda.org/2014/09/announcing-release-date-of-camunda-bpm.html">7.2.0-Final release which is due November 30st</a>.</div>
+
+</div>

@@ -1,18 +1,19 @@
 ---
 title: "Announcing the Release Date of camunda BPM 7.0.0 GA"
-date: "2013-06-18T17:18:00+02:00"
+date: "2013-06-18"
 author: "Robert Gimbel"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/06/announcing-release-date-of-camunda-bpm.html"
 
 ---
 
+<div>
 We are proud to announce the major release date of&nbsp;<a href="http://www.camunda.org/">camunda BPM</a>:<br />
 <h3>
 7.0.0 GA* on 31.08.2013</h3>
@@ -59,3 +60,4 @@ Just being the product owner, I will not build any of this stuff myself. The cre
 <br /></div>
 <div>
 Great work, great project!</div>
+</div>

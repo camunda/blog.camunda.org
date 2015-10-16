@@ -1,20 +1,19 @@
 ---
 title: "Scripting Everywhere in camunda BPM"
-date: "2014-07-21T15:28:00+02:00"
+date: "2014-07-21"
 author: "Sebastian Menski"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "groovy"
-  - "scripting"
+  - "Release Note"
 
 aliases:
   - "/2014/07/scripting-everywhere-in-camunda-bpm.html"
 
 ---
 
+<div>
 With the last <a href="http://blog.camunda.org/2014/07/camunda-bpm-720-alpha3-released.html" target="_blank">camunda BPM 7.2.0-alpha3</a> release we heavily extended the scripting support of the camunda BPM platform. We started to improve scripting support with the <a href="http://blog.camunda.org/2014/05/720-alpha1-released-rest-api-bugfixes.html" target="_blank">7.2.0-alpha1</a> release and now we think we are done. It is now your turn to start using the different scripting languages and help us to polish this feature for our final release. To get an detailed overview of the scripting support please visit our&nbsp;<a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-scripting" target="_blank">user guide</a>.<br />
 <a name='more'></a><br />
 <h3>
@@ -110,3 +109,5 @@ So that's it. A whole process without a single line of Java code. To see the com
 Now it's your turn. Have fun and start scripting. And if you have any remarks our if you miss a features please let us know.</div>
 <div>
 <br /></div>
+
+</div>

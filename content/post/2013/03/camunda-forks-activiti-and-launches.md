@@ -1,18 +1,19 @@
 ---
 title: "camunda forks Activiti and launches camunda BPM"
-date: "2013-03-18T09:00:00+01:00"
+date: "2013-03-18"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/03/camunda-forks-activiti-and-launches.html"
 
 ---
 
+<div>
 I am proud to announce that today&nbsp;<a href="http://www.camunda.com/">camunda</a>&nbsp;launches a new open source BPM project:&nbsp;<a href="http://www.camunda.org/">camunda BPM</a>. At this juncture we part ways with the <a href="http://www.activiti.org/">Activiti project</a>&nbsp;which we have contributed to since the first days.<br />
 <br />
 Leaving Activiti is a sad but necessary step for us. Starting as a consulting company, we have built a customer base of 250+ in little over 4 years. Last year, we entered the BPM vendor business with the camunda fox BPM platform. Our success and the <a href="http://www.camunda.org/community/users.html">positive feedback we got from customers</a> made us realize that we have to go all-in. Today, we drop the "fox"-brand and as camunda BPM, we&nbsp;embark on the journey of building the best BPM platform, under our own leadership &amp; vision.<br />
@@ -74,3 +75,4 @@ This is what we believe in and this is what we build.<br />
 <span style="color: #666666; font-family: inherit; font-size: x-small;">Activiti and Alfresco are registered trademarks of Alfresco Software,
 Inc.</span><br />
 <span style="font-size: x-small;"><span style="color: #666666; font-family: inherit;">All other trademarks are the property of their respective owners</span></span>
+</div>

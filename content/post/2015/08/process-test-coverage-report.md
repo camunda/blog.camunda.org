@@ -1,17 +1,19 @@
 ---
 title: "Process Test Coverage Report"
-date: "2015-08-31T20:35:00+02:00"
+date: "2015-08-31"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/process-test-coverage-report.html"
 
 ---
 
+<div>
 As part of the Hack Days this year my colleague Falko migrated an existing tool we (Camunda Consulting) used with success in a lot of projects to&nbsp;<a href="http://bpmn.io/">bpmn.io</a>: The <a href="https://github.com/camunda/camunda-consulting/tree/master/snippets/process-test-coverage">Process Test Coverage Report Generator</a>. It just hooks into an automated test (typically JUnit) and creates an HTML report showing the coverage:<br />
 <br />
 <ul>
@@ -36,3 +38,5 @@ By the way - our Best Practice is to go for "Flow Node Coverage" - so your Test 
 <br /></div>
 <div>
 Happy Testing!</div>
+
+</div>

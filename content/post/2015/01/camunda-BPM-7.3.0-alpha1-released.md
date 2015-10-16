@@ -1,18 +1,19 @@
 ---
 title: "Camunda BPM 7.3.0-alpha1 released"
-date: "2015-01-27T16:24:00+01:00"
+date: "2015-01-27"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/01/camunda-BPM-7.3.0-alpha1-released.html"
 
 ---
 
+<div>
 The first alpha release in the 7.3 branch is ready! This is what's inside:<br />
 <br />
 <ul>
@@ -116,4 +117,6 @@ This should make cockpit better suited for Web / Cloud deployments</div>
 <div>
 <br /></div>
 <div>
+</div>
+
 </div>

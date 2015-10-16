@@ -1,17 +1,19 @@
 ---
 title: "Custom Location for bpm-platform.xml Configuration File"
-date: "2014-03-12T09:12:00+01:00"
+date: "2014-03-12"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/03/custom-location-for-bpm-platformxml.html"
 
 ---
 
+<div>
 Starting with camunda BPM 7.1.0-alpha4 it is now possible to put the <span style="font-family: Courier New, Courier, monospace;">bpm-platform.xml</span> file in a different location. This solves the problem that you have to open the camunda bpm platform EAR module and change the configuration file inside the EAR file if you want to customize your settings.<br />
 <br />
 <i>Note: This post does not apply to the JBoss Application Server distribution since there the process engine configuration is put directly into the JBoss Application Server configuration file (standalone.xml / domain.xml).</i><br />
@@ -31,3 +33,4 @@ The location can be set using<br />
 If none of the above is set, we will attempt to load the <span style="font-family: Courier New, Courier, monospace;">bpm-platform.xml</span> from the default location which is the classpath in the Glassfish, IBM Websphere, Oracle Weblogic distributions and&nbsp;<span style="background-color: #f9f2f4; color: #c7254e; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; font-size: 13px; line-height: 18.000001907348633px;">{CATALINA_BASE} || ${CATALINA_HOME} + /conf/&nbsp;</span>in the apache tomcat distribution.<br />
 <br />
 <a href="http://docs.camunda.org/latest/api-references/deployment-descriptors/#descriptors-bpm-platformxml-configure-location-of-the-bpm-platformxml-file">Read more about it in the docs.</a>
+</div>

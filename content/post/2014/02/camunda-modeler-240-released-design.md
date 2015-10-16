@@ -1,20 +1,19 @@
 ---
 title: "camunda Modeler 2.4.0 released: Design / Source View and enhanced file handling"
-date: "2014-02-10T13:37:00+01:00"
+date: "2014-02-10"
 author: "Michael Schöttes"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "BPMN"
-  - "camunda-modeler"
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/02/camunda-modeler-240-released-design.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">Today we are happy to announce the new release of our camunda Modeler. Beside a couple of bug fixes this version adds a Source / Design view switch and an enhanced file handling.</span><br />
 <span style="background-color: white; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;"><br /></span>
@@ -44,3 +43,4 @@ Furthermore you can work on a diagram in your favorite text editor while the sam
 The new release is available for Eclipse Kepler and Juno/Indigo.<br />
 <br />
 <a href="http://camunda.com/about/jobs/" style="background-color: white; color: #2288bb; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">We are hiring!</a></div>
+</div>

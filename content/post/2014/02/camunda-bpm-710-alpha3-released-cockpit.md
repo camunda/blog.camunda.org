@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.1.0-alpha3 released - Cockpit, BPMN Model Api and Task Operation Log"
-date: "2014-02-20T17:44:00+01:00"
+date: "2014-02-20"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/02/camunda-bpm-710-alpha3-released-cockpit.html"
 
 ---
 
+<div>
 Today we release the next alpha version of camunda BPM. The highlights of this release are:<br />
 <ul>
 <li><a href="http://docs.camunda.org/latest/guides/user-guide/#bpmn-model-api">Bpmn Model API</a></li>
@@ -117,3 +118,4 @@ Great progress in fluent assertion library maintained by <a href="https://github
 <br />
 <br />
 <br /></div>
+</div>

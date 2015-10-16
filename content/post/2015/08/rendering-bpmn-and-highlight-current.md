@@ -1,17 +1,19 @@
 ---
 title: "Rendering BPMN and highlight current task using bpmn.io"
-date: "2015-08-06T07:46:00+02:00"
+date: "2015-08-06"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Modeling"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/rendering-bpmn-and-highlight-current.html"
 
 ---
 
+<div>
 With bpmn.io and the Camunda REST API it is really simple to develop a small HTML page that displays a process instance grafically and highlights some activities. In our "<a href="https://github.com/camunda/camunda-consulting/blob/master/snippets/jsf-simple-tasklist/" target="_blank">JSF Simple Tasklist</a>" snippet we used this to highlight the current Task (like it is done in the Camunda BPM Tasklist):<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -63,3 +65,5 @@ You can see the full JSF page here:&nbsp;<a href="https://github.com/camunda/cam
 Note that it does not have to be JSF - a simple HTML page does the trick as well, as you can see in&nbsp;<a href="https://github.com/camunda/camunda-consulting/blob/master/snippets/jsf-simple-tasklist/src/main/webapp/app/taskDetail.html" target="_blank">taskDetail.html</a>. Or you can embedd all this in the tooling of your choice :-)<br />
 <br />
 Great stuff - thanks to the <a href="http://bpmn.io/about/" target="_blank">bpmn.io Team</a> for the good work!</div>
+
+</div>

@@ -1,19 +1,19 @@
 ---
 title: "Get your Tasklist as RSS Feed"
-date: "2014-01-14T09:35:00+01:00"
+date: "2014-01-14"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "how-to"
-  - "tasklist"
+  - "Release Note"
 
 aliases:
   - "/2014/01/get-your-tasklist-as-rss-feed.html"
 
 ---
 
+<div>
 I don't like watching my Tasklist all day. <a href="http://blog.camunda.org/2013/10/how-to-send-email-when-usertask-is.html">Getting email notifications for tasks that I should complete</a> is nice, but sometimes I don't want to complete the task right after being notified but still need to keep in mind there is something pending.<br />
 <br />
 This is how I came to create a simple PHP script that exposes my tasks as an RSS Feed.  I can use that in my personal master dashboard (Microsoft Outlook) to keep track of my camunda Tasklist. Here is the result:<br />
@@ -26,3 +26,4 @@ I used the <a href="http://camunda.github.io/camunda-bpm-php-sdk/">camunda BPM P
 <a href="https://github.com/camunda/camunda-bpm-php-sdk/blob/examples/example/oop/tasklistrss/index.php">Tasklist RSS Sources</a><br />
 <br />
 <br />
+</div>

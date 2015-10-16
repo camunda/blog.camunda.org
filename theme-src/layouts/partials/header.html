@@ -21,16 +21,31 @@
   <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css" />
   <link href='{{ .Site.BaseURL }}favicon.ico' rel='icon' type='image/x-icon'/>
 </head>
-<body>
+<body class="{{ if .IsHome }}home{{ end }}{{ if isset .Params "pagecssclass" }} {{ .Params.pagecssclass }}{{end}}">
+
+<header>
+  <div>
+    <h1>
+      <a class="site-link" href="{{ .Site.BaseURL }}">
+        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="site-title">{{ .Site.Title }}</span>
+      </a>
+    </h1>
+
+    <nav class="categories">
+      <ul>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/modeling">Modeling</a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/execution">Execution</a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}categories/community">Community</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
 <div class="page-wrapper">
-  <header class="container-fluid">
-    <div class="row">
-      <h1 class="col-xs-12">
-        <a class="site-link" href="{{ .Site.BaseURL }}">
-          <span class="bpmn-icon-bpmn-io"></span> {{ .Site.Title }}
-        </a>
-      </h1>
-    </div>
-  </header>
-

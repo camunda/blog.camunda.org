@@ -1,0 +1,18 @@
+<blockquote>
+  <p>{{ .Inner }}</p>
+  <footer>
+    {{ if (.Get "attr") }}
+      {{ if (.Get "attrlink")}}<a href="{{ .Get "attrlink" }}">{{ end }}
+      {{ .Get "attr" }}
+      {{ if (.Get "attrlink")}}</a>{{ end }}
+    {{ end }}
+
+    {{ if (.Get "cite") }}
+    in <cite>
+      {{ if (.Get "citelink")}}<a href="{{ .Get "citelink" }}">{{ end }}
+      {{ .Get "cite" }}
+      {{ if (.Get "citelink")}}</a>{{ end }}
+    </cite>
+    {{ end }}
+  </footer>
+</blockquote>

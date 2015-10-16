@@ -1,17 +1,19 @@
 ---
 title: "Get your own camunda BPM T-Shirt!"
-date: "2013-12-11T19:44:00+01:00"
+date: "2013-12-11"
 author: "Bernd Rücker"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/12/get-your-own-camunda-bpm-t-shirt.html"
 
 ---
 
+<div>
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://1.bp.blogspot.com/-Q2fyVzBlghI/UqiuVZ1JCcI/AAAAAAAAAOI/iNxfOJXN8NQ/s1600/Tetris_Wei%C3%9F.JPG" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="200" src="http://1.bp.blogspot.com/-Q2fyVzBlghI/UqiuVZ1JCcI/AAAAAAAAAOI/iNxfOJXN8NQ/s200/Tetris_Wei%C3%9F.JPG" width="177" /></a></div>
@@ -98,3 +100,4 @@ And colors:<br />
 <div class="separator" style="clear: both; text-align: center;">
 <a href="http://1.bp.blogspot.com/-a4x-3fyLtb4/UqiuT5XJ1iI/AAAAAAAAANo/vmvJj085zT4/s1600/Tetris_Gr%25C3%25BCn.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-a4x-3fyLtb4/UqiuT5XJ1iI/AAAAAAAAANo/vmvJj085zT4/s320/Tetris_Gr%25C3%25BCn.JPG" width="289" /></a></div>
 <br />
+</div>

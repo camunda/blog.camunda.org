@@ -1,19 +1,19 @@
 ---
 title: "Get started with camunda BPM and Java EE"
-date: "2014-04-05T07:50:00+02:00"
+date: "2014-04-05"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "java ee"
-  - "jsf"
+  - "Release Note"
 
 aliases:
   - "/2014/04/get-started-with-camunda-bpm-and-java-ee.html"
 
 ---
 
+<div>
 Roman and Sebastian have written a brand new <a href="http://docs.camunda.org/latest/guides/getting-started-guides/java-ee/">getting started guide for camunda and Java EE</a>.<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
@@ -27,3 +27,4 @@ The source code of the tutorial can be found on <a href="https://github.com/camu
 I hope you like the tutorial, please give us feedback in the <a href="http://camunda.org/community/forum.html">forums</a> and via&nbsp;<a href="https://twitter.com/camundaBPM">@camundaBPM</a>.<br />
 <br />
 <a href="http://docs.camunda.org/latest/guides/getting-started-guides/java-ee/"><b>Read the guide on how to get started with camunda BPM and Java EE.</b></a>
+</div>

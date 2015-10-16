@@ -1,22 +1,19 @@
 ---
 title: "Automated UI testing with camunda web applications and IntelliJ IDE"
-date: "2014-07-11T09:00:00+02:00"
+date: "2014-07-11"
 author: "Michael Schöttes"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "e2e test"
-  - "grunt"
-  - "Protractor"
-  - "testing"
-  - "UI test"
+  - "Release Note"
 
 aliases:
   - "/2014/07/automated-ui-testing-with-camunda-web.html"
 
 ---
 
+<div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 <div dir="ltr" style="text-align: left;" trbidi="on">
 Automated user interface (UI) tests are an effective way to ensure the functionality of your webapp. Furthermore, they serve as E2E tests as they simulate real user interaction and stimulate the whole application down to the database.<br />
@@ -141,3 +138,5 @@ Protractor as test framework can easily be integrated in many setups, so that ev
 Last but not least, we decrease development time as we already get feedback from our UI tests during webapp development.<br />
 With IntelliJ we have a powerful IDE that allows us to build, run and debug UI tests. We thank <a href="http://www.jetbrains.com/" target="_blank">JetBrains </a>for the great support for our <a href="http://camunda.org/" target="_blank">open source project</a>.<br />
 <br /></div>
+
+</div>

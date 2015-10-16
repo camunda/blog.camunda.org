@@ -1,17 +1,19 @@
 ---
 title: "BPMN Quest - Camunda as a Game Engine!"
-date: "2015-09-01T09:51:00+02:00"
+date: "2015-09-01"
 author: "Niall Deehan"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/09/bpmn-quest-camunda-as-game-engine.html"
 
 ---
 
+<div>
 This year at the annual Camunda hackdays one team bravely took it upon themselves to balance out the innovative and useful projects with something fun and frivolous. For two days somewhere in Brandenburg we were "Awesome-Team-Awesome" and we turned the Camunda engine into a platform to create a D&amp;D style quest game. We call it BPMN Quest.<br />
 <br />
 If you can't wait for it - <a href="http://ec2-52-19-141-24.eu-west-1.compute.amazonaws.com:8080/CharacterCreator/frontend/?game=adventure">here you can play it right away</a>.<br />
@@ -56,3 +58,4 @@ We also utilized the BPMN standard in order to orchestrate the progression of th
 </tbody></table>
 <br />
 You can actually<a href="http://ec2-52-19-141-24.eu-west-1.compute.amazonaws.com:8080/CharacterCreator/frontend/?game=adventure"> play it online now</a> and you can also download the source <a href="https://github.com/NPDeehan/bpmn-quest">from Github</a>. It was a lot of fun to make - and we hope that it's also a bit of fun to play.
+</div>

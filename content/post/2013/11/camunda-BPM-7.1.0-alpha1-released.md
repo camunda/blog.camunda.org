@@ -1,20 +1,19 @@
 ---
 title: "camunda BPM 7.1.0-alpha1 released: Task Forms, Job Suspension and Bugfixes"
-date: "2013-11-29T17:22:00+01:00"
+date: "2013-11-29"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "cockpit"
-  - "release notes"
-  - "task forms"
+  - "Release Note"
 
 aliases:
   - "/2013/11/camunda-BPM-7.1.0-alpha1-released.html"
 
 ---
 
+<div>
 I am proud to announce the release of camunda BPM 7.1.0-alpha1. This is the first community alpha release in the 7.1 branch. The highlights of this release are:<br />
 <br />
 <ul>
@@ -60,3 +59,4 @@ camunda BPM Maven artifacts will be available through maven central shortly.</di
 <br /></div>
 <div>
 <a href="http://www.camunda.org/community/jobs.html">We are hiring!</a></div>
+</div>

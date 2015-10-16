@@ -1,18 +1,19 @@
 ---
 title: "Camunda 7.4.0-Alpha2 released"
-date: "2015-10-01T13:28:00+02:00"
+date: "2015-10-01"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2015/10/camunda-740-alpha2-released.html"
 
 ---
 
+<div>
 Today we release Camunda BPM 7.4.0-Alpha2. This is the second alpha release previewing the upcoming 7.4.0 Release.<br />
 <br />
 The highlights of this release are:<br />
@@ -91,3 +92,4 @@ We have completely revamped the whole <a href="http://docs.camunda.org/manual/la
 <li>As always, amazing things are happening in <a href="http://bpmn.io/">bpmn.io</a>,</li>
 <li>...</li>
 </ul>
+</div>

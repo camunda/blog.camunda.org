@@ -1,17 +1,19 @@
 ---
 title: "Camunda BPM 7.4.0 Alpha 1 Released"
-date: "2015-07-31T12:19:00+02:00"
+date: "2015-07-31"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/07/camunda-bpm-740-alpha-1-released.html"
 
 ---
 
+<div>
 Today we release Camunda BPM 7.4.0-Alpha1. This is the first alpha release previewing the upcoming 7.4.0 Release.<br />
 <br />
 The highlights of this release are:<br />
@@ -96,3 +98,5 @@ We hope you enjoy this release!<br />
 <li>...</li>
 </li>
 </ul><br />
+
+</div>

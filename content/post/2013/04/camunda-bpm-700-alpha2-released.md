@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0.0-alpha2 released"
-date: "2013-04-23T16:21:00+02:00"
+date: "2013-04-23"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/04/camunda-bpm-700-alpha2-released.html"
 
 ---
 
+<div>
 I am happy to announce the release of <a href="http://www.camunda.org/download/">camunda bpm platform 7.0.0-alpha2</a>. This is the first camunda BPM release that contains a distribution for Glassfish Application Server. You can now download a complete open source BPM platform with fully compliant Java EE 6 integration!<br />
 <br />
 <a href="http://www.camunda.org/download/">Download it now!</a><br />
@@ -54,4 +55,6 @@ For the next release we plan:</div>
 </ul>
 <div>
 <a href="http://www.camunda.org/download/">Go get it!</a></div>
+</div>
+
 </div>

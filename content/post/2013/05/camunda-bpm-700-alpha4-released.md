@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.0.0-alpha4 released"
-date: "2013-05-16T15:49:00+02:00"
+date: "2013-05-16"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2013/05/camunda-bpm-700-alpha4-released.html"
 
 ---
 
+<div>
 Release early and release often. Today we bring you<a href="http://www.camunda.org/download/"> the next release of camunda BPM (7.0.0-alpha4)</a>. The Highlights are:<br />
 <ul>
 <li><a href="http://camundabpm.blogspot.de/2013/05/extending-camunda-cockpit-through.html">First cut of new plugin API for camunda cockpit</a>.</li>
@@ -73,3 +74,4 @@ On top of that, we will continue work on the REST API and the Websphere distribu
 <br /></div>
 <div>
 Read the full <a href="http://camunda.org/roadmap/">Roadmap</a>.</div>
+</div>

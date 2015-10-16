@@ -1,17 +1,19 @@
 ---
 title: "Gaining insight into the Performance of camunda Process Engine"
-date: "2014-01-21T09:46:00+01:00"
+date: "2014-01-21"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/01/gaining-insight-into-performance-of.html"
 
 ---
 
+<div>
 The camunda process engine has a very active codebase and is constantly evolving. Only <a href="https://github.com/camunda/camunda-bpm-platform/commit/202913749dcd3ec88761699340a8bd0529b84e03">last week we did a major refactoring</a>, re-implementing the way the BPMN Boundary Event, Event Subprocess, Terminate End Event and similar constructs work. In summer we introduced an <a href="http://blog.camunda.org/2013/06/introducing-activity-instance-model-to.html">activity instance model</a> and rewrote the history implementation, turning it into a <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-history-and-audit-event-log">fire-and-forget event stream</a>.&nbsp;We also constantly add new features such as <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-incidents">incidents</a>&nbsp;and many others.<br />
 When doing such refactorings, the extensive process engine testsuite gives us the confidence that we do not break existing functionality from a functional perspective (process engine currently has 1669&nbsp;Testases, over 500 were added last year). On top of that, we put quite some effort into database migration testing, <a href="https://github.com/camunda/camunda-bpm-platform/blob/5984ad3ba7552c4e07b5126802059b931753c08a/qa/test-db-instance-migration/test-fixture-70/src/test/java/org/camunda/bpm/qa/upgrade/TestActivityInstanceUpgrade.java">making sure that you can migrate running process instances</a> from one version of camunda BPM to another. However, one important thing that we did not systematically track until now is process engine performance. We did do intermittent benchmarks whenever we did major changes but until now we did not track performance systematically.<br />
 In this post I want to give a short insight into the process engine performance testsuite we are currently setting up and the design goals behind it.<br />
@@ -133,3 +135,5 @@ The performance test suite then allows to aggregate the reults of all individual
 <br />
 <div class="separator" style="clear: both; text-align: left;">
 The Html report can be read by us developers and the JSON report allows us to process the aggregated results further. For instance, we can compare two executions of the testsuite and get insight into whether performance turned to the better or the worse.</div>
+
+</div>

@@ -1,20 +1,19 @@
 ---
 title: "{ \"json\" : \"everywhere\" } - How to use json in a process"
-date: "2015-02-09T09:08:00+01:00"
+date: "2015-02-09"
 author: "Roman Smirnov"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "embedded forms"
-  - "JSON"
-  - "spin"
+  - "Release Note"
 
 aliases:
   - "/2015/02/json-everywhere-how-to-use-json-in.html"
 
 ---
 
+<div>
 Since Camunda BPM platform 7.2 it is very easy to read, write and manipulate json objects by using Camunda Spin. Among other things, this feature is used to serialize Java objects inside a process instance in the process engine.<br />
 <br />
 But what if you want to use Json Variables without mapping to Java objects? With the next alpha release we will introduce a new <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-variables-supported-variable-values">ValueType </a>"json" (and "xml" but that is an other story).<br />
@@ -118,3 +117,4 @@ Now that we introduce Json variables as native ValueTypes, you can directly acce
 </code></pre><br />
 <br />
 The example resources can be found <a href="https://github.com/camunda/camunda-bpm-examples/tree/master/usertask/task-form-embedded-json">here</a>.
+</div>

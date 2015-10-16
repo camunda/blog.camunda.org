@@ -1,18 +1,19 @@
 ---
 title: "Finally! camunda BPM 7.1.0-Final is released"
-date: "2014-03-31T18:31:00+02:00"
+date: "2014-03-31"
 author: "Daniel Meyer"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/03/camunda-BPM-7.1.0-Final-released.html"
 
 ---
 
+<div>
 Today we release 7.1.0-Final, the new minor version of camunda BPM. Compared to the 7.0.0.Final release, the new version includes many new features and improvements:<br />
 <ol>
 <li>Improved process engine with Job Definitions, better BPMN coverage and improved performance,</li>
@@ -177,3 +178,4 @@ In addition, we added the <b>Generated Task Forms</b> feature which allows you t
 <ol><ol>
 </ol>
 </ol>
+</div>

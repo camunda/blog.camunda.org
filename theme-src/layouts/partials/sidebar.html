@@ -1,29 +1,43 @@
-<div class="page-sidebar col-xs-12 col-sm-4">
-  <div class="categories">
-    <h5>Categories</h5>
-    <ul>
-    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-      <li><a href="/categories/{{ $name | urlize }}">{{ $name }}</a></li>
-    {{ end }}
-    </ul>
-  </div>
+<!--
+<div class="sidebar">
+  <button class="sidebar-toggle" title="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <div class="blogroll">
-    <h5>Links</h5>
-    <ul>
-      <li><a href="http://bpmn.io">bpmn.io</a></li>
-      <li><a href="http://github.com/camunda">Camunda on github</a></li>
-      <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
-      <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
-    </ul>
-  </div>
+  <div class="sidebar-content">
 
-  <div class="tags">
-    <h5>Tags</h5>
-    <ul>
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <li><a href="/tags/{{ $name | urlize }}">{{ $name }}</a></li>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    <div class="taxonomy-{{ $taxonomyname }}">
+      <h5><a href="/{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a></h5>
+      <ul>
+        {{ range $termname, $value := $taxonomy }}
+        <li><a href="/{{ $taxonomyname | urlize }}/{{ $termname }}">{{ $termname }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
     {{ end }}
-    </ul>
+
+
+    <div class="categories">
+      <h5>Categories</h5>
+      <ul>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize }}">{{ $name }}</a></li>
+      {{ end }}
+      </ul>
+    </div>
+
+    <div class="blogroll">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
   </div>
 </div>
+-->

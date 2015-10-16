@@ -1,22 +1,19 @@
 ---
 title: "Embedded Case Management with CMMN in camunda BPM"
-date: "2014-07-22T07:27:00+02:00"
+date: "2014-07-22"
 author: "Daniel Meyer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
-  - "ACM"
-  - "adaptive case management"
-  - "case management"
-  - "CMMN"
-  - "dynamic case management"
+  - "Release Note"
 
 aliases:
   - "/2014/07/embedded-case-management-with-cmmn-in.html"
 
 ---
 
+<div>
 In our latest alpha release we include a preview of the upcoming support for CMMN (Case Management Model and Notation) in camunda BPM. Time to have a look at CMMN and the way it is implemented in camunda BPM.<br />
 <a name='more'></a><h3>
 What is CMMN?</h3>
@@ -57,3 +54,5 @@ Read the Docs</h3>
 <br />
 <b>Update!</b><br />
 We have published a <a href="http://blog.camunda.org/2014/12/getting-started-cmmn-and-camunda.html">getting started guide for CMMN</a>.</div>
+
+</div>

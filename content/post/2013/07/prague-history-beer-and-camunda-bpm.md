@@ -1,17 +1,19 @@
 ---
 title: "Prague: history, beer and …camunda BPM"
-date: "2013-07-22T16:08:00+02:00"
+date: "2013-07-22"
 author: "Nastasja Johnston"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2013/07/prague-history-beer-and-camunda-bpm.html"
 
 ---
 
+<div>
 <p>
 Yes, fellow BPM-enthusiasts it is time to head to Prague for the <a href="http://network.camunda.org/">camunda BPM community</a> event of the year!
 </p>
@@ -112,3 +114,4 @@ For those of you who cannot wait to see what is in store, here is the current ag
 <p>
 We look forward to seeing you in Prague in October.
 </p>
+</div>

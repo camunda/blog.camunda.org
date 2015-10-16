@@ -1,18 +1,19 @@
 ---
 title: "camunda BPM 7.1.0-alpha2 released"
-date: "2014-01-31T16:01:00+01:00"
+date: "2014-01-31"
 author: "Roman Smirnov"
 
 categories:
-  - "Release"
+  - "Execution"
 tags: 
-  - "release notes"
+  - "Release Note"
 
 aliases:
   - "/2014/01/camunda-bpm-710-alpha2-released.html"
 
 ---
 
+<div>
 <span style="background-color: transparent;">It was a hard time of two months without a new camunda BPM release, but the waiting came to an end today. We are happy to announce the first release of 2014: <a href="http://camunda.org/download/">camunda BPM 7.1.0-alpha2</a>.</span>&nbsp;The highlights of this release are:<br />
 <br />
 <ul>
@@ -91,3 +92,4 @@ Until then try and test the current release of <a href="http://www.camunda.org/d
 <br /></div>
 <div>
 <a href="http://camunda.com/about/jobs/">We are hiring!</a></div>
+</div>

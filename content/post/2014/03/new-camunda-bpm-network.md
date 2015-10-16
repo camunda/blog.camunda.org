@@ -1,17 +1,19 @@
 ---
 title: "New: camunda BPM network"
-date: "2014-03-18T09:56:00+01:00"
+date: "2014-03-18"
 author: "Jakob Freund"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2014/03/new-camunda-bpm-network.html"
 
 ---
 
+<div>
 <p>
 On March 14 we merged the online community BPM-Netzwerk.de with more than 10,000 members into the new <a href="http://network.camunda.org">camunda BPM network</a>.
 </p>
@@ -27,3 +29,4 @@ This video provides a short introduction: <a href="http://vimeo.com/89381906">ht
 <p>
 It would be great if people should like this new way of discussing BPM(N) online (right now the first reactions look pretty promising), and I would like to express my gratitude to Robert for the great time we had with BPM-Netzwerk.de. He is a BPM enthusiast just like me, but way more important, he is a very good friend. 
 </p>
+</div>

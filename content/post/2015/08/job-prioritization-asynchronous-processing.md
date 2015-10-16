@@ -1,17 +1,19 @@
 ---
 title: "Job Prioritization for Asynchronous Processing at Scale"
-date: "2015-08-03T12:54:00+02:00"
+date: "2015-08-03"
 author: "Thorben Lindhauer"
 
 categories:
-  - "Development"
+  - "Execution"
 tags: 
+  - "Release Note"
 
 aliases:
   - "/2015/08/job-prioritization-asynchronous-processing.html"
 
 ---
 
+<div>
 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>  <br />
 <div class="markdown-body">Camunda users process heavy workloads with the process engine. Often this includes asynchronous processing which is handled using the job executor component. The amount of jobs that need to be processed can quickly reach an order of magnitude of millions of jobs per day. To bring order into situations of high job executor load, Camunda BPM 7.4.0 will ship <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-the-job-executor-job-prioritization">job prioritization</a>. With our first <a href="http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html">7.4.0-alpha1</a> release, you can already have a look at it and give it a try. This article deals with three questions:<br />
 <ul><li><a href="https://www.blogger.com/blogger.g?blogID=2414043640680427770#the-case-for-job-prioritization">What is Job Priorization useful for?</a></li>
@@ -74,3 +76,4 @@ Now, every new async job that is created for the <i>Schedule Delivery</i> activi
 <h2><a aria-hidden="true" class="anchor" href="https://www.blogger.com/blogger.g?blogID=2414043640680427770#what-you-can-expect-in-740" id="user-content-what-you-can-expect-in-740"><span class="octicon octicon-link"></span></a>What you can expect in 7.4.0</h2>In the previous sections, we have explored the engine's new job prioritization feature. As you may have noticed, it deals with the BPMN and Java API part but there is not yet an integration with Cockpit. Similar to features like <a href="http://docs.camunda.org/latest/guides/user-guide/#cockpit-suspension-job-definition-suspension">job definition suspension</a>, we plan to enable Cockpit users to define overriding priorities dynamically at runtime. This way, operators can immediately respond to exceptional conditions that require re-prioritization. In addition, we will integrate the priority attribute into the graphical <a href="http://docs.camunda.org/latest/guides/user-guide/#camunda-modeler">camunda Modeler</a> or <a href="http://bpmn.io/">bpmn.io</a>.<br />
 <br />
 For now, you can have a look at the <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-the-job-executor-job-prioritization">documentation on job prioritization</a> for a more comprehensive description of the feature. We are eager to receive your feedback, whether prioritization helps you solve use cases, where you see potential for improvement, and if you encounter any bugs or performance issues. Drop us a line in the comments below or on the <a href="https://groups.google.com/forum/#!forum/camunda-bpm-users">camunda user forum</a>.</div>
+</div>
