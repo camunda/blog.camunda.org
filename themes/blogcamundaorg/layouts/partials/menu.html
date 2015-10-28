@@ -1,0 +1,24 @@
+{{ define "menu-node" }}
+  <li>
+    {{ if .HasChildren }}
+      <a href="{{.URL}}" >{{ .Name }}</a>
+      <ul>
+        {{ range .Children }}
+          {{ template "menu-node" .}}
+        {{ end }}
+      </ul>
+    {{else}}
+      <a href="{{.URL}}" >{{ .Name }}</a>
+    {{end}}
+  </li>
+{{ end }}
+
+<!-- menu start -->
+<!--
+<ul class="site-menu-items">
+  {{ range .Site.Menus.posts }}
+    {{ template "menu-node" . }}
+  {{end}}
+</ul>
+-->
+<!-- menu end -->

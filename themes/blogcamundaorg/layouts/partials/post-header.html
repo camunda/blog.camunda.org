@@ -1,0 +1,11 @@
+<header class="row">
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+
+  <div class="meta">
+    Written by <a href="#author-badge" class="author">{{ .Params.author }}</a>
+    on <time pubdate="{{ .PublishDate }}">{{ .Date.Format "Wed, 2 Jan 2015" }}</time>,
+    under {{ range .Params.categories }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }} category.
+    <!-- {{ partial "edit-on-github.html" . }} -->
+  </div>
+
+</header>

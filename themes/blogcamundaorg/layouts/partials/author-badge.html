@@ -1,0 +1,3 @@
+{{ if and (.IsPage) (isset .Params "author") }}
+  {{ .Params.author }}
+{{ end }}

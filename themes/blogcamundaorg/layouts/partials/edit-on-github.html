@@ -1,0 +1,6 @@
+{{ if and (isset $.Site.Params "repo") (.IsPage) }}<div class="edit-on-github">
+  <a target="_blank" href="//github.com/{{ $.Site.Params.repo }}/tree/master/content/{{ .File.Path }}">
+    <span class="icon-github"></span>
+    Edit on GitHub
+  </a>
+</div>{{ end }}

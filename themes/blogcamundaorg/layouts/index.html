@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 10 }}
+
+
+  <div class="page-content mixed-list list">
+  {{ range (.Paginator 10).Pages }}
+    {{ if eq .Section "post" }}<article>{{ else }}<section>{{ end }}
+      {{ partial "post-header.html" . }}
+
+      <div class="content summary">
+        <div>{{ .Summary }}</div>
+      </div>
+
+      <footer>
+        {{ partial "readmore.html" . }}
+      </footer>
+    {{ if eq .Section "post" }}</article>{{ else }}</section>{{ end }}
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+  </div>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+  <div class="page-content list default-list">
+    <header>
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ if .Description }}<div class="description">{{ .Description }}</div>{{ end }}
+    </header>
+
+    {{ range .Data.Pages }}
+    {{ if eq .Section "post" }}<article>{{ else }}<section>{{ end }}
+      <header class="row">
+        <h1 class="col-xs-12"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      </header>
+
+      <div class="content summary">
+        <div>{{ .Summary }}</div>
+      </div>
+
+      <footer>
+        {{ partial "readmore.html" . }}
+      </footer>
+    </section>
+    {{ if eq .Section "post" }}</article>{{ else }}</section>{{ end }}
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+  </div>
+
+{{ partial "footer.html" . }}

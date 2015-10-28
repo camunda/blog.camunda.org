@@ -1,0 +1,26 @@
+<footer>
+  <div>
+    <div class="tags">
+      <span class="glyphicon glyphicon-tag"></span>
+      <ul class="list-inline">
+        {{ range .Params.tags }}
+          <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="author" id="author-badge">
+      {{ partial "author-badge.html" . }}
+    </div>
+  </div>
+
+  <div>
+    <div class="next-post">
+      {{ if .NextInSection }}<a href="{{ .NextInSection.RelPermalink }}">« {{ .NextInSection.Title }}</a>{{ end }}
+    </div>
+
+    <div class="previous-post">
+      {{ if .PrevInSection }}<a href="{{ .PrevInSection.RelPermalink }}">{{ .PrevInSection.Title }} »</a>{{ end }}
+    </div>
+  </div>
+</footer>

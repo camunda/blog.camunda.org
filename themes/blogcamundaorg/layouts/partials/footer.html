@@ -1,0 +1,52 @@
+</div><!-- / .page-wrapper -->
+
+{{ partial "sidebar.html" . }}
+
+<footer>
+  <div>
+    <div class="boring-stuff">
+      <ul class="list-inline">
+        <li><a href="{{ $.Site.BaseURL }}misc/imprint">Imprint</a></li>
+        <li><a href="{{ $.Site.BaseURL }}misc/privacy">Privacy Policy &amp; Cookies</a></li>
+      </ul>
+    </div>
+
+    <nav class="networks text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="http://github.com/camunda">
+            <span class="cam-blog-github"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://stackoverflow.com/questions/tagged/camunda">
+            <span class="cam-blog-stackoverflow"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/camundabpm">
+            <span class="cam-blog-twitter"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/user22820658">
+            <span class="cam-blog-vimeo"></span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ .Site.BaseURL }}index.xml">
+            <span class="cam-blog-rss"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="back-to-top">
+      <a href="#">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="{{ $.Site.BaseURL }}js/scripts.js"></script>
+</body>
+</html>

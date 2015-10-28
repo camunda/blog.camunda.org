@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+
+  <div class="page-content default">
+    <section>
+      <header class="row">
+        <h1 class="col-xs-12"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+      </header>
+
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </section>
+  </div>
+
+{{ partial "footer.html" . }}
