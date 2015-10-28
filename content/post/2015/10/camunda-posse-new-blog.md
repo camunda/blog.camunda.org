@@ -33,11 +33,11 @@ The nerd would probably start writing a client which would pump the posts using 
 
 I'm more of a creative guy. Which means that I don't make a fuss about the way,
 I want to reach my goals (which, by the way, might not always be the {{< bpmn-icon name="end-event-none" >}},
-a bit like when Jakob put a `style` attribute in its HTML).  
+a bit like when a colleague put a `style` attribute in its HTML).  
 I went to the Google API console and got myself all the posts from there. Tada.
 
 After that, it's piece of cake, a [grunt task](//gruntjs.com/api/grunt.task) consumes the JSON and
-creates the mardown files and it looks more or less like that:
+creates the markdown files and it looks more or less like that:
 
 ```js
 grunt.registerTask('import', function () {
@@ -45,26 +45,41 @@ grunt.registerTask('import', function () {
   var postTemplate = [
     '---',
     'title: "<%= title.split(\'\\"\').join(\'\\\\"\') %>"',
-    'date: "<%= published %>"',
+    'date: "<%= (new Date(published)).toISOString().split("T").shift() %>"',
     'author: "<%= author.displayName %>"',
     '',
     'categories:',
     '  - "<%= category %>"',
-    'tags: <%= labels.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
+    'tags: <%= tags.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
     '',
     'aliases:',
     '  - "<%= alias %>"',
     '',
     '---',
     '',
-    '<%= content %>'
+    '<div>',
+    '<%= content %>',
+    '</div>'
   ].join('\n');
 
   jsonContent.items.forEach(function (post) {
     var nameParts = post.url.split('/');
     var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
 
-    post.category = post.title.toLowerCase().indexOf('release') < 0 ? 'Development' : 'Release';
+    post.tags = [];
+    if (post.title.toLowerCase().indexOf('release')) {
+      post.tags.push('Release Note');
+    }
+
+    post.category = 'Execution';
+    if (post.title.toLowerCase().indexOf('community') > -1) {
+      post.category = 'Community';
+    }
+    else if (post.title.toLowerCase().indexOf('bpmn.io') > -1 ||
+             post.title.toLowerCase().indexOf('dmn.io') > -1) {
+      post.category = 'Modeling';
+    }
+
     post.labels = post.labels || [];
     post.alias = post.url.split('blog.camunda.org').pop();
 
@@ -90,12 +105,12 @@ grunt.registerTask('import', function () {
 Based on [Hugo shortcodes](http://gohugo.io) and [bpmn.io](http://bpmn.io), authors can now add their diagrams in a post in a breeze like that:
 
 ```html
-{{</* bpmn-viewer path="/2015/10/order-process" */>}}
+{{</* bpmn-viewer name="order-process" */>}}
 ```
 
-And it renders something like that when the :
+And it renders something like that:
 
-{{< bpmn-viewer path="/2015/10/order-process" >}}
+{{< bpmn-viewer name="order-process" >}}
 
 
 
@@ -147,11 +162,11 @@ Anything that can go wrong will go wrong.
 Are loaded when the reader reaches them.
 
 ```md
-{{</* figure src="/2015/10/please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" */>}}
+{{</* figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" */>}}
 ```
 produces
 
-{{< figure src="/2015/10/please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
+{{< figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
 
 
 ## Code highlighting
