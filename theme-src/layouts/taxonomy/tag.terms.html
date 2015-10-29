@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+<div class="page-content taxonomy-terms-list list">
+  <header>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Description }}<div class="description">{{ .Description }}</div>{{ end }}
+  </header>
+
+  <section>
+    <div class="content">
+      <ul>
+      {{ $data := .Data }}
+      {{ range $key, $value := .Data.Terms.ByCount }}
+        <li>
+          <!--
+            Still an issue with printing the original value of the term:
+            http://discuss.gohugo.io/t/remove-hyphens-in-taxonomy-section-title/43/5?u=valentin_vago
+          -->
+          <a href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name | title }}</a>
+          {{ $value.Count }}
+        </li>
+      {{ end }}
+      </ul>
+    </div>
+  </section>
+</div>
+{{ partial "footer.html" . }}
