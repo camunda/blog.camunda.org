@@ -4,24 +4,14 @@
  */
 'use strict';
 /*global require: false*/
-var queryAll = require('./utils').queryAll;
+var utils = require('./utils');
 
-function isElementInViewport (el) {
-  var rect = el.getBoundingClientRect();
-
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-  );
-}
 
 function lazyLoadImages() {
   // load images that have entered the viewport
-  var images = queryAll('img[data-src]');
+  var images = utils.queryAll('img[data-src]');
   images.forEach(function (item) {
-    if (isElementInViewport(item)) {
+    if (utils.isElementInViewport(item)) {
       item.setAttribute('src', item.getAttribute('data-src'));
       item.removeAttribute('data-src');
     }

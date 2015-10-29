@@ -77,6 +77,18 @@ module.exports = function (grunt) {
           src: ['<%= setup.source %>/scripts/index.js'],
           dest: '<%= setup.target %>/static/js/scripts.js'
         }]
+      },
+
+      bpmnJs: {
+        options: {
+          browserifyOptions: {
+            standalone: 'BPMNViewer'
+          }
+        },
+        files: [{
+          src: ['node_modules/bpmn-js/lib/NavigatedViewer.js'],
+          dest: '<%= setup.target %>/static/js/bpmn-viewer.js'
+        }]
       }
     },
 
@@ -109,6 +121,10 @@ module.exports = function (grunt) {
         files: [{
           src: '<%= setup.target %>/static/js/scripts.js',
           dest: '<%= setup.target %>/static/js/scripts.js'
+        },
+        {
+          src: '<%= setup.target %>/static/js/bpmn-viewer.js',
+          dest: '<%= setup.target %>/static/js/bpmn-viewer.js'
         }]
       }
     }
@@ -173,11 +189,11 @@ module.exports = function (grunt) {
 
 
 
-  grunt.registerTask('build', ['copy', 'less:styles', 'browserify:scripts']);
+  grunt.registerTask('build', ['copy', 'less:styles', 'browserify']);
 
   grunt.registerTask('optimize', [
-    'uglify:scripts',
-    'cssmin:styles'
+    'uglify',
+    'cssmin'
   ]);
 
   grunt.registerTask('default', ['build', 'watch']);

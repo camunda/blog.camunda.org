@@ -53,23 +53,36 @@ queryAll('button.sidebar-toggle').forEach(function (btn) {
   });
 });
 
-
-/********************************************************************\
- * Cookies                                                          *
-\********************************************************************/
-// var Cookies = require('js-cookie');
-// if (!Cookies.get('acceptCookies')) {
-//   var el = mkEl('div');
-//   el.classList.add('cookie-warning');
-//   el.innerHTML = 'By visiting this website, you are accepting '
-//   bdy.appendChild(el);
-// }
-
-
 /********************************************************************\
  * No clue...                                                       *
 \********************************************************************/
-var BPMNViewer = require('bpmn-js');
+
+function initBPMN(el) {
+  var src = attr(el, 'data-bpmn-diagram');
+  if (el.classList.contains('processed')) { return; }
+  el.classList.add('processed');
+
+  var viewer = new BPMNViewer({
+    container: el,
+    width: '100%',
+    height: '100%',
+    overlays: {
+      deferUpdate: false
+    }
+  });
+
+  xhr({
+    uri: src + '.bpmn',
+  }, function (err, resp, body) {
+    if (err) { throw err; }
+    viewer.importXML(body, function(err) {
+      if (err) { throw err; }
+      fitBpmnViewport(el, viewer);
+    });
+  });
+}
+
+
 
 function fitBpmnViewport(el, viewer) {
   var vb = viewer.get('canvas').viewbox();
@@ -91,28 +104,40 @@ function fitBpmnViewport(el, viewer) {
   }, 10);
 }
 
-queryAll('[data-bpmn-diagram]').forEach(function (el) {
-  var src = attr(el, 'data-bpmn-diagram');
 
-  var viewer = new BPMNViewer({
-    container: el,
-    width: '100%',
-    height: '100%',
-    overlays: {
-      deferUpdate: false
+function lazyLoadBPMN() {
+  // load images that have entered the viewport
+  var diagrams = queryAll('[data-bpmn-diagram]');
+  diagrams.forEach(function (item) {
+    if (utils.isElementInViewport(item)) {
+      if (!window.BPMNViewer) {
+        var script = mkEl('script');
+        script.addEventListener('load', function () {
+          initBPMN(item);
+        });
+        attr(script, 'src', window._siteSetup.baseUrl + 'js/bpmn-viewer.js');
+        document.body.appendChild(script);
+        return;
+      }
+      initBPMN(item);
     }
   });
 
-  xhr({
-    uri: src + '.bpmn',
-  }, function (err, resp, body) {
-    if (err) { throw err; }
-    viewer.importXML(body, function(err) {
-      if (err) { throw err; }
-      fitBpmnViewport(el, viewer);
-    });
-  });
-});
+  // if all the diagrams are loaded, stop calling the handler
+  if (diagrams.length === 0) {
+    window.removeEventListener('DOMContentLoaded', lazyLoadBPMN);
+    window.removeEventListener('load', lazyLoadBPMN);
+    window.removeEventListener('resize', lazyLoadBPMN);
+    window.removeEventListener('scroll', lazyLoadBPMN);
+  }
+}
+
+//these handlers will be removed once the diagrams have loaded
+window.addEventListener('DOMContentLoaded', lazyLoadBPMN);
+window.addEventListener('load', lazyLoadBPMN);
+window.addEventListener('resize', lazyLoadBPMN);
+window.addEventListener('scroll', lazyLoadBPMN);
+
 
 
 // (function(d,s,id){

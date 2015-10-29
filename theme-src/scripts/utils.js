@@ -1,30 +1,6 @@
 'use strict';
 /*jshint browser: true*/
-
 /*global module: false*/
-
-if (!Array.prototype.find) {
-  Array.prototype.find = function(predicate) {
-    if (this == null) {
-      throw new TypeError('Array.prototype.find called on null or undefined');
-    }
-    if (typeof predicate !== 'function') {
-      throw new TypeError('predicate must be a function');
-    }
-    var list = Object(this);
-    var length = list.length >>> 0;
-    var thisArg = arguments[1];
-    var value;
-
-    for (var i = 0; i < length; i++) {
-      value = list[i];
-      if (predicate.call(thisArg, value, i, list)) {
-        return value;
-      }
-    }
-    return undefined;
-  };
-}
 
 var utils = module.exports = {};
 
@@ -60,28 +36,6 @@ function mkEl(name, attrs) {
 }
 utils.mkEl = mkEl;
 
-function offset(node) {
-  var parent = node;
-  var obj = {
-    top: parent.offsetTop,
-    left: parent.offsetLeft,
-  };
-
-  while ((parent = parent.offsetParent)) {
-    obj.top += parent.offsetTop;
-    obj.left += parent.offsetLeft;
-  }
-
-  return obj;
-}
-utils.offset = offset;
-
-function query(selector, context) {
-  context = (context || document.body);
-  return context.querySelector(selector);
-}
-utils.query = query;
-
 function queryAll(selector, context) {
   context = (context || document.body);
   return toArray(context.querySelectorAll(selector));
@@ -95,10 +49,14 @@ function keys(o) {
 utils.keys = keys;
 
 
-function tmpl(str, obj) {
-  keys(obj).forEach(function (key) {
-    str = str.split('{' + key + '}').join(obj[key]);
-  });
-  return str;
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+  );
 }
-utils.tmpl = tmpl;
+utils.isElementInViewport = isElementInViewport;
