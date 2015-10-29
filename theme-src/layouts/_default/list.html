@@ -8,9 +8,11 @@
 
     {{ range .Data.Pages }}
     {{ if eq .Section "post" }}<article>{{ else }}<section>{{ end }}
+      {{ if eq .Section "post" }}{{ partial "post-header.html" . }}{{ else }}
       <header class="row">
         <h1 class="col-xs-12"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
       </header>
+      {{ end }}
 
       <div class="content summary">
         <div>{{ .Summary }}</div>
