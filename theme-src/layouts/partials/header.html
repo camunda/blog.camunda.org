@@ -32,19 +32,11 @@
       </a>
     </h1>
 
-    <nav class="categories">
-      <ul>
-        <li>
-          <a href="{{ .Site.BaseURL }}categories/modeling">Modeling</a>
-        </li>
-        <li>
-          <a href="{{ .Site.BaseURL }}categories/execution">Execution</a>
-        </li>
-        <li>
-          <a href="{{ .Site.BaseURL }}categories/community">Community</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- {{ partial "categories" . }} -->
+
+    <div class="grill">
+      {{ partial "sidebar-toggle.html" . }}
+    </div>
   </div>
 </header>
 

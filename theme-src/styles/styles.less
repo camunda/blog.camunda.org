@@ -17,6 +17,9 @@ a:focus {
   text-decoration: none;
 }
 
+
+
+/*
 a {
   position: relative;
   display: inline-block;
@@ -50,74 +53,13 @@ a {
     }
   }
 }
-
-/*
-body > .sidebar {
-  position: fixed;
-  z-index: 10;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: @sidebar-width + @grid-gutter-width;
-  padding: @grid-gutter-width;
-  background-color: @body-bg;
-  transform: translateX(@sidebar-width);
-
-  transition: transform 0.218s ease;
-
-  > .sidebar-toggle {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
-.sidebar-toggle {
-  background-color: transparent;
-  padding: 3px;
-  margin: 3px;
-  border: 1px solid @gray-lighter;
-  outline: none;
-  > span {
-    width: 15px;
-    height: 2px;
-    background-color: @brand-primary;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    display: block;
-    transition: opacity (0.218s * 1) ease,
-                transform (0.218s * 1) ease;
-    &:first-of-type {
-      margin-top: 2px;
-    }
-    &:last-of-type {
-      margin-bottom: 2px;
-    }
-  }
-}
-
-body.sidebar-open {
-  .sidebar-toggle {
-    > span {
-      opacity: 0;
-      &:first-of-type {
-        transform: translateY(5px) rotateZ(45deg);
-        opacity: 1;
-      }
-      &:last-of-type {
-        transform: translateY(-5px) rotateZ(-45deg);
-        opacity: 1;
-      }
-    }
-  }
-
-  > .sidebar {
-    transform: translateX(0);
-  }
-}
 */
+
+
+
+
 .centered-content() {
-  max-width: 700px + (@grid-gutter-width * 2);
+  max-width: @layout-width;
   margin-left: auto;
   margin-right: auto;
 
@@ -127,79 +69,95 @@ body.sidebar-open {
   }
 }
 
+
 body {
-}
+  > header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    background-color: fade(@body-bg, 95);
+    border-bottom: 1px solid @gray-lighter;
+    box-shadow: 0 0 0 0 fade(@gray, 50%);
+    transition: box-shadow 0.218s ease;
 
-body > header {
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  padding-left: @grid-gutter-width;
-  padding-right: @grid-gutter-width;
-  background-color: fade(@body-bg, 95);
-  border-bottom: 1px solid @gray-lighter;
+    > div {
+      .centered-content();
+      min-height: @header-height;
 
-  > div {
-    .centered-content();
-    min-height: @header-height;
+    }
 
-  }
+    h1,
+    .grill,
+    .categories {
+      margin-top: 10px;
+    }
 
-  h1,
-  .categories {
-    margin-top: 10px;
-  }
-
-  h1 {
-    float: left;
-    padding-right: @grid-gutter-width * 0.5;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-
-  .categories {
-    float: right;
-    padding-left: @grid-gutter-width * 0.5;
-  }
-
-
-  .bpmn-icon-bpmn-io:before {
-    margin-left: -2px;
-  }
-
-  @media (max-width: 600px) {
     h1 {
-      padding-right: 0;
+      float: left;
+      padding-right: @grid-gutter-width * 0.5;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 0;
     }
-    .site-title {
-      display: none;
-    }
-  }
 
-  .categories {
-    text-align: right;
-    ul,
-    li {
-      margin: 0;
-      padding: 0;
-      display: inline-block;
+    .grill,
+    .categories {
+      float: right;
+      padding-left: @grid-gutter-width * 0.5;
     }
-    ul {
-      list-style: none;
+
+
+    .bpmn-icon-bpmn-io:before {
+      margin-left: -2px;
     }
-    li {
-      &:after {
-        display: inline-block;
-        content: '/';
+
+    @media (max-width: 600px) {
+      h1 {
+        padding-right: 0;
       }
-      &:last-of-type:after {
+      .site-title {
         display: none;
       }
     }
+
+    .categories {
+      text-align: right;
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        &:after {
+          display: inline-block;
+          content: '/';
+        }
+        &:last-of-type:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &.scrolled > header {
+    box-shadow: 0 2px 2px 0 fade(@gray, 50%);
   }
 }
+
+
+
+
+
+
+
+
+
 
 .page-wrapper {
   overflow: hidden;
@@ -251,12 +209,6 @@ body > header {
         .centered-content();
       }
 
-      // > blockquote {
-      //   @media (max-width: 768px) {
-      //     padding: (@line-height-computed / 2) @line-height-computed;
-      //   }
-      // }
-
       > figure {
         padding: 2px;
         max-width: 1280px;
@@ -266,7 +218,7 @@ body > header {
       > blockquote {
         padding: (@line-height-computed / 2) @grid-gutter-width;
         width: auto;
-        max-width: 700px + (@grid-gutter-width * 4);
+        max-width: @layout-width + (@grid-gutter-width * 2);
 
         @media (max-width: 768px) {
           padding: (@line-height-computed / 2) @line-height-computed;
@@ -275,31 +227,8 @@ body > header {
     }
   }
 }
-/*
-blockquote {
-  position: relative;
-  &:before {
-    position: absolute;
-    z-index: 1;
-    content: '“';
-    display: block;
-    color: @gray-light;
-    font-size: 54px;
 
-    left: 3px;
-    width: @grid-gutter-width;
-    text-align: center;
 
-    top: 3px;
-    height: @grid-gutter-width;
-    line-height: @grid-gutter-width;
-  }
-  > * {
-    position: relative;
-    z-index: 2;
-  }
-}
-*/
 body > footer {
   position: fixed;
   bottom: 0;
@@ -309,6 +238,10 @@ body > footer {
   padding-right: @grid-gutter-width;
   background-color: fade(@body-bg, 95);
   border-top: 1px solid @gray-lighter;
+
+  @media (max-width: 1024px) {
+    position: relative;
+  }
 
   > div {
     height: @footer-height;
@@ -328,6 +261,7 @@ body > footer {
   .boring-stuff,
   .back-to-top,
   .networks {
+    padding: (@line-height-computed * 0.5) 0;
     line-height: @line-height-computed;
   }
 
@@ -411,10 +345,24 @@ section {
     font-family: @font-family-serif;
     font-size: 18px;
     line-height: 1.6;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      .font-regular;
+    }
+
+    h1 { font-size: @font-size-h1 * 0.85; }
+    h2 { font-size: @font-size-h2 * 0.85; }
+    h3 { font-size: @font-size-h3 * 0.85; }
+    h4 { font-size: @font-size-h4 * 0.85; }
+    h5 { font-size: @font-size-h5 * 0.85; }
+    h6 { font-size: @font-size-h6 * 0.85; }
   }
 
   > .comments {
-    max-width: 700px + (@grid-gutter-width * 2);
+    max-width: @layout-width + (@grid-gutter-width * 2);
     margin: @grid-gutter-width auto;
   }
 
@@ -487,4 +435,5 @@ section {
 
 @import "./pager.less";
 @import "./icons.less";
+@import "./sidebar.less";
 @import "./prism.less";
