@@ -1,35 +1,26 @@
-<!--
 <div class="sidebar">
-  <button class="sidebar-toggle" title="Toggle menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-
   <div class="sidebar-content">
-
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-    <div class="taxonomy-{{ $taxonomyname }}">
-      <h5><a href="/{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a></h5>
+    <div class="col">
+      <h5>Links</h5>
       <ul>
-        {{ range $termname, $value := $taxonomy }}
-        <li><a href="/{{ $taxonomyname | urlize }}/{{ $termname }}">{{ $termname }}</a></li>
-        {{ end }}
-      </ul>
-    </div>
-    {{ end }}
-
-
-    <div class="categories">
-      <h5>Categories</h5>
-      <ul>
-      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-        <li><a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize }}">{{ $name }}</a></li>
-      {{ end }}
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
       </ul>
     </div>
 
-    <div class="blogroll">
+    <div class="col">
+      <h5>Links</h5>
+      <ul>
+        <li><a href="http://bpmn.io">bpmn.io</a></li>
+        <li><a href="http://github.com/camunda">Camunda on github</a></li>
+        <li><a href="http://docs.camunda.org">Camunda documentation</a></li>
+        <li><a href="http://camunda.com/jobs">Jobs at Camunda</a></li>
+      </ul>
+    </div>
+
+    <div class="col">
       <h5>Links</h5>
       <ul>
         <li><a href="http://bpmn.io">bpmn.io</a></li>
@@ -40,4 +31,5 @@
     </div>
   </div>
 </div>
+<!--
 -->
