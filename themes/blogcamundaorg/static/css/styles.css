@@ -3425,41 +3425,103 @@ button.sidebar-toggle > span:last-of-type {
   bottom: 4px;
   transition: box-shadow 0.218s ease;
 }
-/* line 50, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000350}}
+/* line 51, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000351}}
 .sidebar-content a {
   color: #ffffff;
 }
-/* line 54, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000354}}
+/* line 55, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000355}}
 .sidebar-content .col {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+/* line 59, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000359}}
+.sidebar-content .col:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* line 65, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000365}}
+.sidebar-content .col h4 {
+  font-family: 'open_sansbold', Helvetica, Arial, Verdana, sans-serif;
+  font-weight: normal;
+}
+/* line 69, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000369}}
+.sidebar-content .col ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+/* line 76, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000376}}
+.sidebar-content .col li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 81, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000381}}
+.sidebar-content .col li:after {
+  content: ' / ';
+  color: #a87777;
+  display: inline-block;
+  margin: 0 0.5em 0 0.7em;
+}
+/* line 87, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000387}}
+.sidebar-content .col li:last-of-type:after {
+  display: none;
+}
+/* line 92, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000392}}
+.sidebar-content .col.categories,
+.sidebar-content .col.blogroll {
   float: left;
 }
-/* line 61, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000361}}
+/* line 97, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000397}}
+.sidebar-content .col.categories {
+  margin-right: 15px;
+}
+/* line 100, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003100}}
+.sidebar-content .col.blogroll {
+  margin-left: 15px;
+}
+/* line 103, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003103}}
+.sidebar-content .col.camunda {
+  clear: both;
+}
+/* line 111, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003111}}
 body.sidebar-open .sidebar {
   padding-bottom: 4px;
   max-height: calc(100vh - 41px);
 }
-/* line 66, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000366}}
+/* line 116, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003116}}
 body.sidebar-open .sidebar-content {
   overflow: auto;
   box-shadow: 0 0 4px 0 rgba(85, 85, 85, 0.5);
 }
-/* line 72, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000372}}
+/* line 122, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003122}}
 body.sidebar-open button.sidebar-toggle > span {
   opacity: 0;
 }
-/* line 74, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000374}}
+/* line 124, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003124}}
 body.sidebar-open button.sidebar-toggle > span:first-of-type {
   opacity: 1;
   transform: translateY(5px) rotateZ(45deg);
 }
-/* line 78, theme-src/styles/sidebar.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\0000378}}
+/* line 128, theme-src/styles/sidebar.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/theme-src\/styles\/sidebar\.less}line{font-family:\00003128}}
 body.sidebar-open button.sidebar-toggle > span:last-of-type {
   opacity: 1;
   transform: translateY(-5px) rotateZ(-45deg);

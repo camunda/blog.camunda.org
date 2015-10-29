@@ -47,12 +47,62 @@ button.sidebar-toggle {
   bottom: 4px;
 
   transition: box-shadow 0.218s ease;
+
   a {
     color: @body-bg;
   }
 
   .col {
-    float: left;
+    // border-bottom: 1px dashed @gray-dark;
+    margin-bottom: @grid-gutter-width * 0.5;
+    padding-bottom: @grid-gutter-width * 0.5;
+    &:last-of-type {
+    //   border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h4 {
+      .font-bold;
+    }
+
+    ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      clear: both;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      &:after {
+        content: ' / ';
+        color: mix(@link-color, @gray-lighter);
+        display: inline-block;
+        margin: 0 0.5em 0 0.7em;
+      }
+      &:last-of-type:after {
+        display: none;
+      }
+    }
+
+    &.categories,
+    &.blogroll {
+      float: left;
+    }
+
+    &.categories {
+      margin-right: @grid-gutter-width * 0.5;
+    }
+    &.blogroll {
+      margin-left: @grid-gutter-width * 0.5;
+    }
+    &.camunda {
+      clear: both;
+    }
   }
 }
 
