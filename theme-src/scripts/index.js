@@ -149,16 +149,34 @@ window.addEventListener('scroll', lazyLoadBPMN);
 //   }
 // })(document,'script','twitter-wjs');
 
-// Don't ever inject Disqus on localhost--it creates unwanted
-// discussions from 'localhost:1313' on your Disqus account...
-if (window.location.hostname === 'localhost') {
-  return;
+
+function lazyLoadDisqus() {
+  if (disqusEl && !disqusLoaded && utils.isElementInViewport(disqusEl)) {
+    disqusLoaded = true;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + _siteSetup.disqusName + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+    window.removeEventListener('DOMContentLoaded', lazyLoadDisqus);
+    window.removeEventListener('load', lazyLoadDisqus);
+    window.removeEventListener('resize', lazyLoadDisqus);
+    window.removeEventListener('scroll', lazyLoadDisqus);
+  }
 }
 
 if (_siteSetup.disqusName) {
-  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-  dsq.src = '//' + _siteSetup.disqusName + '.disqus.com/embed.js';
-  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  var disqusLoaded;
+  var disqusEl = document.getElementById('disqus_thread');
+
+  window.addEventListener('DOMContentLoaded', lazyLoadDisqus);
+  window.addEventListener('load', lazyLoadDisqus);
+  window.addEventListener('resize', lazyLoadDisqus);
+  window.addEventListener('scroll', lazyLoadDisqus);
+}
+
+if (window.location.hostname !== 'blog.camunda.org') {
+  return;
 }
 
 if (_siteSetup.gaCode) {
