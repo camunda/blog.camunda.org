@@ -14,7 +14,8 @@ tags:
 ---
 
 I was delighted when [Daniel](//twitter.com/meyerdan) asked me to *valify* (as Robert says) the **Camunda BPM Team Blog**
-and make it fit our **CI** (nope, for once, this ain't meaning Continuous Integration). Here's the little story about that work… erm… fun and some showoff about the new blog features.
+and make it fit our **CI** (nope, for once, this ain't meaning _Continuous Integration_).  
+Here's the little story about that work… erm… fun and some showoff about the new blog features.
 <!--more-->
 
 # Who, nowadways, wants to write HTML?
@@ -100,36 +101,11 @@ grunt.registerTask('import', function () {
 
 *Sure, got plenty.*
 
-## BPMN diagrams
-
-Based on [Hugo shortcodes](http://gohugo.io) and [bpmn.io](http://bpmn.io), authors can now add their diagrams in a post in a breeze like that:
-
-```html
-{{</* bpmn-viewer name="order-process" */>}}
-```
-
-And it renders something like that:
-
-{{< bpmn-viewer name="order-process" >}}
-
-
-
-## BPMN symbols
-
-Also base on Hugo shortcodes, you can add all the symbols contained in the [bpmn-font project](//github.com/bpmn-io/bpmn-font).
-
-```html
-<div>{{</* bpmn-icon name="end-event-none" */>}}</div>
-```
-produces
-
-<div>{{< bpmn-icon name="end-event-none" >}}</div>
-
-## Responsive layout
-
-Yep. And soon responsive youtube video player.
-
 ## Text formatting
+
+*Because a blog post ain't javadoc.*
+
+I tried to make the text of the posts as readable as possible. This means that
 
 ### Blockquotes
 
@@ -159,7 +135,7 @@ Anything that can go wrong will go wrong.
 
 ## Images
 
-Are loaded when the reader reaches them.
+Are loaded when the reader reaches them (a technic which is called _[lazy loading](https://en.wikipedia.org/wiki/Lazy_loading)_ and prevents your mobile data plan to be consumed when you look at kitten images).
 
 ```md
 {{</* figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" */>}}
@@ -168,10 +144,39 @@ produces
 
 {{< figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
 
+## BPMN diagrams
+
+Based on [Hugo shortcodes](http://gohugo.io) and [bpmn.io](http://bpmn.io), authors can now add their diagrams in a post in a breeze like that:
+
+```html
+{{</* bpmn-viewer name="order-process" */>}}
+```
+
+And it renders something like that:
+
+{{< bpmn-viewer name="order-process" >}}
+
+
+
+## BPMN symbols
+
+Also base on Hugo shortcodes, you can add all the symbols contained in the [bpmn-font project](//github.com/bpmn-io/bpmn-font).
+
+```html
+<div>{{</* bpmn-icon name="end-event-none" */>}}</div>
+```
+produces
+
+<div>{{< bpmn-icon name="end-event-none" >}}</div>
+
+## Responsive layout
+
+Yep. And soon responsive youtube video player.
+
 
 ## Code highlighting
 
-You saw it above in action but here's other example with Markown
+You saw it above in action but here's other example with some Markdown formatted text:
 
 ```md
 
