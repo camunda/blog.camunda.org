@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en-us"
 title = "Camunda Team Blog"
 theme = "blogcamundaorg"
-disqusShortname = "camundabpm"
+preservetaxonomynames = true
 # uglyurls = true
 
 
@@ -18,3 +18,5 @@ Paginate = 5
 
 [params]
   repo = "camunda/blog.camunda.org"
+  gaCode = "UA-39060941-1"
+  disqusShortname = ""
