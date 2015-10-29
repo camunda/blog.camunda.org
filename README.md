@@ -43,7 +43,7 @@ git clean -df
 
 cd ../blog.camunda.org/
 rm -rf public
-grunt build optimize responsive_images
+grunt build optimize
 hugo --baseUrl=http://camunda.github.io/blog.camunda.org/
 cp -r public/* ../gh-pages-blog/
 

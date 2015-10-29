@@ -111,26 +111,6 @@ module.exports = function (grunt) {
           dest: '<%= setup.target %>/static/js/scripts.js'
         }]
       }
-    },
-
-    responsive_images: {
-      site: {
-        options: {
-          engine: 'im',
-          sizes: [
-            { name: 'small', width: 320 },
-            { name: 'medium', width: 640 },
-            { name: 'large', width: 1024 },
-            { name: 'xlarge', width: 1280 }
-          ]
-        },
-        files: [{
-          cwd:  'static/',
-          src:  'post/**/*.{jpg,png}',
-          expand:  true,
-          dest: 'public/'
-        }]
-      }
     }
   });
 

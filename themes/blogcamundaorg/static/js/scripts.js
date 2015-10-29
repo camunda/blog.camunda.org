@@ -33130,28 +33130,9 @@ function isElementInViewport (el) {
 function lazyLoadImages() {
   // load images that have entered the viewport
   var images = queryAll('img[data-src]');
-  var width = (window.innerWidth || document.documentElement.clientWidth);
-  var size;
-  [
-    { name: 'small', width: 320 },
-    { name: 'medium', width: 640 },
-    { name: 'large', width: 1024 },
-    { name: 'xlarge', width: 1280 }
-  ].forEach(function (info) {
-    if (info.width <= width) {
-      size = info.name;
-    }
-  });
-
-
   images.forEach(function (item) {
     if (isElementInViewport(item)) {
-      var original = item.getAttribute('data-src').split('.');
-      var ext = original.pop();
-      var name = original.pop() + '-' + size;
-      var responsive = original.concat([name, ext]).join('.');
-      console.info('responsive', responsive);
-      item.setAttribute('src', responsive);
+      item.setAttribute('src', item.getAttribute('data-src'));
       item.removeAttribute('data-src');
     }
   });
