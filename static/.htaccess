@@ -1,0 +1,3 @@
+# redirect to old blogger rss feed
+
+RewriteRule ^feeds/posts/default /index.xml
