@@ -33,52 +33,6 @@ hugo -w server
 
 Now point your browser to [http://localhost:1313](http://localhost:1313).
 
-### Template for a new Empty Post
-
-The following is a template for a new empty post
-
-```md
----
-title: "Title of your post"
-date: "2015-10-14T13:28:00+02:00"
-author: "Daniel Meyer"
-
-categories:
-  - "Execution"
-
-tags:
-  - ""
-
----
-
-Text
-
-# Headline
-
-```java
-public static void main(Sring[] args) {
-  // java code
-}
-
-An image
-
-{{< figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
-
-A bpmn file
-
-{{< bpmn-viewer name="order-process" >}}
-
-A [bpmn symbol](http://github.com/bpmn-io/bpmn-font)
-
-<div>{{< bpmn-icon name="end-event-none" >}}</div>
-
-
-```
-
-```
-
-
-
 # Themeing
 
 ```sh
