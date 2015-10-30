@@ -6,11 +6,6 @@ author: "Valentin Vago"
 categories:
   - "Community"
 
-tags:
-  - "Blog"
-  - "Camunda"
-  - "Design"
-  - "Hugo"
 ---
 
 I was delighted when [Daniel](//twitter.com/meyerdan) asked me to *valify* (as Robert says) the **Camunda BPM Team Blog**
@@ -22,7 +17,7 @@ Here's the little story about that work… erm… fun and some showoff about the
 
 *None of my colleagues, that's pretty much a fact.*
 
-And since we rebuild our [documentation website](//docs.camunda.org/latest) using [Hugo](//gohugo.io)
+And since we rebuild our [documentation website](//docs.camunda.org/manual/latest) using [Hugo](//gohugo.io)
 and liked it, it seemed legit to continue with that stack.
 
 # One cannot just drop the older posts
@@ -33,8 +28,8 @@ So how would you import the posts written on blogger?
 The nerd would probably start writing a client which would pump the posts using the blogger API and stuff.
 
 I'm more of a creative guy. Which means that I don't make a fuss about the way,
-I want to reach my goals (which, by the way, might not always be the {{< bpmn-icon name="end-event-none" >}},
-a bit like when a colleague put a `style` attribute in its HTML).  
+I want to reach my goals (which, by the way, might not always be the {{< bpmn-icon name="end-event-terminate" >}},
+a bit like when a colleague put a `style` attribute in the HTML).  
 I went to the Google API console and got myself all the posts from there. Tada.
 
 After that, it's piece of cake, a [grunt task](//gruntjs.com/api/grunt.task) consumes the JSON and
