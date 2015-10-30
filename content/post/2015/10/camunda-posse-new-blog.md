@@ -10,7 +10,7 @@ categories:
 
 I was delighted when [Daniel](//twitter.com/meyerdan) asked me to *valify* (as Robert says) the **Camunda BPM Team Blog**
 and make it fit our **CI** (nope, for once, this ain't meaning _Continuous Integration_).  
-Here's the little story about that work… erm… fun and some showoff about the new blog features.
+Here's the little story about that work… erm… fun and some show-off about the new blog features.
 <!--more-->
 
 # Who, nowadways, wants to write HTML?
@@ -33,64 +33,21 @@ a bit like when a colleague put a `style` attribute in the HTML).
 I went to the Google API console and got myself all the posts from there. Tada.
 
 After that, it's piece of cake, a [grunt task](//gruntjs.com/api/grunt.task) consumes the JSON and
-creates the markdown files and it looks more or less like that:
+creates the markdown files.
 
-```js
-grunt.registerTask('import', function () {
-  var jsonContent = grunt.file.readJSON('./camunda-blog-posts.json');
-  var postTemplate = [
-    '---',
-    'title: "<%= title.split(\'\\"\').join(\'\\\\"\') %>"',
-    'date: "<%= (new Date(published)).toISOString().split("T").shift() %>"',
-    'author: "<%= author.displayName %>"',
-    '',
-    'categories:',
-    '  - "<%= category %>"',
-    'tags: <%= tags.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
-    '',
-    'aliases:',
-    '  - "<%= alias %>"',
-    '',
-    '---',
-    '',
-    '<div>',
-    '<%= content %>',
-    '</div>'
-  ].join('\n');
+# Content organization
 
-  jsonContent.items.forEach(function (post) {
-    var nameParts = post.url.split('/');
-    var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
+*Because Camunda evolves.*
 
-    post.tags = [];
-    if (post.title.toLowerCase().indexOf('release') > -1) {
-      post.tags.push('Release Note');
-    }
+We will organize the content of the blog under 3 categories:
 
-    post.category = 'Execution';
-    if (post.title.toLowerCase().indexOf('community') > -1) {
-      post.category = 'Community';
-    }
-    else if (post.title.toLowerCase().indexOf('bpmn.io') > -1 ||
-             post.title.toLowerCase().indexOf('dmn.io') > -1) {
-      post.category = 'Modeling';
-    }
+ * [Modeling](/categories/modeling)  
+   Will get content about [BPMN.io](//bpmn.io), Camunda Modeler and other _*MNs_ modeling tools and practices.
+ * [Execution](/categories/execution)  
+   For the engine and platform related posts.
+ * [Community](/categories/community)  
+   Because the community releases some projects which are worth talking about.
 
-    post.labels = post.labels || [];
-    post.alias = post.url.split('blog.camunda.org').pop();
-
-    post.content
-      .split('href="http://blog.camunda.org/')
-      .join('href="/')
-      .split('href="http://camundabpm.blogspot.de/')
-      .join('href="/')
-    ;
-
-    grunt.file.write(name, grunt.template.process(postTemplate, {data: post}));
-  });
-
-});
-```
 
 # New features?
 
@@ -100,7 +57,7 @@ grunt.registerTask('import', function () {
 
 *Because a blog post ain't javadoc.*
 
-I tried to make the text of the posts as readable as possible. This means that
+I tried to make the text of the posts as readable as possible and took care to keep the layout quiet so it doen't disturbs the reading experience.
 
 ### Blockquotes
 
@@ -166,8 +123,8 @@ produces
 
 ## Responsive layout
 
-Yep. And soon responsive youtube video player.
-
+Yep, because it's nice to be able to read blogs on mobile devices.  
+On top of that, in order to make the page load fast (and avoid hurting your mobile data plan), most of the *big* features are loaded as the reader reaches them.
 
 ## Code highlighting
 
