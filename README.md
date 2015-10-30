@@ -30,9 +30,13 @@ Long version: follow the steps below :)
 
 We use Hogo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
 
+### Fork & clone the repository
+
+Fork & clone this repository.
+
 ### Preview the Blog locally
 
-Once you have installed hugo, you can preview the blog by typing
+Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing
 
 ```sh
 hugo -w server
@@ -104,6 +108,10 @@ A [bpmn symbol](http://github.com/bpmn-io/bpmn-font)!
 
 <div>{{< bpmn-icon name="end-event-none" >}}</div>
 
+### Create a Pull Request
+
+Once you have written a post, commit and push it to your fork.
+Then create a pull request.
 
 ## License
 
