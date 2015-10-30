@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/08/cockpit-plugin-store.html"

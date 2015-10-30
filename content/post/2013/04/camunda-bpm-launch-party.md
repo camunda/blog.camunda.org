@@ -6,7 +6,6 @@ author: "Nastasja Johnston"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/04/camunda-bpm-launch-party.html"

@@ -6,7 +6,6 @@ author: "Andreas Drobisch"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/03/the-html5-parts-in-camunda-bpm.html"

@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/05/feedback-request-process-implementation.html"

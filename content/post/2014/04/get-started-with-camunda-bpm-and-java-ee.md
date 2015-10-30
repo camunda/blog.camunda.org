@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/04/get-started-with-camunda-bpm-and-java-ee.html"

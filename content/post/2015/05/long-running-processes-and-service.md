@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/05/long-running-processes-and-service.html"

@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/09/how-to-handle-absent-assignees.html"

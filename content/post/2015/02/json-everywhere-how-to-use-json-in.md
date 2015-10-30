@@ -6,7 +6,6 @@ author: "Roman Smirnov"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/02/json-everywhere-how-to-use-json-in.html"

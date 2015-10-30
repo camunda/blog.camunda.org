@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/04/sneak-preview-for-new-online-training.html"

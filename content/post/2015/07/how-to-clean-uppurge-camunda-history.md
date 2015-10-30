@@ -6,7 +6,6 @@ author: "Ingo Richtsmeier"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/07/how-to-clean-uppurge-camunda-history.html"

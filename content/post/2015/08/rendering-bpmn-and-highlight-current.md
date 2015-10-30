@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Modeling"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/08/rendering-bpmn-and-highlight-current.html"

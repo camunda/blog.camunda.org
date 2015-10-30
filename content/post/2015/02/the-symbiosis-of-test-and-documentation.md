@@ -6,7 +6,6 @@ author: "Sebastian Stamm"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/02/the-symbiosis-of-test-and-documentation.html"

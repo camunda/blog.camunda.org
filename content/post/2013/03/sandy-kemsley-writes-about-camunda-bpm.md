@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/03/sandy-kemsley-writes-about-camunda-bpm.html"

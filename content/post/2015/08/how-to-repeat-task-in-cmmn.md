@@ -6,7 +6,6 @@ author: "Roman Smirnov"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/08/how-to-repeat-task-in-cmmn.html"

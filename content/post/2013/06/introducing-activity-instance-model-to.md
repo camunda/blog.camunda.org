@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/06/introducing-activity-instance-model-to.html"

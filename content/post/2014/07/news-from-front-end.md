@@ -6,7 +6,6 @@ author: "Valentin Vago"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/07/news-from-front-end.html"

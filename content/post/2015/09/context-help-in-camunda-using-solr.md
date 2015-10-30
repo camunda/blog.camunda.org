@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/09/context-help-in-camunda-using-solr.html"

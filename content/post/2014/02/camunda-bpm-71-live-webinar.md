@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/02/camunda-bpm-71-live-webinar.html"

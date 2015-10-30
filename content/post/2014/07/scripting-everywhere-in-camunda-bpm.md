@@ -6,7 +6,6 @@ author: "Sebastian Menski"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/07/scripting-everywhere-in-camunda-bpm.html"

@@ -6,7 +6,6 @@ author: "Nastasja Johnston"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/07/prague-history-beer-and-camunda-bpm.html"

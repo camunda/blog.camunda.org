@@ -6,7 +6,6 @@ author: "Niall Deehan"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/09/bpmn-quest-camunda-as-game-engine.html"

@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/05/camunda-bpm-online-training-available.html"

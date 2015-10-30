@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/10/how-to-send-email-when-usertask-is.html"

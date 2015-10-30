@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/01/gaining-insight-into-performance-of.html"

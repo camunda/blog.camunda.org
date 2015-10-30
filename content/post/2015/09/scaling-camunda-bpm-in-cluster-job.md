@@ -6,7 +6,6 @@ author: "Thorben Lindhauer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/09/scaling-camunda-bpm-in-cluster-job.html"

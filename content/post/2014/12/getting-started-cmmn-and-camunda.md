@@ -6,7 +6,6 @@ author: "Thorben Lindhauer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/12/getting-started-cmmn-and-camunda.html"

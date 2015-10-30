@@ -6,7 +6,6 @@ author: "Niall Deehan"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/06/deploy-camunda-bpm-docker-image-with.html"

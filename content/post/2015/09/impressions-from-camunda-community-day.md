@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/09/impressions-from-camunda-community-day.html"

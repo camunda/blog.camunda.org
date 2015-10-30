@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/09/camunda-bpm-apache-camel-integrating.html"

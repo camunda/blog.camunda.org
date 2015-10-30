@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/05/camunda-bpm-70-on-weblogic-12c.html"

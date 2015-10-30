@@ -6,7 +6,6 @@ author: "Thorben Lindhauer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/08/job-prioritization-asynchronous-processing.html"

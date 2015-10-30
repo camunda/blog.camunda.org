@@ -6,7 +6,6 @@ author: "Michael Schöttes"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/07/automated-ui-testing-with-camunda-web.html"

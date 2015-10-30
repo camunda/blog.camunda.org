@@ -6,7 +6,6 @@ author: "Thorben Lindhauer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/11/query-numeric-variable-values.html"

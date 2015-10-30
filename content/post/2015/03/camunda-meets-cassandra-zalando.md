@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/03/camunda-meets-cassandra-zalando.html"

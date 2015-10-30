@@ -6,7 +6,6 @@ author: "Nico Rehwaldt"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/03/a-closer-look-at-camunda-modeler.html"

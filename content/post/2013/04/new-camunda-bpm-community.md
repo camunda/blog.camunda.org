@@ -6,7 +6,6 @@ author: "Jakob Freund"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/04/new-camunda-bpm-community.html"

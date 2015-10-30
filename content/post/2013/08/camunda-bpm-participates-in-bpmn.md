@@ -6,7 +6,6 @@ author: "Falko Menge"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/08/camunda-bpm-participates-in-bpmn.html"

@@ -6,7 +6,6 @@ author: "Ingo Richtsmeier"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/12/cockpit-and-deployments.html"

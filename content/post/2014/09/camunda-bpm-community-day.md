@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/09/camunda-bpm-community-day.html"

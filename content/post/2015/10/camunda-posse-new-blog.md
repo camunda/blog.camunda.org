@@ -68,7 +68,7 @@ grunt.registerTask('import', function () {
     var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
 
     post.tags = [];
-    if (post.title.toLowerCase().indexOf('release')) {
+    if (post.title.toLowerCase().indexOf('release') > -1) {
       post.tags.push('Release Note');
     }
 

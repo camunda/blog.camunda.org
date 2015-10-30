@@ -6,7 +6,6 @@ author: "Niall Deehan"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/08/brining-together-transactions-cancel.html"

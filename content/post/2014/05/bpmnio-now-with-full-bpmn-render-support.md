@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Modeling"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/05/bpmnio-now-with-full-bpmn-render-support.html"

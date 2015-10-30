@@ -6,7 +6,6 @@ author: "Robert Gimbel"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/12/internationalization-in-camunda-bpm.html"

@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/06/spring-boot-support-in-camunda-new.html"

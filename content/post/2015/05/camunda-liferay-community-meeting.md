@@ -6,7 +6,6 @@ author: "Bernd Rücker"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/05/camunda-liferay-community-meeting.html"

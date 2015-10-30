@@ -6,7 +6,6 @@ author: "Thorben Lindhauer"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/03/a-look-at-fresh-rest-api.html"

@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Modeling"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/07/bpmnio-introduces-simple-modeling.html"

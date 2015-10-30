@@ -6,7 +6,6 @@ author: "Nico Rehwaldt"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/10/camunda-bpm-power-to-embedded-taskforms.html"

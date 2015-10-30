@@ -6,7 +6,6 @@ author: "Nastasja Johnston"
 categories:
   - "Community"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2013/04/the-start-of-camundaorg-community-events.html"

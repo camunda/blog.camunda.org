@@ -6,7 +6,6 @@ author: "Daniel Meyer"
 categories:
   - "Modeling"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/05/bpmnio-source-code-and-demo-application.html"

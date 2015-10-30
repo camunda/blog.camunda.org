@@ -6,7 +6,6 @@ author: "Sebastian Menski"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/02/the-new-camunda-bpmn-model-api.html"

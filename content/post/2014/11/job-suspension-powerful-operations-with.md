@@ -6,7 +6,6 @@ author: "Robert Gimbel"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/11/job-suspension-powerful-operations-with.html"

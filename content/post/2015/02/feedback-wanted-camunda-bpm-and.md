@@ -6,7 +6,6 @@ author: "Robert Gimbel"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/02/feedback-wanted-camunda-bpm-and.html"

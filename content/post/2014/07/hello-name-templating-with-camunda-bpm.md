@@ -6,7 +6,6 @@ author: "Sebastian Menski"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2014/07/hello-name-templating-with-camunda-bpm.html"

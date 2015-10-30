@@ -6,7 +6,6 @@ author: "Ingo Richtsmeier"
 categories:
   - "Execution"
 tags: 
-  - "Release Note"
 
 aliases:
   - "/2015/06/build-your-own-camunda-task-explorer.html"
