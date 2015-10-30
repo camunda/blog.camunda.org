@@ -165,6 +165,12 @@ function lazyLoadDisqus() {
   }
 }
 
+// everything below this line is only executed in production
+
+if (window.location.hostname !== 'blog.camunda.org') {
+  return;
+}
+
 if (_siteSetup.disqusName) {
   var disqusLoaded;
   var disqusEl = document.getElementById('disqus_thread');
@@ -173,10 +179,6 @@ if (_siteSetup.disqusName) {
   window.addEventListener('load', lazyLoadDisqus);
   window.addEventListener('resize', lazyLoadDisqus);
   window.addEventListener('scroll', lazyLoadDisqus);
-}
-
-if (window.location.hostname !== 'blog.camunda.org') {
-  return;
 }
 
 if (_siteSetup.gaCode) {
