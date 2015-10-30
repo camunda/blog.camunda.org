@@ -100,7 +100,13 @@ The rest of the post is written in [markdown](https://help.github.com/articles/m
 
 ##### BPMN files
 
+In order to include a bpmn file in the post, you can either create a screenshot and include it as a figure or render it with bpmn.io. If you want to render it with bpmn.io, use the following short code:
+
+```md
 {{< bpmn-viewer name="order-process" >}}
+```
+
+The bpmn file `order-process.bpmn` must be placed into the `static/post/2015/10/name-of-your-post` folder.
 
 ##### BPMN Symbols
 
