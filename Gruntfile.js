@@ -55,6 +55,14 @@ module.exports = function (grunt) {
           src: ['**/*'],
           dest: '<%= setup.target %>/static/'
         }]
+      },
+      archetypes: {
+        files: [{
+          cwd: '<%= setup.source %>/archetypes/',
+          expand: true,
+          src: ['**/*'],
+          dest: '<%= setup.target %>/archetypes/'
+        }]
       }
     },
 
