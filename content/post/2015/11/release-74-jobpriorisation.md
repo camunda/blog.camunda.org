@@ -8,7 +8,7 @@ In this release we improved the job executor with job priorisation and exponenti
 
 If there are still many jobs with the same priority and same due date left, all the engines in your cluster now try to acquire their jobs to execute not all for the same time but with a short delay (maybe 50 to 150 ms, the exponential backoff). Then they will pick only jobs, that no other engine in the cluster locks exclusively. And the engine will pick the most important jobs to execute them first.
 
-Imagine you have 4 engine in the cluster and 50000 jobs to be executed exactly at midnight. All the engines starts acquiring  jobs exactly at midnight, but only one of can lock the first 50 jobs exclusively and start executing them. Three engines can't get any jobs. With exponential backoff they will all start 50 ms later to acquire jobs again. The two engines, that failed to get any jobs to execute will start 150 ms later and the last one will wait 200 ms before querying for jobs again and it will get jobs, that are not exclusively locked by any other engine.
+Imagine you have 4 engines in the cluster and 50000 jobs to be executed exactly at midnight. All the engines starts acquiring jobs exactly at midnight, but only one of can lock the first 50 jobs exclusively and start executing them. Three engines can't get any jobs. With exponential backoff they will all start 50 ms later to acquire jobs again. The two engines, that failed to get any jobs to execute will start 150 ms later and the last one will wait 200 ms before querying for jobs again and it will get jobs, that are not exclusively locked by any other engine.
 
 So from now on, the overlapping of acquiring jobs is minimal (if any) and all the jobs can be executed as fast as possible.
 
