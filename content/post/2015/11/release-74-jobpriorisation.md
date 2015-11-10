@@ -10,7 +10,7 @@ As most of you, who had been come in touch with the camunda workflow engine, alr
 
 In this release we improved the job executor with job priorisation and exponential backoff. If you have many jobs (maybe 50000) which wait to be executed all at the same time, you can dynamically set priorities to the jobs. The priorities can be evaluated from [process variables](https://docs.camunda.org/manual/latest/user-guide/process-engine/the-job-executor/#priorities-at-the-process-level) or you set them in the cockpit.  
 
-![Calculate Job Priority](https://docs.camunda.org/manual/latest/user-guide/process-engine/img/job-executor-priority-precedence.png)
+{{< figure src="job-executor-priority-precedence.png" alt="Calculate Job Priority" title="Calculate Job Priority" caption="The algorithm">}}
 
 If there are still many jobs with the same priority and same due date left, all the engines in your cluster now try to acquire their jobs to execute not all for the same time but with a short delay (maybe 50 to 150 ms, the exponential backoff). Then they will pick only jobs, that no other engine in the cluster locks exclusively. And the engine will pick the most important jobs to execute them first.
 
