@@ -1,12 +1,10 @@
 +++
-title = "job priorisation in upcoming camunda release"
+title = "Job Executor Improvements in Upcoming Camunda Release"
 date = "2015-11-15T14:44:10+01:00"
 author = "Ingo Richtsmeier"
 categories = ["Execution"]
 tags = ["JobExecutor", "camunda 7.4", "new feature"]
 +++
-
-#JobExecutor Improvements
 
 As most of you, who had been come in touch with the camunda workflow engine, already noticed: The engine is very fast. Have a look at this [whitepaper](https://network.camunda.org/whitepaper/2) or read about our [scalabilty](https://camunda.org/scalability). 
 
@@ -24,5 +22,5 @@ Read this [blogpost from Thorben](http://blog.camunda.org/post/2015/09/scaling-c
 
 Have a look at the [reference](https://docs.camunda.org/manual/latest/reference/deployment-descriptors/tags/job-executor/) or [user guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/the-job-executor/)  to find out how to configure your engine in very heavy load scenarios.
 
-{{< figure src="cockpit-change-job-priority" alt="Change Job Priority in Cockpit." title="Cockpit screenshot" caption="Change the job priority">}}
+{{< figure src="cockpit-change-job-priority.PNG" alt="Change Job Priority in Cockpit." title="Change the job priority" caption="Cockpit screenshot">}}
 
