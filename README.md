@@ -28,6 +28,8 @@ Long version: follow the steps below :)
 
 ### Install Hugo
 
+> *IMPORTANT*: we use a custom build of Hugo and you need to download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/
+
 We use Hogo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
 
 ### Fork & clone the repository
