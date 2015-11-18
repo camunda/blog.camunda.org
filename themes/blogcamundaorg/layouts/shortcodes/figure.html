@@ -1,4 +1,5 @@
-<figure class="tada{{ with .Get "class" }} {{.}}{{ end }}">
+<figure class="{{ with .Get "class" }} {{.}}{{ end }}">
+  <div class="wrapping">
   {{ with .Get "link"}}<a href="{{.}}">{{ end }}
     <img data-src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}" {{ end }}{{ with .Get "width" }}width="{{.}}" {{ end }}/>
   {{ if .Get "link"}}</a>{{ end }}
@@ -13,4 +14,5 @@
     </p> {{ end }}
   </figcaption>
   {{ end }}
+  </div>
 </figure>
