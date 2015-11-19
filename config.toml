@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://blog.camunda.org/"
 languageCode = "en-us"
 title = "Camunda Team Blog"
 theme = "blogcamundaorg"
