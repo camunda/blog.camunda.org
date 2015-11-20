@@ -8,10 +8,10 @@ draft = true
 +++
 
 
-Today we released Camunda BPM 7.4.0-alpha3. This release is our official release candidate for 7.4.0 final, which we will release on November 30th.
+Today we're releasing Camunda BPM 7.4.0-alpha3. This release is our official release candidate for 7.4.0 final, which we will unleashed upon the world on November 30th.
 
 ## Download
-Use the following links to download 7.4.0-alpha3. 
+You can use the following links to download 7.4.0-alpha3. 
 
 [7.4.0-alpha3 for Tomcat](https://camunda.org/release/camunda-bpm/tomcat/7.4/)
 
@@ -22,7 +22,7 @@ Use the following links to download 7.4.0-alpha3.
 [7.4.0-alpha3 for Wildfly](https://camunda.org/release/camunda-bpm/wildfly/7.4/)
 
 ## Features
-Since we are very busy finalizing the 7.4, this blogpost will be very short. Expect a longer blogpost for 7.4 final soon.
+Since we are very busy finalizing 7.4, this blogpost will be very short. Expect a longer blogpost for the 7.4 final release soon.
 
 [244 issues](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14199) have been closed since 7.4.0-alpha2. In the following list you can find some of the highlights:
 
@@ -35,10 +35,10 @@ Since we are very busy finalizing the 7.4, this blogpost will be very short. Exp
 
 
 ## Next?
-Please provide feedback on any problem you have with our release candidate. 
+If you have any feedback on problems you have with our release candidate, please let us know.
 
-The time until the final release on November 30th, we will spend writing documentation and regression testing. 
+In the meantime prepare yourself for the final release, which will be on November 30th. Until then our main undertaking is with writing documentation and regression testing. 
 
-A big 'thank you' goes to the team, who is working very hard and focused these days.
+A big 'thank you' goes to the team, who are focused and working very hard on the final release of 7.4. 
 
 If you want to learn what's new with Camunda BPM 7.4, you can joing our [release webinar](https://network.camunda.org/webinars/47).
