@@ -121,6 +121,26 @@ A [bpmn symbol](http://github.com/bpmn-io/bpmn-font)!
 Once you have written a post, commit and push it to your fork.
 Then create a pull request.
 
+
+## Working on the theme
+
+If you need to make changes on the theme (templates, styles or scripts), you should first start the
+grunt task reponsible for the automatic compilation of the sources.
+
+```
+grunt
+```
+
+Then you can work on the files located in the `theme-src` directory (changed templates will be automatically copied to the relevant theme directory and assets, like styles and scripts, will be compiled in their right destination).
+
+When your work on the source files is done, you should:
+
+1. stop the grunt task
+2. run `npm run build`
+3. commit _all_ the changes
+4. push
+
+
 ## License
 
 The project is licensed under [Apache 2.0](./LICENSE)
