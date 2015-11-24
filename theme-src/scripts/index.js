@@ -73,8 +73,12 @@ function initBPMN(el) {
   }, function (err, resp, body) {
     if (err) { throw err; }
     viewer.importXML(body, function(err) {
-      if (err) { throw err; }
+      if (err) {
+        el.classList.add('error');
+        throw err;
+      }
       fitBpmnViewport(el, viewer);
+      el.classList.remove('loading');
     });
   });
 }
@@ -104,8 +108,9 @@ function fitBpmnViewport(el, viewer) {
 
 function lazyLoadBPMN() {
   // load images that have entered the viewport
-  var diagrams = queryAll('[data-bpmn-diagram]');
+  var diagrams = queryAll('[data-bpmn-diagram]:not(.processed)');
   diagrams.forEach(function (item) {
+    item.classList.add('loading');
     if (utils.isElementInViewport(item)) {
       if (!window.BPMNViewer) {
         var script = mkEl('script');

@@ -448,6 +448,50 @@ section {
 }
 
 
+[data-bpmn-diagram] {
+  margin: (@grid-gutter-width * 0.5) 0;
+  padding: 5px;
+  box-shadow: 0 0 5px #aaa inset;
+  position: relative;
+  overflow: hidden;
+
+  &.loading {
+    min-height: 20vh;
+    &:before,
+    &:after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: block;
+    }
+
+    &:before {
+      background-color: @gray-lighter;
+      z-index: 999;
+      content: '';
+      top: 0;
+      height: 100%;
+    }
+
+    &:after {
+      z-index: 1000;
+      content: 'Loading…';
+      text-align: center;
+      top: 50%;
+      height: 32px;
+      line-height: 32px;
+      margin-top: -16px;
+    }
+  }
+
+  .bjs-container {
+    // padding-bottom: 5vw;
+    > .bjs-powered-by > img {
+      max-width: 5vw;
+    }
+  }
+}
+
 
 
 @import "./pager.less";
