@@ -50,6 +50,8 @@ Great, now you have everything in place for writing a new blogpost.
 
 ### Create a new Post
 
+> **Warning**: if you push a non-draft post to master it will be released immediately. If you must commit non-draft posts to master instead of to a branch, please mark them as `draft` (see below).
+
 In order to create a new post, type
 
 ```sh
@@ -74,6 +76,7 @@ For the post you just created it looks like this:
 title = "camunda introduces support for bpel"
 date = "2015-10-30T14:44:10+01:00"
 author = "Your Name"
+draft = true
 categories = ["Execution"]
 tags = ["X", "Y"]
 +++
@@ -83,10 +86,11 @@ tags = ["X", "Y"]
 Lets walk through this and look into this in more detail:
 
 * `title`: this is the title of your post. It will be the main headline. Since it was generated You may want to edit this and capitalize some words. Let's change it to `Camunda finally introduces Support for BPEL`.
-* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published.
+* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hogo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
 * `author`: contains your name :)
 * `categories`: choose from the following categories: `Execution`, `Modeling`, `Community`.
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
+* `draft`: value `true` means that the post is a draft. Draft posts are not published automativally.
 
 More information on the hugo front matter can be found here: https://gohugo.io/content/front-matter/
 
