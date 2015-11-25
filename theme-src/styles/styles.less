@@ -19,41 +19,6 @@ a:focus {
 
 
 
-/*
-a {
-  position: relative;
-  display: inline-block;
-  &:after {
-    position: absolute;
-    display: block;
-    content: '';
-    background-color: @link-color;
-    bottom: -1px;
-    height: 0;
-    border-bottom: 1px solid;
-    margin-right: auto;
-
-    transition: opacity 0.218s ease,
-                transform 0.218s ease,
-                width 0.218s ease,
-                margin-left 0.218s ease;
-    opacity: 0;
-    transform: translateY(1em);
-    width: 0;
-    margin-left: 50%;
-  }
-
-  &:hover,
-  &:focus {
-    &:after {
-      margin-left: 0;
-      width: 100%;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-*/
 
 
 
@@ -109,49 +74,6 @@ body {
     .bpmn-icon-bpmn-io:before {
       margin-left: -2px;
     }
-
-    /*
-    .search-field {
-      margin-top: 7px;
-
-      input {
-        height: 22px;
-        line-height: 22px;
-        font-size: 14px;
-        padding: 0 10px;
-        border-radius: 20px;
-        border: 1px solid @link-color;
-        color: @gray-dark;
-        box-shadow: 0 0 0 @link-color inset;
-        transition: box-shadow 0.218s ease;
-        &:focus {
-          outline: none;
-        }
-      }
-
-      &:after {
-        transition: transform 0.218s ease;
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 18px;
-        background-color: @body-bg;
-      }
-
-      &.focused {
-        input {
-          outline: none;
-          box-shadow: 0 0 3px fade(@link-color, 50%) inset;
-        }
-
-        &:after {
-
-        }
-      }
-    }
-    */
 
 
     @media (max-width: 600px) {
