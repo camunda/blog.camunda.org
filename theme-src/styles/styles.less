@@ -89,23 +89,19 @@ body {
 
     }
 
-    h1,
-    .grill,
-    .categories {
-      margin-top: 10px;
-    }
-
     h1 {
       float: left;
       padding-right: @grid-gutter-width * 0.5;
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 0;
+      margin-top: 10px;
     }
 
     .grill,
-    .categories {
+    .search-field {
       float: right;
+      margin-top: 7px;
       padding-left: @grid-gutter-width * 0.5;
     }
 
@@ -113,6 +109,50 @@ body {
     .bpmn-icon-bpmn-io:before {
       margin-left: -2px;
     }
+
+    /*
+    .search-field {
+      margin-top: 7px;
+
+      input {
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        padding: 0 10px;
+        border-radius: 20px;
+        border: 1px solid @link-color;
+        color: @gray-dark;
+        box-shadow: 0 0 0 @link-color inset;
+        transition: box-shadow 0.218s ease;
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &:after {
+        transition: transform 0.218s ease;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 18px;
+        background-color: @body-bg;
+      }
+
+      &.focused {
+        input {
+          outline: none;
+          box-shadow: 0 0 3px fade(@link-color, 50%) inset;
+        }
+
+        &:after {
+
+        }
+      }
+    }
+    */
+
 
     @media (max-width: 600px) {
       h1 {
@@ -145,8 +185,12 @@ body {
       }
     }
   }
-  &.scrolled > header {
-    box-shadow: 0 2px 2px 0 fade(@gray, 50%);
+
+  &.search-open,
+  &.scrolled {
+    > header {
+      box-shadow: 0 2px 2px 0 fade(@gray, 50%);
+    }
   }
 }
 
@@ -504,3 +548,4 @@ figure .wrapping {
 @import "./icons.less";
 @import "./sidebar.less";
 @import "./prism.less";
+@import "./search.less";

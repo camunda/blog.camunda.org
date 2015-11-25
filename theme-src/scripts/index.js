@@ -6,7 +6,6 @@ var xhr = require('xhr');
 require('./classList');
 require('./img-lazy-loading');
 
-
 /********************************************************************\
  * DOM utilities                                                    *
 \********************************************************************/
@@ -139,6 +138,16 @@ window.addEventListener('DOMContentLoaded', lazyLoadBPMN);
 window.addEventListener('load', lazyLoadBPMN);
 window.addEventListener('resize', lazyLoadBPMN);
 window.addEventListener('scroll', lazyLoadBPMN);
+
+
+
+/********************************************************************\
+ * Search                                                           *
+\********************************************************************/
+if (_siteSetup.gSearchApiKey && _siteSetup.gSearchCtx) {
+  require('./search')(_siteSetup.gSearchApiKey, _siteSetup.gSearchCtx);
+}
+
 
 
 
