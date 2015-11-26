@@ -34,7 +34,7 @@
 
   &.focused {
     input {
-      box-shadow: 0 0 3px fade(@link-color, 50%) inset;
+      box-shadow: 0 0 3px fade(@gray-light, 50%) inset, 0 0 3px fade(@link-color, 70%);
       border: 1px solid mix(@link-color, @gray-lighter);
     }
 
@@ -57,15 +57,15 @@
   right: 5%;
   overflow: hidden;
   z-index: 3;
-  background-color: fade(@body-bg, 95%);
+  background-color: fade(@gray-lighter, 95%);
 
   transform: translateY(0 - (@grid-gutter-width * 2));
   transition: transform 0.218s ease,
               opacity 0.218s ease;
 
-  border: 1px solid @gray-lighter;
+  border: 1px solid @link-color;
   border-top: none;
-  box-shadow: 0 0 3px 0 fade(@gray, 50%);
+  box-shadow: 0 0 3px 0 fade(@link-color, 50%);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
 
@@ -91,13 +91,17 @@
 
   li {
     overflow: hidden;
-    margin: 0 auto;
-    max-width: @layout-width;
-    padding: 0 10px 10px 10px;
-    border-bottom: 1px dashed @gray-lighter;
+    padding: 0 0 10px 0;
+    border-bottom: 1px dashed @body-bg;
     &:last-of-type {
       border-bottom: none;
       padding-bottom: 0;
+    }
+
+    > * {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: (@layout-width - 20px);
     }
   }
 
@@ -124,6 +128,9 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
+    background-color: @gray-light;
+    border-top: 1px solid @link-color;
+
     button {
       position: relative;
       float: left;
@@ -131,20 +138,34 @@
       border: none;
       width: 33%;
       z-index: 1;
-      background-color: @gray-lighter;
+      background-color: transparent;
       color: @link-color;
       line-height: 28px;
       height: 26px;
+      transition: color 0.218s ease,
+                  background-color 0.218s ease;
+
+      &:hover,
+      &:focus {
+        background-color: mix(@gray-lighter, @link-color);
+        color: lighten(@link-color, 10%);
+      }
 
       &[disabled] {
-        color: @gray-light;
+        color: @gray;
+        background-color: @gray-lighter;
+
+        &:hover,
+        &:focus {
+          color: @gray;
+          background-color: @gray-lighter;
+        }
       }
 
       &.search-close {
         width: 34%;
-        border-color: @gray-lighter;
-        border-left-width: 1px;
-        border-right-width: 1px;
+        border: 0 solid @link-color;
+        border-width: 0 1px;
         z-index: 2;
       }
     }
