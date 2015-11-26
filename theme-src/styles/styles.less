@@ -19,41 +19,6 @@ a:focus {
 
 
 
-/*
-a {
-  position: relative;
-  display: inline-block;
-  &:after {
-    position: absolute;
-    display: block;
-    content: '';
-    background-color: @link-color;
-    bottom: -1px;
-    height: 0;
-    border-bottom: 1px solid;
-    margin-right: auto;
-
-    transition: opacity 0.218s ease,
-                transform 0.218s ease,
-                width 0.218s ease,
-                margin-left 0.218s ease;
-    opacity: 0;
-    transform: translateY(1em);
-    width: 0;
-    margin-left: 50%;
-  }
-
-  &:hover,
-  &:focus {
-    &:after {
-      margin-left: 0;
-      width: 100%;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-*/
 
 
 
@@ -89,23 +54,19 @@ body {
 
     }
 
-    h1,
-    .grill,
-    .categories {
-      margin-top: 10px;
-    }
-
     h1 {
       float: left;
       padding-right: @grid-gutter-width * 0.5;
       font-size: 20px;
       font-weight: 400;
       margin-bottom: 0;
+      margin-top: 10px;
     }
 
     .grill,
-    .categories {
+    .search-field {
       float: right;
+      margin-top: 8px;
       padding-left: @grid-gutter-width * 0.5;
     }
 
@@ -113,6 +74,7 @@ body {
     .bpmn-icon-bpmn-io:before {
       margin-left: -2px;
     }
+
 
     @media (max-width: 600px) {
       h1 {
@@ -145,8 +107,12 @@ body {
       }
     }
   }
-  &.scrolled > header {
-    box-shadow: 0 2px 2px 0 fade(@gray, 50%);
+
+  &.search-open,
+  &.scrolled {
+    > header {
+      box-shadow: 0 2px 2px 0 fade(@gray, 50%);
+    }
   }
 }
 
@@ -217,7 +183,8 @@ body {
       }
 
       > pre,
-      > blockquote {
+      > blockquote,
+      > .bpmn-viewer {
         padding: (@line-height-computed / 2) @grid-gutter-width;
         width: auto;
         max-width: @layout-width + (@grid-gutter-width * 2);
@@ -447,6 +414,55 @@ section {
   padding-left: 0;
 }
 
+.bpmn-viewer {
+  margin: (@grid-gutter-width * 0.5) 0;
+  box-shadow: 0 0 5px #aaa inset;
+  overflow: hidden;
+}
+
+[data-bpmn-diagram] {
+  padding: 0;
+  position: relative;
+
+  .bjs-container {
+    // padding-bottom: 5vw;
+    > .bjs-powered-by > img {
+      max-width: 5vw;
+    }
+  }
+}
+
+[data-bpmn-diagram],
+figure .wrapping {
+  &.loading {
+    min-height: 20vh;
+    &:before,
+    &:after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      display: block;
+    }
+
+    &:before {
+      background-color: @body-bg;
+      z-index: 999;
+      content: '';
+      top: 0;
+      height: 100%;
+    }
+
+    &:after {
+      z-index: 1000;
+      content: 'Loading…';
+      text-align: center;
+      top: 50%;
+      height: 32px;
+      line-height: 32px;
+      margin-top: -16px;
+    }
+  }
+}
 
 
 
@@ -454,3 +470,4 @@ section {
 @import "./icons.less";
 @import "./sidebar.less";
 @import "./prism.less";
+@import "./search.less";

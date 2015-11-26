@@ -12,6 +12,13 @@ function lazyLoadImages() {
   var images = utils.queryAll('img[data-src]');
   images.forEach(function (item) {
     if (utils.isElementInViewport(item)) {
+      var wrap = item.parentNode;
+      console.info('loading');
+      if (wrap) wrap.classList.add('loading');
+      item.addEventListener('load', function () {
+        console.info('loaded');
+        if (wrap) wrap.classList.remove('loading');
+      });
       item.setAttribute('src', item.getAttribute('data-src'));
       item.removeAttribute('data-src');
     }

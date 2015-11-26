@@ -50,6 +50,8 @@ Great, now you have everything in place for writing a new blogpost.
 
 ### Create a new Post
 
+> **Warning**: if you push a non-draft post to master it will be released immediately. If you must commit non-draft posts to master instead of to a branch, please mark them as `draft` (see below).
+
 In order to create a new post, type
 
 ```sh
@@ -74,6 +76,7 @@ For the post you just created it looks like this:
 title = "camunda introduces support for bpel"
 date = "2015-10-30T14:44:10+01:00"
 author = "Your Name"
+draft = true
 categories = ["Execution"]
 tags = ["X", "Y"]
 +++
@@ -83,10 +86,11 @@ tags = ["X", "Y"]
 Lets walk through this and look into this in more detail:
 
 * `title`: this is the title of your post. It will be the main headline. Since it was generated You may want to edit this and capitalize some words. Let's change it to `Camunda finally introduces Support for BPEL`.
-* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published.
+* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hogo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
 * `author`: contains your name :)
 * `categories`: choose from the following categories: `Execution`, `Modeling`, `Community`.
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
+* `draft`: value `true` means that the post is a draft. Draft posts are not published automativally.
 
 More information on the hugo front matter can be found here: https://gohugo.io/content/front-matter/
 
@@ -120,6 +124,26 @@ A [bpmn symbol](http://github.com/bpmn-io/bpmn-font)!
 
 Once you have written a post, commit and push it to your fork.
 Then create a pull request.
+
+
+## Working on the theme
+
+If you need to make changes on the theme (templates, styles or scripts), you should first start the
+grunt task reponsible for the automatic compilation of the sources.
+
+```
+grunt
+```
+
+Then you can work on the files located in the `theme-src` directory (changed templates will be automatically copied to the relevant theme directory and assets, like styles and scripts, will be compiled in their right destination).
+
+When your work on the source files is done, you should:
+
+1. stop the grunt task
+2. run `npm run build`
+3. commit _all_ the changes
+4. push
+
 
 ## License
 

@@ -32,6 +32,17 @@ button.sidebar-toggle {
       margin-bottom: 0;
     }
   }
+
+  &:hover {
+    span {
+      &:first-of-type {
+        transform: translateY(-2px);
+      }
+      &:last-of-type {
+        transform: translateY(2px);
+      }
+    }
+  }
 }
 
 .sidebar-content {
@@ -53,11 +64,9 @@ button.sidebar-toggle {
   }
 
   .col {
-    // border-bottom: 1px dashed @gray-dark;
     margin-bottom: @grid-gutter-width * 0.5;
     padding-bottom: @grid-gutter-width * 0.5;
     &:last-of-type {
-    //   border-bottom: 0;
       margin-bottom: 0;
       padding-bottom: 0;
     }

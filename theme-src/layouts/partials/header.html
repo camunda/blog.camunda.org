@@ -32,12 +32,32 @@
       </a>
     </h1>
 
-    <!-- {{ partial "categories" . }} -->
-
     <div class="grill">
       {{ partial "sidebar-toggle.html" . }}
     </div>
+
+    <div class="search-field">
+      <input type="search" placeholder="Search…" />
+    </div>
   </div>
 </header>
+
+<div class="search-results">
+  <ul class="results-list">
+  </ul>
+  <footer>
+    <button class="btn btn-default page previous">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </button>
+
+    <button class="search-close btn btn-default">
+      <span class="glyphicon glyphicon-remove"></span>
+    </button>
+
+    <button class="btn btn-default page next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </button>
+  </footer>
+</div>
 
 <div class="page-wrapper">

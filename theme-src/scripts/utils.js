@@ -43,6 +43,13 @@ function queryAll(selector, context) {
 utils.queryAll = queryAll;
 
 
+function query(selector, context) {
+  context = (context || document.body);
+  return context.querySelector(selector);
+}
+utils.query = query;
+
+
 function keys(o) {
   return Object.keys(o);
 }

@@ -6,7 +6,6 @@ var xhr = require('xhr');
 require('./classList');
 require('./img-lazy-loading');
 
-
 /********************************************************************\
  * DOM utilities                                                    *
 \********************************************************************/
@@ -73,8 +72,12 @@ function initBPMN(el) {
   }, function (err, resp, body) {
     if (err) { throw err; }
     viewer.importXML(body, function(err) {
-      if (err) { throw err; }
+      if (err) {
+        el.classList.add('error');
+        throw err;
+      }
       fitBpmnViewport(el, viewer);
+      el.classList.remove('loading');
     });
   });
 }
@@ -104,8 +107,9 @@ function fitBpmnViewport(el, viewer) {
 
 function lazyLoadBPMN() {
   // load images that have entered the viewport
-  var diagrams = queryAll('[data-bpmn-diagram]');
+  var diagrams = queryAll('[data-bpmn-diagram]:not(.processed)');
   diagrams.forEach(function (item) {
+    item.classList.add('loading');
     if (utils.isElementInViewport(item)) {
       if (!window.BPMNViewer) {
         var script = mkEl('script');
@@ -134,6 +138,16 @@ window.addEventListener('DOMContentLoaded', lazyLoadBPMN);
 window.addEventListener('load', lazyLoadBPMN);
 window.addEventListener('resize', lazyLoadBPMN);
 window.addEventListener('scroll', lazyLoadBPMN);
+
+
+
+/********************************************************************\
+ * Search                                                           *
+\********************************************************************/
+if (_siteSetup.gSearchApiKey && _siteSetup.gSearchCtx) {
+  require('./search')(_siteSetup.gSearchApiKey, _siteSetup.gSearchCtx);
+}
+
 
 
 

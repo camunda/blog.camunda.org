@@ -34,6 +34,7 @@ In the model below i'm using a non-interrupting start event within an event subp
 
 {{< bpmn-viewer name="escalation-event-subprocess" >}}
 
-This means that an escalation can be raised any time within the process and then caught and dealth with by the event subprocess without halting the main process itself. 
+This means that an escalation can be raised any time within the process and then caught and dealth with by the event subprocess without halting the main process itself. For more information on this shiny new addition head on over
+to [our documentation page.](//docs.camunda.org/manual/latest/reference/bpmn20/events/escalation-events/)
 So go forth and escalate things with Camunda 7.4!
 
