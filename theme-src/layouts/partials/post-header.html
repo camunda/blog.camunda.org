@@ -3,7 +3,7 @@
 
   <div class="meta">
     Written by <a href="#author-badge" class="author">{{ .Params.author }}</a>
-    on <time pubdate="{{ .PublishDate }}">{{ .Date.Format "Wed, 2 Jan 2006" }}</time>,
+    on <time pubdate="{{ .PublishDate }}">{{ .Date.Format "Mon, 2 Jan 2006" }}</time>,
     under {{ range .Params.categories }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>{{ end }} category.
     <!-- {{ partial "edit-on-github.html" . }} -->
   </div>
