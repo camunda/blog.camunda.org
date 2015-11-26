@@ -1,10 +1,10 @@
 +++
 author = "Bernd Rücker"
 categories = ["Execution"]
-date = "2015-11-19T13:15:00+01:00"
+date = "2015-11-26T16:00:00+01:00"
 tags = ["BPMN 2.0", "External Tasks"]
 title = "External Tasks allows new Use Cases with Camunda BPM 7.4"
-draft = true
+draft = false
 
 +++
 
