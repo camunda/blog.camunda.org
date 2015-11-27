@@ -56,7 +56,7 @@
   left: 5%;
   right: 5%;
   overflow: hidden;
-  z-index: 3;
+  z-index: 7;
   background-color: fade(@gray-lighter, 95%);
 
   transform: translateY(0 - (@grid-gutter-width * 2));
@@ -128,7 +128,7 @@
     width: 100%;
     text-align: center;
     overflow: hidden;
-    background-color: @gray-light;
+    // background-color: @gray-light;
     border-top: 1px solid @link-color;
 
     button {
@@ -147,7 +147,7 @@
 
       &:hover,
       &:focus {
-        background-color: mix(@gray-lighter, @link-color);
+        background-color: lighten(desaturate(@link-color, 75%), 70%);
         color: lighten(@link-color, 10%);
       }
 
@@ -172,15 +172,29 @@
   }
 }
 
+.search-underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 6;
+  background-color: fade(@gray-light, 95%);
+}
 
 
 body.search-open {
+  // overflow: hidden;
   .search-results {
     opacity: 1;
     transform: translateY(0);
     ul {
       max-height: 500px;
     }
+  }
+
+  .search-underlay {
+    height: 100%;
   }
 }
 

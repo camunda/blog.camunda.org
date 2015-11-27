@@ -116,28 +116,36 @@ button.sidebar-toggle {
 }
 
 
-body.sidebar-open {
-  .sidebar {
-    padding-bottom: 4px;
-    max-height: ~"calc(100vh - @{header-height})";
-  }
+body {
+  &.sidebar-open {
+    .sidebar {
+      padding-bottom: 4px;
+      max-height: ~"calc(100vh - @{header-height})";
+    }
 
-  .sidebar-content {
-    overflow: auto;
-    box-shadow: 0 0 4px 0 fade(@gray, 50%);
-  }
+    .sidebar-content {
+      overflow: auto;
+      box-shadow: 0 0 4px 0 fade(@gray, 50%);
+    }
 
-  button.sidebar-toggle {
-    > span {
-      opacity: 0;
-      &:first-of-type {
-        opacity: 1;
-        transform: translateY(5px) rotateZ(45deg);
+    button.sidebar-toggle {
+      > span {
+        opacity: 0;
+        &:first-of-type {
+          opacity: 1;
+          transform: translateY(5px) rotateZ(45deg);
+        }
+        &:last-of-type {
+          opacity: 1;
+          transform: translateY(-5px) rotateZ(-45deg);
+        }
       }
-      &:last-of-type {
-        opacity: 1;
-        transform: translateY(-5px) rotateZ(-45deg);
-      }
+    }
+  }
+  &.sidebar-open.search-open {
+    .sidebar {
+      max-height: 0;
+      padding-bottom: 0;
     }
   }
 }

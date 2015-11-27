@@ -23,15 +23,17 @@ module.exports = function (gSearchApiKey, gSearchCtx) {
   var searchUri = 'https://www.googleapis.com/customsearch/v1?key=' + gSearchApiKey + '&cx=' + gSearchCtx + '&q=';
   var searchField = query('input[type=search]');
   var searchResults = query('.search-results');
+  var searchUnderlay = query('.search-underlay');
   var searchCloseBtn = query('.search-close', searchResults);
   var pageButtons = queryAll('button.page');
 
-
-  searchCloseBtn.addEventListener('click', function (evt) {
+  function closeSearch(evt) {
     evt.preventDefault();
     bodyClasses.remove('search-open');
     searchField.value = '';
-  });
+  }
+  searchCloseBtn.addEventListener('click', closeSearch);
+  searchUnderlay.addEventListener('click', closeSearch);
 
   pageButtons.forEach(function (btn) {
     btn.addEventListener('click', function (evt) {
@@ -96,6 +98,8 @@ module.exports = function (gSearchApiKey, gSearchCtx) {
       resultsContainer.innerHTML = renderedResults;
 
       bodyClasses.add('search-open');
+
+      query('li:first-of-type', resultsContainer).scrollIntoView();
     });
   }
 
