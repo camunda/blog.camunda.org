@@ -3,21 +3,20 @@ author = "Robert Gimbel"
 categories = ["Execution, Modelling"]
 date = "2015-11-30T10:00:00+02:00"
 tags = ["Release Note"]
-title = "Camunda Eclipse Plugin 3.0 Released"
+title = "Camunda Eclipse Plugin 3.0.0 Released"
 draft = true
 
 +++
 
-
-Today we're releasing version 3.0 of the Camunda BPMN Plugin for Eclipse. This version is a major release which contains the following new features.
+Today we release version 3.0.0 of the Camunda Eclipe Plugin. This major release provides a set of new features.
 <!--more-->
 ## Features
 
 * Compatibility with the new Camunda Modeler which uses the new <camunda> namespace
 
-* Compatibility with the Camunda BPM Platform 7.4 which also supports the new <camunda> namespace
+* Compatibility with Camunda BPM Platform 7.4 which also supports the new <camunda> namespace
 
-* Support for editing the event type "delete" for a task listener in the properties panel 
+* Support for editing the event type "delete" for a task listeners in the properties panel 
 
 ## Download and Update Sites
 
@@ -27,10 +26,14 @@ Note that the URLs of the update sites changed.
 
 ## Breaking Change
 
-This major version contains a breaking change, since we introduced the new <camunda> namespace for the extension elements and attributes. 
+This major version contains a breaking change, since we introduced the new <camunda> namespace for extension elements and attributes.
+[Read this section of the Update Guide for details](https://docs.camunda.org/manual/7.4/update/minor/73-to-74/#changed-url-of-bpmn-extensions-namespace).
 
 The Camunda Eclipse Plugin version 3.0 ist compatible with Camunda BPM versions 7.4.0, 7.3.3, 7.2.6 onwards. 
 
 ## The Future of Modelling
 
-We strongly advise you to consider our new Camunda Modeler in the long run, since it offers a much better usability and also supports DMN. 
+Consider switching to the new Camunda Modeler in the long run. It offers a much better usability and also supports DMN.
+For more background information, [read the release blogpost of the Camunda Modeler][modeler-blogpost].
+
+[modeler-blogpost]: ???
