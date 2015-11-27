@@ -34,6 +34,4 @@ The Camunda Eclipse Plugin version 3.0 ist compatible with Camunda BPM versions 
 ## The Future of Modelling
 
 Consider switching to the new Camunda Modeler in the long run. It offers a much better usability and also supports DMN.
-For more background information, [read the release blogpost of the Camunda Modeler][modeler-blogpost].
-
-[modeler-blogpost]: ???
+For more background information, read the [release blogpost of the Camunda Modeler](http://blog.camunda.org/post/2015/11/hello-new-camunda-modeler/).
