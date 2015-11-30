@@ -17,8 +17,26 @@ a:focus {
   text-decoration: none;
 }
 
+a {
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    border-bottom: 1px dotted mix(@link-color, @body-bg);
+  }
+}
 
 
+h1,
+h2 {
+  a:after {
+    display: none;
+  }
+}
 
 
 
