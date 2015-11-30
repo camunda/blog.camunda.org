@@ -21,32 +21,38 @@ In this case transcoding and uploading a video file can take ages. It is done by
 You have to set a **topic name**. Compare this to messaging where you use named queues in order to send messages to a specific recipient. This is the same as the topic name. If a worker wants to retrieve work he specifices the topic name he is interessted in. Retrieving work can be done by Java API or by REST API. The following example queries for transcoding tasks and completes them via REST API: 
 
 ```javascript
+
+var pollPayload = {
+  "workerId":"worker01", // some unique name for the current worker instance
+  "maxTasks":5,
+  "topics": [
+    {
+      "topicName": "transcodeVideo",
+      "lockDuration": 10000, // How much time the worker thinks he needs to process the task
+      "variables": ["video"] // Which variables should be returned in the response (to avoid additional REST calls to read data)
+    }
+  ]
+};
+
 $.ajax('http://localhost:8080/engine-rest/engine/default/external-task/fetchAndLock/', {
-  data: JSON.stringify({
-  	"workerId":"worker01", // some unique name for the current worker instance
-  	"maxTasks":5,
-  	"topics": [
-  		{
-  			"topicName": "transcodeVideo",
-  			"lockDuration": 10000, // How much time the worker thinks he needs to process the task
-  			"variables": ["video"] // Which variables should be returned in the response (to avoid additional REST calls to read data)
-  		}
-	]}),
+  data: JSON.stringify(pollPayload),
   contentType : 'application/json',
   type : 'POST',
   success: function (result) {
-	for (var index = 0; index < result.length; ++index) {
-		var externalTask = result[index];
 
-		// Here the actual work would be done
-		$.ajax(REST_BASE_URL + '/external-task/' + externalTask.id + '/complete', {
- 			data: JSON.stringify( {"workerId":"worker01"} ),
- 			contentType : 'application/json',
- 			type : 'POST'
-	  });
+    for (var index = 0; index < result.length; ++index) {
+      var externalTask = result[index];
+
+      // Here the actual work would be done
+      $.ajax(REST_BASE_URL + '/external-task/' + externalTask.id + '/complete', {
+         data: JSON.stringify( {"workerId":"worker01"} ),
+         contentType : 'application/json',
+         type : 'POST'
+      });
 
     }
-	});
+
+  });
 };
 ```
 
