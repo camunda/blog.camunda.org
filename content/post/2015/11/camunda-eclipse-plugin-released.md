@@ -23,6 +23,8 @@ Please refer to our documentation for information on the [Eclipse Update Sites](
 
 Note that the URLs of the update sites changed.
 
+> **Known issue**: Currently the indigo version of the modeler cannot be installed due to a problem with archived update sites in eclipse. We are working on it.
+
 ## Breaking Change
 
 This major version contains a breaking change, since we introduced the new <camunda> namespace for extension elements and attributes.
