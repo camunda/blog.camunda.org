@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "grunt build && grunt optimize && hugo"
+    "build": "grunt build && grunt optimize && hugo",
+    "auto-build": "grunt build && grunt optimize && hugo -w -D server"
   },
   "repository": {
     "type": "git",
