@@ -305,6 +305,33 @@ figure {
       }
     }
   }
+
+  &.no-border {
+
+    .wrapping {
+      border: none;
+
+      > figcaption {
+        border-top: none;
+
+        h4, p {
+          float: none;
+        }
+      }
+    }
+  }
+
+  &.teaser {
+    .wrapping {
+      background: none;
+
+      > figcaption {
+        h4, p {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 
