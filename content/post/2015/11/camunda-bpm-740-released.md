@@ -31,7 +31,7 @@ DMN is a new emerging standard by the OMG (Object Management Group) which can be
 
 It can be integrated seamlessly with BPMN and CMMN and allows modeling complex decision logic as Decision Tables. Such decision tables  are understandable by business domain experts but can also be executed directly:
 
-{{< figure src="decision-table.png" alt="DMN Decision Table" caption="A DMN Decision Table" >}}
+{{< figure src="decision-table.gif" alt="DMN Decision Table" caption="A DMN Decision Table" >}}
 
 Representing complex decision logic with DMN has many advantages:
 
