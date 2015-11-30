@@ -4,7 +4,6 @@ categories = ["Execution, Modelling"]
 date = "2015-11-30T10:00:00+01:00"
 tags = ["Release Note", "Tooling"]
 title = "Camunda Eclipse Plugin 3.0.0 Released"
-draft = true
 
 +++
 
