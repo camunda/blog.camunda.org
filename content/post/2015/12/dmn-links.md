@@ -1,6 +1,6 @@
 +++
 author = "Bernd Rücker"
-categories = ["DMN", "Execution"]
+categories = ["Execution"]
 date = "2015-12-01"
 tags = ["DMN"]
 title = "Get Started with DMN - Some links you might be interessted in"
