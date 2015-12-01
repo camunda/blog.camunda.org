@@ -28,7 +28,7 @@ We are still working on a dedicated Get Started Guide - so stay tuned.
 
 ## Thanks!
 
-At this place I wanted to say a very big thank you to our two Sebastians - Sebastian Stamm who developed the DMN Modeler and Sebastian Menski who developed the core DMN engine. I think I was an annoying colleague over the last weeks asking so much questions as I got my first examples/showcases working (I did my first sales pitch with live demo already with a SNAPSHOT version of pre-alpha2 ;-)) and developed our super, brand new 
+At this place I wanted to say a very big thank you to the product team. I think I was an annoying colleague over the last weeks asking so much questions as I got my first examples/showcases working (I did my first sales pitch with live demo already with a SNAPSHOT version of pre-alpha2 ;-)) and developed our super, brand new 
 
 [DMN Training](http://camunda.com/dmn/training/) (CU there?)!
 
