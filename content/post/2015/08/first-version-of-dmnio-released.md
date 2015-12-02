@@ -45,11 +45,11 @@ viewer.importXML(table, function(err) {
 </code></pre>
 <br />
 <br />
-Check out some <a href="https://github.com/dmn-io/dmn-js-examples" target="_blank">usage examples</a> we have put together.<br />
+Check out some <a href="https://github.com/bpmn-io/dmn-js-examples" target="_blank">usage examples</a> we have put together.<br />
 <br />
 <h2>
 It's Open Source!</h2>
-dmn-js and a number of projects it is built with are <a href="https://github.com/dmn-io" target="_blank">published on GitHub</a>. We have licensed dmn-js as do whatever you want but keep the project logo in the viewer and released all other projects under the MIT license.<br />
+dmn-js and a number of projects it is built with are <a href="https://github.com/bpmn-io/" target="_blank">published on GitHub</a>. We have licensed dmn-js as do whatever you want but keep the project logo in the viewer and released all other projects under the MIT license.<br />
 <br />
 Feel free to look inside the projects. It is never to early to contribute bug reports and feature requests! Note however that we are still in alpha stage. Because of that documentation may be lacking and APIs might break with future releases.<br />
 <br />
