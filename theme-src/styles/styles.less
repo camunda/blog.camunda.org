@@ -475,7 +475,6 @@ section {
   position: relative;
 
   .bjs-container {
-    // padding-bottom: 5vw;
     > .bjs-powered-by > img {
       max-width: 5vw;
     }
@@ -515,7 +514,98 @@ figure .wrapping {
   }
 }
 
+.lightbox {
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100%;
+  transition: bottom 0.218s ease;
+  background-color: fade(@gray-lighter, 80);
+  z-index: @zindex-navbar-fixed + 9;
+  cursor: pointer;
 
+  .content {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid @gray-light;
+    padding: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 2px fade(@gray, 50);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    background-color: #fff;
+  }
+
+  &.open {
+    bottom: 0;
+  }
+}
+
+figure.clickable {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  > span {
+    border-color: @link-color;
+  }
+
+  &:before,
+  &:after {
+    display: block;
+    position: absolute;
+  }
+
+  &:before {
+    width: @grid-gutter-width;
+    height: @grid-gutter-width;
+    top: 1px;
+    right: 1px;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\e140';
+    z-index: 2;
+    color: #fff;
+
+    transition: font-size 0.128s ease,
+                top 0.128s ease,
+                right 0.128s ease,
+                width 0.128s ease,
+                height 0.128s ease;
+  }
+  &:after {
+    width: @grid-gutter-width * 2.6;
+    height: @grid-gutter-width * 2.6;
+    top: 0 - (@grid-gutter-width * 1.3);
+    right: 0 - (@grid-gutter-width * 1.3);
+    content: '';
+    z-index: 1;
+    background-color: fade(@link-color, 90);
+    transform: rotateZ(45deg);
+  }
+
+  &:hover:before {
+    width: @grid-gutter-width + 4;
+    height: @grid-gutter-width + 4;
+    top: 0px;
+    right: 0px;
+    font-size: 22px;
+  }
+}
 
 @import "./pager.less";
 @import "./icons.less";

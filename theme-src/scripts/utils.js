@@ -67,3 +67,15 @@ function isElementInViewport(el) {
   );
 }
 utils.isElementInViewport = isElementInViewport;
+
+var _init = [];
+function docLoaded(fn) { _init.push(fn); }
+document.addEventListener('readystatechange', function () {
+  if (document.readyState === 'complete') {
+    var fn;
+    /*jshint boss: true*/
+    while (fn = _init.shift()) { fn(); }
+    /*jshint boss: false*/
+  }
+});
+utils.docLoaded = docLoaded;
