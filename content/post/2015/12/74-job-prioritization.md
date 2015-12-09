@@ -4,7 +4,7 @@ date = "2015-12-08T14:44:10+01:00"
 author = "Ingo Richtsmeier"
 categories = ["Execution"]
 tags = ["JobExecutor"]
-draft = true
+draft = false
 +++
 
 If you've used Camunda BPM you might have noticed our engines briefest feature - it's really really fast. Might be an idea to have a look at this [whitepaper](https://network.camunda.org/whitepaper/2) or read about our [scalabilty](https://camunda.org/scalability) if you haven't experienced it for yourself. With the new job priorization feature and the exponential backoff included in the new Camunda BPM 7.4.0- release you will now be able to improve the speed further by tuning the efficiency of your custom jobs among others.  
