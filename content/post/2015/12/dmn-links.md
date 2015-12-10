@@ -14,7 +14,7 @@ I was already asked a couple of times by customers where they should start readi
 
 * [DMN Tutorial](https://camunda.org/dmn/tutorial/): To get an overview of DMN and Decision Tables.
 
-* [DMT Get Started](https://docs.camunda.org/get-started/dmn11/): Get started with Camunda and DMN 1.1
+* [DMN Get Started](https://docs.camunda.org/get-started/dmn11/): Get started with Camunda and DMN 1.1
 
 * [DMN Plain Java Example](https://github.com/camunda/camunda-bpm-examples/tree/master/dmn-engine/dmn-engine-java-main-method): To see how easy you can evaluate decisions without any infrastructure, container or database.
 
