@@ -26,7 +26,6 @@ I was already asked a couple of times by customers where they should start readi
 
 * [Using DMN within BPMN](https://docs.camunda.org/manual/latest/user-guide/process-engine/decisions/): User Guide about how to use DMN within the BPMN Process Engine and e.g. do data mapping in between.
 
-We are still working on a dedicated Get Started Guide - so stay tuned.
 
 ## Thanks!
 
