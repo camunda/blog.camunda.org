@@ -128,8 +128,7 @@ with "Suspend Buttons"</td></tr>
 <br />
 Improved Handling of Binary Datatypes including upload / download for byte streams and editing of serializable Java variables:</div>
 <div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-vpar5HPao6Y/UzlrEedgw_I/AAAAAAAAAYU/fK93YZv2nNU/s1600/2014-03-31-151758_548x438_scrot.png" imageanchor="1" style="display: inline !important; font-size: 13px; margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="http://2.bp.blogspot.com/-vpar5HPao6Y/UzlrEedgw_I/AAAAAAAAAYU/fK93YZv2nNU/s1600/2014-03-31-151758_548x438_scrot.png" height="158" width="200" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-vpar5HPao6Y/UzlrEedgw_I/AAAAAAAAAYU/fK93YZv2nNU/s1600/2014-03-31-151758_548x438_scrot.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 Many, many improvements were done under the hood, including better build infrastructure (<a href="http://gruntjs.com/">grunt</a> / <a href="http://bower.io/">bower</a>), better UI testing (through <a href="https://github.com/angular/protractor">protractor</a>) and better <a href="https://github.com/angular/protractor">developer documentation</a>.<br />
@@ -141,16 +140,12 @@ History for Process Instances including sophisticated querying and searching for
 <br />
 <b>Audit Log</b>, allowing to follow the path of a process instance through the diagram, visualizing running, completed and cancelled activity instances. <br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-gTRCMTeaKI8/Uzlsxr_OW8I/AAAAAAAAAYw/DZ_jaLhefJw/s1600/2014-03-31-152513_1676x915_scrot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="http://4.bp.blogspot.com/-gTRCMTeaKI8/Uzlsxr_OW8I/AAAAAAAAAYw/DZ_jaLhefJw/s1600/2014-03-31-152513_1676x915_scrot.png" height="108" width="200" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-gTRCMTeaKI8/Uzlsxr_OW8I/AAAAAAAAAYw/DZ_jaLhefJw/s1600/2014-03-31-152513_1676x915_scrot.png" >}}
 <br />
 As well as a <b>Variable Log</b> and a <b>User Task</b> log:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-imrC0xHYeO8/Uzlse_65fJI/AAAAAAAAAYs/Is4xOCFw61k/s1600/variables.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-imrC0xHYeO8/Uzlse_65fJI/AAAAAAAAAYs/Is4xOCFw61k/s1600/variables.png" height="151" width="200" /></a></div>
-&nbsp;<a href="http://3.bp.blogspot.com/-DQXPDgVjetI/Uzlse6-JOkI/AAAAAAAAAYo/iF_AsogoeRg/s1600/usertask.png" imageanchor="1" style="clear: left; display: inline !important; margin-bottom: 1em; margin-right: 1em; text-align: center;"><img border="0" src="http://3.bp.blogspot.com/-DQXPDgVjetI/Uzlse6-JOkI/AAAAAAAAAYo/iF_AsogoeRg/s1600/usertask.png" height="138" width="200" /></a><br />
-<br />
-<br /></div>
+{{< figure src="http://1.bp.blogspot.com/-imrC0xHYeO8/Uzlse_65fJI/AAAAAAAAAYs/Is4xOCFw61k/s1600/variables.png" >}}
+{{< figure src="http://3.bp.blogspot.com/-DQXPDgVjetI/Uzlse6-JOkI/AAAAAAAAAYo/iF_AsogoeRg/s1600/usertask.png" >}}
 <h4>
 Tasklist</h4>
 <div>
@@ -158,15 +153,13 @@ HTML5&nbsp;<b>Embedded Task Forms</b>&nbsp;allow you to implement task forms in 
 Taskforms including support for select boxes, radio buttons and custom scripting &amp; validation. (<a href="https://github.com/camunda/camunda-quickstarts/tree/master/usertask/task-form-embedded" style="color: #2288bb; text-decoration: none;">Quickstart Example</a>,&nbsp;<a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist-task-forms-embedded-task-forms" style="color: #2288bb; text-decoration: none;">Docs</a>).<br />
 <br /></div>
 <div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-xA3pVG_QXu4/Uzk45rYEJpI/AAAAAAAAAXQ/DbSncOBsEmA/s1600/screenshot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-xA3pVG_QXu4/Uzk45rYEJpI/AAAAAAAAAXQ/DbSncOBsEmA/s1600/screenshot.png" height="157" width="200" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-xA3pVG_QXu4/Uzk45rYEJpI/AAAAAAAAAXQ/DbSncOBsEmA/s1600/screenshot.png" >}}
 </div>
 <div>
 <br />
 In addition, we added the <b>Generated Task Forms</b> feature which allows you to define a simple form in camunda Modeler and have it rendered in Tasklist&nbsp;<span style="background-color: white; color: #666666; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">(</span><a href="http://blog.camunda.org/2013/12/how-to-use-generated-task-forms-with.html" style="background-color: white; color: #2288bb; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">Blogpost</a><span style="background-color: white; color: #666666; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">,&nbsp;</span><a href="https://github.com/camunda/camunda-quickstarts/tree/master/usertask/task-form-generated" style="background-color: white; color: #2288bb; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">Quickstart Example</a><span style="background-color: white; color: #666666; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">,&nbsp;</span><a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist-task-forms-generated-task-forms" style="background-color: white; color: #2288bb; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px; text-decoration: none;">Docs</a><span style="background-color: white; color: #666666; font-family: 'Times New Roman', Times, FreeSerif, serif; font-size: 15px; line-height: 21.559999465942383px;">).</span><br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-aFbmN8-0kn8/Uzl7kDKWcrI/AAAAAAAAAZA/bit2Ne6mxXo/s1600/screenshot-modeler.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-aFbmN8-0kn8/Uzl7kDKWcrI/AAAAAAAAAZA/bit2Ne6mxXo/s1600/screenshot-modeler.png" height="145" width="200" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-aFbmN8-0kn8/Uzl7kDKWcrI/AAAAAAAAAZA/bit2Ne6mxXo/s1600/screenshot-modeler.png" >}}
 <br />
 <h4>
 <span style="background-color: white; font-family: inherit; line-height: 21.559999465942383px;">Distributions</span></h4>
@@ -178,4 +171,5 @@ In addition, we added the <b>Generated Task Forms</b> feature which allows you t
 <ol><ol>
 </ol>
 </ol>
+</div>
 </div>

@@ -76,34 +76,28 @@ Second, we added some new features:</div>
 <b>The Possibility to Filter / Search the Activity Instance Tree:</b></div>
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-22XSc_0BsDs/Ux9PGXS9obI/AAAAAAAAAV0/XWrCNzhvSqQ/s1600/filter-tree.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-22XSc_0BsDs/Ux9PGXS9obI/AAAAAAAAAV0/XWrCNzhvSqQ/s1600/filter-tree.png" height="200" width="185" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-22XSc_0BsDs/Ux9PGXS9obI/AAAAAAAAAV0/XWrCNzhvSqQ/s1600/filter-tree.png" >}}
 <div>
 <b><br /></b></div>
 <div>
 <br /></div>
 <div>
 <b>Enterprise Edition only: The Variable History Log</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-44_rBiWnXSw/Ux9PHB_a3KI/AAAAAAAAAWQ/wly0W2kyoWk/s1600/variables.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-44_rBiWnXSw/Ux9PHB_a3KI/AAAAAAAAAWQ/wly0W2kyoWk/s1600/variables.png" height="242" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-44_rBiWnXSw/Ux9PHB_a3KI/AAAAAAAAAWQ/wly0W2kyoWk/s1600/variables.png" >}}
 <div>
 <b><br /></b></div>
 <div>
 <br /></div>
 <div>
 <b>Enterprise Edition only:&nbsp;The User Task History Log</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-9DjgHPb5y4M/Ux9PGby_RTI/AAAAAAAAAWE/fvDjMbO-8As/s1600/usertask.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-9DjgHPb5y4M/Ux9PGby_RTI/AAAAAAAAAWE/fvDjMbO-8As/s1600/usertask.png" height="221" width="320" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
+{{< figure src="http://1.bp.blogspot.com/-9DjgHPb5y4M/Ux9PGby_RTI/AAAAAAAAAWE/fvDjMbO-8As/s1600/usertask.png" >}}
 <div>
 <b><br /></b></div>
 <div>
 <br /></div>
 <div>
 <b>Enterprise Edition only:&nbsp;Visualize number of cancelled Activity Instances on Diagram:</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-KqzaFyZWhSU/Ux9PGdM8fDI/AAAAAAAAAWI/MHpIsOmg5o4/s1600/state-cancelled.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-KqzaFyZWhSU/Ux9PGdM8fDI/AAAAAAAAAWI/MHpIsOmg5o4/s1600/state-cancelled.png" height="233" width="320" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-KqzaFyZWhSU/Ux9PGdM8fDI/AAAAAAAAAWI/MHpIsOmg5o4/s1600/state-cancelled.png" >}}
 <div>
 <b><br /></b></div>
 <div>
@@ -112,8 +106,7 @@ Second, we added some new features:</div>
 And finally, we added the possibility to <b>write plugins for the camunda Admin application</b>. The camunda Admin application now features a "System" section which can be enhanced using plugins:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-cRuZTyQosXI/Ux8tCoYBfzI/AAAAAAAAAVU/j99S-_tkvY8/s1600/admin.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-cRuZTyQosXI/Ux8tCoYBfzI/AAAAAAAAAVU/j99S-_tkvY8/s1600/admin.png" height="241" width="320" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-cRuZTyQosXI/Ux8tCoYBfzI/AAAAAAAAAVU/j99S-_tkvY8/s1600/admin.png" >}}
 <h3>
 Finally arrived: the Non Interrupting Event Subprocess:&nbsp;</h3>
 <div>
@@ -124,8 +117,7 @@ We finally added support for the non interrupting event Subprocess. Actually mos
 The non-interrupting event subprocess allows to react to an event (like a message, a signal or a timer) without interrupting the main flow of the process:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-qKmBDwbcb3A/Ux8kIdcuPNI/AAAAAAAAAU4/Ce-DReJ2n8w/s1600/event_subprocess.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-qKmBDwbcb3A/Ux8kIdcuPNI/AAAAAAAAAU4/Ce-DReJ2n8w/s1600/event_subprocess.png" height="484" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-qKmBDwbcb3A/Ux8kIdcuPNI/AAAAAAAAAU4/Ce-DReJ2n8w/s1600/event_subprocess.png" >}}
 <div>
 In the example above, if a new guest introduces himself, the main flow will not be interrupted. Executing such processes was not possible before.<br />
 <br /></div>
@@ -168,8 +160,7 @@ We did some performance improvements in two areas:<br />
 <br />
 In the following process we reduced the number of selects necessary for triggering the boundary event from 33 down to 8:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-1GBwk4nNMNk/Ux8nFaLGEpI/AAAAAAAAAVE/HlcoZ-cqD8k/s1600/BoundaryEventPerformanceTest.interruptingOnConcurrentTask.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-1GBwk4nNMNk/Ux8nFaLGEpI/AAAAAAAAAVE/HlcoZ-cqD8k/s1600/BoundaryEventPerformanceTest.interruptingOnConcurrentTask.png" height="236" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-1GBwk4nNMNk/Ux8nFaLGEpI/AAAAAAAAAVE/HlcoZ-cqD8k/s1600/BoundaryEventPerformanceTest.interruptingOnConcurrentTask.png" >}}
 The testcase is part of our <a href="https://github.com/camunda/camunda-bpm-platform/tree/master/qa/performance-tests-engine">performance testsuite</a>. The results can be verified using the "Sql Statement Log".<br />
 <br />
 Log for alpha 3 vs. Log for alpha4<br />
@@ -193,8 +184,7 @@ What else is gioing on?</h3>
 <br />
 <a href="http://network.camunda.org/meetings/28">Join us at our community event here in Berlin on March 18th!</a> The Beer (and Bionade) has already arrived and is well guarded by Nastasja, our community manager!<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/--wQhoP3odoY/Ux8yFAMaX6I/AAAAAAAAAVk/gHXjv-uFwj4/s1600/beer.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/--wQhoP3odoY/Ux8yFAMaX6I/AAAAAAAAAVk/gHXjv-uFwj4/s1600/beer.jpg" height="320" width="240" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/--wQhoP3odoY/Ux8yFAMaX6I/AAAAAAAAAVk/gHXjv-uFwj4/s1600/beer.jpg" >}}
 <br />
 <br />
 <br />

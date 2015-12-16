@@ -18,8 +18,7 @@ aliases:
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-qzrKz0WRZZA/UWEXB2b7qFI/AAAAAAAAACs/rcuLsuVenrE/s1600/deceptive.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="472" src="http://2.bp.blogspot.com/-qzrKz0WRZZA/UWEXB2b7qFI/AAAAAAAAACs/rcuLsuVenrE/s640/deceptive.png" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-qzrKz0WRZZA/UWEXB2b7qFI/AAAAAAAAACs/rcuLsuVenrE/s1600/deceptive.png" >}}
 <br />
 Scott Francis has written <a href="http://www.bp-3.com/blogs/2013/04/the-zero-code-hypothesis/">an excellent post</a> about the core message of our presentation at <a href="http://www.bpmnext.com/">bpmNEXT</a>. He called it the "Zero Code Hypothesis".&nbsp;Though Scott's summary is completely right in its essentials, I would like to put some details straight:<br />
 <br />
@@ -53,9 +52,7 @@ Accurately fitting solutions</h3>
 </div>
 <blockquote class="tr_bq">
 <i>"The open architecture of camunda BPM allows us to implement our very individual requirements in a way that a traditional BPM suite just cannot provide."&nbsp;</i>(<a href="http://www.zalando.com/">Zalando</a>, fashion e-commerce)</blockquote>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-vgFSxJDzDUc/UWGDYJB7l-I/AAAAAAAAADE/IijbZ9LqFDY/s1600/iStock_000014266950XSmall.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="278" src="http://1.bp.blogspot.com/-vgFSxJDzDUc/UWGDYJB7l-I/AAAAAAAAADE/IijbZ9LqFDY/s320/iStock_000014266950XSmall.jpg" width="320" /></a></div>
-<br />
+{{< figure src="http://1.bp.blogspot.com/-vgFSxJDzDUc/UWGDYJB7l-I/AAAAAAAAADE/IijbZ9LqFDY/s1600/iStock_000014266950XSmall.jpg" >}}
 <br />
 In Zero Coding BPM, you would implement your process application using certain forms, wizards etc. The inavoidable consequence is, that you can implement anything... that the BPM vendor has imagined beforehand. But as soon as you have a requirement, that does not map to a checkbox, dropdown or what ever in the Zero Coding Wizard, you're lost. This would not necessarily be an issue - as I said, there are reasonable use cases for this approach. <b>But implementing an unique IT based business model is certainly not amongst them.</b><br />
 <br />
@@ -67,8 +64,7 @@ The ability to seamlessly combine structured and semi- or unstructured processes
 No vendor specific learning curve</h3>
 <blockquote class="tr_bq">
 <i>"Additionally we can use our existing Java know-how combined with camunda BPM to build quickly and easily lightweight process solutions."</i> (<a href="http://www.freenet.de/">Freenet</a>, Telco Provider)</blockquote>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-jD3WLZ1MLLc/UWGCLCPS5vI/AAAAAAAAAC8/YIyzwJRRJEg/s1600/Learning-Curve-1024x709.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="275" src="http://3.bp.blogspot.com/-jD3WLZ1MLLc/UWGCLCPS5vI/AAAAAAAAAC8/YIyzwJRRJEg/s400/Learning-Curve-1024x709.png" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-jD3WLZ1MLLc/UWGCLCPS5vI/AAAAAAAAAC8/YIyzwJRRJEg/s1600/Learning-Curve-1024x709.png" >}}
 <br />
 <br />
 There are ~10 mio. Java developers worldwide. Think of any available BPM suite and tell me, how many according developers you would find on the market.<br />
@@ -92,8 +88,7 @@ The force is with you</h3>
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-j4rQJ5OdmrE/UWGMAZOM3XI/AAAAAAAAADk/ur7JIrjXRQk/s1600/iStock_000012998399Small.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="265" src="http://3.bp.blogspot.com/-j4rQJ5OdmrE/UWGMAZOM3XI/AAAAAAAAADk/ur7JIrjXRQk/s400/iStock_000012998399Small.jpg" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-j4rQJ5OdmrE/UWGMAZOM3XI/AAAAAAAAADk/ur7JIrjXRQk/s1600/iStock_000012998399Small.jpg" >}}
 <br />
 <br />
 OK, I am getting carried away. What I really mean is this: If your business model is IT based, your software developers are probably your most valuable assets. And actually they are not just "assets" or "resources", but human beings. They can be incredibly creative and productive, but only if they have the opportunity to flower. Have a look around, at <a href="https://github.com/">GitHub</a>, at <a href="http://www.devoxx.com/">Devoxx</a> etc. There is a whole global movement of extremely talented, enthusiastic software developers who just love to create great value.<br />
@@ -107,8 +102,7 @@ As I said at bpmNEXT, Business-IT-Alignment is not about getting rid of IT, but 
 The "camunda Hypothesis" is already proven</h3>
 <blockquote class="tr_bq">
 <i>"camunda showed true roundtripping between third-party business-oriented modeling tools and a BPMS, the first I’ve seen to do that well." (<a href="http://brsilver.com/">Bruce Silver</a>, BPMN Super Hero)</i></blockquote>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-KHSla9RDwBY/UWGOQmOGJII/AAAAAAAAADs/mFZ2QSb7buU/s1600/approach.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="473" src="http://2.bp.blogspot.com/-KHSla9RDwBY/UWGOQmOGJII/AAAAAAAAADs/mFZ2QSb7buU/s640/approach.png" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-KHSla9RDwBY/UWGOQmOGJII/AAAAAAAAADs/mFZ2QSb7buU/s1600/approach.png" >}}
 <br />
 <br />
 A this point, I should probably make clear that our "hypothesis" has already been validated. As a consulting agency, we are in the BPM field for 5 years now (the two founders Bernd Rücker and me even for 10 years). Personally, I used to work for a well-known BPM Suite vendor before I joint forces with Bernd, and working for them as a PreSales Consultant I experienced exactly the problems I have described above.<br />

@@ -28,22 +28,20 @@ This version ships a completely redesigned Tasklist.<br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <br />
+{{< figure src="http://4.bp.blogspot.com/-SYonG-9HP4Y/VHhAt4rWR8I/AAAAAAAAAhs/UKwvhaQ1MP8/s1600/tasklist.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-SYonG-9HP4Y/VHhAt4rWR8I/AAAAAAAAAhs/UKwvhaQ1MP8/s1600/tasklist.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-SYonG-9HP4Y/VHhAt4rWR8I/AAAAAAAAAhs/UKwvhaQ1MP8/s1600/tasklist.png" height="384" width="640" /></a></div>
 The Tasklist is a single page Java Script application which is developed as part of the camunda BPM community Endition (Open Source). If you are interested in the <a href="https://github.com/camunda/camunda-tasklist-ui">source code of Camunda Tasklist</a>, you can find it on Github.<br />
 <br />
 The tasklist layout is divided into three columns: a configurable list of filters, a list of tasks and the task details. Each column can be collapsed: for instance, once you have selected a filter, you can collapse the left column and focus on the list of tasks or an individual task. The task view itself can be maximized which gives more room for complex forms.<br />
 <br />
 <a href="http://blog.camunda.org/2014/09/introducing-task-filters.html">Task Filters</a> represent Task Queries (which some of you may know from using the Java API or the REST Api of the process engine) which are saved to the database such that they can be executed repeatedly. Filters can be configured directly inside the tasklist:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-9guO-zKCqPQ/VHhAregJRoI/AAAAAAAAAiQ/oYAuzT_xDJk/s1600/filter-general.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-9guO-zKCqPQ/VHhAregJRoI/AAAAAAAAAiQ/oYAuzT_xDJk/s1600/filter-general.png" height="400" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-9guO-zKCqPQ/VHhAregJRoI/AAAAAAAAAiQ/oYAuzT_xDJk/s1600/filter-general.png" >}}
 <br />
 The above image shows the "General" settings of &nbsp;a filter. A filter can be assigned a name, a description as well as a color and a priority (which determines the ordering in the list of filters). The "Auto refresh" setting is interesting: if it is enabled, the filter is periodically refreshed such that users of the tasklist notice if a task is added or removed by another user or the process enigne.<br />
 <br />
 It is also possible to define the criteria of the filter (which represent the actual task query):<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-mDsZDOSSeMY/VHhArZjLQBI/AAAAAAAAAiE/5E8zeWWFl18/s1600/filter-criteria.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-mDsZDOSSeMY/VHhArZjLQBI/AAAAAAAAAiE/5E8zeWWFl18/s1600/filter-criteria.png" height="498" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-mDsZDOSSeMY/VHhArZjLQBI/AAAAAAAAAiE/5E8zeWWFl18/s1600/filter-criteria.png" >}}
 <br />
 Filters (and the task query itself, for that matter) now also support expressions which make the filters more flexible and usable by multiple users. Check the userguide for a list of <a href="http://docs.camunda.org/7.2/guides/user-guide/#process-engine-expression-language-internal-context-functions">useful expression language additions for filters</a>.<br />
 <br />
@@ -51,20 +49,17 @@ We put in place <u>a sophisticated authorization system</u> for filters: first, 
 <br />
 Finally, it is also possible to configure a list of variables which should be fetched and displayed in the list of tasks:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-pEIG4L1Qo6Y/VHhAr-m3ybI/AAAAAAAAAiU/9C1t5t_PD0Y/s1600/filter-variables.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-pEIG4L1Qo6Y/VHhAr-m3ybI/AAAAAAAAAiU/9C1t5t_PD0Y/s1600/filter-variables.png" height="510" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-pEIG4L1Qo6Y/VHhAr-m3ybI/AAAAAAAAAiU/9C1t5t_PD0Y/s1600/filter-variables.png" >}}
 <br />
 The result is that these variables are fetched for all tasks matched by the filter:<br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-WJS5o_6oDpk/VHhAswI4ZWI/AAAAAAAAAh0/qhl4ZJ7Gki8/s1600/task-list-details.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-WJS5o_6oDpk/VHhAswI4ZWI/AAAAAAAAAh0/qhl4ZJ7Gki8/s1600/task-list-details.png" height="312" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-WJS5o_6oDpk/VHhAswI4ZWI/AAAAAAAAAh0/qhl4ZJ7Gki8/s1600/task-list-details.png" >}}
 <br />
 Besides the variables, the "task cards" in the list of tasks provide the following information:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-JcKwip_Bad8/VHhAscW462I/AAAAAAAAAh4/1-K7KN3VVsk/s1600/task-card.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-JcKwip_Bad8/VHhAscW462I/AAAAAAAAAh4/1-K7KN3VVsk/s1600/task-card.png" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-JcKwip_Bad8/VHhAscW462I/AAAAAAAAAh4/1-K7KN3VVsk/s1600/task-card.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -75,8 +70,7 @@ The name of the task, the name of the process or case definition, Created Date, 
 When working on a task, users are presented a form:</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-HD45lZjIph4/VHhAstjB9yI/AAAAAAAAAhc/ofXYQHxmXz4/s1600/task-form.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-HD45lZjIph4/VHhAstjB9yI/AAAAAAAAAhc/ofXYQHxmXz4/s1600/task-form.png" height="490" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-HD45lZjIph4/VHhAstjB9yI/AAAAAAAAAhc/ofXYQHxmXz4/s1600/task-form.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -91,16 +85,14 @@ Support for such forms is provided through the new <a href="http://docs.camunda.
 Besides the form, users can inspect the history of a task:</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-hhpb4wQXRL4/VHhAs6xzj7I/AAAAAAAAAho/ZGDnJ8kVcaM/s1600/task-history.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-hhpb4wQXRL4/VHhAs6xzj7I/AAAAAAAAAho/ZGDnJ8kVcaM/s1600/task-history.png" height="458" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-hhpb4wQXRL4/VHhAs6xzj7I/AAAAAAAAAho/ZGDnJ8kVcaM/s1600/task-history.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
 The history is sourced from the "User Operation Log" we introduced in camunda BPM 7.1. Finally, the diagram view shows the BPMN 2.0 Diagram, highlighting the current user task in the process:</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-6xiOAtmg9Sc/VHhAtZy_PlI/AAAAAAAAAhw/cmsash7ttqg/s1600/task-process.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-6xiOAtmg9Sc/VHhAtZy_PlI/AAAAAAAAAhw/cmsash7ttqg/s1600/task-process.png" height="496" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-6xiOAtmg9Sc/VHhAtZy_PlI/AAAAAAAAAhw/cmsash7ttqg/s1600/task-process.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 The diagram is rendered with our new <a href="http://bpmn.io/">Javascript Toolkit for BPMN 2.0: bpmn.io</a>.</div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -123,8 +115,7 @@ CMMN allows modeling Cases. A case allows humans to do work in a more or less st
 <br />
 The following is a simple Example of a Credit Application Case modeled in CMMN:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" height="245" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" >}}
 <br />
 <div>
 The Picture above shows the graphical representation of the CMMN Model. The model also has an executable XML representation which looks like this:
@@ -244,5 +235,5 @@ What's Next?</h2>
 <br />
 <div class="MsoNormal">
 <br /></div>
-
+</div>
 </div>

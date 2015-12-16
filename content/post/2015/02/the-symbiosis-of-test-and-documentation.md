@@ -15,8 +15,7 @@ aliases:
 <div>
 We want to build a library of reusable widgets, which are tested and documented. The components of the tasklist search are examples for such widgets:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-CmJO8miLGR0/VM-WiUVxfsI/AAAAAAAACzQ/eDdiAe87iMs/s1600/searchTasklistScreenshot.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-CmJO8miLGR0/VM-WiUVxfsI/AAAAAAAACzQ/eDdiAe87iMs/s1600/searchTasklistScreenshot.PNG" height="265" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-CmJO8miLGR0/VM-WiUVxfsI/AAAAAAAACzQ/eDdiAe87iMs/s1600/searchTasklistScreenshot.PNG" >}}
 <br />
 This blog entry describes how we document and test widgets and make sure that tests and documentation stay in sync.<br />
 <br />
@@ -41,8 +40,7 @@ To solve this problem, we create a single webpage, which serves as documentation
 <div>
 By having documentation and test on the same page, we ensure that both stay in sync and consistent.</div>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-V_x8LlWKzgo/VM-XbPvKafI/AAAAAAAACzY/vdRi2P-oIFE/s1600/screenshot_commons_docu.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-V_x8LlWKzgo/VM-XbPvKafI/AAAAAAAACzY/vdRi2P-oIFE/s1600/screenshot_commons_docu.PNG" height="267" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-V_x8LlWKzgo/VM-XbPvKafI/AAAAAAAACzY/vdRi2P-oIFE/s1600/screenshot_commons_docu.PNG" >}}
 <h3>
 Try It Out!</h3>
 <br />

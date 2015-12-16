@@ -83,8 +83,7 @@ This is currently in early early alpha phase: we are prototyping the concept of 
 <br /></div>
 <div>
 Right now it's not much but this is what it looks like:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-tF78gNuRaf8/U3WcWRUXWUI/AAAAAAAAAak/Fitdk7Jep08/s1600/developer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-tF78gNuRaf8/U3WcWRUXWUI/AAAAAAAAAak/Fitdk7Jep08/s1600/developer.png" height="153" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-tF78gNuRaf8/U3WcWRUXWUI/AAAAAAAAAak/Fitdk7Jep08/s1600/developer.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div>

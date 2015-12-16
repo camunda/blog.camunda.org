@@ -22,9 +22,7 @@ CMMN allows modeling Cases. A case allows humans to do work in a more or less st
 <br />
 The following is a simple Example of a Credit Application Case modeled in CMMN:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" height="245" width="320" /></a></div>
-<br />
+{{< figure src="http://2.bp.blogspot.com/-XGGj3Ikt-58/U8eXtudzhxI/AAAAAAAAAbU/L9WZHvOWXJw/s1600/loan-application.png" >}}
 <div>
 The Picture above shows the graphical representation of the CMMN Model. The model also has an executable XML representation which looks like this:
 </div>

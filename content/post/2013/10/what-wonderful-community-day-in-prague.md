@@ -148,8 +148,7 @@ Hard to beat next year - but we can try. If you have a recommendation for a city
 <br />
 Last but not least we had a really - really good idea (imagine that we liked it somewhere around midnight ;-)). As most of the people ate some fresh grilled pork in the evening we came up the new badge idea: pork me on GitHub. Actually no idea what it means - but maybe better not to think about it:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-ro_QFlREH4E/UmaHHPZ5o6I/AAAAAAAAALI/Fi98WbAGf1o/s1600/pork-me-on-github.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-ro_QFlREH4E/UmaHHPZ5o6I/AAAAAAAAALI/Fi98WbAGf1o/s320/pork-me-on-github.png" height="320" width="218" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-ro_QFlREH4E/UmaHHPZ5o6I/AAAAAAAAALI/Fi98WbAGf1o/s1600/pork-me-on-github.png" >}}
 <br />
 <br />
 But as vegetarian I have to add that Prague offered a good choice of vegetarian and vegan restaurants - so I could try a vegetarian <b>and </b>a vegan goulash. And both were really perfect! This is how the future must look like :-)<br />

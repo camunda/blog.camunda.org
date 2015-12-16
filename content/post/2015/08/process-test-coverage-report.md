@@ -12,7 +12,6 @@ aliases:
 
 ---
 
-<div>
 As part of the Hack Days this year my colleague Falko migrated an existing tool we (Camunda Consulting) used with success in a lot of projects to&nbsp;<a href="http://bpmn.io/">bpmn.io</a>: The <a href="https://github.com/camunda/camunda-consulting/tree/master/snippets/process-test-coverage">Process Test Coverage Report Generator</a>. It just hooks into an automated test (typically JUnit) and creates an HTML report showing the coverage:<br />
 <br />
 <ul>
@@ -23,8 +22,7 @@ As part of the Hack Days this year my colleague Falko migrated an existing tool 
 See this example for one test case - obviously the Happy Path of the process model:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-jP0h-G4dUNE/VeSdgQvu-3I/AAAAAAAAARU/akfz4seDr5w/s1600/testing-process-definitions-coverage.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="234" src="http://1.bp.blogspot.com/-jP0h-G4dUNE/VeSdgQvu-3I/AAAAAAAAARU/akfz4seDr5w/s320/testing-process-definitions-coverage.png" width="320" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-jP0h-G4dUNE/VeSdgQvu-3I/AAAAAAAAARU/akfz4seDr5w/s1600/testing-process-definitions-coverage.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div>
@@ -37,5 +35,3 @@ By the way - our Best Practice is to go for "Flow Node Coverage" - so your Test 
 <br /></div>
 <div>
 Happy Testing!</div>
-
-</div>

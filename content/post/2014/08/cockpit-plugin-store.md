@@ -48,9 +48,5 @@ Thanks guys (Christian, Falko and Ingo) - we were a great team. Cant't wait for 
 </div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-qKDSXydTC_8/U-2s3pgLb8I/AAAAAAAAAPs/fo3C5Ffvhek/s1600/team.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-qKDSXydTC_8/U-2s3pgLb8I/AAAAAAAAAPs/fo3C5Ffvhek/s1600/team.png" height="213" width="320" /></a></div>
-<div>
-<br /></div>
-
+{{< figure src="http://2.bp.blogspot.com/-qKDSXydTC_8/U-2s3pgLb8I/AAAAAAAAAPs/fo3C5Ffvhek/s1600/team.png" >}}
 </div>

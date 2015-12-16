@@ -22,10 +22,7 @@ Custom Task Plugins</h3>
 <div>
 Custom task plugins give you the ability to contribute self-made tasks to the camunda modeler.<br />
 <br /></div>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://stage.docs.camunda.org/assets/img/real-life/examples/modeler-custom-task.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://stage.docs.camunda.org/assets/img/real-life/examples/modeler-custom-task.png" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">A quite custom service task.</td></tr>
-</tbody></table>
+{{< figure src="modeler-custom-task.png" caption="Quite a custom task">}}
 A custom task is a task that may be reused across all of your diagrams. It can ship with a predefined configuration, can have a customized look and feel and integrates into the palette as well as the properties panel.<br />
 <div>
 <br /></div>

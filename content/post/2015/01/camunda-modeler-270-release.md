@@ -37,9 +37,7 @@ What's inside?</h3>
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">We exposed the attributes we have added with the Modeler release 2.6.1 on the properties panel, namely i/o mapping, connectors and asyncBefore/asyncAfter.&nbsp;</span><br />
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;"><br /></span>
 <span style="color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif;"><span style="background-color: white; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">Two new tabs were added to the properties panel in order to configure Input/Output parameter and connector settings. A new input dialog was implemented for adding and editing the paramter details.&nbsp;</span></span><br />
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-jWZ_r5i_xK8/VKvW6-exS3I/AAAAAAAADdY/6isMU93rsnU/s1600/modeler_release270_pp_general.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-jWZ_r5i_xK8/VKvW6-exS3I/AAAAAAAADdY/6isMU93rsnU/s1600/modeler_release270_pp_general.png" height="326" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-jWZ_r5i_xK8/VKvW6-exS3I/AAAAAAAADdY/6isMU93rsnU/s1600/modeler_release270_pp_general.png" >}}
 <br />
 <br />
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">Find a complete overview about all camunda extension elements in our <a href="http://docs.camunda.org/latest/api-references/bpmn20/#custom-extensions">BPMN 2.0 Implementation Reference</a>.&nbsp;</span><br />

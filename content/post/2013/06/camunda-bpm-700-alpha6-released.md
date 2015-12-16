@@ -37,8 +37,7 @@ Process Instance Detail View in Cockpit</h3>
 In cockpit we started work on the process instance detail view. This view will allow you to drill down into a single process instance and explore it's running and completed activities as well as the variables, tasks, jobs... &nbsp;associated. To open the process instance detail view, you can select a process definition on the start page (dashboard), navigate the the process definition page and select a process instance from the instance list.</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-KtTipRABJ5c/UbsRi0DQbbI/AAAAAAAAAJE/lQgx5Y9rakA/s1600/overview.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="244" src="http://4.bp.blogspot.com/-KtTipRABJ5c/UbsRi0DQbbI/AAAAAAAAAJE/lQgx5Y9rakA/s320/overview.png" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-KtTipRABJ5c/UbsRi0DQbbI/AAAAAAAAAJE/lQgx5Y9rakA/s1600/overview.png" >}}
 <div>
 <br /></div>
 <div>
@@ -74,14 +73,12 @@ In order to visualize these diagrams, camunda Cockpit creates two client side mo
 <div>
 Both the process definition tree and the process instance tree have the same structure (ie. activity instances in the process instance tree are at the same level as their corresponding activity definitions in the object model.). In order to achive this, we had to make a couple of additions in the core process engine (PVM-Process Virtual Machine).&nbsp;</div>
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-V8nkTQOkxZs/UbsYqwAIRCI/AAAAAAAAAJ0/3lFh2RoXx6A/s1600/architecture.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="313" src="http://4.bp.blogspot.com/-V8nkTQOkxZs/UbsYqwAIRCI/AAAAAAAAAJ0/3lFh2RoXx6A/s320/architecture.png" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-V8nkTQOkxZs/UbsYqwAIRCI/AAAAAAAAAJ0/3lFh2RoXx6A/s1600/architecture.png" >}}
 <h3>
 Visualizing the Activity Instance Tree</h3>
 <div>
 We will visualize the Activity Instance tree in the process instance detail view on the left hand side:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-EeLbTkkAwPk/UbsqYY6bwGI/AAAAAAAAALc/ka0el09PyuM/s1600/Instance+Details+inkl+Tree.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="149" src="http://4.bp.blogspot.com/-EeLbTkkAwPk/UbsqYY6bwGI/AAAAAAAAALc/ka0el09PyuM/s320/Instance+Details+inkl+Tree.png" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-EeLbTkkAwPk/UbsqYY6bwGI/AAAAAAAAALc/ka0el09PyuM/s1600/Instance+Details+inkl+Tree.png" >}}
 <div>
 <br /></div>
 <div class="separator" style="clear: both; text-align: center;">

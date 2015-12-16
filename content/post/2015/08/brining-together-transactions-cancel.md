@@ -17,12 +17,7 @@ If you've ever been lucky enough to enjoy <a href="http://camunda.com/bpmn/train
 <br />
 This post is going to be all about how a process containing a transaction, cancel end event and compensation task are all implemented. The process I'm going to be describing is available <a href="https://github.com/camunda/camunda-consulting/tree/master/snippets/bpmn-transaction">on github to download</a> and play with yourself. the process itself looks like this:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-RpMVgp1wHZw/VcNgB_3sA8I/AAAAAAAAAJQ/rAabGMc2cic/s1600/process.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="314" src="http://2.bp.blogspot.com/-RpMVgp1wHZw/VcNgB_3sA8I/AAAAAAAAAJQ/rAabGMc2cic/s640/process.png" width="640" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<a name='more'></a><div class="separator" style="clear: both; text-align: center;">
-</div>
+{{< figure src="http://2.bp.blogspot.com/-RpMVgp1wHZw/VcNgB_3sA8I/AAAAAAAAAJQ/rAabGMc2cic/s1600/process.png" >}}
 This process describes booking a holiday, as this is an example that requires a certain amount of failure, as with most failures it begins with a test. Specifically, a user task called "Personality Test". In this task you'll get to decide if you're you've got bad luck, bad finances or if in fact you're practically perfect in every way.<br />
 <h3>
 Bad Luck</h3>

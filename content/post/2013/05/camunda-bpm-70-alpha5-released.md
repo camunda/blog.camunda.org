@@ -46,16 +46,14 @@ Over the last two weeks, process engine hacker Roman Smirnov and Javascript wizz
 There is process definition summary plugin which visualizes the state of a process definition using green and red dots (red = failed jobs):</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-Z-IkIG4UezQ/Uahw_XbmfEI/AAAAAAAAAII/PTfQNyACrKE/s1600/summary.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="153" src="http://2.bp.blogspot.com/-Z-IkIG4UezQ/Uahw_XbmfEI/AAAAAAAAAII/PTfQNyACrKE/s640/summary.png" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-Z-IkIG4UezQ/Uahw_XbmfEI/AAAAAAAAAII/PTfQNyACrKE/s1600/summary.png" >}}
 <div>
 <br /></div>
 <div>
 On the process definition details page we now have process instance table:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-D44PYSRGPUE/UahxfbfIoGI/AAAAAAAAAIQ/uHG-XzZz8rk/s1600/process-definition.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="194" src="http://1.bp.blogspot.com/-D44PYSRGPUE/UahxfbfIoGI/AAAAAAAAAIQ/uHG-XzZz8rk/s200/process-definition.png" width="200" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-D44PYSRGPUE/UahxfbfIoGI/AAAAAAAAAIQ/uHG-XzZz8rk/s1600/process-definition.png" >}}
 <div>
 <br /></div>
 <div>
@@ -92,16 +90,10 @@ Incident handling is extensible. The default implementation writes incidents to 
 <br /></div>
 <div>
 In cockpit we can now visualize different kinds of incidents in the same way and allow users to define for a given process definition what constitutes an "incident".</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-6RECUsxACQ4/Uah6lFBMzdI/AAAAAAAAAIw/HIuSf7wc7Y0/s1600/incidents.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="118" src="http://2.bp.blogspot.com/-6RECUsxACQ4/Uah6lFBMzdI/AAAAAAAAAIw/HIuSf7wc7Y0/s400/incidents.png" width="400" /></a></div>
-<div>
-</div>
-<div>
-<br /></div>
+{{< figure src="http://2.bp.blogspot.com/-6RECUsxACQ4/Uah6lFBMzdI/AAAAAAAAAIw/HIuSf7wc7Y0/s1600/incidents.png" >}}
 <div>
 We also support recursively raising incidents for super process instances and correlating them to the call activity which has invoked the process instance in which the incident occurred. This is used by the cockpit tool for visualizing the state of a process definitions (and instances). &nbsp;The recursive nature of incidents will allow the cockpit tool to provide drill-down features.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-wBOg-yj-Fnc/Uah6auTNi8I/AAAAAAAAAIg/sxM1I6QG_70/s1600/drill-down.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="221" src="http://2.bp.blogspot.com/-wBOg-yj-Fnc/Uah6auTNi8I/AAAAAAAAAIg/sxM1I6QG_70/s320/drill-down.png" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-wBOg-yj-Fnc/Uah6auTNi8I/AAAAAAAAAIg/sxM1I6QG_70/s1600/drill-down.png" >}}
 <div>
 <br /></div>
 </div>

@@ -15,8 +15,7 @@ aliases:
 <div>
 Roman and Sebastian have written a brand new <a href="http://docs.camunda.org/latest/guides/getting-started-guides/java-ee/">getting started guide for camunda and Java EE</a>.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-vYNvL26jB6k/Uz-ZWHUu7pI/AAAAAAAAAZQ/8X_hBBTEBI0/s1600/javaee.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-vYNvL26jB6k/Uz-ZWHUu7pI/AAAAAAAAAZQ/8X_hBBTEBI0/s1600/javaee.png" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-vYNvL26jB6k/Uz-ZWHUu7pI/AAAAAAAAAZQ/8X_hBBTEBI0/s1600/javaee.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 The guide is a detailed step-by-step tutorial about how to setup your Java EE 6 application for camunda BPM and BPMN. It has examples about how to use JSF for implementing Task Forms, CDI and EJB as a programming model for the business logic and JPA for custom persistence.<br />

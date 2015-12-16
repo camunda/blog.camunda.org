@@ -78,20 +78,17 @@ New enterprise Features in cockpit</h3>
 <div>
 Advanced querying for Historic Process Instances:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-mQbYbcMbGV8/UwYMJfYEESI/AAAAAAAAAUY/RmEEbcQAyuQ/s1600/filters-1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-mQbYbcMbGV8/UwYMJfYEESI/AAAAAAAAAUY/RmEEbcQAyuQ/s1600/filters-1.png" height="200" width="113" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-mQbYbcMbGV8/UwYMJfYEESI/AAAAAAAAAUY/RmEEbcQAyuQ/s1600/filters-1.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
 An activity audit log:</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-pHgy7CNfAgM/UwYMObgKR4I/AAAAAAAAAUg/4Fxp-OFPFEs/s1600/history-1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-pHgy7CNfAgM/UwYMObgKR4I/AAAAAAAAAUg/4Fxp-OFPFEs/s1600/history-1.png" height="256" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-pHgy7CNfAgM/UwYMObgKR4I/AAAAAAAAAUg/4Fxp-OFPFEs/s1600/history-1.png" >}}
 <br />
 Which can be filtered using the hierarchical activity instance tree:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-38D08Wledho/UwYMafWPwuI/AAAAAAAAAUo/5daA-1rxAvw/s1600/history-2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-38D08Wledho/UwYMafWPwuI/AAAAAAAAAUo/5daA-1rxAvw/s1600/history-2.png" height="256" width="320" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-38D08Wledho/UwYMafWPwuI/AAAAAAAAAUo/5daA-1rxAvw/s1600/history-2.png" >}}
 <br /></div>
 <div>
 <br /></div>

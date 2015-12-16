@@ -39,8 +39,7 @@ In addition, the release contains a set of small improvements and bug fixes. Rea
 Major QA Infrastructure Improvements&nbsp;</h2>
 <div>
 Probably not as exciting for most people as for myself but I still think stuff like this deserves some attention :) We also made a lot of QA infrastructure improvements behind the scenes. For instance, we have made it a lot easier to run in-container (ie. inside JBoss / Glassfish / Tomcat) integration tests for both process engine and web applications.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-iOSAIkeQqH4/UXaUXGxdwBI/AAAAAAAAAGs/_f8qzuOtBHs/s1600/qa-infrastructure.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-iOSAIkeQqH4/UXaUXGxdwBI/AAAAAAAAAGs/_f8qzuOtBHs/s1600/qa-infrastructure.png" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-iOSAIkeQqH4/UXaUXGxdwBI/AAAAAAAAAGs/_f8qzuOtBHs/s1600/qa-infrastructure.png" >}}
 <div>
 This allows us to run extensive in-container testsuites testing the Java EE 6 and Servlet integrations against all supported runtime containers and databases.&nbsp;</div>
 <h2>

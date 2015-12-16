@@ -26,21 +26,10 @@ Take a look at some pictures we took on the night and make sure to sign up<a hre
 <br /></div>
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-UrxMP-SPQqs/UWV93nnu5wI/AAAAAAAAABk/3bPBtVrquNA/s1600/P1170302.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-UrxMP-SPQqs/UWV93nnu5wI/AAAAAAAAABk/3bPBtVrquNA/s320/P1170302.JPG" width="240" /></a></div>
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-OYgszxLihEs/UWV93SBlpKI/AAAAAAAAABo/T5lP14BgAh8/s1600/P1170301.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://1.bp.blogspot.com/-OYgszxLihEs/UWV93SBlpKI/AAAAAAAAABo/T5lP14BgAh8/s320/P1170301.JPG" width="320" /></a></div>
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-fEbDAiZIOEw/UWV94d98tRI/AAAAAAAAABs/VSaDJ2LbXpE/s1600/P1170362.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="240" src="http://4.bp.blogspot.com/-fEbDAiZIOEw/UWV94d98tRI/AAAAAAAAABs/VSaDJ2LbXpE/s320/P1170362.JPG" width="320" /></a></div>
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-DNqEuIDjcCY/UWV95CO4fAI/AAAAAAAAAB0/1SkxfquUBWA/s1600/P1170522.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://2.bp.blogspot.com/-DNqEuIDjcCY/UWV95CO4fAI/AAAAAAAAAB0/1SkxfquUBWA/s320/P1170522.JPG" width="320" /></a></div>
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-xuQYFQG0784/UWV95ScuGhI/AAAAAAAAAB8/aOzTIc-HZW0/s1600/P1170541.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="180" src="http://4.bp.blogspot.com/-xuQYFQG0784/UWV95ScuGhI/AAAAAAAAAB8/aOzTIc-HZW0/s320/P1170541.JPG" width="320" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-UrxMP-SPQqs/UWV93nnu5wI/AAAAAAAAABk/3bPBtVrquNA/s1600/P1170302.JPG" >}}
+{{< figure src="http://1.bp.blogspot.com/-OYgszxLihEs/UWV93SBlpKI/AAAAAAAAABo/T5lP14BgAh8/s1600/P1170301.JPG" >}}
+{{< figure src="http://4.bp.blogspot.com/-fEbDAiZIOEw/UWV94d98tRI/AAAAAAAAABs/VSaDJ2LbXpE/s1600/P1170362.JPG" >}}
+{{< figure src="http://2.bp.blogspot.com/-DNqEuIDjcCY/UWV95CO4fAI/AAAAAAAAAB0/1SkxfquUBWA/s1600/P1170522.JPG" >}}
+{{< figure src="http://4.bp.blogspot.com/-xuQYFQG0784/UWV95ScuGhI/AAAAAAAAAB8/aOzTIc-HZW0/s1600/P1170541.JPG" >}}
 </div>
-
 </div>

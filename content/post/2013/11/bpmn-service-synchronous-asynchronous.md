@@ -40,8 +40,7 @@ Invocations</h3>
 with synchronous service invocations. A synchronous service invocation follows
 the well-known <a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestResponse">Request
 / Response Pattern</a>: <o:p></o:p></span></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-7DvI7gR80DU/Un_WwdE24gI/AAAAAAAAAPY/l3dKY8oXYHY/s1600/sync-service-invocation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="199" src="http://3.bp.blogspot.com/-7DvI7gR80DU/Un_WwdE24gI/AAAAAAAAAPY/l3dKY8oXYHY/s320/sync-service-invocation.png" width="320" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-7DvI7gR80DU/Un_WwdE24gI/AAAAAAAAAPY/l3dKY8oXYHY/s1600/sync-service-invocation.png" >}}
 <br />
 <div class="MsoNormal">
 <span lang="EN-US">The process
@@ -49,8 +48,7 @@ engine performs a synchronous request to a service and waits for a response.
 The characteristic property of this invocation pattern consists in the fact
 that the process engine thread sending the request is blocked until the
 response is obtained:</span></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-ruzHMpfRDeA/Un_Wxt7y3nI/AAAAAAAAAPk/jqrJvMfutW4/s1600/sync-service-invocation-illustrated.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="196" src="http://3.bp.blogspot.com/-ruzHMpfRDeA/Un_Wxt7y3nI/AAAAAAAAAPk/jqrJvMfutW4/s400/sync-service-invocation-illustrated.png" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-ruzHMpfRDeA/Un_Wxt7y3nI/AAAAAAAAAPk/jqrJvMfutW4/s1600/sync-service-invocation-illustrated.png" >}}
 <div align="center" class="MsoNormal" style="text-align: center;">
 <br /></div>
 <div class="MsoNormal">
@@ -78,8 +76,7 @@ Check out this <a href="https://github.com/camunda/camunda-quickstarts/tree/mast
 <span lang="EN-US">An asynchronous service invocation usually follows the <a href="http://www.servicedesignpatterns.com/ClientServiceInteractions/RequestAcknowledge">Request / Acknowledge / Callback Pattern</a>:</span></div>
 <div>
 <span lang="EN-US"><br /></span></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-QY6TZDqztWE/Un_Yf13y3QI/AAAAAAAAAP4/NhcVK0lnY_4/s1600/async-service-invocation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="215" src="http://3.bp.blogspot.com/-QY6TZDqztWE/Un_Yf13y3QI/AAAAAAAAAP4/NhcVK0lnY_4/s400/async-service-invocation.png" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-QY6TZDqztWE/Un_Yf13y3QI/AAAAAAAAAP4/NhcVK0lnY_4/s1600/async-service-invocation.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -90,14 +87,12 @@ The process engine sends the request to the service. But instead of processing t
 In practice, we encounter multiple variations of this pattern. For example, the callback itself may be delivered synchronously or asynchronously. Furthermore, the queuing of the requests may be performed before or behind the service boundary. Here is an illustration of two of such variations:&nbsp;</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-5Ou09ISyMuU/Un_Yf6cBtOI/AAAAAAAAAP8/iru4LFGRyRI/s1600/async-service-invocation-queuing.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="171" src="http://4.bp.blogspot.com/-5Ou09ISyMuU/Un_Yf6cBtOI/AAAAAAAAAP8/iru4LFGRyRI/s400/async-service-invocation-queuing.png" width="400" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-5Ou09ISyMuU/Un_Yf6cBtOI/AAAAAAAAAP8/iru4LFGRyRI/s1600/async-service-invocation-queuing.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
 Contrary to the synchronous service invocation, the transaction context of the process engine is &nbsp;not propagated to the service implementation. In fact, an asynchronous service invocation always comes down to at least two transactions (labelled Tx1 and Tx2 in the illustration below):</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-CpaUxjWL8dE/Un_Yf7VqcrI/AAAAAAAAAP0/f45bD3bvsuI/s1600/async-service-invocation-illustrated.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="237" src="http://2.bp.blogspot.com/-CpaUxjWL8dE/Un_Yf7VqcrI/AAAAAAAAAP0/f45bD3bvsuI/s400/async-service-invocation-illustrated.png" width="400" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-CpaUxjWL8dE/Un_Yf7VqcrI/AAAAAAAAAP0/f45bD3bvsuI/s1600/async-service-invocation-illustrated.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <ol>

@@ -70,49 +70,20 @@ Nico Rehwaldt &amp; Roman Smirnov have given cockpit a complete layout overhaul 
 <div>
 <br /></div>
 <div>
-<b>New Cockpit layout:</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-Rnq9j8yRpfU/UelAhknmT_I/AAAAAAAAAOQ/0CiN8xsabg0/s1600/cockpit-layout.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="322" src="http://3.bp.blogspot.com/-Rnq9j8yRpfU/UelAhknmT_I/AAAAAAAAAOQ/0CiN8xsabg0/s400/cockpit-layout.png" width="400" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>Editing process variables:</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-cR4wDrKdX6Q/UelAg2OMg_I/AAAAAAAAAOI/S7mDZ67UD44/s1600/cockpit-edit-variable.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-cR4wDrKdX6Q/UelAg2OMg_I/AAAAAAAAAOI/S7mDZ67UD44/s1600/cockpit-edit-variable.png" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>Cancelling Process Instances:</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-5KUl_zBSQKM/UelAgY30JtI/AAAAAAAAAN4/X5PT3KhDzjk/s1600/cockpit-cancel-process-instance.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-5KUl_zBSQKM/UelAgY30JtI/AAAAAAAAAN4/X5PT3KhDzjk/s1600/cockpit-cancel-process-instance.png" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b><br /></b></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>Increment Job retries</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-lvBs2z2K0N0/UelAhDcMz0I/AAAAAAAAAOE/SQ-zFJ1sAbQ/s1600/cockpit-increment+jobs.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-lvBs2z2K0N0/UelAhDcMz0I/AAAAAAAAAOE/SQ-zFJ1sAbQ/s1600/cockpit-increment+jobs.png" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b><br /></b></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>Selecting a process engine</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-dmtOwOHMt9I/UelAh70imCI/AAAAAAAAAOU/qmI1oq_b8r8/s1600/cockpit-select-process-engine.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="148" src="http://1.bp.blogspot.com/-dmtOwOHMt9I/UelAh70imCI/AAAAAAAAAOU/qmI1oq_b8r8/s320/cockpit-select-process-engine.png" width="320" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b><br /></b></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>Switching to a different application</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-KHUC3zH2Wes/UelAgWp5vZI/AAAAAAAAAOg/RB4lOijRvkQ/s1600/cockpit-app-swith.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-KHUC3zH2Wes/UelAgWp5vZI/AAAAAAAAAOg/RB4lOijRvkQ/s1600/cockpit-app-swith.png" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-<b>The camunda Admin application allows managing Users and Groups</b></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-DihQ_fve3zM/UelAgcICMzI/AAAAAAAAAN0/InGbItieGR0/s1600/camunda-admin-manage-users.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="http://3.bp.blogspot.com/-DihQ_fve3zM/UelAgcICMzI/AAAAAAAAAN0/InGbItieGR0/s400/camunda-admin-manage-users.png" width="400" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
+<b>New Cockpit layout:</b><
+{{< figure src="http://3.bp.blogspot.com/-Rnq9j8yRpfU/UelAhknmT_I/AAAAAAAAAOQ/0CiN8xsabg0/s1600/cockpit-layout.png" >}}
+<b>Editing process variables:</b>
+{{< figure src="http://3.bp.blogspot.com/-cR4wDrKdX6Q/UelAg2OMg_I/AAAAAAAAAOI/S7mDZ67UD44/s1600/cockpit-edit-variable.png" >}}
+<b>Cancelling Process Instances:</b>
+{{< figure src="http://3.bp.blogspot.com/-5KUl_zBSQKM/UelAgY30JtI/AAAAAAAAAN4/X5PT3KhDzjk/s1600/cockpit-cancel-process-instance.png" >}}
+<b>Increment Job retries</b>
+{{< figure src="http://2.bp.blogspot.com/-lvBs2z2K0N0/UelAhDcMz0I/AAAAAAAAAOE/SQ-zFJ1sAbQ/s1600/cockpit-increment+jobs.png" >}}
+<b>Selecting a process engine</b>
+{{< figure src="http://1.bp.blogspot.com/-dmtOwOHMt9I/UelAh70imCI/AAAAAAAAAOU/qmI1oq_b8r8/s1600/cockpit-select-process-engine.png" >}}
+<b>Switching to a different application</b>
+{{< figure src="http://2.bp.blogspot.com/-KHUC3zH2Wes/UelAgWp5vZI/AAAAAAAAAOg/RB4lOijRvkQ/s1600/cockpit-app-swith.png" >}}
+<b>The camunda Admin application allows managing Users and Groups</b>
+{{< figure src="http://3.bp.blogspot.com/-DihQ_fve3zM/UelAgcICMzI/AAAAAAAAAN0/InGbItieGR0/s1600/camunda-admin-manage-users.png" >}}
 <h3>
 Started Work on Authorizations:</h3>
 <div class="separator" style="clear: both; text-align: left;">
@@ -191,4 +162,5 @@ What's coming up next?</h3>
 - Merge new history branch (<a href="https://github.com/camunda/camunda-bpm-platform/tree/history">https://github.com/camunda/camunda-bpm-platform/tree/history</a>)</div>
 <div>
 - Many awesome features in cockpit :)</div>
+</div>
 </div>

@@ -127,8 +127,7 @@ The performance test suite then allows to aggregate the reults of all individual
 <br /></div>
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-OHkgUeJSTtg/Ut4uxbWC7wI/AAAAAAAAASA/yxfU02JDbDM/s1600/sql-statement-log-report.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-OHkgUeJSTtg/Ut4uxbWC7wI/AAAAAAAAASA/yxfU02JDbDM/s1600/sql-statement-log-report.png" height="238" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-OHkgUeJSTtg/Ut4uxbWC7wI/AAAAAAAAASA/yxfU02JDbDM/s1600/sql-statement-log-report.png" >}}
 <br />
 <br />
 <br />

@@ -115,10 +115,7 @@ This code generates the following BPMN 2.0 XML file.</div>
 Okey I know you say this looks very verbose and becomes easily hundred lines of code to create a complex task like this one.</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-FWsib1VFTEY/UvOLQfqI6lI/AAAAAAAAABE/YfR7O54bgzs/s1600/invoice.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-FWsib1VFTEY/UvOLQfqI6lI/AAAAAAAAABE/YfR7O54bgzs/s1600/invoice.png" height="336" width="640" /></a></div>
-<div>
-<br /></div>
+{{< figure src="http://4.bp.blogspot.com/-FWsib1VFTEY/UvOLQfqI6lI/AAAAAAAAABE/YfR7O54bgzs/s1600/invoice.png" >}}
 <div>
 Although the BPMN model API gives you the possibility to modify the process definition in every aspect there should be an easier way to create process models like the above. And as you might expect here comes another great feature of the BPMN model API: our <b>fluent model builder API</b>. A simple way to create basic BPMN processes with the following BPMN elements:</div>
 <div>

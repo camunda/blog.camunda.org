@@ -19,11 +19,7 @@ This blogpost is about a very powerful feature in <a href="http://camunda.org/">
 <h1>
 The Process</h1>
 Let's say you have automated your order processing, i.e. the orders which are generated in your web shop. I will use a very simple example. New orders start a process in the backend, the delivery is scheduled and once the goods are delivered, the payment is scheduled. Let's say your business is successful and you have many orders per minute.<br />
-<br />
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-zowNdLTpVfM/VFuQyS8-BxI/AAAAAAAAAGM/U0aXmcvyJ4A/s1600/OrderProcessingOK.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-zowNdLTpVfM/VFuQyS8-BxI/AAAAAAAAAGM/U0aXmcvyJ4A/s1600/OrderProcessingOK.png" height="288" width="400" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-zowNdLTpVfM/VFuQyS8-BxI/AAAAAAAAAGM/U0aXmcvyJ4A/s1600/OrderProcessingOK.png" >}}
 <br />
 From a technical perspective, all steps are executed <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-transactions-in-processes-asynchronous-continuations">asynchronously</a>.<br />
 <br />
@@ -33,10 +29,7 @@ From a technical perspective, all steps are executed <a href="http://docs.camund
 The Problem</h1>
 <div>
 Let's assume that the payment service is down for an hour. Immediately you will observe loads of exceptions from your engine, arising from failing process instances, which cannot settle the payment.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-taewLG8BYWw/VFuSUDzVIOI/AAAAAAAAAGY/8djUeiELl60/s1600/OrderProcessingDown.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-taewLG8BYWw/VFuSUDzVIOI/AAAAAAAAAGY/8djUeiELl60/s1600/OrderProcessingDown.png" height="288" width="400" /></a></div>
-<div>
-<br /></div>
+{{< figure src="http://4.bp.blogspot.com/-taewLG8BYWw/VFuSUDzVIOI/AAAAAAAAAGY/8djUeiELl60/s1600/OrderProcessingDown.png" >}}
 <div>
 While the payment service stays down, what do you need?</div>
 <div>
@@ -51,10 +44,7 @@ The Solution</h1>
 </div>
 <div>
 Since you are using asynchronous continuations, the job suspension feature of camunda BPM comes into play. Using job suspension you can suspend all jobs of process instances which are about to call the payment service. This is very helpful, since you are still able to start new process instances for incoming orders but you avoid running instances from ending up in a failed state. This can be done globally from a process perspective.&nbsp;</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-s7Ygt3HCpfo/VFuUjUA4PWI/AAAAAAAAAGk/m002VSalOfg/s1600/OrderProcessingStop.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-s7Ygt3HCpfo/VFuUjUA4PWI/AAAAAAAAAGk/m002VSalOfg/s1600/OrderProcessingStop.png" height="288" width="400" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
+{{< figure src="http://3.bp.blogspot.com/-s7Ygt3HCpfo/VFuUjUA4PWI/AAAAAAAAAGk/m002VSalOfg/s1600/OrderProcessingStop.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 Once the payment service is up again, you do the inverse and simply unsuspend the job definition. Of course it will take some time until all "waiting" jobs are executed, but in general the process engine is doing the job which would have involved manual intervention otherwise.</div>
 <div class="separator" style="clear: both; text-align: left;">

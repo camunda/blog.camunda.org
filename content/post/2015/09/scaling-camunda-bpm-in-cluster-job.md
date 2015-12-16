@@ -25,7 +25,7 @@ As pointed out in the previous post on our new <a href="http://blog.camunda.org/
 <br />
 When setting up a cluster of Camunda BPM nodes, the simplified architecture looks as follows:<br />
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-ynFOAI01ah4/VfAeYdpv_NI/AAAAAAAAAEw/KhOfyIEymbY/s1600/Pr%25C3%25A4sentation1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-ynFOAI01ah4/VfAeYdpv_NI/AAAAAAAAAEw/KhOfyIEymbY/s640/Pr%25C3%25A4sentation1.png" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-ynFOAI01ah4/VfAeYdpv_NI/AAAAAAAAAEw/KhOfyIEymbY/s1600/Pr%25C3%25A4sentation1.png" >}}</div>
 <br />
 There is a central data source that a number of nodes responsible for executing BPMN processes access (side note: we talk about one logical data source; you can still apply replication on database level and horizontal partitioning of process instances to multiple databases). Cluster nodes are not coordinated by a central managing instance or in a peer-to-peer fashion. Instead data is exchanged via the central data source only. Each node runs a job executor instance that continuously polls the central data source for jobs to execute. One such cycle of <i>job acquisition</i> consists of the following steps:<br />
 <ol>
@@ -42,7 +42,7 @@ Let us call this the <i>dining job executors</i>: Executable jobs are like candy
 We can examine this behavior in practice as well. We set up a Postgres 9.4 database on 2 cores of a 4 GHz machine and three execution nodes using Camunda BPM version 7.4.0-alpha1 running on a different host. We start 50,000 process instances that consist of a single asynchronous continuation resulting in 50,000 jobs ready for execution. We configure each job to artificially execute for 0 to 160 milliseconds which should roughly be in the range of invoking an external system. In addition, we use the new job prioritization feature and assign each job a random priority. The following graph shows the acquisition performance of a single execution node:<br />
 <br />
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-Dfr4-0NTvHk/VfAbpb7ljmI/AAAAAAAAAEc/CVPb8yLHx94/s1600/problem-alpha12.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-Dfr4-0NTvHk/VfAbpb7ljmI/AAAAAAAAAEc/CVPb8yLHx94/s640/problem-alpha12.png" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-Dfr4-0NTvHk/VfAbpb7ljmI/AAAAAAAAAEc/CVPb8yLHx94/s1600/problem-alpha12.png" >}}</div>
 The graph shows the number of jobs acquired successfully (blue line; steps 1 and 2 of job acquisition succeed) as well as the jobs acquired but failed to lock (orange line; step 1 succeeds, step 2 fails). Already in a cluster of three nodes, we notice that the total number of jobs failed to lock outweighs the number of successfully acquired. This effect becomes worse the larger the cluster grows: When one node acquires jobs, it becomes more likely that any other node acquires the same jobs in parallel and succeeds locking them. While this behavior is not harmful for correct process execution, it wastes execution time and puts additional load on the database.<br />
 <br />
 <h2>
@@ -51,7 +51,7 @@ To avoid conflicts when locking jobs in steps 1 and 2 of acquisition, overlappin
 <br />
 Again, let us look at an example from practice. In the same cluster setup as before using the latest SNAPSHOT build, we use a backoff configuration with 30 milliseconds initial backoff and 150 milliseconds maximum backoff. Backoff increases by factor 2. Accordingly, the number of jobs acquired per cycle goes from 3 to 48. The resulting graph for one cluster node is:<br />
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-4CrtFIz43BM/VfAbT0W1C6I/AAAAAAAAAEY/yCtoyTEJgHw/s1600/improvement-snapshot2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-4CrtFIz43BM/VfAbT0W1C6I/AAAAAAAAAEY/yCtoyTEJgHw/s640/improvement-snapshot2.png" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-4CrtFIz43BM/VfAbT0W1C6I/AAAAAAAAAEY/yCtoyTEJgHw/s1600/improvement-snapshot2.png" >}}</div>
 While acquisition failures are still present, they are much less frequent than before.<br />
 <br />
 Speaking in the figure of the dining job executors: The job executors behave gently when they can't get a sweet they want and wait until they can safely reach into the candy jar.<br />
@@ -100,7 +100,7 @@ Next, we see if we can improve the performance with the following settings:<br /
 <br />
 Note that all of the backoff configurations imply acquiring 3 jobs initially and 48 jobs with the highest backoff. In terms of throughput, we obtain the following results:<br />
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-CDG1Cd8z1vI/VfAb0-vvKjI/AAAAAAAAAEk/-Pt-CN0209g/s1600/throughput.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-CDG1Cd8z1vI/VfAb0-vvKjI/AAAAAAAAAEk/-Pt-CN0209g/s640/throughput.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-CDG1Cd8z1vI/VfAb0-vvKjI/AAAAAAAAAEk/-Pt-CN0209g/s1600/throughput.png" >}}</div>
 As settings 2 and 5 show the best performance, we notice that acquiring larger chunks of jobs in one acquisition cycle is benefitial in our scenario. Furthermore, we notice only a slight benefit of a configuration with backoff to one without. This can be explained by the way the alpha1 engine deals with the case that the job execution queue is saturated: In such a situation, the job acquisition thread itself begins executing jobs that cannot be submitted. This way, an uncontrolled backoff effect sets in and acquisition automatically becomes less frequent. In case the workload is more heterogenous than in our scenario, it may happen that the acquisition thread executes a rather long running job stalling execution resources that recover meanwhile by not acquiring new jobs. With the upcoming alpha2 release, we have changed this behavior such that the acquisition thread's only responsibility is to acquire jobs.<br />
 <br />
 This leads to the following conclusions:<br />

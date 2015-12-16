@@ -56,10 +56,7 @@ Another big thing is the <a href="https://github.com/camunda/camunda-bpmn-model"
 ASCII-driven-programming</h3>
 <div>
 We had a lot of discussions about how to provide the possibility for an activity to cancel a scope or be executed concurrently to activities in the same scope as native PVM Atomic Operations. In the course of the discussion we drew a lot of graphs for different cases (ie. interrupting and non-interrupting boundary events and interrupting and non-interrupting event sub processes) and discussed how the graphs should be tranformed to support the behavior native. As a result we drew some "nice" ASCII pictures in the source code to describe how the source graph should be transformed to achieve the desired behavior.</div>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://2.bp.blogspot.com/-5Z8SSVbdt4c/Uuup4HOy6iI/AAAAAAAAADc/236DQ0mEUZs/s1600/ascii.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://2.bp.blogspot.com/-5Z8SSVbdt4c/Uuup4HOy6iI/AAAAAAAAADc/236DQ0mEUZs/s1600/ascii.png" height="200" width="189" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">ASCII execution graphs</td></tr>
-</tbody></table>
+{{< figure src="http://2.bp.blogspot.com/-5Z8SSVbdt4c/Uuup4HOy6iI/AAAAAAAAADc/236DQ0mEUZs/s1600/ascii.png" >}}
 <div>
 You are welcome to have a closer look at it and give us some feedback ;)</div>
 <div>
@@ -68,14 +65,12 @@ You are welcome to have a closer look at it and give us some feedback ;)</div>
 Define your own view in cockpit</h3>
 <div>
 It is now possible to define your own views on process definitions and process instances in cockpit.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-l45rb2u-v9k/UuuvFhPyZLI/AAAAAAAAADo/eipNYdddj00/s1600/view-switcher.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-l45rb2u-v9k/UuuvFhPyZLI/AAAAAAAAADo/eipNYdddj00/s1600/view-switcher.png" height="173" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-l45rb2u-v9k/UuuvFhPyZLI/AAAAAAAAADo/eipNYdddj00/s1600/view-switcher.png" >}}
 <div>
 <br /></div>
 <div>
 We used this new mechanism to implement an enterprise plugin containing a view which is based on historic process data, that includes finished process instances too.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-pYbqn6SP58c/Uuuwf4MZE2I/AAAAAAAAADw/PWkus2tYGQA/s1600/cockpit-history.png" imageanchor="1"><img border="0" src="http://2.bp.blogspot.com/-pYbqn6SP58c/Uuuwf4MZE2I/AAAAAAAAADw/PWkus2tYGQA/s1600/cockpit-history.png" height="173" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-pYbqn6SP58c/Uuuwf4MZE2I/AAAAAAAAADw/PWkus2tYGQA/s1600/cockpit-history.png" >}}
 <div>
 Learn <a href="http://docs.camunda.org/latest/real-life/how-to/#cockpit-how-to-develop-a-cockpit-plugin">here</a> how to develop a cockpit plugin and implement your own view.</div>
 <div>

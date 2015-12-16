@@ -25,7 +25,7 @@ In this post I demonstrate how you can use the json value type to<br />
 <br />
 <h3>Example Process</h3><div>In this post I use the following example process:</div><br />
 <br />
-<ul><ul></ul></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-x1qVsd35w78/VNTEWgBP3AI/AAAAAAAAAEw/ABiL0CINhjc/s1600/process.png" imageanchor="1"><img border="0" src="http://4.bp.blogspot.com/-x1qVsd35w78/VNTEWgBP3AI/AAAAAAAAAEw/ABiL0CINhjc/s1600/process.png" /></a></div><br />
+{{< figure src="http://4.bp.blogspot.com/-x1qVsd35w78/VNTEWgBP3AI/AAAAAAAAAEw/ABiL0CINhjc/s1600/process.png" >}}
 <br />
 <h3>Create a Json variable in a start form</h3><div>The process instance is started by using a plain Html form inside camunda Tasklist.<br />
 <br />

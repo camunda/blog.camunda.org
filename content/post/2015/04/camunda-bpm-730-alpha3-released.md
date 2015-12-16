@@ -78,8 +78,7 @@ The following is an example of how the api can be used.<br />
 <br />
 Assume that we have the following BPMN process: <br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-h7AM2zyyX20/VTnOcdljYKI/AAAAAAAAB2A/lmKY1CVnCYA/s1600/process1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-h7AM2zyyX20/VTnOcdljYKI/AAAAAAAAB2A/lmKY1CVnCYA/s1600/process1.png" height="136" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-h7AM2zyyX20/VTnOcdljYKI/AAAAAAAAB2A/lmKY1CVnCYA/s1600/process1.png" >}}
 <br />
 We have a process instance which is currently waiting in the <em>Prepare Bank Transfer</em> task. Due to a technical problem, the <em>Archive Invoice</em> service task must be executed again. In order to achieve that we can execute the following command using the process instance modification API:<br />
 <br />
@@ -115,8 +114,7 @@ Process Instance Modification Plugin for Cockpit</h3>
 <br />
 Camunda Cockpit now also provides a plugin for using the modification API. This plugin is only available in the Camunda Enterprise Subscription.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-hwPs8WLgUzs/VTnUQ_pH4DI/AAAAAAAAB2Q/kUJWckAcTGY/s1600/cockpit-modifications.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-hwPs8WLgUzs/VTnUQ_pH4DI/AAAAAAAAB2Q/kUJWckAcTGY/s1600/cockpit-modifications.png" height="304" width="640" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-hwPs8WLgUzs/VTnUQ_pH4DI/AAAAAAAAB2Q/kUJWckAcTGY/s1600/cockpit-modifications.png" >}}
 <br />
 <h3>
 Process Authorizations</h3>
@@ -134,14 +132,11 @@ If authorization checks are enabled, authenticated users can only see, modify an
 Example</h4>
 <br />
 If the demo user <em>mary</em> logs into the Camunda tasklist, she is not authorized to start the invoice process. As a result, she does not see the process in the list of processes she can start:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-a0Le86p0Jv4/VTnXx2FCyRI/AAAAAAAAB2o/QKXJ17Spgao/s1600/cockpit-no-auth.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-a0Le86p0Jv4/VTnXx2FCyRI/AAAAAAAAB2o/QKXJ17Spgao/s1600/cockpit-no-auth.png" height="146" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-a0Le86p0Jv4/VTnXx2FCyRI/AAAAAAAAB2o/QKXJ17Spgao/s1600/cockpit-no-auth.png" >}}
 Next, we create the necessary authorization for Mary. We authorize her to READ the Process Definition invoice and to CREATE_INSTANCE of the Process Definition invoice.<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-sxWlaZLC9kM/VTnXxy1BGRI/AAAAAAAAB2c/QHzKLBfOvFc/s1600/admin-auth.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-sxWlaZLC9kM/VTnXxy1BGRI/AAAAAAAAB2c/QHzKLBfOvFc/s1600/admin-auth.png" height="282" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-sxWlaZLC9kM/VTnXxy1BGRI/AAAAAAAAB2c/QHzKLBfOvFc/s1600/admin-auth.png" >}}
 &nbsp; As a result, she can now see the Process Definition "invoice and start a new process instance:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-BaPbYQ1KLcA/VTnXx8I4M3I/AAAAAAAAB2k/E86OYLrq8RQ/s1600/tasklist-auth.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-BaPbYQ1KLcA/VTnXx8I4M3I/AAAAAAAAB2k/E86OYLrq8RQ/s1600/tasklist-auth.png" height="152" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-BaPbYQ1KLcA/VTnXx8I4M3I/AAAAAAAAB2k/E86OYLrq8RQ/s1600/tasklist-auth.png" >}}
 <br />
 All of this is available at a Java API and REST API level as well.<br />
 <br />

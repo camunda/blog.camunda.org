@@ -31,8 +31,7 @@ Cycle displays an image of the current state of the BPMN diagram. Previously, th
 <br />
 To render the diagrams, we use the awesome <a href="http://bpmn.io/" target="_blank">bpmn.io toolkit</a>.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-6ahEAly2UFU/VI_zysQvnMI/AAAAAAAACn0/LbHcz_bJCHQ/s1600/screenshot_cycle.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-6ahEAly2UFU/VI_zysQvnMI/AAAAAAAACn0/LbHcz_bJCHQ/s1600/screenshot_cycle.PNG" height="251" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-6ahEAly2UFU/VI_zysQvnMI/AAAAAAAACn0/LbHcz_bJCHQ/s1600/screenshot_cycle.PNG" >}}
 <br />
 <br />
 <h3>

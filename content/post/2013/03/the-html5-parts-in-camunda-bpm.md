@@ -40,8 +40,7 @@ Thats the idea behind the HTML5 buzz. We are now living in the age of web APIs (
 So you provide a server side stateless implementation of you business logic or data and <a href="http://docs.camunda.org/latest/api-references/rest/" target="_blank">define the interface for your clients</a> (typically url paths and the json structure) to have a reusable API for you applications.</div>
 <div>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-G3HHc2cy5YM/UUntbZsb2UI/AAAAAAAAAFs/xzjeFX_36pM/s1600/webapps.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="462" src="http://3.bp.blogspot.com/-G3HHc2cy5YM/UUntbZsb2UI/AAAAAAAAAFs/xzjeFX_36pM/s640/webapps.png" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-G3HHc2cy5YM/UUntbZsb2UI/AAAAAAAAAFs/xzjeFX_36pM/s1600/webapps.png" >}}
 <br /></div>
 <div>
 <div class="separator" style="clear: both; text-align: center;">

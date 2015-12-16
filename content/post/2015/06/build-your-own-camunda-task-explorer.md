@@ -19,8 +19,8 @@ There's a lot of interest in how to write a task list with CDI and JSF, and not 
 <h3>Build a process application with JSF and CDI</h3>To get tasks into your task list, you need to build a process application that includes at least one process definition, as well as some user tasks. A recipe to build a JSF based process application can be found in our <a href="http://docs.camunda.org/7.2/guides/getting-started-guides/java-ee/" target="_blank">getting started guide</a>.<br />
 <br />
 After completing the tutorial you'll have a <a href="https://github.com/camunda/camunda-get-started-javaee/blob/master/src/main/resources/pizza-order.bpmn" target="_blank">pizza&nbsp;order&nbsp;process</a> like this:<br />
-<div><br />
-</div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-EvGCP6WjV6w/VVnk9DcNrQI/AAAAAAAAADs/ffd37WVEFjk/s1600/pizza-order.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="239" src="http://3.bp.blogspot.com/-EvGCP6WjV6w/VVnk9DcNrQI/AAAAAAAAADs/ffd37WVEFjk/s640/pizza-order.PNG" width="640" /></a></div>It contains a simple <a href="https://github.com/camunda/camunda-get-started-javaee/blob/master/src/main/webapp/placeorder.xhtml" target="_blank">start form</a> to start process instances and a form to approve the order.<br />
+{{< figure src="http://3.bp.blogspot.com/-EvGCP6WjV6w/VVnk9DcNrQI/AAAAAAAAADs/ffd37WVEFjk/s1600/pizza-order.PNG" >}}
+It contains a simple <a href="https://github.com/camunda/camunda-get-started-javaee/blob/master/src/main/webapp/placeorder.xhtml" target="_blank">start form</a> to start process instances and a form to approve the order.<br />
 <pre class="prettyprint"><code class="language-jsf">&lt;!DOCTYPE HTML&gt;
 &lt;html lang="en" xmlns="http://www.w3.org/1999/xhtml"
   xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -88,10 +88,8 @@ public class ProcessDefinitionList extends ProcessApplicationBean implements Ser
 }
 
 </code></pre>You will get this start form from it:<br />
-<table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody>
-<tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-tXRI6lJ0Lm8/VVnoxdwuS7I/AAAAAAAAAD4/_A6ixia4PkY/s1600/start-list.PNG" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="416" src="http://4.bp.blogspot.com/-tXRI6lJ0Lm8/VVnoxdwuS7I/AAAAAAAAAD4/_A6ixia4PkY/s640/start-list.PNG" width="640" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">List of all process definitions to start</td></tr>
-</tbody></table>After hitting the start button, the user will see the start form and after that form is completed, the process instance will start. The user will be able to see it in the task list now.<br />
+{{< figure src="http://4.bp.blogspot.com/-tXRI6lJ0Lm8/VVnoxdwuS7I/AAAAAAAAAD4/_A6ixia4PkY/s1600/start-list.PNG" caption="List of all process definitions to start" >}}
+After hitting the start button, the user will see the start form and after that form is completed, the process instance will start. The user will be able to see it in the task list now.<br />
 <br />
 The <a href="https://github.com/camunda/camunda-consulting/blob/master/snippets/jsf-simple-tasklist/src/main/webapp/app/startList.xhtml" target="_blank">starting of the process instance</a> and the navigation to the task list is based on a injected bean of a jsf actionListener:<br />
 <pre class="prettyprint"><code class="language-jsf">&lt;h:commandButton&nbsp;class="btn btn-small"&nbsp;
@@ -157,10 +155,7 @@ public class TaskList extends ProcessApplicationBean implements Serializable {
   }
 </task></code></pre>Because I've concentrated on the technical details, our task list may looks like this:<br />
 <br />
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="https://github.com/camunda/camunda-consulting/raw/master/snippets/jsf-simple-tasklist/screenshot.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" height="412" src="https://github.com/camunda/camunda-consulting/raw/master/snippets/jsf-simple-tasklist/screenshot.png" width="640" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">Example task list</td></tr>
-</tbody></table><br />
+{{< figure src="https://github.com/camunda/camunda-consulting/raw/master/snippets/jsf-simple-tasklist/screenshot.png" caption="Example task list" >}}
 Of course, you can change the cryptic IDs against businessKeys and display more information from your business context.<br />
 <h3>Claiming and unclaiming</h3><div>If you work in groups, your colleagues should not be able to see the tasks that you are currently working on. Therefore the user has to claim a task. If you are unable to finish the work, you can give the task back to the team by "claiming" it with userID null.</div><div><br />
 </div><div>The methods for claim and unclaim looks like this:</div><pre class="prettyprint"><code class="language-java">  public void unclaim(Task task) {

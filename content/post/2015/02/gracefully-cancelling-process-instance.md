@@ -30,8 +30,7 @@ However: what if you want to cancel the process instance gracefully? Gracefully 
 Internal Compensation</h3>
 Modeling compensation inside the process itself:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-KBa6dKFuMxE/VM9uZjhaNvI/AAAAAAAABNQ/MWRNag5wgqA/s1600/internal-compensation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-KBa6dKFuMxE/VM9uZjhaNvI/AAAAAAAABNQ/MWRNag5wgqA/s1600/internal-compensation.png" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-KBa6dKFuMxE/VM9uZjhaNvI/AAAAAAAABNQ/MWRNag5wgqA/s1600/internal-compensation.png" >}}
 <br />
 <br />
 The compensation undoes the effects of the process so far. This is usually modeled in a way where you attach a <a href="http://docs.camunda.org/latest/api-references/bpmn20/#tasks-task-markers-compensation">compensation handler</a> to those service tasks which have effects on "the outside world" and implement logic which undoes the effects of those service tasks. Then, top level inside the process you can have an <a href="http://docs.camunda.org/latest/api-references/bpmn20/#subprocesses-event-subprocess">interrupting event subprocess</a> with a message start event followed by an intermediate compensation throw event.<br />
@@ -62,13 +61,11 @@ External Compensation</h3>
 Modeling a second process which undoes the effects of the first process.<br />
 <br />
 First, you model a regular process (lets call it the "main process") without any compensation logic:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-lMshnWfbdOQ/VM9unCamdaI/AAAAAAAABNY/tOCswuXzvwU/s1600/external-compensation-main.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-lMshnWfbdOQ/VM9unCamdaI/AAAAAAAABNY/tOCswuXzvwU/s1600/external-compensation-main.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-lMshnWfbdOQ/VM9unCamdaI/AAAAAAAABNY/tOCswuXzvwU/s1600/external-compensation-main.png" >}}
 <br />
 Then you can model a second process (lets call it "compensation process") which undoes the effects of the main process:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-RIHkO93Tl4s/VM9vMUGTZ7I/AAAAAAAABNo/S6xKQkPLYy4/s1600/external-compensation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-RIHkO93Tl4s/VM9vMUGTZ7I/AAAAAAAABNo/S6xKQkPLYy4/s1600/external-compensation.png" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-RIHkO93Tl4s/VM9vMUGTZ7I/AAAAAAAABNo/S6xKQkPLYy4/s1600/external-compensation.png" >}}
 <br />
 The compensation process can load the variables of the main process from history and may also check history to see how far the main process has made progress (because it does not know which services in the main process were executed and which services were not).<br />
 <br />

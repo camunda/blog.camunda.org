@@ -19,8 +19,7 @@ If you want to do BPM / Workflow and BPMN 2.0 in PHP then we have good news for 
 </div>
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-wR_7PJzzB6o/UZ-edtQnp9I/AAAAAAAAAH0/y5Zt_XNiKZY/s1600/php.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="220" src="http://4.bp.blogspot.com/-wR_7PJzzB6o/UZ-edtQnp9I/AAAAAAAAAH0/y5Zt_XNiKZY/s400/php.png" width="400" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-wR_7PJzzB6o/UZ-edtQnp9I/AAAAAAAAAH0/y5Zt_XNiKZY/s1600/php.png" >}}
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>

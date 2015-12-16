@@ -43,10 +43,7 @@ The camunda Modeler Standalone is <a href="https://github.com/camunda/camunda-mo
 The standalone modeler adds better operating system integration on top of the Eclipse plug-in. This includes the ability to create, open and save BPMN 2.0 diagrams directly on the file system. Furthermore it adds a source view that allows you to switch from the design perspective to the underlying BPMN 2.0 xml. Use the source view to see what is behind the graphical representation or to edit custom attributes.</div>
 <div>
 <br /></div>
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://camunda.org/bpmn/tool/images/feature-source-view.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://camunda.org/bpmn/tool/images/feature-source-view.png" height="292" width="400" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">Source view gets you access to all the details</td></tr>
-</tbody></table>
+{{< figure src="feature-source-view.png" caption="Source view gets you access to all the details">}}
 <div>
 <br /></div>
 <h2>

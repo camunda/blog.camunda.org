@@ -17,8 +17,7 @@ aliases:
 <br />
 Let's have a look at a simple example: <br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-qCMc1anIyhk/VUpe4qixaAI/AAAAAAAAAQk/HO9K71u4jkc/s1600/process.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="67" src="http://1.bp.blogspot.com/-qCMc1anIyhk/VUpe4qixaAI/AAAAAAAAAQk/HO9K71u4jkc/s1600/process.png" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-qCMc1anIyhk/VUpe4qixaAI/AAAAAAAAAQk/HO9K71u4jkc/s1600/process.png" >}}
 <br />
 <!--[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>

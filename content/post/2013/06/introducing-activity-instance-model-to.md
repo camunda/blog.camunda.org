@@ -31,8 +31,7 @@ So far so good. But is that not the execution tree provided by the process engin
 Scoping vs. Concurrency</h3>
 <div>
 The process engine uses the concept of a "child execution" both for scoping and for concurrency. If a non-concurrent execution reaches a parallel gateway, it will stay there and concurrent child executions are spawned for each outgoing sequence flow. The effect is that the child executions are nested below an inactive execution waiting in the parallel gateway (fork). This concept is an internal implementation detail and not aligned with the BPMN 2.0 specification and usually very hard to understand for new users of the process engine:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-uD5Rb0XBsQ0/UbshmnQ3k_I/AAAAAAAAAKo/Yryo_9v_Y_U/s1600/scoping_cs_concurrency.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="253" src="http://3.bp.blogspot.com/-uD5Rb0XBsQ0/UbshmnQ3k_I/AAAAAAAAAKo/Yryo_9v_Y_U/s400/scoping_cs_concurrency.PNG" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-uD5Rb0XBsQ0/UbshmnQ3k_I/AAAAAAAAAKo/Yryo_9v_Y_U/s1600/scoping_cs_concurrency.PNG" >}}
 <div>
 In the execution tree (left hand side) you will see an inactive scope execution waiting in the parallel gateway (even though the process instance has already completed that activity and is now executing the service tasks). The executions executing the service tasks are nested below the inactive scope execution waiting in the fork gateway. In the activity instance tree (right hand side), this execution is not visible.&nbsp;</div>
 <div>
@@ -43,22 +42,16 @@ In the activity instance tree, the root node in the activity instance tree repre
 Another example is Parallel Multi Instance. Consider the following examples:&nbsp;</div>
 <div>
 1) Single parallel multi instance task:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-CphDoa92RvE/Ubso_L9XzYI/AAAAAAAAALM/wyol3xiZEAA/s1600/tree_multiInstance_single.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="151" src="http://3.bp.blogspot.com/-CphDoa92RvE/Ubso_L9XzYI/AAAAAAAAALM/wyol3xiZEAA/s320/tree_multiInstance_single.PNG" width="320" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-CphDoa92RvE/Ubso_L9XzYI/AAAAAAAAALM/wyol3xiZEAA/s1600/tree_multiInstance_single.PNG" >}}
 <div>
 <br /></div>
 <div>
 <br /></div>
 <div>
 2) Multi instance subprocess:</div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-gtsqLRzxNNI/UbsogihhAiI/AAAAAAAAALE/3BznfVbbnVA/s1600/tree_multiInstance.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="290" src="http://4.bp.blogspot.com/-gtsqLRzxNNI/UbsogihhAiI/AAAAAAAAALE/3BznfVbbnVA/s400/tree_multiInstance.PNG" width="400" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-gtsqLRzxNNI/UbsogihhAiI/AAAAAAAAALE/3BznfVbbnVA/s1600/tree_multiInstance.PNG" >}}
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-</div>
 <div>
 The additonal executions in the execution trees on the left hand side are needed for internal process engine reasons. In cockpit we want to visualize the activity instance tree which is easier to understand and more aligned with BPMN 2.0.&nbsp;</div>
 <h3>

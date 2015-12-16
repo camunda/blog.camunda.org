@@ -16,8 +16,7 @@ aliases:
 <div>
 Today we release the first version of dmn.io, our new DMN modeling toolkit. dmn.io allows you to view and model decisions with the DMN 1.0 standard directly on the web. The dmn.io library provides a viewer and an editor that can be embedded into web applications. With this release we provide the front-end element for the <a href="http://blog.camunda.org/2015/07/camunda-bpm-740-alpha-1-released.html" target="_blank">latest Camunda BPM 7.4.0 alpha release</a>, which introduced support for DMN.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-jD6HCODqujc/VcIRVI5erJI/AAAAAAAADUQ/OraFeNA2rzY/s1600/screencast.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="218" src="http://1.bp.blogspot.com/-jD6HCODqujc/VcIRVI5erJI/AAAAAAAADUQ/OraFeNA2rzY/s640/screencast.gif" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-jD6HCODqujc/VcIRVI5erJI/AAAAAAAADUQ/OraFeNA2rzY/s1600/screencast.gif" >}}
 <div style="background-color: #f4f6f4; border-radius: 3px; border: 1px solid #e4e6e4; margin: 30px auto; max-width: 500px; overflow: hidden;">
 <h2 style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; margin: 0; padding: 15px; position: relative; text-align: center; width: 500px;">
 <a href="http://camunda.org/dmn/demo/" style="display: block; font-size: 28px; line-height: 32px; text-align: center;">Try it out</a>   </h2>

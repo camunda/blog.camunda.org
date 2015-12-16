@@ -15,8 +15,7 @@ aliases:
 <div>
 With bpmn.io and the Camunda REST API it is really simple to develop a small HTML page that displays a process instance grafically and highlights some activities. In our "<a href="https://github.com/camunda/camunda-consulting/blob/master/snippets/jsf-simple-tasklist/" target="_blank">JSF Simple Tasklist</a>" snippet we used this to highlight the current Task (like it is done in the Camunda BPM Tasklist):<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="https://raw.githubusercontent.com/camunda/camunda-consulting/master/snippets/jsf-simple-tasklist/diagram.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="408" src="https://raw.githubusercontent.com/camunda/camunda-consulting/master/snippets/jsf-simple-tasklist/diagram.png" width="640" /></a></div>
+{{< figure src="https://raw.githubusercontent.com/camunda/camunda-consulting/master/snippets/jsf-simple-tasklist/diagram.png" >}}
 <br />
 <br />
 <a name='more'></a><br />

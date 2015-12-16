@@ -13,8 +13,7 @@ aliases:
 ---
 
 <div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-MvXUG5rgDhg/UjL8aVA19FI/AAAAAAAAAGc/LZzu6Ijyt9M/s1600/screenshot.png" imageanchor="1" style="clear: left; display: inline !important; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-MvXUG5rgDhg/UjL8aVA19FI/AAAAAAAAAGc/LZzu6Ijyt9M/s200/screenshot.png" height="148" width="200" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-MvXUG5rgDhg/UjL8aVA19FI/AAAAAAAAAGc/LZzu6Ijyt9M/s1600/screenshot.png" >}}
 Once a year the whole camunda team does a ShipIt-Day (<a href="https://www.atlassian.com/de/company/about/shipit">inspired by Atlassian</a>) - developing something awesome within 24 hours. This year, <a href="http://camunda.org/community/team.html">Kristin, Falko and me</a> did "camunda share" - a web application in the cloud to share and discuss BPMN 2.0 process models. And we shipped it! It is live.<br />
 <br />
 Try it today: <a href="http://camunda.org/share/">http://camunda.org/share/</a><br />

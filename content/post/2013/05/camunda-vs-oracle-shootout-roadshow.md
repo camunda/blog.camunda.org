@@ -13,8 +13,7 @@ aliases:
 ---
 
 <div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-T7kU7QSe4U0/UYj07DY8VmI/AAAAAAAAAEA/qUNIQdpIJZQ/s1600/cowboy_duell_main.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-T7kU7QSe4U0/UYj07DY8VmI/AAAAAAAAAEA/qUNIQdpIJZQ/s1600/cowboy_duell_main.gif" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-T7kU7QSe4U0/UYj07DY8VmI/AAAAAAAAAEA/qUNIQdpIJZQ/s1600/cowboy_duell_main.gif" >}}
 <br />
 <br />
 High Noon in BPM City: not a soul walks the dusty main road and the sun glares mercilessly onto El Camundo and his opponent – the Oracle of the Desert. The wireless mouse still rests in his holster, his hand hovers above it – only the slightest quiver reveals Camundo's tension. Pearly beads of sweat are glistening on Oracle's face. Who will be the first to shoot off his token?<br />

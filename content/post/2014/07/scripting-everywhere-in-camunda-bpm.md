@@ -52,10 +52,7 @@ We also allow you to reuse scripts by using the camunda:resource attribute. Whic
 Let there be scripts</h3>
 <div>
 To demonstrate the new feature I created a small example process without a single line of Java code. The following process simulates a dice game in a casino.</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-N3P_O7NkXEQ/U8y9hXZzb7I/AAAAAAAAADM/iulOCrZDiII/s1600/scripting-everywhere.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-N3P_O7NkXEQ/U8y9hXZzb7I/AAAAAAAAADM/iulOCrZDiII/s1600/scripting-everywhere.png" height="236" width="400" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
+{{< figure src="http://4.bp.blogspot.com/-N3P_O7NkXEQ/U8y9hXZzb7I/AAAAAAAAADM/iulOCrZDiII/s1600/scripting-everywhere.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 The first process element is a script task which should welcome the new player.</div>
 <div class="separator" style="clear: both; text-align: left;">

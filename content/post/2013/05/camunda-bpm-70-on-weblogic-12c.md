@@ -39,11 +39,9 @@ Add a datasource</h3>
 Add a datasource via the Administration Console (or any other convenient way on WLS - I should admit that personally I am not the WLS expert). Make sure that you target it on your server - this is not done by default:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-<a href="http://1.bp.blogspot.com/-ZATZj3K2AOI/UZEVcS5n4wI/AAAAAAAAAC8/Snmy_X18iGE/s1600/datasource1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-<img border="0" src="http://1.bp.blogspot.com/-ZATZj3K2AOI/UZEVcS5n4wI/AAAAAAAAAC8/Snmy_X18iGE/s200/datasource1.png" height="146" width="200" />&nbsp;</a><a href="http://3.bp.blogspot.com/-ht2xOtEikrs/UZEVchDV42I/AAAAAAAAADA/lfE2QM7e-eg/s1600/datasource2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" src="http://3.bp.blogspot.com/-ht2xOtEikrs/UZEVchDV42I/AAAAAAAAADA/lfE2QM7e-eg/s200/datasource2.png" height="152" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: center;">
-<br /></div>
+{{< figure src="http://1.bp.blogspot.com/-ZATZj3K2AOI/UZEVcS5n4wI/AAAAAAAAAC8/Snmy_X18iGE/s1600/datasource1.png" >}}
+
+{{< figure src="http://3.bp.blogspot.com/-ht2xOtEikrs/UZEVchDV42I/AAAAAAAAADA/lfE2QM7e-eg/s1600/datasource2.png" >}}
 <h3>
 Which camunda distribution do I use?</h3>
 <div>
@@ -64,34 +62,23 @@ Now we will install the artifacts step by step.</div>
 Add shared libraries</h3>
 <div>
 Just copy the provided libraries (the core engine, necessary dependencies like Apache MyBatis and interfaces for the Ressource Adapater) into your domain "lib" folder:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-o240VaVQlR0/UZHXV00C8kI/AAAAAAAAADU/9yVNmxnfj_g/s1600/shared-libs.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-o240VaVQlR0/UZHXV00C8kI/AAAAAAAAADU/9yVNmxnfj_g/s200/shared-libs.png" height="85" width="200" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-o240VaVQlR0/UZHXV00C8kI/AAAAAAAAADU/9yVNmxnfj_g/s1600/shared-libs.png" >}}
 <h3>
 Add&nbsp;resource&nbsp;adapater</h3>
 <div>
 We use a JCA (Java EE Connector Architecture) resource adapter to be fully Java EE compliant. This component is basically responsible to do something we call Job handling. Basically we need a thread pool to query the database if any timers or the like are due. See more details in the <a href="https://app.camunda.com/confluence/display/foxUserGuide/The+Job+Executor" target="_blank">Job Executor</a>&nbsp;docs.<br />
 <br />
 The resource adapter is deployed as RAR archive. I used the archive provided for Glassfish - as there are no changes necessary. You can deploy it via the <a href="http://localhost:7001/console/">Administration Console</a> without problems:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-MYkRBqCgDPU/UZHeOmV16QI/AAAAAAAAAD8/3XN7HXM3kpo/s1600/rar-deployment.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-MYkRBqCgDPU/UZHeOmV16QI/AAAAAAAAAD8/3XN7HXM3kpo/s200/rar-deployment.png" height="145" width="200" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-MYkRBqCgDPU/UZHeOmV16QI/AAAAAAAAAD8/3XN7HXM3kpo/s1600/rar-deployment.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
+<b>Important</b>: You now have to adjust the configuration. Change the deployment order (the resource adapter should be deployed before other stuff), set a JNDI name and allow global access to classes (actually I still wonder how providing the RAR classes to EAR classloaders really works in WLS as defined in the JCA specs - I didn't get it to work in the prototype so I added the stuff as shared libraries - any hints from WLS experts are welcome!):
+{{< figure src="http://4.bp.blogspot.com/-auCGRBj-IRY/UZHeM6r8TZI/AAAAAAAAADk/Ekpp7otTjG8/s1600/rar-config1.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
-<b>Important</b>: You now have to adjust the configuration. Change the deployment order (the resource adapter should be deployed before other stuff), set a JNDI name and allow global access to classes (actually I still wonder how providing the RAR classes to EAR classloaders really works in WLS as defined in the JCA specs - I didn't get it to work in the prototype so I added the stuff as shared libraries - any hints from WLS experts are welcome!):</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-auCGRBj-IRY/UZHeM6r8TZI/AAAAAAAAADk/Ekpp7otTjG8/s1600/rar-config1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-auCGRBj-IRY/UZHeM6r8TZI/AAAAAAAAADk/Ekpp7otTjG8/s200/rar-config1.png" height="159" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-And you have to provide an outbound connection factory which later can be used via JNDI from our process engine:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-Etrc-jv-EXE/UZHeNchZr2I/AAAAAAAAADo/qxE6w0ZOjxA/s1600/rar-config2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-Etrc-jv-EXE/UZHeNchZr2I/AAAAAAAAADo/qxE6w0ZOjxA/s200/rar-config2.png" height="151" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-And last but not least we need a <a href="http://docs.oracle.com/cd/E11035_01/wls100/config_wls/self_tuned.html" target="_blank">Weblogic WorkManager</a>&nbsp;for our thread pool:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-HLjxrhIi2ro/UZHeN165hwI/AAAAAAAAADw/K34PJybTd5U/s1600/rar-config3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-HLjxrhIi2ro/UZHeN165hwI/AAAAAAAAADw/K34PJybTd5U/s320/rar-config3.png" height="237" width="320" /></a></div>
+And you have to provide an outbound connection factory which later can be used via JNDI from our process engine:
+{{< figure src="http://1.bp.blogspot.com/-Etrc-jv-EXE/UZHeNchZr2I/AAAAAAAAADo/qxE6w0ZOjxA/s1600/rar-config2.png" >}}
+And last but not least we need a <a href="http://docs.oracle.com/cd/E11035_01/wls100/config_wls/self_tuned.html" target="_blank">Weblogic WorkManager</a>&nbsp;for our thread pool:
+{{< figure src="http://1.bp.blogspot.com/-HLjxrhIi2ro/UZHeN165hwI/AAAAAAAAADw/K34PJybTd5U/s1600/rar-config3.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 That's it. Next step :-)</div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -102,18 +89,14 @@ Add EAR starting a process engine</h3>
 I have build a custom EAR for WLS to provide a WLS specific deployment descriptor necessary to wire the EAR with the RAR correctly - but I will skip the details here. The EAR basically only does one thing: It starts up one engine - therefor it does not have more content than the deployment descriptor and a "<a href="https://github.com/camunda/camunda-bpm-platform/blob/wls-prototype-7.0.0-alpha3/distro/wls12c/service/src/main/resources/META-INF/bpm-platform.xml">bpm-platform.xml</a>" file containing the configuration of that process engine. Deploy this with the wizard again:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-4t1A3Wt_wFI/UZHh_hx72GI/AAAAAAAAAEM/I6G728l9ZuA/s1600/ear-deployment.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-4t1A3Wt_wFI/UZHh_hx72GI/AAAAAAAAAEM/I6G728l9ZuA/s200/ear-deployment.png" height="159" width="200" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-4t1A3Wt_wFI/UZHh_hx72GI/AAAAAAAAAEM/I6G728l9ZuA/s1600/ear-deployment.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 This time there is not much to configure - I would suggest &nbsp;that you change the deployment order to 75 - then it gets deployed after the RAR but before other applications.</div>
 <div class="separator" style="clear: both; text-align: left;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
 If you want - you can have a look in the JNDI tree - you should see the started process engine there:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-9ZpO11gHC5g/UZHiumhBBKI/AAAAAAAAAEU/pMH7gWUCuZI/s1600/JndiView.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-9ZpO11gHC5g/UZHiumhBBKI/AAAAAAAAAEU/pMH7gWUCuZI/s200/JndiView.png" height="170" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
+{{< figure src="http://4.bp.blogspot.com/-9ZpO11gHC5g/UZHiumhBBKI/AAAAAAAAAEU/pMH7gWUCuZI/s1600/JndiView.png" >}}
 <h3>
 Deploy REST API as WAR</h3>
 <div>
@@ -126,10 +109,7 @@ You can deploy the WAR file (I again used the Glassfish one without modification
 <br /></div>
 <div>
 For example you can now query all existing process engines:&nbsp;<span style="font-family: 'Courier New', Courier, monospace;"><span style="font-size: x-small;"><a href="http://localhost:7001/engine-rest/engine/">http://localhost:7001/engine-rest/engine/</a>. </span></span>You can see get the one existing engine:</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-lB8oREQgJxM/UZHka_ivCyI/AAAAAAAAAEg/4YNAG4ZTTNs/s1600/rest1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-lB8oREQgJxM/UZHka_ivCyI/AAAAAAAAAEg/4YNAG4ZTTNs/s320/rest1.png" height="140" width="320" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
+{{< figure src="http://3.bp.blogspot.com/-lB8oREQgJxM/UZHka_ivCyI/AAAAAAAAAEg/4YNAG4ZTTNs/s1600/rest1.png" >}}
 <div class="separator" style="clear: both; text-align: left;">
 Congratulations - now on you have a platform working correctly within WLS - fully Java EE 6 compliant - and without any hazzle for starting your process engine. Amazing - isn't it?&nbsp;</div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -190,22 +170,15 @@ Please note that there is one limitation with the current codebase on WLS: The c
 <span style="font-family: inherit;">Some Screenshots</span></h3>
 <div>
 <span style="font-family: inherit;">To prove that it was working :-) See cockpit showing the invoice example process application:</span></div>
-<div class="separator" style="clear: both; text-align: left;">
-<a href="http://1.bp.blogspot.com/-O1yBnux3OX8/UZHwN3qwKqI/AAAAAAAAAEw/e06uI0AGqmU/s1600/cockpit.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-O1yBnux3OX8/UZHwN3qwKqI/AAAAAAAAAEw/e06uI0AGqmU/s200/cockpit.png" height="171" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-The tasklist:</div>
-<div class="separator" style="clear: both; text-align: left;">
-<a href="http://3.bp.blogspot.com/-xYkpbtYyvnw/UZHwgHXWkxI/AAAAAAAAAE4/vqItM800O8c/s1600/tasklist.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-xYkpbtYyvnw/UZHwgHXWkxI/AAAAAAAAAE4/vqItM800O8c/s200/tasklist.png" height="129" width="200" /></a></div>
-<div class="separator" style="clear: both; text-align: left;">
-<br /></div>
-<div class="separator" style="clear: both; text-align: left;">
-And starting a process instance via REST:</div>
-<div class="separator" style="clear: both; text-align: left;">
-<a href="http://4.bp.blogspot.com/-zrgAIhZoqlo/UZHwoJ2jvPI/AAAAAAAAAFA/7QNUY9D_EYY/s1600/rest2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-zrgAIhZoqlo/UZHwoJ2jvPI/AAAAAAAAAFA/7QNUY9D_EYY/s320/rest2.png" height="80" width="320" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-O1yBnux3OX8/UZHwN3qwKqI/AAAAAAAAAEw/e06uI0AGqmU/s1600/cockpit.png" >}}
+The tasklist:
+{{< figure src="http://3.bp.blogspot.com/-xYkpbtYyvnw/UZHwgHXWkxI/AAAAAAAAAE4/vqItM800O8c/s1600/tasklist.png" >}}
+And starting a process instance via REST:
+{{< figure src="http://4.bp.blogspot.com/-zrgAIhZoqlo/UZHwoJ2jvPI/AAAAAAAAAFA/7QNUY9D_EYY/s1600/rest2.png" >}}
 <h3>
 <span style="font-family: inherit;">Feedback welcome</span></h3>
 <div>
 <span style="font-family: inherit;">We welcome every feedback on this - best use our forum (</span><a href="http://camunda.org/community/forum.html">http://camunda.org/community/forum.html</a>, can be used by sending mails to it as well: <a href="mailto:camunda-bpm-users@googlegroups.com">camunda-bpm-users@googlegroups.com</a>). Let us now if you want to use this in production - then we can place a proper enterprise distribution on our roadmap...</div>
 </div>
-
+</div>
 </div>

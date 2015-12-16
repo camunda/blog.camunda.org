@@ -48,16 +48,14 @@ With the latest release of camunda Tasklist, you can manage filters. Filters are
 <div class="separator" style="clear: both; text-align: center;">
 </div>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-MEDVVJr3APE/VCqml6wz5UI/AAAAAAAAAeQ/S62MfmyaDJk/s1600/overview.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-MEDVVJr3APE/VCqml6wz5UI/AAAAAAAAAeQ/S62MfmyaDJk/s1600/overview.png" height="509" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-MEDVVJr3APE/VCqml6wz5UI/AAAAAAAAAeQ/S62MfmyaDJk/s1600/overview.png" >}}
 <h4>
 Creating a new Task Filter</h4>
 <div>
 A new filter can be created by selecting the "New filter" button. A dialog opens which allows to configure the filter:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-3bau-VStdSE/VCqmlElPjsI/AAAAAAAAAeI/EzPhmKae8Zw/s1600/create-filter-oveview.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-3bau-VStdSE/VCqmlElPjsI/AAAAAAAAAeI/EzPhmKae8Zw/s1600/create-filter-oveview.png" height="507" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-3bau-VStdSE/VCqmlElPjsI/AAAAAAAAAeI/EzPhmKae8Zw/s1600/create-filter-oveview.png" >}}
 <div>
 <br /></div>
 <h4>
@@ -66,16 +64,12 @@ Defining Filter Criteria</h4>
 Filter criteria can be defined in the "Criteria" section. In this example we select all tasks by candidate Group and Due Date:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-dwnbGV4KDQ4/VCqmlBVJF0I/AAAAAAAAAeg/0JLXLjg176M/s1600/create-filter-criteria.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-dwnbGV4KDQ4/VCqmlBVJF0I/AAAAAAAAAeg/0JLXLjg176M/s1600/create-filter-criteria.png" height="508" width="640" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-dwnbGV4KDQ4/VCqmlBVJF0I/AAAAAAAAAeg/0JLXLjg176M/s1600/create-filter-criteria.png" >}}
 <h4>
 Sharing Filters</h4>
 <div>
 Filters can be shared with other users and Groups by defining Authorizations. This filter is shared with all users part of the group "management". They have been granted "<span style="font-family: Courier New, Courier, monospace;">READ</span>" permission meaning that they can see and execute the filter but they cannot modify or delete it.</div>
-<div>
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-iXrRP11vmkQ/VCqmlBKYhgI/AAAAAAAAAeM/08PA3rhB45I/s1600/create-filter-sharing.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-iXrRP11vmkQ/VCqmlBKYhgI/AAAAAAAAAeM/08PA3rhB45I/s1600/create-filter-sharing.png" height="507" width="640" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-iXrRP11vmkQ/VCqmlBKYhgI/AAAAAAAAAeM/08PA3rhB45I/s1600/create-filter-sharing.png" >}}
 <div>
 <br /></div>
 <h3>

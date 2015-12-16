@@ -17,8 +17,7 @@ aliases:
 <br />
 Together with <a href="http://rafael.cordones.me/">Rafael Cordones</a>&nbsp;we took the existing&nbsp;<a href="https://github.com/Activiti/Activiti/tree/master/modules/activiti-camel">Activiti Camel Module</a>&nbsp;as a basis and did a huge refactoring. For everybody knowing this module I compiled the changes at the end of this article. For everybody else: Lean back and enjoy the show while I quickly walk you through the features. I do this based on our&nbsp;<a href="https://github.com/camunda/camunda-bpm-camel">"camel use cases" example</a>&nbsp;which is available on GitHub (by the way - you can discuss this process model on <a href="http://camunda.org/share/#/process/f54a4ff9-4cc1-428c-829b-a4002dcdd81f">camunda share</a>):<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-DT4BSiRQ14c/UkGVzVF04II/AAAAAAAAAHg/qetP2QHJrrc/s1600/use-cases.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-DT4BSiRQ14c/UkGVzVF04II/AAAAAAAAAHg/qetP2QHJrrc/s400/use-cases.png" height="140" width="400" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-DT4BSiRQ14c/UkGVzVF04II/AAAAAAAAAHg/qetP2QHJrrc/s1600/use-cases.png" >}}
 <br />
 <a name='more'></a>The process does not solve any real-life business problem but showcases different use cases:<br />
 <ul>
@@ -58,8 +57,7 @@ In order to call a camel route you have to add a simple expression to your BPMN 
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-loOzH1EakIg/UkGaYWB2ShI/AAAAAAAAAH0/AwKOuHhl7Wk/s1600/serviceTaskCamel.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-loOzH1EakIg/UkGaYWB2ShI/AAAAAAAAAH0/AwKOuHhl7Wk/s320/serviceTaskCamel.png" height="320" width="306" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-loOzH1EakIg/UkGaYWB2ShI/AAAAAAAAAH0/AwKOuHhl7Wk/s1600/serviceTaskCamel.png" >}}
 <br />
 In the background this will create the following XML:<br />
 <br />
@@ -94,8 +92,7 @@ What you do in the Camel route is completely up to you and not part of this blog
 Calling the route with the SendTask is the same as with the ServiceTask. But interesting is how to get the response to the process instance waiting in the message event. The following screenshot shows one process instance waiting for the message in cockpit:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-DLKPcPCYl_A/UkGeBFtLoFI/AAAAAAAAAIA/fP29vq88uWQ/s1600/waiting-process-cockpit.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-DLKPcPCYl_A/UkGeBFtLoFI/AAAAAAAAAIA/fP29vq88uWQ/s320/waiting-process-cockpit.png" height="203" width="320" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-DLKPcPCYl_A/UkGeBFtLoFI/AAAAAAAAAIA/fP29vq88uWQ/s1600/waiting-process-cockpit.png" >}}
 <div>
 <br /></div>
 <div>
@@ -113,15 +110,13 @@ This is again easy:</div>
 <div>
 The message name corresponds to the message name in the BPMN 2.0 XML:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-0GVHasEU-kI/UkKZkRgEH1I/AAAAAAAAAIc/RBnUDVhJc88/s1600/messageEvent.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-0GVHasEU-kI/UkKZkRgEH1I/AAAAAAAAAIc/RBnUDVhJc88/s200/messageEvent.png" height="192" width="200" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-0GVHasEU-kI/UkKZkRgEH1I/AAAAAAAAAIc/RBnUDVhJc88/s1600/messageEvent.png" >}}
 <br />
 <br />
 In the example expect the property <span style="font-family: Courier New, Courier, monospace;">CamundaBpmProcessInstanceId </span>to be present in the Camel message properties, this is how correlation currently is done. You could hook in some logic in your Route to do correlation/matching yourself, as e.g. shown in the <a href="https://github.com/camunda/camunda-consulting/tree/master/showcases/bank-account-opening-camel">Bank Account Opening Example</a> (this uses by the way a ReceiveTask instead of a Message Event - both is possible):</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-baz9tYfWOCg/UkGfj6uLwwI/AAAAAAAAAIM/_frRpSfBteU/s1600/ReceiveTask.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-baz9tYfWOCg/UkGfj6uLwwI/AAAAAAAAAIM/_frRpSfBteU/s1600/ReceiveTask.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-baz9tYfWOCg/UkGfj6uLwwI/AAAAAAAAAIM/_frRpSfBteU/s1600/ReceiveTask.png" >}}
 <div>
 <div>
 <span style="font-family: Courier New, Courier, monospace;">from("file://" + postidentFolder)</span></div>

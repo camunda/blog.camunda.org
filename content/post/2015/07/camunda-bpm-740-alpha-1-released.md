@@ -25,7 +25,8 @@ The highlights of this release are:<br />
 </ul><br />
 Overall more than 140 issues were closed. See <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14191">complete Release Notes in Jira</a>.<br />
 <div style="background-color: #f4f6f4; border-radius: 3px; border: 1px solid #e4e6e4; margin: 30px auto; max-width: 500px; overflow: hidden;"><h2 style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; margin: 0; padding: 15px; position: relative; text-align: center; width: 300px;"><a href="http://camunda.org/download#latest" style="display: block; font-size: 28px; line-height: 32px; text-align: center;">Download For Free</a>   </h2><h3 style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: right; margin: 0; padding: 15px; position: relative; text-align: center; width: 200px;"><a href="https://registry.hub.docker.com/u/camunda/camunda-bpm-platform/" style="display: block; font-size: 20px; line-height: 32px; text-align: center;">Run with Docker</a>   </h3></div><a name='more'></a><h2>DMN: Decision Model and Notation</h2>This is the first release which supports DMN (Decision Model and Notation). DMN is a new OMG (Object Management Group) standard for Business Decision Management. (Some of you may also be familiar with the term "Business Rules Management".)<br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-cnk5FA_Swsw/VboYuNYOyZI/AAAAAAAADEw/Ps50fBs73Oc/s1600/table.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="264" src="http://4.bp.blogspot.com/-cnk5FA_Swsw/VboYuNYOyZI/AAAAAAAADEw/Ps50fBs73Oc/s640/table.png" width="640" /></a></div>DMN allows developers and business people to collaborate around different phases of modeling, testing, executing, monitoring and improving Business Decisions.<br />
+{{< figure src="http://4.bp.blogspot.com/-cnk5FA_Swsw/VboYuNYOyZI/AAAAAAAADEw/Ps50fBs73Oc/s1600/table.png" >}}
+DMN allows developers and business people to collaborate around different phases of modeling, testing, executing, monitoring and improving Business Decisions.<br />
 <br />
 This Camunda BPM release adds<br />
 <ul><li>A new <a href="https://github.com/camunda/camunda-engine-dmn">lightweight decision Engine</a> with native support for DMN, developed from scratch,</li>
@@ -51,14 +52,16 @@ We will publish a dedicated blogpost on Job Priorities later. <a href="http://bl
 </ul><h2>Native support for File Variables in Api and Html Forms.</h2>We added native support for File Variables to the Java API, Rest API and in HTML Forms.<br />
 <br />
 Let's start with the forms. In a Form you can now easily allow a user to upload a file:<br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-kLkQjABXSTU/Vbob6lqRjkI/AAAAAAAADE8/IwFS2BX4lPI/s1600/file-upload.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-kLkQjABXSTU/Vbob6lqRjkI/AAAAAAAADE8/IwFS2BX4lPI/s1600/file-upload.png" /></a></div>The corresponding html code would looks like this:<br />
+{{< figure src="http://2.bp.blogspot.com/-kLkQjABXSTU/Vbob6lqRjkI/AAAAAAAADE8/IwFS2BX4lPI/s1600/file-upload.png" >}}
+The corresponding html code would looks like this:<br />
 <pre class="prettyprint"><code class="language-xml">&lt;input type="file"
        cam-variable-name="INVOICE_DOCUMENT"
        cam-variable-type="File"
        cam-max-filesize="10000000" /&gt;
 </code></pre><br />
 And download it (with the correct Filename):<br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-cdLtXZIZM6w/Vbob_Yg_LLI/AAAAAAAADFE/iFDGWELNtyI/s1600/file-download.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-cdLtXZIZM6w/Vbob_Yg_LLI/AAAAAAAADFE/iFDGWELNtyI/s1600/file-download.png" /></a></div>The corresponding html code looks like this:<br />
+{{< figure src="http://3.bp.blogspot.com/-cdLtXZIZM6w/Vbob_Yg_LLI/AAAAAAAADFE/iFDGWELNtyI/s1600/file-download.png" >}}
+The corresponding html code looks like this:<br />
 <pre class="prettyprint"><code class="language-xml">&lt;a cam-file-download="INVOICE_DOCUMENT"&gt;&lt;/a&gt;
 </code></pre><br />
 Read more about File support Html Forms in the <a href="http://docs.camunda.org/latest/api-references/embedded-forms/#supported-html-controls-file-input-fields">Documentation</a>.<br />

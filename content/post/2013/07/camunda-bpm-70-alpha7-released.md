@@ -49,8 +49,7 @@ Support of multi-tenancy in camunda Cockpit</h3>
 Due to the possibility to run <a href="https://app.camunda.com/confluence/display/foxUserGuide/Multi-Tenancy">multiple tenants</a>&nbsp;on the camunda BPM platform you can now switch between the configured process engines in Cockpit to get the process engine specific information.</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-6uLs4Ms3wc0/UdWEVcPAHKI/AAAAAAAAACo/TuLjwwy-XWk/s228/multi-tenancy.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-6uLs4Ms3wc0/UdWEVcPAHKI/AAAAAAAAACo/TuLjwwy-XWk/s228/multi-tenancy.png" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-6uLs4Ms3wc0/UdWEVcPAHKI/AAAAAAAAACo/TuLjwwy-XWk/s228/multi-tenancy.png" >}}
 <div>
 <br /></div>
 <h3>

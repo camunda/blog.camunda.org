@@ -79,12 +79,7 @@ Camunda Cockpit Known Issues</h3>
 </div>
 <div>
 We started to upgrade some of the frontend frameworks we use in Cockpit. This includes the upgrade from Bootstrap 2 to Bootstrap 3 as well as the switch from Angular UI to Angular Bootstrap.</div>
-<div>
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-TF05a1x4tK0/VMeVRnuJO7I/AAAAAAAABKE/7GjQGjmliQ4/s1600/cockpit-bootstrap3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-TF05a1x4tK0/VMeVRnuJO7I/AAAAAAAABKE/7GjQGjmliQ4/s1600/cockpit-bootstrap3.png" height="287" width="400" /></a></div>
-<div>
-<br /></div>
+{{< figure src="http://1.bp.blogspot.com/-TF05a1x4tK0/VMeVRnuJO7I/AAAAAAAABKE/7GjQGjmliQ4/s1600/cockpit-bootstrap3.png" >}}
 <div>
 <br /></div>
 <div>
@@ -99,10 +94,7 @@ As a result of this upgrade, the cockpit application currently has some known is
 </div>
 <div>
 But don't worry, Valentin is busy fixing them!</div>
-<div>
-<br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-38MJYsSfLTo/VMeTYkh63sI/AAAAAAAABJ0/wR2QDFV-ieA/s1600/IMG_20150127_143135897.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-38MJYsSfLTo/VMeTYkh63sI/AAAAAAAABJ0/wR2QDFV-ieA/s1600/IMG_20150127_143135897.jpg" height="180" width="320" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-38MJYsSfLTo/VMeTYkh63sI/AAAAAAAABJ0/wR2QDFV-ieA/s1600/IMG_20150127_143135897.jpg" >}}
 <h3 style="clear: both; text-align: left;">
 Minification</h3>
 <div class="separator" style="clear: both; text-align: left;">
@@ -116,7 +108,4 @@ After: 18 Requests, 1.0 MB transferred<br />
 This should make cockpit better suited for Web / Cloud deployments</div>
 <div>
 <br /></div>
-<div>
-</div>
-
 </div>

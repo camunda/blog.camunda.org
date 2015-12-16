@@ -18,8 +18,7 @@ aliases:
 <br />
 This is a typical statement by process participants (aka business users). There are numerous possible ways to implement such a requirement in your process application, e.g. using a service task:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/--iV9hw06uTY/UnIBVw1EK5I/AAAAAAAAAFQ/xkJ5FN-l2oY/s1600/verbose.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="107" src="http://1.bp.blogspot.com/--iV9hw06uTY/UnIBVw1EK5I/AAAAAAAAAFQ/xkJ5FN-l2oY/s400/verbose.png" width="400" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/--iV9hw06uTY/UnIBVw1EK5I/AAAAAAAAAFQ/xkJ5FN-l2oY/s1600/verbose.png" >}}
 <br />
 <div class="separator" style="clear: both; text-align: center;">
 </div>
@@ -113,8 +112,7 @@ import org.camunda.bpm.engine.impl.context.Context;<br />
 <br />
 The last step is to assign the class as a task listener to the usertask in the process model. As you can see below, the task listener will be executed when the usertask has been assigned:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-GqrPGJm8PfY/UnIBcp-3X3I/AAAAAAAAAFc/x6HULzEyitg/s1600/listener.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="298" src="http://1.bp.blogspot.com/-GqrPGJm8PfY/UnIBcp-3X3I/AAAAAAAAAFc/x6HULzEyitg/s640/listener.png" width="640" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-GqrPGJm8PfY/UnIBcp-3X3I/AAAAAAAAAFc/x6HULzEyitg/s1600/listener.png" >}}
 <br />
 <br />
 And that's about it! If you want to see an example ready to run, just check out the <a href="https://github.com/camunda/camunda-quickstarts/tree/master/usertask/task-assignment-email">Task Assignment Email Quickstart</a>.<br />

@@ -99,11 +99,12 @@ String valueAsString = customerData.getValueSerialized();
 </code></pre><br />
 The same can be done in the Tasklist as you can see here:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-Xj4VuyYRlBo/VPhzZI7bcAI/AAAAAAAABoE/eHMP03p47mA/s1600/tasklist-variable-sort.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-Xj4VuyYRlBo/VPhzZI7bcAI/AAAAAAAABoE/eHMP03p47mA/s1600/tasklist-variable-sort.png" /></a></div><br />
+{{< figure src="http://2.bp.blogspot.com/-Xj4VuyYRlBo/VPhzZI7bcAI/AAAAAAAABoE/eHMP03p47mA/s1600/tasklist-variable-sort.png" >}}
+<br />
 </div><br />
 <h3>Advanced Process Instance Search</h3>We added an enterprise feature to Cockpit which allows searching for process instances with complex criteria:<br />
-<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-YW6kGBN7KQw/VPiBiyr2wHI/AAAAAAAABoc/KokXNHH5tP4/s1600/search.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-YW6kGBN7KQw/VPiBiyr2wHI/AAAAAAAABoc/KokXNHH5tP4/s1600/search.png" height="464" width="640" /></a></div><div class="separator" style="clear: both; text-align: left;"><br />
-</div><h3>The most awesome things are yet to come!</h3>We have <strong>amazing</strong> things in the pipepline. On current master it is already possible to do this:<br />
+{{< figure src="http://1.bp.blogspot.com/-YW6kGBN7KQw/VPiBiyr2wHI/AAAAAAAABoc/KokXNHH5tP4/s1600/search.png" >}}
+<h3>The most awesome things are yet to come!</h3>We have <strong>amazing</strong> things in the pipepline. On current master it is already possible to do this:<br />
 <pre class="prettyprint"><code class="language-java">List<execution> executions = runtimeService.createExecutionQuery()
   .processDefinitionKey("invoice")
   .activityId("selectAssignee")

@@ -15,8 +15,7 @@ aliases:
 <div>
 <a href="http://plexiti.com/planet">Martin Schimak</a> (who is a community member and contributor) has written a <a href="http://grails.org/">Grails</a> plugin which allows users to get started quickly with <a href="http://camunda.org/">camunda</a> on grails.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-XqspuwSbrj0/UyHTVjkGVEI/AAAAAAAAAWw/KaLfgKn4_CQ/s1600/camunda-and-grails.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-XqspuwSbrj0/UyHTVjkGVEI/AAAAAAAAAWw/KaLfgKn4_CQ/s1600/camunda-and-grails.png" height="138" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-XqspuwSbrj0/UyHTVjkGVEI/AAAAAAAAAWw/KaLfgKn4_CQ/s1600/camunda-and-grails.png" >}}
 <br />
 <br />
 The plugin was accepted by the Grails community and was published in their plugin repository:<br />

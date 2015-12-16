@@ -19,8 +19,7 @@ aliases:
 <a name='more'></a><br />
 <h3>
 Some Numbers</h3>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/--9ynIODsi2w/Ut_vU7x3flI/AAAAAAAAAT4/5PRgtrIJASw/s1600/screenshot.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/--9ynIODsi2w/Ut_vU7x3flI/AAAAAAAAAT4/5PRgtrIJASw/s1600/screenshot.png" height="154" width="200" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/--9ynIODsi2w/Ut_vU7x3flI/AAAAAAAAAT4/5PRgtrIJASw/s1600/screenshot.png" >}}
 We ran the benchmarks with History Logging turned on and off. Obviously turning History off will improve performance dramatically :)<br />
 <br />
 <b><a href="https://app.camunda.com/jira/secure/attachment/17665/performance-test-results-22-01-2014.zip">Download the test results here.</a>&nbsp;(Contains many more processes than shown here).</b><br />
@@ -33,16 +32,13 @@ We ran the benchmarks with History Logging turned on and off. Obviously turning 
 History vs. No History</h3>
 If you look at a simple process which consists of a sequence with a single (no-op) step:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-FpvEcxmH9y0/Ut_QASA3YVI/AAAAAAAAASk/W0nK_9T4IoA/s1600/SequencePerformanceTest.syncSequence1Step.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-FpvEcxmH9y0/Ut_QASA3YVI/AAAAAAAAASk/W0nK_9T4IoA/s1600/SequencePerformanceTest.syncSequence1Step.png" height="126" width="320" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-FpvEcxmH9y0/Ut_QASA3YVI/AAAAAAAAASk/W0nK_9T4IoA/s1600/SequencePerformanceTest.syncSequence1Step.png" >}}
 Without History, we get the following results:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-Yt9qxCCrgFU/Ut_Ul177QxI/AAAAAAAAASw/Af69yr8GJ14/s1600/SequencePerformanceTest.asyncSequence1Step.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-Yt9qxCCrgFU/Ut_Ul177QxI/AAAAAAAAASw/Af69yr8GJ14/s1600/SequencePerformanceTest.asyncSequence1Step.png" height="223" width="400" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-Yt9qxCCrgFU/Ut_Ul177QxI/AAAAAAAAASw/Af69yr8GJ14/s1600/SequencePerformanceTest.asyncSequence1Step.png" >}}
 Without history, we can execute up to 3937.01 Instances of this process per second using 4 Threads. This means that executing a single instance of this takes 0,2 Milliseconds. So not even a whole millisecond! As amazing as this sounds, there must be a trick involved :) And there is: The "trick" behind this number becomes clear if we look at the the Sql Statement log:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-bgV92OvYt5I/Ut_W2qGpGmI/AAAAAAAAAS8/w6XPMPM1dho/s1600/SequencePerformanceTest.asyncSequence1Step.sqllog.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-bgV92OvYt5I/Ut_W2qGpGmI/AAAAAAAAAS8/w6XPMPM1dho/s1600/SequencePerformanceTest.asyncSequence1Step.sqllog.png" height="82" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-bgV92OvYt5I/Ut_W2qGpGmI/AAAAAAAAAS8/w6XPMPM1dho/s1600/SequencePerformanceTest.asyncSequence1Step.sqllog.png" >}}
 <br />
 <br />
 At History Level None, this process does not perform any inserts to the database, it will just perform a single SELECT. Since this process does not have any waitstate, it will just complete in a single transaction and we do not have to write off any execution state. If we dive into the details, we see that we just select the last version of the process definition:<br />
@@ -115,8 +111,7 @@ Wait States</h3>
 A second major performance factor are waitstates. Whenever the process engine hits a wait state, it must flush all its runtime memory state to the database so that it can pick up execution here later. Let's compare the results:</div>
 <div>
 <br /></div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-7Zae04TCyO0/Ut_bzCHAfPI/AAAAAAAAATM/KQAQFzNF0Og/s1600/SequencePerformanceTest.asyncSequence1Step.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-7Zae04TCyO0/Ut_bzCHAfPI/AAAAAAAAATM/KQAQFzNF0Og/s1600/SequencePerformanceTest.asyncSequence1Step.png" height="223" width="400" /></a></div>
+{{< figure src="http://2.bp.blogspot.com/-7Zae04TCyO0/Ut_bzCHAfPI/AAAAAAAAATM/KQAQFzNF0Og/s1600/SequencePerformanceTest.asyncSequence1Step.png" >}}
 <div>
 This time the difference between the history levels is not that big because in both cases we need to do more database communication:</div>
 <div>
@@ -177,16 +172,12 @@ What we did last Summer: Optimizing&nbsp;History for Waitstates</h3>
 <span style="font-weight: normal;">This brings me to something we made a lot of progress on when working on camunda BPM 7.0 Final: Having proper activity instance Ids in Runtime allows us to update history efficiently. <a href="http://blog.camunda.org/2013/06/introducing-activity-instance-model-to.html">A side effect of the changes described in this blogpost</a> was that we could highly optimize the update of open Historic Activity Instances in History: If you know the unique Id of an Activity Instance in Runtime and use that as primary key for the historic activity instance table in History, then you can do updates using the primary key. Which is way more efficient than the complex search query we did in the past. Back in summer we benchmarked this with a process containing 15 wait states:</span><br />
 <span style="font-weight: normal;"><br /></span>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-c1w_QInlZy8/Ut_lj62jcPI/AAAAAAAAATY/xJIqzvQ69X4/s1600/SequencePerformanceTest.asyncSequence15Steps.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-c1w_QInlZy8/Ut_lj62jcPI/AAAAAAAAATY/xJIqzvQ69X4/s1600/SequencePerformanceTest.asyncSequence15Steps.png" height="298" width="400" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-c1w_QInlZy8/Ut_lj62jcPI/AAAAAAAAATY/xJIqzvQ69X4/s1600/SequencePerformanceTest.asyncSequence15Steps.png" >}}
 <span style="font-weight: normal;">We ran the benchmark in a way that we continuously had 200,000 running process instances and looked at how many we could complete while starting new ones:</span><br />
 <span style="font-weight: normal;"><br /></span>
 <span style="font-weight: normal;"><br /></span>
 <br />
-<table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
-<tr><td style="text-align: center;"><a href="http://4.bp.blogspot.com/-kHO8pe-m-34/Ut_mLe8dxrI/AAAAAAAAATg/JcXcmr8v6YA/s1600/wait-states-throughput.png" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://4.bp.blogspot.com/-kHO8pe-m-34/Ut_mLe8dxrI/AAAAAAAAATg/JcXcmr8v6YA/s1600/wait-states-throughput.png" height="175" width="400" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">X axis is Time, Y axis is completed Instances per Second.</td></tr>
-</tbody></table>
+{{< figure src="http://4.bp.blogspot.com/-kHO8pe-m-34/Ut_mLe8dxrI/AAAAAAAAATg/JcXcmr8v6YA/s1600/wait-states-throughput.png" >}}
 The blue line is the new implementation doing an update by primary key, the red line is the old implementation which needs to do a complex search on the table for the correct Historic Activity Instance. As you can see the optimization brings up to 40 more completed instances per second. What's more we could get rid of a large composite table index which took up more space than the actual data inside the table (after 5 million activity instances, the table size was ~1820MB, the Index size was ~3975MB, PostgreSQL) .<br />
 <br />
 Another thing which is now possible is asynchronous history logging using a messaging system. I am REALLY looking forward to benchmarking that configuration.<br />
@@ -195,8 +186,7 @@ Another thing which is now possible is asynchronous history logging using a mess
 A third major performance impact is process variables. Up until now we have only looked at process engine only state. But when implementing interesting processes, you usually want to move some data :)<br />
 We included some simple process variable tests in the testsuite. The following charts shows how adding more process variables impacts throughput:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-k4bgBmRHXV8/Ut_q2pNvYJI/AAAAAAAAATs/2KqpKnzWJUQ/s1600/variables-throughput.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-k4bgBmRHXV8/Ut_q2pNvYJI/AAAAAAAAATs/2KqpKnzWJUQ/s1600/variables-throughput.png" height="223" width="400" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-k4bgBmRHXV8/Ut_q2pNvYJI/AAAAAAAAATs/2KqpKnzWJUQ/s1600/variables-throughput.png" >}}
 <div class="separator" style="clear: both; text-align: center;">
 <br /></div>
 <div class="separator" style="clear: both; text-align: left;">
@@ -256,8 +246,7 @@ Yesterday evening I finally kicked the starter on the testsuite running on MySQL
 The Hardware we ended up running the Benchmark on</h3>
 But luckily, Sebastian stepped in and offered to run the benchmarks on his box. He uses a Lenovo Thinkpad and runs Archlinux.<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-eG-wSACwtzE/Ut_EmI8x9UI/AAAAAAAAASU/IKI9ep1vSdo/s1600/hardware.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-eG-wSACwtzE/Ut_EmI8x9UI/AAAAAAAAASU/IKI9ep1vSdo/s1600/hardware.jpg" height="200" width="150" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-eG-wSACwtzE/Ut_EmI8x9UI/AAAAAAAAASU/IKI9ep1vSdo/s1600/hardware.jpg" >}}
 Sebastian running the Benchmarks on his developer Box:<br />
 <br />
 <i>Intel Core i5 (4 Cores, 2.5 Ghz)</i><br />

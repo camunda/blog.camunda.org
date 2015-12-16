@@ -23,8 +23,7 @@ This post provides insight into the engine's execution model, two alternatives o
 On Process Execution</h2>
 In order to understand the implementation of multi-instance, we have to make a quick excursion into how the process engine executes a process model. Let us consider the following process (without multi instance):<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-2sEhRWNY40M/VXmDPuuDtOI/AAAAAAAAAB8/9HyathYAFII/s1600/diagram-scaled.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-2sEhRWNY40M/VXmDPuuDtOI/AAAAAAAAAB8/9HyathYAFII/s1600/diagram-scaled.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-2sEhRWNY40M/VXmDPuuDtOI/AAAAAAAAAB8/9HyathYAFII/s1600/diagram-scaled.png" >}}
 <br />
 In order to execute an instance of this process, the process engine needs two things:<br />
 <ul>
@@ -33,8 +32,7 @@ In order to execute an instance of this process, the process engine needs two th
 </ul>
 For the first problem, the process engine parses the BPMN 2.0 XML and creates a <code>ProcessDefinition</code> that contains representations of all the activities in the process model. This is not a loose collection of activities. Instead it maintains the necessary relations between activities required for process execution. These relations are either represented as sequence flow (internally called <i>transitions</i>) in case of direct causality or a parent-child relationship in case that an activity is contained within another. The example process is represented as follows:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-8lGAEpDxcFs/VXcJWmRJozI/AAAAAAAAABI/Tum7NrBXKbk/s1600/activityModel1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"> <img border="0" src="http://1.bp.blogspot.com/-8lGAEpDxcFs/VXcJWmRJozI/AAAAAAAAABI/Tum7NrBXKbk/s1600/activityModel1.png" /></a> </div>
+{{< figure src="http://1.bp.blogspot.com/-8lGAEpDxcFs/VXcJWmRJozI/AAAAAAAAABI/Tum7NrBXKbk/s1600/activityModel1.png" >}}
 <br />
 Activities are represented as blue boxes and may be related by a <i>happens before</i> or a parent-child relationship. These relations do not suffice to represent all aspects relevant to execution, which is why activities have further properties. The most important property is the <i>activity behavior</i> (yellow boxes) that implements what the activity means in the BPMN diagram, such as creating a task in a user's task list.<br />
 For the execution state model, i.e. to represent which activities are currently active, the process engine has a concept called <i>executions</i>. An execution can be understood as something in between an activity instance (meaning that for every active activity, there is always at least one execution) and a token (meaning that executions can move from one activity to the next).<br />
@@ -79,15 +77,13 @@ There are different understandings on how multi-instance fits into the PVM's exe
 </ul>
 For explanation, let's consider a slightly changed process model where the activity <i>Write Blog Post</i> is now a parallel multi-instance activity:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-DbnPFnB_B2I/VXmDPnahqxI/AAAAAAAAAB4/_YWSIDMrK4g/s1600/mi-diagram-scaled.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-DbnPFnB_B2I/VXmDPnahqxI/AAAAAAAAAB4/_YWSIDMrK4g/s1600/mi-diagram-scaled.png" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-DbnPFnB_B2I/VXmDPnahqxI/AAAAAAAAAB4/_YWSIDMrK4g/s1600/mi-diagram-scaled.png" >}}
 <br />
 <h2 id="pre73multiinstance">
 Pre 7.3 Multi-Instance</h2>
 In Camunda versions prior to 7.3, multi-instance is understood and implemented as an aspect of an activity's <code>ActivityBehavior</code>. That means, the actual <code>ActivityBehavior</code> (e.g. the behavior of invoking a web service in case of a service task) is wrapped in a multi-instance-specific behavior. In the activity model, this looks as follows:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-awuhJ-iq8ho/VXcJWr7o-oI/AAAAAAAAABM/i3oqLYYfVaQ/s1600/activityModel2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"> <img border="0" src="http://1.bp.blogspot.com/-awuhJ-iq8ho/VXcJWr7o-oI/AAAAAAAAABM/i3oqLYYfVaQ/s1600/activityModel2.png" /></a></div>
+{{< figure src="http://1.bp.blogspot.com/-awuhJ-iq8ho/VXcJWr7o-oI/AAAAAAAAABM/i3oqLYYfVaQ/s1600/activityModel2.png" >}}
 <br />
 When this behavior is executed, it creates as many activity instances (= executions) as there are configured in the multi-instance loop characteristics and triggers them to execute the wrapped behavior.<br />
 However, this solution does not fit well with the PVM's execution model: As mentioned above, the execution of an activity instance is divided into (1) preparation, (2) execution, and (3) finalization phase and therefore spans much more than the invocation of the activity behavior. Let us consider what happens when executing an instance of <i>Write Blog Post</i> with this model:<br />
@@ -107,8 +103,7 @@ Similar to the issue with listeners, there are problems with each of the aspects
 Multi-Instance in 7.3</h2>
 In Camunda 7.3, we changed the notion of multi-instance in the core engine fundamentally. Our change is based on the notion of a <i>multi-instance body</i>. A multi-instance body is a scope that contains the actual activity for which multi instance is configured (in the following referred to as the <i>inner activity</i>).<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-sVH9l3GtBP0/VXcJWkDjumI/AAAAAAAAABo/WyfpYCpADQg/s1600/activityModel3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"> <img border="0" src="http://3.bp.blogspot.com/-sVH9l3GtBP0/VXcJWkDjumI/AAAAAAAAABo/WyfpYCpADQg/s1600/activityModel3.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-sVH9l3GtBP0/VXcJWkDjumI/AAAAAAAAABo/WyfpYCpADQg/s1600/activityModel3.png" >}}
 <br />
 Representing the body explicitly as a scope in the activity model is a convenient way of leveraging the PVM's execution model of preparation, execution, and finalization phases for multi-instance. When an activity instance of the body is executed in the context of an execution, the multi-instance activity behavior now only creates executions as configured in the loop characteristics and then tells the PVM to execute the inner activity as often as needed. All activity instances, the instance of the body and the instances of the inner activity, are now handled by the core PVM.<br />
 As a side note: The multi-instance body is not something we have made up ourselves. The <a href="http://www.omg.org/spec/BPMN/2.0/PDF/">BPMN 2.0 specification</a> mentions it in exactly one line (Section 10.4.7, page 281):<br />
@@ -135,17 +130,14 @@ What do we gain?</h2>
 Apart from improved code quality and maintainability, treating multi-instance body and inner activity as two separate things allows us to differentiate between them when executing any of the cross-cutting concerns of activity execution. To be more precise:<br />
 <b>Activity instances</b>: Have a look at the following process instance as shown in Cockpit:<br />
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-zeyGjlwLiqw/VXmFrYqMXYI/AAAAAAAAACs/UgSkpopK4os/s1600/cockpit-process.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-zeyGjlwLiqw/VXmFrYqMXYI/AAAAAAAAACs/UgSkpopK4os/s1600/cockpit-process.png" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-zeyGjlwLiqw/VXmFrYqMXYI/AAAAAAAAACs/UgSkpopK4os/s1600/cockpit-process.png" >}}
 <br />
 In the tree of activity instance, it is now possible to represent the multi-instance body and relate single instances of the inner activity to instances of the body. It looks as follows in Camunda 7.3:</div>
 <br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-8ro6n15KAiU/VXmEoZbELTI/AAAAAAAAACg/nFSqXt-hJ_8/s1600/cockpit73.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-8ro6n15KAiU/VXmEoZbELTI/AAAAAAAAACg/nFSqXt-hJ_8/s1600/cockpit73.png" /></a></div>
+{{< figure src="http://3.bp.blogspot.com/-8ro6n15KAiU/VXmEoZbELTI/AAAAAAAAACg/nFSqXt-hJ_8/s1600/cockpit73.png" >}}
 <br />
 The following shows the same process state in Camunda 7.2:<br />
-<div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-kD3zyazJ34I/VXmEk5WxCyI/AAAAAAAAACY/_KXiL2CgweI/s1600/cockpit72.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-kD3zyazJ34I/VXmEk5WxCyI/AAAAAAAAACY/_KXiL2CgweI/s1600/cockpit72.png" /></a></div>
+{{< figure src="http://4.bp.blogspot.com/-kD3zyazJ34I/VXmEk5WxCyI/AAAAAAAAACY/_KXiL2CgweI/s1600/cockpit72.png" >}}
 In 7.2 and earlier, it is impossible to tell if both instances of MI Subprocess belong to one multi-instance activity instance with two inner instances or to two multi-instance activity instances with one inner instance each. <br />
 <b>History</b>: Similar to the previous point, the multi-instance body is now logged in the process engine history including start time, end time, and duration. This way it is easily possible to determine how long all instances have taken.<br />
 <b>Process Instance Modification</b>: The re-implementation made it possible to <a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-instance-modification">modify active multi-instance activities</a> with our new 7.3 feature. We had literally no idea how to build this with the pre 7.3 multi-instance concept.<br />
