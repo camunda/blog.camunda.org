@@ -68,8 +68,15 @@ module.exports = function (grunt) {
 
     less: {
       options: {
-        dumpLineNumbers: 'all',
-        paths: ['node_modules']
+        dumpLineNumbers: 'comments',
+        compress: false,
+        sourceMap: false,
+        paths: [
+          'node_modules',
+          'node_modules/camunda-commons-ui/resources/less',
+          'node_modules/camunda-commons-ui/lib/widgets',
+          'node_modules/camunda-commons-ui/node_modules/bootstrap/less'
+        ]
       },
       styles: {
         files: [{
@@ -106,7 +113,11 @@ module.exports = function (grunt) {
         tasks: ['copy:layouts']
       },
       styles: {
-        files: ['<%= setup.source %>/styles/**/*.less'],
+        files: [
+          'node_modules/camunda-commons-ui/lib/**/*.less',
+          'node_modules/camunda-commons-ui/resources/less/**/*.less',
+          '<%= setup.source %>/styles/**/*.less'
+        ],
         tasks: ['less:styles']
       },
       scripts: {

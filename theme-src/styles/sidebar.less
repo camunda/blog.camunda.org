@@ -12,37 +12,7 @@
 }
 
 button.sidebar-toggle {
-  border: none;
-  background-color: transparent;
-  outline: none;
-
-  > span {
-    height: 2px;
-    display: block;
-    width: 100%;
-    min-width: 16px;
-    margin: 3px 0;
-    background-color: @link-color;
-    transition: transform 0.218s ease,
-                opacity 0.218s ease;
-    &:first-of-type {
-      margin-top: 0;
-    }
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  &:hover {
-    span {
-      &:first-of-type {
-        transform: translateY(-2px);
-      }
-      &:last-of-type {
-        transform: translateY(2px);
-      }
-    }
-  }
+  .hamburger-button();
 }
 
 .sidebar-content {
@@ -51,9 +21,9 @@ button.sidebar-toggle {
   width: 100%;
   max-width: @layout-width + (@grid-gutter-width * 2);
   padding: @grid-gutter-width;
-  background-color: fade(@link-color, 90%);
+  background-color: fade(@gray, 97%);
   color: @gray-lighter;
-  box-shadow: 0 0 0 0 fade(@gray, 50%);
+  box-shadow: 0 0 0 0 fade(@gray-dark, 80%);
   position: relative;
   bottom: 4px;
 
@@ -89,7 +59,7 @@ button.sidebar-toggle {
 
       &:after {
         content: ' / ';
-        color: mix(@link-color, @gray-lighter);
+        color: @gray-lighter;
         display: inline-block;
         margin: 0 0.5em 0 0.7em;
       }
@@ -125,21 +95,11 @@ body {
 
     .sidebar-content {
       overflow: auto;
-      box-shadow: 0 0 4px 0 fade(@gray, 50%);
+      box-shadow: 0 0 4px 0 fade(@gray-dark, 80%);
     }
 
     button.sidebar-toggle {
-      > span {
-        opacity: 0;
-        &:first-of-type {
-          opacity: 1;
-          transform: translateY(5px) rotateZ(45deg);
-        }
-        &:last-of-type {
-          opacity: 1;
-          transform: translateY(-5px) rotateZ(-45deg);
-        }
-      }
+      .hamburger-button-open();
     }
   }
   &.sidebar-open.search-open {
