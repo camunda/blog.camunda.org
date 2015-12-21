@@ -1,7 +1,7 @@
 +++
 author = "Daniel Meyer, Philipp Ossler"
 categories = ["Execution"]
-date = "2015-12-22"
+date = "2015-12-21"
 tags = ["DMN"]
 title = "Benchmarking the Performance of the camunda DMN Engine"
 +++
