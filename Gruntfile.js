@@ -101,7 +101,7 @@ module.exports = function (grunt) {
           }
         },
         files: [{
-          src: ['node_modules/bpmn-js/lib/NavigatedViewer.js'],
+          src: ['node_modules/camunda-commons-ui/node_modules/bpmn-js/lib/NavigatedViewer.js'],
           dest: '<%= setup.target %>/static/js/bpmn-viewer.js'
         }]
       }
