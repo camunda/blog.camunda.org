@@ -63,7 +63,7 @@ We might add assertions to [camunda-bpm-assert](https://github.com/camunda/camun
 
 # Parameterized Unit Tests leveraging Excel Spreadsheets
 
-Lars Orta from our Partner [Iteratec](http://www.iteratec.de/) demonstrated in Munic how you can parameterize these JUnit tests and load the test data from an excel file. So after the initial technical setup the test cases in Excel could be filled by a business analyst! Everything can be normally automated in a Continous Integration Environment.
+Lars Orta from our Partner [iteratec](http://www.iteratec.de/) demonstrated in Munic how you can parameterize these JUnit tests and load the test data from an excel file. So after the initial technical setup the test cases in Excel could be filled by a business analyst! Everything can be normally automated in a Continous Integration Environment.
 
 The decision table example shows how a telecommunication company can determine the throughput for the internet connection depending on the technical line in your home:
 
@@ -77,7 +77,7 @@ These test cases are handed into the parametrized JUnit test case shown below an
 
 {{< figure src="technischerDurchsatzJunit.png" caption="Test run in JUnit">}}
 
-The JUnit code is pretty straight forward (I added the Excel parsing code using [Apache POI](https://poi.apache.org/) at the very end of this blog post - very straight forward actually):
+The JUnit code is pretty straight forward (I skipped the Excel parsing code using [Apache POI](https://poi.apache.org/), which is not very hard to write and dependant on the concrete spreadsheet structure you want to have):
 
 ```java
 public class TechnischerDurchsatzExcelTest {
@@ -111,7 +111,39 @@ public class TechnischerDurchsatzExcelTest {
 
 Cool stuff!
 
+By the way, you do not have to use Spreadsheets in order to parameterize JUnit test cases, this can be done with pure code also:
 
+```
+public class TechnischerDurchsatzTest {
+
+  private String kabeltyp;
+  private Integer kabellaenge;
+  private boolean nutzungsrechtLeitung;
+  private String einbaustatusHausanschluss;
+  private Integer technischerDurchsatzExpected;
+
+  public TechnischerDurchsatzTest(String kabeltyp, Integer kabellaenge, boolean nutzungsrechtLeitung, String einbaustatusHausanschluss, Integer technischerDurchsatzExpected) {
+    this.kabeltyp = kabeltyp;
+    this.kabellaenge = kabellaenge;
+    this.nutzungsrechtLeitung = nutzungsrechtLeitung;
+    this.einbaustatusHausanschluss = einbaustatusHausanschluss;
+    this.technischerDurchsatzExpected = technischerDurchsatzExpected;
+    this.technischerDurchsatzExpected = technischerDurchsatzExpected;
+  }
+
+  @Parameters(name = "#{index}:  {0}, {1}, {2}, {3} -> {4}")
+  public static Collection<Object[]> data() {
+    Object[][] data = new Object[][] { //
+        { "Kupfer", 10, true, "ANGESCHLOSSEN", 25 }, //
+        { "Kupfer", 49, true, "ANGESCHLOSSEN", 25 }, //
+        { "Kupfer", 50, true, "ANGESCHLOSSEN", 20 }, //
+        { "Kupfer", 150, true, "ANGESCHLOSSEN", 20 }, //
+        { "Kupfer", 300, true, "ANGESCHLOSSEN", 15 }, //
+        { "Kupfer", 600, true, "ANGESCHLOSSEN", 10 }, //
+        { "Kupfer", 1499, true, "ANGESCHLOSSEN", 10 }, //
+        { "Kupfer", 2500, true, "ANGESCHLOSSEN", 7 }, //
+        ...
+```
 
 
 
@@ -194,59 +226,3 @@ The screencast below gives you an impression. I live edit the decision table (wh
 Testing decision tables in a more agile, business-friendly way is possible! There are clearly advantages and disadvantages of the various approaches shown here. But I am sure every project can find a suited method. 
 
 Let me know what you think!
-
-
-
-# Appendix
-
-And here the code how to read the Excel earlier:
-
-```java
-public class ExcelUtils {
-
-  private static Logger logger = LoggerFactory.getLogger(ExcelUtils.class);
-
-  public static List<Object[]> getTestData() {
-    InputStream inputStream = TechnischerDurchsatzTest.class.getClassLoader().getResourceAsStream("TechnischerDurchsatzTestdaten.xlsx");
-    XSSFSheet sheet;
-
-    try (XSSFWorkbook workbook = new XSSFWorkbook(inputStream)) {
-      // Get first sheet from the workbook
-      sheet = workbook.getSheetAt(0);
-    } catch (IOException e) {
-      throw new RuntimeException(e);
-    }
-
-    // Get iterator to all the rows in current sheet
-    Iterator<Row> rowIterator = sheet.iterator();
-
-    if (rowIterator.hasNext()) {
-      rowIterator.next();
-    }
-
-    List<Object[]> testDataList = new ArrayList<>();
-
-    while (rowIterator.hasNext()) {
-      Row row = rowIterator.next();
-
-      if (row.getLastCellNum() != 7) {
-        logger.error("unable to read row into MaxTheoDurchsatzTestData. wrong number of cells [" + row.getLastCellNum() + "]");
-      } else {
-        TechnischerDurchsatzTestData testData = new TechnischerDurchsatzTestData();
-
-        testData.setTestNr((int) row.getCell(1).getNumericCellValue());
-        testData.setKabeltyp(row.getCell(2).getStringCellValue());
-        testData.setKabellaenge((int) row.getCell(3).getNumericCellValue());
-        testData.setNutzungsrechtLeitung(Boolean.valueOf(row.getCell(4).getStringCellValue()));
-        testData.setEinbaustatusHausanschluss(row.getCell(5).getStringCellValue());
-        testData.setTechnischerDurchsatzExpected((int) row.getCell(6).getNumericCellValue());
-
-        testDataList.add(new Object[] { testData });
-      }
-
-    }
-
-    return testDataList;
-  }
-}
-```
