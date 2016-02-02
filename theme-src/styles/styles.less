@@ -171,38 +171,43 @@ body {
     }
 
     > header,
-    > .content,
     > footer {
       > * {
         .centered-content();
       }
+    }
+  }
 
-      > pre,
-      > blockquote,
-      > .bpmn-viewer {
-        padding: (@line-height-computed / 2) @grid-gutter-width;
-        width: auto;
-        max-width: @layout-width + (@grid-gutter-width * 2);
+  .content-wrapper {
+    > * {
+      .centered-content();
+    }
 
-        @media (max-width: 768px) {
-          padding: (@line-height-computed / 2) @line-height-computed;
-        }
+    > pre,
+    > blockquote,
+    > .bpmn-viewer {
+      padding: (@line-height-computed / 2) @grid-gutter-width;
+      width: auto;
+      max-width: @layout-width + (@grid-gutter-width * 2);
+
+      @media (max-width: 768px) {
+        padding: (@line-height-computed / 2) @line-height-computed;
       }
+    }
 
-      > blockquote {
-        padding-left: (@grid-gutter-width - 5px);
-      }
+    > blockquote {
+      padding-left: (@grid-gutter-width - 5px);
+    }
 
-      > pre {
-        padding-left: (@grid-gutter-width - 1px);
-        padding-right: (@grid-gutter-width - 1px);
-      }
+    > pre {
+      padding-left: (@grid-gutter-width - 1px);
+      padding-right: (@grid-gutter-width - 1px);
+    }
 
-      > figure {
-        max-width: @layout-width + (@grid-gutter-width * 2);
-        &.no-border {
-          max-width: 1280px;
-        }
+    > figure {
+      max-width: @layout-width + (@grid-gutter-width * 2);
+      &.no-border {
+        max-width: 1280px;
       }
     }
   }

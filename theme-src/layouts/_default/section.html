@@ -9,23 +9,25 @@
     <div class="content">
     {{ range .Data.Pages.GroupByDate "2006" }}
     {{ $year := .Key }}
-      <ul>
-      {{ range $index, $posts := .Pages.GroupByDate "January" }}
-        {{ $month := .Key }}
-        <li>
-          <h3>{{ $month }} {{ $year }}</h3>
-          <ul>
-          {{ range .Pages.GroupByDate "Monday, 2" }}
-          {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">
-              {{ .Title }}
-            </a></li>
-          {{ end }}
-          {{ end }}
-          </ul>
-        </li>
-      {{ end }}
-      </ul>
+      <div class="content-wrapper">
+        <ul>
+        {{ range $index, $posts := .Pages.GroupByDate "January" }}
+          {{ $month := .Key }}
+          <li>
+            <h3>{{ $month }} {{ $year }}</h3>
+            <ul>
+            {{ range .Pages.GroupByDate "Monday, 2" }}
+            {{ range .Pages }}
+              <li><a href="{{ .Permalink }}">
+                {{ .Title }}
+              </a></li>
+            {{ end }}
+            {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+        </ul>
+      </div>
     {{ end }}
     </div>
   </section>
