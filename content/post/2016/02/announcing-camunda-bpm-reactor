@@ -6,3 +6,5 @@ tags = ["extension"]
 title = "Event based process application made easy with camunda-bpm-reactor"
 +++
 
+We are proud to announce the release 1.0 of camunda-bpm-reactor. This community extension brings the power of projectreactor.io's event bus to the camunda world.
+
