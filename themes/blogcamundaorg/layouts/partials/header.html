@@ -9,7 +9,7 @@
 
   <!-- <base href="{{ .Site.BaseURL }}"> -->
 
-  <title>{{ .Title }} | Camunda BPM</title>
+  <title>{{ if .IsHome }}{{ else }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 
 
   <link rel="canonical" href="{{ .Permalink }}">
@@ -27,7 +27,7 @@
   <div>
     <h1>
       <a class="site-link" href="{{ .Site.BaseURL }}">
-        <span class="bpmn-icon-bpmn-io"></span>
+        <span class="brand-logo"></span>
         <span class="site-title">{{ .Site.Title }}</span>
       </a>
     </h1>
