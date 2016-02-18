@@ -1,7 +1,9 @@
 @import "_variables";
 @import "_bootstrap";
-@import "@{commons-ui-path}resources/less/_fonts";
-@import "@{commons-ui-path}resources/less/_mixins";
+// @import "@{commons-ui-path}resources/less/_fonts";
+// @import "@{commons-ui-path}resources/less/_ff-din-font";
+// @import "@{commons-ui-path}resources/less/_opendin-font";
+// @import "@{commons-ui-path}resources/less/_mixins";
 @import "@{commons-ui-path}resources/less/cam-sites-common.less";
 
 html,
@@ -60,8 +62,17 @@ body {
       padding-right: @grid-gutter-width * 0.5;
       font-size: 20px;
       font-weight: 400;
-      margin-bottom: 0;
-      margin-top: 10px;
+      margin: 0;
+      line-height: @header-computed-height;
+    }
+
+    .brand-logo:before {
+      color: @brand-primary;
+      display: inline-block;
+      font-family: "bpmn";
+      font-style: normal;
+      font-weight: normal;
+      content: '\e831';
     }
 
     .grill,
@@ -404,13 +415,6 @@ section {
     font-family: @font-family-sans-serif;
     font-size: 17px;
     line-height: 28px;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      .font-regular;
-    }
 
     h1 { font-size: @font-size-h1 * 0.85; }
     h2 { font-size: @font-size-h2 * 0.85; }
