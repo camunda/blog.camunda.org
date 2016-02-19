@@ -76,6 +76,7 @@ function initBPMN(el) {
         el.classList.add('error');
         throw err;
       }
+      viewer.get('zoomScroll').toggle(false);
       fitBpmnViewport(el, viewer);
       el.classList.remove('loading');
     });
