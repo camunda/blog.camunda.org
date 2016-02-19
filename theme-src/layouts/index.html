@@ -17,7 +17,7 @@
     {{ if eq .Section "post" }}</article>{{ else }}</section>{{ end }}
   {{ end }}
 
-  {{ template "_internal/pagination.html" . }}
+  {{ partial "pagination.html" . }}
   </div>
 
 {{ partial "footer.html" . }}

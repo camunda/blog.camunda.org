@@ -1,21 +1,33 @@
 ul.pagination {
   overflow: hidden;
+  display: block;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto @grid-gutter-width auto;
   text-align: center;
+  width: @layout-width;
 
   font-size: 24px;
 
   li {
-    display: none;
+    display: inline-block;
     padding: 0 @grid-gutter-width;
     margin: 0;
+    a {
+      padding: 0;
+      margin: 0;
+      border: none;
+      &:hover {
+        background-color: transparent;
+      }
+    }
 
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-last-child(-n+2) {
-      display: inline-block;
+    &:hover {
+      background-color: transparent;
+    }
+
+    &.page {
+      display: none;
     }
 
     &.disabled {
