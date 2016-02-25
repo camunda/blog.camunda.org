@@ -120,9 +120,10 @@ See the examples for [shared engine](https://github.com/camunda/camunda-bpm-exam
 
 The [BPMN model API](https://docs.camunda.org/manual/latest/user-guide/model-api/bpmn-model-api/) and its fluent builder are great tools for focused unit testing. This release extends the fluent builder by the following features:
 
-* Timer and message boundary events
+* Timer, message, signal, error and escalation events
 * Execution listeners
 * Sequential and parallel multi-instance
+* Camunda input/output parameters with name and value
 
 Creating a BPMN 2.0 model with a multi-instance activity is now:
 
