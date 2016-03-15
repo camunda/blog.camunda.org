@@ -1,9 +1,5 @@
 @import "_variables";
 @import "_bootstrap";
-// @import "@{commons-ui-path}resources/less/_fonts";
-// @import "@{commons-ui-path}resources/less/_ff-din-font";
-// @import "@{commons-ui-path}resources/less/_opendin-font";
-// @import "@{commons-ui-path}resources/less/_mixins";
 @import "@{commons-ui-path}resources/less/cam-sites-common.less";
 
 html,
@@ -20,135 +16,121 @@ body {
   margin-right: auto;
 
   @media (max-width: 768px) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
 
-body {
-  > header {
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    width: 100%;
-    padding-left: @grid-gutter-width;
-    padding-right: @grid-gutter-width;
-    background-color: fade(@body-bg, 95);
-    box-shadow: 0 0 0 0 fade(@gray, 50%);
-    transition: box-shadow 0.218s ease;
+body > header {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  padding-left: @grid-gutter-width;
+  padding-right: @grid-gutter-width;
+  background-color: fade(@body-bg, 95);
+  box-shadow: 0 0 0 0 fade(@gray, 50%);
+  transition: box-shadow 0.218s ease;
 
-    height: @header-height;
-    border-bottom: @header-border-bottom-width solid @header-border-bottom-color;
-    color: @navbar-default-color;
-    background-color: @navbar-default-bg;
-    font-size: @navbar-font-size;
+  height: @header-height;
+  border-bottom: @header-border-bottom-width solid @header-border-bottom-color;
+  color: @navbar-default-color;
+  background-color: @navbar-default-bg;
+  font-size: @navbar-font-size;
 
-    a {
-      color: @navbar-default-link-color;
-      &:hover,
-      &:focus {
-        color: @navbar-default-link-hover-color;
-      }
+  a {
+    color: @navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: @navbar-default-link-hover-color;
     }
+  }
 
-    > div {
-      .centered-content();
-      min-height: @header-computed-height;
+  > div {
+    .centered-content();
+    min-height: @header-computed-height;
+  }
+
+  h1 {
+    float: left;
+    padding-right: @grid-gutter-width * 0.5;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    line-height: @header-computed-height;
+  }
+
+  .brand-logo:before {
+    color: @brand-primary;
+    display: inline-block;
+    font-family: "bpmn";
+    font-style: normal;
+    font-weight: normal;
+    content: '\e831';
+  }
+
+  .grill,
+  .search-field {
+    float: right;
+    margin-top: 8px;
+    margin-left: @grid-gutter-width * 0.5;
+  }
+  .grill {
+    margin-top: 10px;
+    margin-right: -6px;
+  }
+  .search-field {
+    input {
+      max-width: 100%;
     }
+  }
 
+
+  .bpmn-icon-bpmn-io:before {
+    margin-left: -2px;
+  }
+
+
+  @media (max-width: 480px) {
+    .search-field {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .search-field {
+      max-width: 180px;
+    }
+  }
+
+  @media (max-width: 600px) {
     h1 {
-      float: left;
-      padding-right: @grid-gutter-width * 0.5;
-      font-size: 20px;
-      font-weight: 400;
+      padding-right: 0;
+    }
+  }
+
+  .categories {
+    text-align: right;
+    ul,
+    li {
       margin: 0;
-      line-height: @header-computed-height;
-    }
-
-    .brand-logo:before {
-      color: @brand-primary;
+      padding: 0;
       display: inline-block;
-      font-family: "bpmn";
-      font-style: normal;
-      font-weight: normal;
-      content: '\e831';
     }
-
-    .grill,
-    .search-field {
-      float: right;
-      margin-top: 8px;
-      margin-left: @grid-gutter-width * 0.5;
+    ul {
+      list-style: none;
     }
-    .grill {
-      margin-top: 10px;
-      margin-right: -6px;
-    }
-    .search-field {
-      input {
-        max-width: 100%;
-      }
-    }
-
-
-    .bpmn-icon-bpmn-io:before {
-      margin-left: -2px;
-    }
-
-
-    @media (max-width: 480px) {
-      .search-field {
-        display: none;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .search-field {
-        max-width: 180px;
-      }
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        padding-right: 0;
-      }
-      .site-title {
-        display: none;
-      }
-    }
-
-    .categories {
-      text-align: right;
-      ul,
-      li {
-        margin: 0;
-        padding: 0;
+    li {
+      &:after {
         display: inline-block;
+        content: '/';
       }
-      ul {
-        list-style: none;
-      }
-      li {
-        &:after {
-          display: inline-block;
-          content: '/';
-        }
-        &:last-of-type:after {
-          display: none;
-        }
+      &:last-of-type:after {
+        display: none;
       }
     }
   }
-
-  /*
-  &.search-open,
-  &.scrolled {
-    > header {
-      box-shadow: 0 2px 2px 0 fade(@gray, 50%);
-    }
-  }
-  */
 }
 
 
@@ -440,8 +422,8 @@ section {
     > div {
       overflow: hidden;
       &:first-of-type {
-        margin: (@grid-gutter-width * 0.5) auto;
-        padding: (@grid-gutter-width * 0.5) 0;
+        margin: @padding-base-vertical auto;
+        padding: (@padding-base-vertical * 2) 0;
         border: 1px dashed @gray-light;
         border-width: 1px 0;
       }
@@ -451,7 +433,6 @@ section {
     .author,
     .previous-post,
     .next-post {
-      // max-width: 50%;
       width: 50%;
       min-height: 1px;
       float: left;
@@ -659,3 +640,40 @@ iframe {
 @import "./sidebar.less";
 @import "./prism.less";
 @import "./search.less";
+
+
+
+
+@media (max-width: 768px) {
+  .sidebar-content {
+    padding: 5px;
+    > div.col {
+      margin: 0;
+      overflow: hidden;
+      h4 {
+        margin: 5px 0;
+      }
+    }
+  }
+
+  body > header,
+  body > footer,
+  .page-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .read-more-link {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  article,
+  section {
+    > header > h1 {
+      font-size: 3rem;
+    }
+    > footer > div:first-of-type {
+      padding: (@padding-base-vertical * 2) 5px;
+    }
+  }
+}
