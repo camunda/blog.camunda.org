@@ -11,26 +11,35 @@ categories:
 ---
 
 You probably have noticed, the design of this blog has recently changed.  
-This is because we decided to have a design overhaul of our web apps and sites and the most noticeable changes
-are happening in the tasklist.
+This is because we decided to have a design overhaul of our web apps and sites
+and the most noticeable changes are happening in the tasklist.
 <!--more-->
+
+{{< figure class="no-border" src="tasklist-2016-design-2.png" caption="The 7.4 design" >}}
+
 Emphasis was set on reducing the visual hurdle, stripping down all unneeded / redondant elements like icons or background colors.
 
-{{< figure class="teaser no-border" src="tasklist-2016-design-1.png" alt="Join us in the new Forum" >}}
+{{< figure class="no-border" src="tasklist-2016-design-1.png" caption="The upcoming 7.5 design" >}}
 
-We did spent quite some time discussing our choices and are pretty confident that this new design is a major improvement.
+{{< figure class="no-border" src="tasklist-2016-design-3.png" caption="The new design with custom colors" >}}
+
+# Next steps
+
+We spent quite some time discussing our choices and are pretty confident that this new design is a major improvement.
 During those discussions, a lot of questions were raised and as the designers and developers we can only answer them by making assumptions.
 
-And this is where you can help by telling us how you use the Camunda BPM tasklist.
+ - Which of the _creation_, or _due_ date should be displayed first in the tasks list?
+ - If you customized the tasklist, what did you changed?
+ - How many task filters (in the left column) are displayed in your tasklist?
+ - Are you using the task filters customizable colors?
 
- - Which of the creation, due or follow up date should be displayed first in the tasks list?
- - If you customize the tasklist, what did you changed?
- - How many filters are displayed at once?
- - Do you use the task filters customizable colors?
+Thanks to the [new forum](/post/2016/03/new-camunda-forum-discourse) you can answer
+[those questions in a few clicks]() (of course, comments are also welcome).
 
-More generally, we would really like to hear about the experience of people who use this application.
 
-Also worth mentionning, Sebastian Stamm put a lot of efforts improving the accessibility.   
+# Accessibility
+
+It is also worth mentionning that Sebastian Stamm put a lot of efforts improving the accessibility.   
 You can now use the tasklist with leaving your hands from your keyboard.
 Pressing the `tab` key to will get you anywhere in the tasklist and some keyboard shortcuts
 were added as well.
