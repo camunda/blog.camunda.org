@@ -1,6 +1,5 @@
 ---
-title: Upcoming 7.5 designs
-draft: true
+title: Tasklist UI Reloaded
 author: Valentin Vago and Daniel Meyer
 date: 2016-03-18T15:00:00+01:00
 tags:
@@ -10,27 +9,37 @@ categories:
  - Execution
 ---
 
-You probably have noticed, the design of this blog has recently changed.  
-This is because we decided to have a design overhaul of our web apps and sites and the most noticeable changes
-are happening in the tasklist.
+The latest alpha release of Camunda BPM Platform ships with a revamped design of the tasklist and improved accessibility.
+Read all about it in this post.
 <!--more-->
-Emphasis was set on reducing the visual hurdle, stripping down all unneeded / redondant elements like icons or background colors.
 
-{{< figure class="teaser no-border" src="tasklist-2016-design-1.png" alt="Join us in the new Forum" >}}
+## A cleaner UI
 
-We did spent quite some time discussing our choices and are pretty confident that this new design is a major improvement.
-During those discussions, a lot of questions were raised and as the designers and developers we can only answer them by making assumptions.
+And here it is, the new design of Camunda tasklist:
 
-And this is where you can help by telling us how you use the Camunda BPM tasklist.
+{{< figure class="teaser no-border" src="tasklist-2016-design-1.png" caption="The all new Tasklist!" >}}
 
- - Which of the creation, due or follow up date should be displayed first in the tasks list?
- - If you customize the tasklist, what did you changed?
- - How many filters are displayed at once?
- - Do you use the task filters customizable colors?
+We wanted to give it a more "stripped down" look, tune back on colors and backgrounds and put emphasis on function.
 
-More generally, we would really like to hear about the experience of people who use this application.
+For comparison, this is what it tasklist looked like before:
 
-Also worth mentionning, Sebastian Stamm put a lot of efforts improving the accessibility.   
-You can now use the tasklist with leaving your hands from your keyboard.
-Pressing the `tab` key to will get you anywhere in the tasklist and some keyboard shortcuts
-were added as well.
+{{< figure class="teaser no-border" src="tasklist-2016-design-2.png" caption="The previous version of tasklist" >}}
+
+## Custom Styling
+
+Also, we feel that the new version also responds a lot better to custom styling.
+
+For example, this is what it can also look like if you really like gray backgrounds and your company brand color is green:
+
+{{< figure class="teaser no-border" src="tasklist-2016-design-3.png" caption="The new design with custom colors" >}}
+
+## Improved Accessibility
+
+Another major improvement of the tasklist UI is accessibility. You can now navigate the tasklist with the keyboard.
+It is possible to `TAB` through all the choices and there are some custom shortcuts for productive use.
+
+> TODO: screenshot with "keyboard shortcuts" dialog open
+
+## Feedback
+
+We hope that you like the new design of the tasklist as much as we do. We are always grateful to get feedback on our work. You can comment below this post or open threads in the [Forum](https://forum.camunda.org).
