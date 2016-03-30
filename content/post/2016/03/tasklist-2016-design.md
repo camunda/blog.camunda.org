@@ -27,7 +27,7 @@ For comparison, this is what it tasklist looked like before:
 
 ## Custom Styling
 
-Also, we feel that the new version also responds a lot better to custom styling.
+Also, we feel that the new version responds a lot better to custom styling.
 
 For example, this is what it can also look like if you really like gray backgrounds and your company brand color is green:
 
