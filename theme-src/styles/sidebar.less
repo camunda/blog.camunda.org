@@ -36,6 +36,7 @@ button.sidebar-toggle {
   .col {
     margin-bottom: @grid-gutter-width * 0.5;
     padding-bottom: @grid-gutter-width * 0.5;
+
     &:last-of-type {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -67,21 +68,21 @@ button.sidebar-toggle {
         display: none;
       }
     }
+  }
 
-    &.categories,
-    &.blogroll {
-      float: left;
-    }
+  .categories,
+  .blogroll {
+    float: left;
+  }
 
-    &.categories {
-      margin-right: @grid-gutter-width * 0.5;
-    }
-    &.blogroll {
-      margin-left: @grid-gutter-width * 0.5;
-    }
-    &.camunda {
-      clear: both;
-    }
+  .categories {
+    margin-right: @grid-gutter-width * 0.5;
+  }
+  .blogroll {
+    margin-left: @grid-gutter-width * 0.5;
+  }
+  .camunda {
+    clear: both;
   }
 }
 
