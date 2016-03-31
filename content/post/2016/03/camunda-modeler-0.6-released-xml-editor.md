@@ -9,10 +9,11 @@ title = "Camunda Modeler v0.6.0 released"
 
 Today we're releasing a new version of the [Camunda Modeler](https://github.com/camunda/camunda-modeler). It comes with many new features, such as the addition of a XML editor for BPMN and DMN diagrams, image exporting and a greatly improved tab handling.
 
-{{< figure class="main teaser no-border" src="screenshot.png" alt="Camunda Modeler Screenshot" caption="Speaks XML, too." >}}
-
 [Download](https://camunda.org/bpmn/tool/) the new version from [camunda.org](https://camunda.org/bpmn/tool/).
+
 <!--more-->
+
+{{< figure class="main teaser no-border" src="screenshot.png" alt="Camunda Modeler Screenshot" caption="Speaks XML, too." >}}
 
 <style>
   @media(min-width: 900px) {
