@@ -26,7 +26,7 @@ Find a [list of known issues](https://app.camunda.com/jira/issues/?jql=project%2
 
 # New Design for Camunda Tasklist
 
-With this release the Tasklist gets a new look:
+With this release, Tasklist gets a new look:
 
 {{< figure class="teaser no-border" src="tasklist-2016-design-1.png" caption="The all new Tasklist!" >}}
 
@@ -34,24 +34,24 @@ All information about this change can be read in a [dedicated blogpost]({{< relr
 
 # Accessibility Features for Tasklist Users
 
-The accessibility of tasklist has been improved as well. All elements and buttons are now accessible using keyboard navigation. There are also [keyboard shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/accessibility/#keyboard-shortcuts) which improve productivity of tasklist users. It is also possible to [add additional shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/configuration/#shortcuts) and use them in Tasklist plugins.
+The accessibility of Tasklist has been improved as well. All elements and buttons are now accessible using keyboard navigation. There are also [keyboard shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/accessibility/#keyboard-shortcuts) which improve productivity of tasklist users. It is also possible to [add additional shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/configuration/#shortcuts) and use them in Tasklist plugins.
 
 {{< figure class="teaser no-border" src="tasklist-2016-shortcuts.png" caption="A list of tasklist shortcuts" >}}
 
 # New Cockpit Dashboard & Navigation
 
-The Cockpit dashboard is the main entry point for monitoring and operations. Over the past releases, a lot of features were added to the Camunda Cockpit. As a consequence, the dashboard became more and more crowded.
+The Cockpit dashboard is the main entry point for monitoring and operations. Over the past releases, a lot of features were added to Camunda Cockpit. As a consequence, the dashboard became more and more crowded.
 
 With this release we provide a first snapshot of where we want to go with the dashboard. The new dashboard provides an overview over four categories in Cockpit: Processes, Decisions, Deployments and Reporting. In addition, it shows some aggregated counts like the number of deployed  processes or running process instances. Note that we have not done any actual styling on this so you can expect it to look a bit "fancier" in the final release :)
 
 {{< figure class="teaser no-border" src="cockpit-dashboard.png" caption="The new Cockpit Dashboard" >}}
 
-As you would expect, the new Dashboard can still be extended with plugins and custom functionality. See the documentation for a [list of all plugin points in Cockpit](https://docs.camunda.org/manual/latest/webapps/cockpit/extend/plugins/#plugin-points)
+As you would expect, the new dashboard can still be extended with plugins and custom functionality. See the documentation for a [list of all plugin points in Cockpit](https://docs.camunda.org/manual/latest/webapps/cockpit/extend/plugins/#plugin-points)
 
 
 # Improved Support for Multi Tenancy
 
-With 7.5 Camunda introduces multi tenancy features which allow users to manage multiple tenants (aka. *isolated workspaces*) in the same database over a single API entry point. Compared to the last alpha release, alpha3 enhances support for multi tenancy by making the following APIs and features tenant aware:
+With 7.5, Camunda introduces multi tenancy features which allow users to manage multiple tenants (aka *isolated workspaces*) in the same database over a single API entry point. Compared to the last alpha release, alpha3 enhances support for multi tenancy by making the following APIs and features tenant aware:
 
 * Message Correlation API
 * Signal API
