@@ -1,7 +1,7 @@
 ---
 title: Tasklist UI Reloaded
 author: Valentin Vago and Daniel Meyer
-date: 2016-03-30T12:00:00+01:00
+date: 2016-03-31T14:00:00+02:00
 tags:
  - Design
  - Tasklist

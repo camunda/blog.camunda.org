@@ -6,15 +6,6 @@ tags = ["Release Note"]
 title = "Camunda BPM 7.5.0-alpha3 Released"
 +++
 
-
-<!-- TODO:
-  - number of bugfixes and link
-  - link to complete release notes
-  - check if the list of plugin points in the docs is correct
-  - check if the link to the tasklist accessibility section works
-  - write chapter about news for multi tenancy
--->
-
 Camunda 7.5.0-alpha3 is here. The highlights of this release are:
 
 * New Design for Camunda Tasklist
@@ -22,9 +13,9 @@ Camunda 7.5.0-alpha3 is here. The highlights of this release are:
 * New Cockpit Dashboard
 * Improved Support for Multi Tenancy
 * More Powerful Process Instance Migration
-* [18 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha3)
+* [42 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha3)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14390) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14591) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -42,8 +33,6 @@ With this release the Tasklist gets a new look:
 All information about this change can be read in a [dedicated blogpost]({{< relref "post/2016/03/tasklist-2016-design.md" >}}).
 
 # Accessibility Features for Tasklist Users
-
-<!-- TODO: The screenshot needs to be part of the blog sources and must not be loaded from the docs -->
 
 The accessibility of tasklist has been improved as well. All elements and buttons are now accessible using keyboard navigation. There are also [keyboard shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/accessibility/#keyboard-shortcuts) which improve productivity of tasklist users. It is also possible to [add additional shortcuts](https://docs.camunda.org/manual/latest/webapps/tasklist/configuration/#shortcuts) and use them in Tasklist plugins.
 
@@ -75,13 +64,11 @@ With 7.5 Camunda introduces multi tenancy features which allow users to manage m
 
 # More Powerful Process Instance Migration
 
-<!-- TODO: we should add another screenshot with the first page -->
-
 With this release it is possible to migrate process instances which have multi-instance activities. In addition, instances can be migrated asynchronously using the new batch API.
 
 This is code example using the (open source) Java API:
 
-```java
+```go
 ProcessEngine processEngine = ProcessEngineConfiguration.createStandaloneInMemProcessEngineConfiguration().buildProcessEngine();
 RepositoryService repositoryService = processEngine.getRepositoryService();
 RuntimeService runtimeService = processEngine.getRuntimeService();
@@ -124,7 +111,7 @@ runtimeService
 
 // Yäy, now I can prepare *and* drink coffee. I really like Camunda! :)
 taskService.complete(prepareCoffeeTask.getId()); // awesome that the task has preserved id with migration :)
-// dink coffee task is available:
+// drink coffee task is available:
 assertNotNull(taskService.createTaskQuery().taskDefinitionKey("drink-coffe").singleResult());
 ```
 
