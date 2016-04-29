@@ -187,4 +187,4 @@ Please try out the awesome new features of this new release and provide feedback
 
 # End of Support Notice
 
-Camunda 7.5.0 is going to be the last release that officially supports Glassfish application server. Read the [forum announcement](https://forum.camunda.org/t/camunda-glassfish-end-of-support/535) for details.
+Camunda 7.5.0 Final will be released on May 31st, 2016. With 7.5.0 Final, we officially remove the support for the Glassfish distribution from the Enterprise Subscription. Read the [forum announcement](https://forum.camunda.org/t/camunda-glassfish-end-of-support/535) for more details.
