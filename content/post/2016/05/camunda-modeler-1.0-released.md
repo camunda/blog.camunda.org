@@ -33,7 +33,7 @@ We wanted to make modeling experience as simple as possible for both - new to th
 
 
 ### CMMN
-Camunda Modeler received initial support for working with CMMN diagrams. Now it is possible to create and modify CMMN diagrams using familiar tools to BPMN editing. XML tab is also available for more insights into the diagram structure.
+Camunda Modeler received initial support for working with CMMN diagrams. Now it is possible to create and modify CMMN diagrams using familiar tools to BPMN editing. XML tab is also available for more insights into the diagram structure. Learn more about [modeling CMMN with the Camunda Modeler](/post/2016/05/camunda-modeler-cmmn-modeling/).
 
 {{< figure class="main teaser no-border" src="cmmn-editing.png" alt="Camunda Modeler Screenshot" caption="CMMN diagram support" >}}
 
