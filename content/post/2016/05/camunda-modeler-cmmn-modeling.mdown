@@ -1,0 +1,29 @@
++++
+author = "Patrick Dehn"
+categories = ["Modeling"]
+date = "2016-05-23T16:00:00+02:00"
+tags = ["CMMN"]
+title = "Model CMMN with the Camunda Modeler"
++++
+
+The newest release of our Camunda Modeler includes basic CMMN modeling. You can create, open, save and export CMMN diagrams. Inside the diagram you can create, move, edit, replace and delete CMMN elements. [Try it out](https://camunda.org/bpmn/tool/)!
+
+<!--more-->
+
+{{< figure class="teaser no-border" src="camunda-modeler-cmmn.gif" alt="Model CMMN" caption="Model CMMN with the Camunda Modeler" >}}
+
+# Features
+
+* Create tasks, stages, milestones, event listeners, criterions and case plan models
+* Move and delete elements
+* Add and edit labels of elements
+* Morph between plain, human, decision, process and case tasks
+* Model discretionary tasks and planning tables
+* Morph between entry and exit criterions
+* Toggle markers: auto complete, manual activation, repetition and required rule
+* Use the hand, lasso and space tools
+
+# Feedback Welcome
+
+Try out modeling CMMN using our [Camunda Modeler](https://camunda.org/bpmn/tool/) and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/c/modeler).
+
