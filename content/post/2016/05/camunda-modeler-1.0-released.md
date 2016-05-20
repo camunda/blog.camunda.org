@@ -39,9 +39,13 @@ Camunda Modeler received initial support for working with CMMN diagrams. Now it 
 
 
 ### Custom Element Templates
-Now it will be possible to create element descriptors and use them to create specific predefined elements. You can find out more about custom templates and how to use them [here](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/element-templates/).
+
+You can now extend the modeler with custom tasks or other elements through _element templates_.
+These templates provide custom controls, validation and technical binding to the modeler.
 
 {{< figure class="main teaser no-border" src="custom-templates.png" alt="Camunda Modeler Screenshot" caption="Mail task custom template" >}}
+
+Find out more in our [introductory blog post](/post/2016/05/camunda-modeler-element-templates/) on the topic or the [Modeler Documentation](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/element-templates/).
 
 
 ### Diagram Search
