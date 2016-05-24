@@ -6,7 +6,7 @@ tags = ["CMMN"]
 title = "Model CMMN with the Camunda Modeler"
 +++
 
-The newest release of our Camunda Modeler includes basic CMMN modeling. You can create, open, save and export CMMN diagrams. Inside the diagram you can create, move, edit, replace and delete CMMN elements. [Try it out](https://camunda.org/bpmn/tool/)!
+The newest release of our Camunda Modeler includes basic CMMN modeling. You can create, open, save and export CMMN diagrams. Inside the diagram you can create, move, edit, replace and delete CMMN elements. [Try it out](https://camunda.org/cmmn/tool/)!
 
 <!--more-->
 
@@ -27,4 +27,4 @@ The newest release of our Camunda Modeler includes basic CMMN modeling. You can 
 
 Consider checking out our quick-starter [CMMN documentation](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/cmmn/).
 
-Try out modeling CMMN using our [Camunda Modeler](https://camunda.org/bpmn/tool/) and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/c/modeler).
+Try out modeling CMMN using our [Camunda Modeler](https://camunda.org/cmmn/tool/) and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/c/modeler).
