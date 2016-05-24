@@ -2,7 +2,7 @@
 author = "Nico Rehwaldt"
 categories = ["Modeling"]
 tags = ["BPMN 2.0", "Element Templates"]
-date = "2016-05-20T13:09:31+01:00"
+date = "2016-05-24T13:58:00+02:00"
 title = "Element Templates in the Camunda Modeler"
 
 +++
@@ -100,7 +100,7 @@ The example `MailTask` shown in the screenshot above may be defined like that:
 ```
 
 The actual details on the template definition go beyond a simple blog post.
-Consider checking out our in-dept [element templates documentation](Element Template Documentation) or any of the other resources listed below.
+Consider checking out our in-depth [element templates documentation](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/element-templates/) or any of the other resources listed below.
 
 
 ## More on Element Templates

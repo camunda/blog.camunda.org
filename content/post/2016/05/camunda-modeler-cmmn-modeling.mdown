@@ -1,7 +1,7 @@
 +++
 author = "Patrick Dehn"
 categories = ["Modeling"]
-date = "2016-05-23T16:00:00+02:00"
+date = "2016-05-24T13:59:00+02:00"
 tags = ["CMMN"]
 title = "Model CMMN with the Camunda Modeler"
 +++
@@ -25,5 +25,6 @@ The newest release of our Camunda Modeler includes basic CMMN modeling. You can 
 
 # Feedback Welcome
 
-Try out modeling CMMN using our [Camunda Modeler](https://camunda.org/bpmn/tool/) and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/c/modeler).
+Consider checking out our quick-starter [CMMN documentation](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/cmmn/).
 
+Try out modeling CMMN using our [Camunda Modeler](https://camunda.org/bpmn/tool/) and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/c/modeler).
