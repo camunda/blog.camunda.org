@@ -2,7 +2,7 @@
 author = "Robert Parker"
 categories = ["Community"]
 tags = ["BPMN 2.0", "DMN"]
-date = "2016-05-30T10:00:00+02:00"
+date = "2016-05-27T15:00:00+02:00"
 title = "Citizen Identity Enrolment using BPMN and DMN"
 +++
 
