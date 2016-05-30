@@ -4,7 +4,7 @@
 
 ## Some Background Information
 
-If you wrote blogposts on our previous blog (which was based on google blogger), then you are probably familiar with logging into blogger and writing a post in blogger's editing environment. The new blog is not based on blogger and works completely differently. 
+If you wrote blogposts on our previous blog (which was based on google blogger), then you are probably familiar with logging into blogger and writing a post in blogger's editing environment. The new blog is not based on blogger and works completely differently.
 
 This blog is generated using a static site generator ([Hugo][hugo]). This means that the blog has no "backend", no database, no php, no nothing. It also means that you cannot "login somewhere" in order to write a post.
 
@@ -100,6 +100,14 @@ The rest of the post is written in [markdown](https://help.github.com/articles/m
 
 ```
 {{< figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
+```
+
+##### Videos
+
+Consider embedding a video (`mp4`) instead of a `gif`. Videos are often considerably smaller and therefore more mobile-friendly.
+
+```
+{{< video mp4="myVideo.mp4" title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
 ```
 
 ##### BPMN files
