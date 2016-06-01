@@ -108,7 +108,7 @@ Consider checking out our in-depth [element templates documentation](https://doc
 Would you like to try out element templates?
 These resources help you to learn more:
 
-* [Overview](http://docs.camunda.org/manual/develop/modeler/camunda-modeler/element-templates/)
+* [Overview](https://docs.camunda.org/manual/latest/modeler/camunda-modeler/element-templates/)
 * [Element Template Documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/element-templates)
 * [Sample Template Definitions](https://github.com/camunda/camunda-modeler/blob/master/resources/element-templates/samples.json)
 
