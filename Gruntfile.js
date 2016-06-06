@@ -151,62 +151,6 @@ module.exports = function (grunt) {
 
 
 
-  grunt.registerTask('import', function () {
-    var jsonContent = grunt.file.readJSON('./camunda-blog-posts.json');
-    var postTemplate = [
-      '---',
-      'title: "<%= title.split(\'\\"\').join(\'\\\\"\') %>"',
-      'date: "<%= (new Date(published)).toISOString().split("T").shift() %>"',
-      'author: "<%= author.displayName %>"',
-      '',
-      'categories:',
-      '  - "<%= category %>"',
-      'tags: <%= tags.map(function (tag) { return \'\\n  - "\'+ tag +\'"\'; }).join(\'\') %>',
-      '',
-      'aliases:',
-      '  - "<%= alias %>"',
-      '',
-      '---',
-      '',
-      '<div>',
-      '<%= content %>',
-      '</div>'
-    ].join('\n');
-
-    jsonContent.items.forEach(function (post) {
-      var nameParts = post.url.split('/');
-      var name = 'content/post/' + nameParts[3] + '/' + nameParts[4] + '/' + nameParts[5].split('.html')[0] + '.md';
-
-      post.tags = [];
-      if (post.title.toLowerCase().indexOf('release') > -1) {
-        post.tags.push('Release Note');
-      }
-
-      post.category = 'Execution';
-      if (post.title.toLowerCase().indexOf('community') > -1) {
-        post.category = 'Community';
-      }
-      else if (post.title.toLowerCase().indexOf('bpmn.io') > -1 ||
-               post.title.toLowerCase().indexOf('dmn.io') > -1) {
-        post.category = 'Modeling';
-      }
-
-      post.labels = post.labels || [];
-      post.alias = post.url.split('blog.camunda.org').pop();
-
-      post.content
-        .split('href="http://blog.camunda.org/')
-        .join('href="/')
-        .split('href="http://camundabpm.blogspot.de/')
-        .join('href="/')
-      ;
-
-      grunt.file.write(name, grunt.template.process(postTemplate, {data: post}));
-    });
-
-  });
-
-
 
   grunt.registerTask('build', ['copy', 'less:styles', 'browserify']);
 
