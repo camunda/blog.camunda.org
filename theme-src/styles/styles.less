@@ -196,8 +196,10 @@ body > header {
     > blockquote,
     > .bpmn-viewer,
     > figure {
-      margin-left: @grid-gutter-width * -1;
-      margin-right: @grid-gutter-width * -1;
+      &:not(.teaser) {
+        margin-left: @grid-gutter-width * -1;
+        margin-right: @grid-gutter-width * -1;
+      }
 
       // @media (max-width: 768px) {
       //   padding: (@line-height-computed / 2) @line-height-computed;
