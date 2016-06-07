@@ -196,14 +196,14 @@ body > header {
     > blockquote,
     > .bpmn-viewer,
     > figure {
-      &:not(.teaser) {
-        margin-left: @grid-gutter-width * -1;
-        margin-right: @grid-gutter-width * -1;
-      }
+      margin-left: @grid-gutter-width * -1;
+      margin-right: @grid-gutter-width * -1;
 
-      // @media (max-width: 768px) {
-      //   padding: (@line-height-computed / 2) @line-height-computed;
-      // }
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+        // padding: (@line-height-computed / 2) @line-height-computed;
+      }
     }
 
     > pre,
