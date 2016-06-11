@@ -28,7 +28,7 @@ Long version: follow the steps below :)
 
 > *IMPORTANT*: we use a custom build of Hugo and you need to download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/
 
-We use Hogo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
+We use Hugo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
 
 ### Fork & clone the repository
 
@@ -39,7 +39,7 @@ Fork & clone this repository.
 Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing
 
 ```sh
-hugo -w server
+hugo -w server   # use 'hugo -w -D server' to include drafts
 ```
 
 Now point your browser to [http://localhost:1313](http://localhost:1313).
