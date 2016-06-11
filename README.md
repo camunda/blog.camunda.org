@@ -39,7 +39,7 @@ Fork & clone this repository.
 Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing
 
 ```sh
-hugo -w server
+hugo -w server   # use 'hugo -w -D server' to include drafts
 ```
 
 To let hugo include posts which are marked as draft use the `-D` flag
