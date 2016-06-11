@@ -28,7 +28,7 @@ Long version: follow the steps below :)
 
 > *IMPORTANT*: we use a custom build of Hugo and you need to download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/
 
-We use Hogo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
+We use Hugo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
 
 ### Fork & clone the repository
 
@@ -40,6 +40,12 @@ Once you have installed hugo and forked and cloned the repository, you can previ
 
 ```sh
 hugo -w server
+```
+
+To let hugo include posts which are marked as draft use the `-D` flag
+
+```sh
+hugo -w -D server
 ```
 
 Now point your browser to [http://localhost:1313](http://localhost:1313).
@@ -84,7 +90,7 @@ tags = ["X", "Y"]
 Lets walk through this and look into this in more detail:
 
 * `title`: this is the title of your post. It will be the main headline. Since it was generated You may want to edit this and capitalize some words. Let's change it to `Camunda finally introduces Support for BPEL`.
-* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hogo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
+* `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hugo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
 * `author`: contains your name :)
 * `categories`: choose from the following categories: `Execution`, `Modeling`, `Community`.
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
