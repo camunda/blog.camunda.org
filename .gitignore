@@ -3,3 +3,4 @@ node_modules
 # themes/blogcamundaorg
 .DS_Store
 .idea
+hugo
