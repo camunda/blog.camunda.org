@@ -11,26 +11,25 @@ title = "Camunda BPM SpringBoot 1.2.0 released"
 Good news for all users of the Spring Boot community extension (and those who want to become users):
 Version 1.2.0 has been released!
 
-
 <!--more-->
 
-content
 
-* switch default camunda version to 7.5 enhancement
-* upgrade to spring boot version 1.3.4 enhancement
-* Introduce ProcessApplication deployment enhancement Under development
-* using hystrix: No bean named 'resourceLoaderDependingInitHook' is defined bug
-* camundaBpmProperties.getProcessEngineName does not use default bug
-* history-level: auto does not work bug
-* webapp starter disables standard directories for static resources bug
-* add customJobHandlers automatically enhancement
-* Merge CamundaBpmWebappProperties to CamundaBpmProperties bug enhancement
-* Configuration: support metric settings
-* Use Deployment utils from platform-engine to find deployable resources bug enhancement
-* support 7.4 services - implement ProcessEngineServices enhancement
-* consequent usage of slf4j logging enhancement
-* No qualifying bean of type [org.camunda.bpm.spring.boot.starter.CamundaBpmProperties] bug
-* Cannot use embedded forms on the app bug
-* Cannot set databaseSchemaUpdate to create-drop bug
-* cannot create filter with webapp starter bug
-* add camunda 7.4 features feature
+## Features
+
+* Support for 7.4 features like DMN and external tasks.
+* Supports webapp (cockpit, tasklist, admin). This requires 7.5.0.
+* embedded forms in webapp can be used
+* Default spring boot version is 1.3.5, introducing spring 4.2
+* introduce SpringBootProcessApplication allowing deployment via processes.xml configuration
+
+
+## Fixes
+
+* using history-level "auto" now works, allowing multiple engines connected to one datasource to adopt to the configured level
+* fix bean problems in cloud context (hystrix, eureka)
+
+
+
+The starter now uses camunda bpm 7.5.0 by default. In this version, the webapp is supported completely.
+You can still use version 7.4.0 by manually overwriting the version properties, but note that with 7.4.0
+there are limitations with the tasklist.
