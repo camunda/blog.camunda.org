@@ -1,7 +1,7 @@
 +++
 author = "Philipp Ossler"
 categories = ["Execution"]
-date = "2016-07-07T12:00:00+01:00"
+date = "2016-07-06T12:00:00+01:00"
 tags = ["Release Note"]
 title = "Camunda BPM 7.6.0-alpha2 Released"
 
