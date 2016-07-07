@@ -29,7 +29,7 @@ Assuming you have a decision table to decide which dish should be served to our 
 
 {{< figure class="teaser" src="drg-example.png" alt="DRG Example" >}}
 
-All decision tables are inside one DMN resource. The decision table (i.e., the table which contains the decision) references the required decision tables by the `requiredDecision` elements in the XML.
+All decision tables are inside one DMN resource. The decision table (i.e., the decision which contains the table) references the required decision tables by the `requiredDecision` elements in the XML.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
