@@ -60,12 +60,10 @@ body > header {
   }
 
   h1 {
+    .cam-corporate-header-branding();
     float: left;
-    padding-right: @grid-gutter-width * 0.5;
-    font-size: 20px;
-    font-weight: 400;
     margin: 0;
-    line-height: @header-computed-height;
+    padding-left: 0;
   }
 
   .brand-logo:before {
@@ -77,14 +75,19 @@ body > header {
     content: '\e831';
   }
 
+  .brand-name {
+    position: relative;
+    top: -3px;
+  }
+
   .grill,
   .search-field {
     float: right;
-    margin-top: 8px;
+    margin-top: 19px;
     margin-left: @grid-gutter-width * 0.5;
   }
   .grill {
-    margin-top: 10px;
+    margin-top: 21px;
     margin-right: -6px;
   }
   .search-field {
