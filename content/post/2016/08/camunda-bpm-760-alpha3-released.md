@@ -114,7 +114,7 @@ Case Workers can now also terminate a Case:
 caseService.terminateCaseExecution(...);
 ```
 
-## Manual Activiation Rule
+## Manual Activation Rule
 Also, please note the following bugfix concerning the interpretation of the manual activation rule attribute of CMMN. This [bugfix](https://app.camunda.com/jira/browse/CAM-6362) is included in this release and originates from an official [bugfix](https://app.camunda.com/jira/browse/OMG-12) in the OMG CMMN standard.
 
 # Rolling Upgrades
