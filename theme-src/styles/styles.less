@@ -167,8 +167,17 @@ body > header {
   padding-left: @grid-gutter-width;
   padding-right: @grid-gutter-width;
 
-  .link(@link-color, @link-hover-color);
   // .link-no-decoration();
+  a,
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    .content-link();
+  }
 
   h1,
   h2,
@@ -246,9 +255,6 @@ body > header {
   }
 
 
-  table a:after {
-    display: none;
-  }
 }
 
 
