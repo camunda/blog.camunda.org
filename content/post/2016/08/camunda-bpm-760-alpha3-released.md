@@ -57,7 +57,7 @@ For more information about the task reports and the REST API see the [reference 
 
 # Support for Decisions with Literal Expressions
 
-In addiotion to decision tables, the DMN engine now supports literal expressions as decision implementations.
+In addition to decision tables, the DMN engine now supports literal expressions as decision implementations.
 This kind of decision allows to specify the decision logic as an expression. The following snippet shows an example decision:
 
 ```xml
