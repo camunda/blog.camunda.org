@@ -4,7 +4,7 @@ categories = ["Community"]
 date = "2016-08-16T16:59:36+02:00"
 tags = ["KPI", "Monitoring", "Process Improvement", "Element Template", "Cockpit Plugin"]
 title = "KPI Monitoring in Camunda"
-
+draft = true
 +++
 
 Key performance indicators (KPIs) are the most important metric for analyzing statistical data of business processes: KPIs can not only be used to highlight efficiencies and inefficiencies in business processes, but they can help to subsequently improve specific activities in order to speed up process execution. Choosing the right KPIs and displaying the data in a simple and intuitive way is key for process improvement.
@@ -129,3 +129,6 @@ On GitHub you will also find specific information on how to deploy this plugin t
 # Summary & Outlook
 This blogpost showed how easy it is to extend the Camunda Modeler and the Camunda Cockpit to define and monitor KPIs for business processes thanks to Camunda’s open architecture. As a starting point this example used the cycle time of process instances and specific activity instances to show how KPIs can be monitored within Camunda. This KPI is only used as an example and one can imagine a way broader set of KPIs that could easily be setup based on the given element template and the Camunda Cockpit plugin.
 What I could imagine to add in the future is a possibility to filter short-term and long-term KPIs so that we look only at a smaller set of process instances when calculating e.g. averages. Furthermore, I could imagine to add a notification functionality so that task assignees are automatically notified when a specific task is overdue.
+
+# Contribute
+Contributions in the form of code, bug reports and feature ideas are very welcome and can be made directly in the [camunda-kpi-monitoring-demo](https://github.com/camunda/camunda-consulting/tree/master/snippets/camunda-kpi-monitoring-demo) repository on GitHub.
