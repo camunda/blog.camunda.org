@@ -1,10 +1,9 @@
 +++
 author = "Felix Müller"
 categories = ["Community"]
-date = "2016-08-17T16:59:36+02:00"
+date = "2016-08-18T13:00:36+02:00"
 tags = ["KPI", "Monitoring", "Process Improvement", "Element Template", "Cockpit Plugin"]
 title = "KPI Monitoring with Camunda"
-draft = true
 +++
 
 Key performance indicators (KPIs) are the most important metric for analyzing statistical data of business processes: KPIs can not only be used to highlight efficiencies and inefficiencies in business processes, but they can help to subsequently improve specific activities in order to speed up process execution. Choosing the right KPIs and displaying the data in a simple and intuitive way is key for process improvement.
