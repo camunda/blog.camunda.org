@@ -46,7 +46,7 @@ Both plugins are available on the [Atlassian marketplace](https://marketplace.at
 * **BPMN-Modeler**: https://marketplace.atlassian.com/plugins/de.viadee.confluence.bpmn-plugin/server/overview
 * **DMN-Modeler**: https://marketplace.atlassian.com/plugins/de.viadee.confluence.dmn-plugin/server/overview
 
-Viadee is currently working on extending features that will make the plugins even more handsome to work with in software development projects. If you have any ideas or feature requests be sure to [get in touch](https://www.viadee.de/bpmn-modeler/). 
+Viadee is currently working on extending features that will make the plugins even more handsome to work with in software development projects. If you have any ideas or feature requests be sure to [get in touch](http://www.viadee.de/bpmn-modeler/). 
 
 
 # Credits
