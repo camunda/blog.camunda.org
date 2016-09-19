@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Sirch, Benedikt Uckat"
-categories = ["Modeling", "Community"]
+categories = ["Community"]
 date = "2016-09-19T10:55:53+02:00"
 tags = ["BPMN 2.0", "DMN", "Tooling", "Confluence", "BPMN Modeler", "DMN Modeler"]
 title = "BPMN- and DMN-Modeler for Confluence"
