@@ -15,7 +15,7 @@ You can **embed the BPMN macro on any page at any position**. This way, you can 
 
 {{< figure class="" src="macro-page.png" alt="Embed BPMN diagrams or DMN decision tables on Confluence pages" caption="Embed BPMN diagrams or DMN decision tables on Confluence pages" >}}
 
- You can **start modeling from scratch or import existing BPMN files**. All models are stored as attachmenets on the page at hand. If you edit a process model, a new version of the attachment is created.
+ You can **start modeling from scratch or import existing BPMN files**. All models are stored as attachments on the page at hand. If you edit a process model, a new version of the attachment is created.
  
 When reading a Confluence page, **process models are rendered directly on the page**. The "viewer" also offers you a **fullscreen mode** which is handy for presentations or zooming into large models.
 
