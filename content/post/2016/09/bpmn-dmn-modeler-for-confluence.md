@@ -3,14 +3,16 @@ author = "Sebastian Sirch, Benedikt Uckat"
 categories = ["Modeling", "Community"]
 date = "2016-09-19T10:55:53+02:00"
 tags = ["BPMN 2.0", "DMN", "Tooling", "Confluence", "BPMN Modeler", "DMN Modeler"]
-title = "BPMN-Modeler and DMN-Modeler for Confluence"
+title = "BPMN- and DMN-Modeler for Confluence"
 
 +++
 
-You are using Confluence? Now there is a free plugin which allows you to use bpmn.io as a full-featured modeling tool within your wiki. Of course, there is also a plugin for DMN. Both are available on the Atlassian Marketplace.
+You are using Confluence? We as community members developed two plugins which allows you to use bpmn-js/dmn-js as full-featured modeling tool within your wiki for BPMN/DMN. Both are available on the on the [Atlassian marketplace](https://marketplace.atlassian.com/vendors/1213394) for free.
+
 <!--more-->
-{{< figure class="main" src="bpmn-modeler-animation.gif" alt="BPMN Modeler for Confluence" caption="Use bpmn.io as a full-featured modeling tool in Confluence" >}}
-# Create process models in Confluence
+{{< figure class="main" src="bpmn-modeler-animation.gif" alt="BPMN Modeler for Confluence" caption="Use bpmn-ja as a full-featured modeling tool in Confluence" >}}
+
+# Create BPMN process models in Confluence
 You can **embed the BPMN macro on any page at any position**. This way, you can bring together diagrams and textual information, e.g. to enrich your process model by context information such as the corresponding process owner or referenced documents.
 
 {{< figure class="" src="macro-page.png" alt="Embed BPMN diagrams or DMN decision tables on Confluence pages" caption="Embed BPMN diagrams or DMN decision tables on Confluence pages" >}}
@@ -32,10 +34,11 @@ You can **export** your process models as **XML** and **SVG** files.
 
 Permissions set on a page are inherited to the process diagrams, e.g. editing is only possible if you have the permissions to do so.
  
-# Create decision tables in Confluence
+# Create DMN decision tables in Confluence
+
 The same set of features is also available for DMN decision tables. 
 
-{{< figure class="main" src="dmn-modeler-animation.gif" alt="DMN Modeler for Confluence" caption="Use dmn.io to create DMN decision tables in Confluence" >}}
+{{< figure class="main" src="dmn-modeler-animation.gif" alt="DMN Modeler for Confluence" caption="Use dmn-js to create DMN decision tables in Confluence" >}}
 
 # Get started
 Both plugins are available on the [Atlassian marketplace](https://marketplace.atlassian.com/vendors/1213394) for free. Give it a try! 
@@ -43,8 +46,8 @@ Both plugins are available on the [Atlassian marketplace](https://marketplace.at
 * **BPMN-Modeler**: https://marketplace.atlassian.com/plugins/de.viadee.confluence.bpmn-plugin/server/overview
 * **DMN-Modeler**: https://marketplace.atlassian.com/plugins/de.viadee.confluence.dmn-plugin/server/overview
 
-viadee is currently working on extending features that will make the plugins even more handsome to work with in software development projects. If you have any ideas or feature requests be sure to [get in touch](https://confluence.intern.viadee.de/www.viadee.de/bpmn-modeler/). 
+Viadee is currently working on extending features that will make the plugins even more handsome to work with in software development projects. If you have any ideas or feature requests be sure to [get in touch](https://confluence.intern.viadee.de/www.viadee.de/bpmn-modeler/). 
 
 
 # Credits
-These plugins have been developed by the [viadee Unternehmensberatung GmbH](http://www.viadee.de), an IT consulting company located in Cologne and Münster, who support their customers in Camunda and software development projects .
+These plugins have been developed by us as employees of [viadee Unternehmensberatung GmbH](http://www.viadee.de), a German IT consulting company located in Cologne and Münster, who support their customers in Camunda and software development projects .
