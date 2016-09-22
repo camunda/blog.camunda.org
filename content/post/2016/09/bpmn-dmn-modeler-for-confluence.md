@@ -10,7 +10,7 @@ title = "BPMN and DMN-Modeler for Confluence"
 You are using Confluence? We as community members developed two plugins which allows you to use bpmn-js/dmn-js as full-featured modeling tool within your wiki for BPMN/DMN. Both are available on the on the [Atlassian marketplace](https://marketplace.atlassian.com/vendors/1213394) for free.
 
 <!--more-->
-{{< figure class="main" src="bpmn-modeler-animation.gif" alt="BPMN Modeler for Confluence" caption="Use bpmn-ja as a full-featured modeling tool in Confluence" >}}
+{{< video mp4="bpmn-modeler-animation.mp4" title="BPMN Modeler for Confluence" caption="Use bpmn-ja as a full-featured modeling tool in Confluence" attr="" attrlink="" >}}
 
 # Create BPMN process models in Confluence
 You can **embed the BPMN macro on any page at any position**. This way, you can bring together diagrams and textual information, e.g. to enrich your process model by context information such as the corresponding process owner or referenced documents.
@@ -38,7 +38,8 @@ Permissions set on a page are inherited to the process diagrams, e.g. editing is
 
 The same set of features is also available for DMN decision tables. 
 
-{{< figure class="main" src="dmn-modeler-animation.gif" alt="DMN Modeler for Confluence" caption="Use dmn-js to create DMN decision tables in Confluence" >}}
+{{< video mp4="dmn-modeler-animation.mp4" title="DMN Modeler for Confluence" caption="Use dmn-js to create DMN decision tables in Confluence" attr="" attrlink="" >}}
+
 
 # Get started
 Both plugins are available on the [Atlassian marketplace](https://marketplace.atlassian.com/vendors/1213394) for free. Give it a try! 
