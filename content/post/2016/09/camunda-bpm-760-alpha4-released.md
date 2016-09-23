@@ -79,10 +79,10 @@ List<MetricIntervalValue> intervals =  managementService.createMetricsQuery()
     .startDate(startTime)
     .endDate(endTime)
     .name(Metrics.ACTIVTY_INSTANCE_START)
-    .interval(60 * 30); // 30 minutes
+    .interval(sixtyMinutesIntervalInSeconds); 
 ```
 
-The query returns a list of `MetricIntervalValue` objects, each of which provides the number of started (created) activity instances during an interval of 30 seconds. The results can be plotted to give an impression of load over time:
+The query returns a list of `MetricIntervalValue` objects, each of which provides the number of started (created) activity instances during an interval of 60 minutes. The results can be plotted to give an impression of load over time:
 
 {{< figure class="teaser no-border" src="metricActivityStart.png" alt="Activity Start Interval Metric" caption="" >}}
 
