@@ -13,7 +13,7 @@ Batch Processing in business processes is the ability to execute an activity or 
 * In administration, usually related sets of invoices are approved to minimize the time to get familiar with the work.
 
 Most process modeling languages do not support the design and configuration of batch processing; it is often enacted as batch manually or hard-coded in software. We have developed a concept for BPMN to directly incorporate batch requirements in a business process model, called batch region. With this, cases are actively bundled in their execution and can be shown in one user view. 
-Within this blog entry I will show how batch requirements can be incorporated in a BPMN process and how they are then automatically executed. With this blog entry I like to get feedback from practice to our developed research approach. I look forward to your comments or a short [email](luise.pufahl@hpi.de) by you.
+Within this blog entry I will show how batch requirements can be incorporated in a BPMN process and how they are then automatically executed. With this blog entry I like to get feedback from practice to our developed research approach. I look forward to your comments or a short [email](mailto:luise.pufahl@hpi.de) by you.
 
 
 # How does batch processing in business processes work?
