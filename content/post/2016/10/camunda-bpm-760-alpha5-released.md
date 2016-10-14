@@ -54,7 +54,7 @@ A corresponding conditional event definition can look like this:
   </conditionalEventDefinition>
 ```
 
-For more information see the documentation of [conditional events](https://docs.camunda.org/manual/develop/reference/bpmn20/events/conditional-events/).
+For more information see the documentation of [conditional events](https://docs.camunda.org/manual/latest/reference/bpmn20/events/conditional-events/).
 
 
 Note that there a currently known issues ([CAM-6862](https://app.camunda.com/jira/browse/CAM-6862)), which we are addressing for the next alpha release.
