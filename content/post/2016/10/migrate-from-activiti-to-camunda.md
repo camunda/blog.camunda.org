@@ -154,7 +154,7 @@ We do not have a Model repository, as we seperate data required for the engine r
 
 ## Experimental things and community extensions
 
-Activiti has some features and modules, which are in a very experimental stage (or somethimes also kind abandonned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 4/7 support. So we draw a clear line between core product and what we call community extension.
+Activiti has some features and modules, which are in a very experimental stage (or somethimes also kind abandonned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 24/7 support. So we draw a clear line between core product and what we call community extension.
 
 Here are examples of half-backed features not in Camunda BPM product:
 
