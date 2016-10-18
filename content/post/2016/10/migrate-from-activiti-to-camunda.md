@@ -17,9 +17,11 @@ Camunda is a fork of Activiti. We actually developed big parts of the engine our
 * For the development project
 ** Exchange Activiti library with Camunda library
 ** Adjust package names and some class names
+** Verify your BPMN models
 ** Check for Activiti features you used that are not present or solved differently in Camunda
 * For the runtime database
 ** Run a database migration script
+** Migrate users and groups
 * Get familiar with Camunda tooling.
 
 Let's go over this step-by-step. 
@@ -61,6 +63,22 @@ Some class names has also changed, make sure to adjust them as well. A [complete
 
 Make sure you adjust package and class names in configuration files (e.g., Spring XML) too.
 
+
+# Verify your BPMN XML models
+
+In Activiti we often see process models without layout information (so called "DI" for diagram interchange). The models cannot be graphically displayed in Camunda. You might want to auto-layout them, see the link provided below.
+
+Some elements in the BPMN XML file might cause parsing exceptions in Camunda, the most prominent example is: 
+
+```<activiti:formProperty type="user" ...```
+
+Camunda does not now a type user, you have to change this to 
+
+```<activiti:formProperty type="string" ...```
+
+in order to use your process. You might find other things not parseable, then you have to adjust your BPMN XML file.
+
+After fixing the issues you can deploy a new version of this process definition in Camunda and [upgrade existing process instances](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-instance-migration/) to that version. Another alternative is to tweak the BPMN XML directly in the database. It is stored in the `ACT_GE_BYTEARRAY` table in `bytes_` as string. With a proper database tool you can edit it there. But be careful :-)
 
 
 # Check feature differences
@@ -201,6 +219,20 @@ After this procedure, your database is a Camunda BPM 7.5 database. Congrats! You
 *Warning:* This migration script is provided without any warranty. We haven't tested it for all circumstances and you might lose data, especially if you used features not supported by Camunda. Make a backup before applying the migration and verify everything is working afterwards! And let us know if you experience errors.
 
 In case of any trouble, contact us! Our consulting team can help you!
+
+
+# Migrate users and groups and create proper authorizations
+
+If you use the internal identity management for users and groups best re-create users and groups, as there are differences in user handling:
+
+* Camunda uses hashed password, Activiti stores passwords in plain text.
+* Camunda uses diferent role names for groups.
+
+We propose to simply delete all users and re-create them afterwords. SQL statements are included in the migration scripts. This typically make sense, as Camunda has some powerful [Authorization mechanism](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/), so you have to create authorizations properly if you want to use users and groups.
+
+A second possibility is to [disable authorizations](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/#enable-authorization-checks) at all.
+
+If you use LDAP note that the [Camunda LDAP Identity Service](https://docs.camunda.org/manual/7.5/user-guide/process-engine/identity-service/#the-ldap-identity-service) is pretty close to Activiti, but you have to adjust it according to the documentation.
 
 
 # Optional cleanup
