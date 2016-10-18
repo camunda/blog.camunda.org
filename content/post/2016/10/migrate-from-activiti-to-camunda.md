@@ -68,7 +68,7 @@ Make sure you adjust package and class names in configuration files (e.g., Sprin
 
 In Activiti we often see process models without layout information (so called "DI" for diagram interchange). The models cannot be graphically displayed in Camunda. You might want to auto-layout them, see the link provided below.
 
-Some elements in the BPMN XML file might cause parsing exceptions in Camunda, the most prominent example is: 
+Some elements in the BPMN XML file might cause parsing exceptions in Camunda (you will see `ENGINE-09005 Could not parse BPMN process` somewhere in the logs), the most prominent example is: 
 
 ```<activiti:formProperty type="user" ...```
 
