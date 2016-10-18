@@ -7,7 +7,7 @@ title = "How to migrate from Activiti 5.21 to Camunda BPM 7.5"
 draft = true
 +++
 
-With the Activiti Core Developers having left Alfresco (the company behind Activiti), the future of the Activiti project is quite questionable. More and more Activiti users want to migrate to Camunda. There are actually very goood reasons to do so, see [5 Reasons to switch from Activiti to Camunda](xxx) and [Camunda Engine Evolution since Activiti Fork](xxx).
+With the Activiti Core Developers having left Alfresco (the company behind Activiti), the future of the Activiti project is quite questionable. More and more Activiti users want to migrate to Camunda. There are actually very goood reasons to do so, see [5 Reasons to switch from Activiti to Camunda](http://www.bpm-guide.de/2016/10/17/5-reasons-to-switch-from-activiti-to-camunda/) and [Camunda Engine Evolution since Activiti Fork](xxx).
 
 Camunda is a fork of Activiti. We actually developed big parts of the engine ourselves before we decided to part ways with Alfresco back in 2013. Hence it is relatively easy to migrate. This post lists the necessary steps to achieve this:
 
@@ -230,6 +230,8 @@ If you use the internal identity management for users and groups best re-create 
 
 We propose to simply delete all users and re-create them afterwords. SQL statements are included in the migration scripts. This typically make sense, as Camunda has some powerful [Authorization mechanism](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/), so you have to create authorizations properly if you want to use users and groups.
 
+Technically you can migrate users and groups, but you are currently on your own creating the required scripts. If there is a big demand, we might add them later on. 
+
 A second possibility is to [disable authorizations](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/#enable-authorization-checks) at all.
 
 If you use LDAP note that the [Camunda LDAP Identity Service](https://docs.camunda.org/manual/7.5/user-guide/process-engine/identity-service/#the-ldap-identity-service) is pretty close to Activiti, but you have to adjust it according to the documentation.
@@ -255,3 +257,5 @@ Great - you made it. We welcome you as a new Camunda user! Despite already menti
 * ...
 
 Enjoy!
+
+PS: If we hear of problems doing migration we will update this blog post accordingly, so it is worth to check for updates by whenever you want to start your migration project.
