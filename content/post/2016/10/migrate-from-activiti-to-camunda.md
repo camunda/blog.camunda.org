@@ -174,13 +174,16 @@ As you can see, in detail there are some differences. *But for 3 years of workin
 
 # Database migration
 
-Camunda forked from Activiti 5.11. So it is peace of cake to migrate from Activiti 5.11 to Camunda 7.0. If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti) and then just move to Camunda. You do not need further database migration. 
+Camunda forked from Activiti 5.11. 
+
+## Migration for Activiti <= 5.11 
+It is peace of cake to migrate from Activiti 5.11 to Camunda 7.0. If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti) and then just move to Camunda. You do not need further database migration. 
 
 ## Migration for Activiti > 5.11
 
 For migrating newer versions we always check database differences manually for the specific Activiti version at hand. 
 
-If you want to migrate from - the current version when the Activiti core team left Alfresco - we investigated this for you. If you have some version > 5.11 && < 5.21 best migrate to 5.21 and use the script we provide here.
+If you want to migrate from Activiti 5.21 - the current version when the Activiti core team left Alfresco - we investigated this for you. If you have some version > 5.11 && < 5.21 best migrate to 5.21 and use the script we provide here.
 
 TODO
 
@@ -192,16 +195,15 @@ If you have come this far and enjoy a running Camunda installation, you might wa
 * Update namespace of BPMN XML files. The [Camunda Modeler](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/) does this automatically for you when opening models with the old Activiti namespace. This step is optional as the engine also reads the Activiti namespace for backwards capabilities.
 
 
-# Enjoy new camunda features
+# Enjoy!
 
-Despite Camunda Tasklist, Cockpit, Admin and REST API there is a lot more to discover:
+Great - you made it. We welcome you as a new Camunda user! Despite already mentioned Camunda Tasklist, Cockpit, Admin and REST API there is a lot more to discover, e.g.:
 
 * [Camunda Modeler](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/) - a superb modeling tool to model standard compliant BPMN, CMMN and DMN.
 * [Camunda Engine Evolution since Activiti Fork](xxx)
 * [CMMN](https://docs.camunda.org/manual/7.5/reference/cmmn11/) for Case Management
 * [DMN](https://camunda.org/dmn/tutorial/) for Decision Management
+* [Container Management Platform](https://docs.camunda.org/manual/7.5/introduction/architecture/) gives new architectural possibilities
 * ...
 
 Enjoy!
-
-
