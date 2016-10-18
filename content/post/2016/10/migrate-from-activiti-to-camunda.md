@@ -15,13 +15,13 @@ Camunda is a fork of Activiti. We actually developed big parts of the engine our
 <!--more-->
 
 * For the development project
-** Exchange Activiti library with Camunda library
-** Adjust package names and some class names
-** Verify your BPMN models
-** Check for Activiti features you used that are not present or solved differently in Camunda
+  * Exchange Activiti library with Camunda library
+  * Adjust package names and some class names
+  * Verify your BPMN models
+  * Check for Activiti features you used that are not present or solved differently in Camunda
 * For the runtime database
-** Run a database migration script
-** Migrate users and groups
+  * Run a database migration script
+  * Migrate users and groups
 * Get familiar with Camunda tooling.
 
 Let's go over this step-by-step. 
