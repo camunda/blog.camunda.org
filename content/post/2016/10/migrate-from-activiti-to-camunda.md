@@ -189,9 +189,7 @@ See [postgres_engine_6.2_to_7.0.sql](https://github.com/camunda/camunda-bpm-plat
 
 For migrating newer versions we always check database differences manually for the specific Activiti version at hand. 
 
-For Activiti 5.21 - the current version when the Activiti core team left - we did this procedure for you, based on Postgres. I will provide a step-by-step explanation and possible limitations in a second. For other databases the procedure is the same, just use the corresponding files.
-
- If you have some Activiti version > 5.11 && < 5.21 then migrate to 5.21 and use the description provided here.
+For Activiti 5.21 - the current version when the Activiti core team left - we did this procedure for you. If you have some Activiti version > 5.11 && < 5.21 then migrate to 5.21 and use the description provided here.
 
 Basically you have to apply all provided [Camunda upgrade scripts](https://github.com/camunda/camunda-bpm-platform/blob/master/distro/sql-script/upgrade/) from version 6.2 (the last camunda version before the fork) to 7.5. But you have to take care of some conflicts with changes in Activiti (you can see the changes in the beginning of [this commit](https://github.com/camunda/camunda-consulting/commit/f31ecc94bc825c5702376887b10da4d6b0cf6381) if you are interessted in the details).
 
