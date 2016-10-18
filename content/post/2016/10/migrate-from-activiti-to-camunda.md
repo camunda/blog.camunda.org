@@ -163,7 +163,7 @@ We do have an auto-layouter, but "only" as community extension. It is written in
 
 ### Core entities, data and other features
 
-We have not introduced neither a `Task.category` nor a `claimTime` for tasks. We have not introduced the [Activiti Events](ttp://www.activiti.org/userguide/index.html#eventDispatcher), so you have to exchange that by Execution Listeners or Task Listeners, CDI events or you might even leverage the [Camunda BPM reactor community extension](https://github.com/camunda/camunda-bpm-reactor). We do not write the `ACT_EVT_LOG` table. 
+We have not introduced neither a `Task.category` nor a `claimTime` for tasks. We have not introduced the [Activiti Events](http://www.activiti.org/userguide/index.html#eventDispatcher), so you have to exchange that by Execution Listeners or Task Listeners, CDI events or a [History Event Handler](https://docs.camunda.org/manual/7.5/user-guide/process-engine/history/#provide-a-custom-history-backend). Or maybe you want o leverage the [Camunda BPM reactor community extension](https://github.com/camunda/camunda-bpm-reactor). Note that we do not write the `ACT_EVT_LOG` table. 
 
 Camunda does not support definition of data objects. We also do not allow to change the business key of a running instance. We do not have a [DynamicBpmService](http://bpmn20inaction.blogspot.de/2015/10/adding-dynamic-behaviour-to-activiti.html) or a Business Calendar. We do solve [Custom MyBatis Mappers](http://www.jorambarrez.be/blog/2014/01/17/execute-custom-sql-in-activiti/) differently (as you can see in [an example](https://github.com/camunda/camunda-consulting/blob/master/snippets/custom-queries/src/main/java/org/camunda/demo/custom/query/TasklistService.java)). The Process Engine Configurator of Activiti is not required, as Camunda knows [Process Engine Plugins](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-plugins/).
 
@@ -172,7 +172,7 @@ We do not have a Model repository, as we seperate data required for the engine r
 
 ## Experimental things and community extensions
 
-Activiti has some features and modules, which are in a very experimental stage (or somethimes also kind of abandoned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 24/7 support. So we draw a clear line between core product and what we call community extensions.
+Activiti has some features and modules, which are in a very experimental stage (or somethimes also kind of abandoned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 24/7 support. So we draw a clear line between core product and what we call [community extensions](https://docs.camunda.org/manual/7.5/introduction/extensions/#community-extensions).
 
 Here are examples of half-baked features not in the Camunda BPM product:
 
