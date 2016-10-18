@@ -181,9 +181,7 @@ We have quite some customers migrating from Activiti to Camunda in the past, and
 Camunda forked from Activiti 5.11. 
 
 ## Migration for Activiti <= 5.11 
-It is peace of cake to migrate from Activiti 5.11 to Camunda 7.0. If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti) and then just move to Camunda. You have to run a 6.2 (the Camunda version based on Activiti) to 7.0 (the first forked Camunda version) database upgrade script provided.
-
-See [postgres_engine_6.2_to_7.0.sql](https://github.com/camunda/camunda-bpm-platform/blob/master/distro/sql-script/upgrade/postgres_engine_6.2_to_7.0.sql) for Postgres, scripts for other database are provided in the same folder. 
+If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti). Then run the upgrade script from Camunda 6.2 (the Camunda version based on Activiti) to 7.0 (the first forked Camunda version), see [postgres_engine_6.2_to_7.0.sql](https://github.com/camunda/camunda-bpm-platform/blob/master/distro/sql-script/upgrade/postgres_engine_6.2_to_7.0.sql) for Postgres, scripts for other database are provided in the same folder. 
 
 ## Migration for Activiti > 5.11
 
