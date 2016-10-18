@@ -67,7 +67,7 @@ Make sure you adjust package and class names in configuration files (e.g. Spring
 
 We forked from Activiti 5.11. Since that time, both project evolved in parallel. Luckily Activiti developed much less new features than Camunda (which is not my personal oppinion, but easy to see in [OpenHub statistics](https://www.openhub.net/p/_compare?project_0=camunda+BPM+platform&project_1=Activiti)). However, there are features that are not in Camunda BPM, or requirements we solved differently (a good read that we solved a couple of things differently for good reasons is [Camunda Engine Evolution since Activiti Fork](xxx)). 
 
-In this post I do not want to list each and every Activiti feature not available in Camunda. I concentrate on the most common things. If you face any missing feature which turns out to be a show-stopper for you, make sure you contact us, either via [Forum](https://forum.camunda.org/) for community users or via [Contact Form](https://camunda.com/about/contact/) if you plan to go for an Enterprise Subscription. So far we always found a solution for migration users, either by simple work arounds, by custom plug-in to the Camunda engine or by adding the feature to Camunda itself.
+In this post I do not want to list each and every Activiti feature not available in Camunda. I concentrate on the most common things. If you face any missing feature which turns out to be a show-stopper for you, make sure you contact us, either via [forum](https://forum.camunda.org/) for community users or via [Contact Form](https://camunda.com/about/contact/) if you plan to go for an Enterprise Subscription. So far we always found a solution for migration users, either by simple work arounds, by custom plug-in to the Camunda engine or by adding the feature to Camunda itself.
 
 
 ## Activiti Explorer
@@ -134,7 +134,7 @@ Activiti introduced OR capabilities to the query API. Some query parameters are 
 
 Normally it is always possible to express the current query at hand by means of the Camunda API, it might involve some small re-write. A good joker are always [Native Queries](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-api/#native-queries), they can be easily leveraged to express OR conditions for example.
 
-Feel free to ask for help in the forum or via support. 
+Feel free to ask for help in the [forum](https://forum.camunda.org/) or via support. 
 
 ### Process diagrams
 
@@ -145,11 +145,11 @@ We do have an auto-layouter, but "only" as community extension. It is written in
 
 ### Core entities, data and other features
 
-We have not introduced a `Task.category`. We have not introduced the [Activiti Event](ttp://www.activiti.org/userguide/index.html#eventDispatcher), so you have to exchange that by Execution or Task Listeners, CDI events or you might even leverage the [Camunda BPM reactor community extension](https://github.com/camunda/camunda-bpm-reactor).
+We have not introduced neither a `Task.category` nor a `claimTime` for tasks. We have not introduced the [Activiti Events](ttp://www.activiti.org/userguide/index.html#eventDispatcher), so you have to exchange that by Execution Listeners or Task Listeners, CDI events or you might even leverage the [Camunda BPM reactor community extension](https://github.com/camunda/camunda-bpm-reactor). We do not write the `ACT_EVT_LOG` table. 
 
-Camunda does not suppot definition of data objects. We also do not allow to change the business key of a running instance. We do not have a [DynamicBpmService](http://bpmn20inaction.blogspot.de/2015/10/adding-dynamic-behaviour-to-activiti.html) or a Business Calendar. We do solve [Custom MyBatis Mappers](http://www.jorambarrez.be/blog/2014/01/17/execute-custom-sql-in-activiti/) differently (as you can see in [an example](https://github.com/camunda/camunda-consulting/blob/master/snippets/custom-queries/src/main/java/org/camunda/demo/custom/query/TasklistService.java)). The Process Engine Cionfigurator of Activiti is not required, as Camunda knows [Process Engine Plugins](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-plugins/).
+Camunda does not support definition of data objects. We also do not allow to change the business key of a running instance. We do not have a [DynamicBpmService](http://bpmn20inaction.blogspot.de/2015/10/adding-dynamic-behaviour-to-activiti.html) or a Business Calendar. We do solve [Custom MyBatis Mappers](http://www.jorambarrez.be/blog/2014/01/17/execute-custom-sql-in-activiti/) differently (as you can see in [an example](https://github.com/camunda/camunda-consulting/blob/master/snippets/custom-queries/src/main/java/org/camunda/demo/custom/query/TasklistService.java)). The Process Engine Cionfigurator of Activiti is not required, as Camunda knows [Process Engine Plugins](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-plugins/).
 
-We rarely see problems during migration, but be aware that you might face small issues here if you used some of the features heavily. 
+We do not have a Model repository, as we seperate data required for the engine runtime from design time artifacts, like intermediate models.
 
 
 ## Experimental things and community extensions
@@ -166,7 +166,11 @@ Here are examples of half-backed features not in Camunda BPM product:
 * activiti-crystallball, activiti-kickstart and some more, which are simply not there (and not yet missed by our users).
 
 
-As you can see, in detail there are some differences. *But for 3 years of working in parallel - the differences are still small. Hence migration is a really doable task.* Most customers doing a migration in the past had not much trouble doing so.
+## Summary
+
+These were the most important differences. As you can, there are some. *But for 3 years of working in parallel - the differences are not that big and migration is a really doable task.* 
+
+We have quite some customers migrating from Activiti to Camunda in the past, and none had much trouble doing so.
 
 
 
@@ -177,15 +181,35 @@ As you can see, in detail there are some differences. *But for 3 years of workin
 Camunda forked from Activiti 5.11. 
 
 ## Migration for Activiti <= 5.11 
-It is peace of cake to migrate from Activiti 5.11 to Camunda 7.0. If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti) and then just move to Camunda. You do not need further database migration. 
+It is peace of cake to migrate from Activiti 5.11 to Camunda 7.0. If you have Activiti < 5.11, upgrade to 5.11 first (by upgrade scripts provided by Activiti) and then just move to Camunda. You have to run a 6.2 (the Camunda version based on Activiti) to 7.0 (the first forked Camunda version) database upgrade script provided.
+
+See [postgres_engine_6.2_to_7.0.sql](https://github.com/camunda/camunda-bpm-platform/blob/master/distro/sql-script/upgrade/postgres_engine_6.2_to_7.0.sql) for Postgres, scripts for other database are provided in the same folder. 
 
 ## Migration for Activiti > 5.11
 
 For migrating newer versions we always check database differences manually for the specific Activiti version at hand. 
 
-If you want to migrate from Activiti 5.21 - the current version when the Activiti core team left Alfresco - we investigated this for you. If you have some version > 5.11 && < 5.21 best migrate to 5.21 and use the script we provide here.
+For Activiti 5.21 - the current version when the Activiti core team left - we did this procedure for you, based on Postgres. I will provide a step-by-step explanation and possible limitations in a second. For other databases the procedure is the same, just use the corresponding files.
 
-TODO
+ If you have some Activiti version > 5.11 && < 5.21 then migrate to 5.21 and use the description provided here.
+
+Basically you have to apply all provided [Camunda upgrade scripts](https://github.com/camunda/camunda-bpm-platform/blob/master/distro/sql-script/upgrade/) from version 6.2 (the last camunda version before the fork) to 7.5. But you have to take care of some conflicts with changes in Activiti (you can see the changes in the beginning of [this commit](https://github.com/camunda/camunda-consulting/commit/f31ecc94bc825c5702376887b10da4d6b0cf6381) if you are interessted in the details).
+
+To make it easy for you we prepared special upgrade files you can apply without  modifications. Make sure you run them in this order (e.g. by command line using ```psql -U postgres -d activiti < postgres-1-upgrade.sql`):
+
+* [postgres-1-upgrade.sql](https://github.com/camunda/camunda-consulting/blob/master/snippets/activiti-migration/scripts/postgres-1-upgrade.sql): Upgrade the database to a 7.5. No need to review this file.
+* [postgres-2-migrate.sql](https://github.com/camunda/camunda-consulting/blob/master/snippets/activiti-migration/scripts/postgres-2-migrate.sql): Migrates some tables/columns to be compliant with Camunda database. You might want to have a look to make sure you are fine with the changes.
+* [postgres-3-drop.sql](https://github.com/camunda/camunda-consulting/blob/master/snippets/activiti-migration/scripts/postgres-3-drop.sql): Drops unused tables and columns from the database. You should double-check that you do not loose data you rely on.
+
+Nothe that there are corresponding files for your database [in this github folder](https://github.com/camunda/camunda-consulting/blob/master/snippets/activiti-migration/scripts/). 
+
+After this procedure your database is a Camunda BPM 7.5 database. Congrats! You can now run Camunda and your runtime data is still there.
+
+*Warning:* This migration script is provided without any warranty. We haven't tested it for all circumstances and you might loose data, especially if you used features not supported by Camunda. Make a backup before applying the migration and verify everything is working afterwards! And let us know if you experience errors.
+
+In case of any trouble contact us! Our consulting team can help you!
+
+
 
 # Optional cleanup
 
