@@ -6,7 +6,7 @@ tags = ["Activiti"]
 title = "How to migrate from Activiti 5.21 to Camunda BPM 7.5"
 +++
 
-With the Activiti Core Developers having left Alfresco (the company behind Activiti), the future of the Activiti project is quite questionable. More and more Activiti users want to migrate to Camunda. There are actually very goood reasons to do so, see [5 Reasons to switch from Activiti to Camunda](http://www.bpm-guide.de/2016/10/17/5-reasons-to-switch-from-activiti-to-camunda/) and [Camunda Engine Evolution since Activiti Fork](/post/2016/10/camunda-engine-since-activiti-fork/).
+With the Activiti Core Developers having left Alfresco (the company behind Activiti), the future of the Activiti project is quite questionable. More and more Activiti users want to migrate to Camunda. There are actually very goood reasons to do so, see [5 Reasons to switch from Activiti to Camunda](http://www.bpm-guide.de/2016/10/19/5-reasons-to-switch-from-activiti-to-camunda/) and [Camunda Engine Evolution since Activiti Fork](/post/2016/10/camunda-engine-since-activiti-fork/).
 
 Camunda is a fork of Activiti. We actually developed big parts of the engine ourselves before we decided to part ways with Alfresco back in 2013. Hence it is relatively easy to migrate. This post lists the necessary steps to achieve this:
 
