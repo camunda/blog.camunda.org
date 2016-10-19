@@ -76,9 +76,17 @@ Camunda does not now a type user, you have to change this to
 
 ```<activiti:formProperty type="string" ...```
 
-in order to use your process. You might find other things not parseable, then you have to adjust your BPMN XML file.
+in order to use your process. You might find other things not parseable, then you have to adjust your BPMN XML file. We recommend that you verify your BPMN models by a simple unit test case: 
 
-After fixing the issues you can deploy a new version of this process definition in Camunda and [upgrade existing process instances](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-instance-migration/) to that version. Another alternative is to tweak the BPMN XML directly in the database. It is stored in the `ACT_GE_BYTEARRAY` table in `bytes_` as string. With a proper database tool you can edit it there. But be careful :-)
+```
+@Test
+@Deployment(resources = { "MyModel.bpmn" })
+public void testParsingAndDeployment() {
+  // nothing is done here, as we just want to check for exceptions during deployment
+}
+```
+
+After fixing all issues you can deploy a new version of the process definition in Camunda and [upgrade existing process instances](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-instance-migration/) to it. Another alternative is to tweak the BPMN XML directly in the database. It is stored in the `ACT_GE_BYTEARRAY` table in `bytes_` as string. With a proper database tool you can edit it there. But be careful :-)
 
 
 # Check feature differences
@@ -249,7 +257,7 @@ If you have come this far and enjoy a running Camunda installation, you might wa
 
 Great - you made it. We welcome you as a new Camunda user! Despite already mentioned Camunda Tasklist, Cockpit, Admin and the REST API, there is a lot more to discover, e.g.:
 
-* [Camunda Modeler](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/) - a superb modeling tool to model standard compliant BPMN, CMMN and DMN.
+* [Camunda Modeler](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/) - a superb modeling tool to model standard compliant BPMN, CMMN and DMN. If you had customized the palette of the Activiti Designer take a look at [Element Templates](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/element-templates/) to achieve comparable things in Camunda.
 * [Camunda Engine Evolution since Activiti Fork](xxx)
 * [CMMN](https://docs.camunda.org/manual/7.5/reference/cmmn11/) for Case Management
 * [DMN](https://camunda.org/dmn/tutorial/) for Decision Management
