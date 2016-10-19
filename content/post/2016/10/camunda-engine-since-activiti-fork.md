@@ -6,7 +6,7 @@ tags = []
 title = "Camunda Engine Evolution since Activiti Fork"
 +++
 
-The [future of the Activiti Open Source project](http://www.bpm-guide.de/2016/10/17/5-reasons-to-switch-from-activiti-to-camunda/
+The [future of the Activiti Open Source project](http://www.bpm-guide.de/2016/10/19/5-reasons-to-switch-from-activiti-to-camunda/
 ) is currently uncertain. Camunda split from the Activiti project in 2013. Since then, we maintained [our own open source fork of the original Activiti Codebase](https://github.com/camunda/camunda-bpm-platform).
 
 The objective of this post is to illustrate the diverging directions the two projects have taken and to serve as input for users who now consider [migrating from Activiti to Camunda](/post/2016/10/migrate-from-activiti-to-camunda/). The first part focuses on two key topics: core BPMN Execution and the persistence layer. For me, **after all the feature talk and the marketing-hurrah is said and done, BPMN and persistence is where the meat is**. In the second part, I compare the current state of the Camunda codebase to the (unreleased) Activiti 6.
