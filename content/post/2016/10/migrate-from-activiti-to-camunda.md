@@ -59,14 +59,14 @@ You might need to add the [Camunda Maven Repository](https://docs.camunda.org/ge
 
 Change all package names in the import statements from `org.activiti.*` to `org.camunda.bpm.*`. This can be achieved by doing an "Organizing Imports" in your IDE.
 
-Some class names has also changed, make sure to adjust them as well. A [complete list of class names changed](https://docs.camunda.org/manual/7.5/update/activiti/#which-activiti-class-names-have-changed) is provided.
+Some class names have also changed, make sure to adjust them as well. A [complete list of class names changed](https://docs.camunda.org/manual/7.5/update/activiti/#which-activiti-class-names-have-changed) is provided.
 
 Make sure you adjust package and class names in configuration files (e.g., Spring XML) too.
 
 
 # Verify your BPMN XML models
 
-In Activiti we often see process models without layout information (so called "DI" for diagram interchange). The models cannot be graphically displayed in Camunda. You might want to auto-layout them, see the link provided below.
+In Activiti we often see process models without layout information (so called "DI" for diagram interchange). The models cannot be graphically displayed in Camunda. You might want to display them via auto-layout, see the link provided below.
 
 Some elements in the BPMN XML file might cause parsing exceptions in Camunda (you will see `ENGINE-09005 Could not parse BPMN process` somewhere in the logs), the most prominent example is: 
 
@@ -76,28 +76,28 @@ Camunda does not now a type user, you have to change this to
 
 ```<activiti:formProperty type="string" ...```
 
-in order to use your process. You might find other things not parseable, then you have to adjust your BPMN XML file. We recommend that you verify your BPMN models by a simple unit test case: 
+You might find other things not parseable, as a result you have to adjust your BPMN XML file. We recommend that you verify your BPMN models by a simple unit test case: 
 
 ```
 @Test
 @Deployment(resources = { "MyModel.bpmn" })
 public void testParsingAndDeployment() {
-  // nothing is done here, as we just want to check for exceptions during deployment
+  // nothing is done here as we just want to check for exceptions during deployment
 }
 ```
 
-After fixing all issues you can deploy a new version of the process definition in Camunda and [upgrade existing process instances](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-instance-migration/) to it. Another alternative is to tweak the BPMN XML directly in the database. It is stored in the `ACT_GE_BYTEARRAY` table in `bytes_` as string. With a proper database tool you can edit it there. But be careful :-)
+After fixing all issues you can deploy a new version of the process definition in Camunda and [upgrade existing process instances](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-instance-migration/) to it. Another alternative is to tweak the BPMN XML directly in the database. It is stored in the `ACT_GE_BYTEARRAY` table in `bytes_` as string. With a proper database tool you can edit it there but be careful. :-)
 
 
 # Check feature differences
 
-We forked from Activiti 5.11. Since then, both project evolved in parallel. Luckily, Activiti developed much fewer new features than Camunda (which is not my personal opinion, but easy to see in [OpenHub statistics](https://www.openhub.net/p/_compare?project_0=camunda+BPM+platform&project_1=Activiti)). However, there are features that are not in Camunda BPM, or requirements we solved differently (a good read about us solving a couple of things differently, for good reasons, is [Camunda Engine Evolution since Activiti Fork](xxx)). 
+We forked from Activiti 5.11. Since then, both project evolved in parallel. Luckily, Activiti developed fewer new features than Camunda (which is not my personal opinion, but easy to see in [OpenHub statistics](https://www.openhub.net/p/_compare?project_0=camunda+BPM+platform&project_1=Activiti)). However, there are features that are not in Camunda BPM, or requirements we solved differently (a good read about us solving a couple of things differently, for good reasons, is [Camunda Engine Evolution since Activiti Fork](xxx)). 
 
-In this post I do not want to list each and every Activiti feature not available in Camunda. I concentrate on the most common things. If you face any missing feature which turns out to be a show-stopper for you, make sure you contact us, either via the [Forum](https://forum.camunda.org/) for community users or via the [Contact Form](https://camunda.com/about/contact/) if you plan to go for an Enterprise Subscription. So far, we have always found a solution for migration users, either by simple workarounds, by custom plug-ins to the Camunda engine or by adding the feature to Camunda itself.
+In this post I do not want to list each and every Activiti feature not available in Camunda. I concentrate on the most common things. If you face missing any feature which turns out to be a show-stopper for you, make sure you contact us, either via the [Forum](https://forum.camunda.org/) for community users or via the [Contact Form](https://camunda.com/about/contact/) if you plan to go for an Enterprise Subscription. So far, we have always found a solution for migration users, either by simple workarounds, by custom plug-ins to the Camunda engine or by adding the feature to Camunda itself.
 
 
 ## Activiti Explorer
-The most prominent feature solved differently is the Activiti Explorer. We dumped this component completly, as for us the target user of it was unclear. The Explorer mixes task management, process operations and administration in one tool, which, by the way, was pretty unintuitive. We tested that in various customer scenarios and decided to develop new tools for Camunda. So in our universe you have:
+The most prominent feature solved differently is the Activiti Explorer. We dumped this component completly as for us the target user of it was unclear. The Explorer mixes task management, process operations and administration in one tool, which, by the way, was pretty unintuitive. We tested that in various customer scenarios and decided to develop new tools for Camunda. So in our universe you have:
 
 * [Camunda Tasklist](https://docs.camunda.org/manual/7.5/webapps/tasklist/): A tasklist application targeting the end user (we call them: process participants, because they participate in processes during runtime). You can still use Activiti Form fields for auto-generated forms, but you can also leverage [powerful HTML forms](https://docs.camunda.org/manual/7.5/user-guide/task-forms/#embedded-task-forms).
 * [Camunda Cockpit](https://docs.camunda.org/manual/7.5/webapps/cockpit/): Tooling for the operator, where you can see all deployed processes, all running instances, history and audit data, reporting and so on. An operator can easily engage in the process by changing data, canceling processes, [migrating versions](https://docs.camunda.org/manual/7.5/webapps/cockpit/bpmn/process-instance-migration/), doing ["token jumps"](https://docs.camunda.org/manual/7.5/webapps/cockpit/bpmn/process-instance-modification/) and so on. Some features can be used in a bulk-fashion, meaning you can also cancel millions of process instances in one go (yes - we do have customers needing these capabilities).
@@ -145,9 +145,9 @@ POST /process-definition/key/{key}/start
 }
 ```
 
-Of course, we think that we have the more correct resource-oriented approach :-) Check for yourself in the [Camunda 7.5 REST API reference](https://docs.camunda.org/manual/7.5/reference/rest/).
+Of course, we think that we have the more correct resource-oriented approach :-) but check for yourself in the [Camunda 7.5 REST API reference](https://docs.camunda.org/manual/7.5/reference/rest/).
 
-By the way: We had one customer in the past who developed a small REST facade for Activiti REST calls used, and pointed that to Camunda in the background. Depending on the number of REST clients, this might be a good strategy.
+By the way, we had one customer in the past who developed a small REST facade for Activiti REST calls used and pointed that to Camunda in the background. Depending on the number of REST clients, this might be a good strategy.
 
 
 ## Core engine features
@@ -164,7 +164,7 @@ Feel free to ask for help in the [forum](https://forum.camunda.org/) or via supp
 
 ### Process diagrams
 
-All features around process diagram generation and auto-layouting are solved differently in Camunda. We actually rely on the graphical layout information (so-called "DI" for diagram interchange) being present in the XML. That is always the case if you use a proper modeler to build the BPMN. Then we do not generate any PNG, but we render the BPMN directly in the browser by an embedded [bpmn.io](http://bpmn.io) renderer. This is less error-prone and much more flexible and feature-rich on the front-end (for example, you can render the model yourself and easily [add overlays](https://github.com/bpmn-io/bpmn-js-examples/tree/master/overlays)).
+All features around process diagram generation and auto-layouting are solved differently in Camunda. We actually rely on the graphical layout information (so-called "DI" for diagram interchange) being present in the XML. That is always the case if you use a proper modeler to build the BPMN. Therefore we do not generate any PNG, but we render the BPMN directly in the browser by an embedded [bpmn.io](http://bpmn.io) renderer. This approach is less error-prone and much more flexible and feature-rich on the front-end (for example, you can render the model yourself and easily [add overlays](https://github.com/bpmn-io/bpmn-js-examples/tree/master/overlays)).
 
 We do have an auto-layouter, but "only" as community extension. It is written in JavaScript and easy to apply: [BPMN Auto Layout](https://github.com/bpmn-io/bpmn-moddle-auto-layout). 
 
@@ -173,14 +173,14 @@ We do have an auto-layouter, but "only" as community extension. It is written in
 
 We have not introduced neither a `Task.category` nor a `claimTime` for tasks. We have not introduced the [Activiti Events](http://www.activiti.org/userguide/index.html#eventDispatcher), so you have to exchange that by Execution Listeners or Task Listeners, CDI events or a [History Event Handler](https://docs.camunda.org/manual/7.5/user-guide/process-engine/history/#provide-a-custom-history-backend). Or maybe you want o leverage the [Camunda BPM reactor community extension](https://github.com/camunda/camunda-bpm-reactor). Note that we do not write the `ACT_EVT_LOG` table. 
 
-Camunda does not support definition of data objects. We also do not allow to change the business key of a running instance. We do not have a [DynamicBpmService](http://bpmn20inaction.blogspot.de/2015/10/adding-dynamic-behaviour-to-activiti.html) or a Business Calendar. We do solve [Custom MyBatis Mappers](http://www.jorambarrez.be/blog/2014/01/17/execute-custom-sql-in-activiti/) differently (as you can see in [an example](https://github.com/camunda/camunda-consulting/blob/master/snippets/custom-queries/src/main/java/org/camunda/demo/custom/query/TasklistService.java)). The Process Engine Configurator of Activiti is not required, as Camunda knows [Process Engine Plugins](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-plugins/).
+Camunda does not support definition of data objects. We also do not allow the change of the business key of a running instance. We do not have a [DynamicBpmService](http://bpmn20inaction.blogspot.de/2015/10/adding-dynamic-behaviour-to-activiti.html) or a Business Calendar. We do solve [Custom MyBatis Mappers](http://www.jorambarrez.be/blog/2014/01/17/execute-custom-sql-in-activiti/) differently (as you can see in [an example](https://github.com/camunda/camunda-consulting/blob/master/snippets/custom-queries/src/main/java/org/camunda/demo/custom/query/TasklistService.java)). The Process Engine Configurator of Activiti is not required, as Camunda knows [Process Engine Plugins](https://docs.camunda.org/manual/7.5/user-guide/process-engine/process-engine-plugins/).
 
-We do not have a Model repository, as we seperate data required for the engine runtime from design time artifacts, like intermediate models.
+We do not have a Model repository as we seperate data required for the engine runtime from design time artifacts, like intermediate models.
 
 
 ## Experimental things and community extensions
 
-Activiti has some features and modules, which are in a very experimental stage (or somethimes also kind of abandoned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 24/7 support. So we draw a clear line between core product and what we call [community extensions](https://docs.camunda.org/manual/7.5/introduction/extensions/#community-extensions).
+Activiti has some features and modules which are in a very experimental stage (or somethimes also kind of abandoned). At Camunda we have a different view on our core product: Whatever is in the product needs to be stable, maintained and can be supported with 24/7 support. So we draw a clear line between core product and what we call [community extensions](https://docs.camunda.org/manual/7.5/introduction/extensions/#community-extensions).
 
 Here are examples of half-baked features not in the Camunda BPM product:
 
@@ -193,9 +193,9 @@ Here are examples of half-baked features not in the Camunda BPM product:
 
 ## Summary
 
-These were the most important differences. As you can, there are some. *But for 3 years of working in parallel - the differences are not that big and migration is a really doable task.* 
+These were the most important differences. As you can see there are some. *But for 3 years of working in parallel - the differences are not that big and migration is a really a manageable task.* 
 
-We have had quite some customers migrating from Activiti to Camunda in the past, and none had much trouble in doing so.
+In the past, we have had quite a few customers migrating from Activiti to Camunda and none of them have faced issues in doing so.
 
 
 # Database migration
@@ -236,13 +236,13 @@ If you use the internal identity management for users and groups best re-create 
 * Camunda uses hashed password, Activiti stores passwords in plain text.
 * Camunda uses diferent role names for groups.
 
-We propose to simply delete all users and re-create them afterwords. SQL statements are included in the migration scripts. This typically make sense, as Camunda has some powerful [Authorization mechanism](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/), so you have to create authorizations properly if you want to use users and groups.
+We propose to simply delete all users and re-create them afterwards. SQL statements are included in the migration scripts. This typically makes sense as Camunda has some powerful [Authorization mechanism](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/), so you have to create authorizations properly if you want to use users and groups.
 
-Technically you can migrate users and groups, but you are currently on your own creating the required scripts. If there is a big demand, we might add them later on. 
+Technically you can migrate users and groups but, you are currently on your own creating the required scripts. If there is a big demand, we might add them later on. 
 
-A second possibility is to [disable authorizations](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/#enable-authorization-checks) at all.
+A second possibility is to [disable authorizations](https://docs.camunda.org/manual/7.5/user-guide/process-engine/authorization-service/#enable-authorization-checks).
 
-If you use LDAP note that the [Camunda LDAP Identity Service](https://docs.camunda.org/manual/7.5/user-guide/process-engine/identity-service/#the-ldap-identity-service) is pretty close to Activiti, but you have to adjust it according to the documentation.
+If you use LDAP, note that the [Camunda LDAP Identity Service](https://docs.camunda.org/manual/7.5/user-guide/process-engine/identity-service/#the-ldap-identity-service) is pretty close to Activiti, but you have to adjust it according to the documentation.
 
 
 # Optional cleanup
@@ -255,7 +255,7 @@ If you have come this far and enjoy a running Camunda installation, you might wa
 
 # Enjoy!
 
-Great - you made it. We welcome you as a new Camunda user! Despite already mentioned Camunda Tasklist, Cockpit, Admin and the REST API, there is a lot more to discover, e.g.:
+Great - you made it. We warmly welcome you as a new Camunda user! Despite the previously mentioned Camunda Tasklist, Cockpit, Admin and the REST API, there is a lot more to discover, e.g.:
 
 * [Camunda Modeler](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/) - a superb modeling tool to model standard compliant BPMN, CMMN and DMN. If you had customized the palette of the Activiti Designer take a look at [Element Templates](https://docs.camunda.org/manual/7.5/modeler/camunda-modeler/element-templates/) to achieve comparable things in Camunda.
 * [Camunda Engine Evolution since Activiti Fork](xxx)
@@ -266,4 +266,4 @@ Great - you made it. We welcome you as a new Camunda user! Despite already menti
 
 Enjoy!
 
-PS: If we hear of problems doing migration we will update this blog post accordingly, so it is worth to check for updates by whenever you want to start your migration project.
+PS: If we hear of problems during the migration process we will update this blog post accordingly, so it is worth to check for updates whenever you want to start your migration project.
