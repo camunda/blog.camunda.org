@@ -4,7 +4,6 @@ categories = ["Execution"]
 date = "2016-10-19T12:00:00+01:00"
 tags = []
 title = "Camunda Engine Evolution since Activiti Fork"
-draft = true
 +++
 
 The [future of the Activiti Open Source project](http://www.bpm-guide.de/2016/10/17/5-reasons-to-switch-from-activiti-to-camunda/
