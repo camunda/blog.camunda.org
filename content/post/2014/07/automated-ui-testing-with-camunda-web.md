@@ -80,14 +80,14 @@ In addition to the page object that represents the page under test, we create a 
 Finally, we get a tidy test suite that is much easier to maintain in medium/long term.<br />
 <br />
 <h3>
-Integrating Protractor into IntelliJ IDE</h3>
+Integrating Protractor into IntelliJ IDEA</h3>
 <div>
 </div>
 <div style="-webkit-text-stroke-width: 0px; color: black; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;">
 <div style="margin: 0px;">
 <div style="text-align: left;">
 <div style="text-align: left;">
-<span style="font-family: inherit;">Protractor can be integrated into the IntelliJ IDE by installing the node.js plugin. That gives us the benefit to run and to debug tests directly in the IDE:</span></div>
+<span style="font-family: inherit;">Protractor can be integrated into the IntelliJ IDEA by installing the node.js plugin. That gives us the benefit to run and to debug tests directly in the IDE:</span></div>
 </div>
 </div>
 <div class="separator" style="clear: both; font-size: medium; font-weight: normal; text-align: center;">
