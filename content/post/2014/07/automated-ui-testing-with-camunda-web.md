@@ -1,5 +1,5 @@
 ---
-title: "Automated UI testing with camunda web applications and IntelliJ IDE"
+title: "Automated UI testing with camunda web applications and IntelliJ IDEA"
 date: "2014-07-11"
 author: "Michael Schöttes"
 
@@ -135,7 +135,7 @@ Conclusion</h3>
 For an active codebase you need a flexible test suite. Writing tests in the described way allows you to separate test logic from page control logic so that high maintainability and better readability can be reached.<br />
 Protractor as test framework can easily be integrated in many setups, so that even changes in the technology stack only have a small impact on the test suite.<br />
 Last but not least, we decrease development time as we already get feedback from our UI tests during webapp development.<br />
-With IntelliJ we have a powerful IDE that allows us to build, run and debug UI tests. We thank <a href="http://www.jetbrains.com/" target="_blank">JetBrains </a>for the great support for our <a href="http://camunda.org/" target="_blank">open source project</a>.<br />
+With IntelliJ IDEA we have a powerful IDE that allows us to build, run and debug UI tests. We thank <a href="http://www.jetbrains.com/" target="_blank">JetBrains </a>for the great support for our <a href="http://camunda.org/" target="_blank">open source project</a>.<br />
 <br /></div>
 
 </div>
