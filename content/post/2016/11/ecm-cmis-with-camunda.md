@@ -8,7 +8,7 @@ title = "ECM and Camunda - Using CMIS"
 
 In my [recent blogpost](http://blog.camunda.org/post/2016/11/ecm-box-with-camunda/) I discussed an example on how to integrate Camunda with modern ECM SaaS providers like Box.
 As many companies are still using traditional ECM and DMS solutions within this blogpost I will focus on CMIS.
-The open CMIS standard stands for Content Management Interoperability Services and allows to integrate with a number of different DMS solutions. CMIS is an abstraction layer that uses web services and extends SOAP by defining a specific domain model and bindings.
+The open CMIS standard stands for Content Management Interoperability Services and allows to integrate with a number of different DMS solutions. Most popular DMS solutions come with an API that is based on the CMIS standard as one can see in this [list of CMIS implementations](https://en.wikipedia.org/wiki/Content_Management_Interoperability_Services#List_of_implementations). CMIS is an abstraction layer that uses web services and extends SOAP by defining a specific domain model and bindings. 
 
 # Showcase
 Similar to my previous blogpost I reused the typical Invoice Showcase that is shipped with the pre-packaged Camunda distribution and modified it in order to showcase the integration with the CMIS standard.
