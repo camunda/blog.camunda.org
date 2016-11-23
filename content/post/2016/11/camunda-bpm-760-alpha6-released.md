@@ -8,7 +8,7 @@ title = "Camunda BPM 7.6.0-alpha6 Released"
 
 Camunda 7.6.0-alpha6 is here and it is packed with new features. The highlights are:
 
-* DRD Monitoring in Cockpit
+* DRD Monitoring in Cockpit (Enterprise Edition only)
 * New Cockpit Dashboard
 * Conditional Event Improvements
 * [42 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha6)
