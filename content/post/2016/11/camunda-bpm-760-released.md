@@ -135,7 +135,7 @@ _Open source vs. Enterprise: Task monitoring in Cockpit is an enterprise feature
 
 Rolling updates allow performing a Camunda update in a cluster with no or minimal down time. The nodes are updated one by one or in groups. During the update process, it is ensured that at least one node is available to handle incoming requests, guaranteeing availability and minimizing downtime.
 
-Starting form 7.6.0 Camunda guarantees backwards compatibility of the database schema in a way that rolling upgrades can be orchestrated. An example orchestration is explained in the docs:
+Starting from 7.6.0 Camunda guarantees backwards compatibility of the database schema in a way that rolling upgrades can be orchestrated. An example orchestration is explained in the docs:
 
 {{< figure class="main teaser no-border" src="rolling-updates.png">}}
 
