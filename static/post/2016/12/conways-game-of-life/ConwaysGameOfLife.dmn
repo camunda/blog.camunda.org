@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="ConwaysGameOfLife" name="Conways game of life">
+    <decisionTable id="decisionTable">
+      <input id="input1" label="Number of living neighboors" camunda:inputVariable="numberOfLivingNeighboors">
+        <inputExpression id="inputExpression1" typeRef="integer">        <text></text>
+</inputExpression>
+      </input>
+      <input id="InputClause_03jmtxf" label="alive" camunda:inputVariable="alive">
+        <inputExpression id="LiteralExpression_1v2u40m" typeRef="boolean">        <text></text>
+</inputExpression>
+      </input>
+      <output id="output1" label="alive" name="" typeRef="boolean" />
+      <rule id="row-761289625-2">
+        <description>Alive and less then 2 living neighboors</description>
+        <inputEntry id="UnaryTests_07w24xj">        <text><![CDATA[< 2]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1061b4n">        <text>true</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0igbhec">        <text>false</text>
+</outputEntry>
+      </rule>
+      <rule id="row-761289625-1">
+        <description>Alive and 2 or 3 living neighboors</description>
+        <inputEntry id="UnaryTests_0uny3bo">        <text>[2..3]</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0o1lmoh">        <text>true</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_025j9v1">        <text>true</text>
+</outputEntry>
+      </rule>
+      <rule id="row-761289625-3">
+        <description>Alive and more than 3 living neighboors</description>
+        <inputEntry id="UnaryTests_17pkc6a">        <text><![CDATA[> 3]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_1gq93fa">        <text>true</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0id39ku">        <text>false</text>
+</outputEntry>
+      </rule>
+      <rule id="row-761289625-4">
+        <description>Dead and 3 living neighboors</description>
+        <inputEntry id="UnaryTests_0389cbb">        <text>3</text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0q1w1ui">        <text>false</text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1g1ml9s">        <text>true</text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
