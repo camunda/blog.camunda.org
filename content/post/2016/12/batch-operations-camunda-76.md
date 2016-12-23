@@ -29,15 +29,15 @@ The "Batch operation" view looks like this:
 Besides searching and filtering process instances within this view you have the possibility to choose between three new types of operations:
 
 ## Cancel running process instances
-The first new Batch operation that you can use in Camunda 7.6 is for canceling running process instances. This feature can be useful in production and development in many cases.
+The first new Batch operation that you can use in Camunda 7.6 is for cancelling running process instances. This feature can be useful in production and development in many cases.
 
-Just to give an example one can imagine a scenario in which an external website with a form is used to start process instances in Camunda via the REST API. Unfortunately, the external website has not been secured against spam bots. One day a spam bot automatically submits a few thousand times the form on this website. This triggers the creation of a large amount of Process Instances in Camunda.
+Just to give an example one can imagine a scenario in which an external website with a form is used to start process instances in Camunda via the REST API. Unfortunately, the external website has not been secured against spam bots. One day a spam bot automatically submits a few thousand times the form on this website. This triggers the creation of a large amount of process instances in Camunda.
 In the past operators would have to manually cancel the process instances one by one or write a script that supports them doing that. With the help of the new batch view the operator can just open the Camunda Cockpit and cancel the correct process instances straightaway.
 
 Due to the new views in Cockpit that I have shown above, it is very obvious how you can cancel the running process instances as an administrator. This is why instead of just showing screenshots of the Cockpit, I want to show you how you can cancel running process instances using Camunda's REST API:
 
 
-First let's start a few process instances to get the instanes created by the spam bot:
+First, let's start a few process instances (as the spam bot would have done it) through the external form by executing following request multiple times:
 ```
 POST  /process-definition/key/invoice/start
 
@@ -51,7 +51,7 @@ POST  /process-definition/key/invoice/start
 }
 ```
 
-Let's check how many process instances were created by the SpamBot:
+Let's check how many process instances were created by the spam bot:
 ```
 GET  /process-instance/count?processDefinitionKey=invoice&variables=creditor_eq_SpamBot
 
@@ -59,7 +59,6 @@ GET  /process-instance/count?processDefinitionKey=invoice&variables=creditor_eq_
 
 This gives us:
 ```
-Status 200 OK
 {
   "count": 1500
 }
@@ -154,36 +153,17 @@ POST /process-instance/job-retries
 Request Body:
 
 {
-  "retries" : numberOfRetries,
-  "processInstances": ["aProcess","secondProcess"],
+  "retries" : 3,
   "processInstanceQuery": {
-    "startedBefore": "2016-10-11T11:44:13"
+    "startedAfter": "2016-12-20T11:44:13"
   }
 }
 ```
 
-```
-Response
-Status 200 OK
-
-{
-  "id": "aBatchId",
-  "type": "aBatchType",
-  "totalJobs": 10,
-  "batchJobsPerSeed": 100,
-  "jobsCreated": 10,
-  "invocationsPerBatchJob": 1,
-  "seedJobDefinitionId": "aSeedJobDefinitionId",
-  "monitorJobDefinitionId": "aMonitorJobDefinitionId",
-  "batchJobDefinitionId": "aBatchJobDefinitionId",
-  "suspened": false,
-  "tenantId": "aTenantId"
-}
-```
 
 [Camunda Docs REST API - Set Job Retries Async (POST)](https://docs.camunda.org/manual/7.6/reference/rest/process-instance/post-set-job-retries/)
 
 # Summary
-This short blogpost just focused on Batch operations and one can see that the extended Batch API and the new Cockpit views look very promising and can be useful in both Production and Development environments.
+This short blogpost just focused on Batch operations and one can see that the extended Batch API and the new Cockpit views look very promising and can be useful in both Production and Development environments. I hope the examples gave you some ideas when the feature might be useful for your project.
 Thumbs up and thanks to the Camunda Core Developers for implementing this cool feature.
 Go ahead and try the new feature by [downloading Camunda 7.6](https://docs.camunda.org/enterprise/download/).
