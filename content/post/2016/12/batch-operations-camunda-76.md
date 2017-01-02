@@ -6,7 +6,7 @@ tags = ["7.6", "Batch"]
 title = "Batch Operations with Camunda 7.6"
 +++
 
-Camunda 7.6 got [released](https://blog.camunda.org/post/2016/11/camunda-bpm-760-released/) few weeks ago and it comes with many new exciting features. One of them is the extended Batch Operation feature and within this post I gonna tell you what you can do with it and why it is so useful.
+Camunda 7.6 got [released](https://blog.camunda.org/post/2016/11/camunda-bpm-760-released/) few weeks ago and it comes with many new exciting features. One of them is the extended Batch Operation feature and within this post I am gonna tell you what you can do with it and why it is so useful.
 Before I outline some really good use cases for Batch Operations let's have a look what the concept actually means.
 
 # Batch
