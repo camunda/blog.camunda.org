@@ -7,7 +7,7 @@ title = "Camunda BPM Camel 0.5.0 Released"
 
 +++
 
-Text
+Next to minor changes the new release adds support for consuming [Camunda external tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) (introduced in Camunda 7.4.0) in the form of a Camel route endpoint. This is another is another level of technical decoupling and brings a lot of adventages.
 
 <!--more-->
 
