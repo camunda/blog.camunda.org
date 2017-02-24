@@ -8,16 +8,16 @@ title = "Argon2 as password-hashing function in Camunda"
 
 # Introduction
 
-On the new version of the Camunda Engine Platform (7.7) the User passwords, which are stored in the database, are by default hashed with a SHA-2 familiy algorithm.
+On the new version of the Camunda Engine Platform (7.7) the user passwords, which are stored in the database, are by default hashed with a SHA-2 family algorithm.
 Before the passwords are hashed, they are concated with an individual random generated salt for each user, to prevent dictionary and rainbow table attacks.
 
 For someone who needs a more secure hashing algorithm Camunda introduce a new API, which allows to customize and exchange the default hashing algorithm.
-In this blog post I will present this customization and will use argon2 as hashing algorithm. Argon2 is a password-hashing function [1], which is considered as state of the art and also wins the Password Hashing Competition in the end of 2015 [2].
+In this blog post I will present this customization and will use argon2 as hashing algorithm. Argon2 is a password-hashing function [1], which is considered as state of the art and also won the Password Hashing Competition at the end of 2015 [2].
 
 # Customization
 
 To use a different password hashing function you have to implement the `PasswordEncryptor` interface.
-This interface offers the methods to hash and verify the password. In the following example the
+This interface offers the methods to hash and verify the password. In the following example, the
 `argon2` implementation [3] is used to hash and verify the password.
 
 ```java
@@ -61,9 +61,9 @@ public class Argon2HashAlgorithm extends Base64EncodedHashDigest implements Pass
 }
 ```
 
-In order to use the created `PasswordEncryptor` implementation, which uses `argon2`, you have to
+In order to use the created `PasswordEncryptor` implementation which uses `argon2`, you have to
 set the `passwordEncryptor` property of the ProcessEngineConfiguration. This can be done in the `camunda.cfg.xml`
-and could look like the following snipped:
+and could look like the following snippet:
 
 ```xml
   <bean id="processEngineConfiguration" class="org.camunda.bpm.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
@@ -79,8 +79,8 @@ and could look like the following snipped:
 
   </bean>
 ```
-For the complete example see [this repository](https://github.com/Zelldon/camunda-engine-unittest/tree/argon2-custom-hash). For further information's
-about the password hashing in Camunda see the [documentation](https://docs.camunda.org/manual/latest/user-guide/process-engine/password-hashing/).
+For the complete example see [this repository](https://github.com/Zelldon/camunda-engine-unittest/tree/argon2-custom-hash). For further information
+about password hashing in Camunda, see the [documentation](https://docs.camunda.org/manual/latest/user-guide/process-engine/password-hashing/).
 
 
 [1]: https://github.com/p-h-c/phc-winner-argon2
