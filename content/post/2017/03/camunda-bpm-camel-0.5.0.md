@@ -7,6 +7,10 @@ title = "Camunda BPM Camel 0.5.0 Released"
 
 +++
 
+{{< figure src="camunda-bpm-camel.png" alt="Camunda BPM Camel" title="Camunda BPM Camel" caption="Camunda BPM Camel" >}}
+
+The community extension [Camunda BPM Camel](https://github.com/camunda/camunda-bpm-camel) connects seamless Camunda BPM and the intergration framework [Apache Camel](http://camel.apache.org/).
+
 Next to minor changes the new release adds support for consuming [Camunda external tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) (introduced in Camunda 7.4.0) in the form of a Camel route endpoint. This is another is another level of technical decoupling and brings a lot of adventages.
 
 <!--more-->
