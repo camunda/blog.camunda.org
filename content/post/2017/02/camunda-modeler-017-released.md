@@ -8,7 +8,7 @@ title = "Camunda Modeler 1.7 Released"
 
 We are happy to announce the Camunda Modeler version 1.7 release!
 
-In this release brings massive improvements to copy and paste, a new way to use element templates and various improvements for BPMN and DMN modeling.
+This release brings massive improvements to copy and paste, a new way to use element templates and various improvements for BPMN and DMN modeling.
 
 [Download](https://camunda.org/bpmn/tool/) the new version from [camunda.org](https://camunda.org/bpmn/tool/).
 
