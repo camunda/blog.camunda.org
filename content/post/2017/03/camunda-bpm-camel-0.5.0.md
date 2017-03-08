@@ -72,3 +72,5 @@ For more details see the [documentation](https://github.com/camunda/camunda-bpm-
 # Conclusion
 
 Jus as Camunda BPM is a great engine for processing workflows, Apache Camel is a great framework for integration patterns. [Camunda BPM Camel](https://github.com/camunda/camunda-bpm-camel) combines the two and gives you the ability of building complex systems which still are easy to maintain. The new release 0.5.0 takes the next step by using Camunda's external tasks.
+
+This is a guest post by [Stephan Pelikan](mailto:stephan.pelikan@wdw-elab.de).
