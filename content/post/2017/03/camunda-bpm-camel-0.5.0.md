@@ -52,13 +52,13 @@ Using a Camel route instead of a Java bean inside a service tasks gives you some
 
 For example, calling a webservice might be a long task and is blocking the thread which is running the workflow. This thread might be a HTTP-thread if the process was started in the context of sending a form and the user has to wait for completing the webservice. If you place an `asyncBefore` flag at the service task, the user wouldn't have to wait because the thread is not blocked for executing the service task. Instead the task is now executed by one of Camunda's job executor threads.
 
-But even job executor threads shouldn't be blocked because you might run out of them which could in the worst case cause Camunda to get stuck. Even worse, incoming messages of foreign systems might not correlate to separately modeled receive tasks because the process couldn't be drove forward in time. Using external tasks solves this problem because an external task is a wait state within the workflow (like a user task). At a wait state Camunda BPM waits for the task to be completed by a user thread and can do other work in the meantime.
+But even job executor threads shouldn't be blocked because you have to think about proper configuration for scalability. Another problem which can arise is that response message of an asynchronous service calls might arrive before the engine transaction has committed. And that means the incoming message cannot be correlated. Using external tasks solves this problem because an external task is a wait state within the workflow (like a user task). The service is not called before the transaction is committed, hence the response message can never be faster.
 
 ## Asynchronous communication
 
 {{< figure class="teaser no-border" src="diagram_async.png" alt="Hide technical issues" caption="Hide technical issues" >}}
 
-A best practice of making BPMNs is to hide technical issues because they do not effect the workflow's aim and make the BPMN less readable. If you have asynchronous communication with foreign systems in the past it was hard to find a clean way for doing so.
+A best practice when modeling BPMN is to hide technical issues because so that they don't affect the readability of the workflow and it's business aim. If you have asynchronous communication with foreign systems in the past it was hard to find a clean way for doing so.
 
 The new Camel endpoints for external tasks offer a clean solution by splitting asynchronous communication into up to four transactions relevant in the context of a service task (see image above):
 
