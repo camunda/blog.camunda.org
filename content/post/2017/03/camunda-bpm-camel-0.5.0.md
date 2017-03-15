@@ -42,8 +42,6 @@ There are some good reasons for using external tasks for the combination of Camu
 
 ## Loose coupling
 
-{{< figure class="teaser no-border" src="clean-code-simpsons.jpg" alt="Strong coupling is bad code" caption="Strong coupling is bad code" >}}
-
 Using a Camel route instead of a Java bean inside a service tasks gives you some degree of decoupling since you don't need the Camunda Java API any more (see [here](https://github.com/camunda/camunda-bpm-camel#calling-a-camel-endpoint-service) for details). Using external tasks also decouples Camel from your workflows because both sides, BPMN and Camel, use the topic as the identifying feature for the work that needs to be done.
 
 ## Non-blocking service execution
@@ -52,7 +50,7 @@ Using a Camel route instead of a Java bean inside a service tasks gives you some
 
 For example, calling a webservice might be a long task and is blocking the thread which is running the workflow. This thread might be a HTTP-thread if the process was started in the context of sending a form and the user has to wait for completing the webservice. If you place an `asyncBefore` flag at the service task, the user wouldn't have to wait because the thread is not blocked for executing the service task. Instead the task is now executed by one of Camunda's job executor threads.
 
-But even job executor threads shouldn't be blocked because you have to think about proper configuration for scalability. Another problem which can arise is that response message of an asynchronous service calls might arrive before the engine transaction has committed. And that means the incoming message cannot be correlated. Using external tasks solves this problem because an external task is a wait state within the workflow (like a user task). The service is not called before the transaction is committed, hence the response message can never be faster.
+But even job executor threads shouldn't be blocked because you have to think about proper configuration for scalability. Another problem which can arise is that response message of an asynchronous service call might arrive before the engine transaction has committed. And that means the incoming message cannot be correlated. Using external tasks solves this problem because an external task is a wait state within the workflow (like a user task). The service is not called before the transaction is committed, hence the response message can never be faster.
 
 ## Asynchronous communication
 
