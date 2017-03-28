@@ -1,7 +1,7 @@
 +++
 author = "Stephan Pelikan"
 categories = ["Community"]
-date = "2017-02-24T07:49:23Z"
+date = "2017-03-28T07:49:23Z"
 tags = ["Release Note", "Camel", "Execution"]
 title = "Camunda BPM Camel 0.5.0 Released - External Task Support"
 
@@ -60,7 +60,7 @@ A best practice when modeling BPMN is to hide technical issues, because then the
 
 The new Camel endpoints for external tasks offer a clean solution by splitting asynchronous communication into up to four transactions relevant in the context of a service task (see the image above):
 
-1. As mentioned in "[Technical decoupling](#technical-decoupling)", an external task is a wait state and therefore the transaction which created the task commits immediately.
+1. As mentioned in "Non-blocking service execution", an external task is a wait state and therefore the transaction which created the task commits immediately.
 1. Polling the external task and sending the synchronous message is the next transaction. By using Camels ["transacted" feature](http://camel.apache.org/transactional-client.html) it is even possible to split this transaction into two transactions (consuming the external task; sending the request) or three (consuming the external task; sending the request; save information about failed communication).
 1. Processing the asynchronous response. E.g., store new data into your tables.
 1. By using the flag `asyncAfter` at the service task, further workflow processing will use it's own transaction and won't undo the data previously stored in case of a rollback.
