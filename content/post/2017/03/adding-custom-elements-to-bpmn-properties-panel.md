@@ -229,7 +229,7 @@ I have used $ because of the import statement added above as :
 var $ = require("jquery");
 ```
 
-So now whenever selectOptions is called a server call is resolved and the value is passed back to select factory to populate inside component. So is everthing wrks well you will get your custom select box autopopulated with the values returned from the server as :
+So now whenever selectOptions is called a server call is resolved and the value is passed back to select factory to populate inside component. So if everything works well you will get your custom select box auto-populated with the values returned from the server as :
 
 {{< figure  src="result.png" alt="Dynamic values passed to select box" caption="Dynamic values passed to select box" >}}
 
