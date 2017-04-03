@@ -199,7 +199,56 @@ At this point in time if your `grunt auto-build` was running successfully you wi
 
 ## Dynamically passing value to Select Box
 
-We will leverage the `setControlValue` attribute from [selectFactory](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/factory/SelectEntryFactory.js#L86) To do so we need to do some changes inside `DelegateSelect.js` file as floows :
+Let us try two ways of passing values dynamically : 
+
+1. Passing value from a local json file
+2. Getting values from an external network via an ajax call
+
+
+### Rendering Values from a local JSON file :
+
+Consider you have an local JSON file in path say `delegateSelect.json` adjacent to delegateSelect.js as :
+
+```
+[
+  {
+    "name" : "com.classes.ClassOne",
+    "value" : "com.classes.ClassOne"
+  },
+  {
+    "name" : "com.classes.ClassTwo",
+    "value" : "com.classes.ClassTwo"
+  },
+  {
+    "name" : "com.classes.ClassThree",
+    "value" : "com.classes.ClassThree"
+  },
+  {
+    "name" : "com.classes.ClassFour",
+    "value" : "com.classes.ClassFour"
+  },
+  {
+    "name" : "com.classes.ClassFive",
+    "value" : "com.classes.ClassFive"
+  }
+]
+
+```
+
+We just need to import this json and bind to selectOptions in `delegateSelect.js` as follows : 
+
+```
+  var selectValues = require('./delegateSelect.json');
+  
+  .
+  selectOptions : selectValues,
+  .
+  .
+``` 
+
+### Resolving values from an external resouce via an ajax call
+
+To accomplish this, We will leverage the `setControlValue` attribute from [selectFactory](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/factory/SelectEntryFactory.js#L86) To do so we need to do some changes inside `DelegateSelect.js` file as floows :
 
 1. Need to change value of **selectOptions** from list to **function** as we see the function being called.
 2. We need to add one more property as setControlValue to true to register it as dynamic rendering value component.
@@ -208,20 +257,18 @@ We will leverage the `setControlValue` attribute from [selectFactory](https://gi
 selectOptions: function(element, node) {
     var arrValues = []
     $.ajax({
-        url: 'http://localhost:XXXX/XXXX/XX/XX', //any url
+        url: ${your-url},
         method :"GET",
         success: function (result) {
-          //result = ["com.my.class1","com.my.class2","com.my.class3"]
-            result.forEach(function(ele){
-              arrValues.push({name:ele,value:ele})
-            })
-         },
+          arrValues = result; 
+        },
         async: false
     });
-      return arrValues;
+    return arrValues;
 },
 setControlValue :true
 ```
+*Note : result of the ajax call is something similar to the json above*
 
 I have used $ because of the import statement added above as :
 
