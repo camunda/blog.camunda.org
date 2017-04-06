@@ -1,36 +1,36 @@
 +++
 author = "Vinod Louis"
 categories = ["Modeling"]
-date = "2017-03-30T12:09:03+05:30"
+date = "2017-04-06T12:09:03+05:30"
 tags = ["BPMN 2.0", "Tooling", "properties-panel"]
-title = "Adding custom elements to bpmn properties panel"
+title = "Adding Custom Elements to the BPMN Properties Panel"
 
 +++
 
-Extending bpmn properties panel to add custom elements.
+Extending the BPMN properties panel to add custom elements.
 
 # Goal
 
-In this article We will try to add an custom element to the bpmn properties-panel under General tab for service task type component. To be precise under the General tab under details sections If implementation type is selected as Java class a text box appears below, where user is expected to enter the java class but our goal is to replace the text box by an combo box where the option will be populated externally with JSON/API data.
+In this article, we will try to add a custom element to the BPMN properties panel under the 'General' tab for a service task type component. To be precise, under the 'General' tab, in the details sections, if 'Java Class' is selected as implementation type, a text box appears below. Here the user is expected to enter the java class, but our goal is to replace the text box with a combo box, where the options are populated externally with JSON/API data.
 
-{{< figure  src="goal.png" alt="Converting implemnetation type java class input to select from text" caption="Converting implemnetation type java class input to select from text" >}}
+{{< figure  src="goal.png" alt="Converting implementation type 'Java Class' input to select from text" caption="Converting implementation type 'Java Class' input to select from text" >}}
 
-## pre-requisite
+## Prerequisite
 
-If you are not aware of how to bundle bpmn-properties panel then please go through the [bpmn-properties documentaion.](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel)  
+If you are not aware of how to bundle the properties-panel, then please go through the [properties-panel documentation.](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel)  
 
 ## Implementation
 
-Get the base source code from the [bpmn-properties-repository](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel). Once you install the dependencies you will get all under *node_modules*. The important one is [bpmn-js-properties-panel](https://github.com/bpmn-io/bpmn-js-properties-panel) which contains all the implementation of the properties panel.
+Get the base source code from the [properties-panel repository](https://github.com/bpmn-io/bpmn-js-examples/tree/master/properties-panel). Once you have installed the dependencies, you will get all under *node_modules*. The important one is [bpmn-js-properties-panel](https://github.com/bpmn-io/bpmn-js-properties-panel), which contains the entire implementation of the properties panel.
 
-By navigating to `lib/provider/camunda` you can see the file [CamundaPropertiesProvider.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/CamundaPropertiesProvider.js) where aggreagtion of all tabs displayed under porperties panel, by following its require files it can be easily understood that text-box displayed under general tab details sections when implementation type is class is an result of the file under `/lib/provider/camunda/parts/implementation` as [Delegate.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/implementation/Delegate.js)
+By navigating to `lib/provider/camunda`, you can see the file [CamundaPropertiesProvider.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/CamundaPropertiesProvider.js), where all tabs displayed under the properties panel are aggregated. By following its require files, it can be easily understood that the text-box displayed under the 'General' tab details section is a result of the file under `/lib/provider/camunda/parts/implementation` as [Delegate.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/implementation/Delegate.js), when the implementation type is 'class'.
 
-Once we get the file is not straight forward to edit it into an select box as it's been used as generic file for various implementation, consider our goal we want select box only to be when implementation type is java class else show this textbox as it is. From here we have two ways to add our select box.
+Once we get the file, it is not straight forward to edit it into a select box, as it is used as a generic file for various implementations. Let's consider our goal: we only want the select box when the implementation type is 'Java Class'. Else, this textbox should be shown as is. From here we have two ways to add our select box.
 
-1. We can add one more var as  `var delegateEntrySelect` with all code in same file and return in array. 
-2. Create separate file adjacent to Delegate.js and use it in [ServiceTaskDelegateProps.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js) where all service task component are pushed into. 
+1. We can add one more var as `var delegateEntrySelect` with all the code in the same file, and return in array. 
+2. Create a separate file adjacent to `Delegate.js` and use it in [ServiceTaskDelegateProps.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js), to where all service task components are pushed. 
 
-For modularity purpose we shall stick to #2 New file. Let say our file name is `DelegateSelect.js` under same location `/lib/provider/camunda/parts/implementation` code as below
+For modularity purposes, we shall stick to option 2, a new file. Let's say our file name is `DelegateSelect.js`, under the same location `/lib/provider/camunda/parts/implementation`. See the code below:
 
 ```
 
@@ -121,25 +121,25 @@ var delegateEntrySelect = entryFactory.selectBox({
 
 ```
 
-Basically its the code borrowed from the `Delegate.js` file, few keys points here to note is:
+Basically, it's the code borrowed from the `Delegate.js` file. A few keys points to note here are:
 
-* We have replaced textField by **entryFactory.selectBox** with its *get* and *set* method.
-* Model Property name is same here i.e **delegate**.
-* under disabled condition there is nothing because we will come to that later in discussion where it makes more sense.
+* We have replaced textField by **entryFactory.selectBox** with its *get* and *set* methods.
+* Model Property name is same here, i.e., **delegate**.
+* Under disabled condition there is nothing, because we will get to that a little bit later, where it makes more sense.
 
 ## Plug into Tab Elements
 
-Once we have file ready we need it to now cue into the tab details section navigate to file  [ServiceTaskDelegateProps.js #Line60](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js#L60) you can see the entry `group.entries.concat(delegate(element, bpmnFactory,..`. The traditional Delegate.js file is imported at top and used here similarly we need to import our newly created file DelegateSelect.js and implement it in similar manner.
+Once we have the file ready, we need it to now cue into the tab details section. Navigate to the file [ServiceTaskDelegateProps.js #Line60](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js#L60), where you can see the entry `group.entries.concat(delegate(element, bpmnFactory,..`. The original `Delegate.js` file is imported at the top and used here. Similarly, we need to import our newly created file `DelegateSelect.js` and implement it in similar manner.
 
-Initially for all the options [class,delegate,Expression] it was textbox being displayed but now we want our select box to be displayed only when implementaion type is class else we always need the regular textbox to be displayed. Now the disabled condition left in the above file *TODO section* makes sense. first let use see how to cue the selectbox inside the group entry
+Initially, for all the options (Class, Eelegate, Expression], a textbox was displayed. But now, only when the implementaion type is 'Class', we want our select box to be displayed. Otherwise, the regular textbox should always be displayed. Now the disabled condition left in the *TODO* section of the above file makes sense. First, let's see how to cue the selectbox inside the group entry.
 
-Inside `ServiceTaskDelegateProps.js ` lets first import the file and then push the Delegate Select item.
+Inside `ServiceTaskDelegateProps.js` let's first import the file and then push the Delegate Select item.
 
 ```
 var delegateSelect     = require('./implementation/DelegateSelect');
 ```   
 
-Now its time to push the component into group array its make sense to push before the Delegate code #Line60 thus we get the select box in the desired loaction like this 
+Now its time to push the component into group array. It makes sense to push before the Delegate code #Line60, thus we get the select box in the desired loaction like this 
 
 ```
 group.entries = group.entries.concat(delegateSelect(element, bpmnFactory, {
@@ -151,7 +151,7 @@ group.entries = group.entries.concat(delegateSelect(element, bpmnFactory, {
 }));
 ```
 
-Here above I have passed one more option as **hideDelegateSelect** which will hide this component based on the condition if implementaion type is not class, Now its time to add it into the `DelegateSelect.js` file. Two things to take care of first we need to get the option and then write the implementaion for disabled function
+Here, I have passed one more option as **hideDelegateSelect** which will hide this component based on the condition if the implementaion type is not 'Class'. Now it's time to add it into the `DelegateSelect.js` file. There are two things to take care of. First we need to get the option and then write the implementation for disabled function.
 
 ```
 	var getBusinessObject     = options.getBusinessObject;
@@ -167,7 +167,7 @@ disabled: function(element, node) {
 }
 ```
 
-Similarly we also need to change condition for textField to not display on value class else we will have select box and text both to do that changes in `ServiceTaskDelegateProps.js` as:
+Similarly, we also need to change the condition for textField to not be displayed on value 'Class', else we will have both select box and text. To do so, change `ServiceTaskDelegateProps.js` as:
 
 ```
 group.entries = group.entries.concat(delegate(element, bpmnFactory, {
@@ -195,19 +195,19 @@ disabled: function(element, node) {
 }
 ```
 
-At this point in time if your `grunt auto-build` was running successfully you will now see that when under service task you select implementation type as class, An select box will be displayed for other implementation type it will be text box. Everything seems quite well but inside select box we have values [one,two] which doesn't make much sense, So lets populate the values dynamically from an API call.
+At this point in time, if your `grunt auto-build` ran successfully, you will now see that, when you select 'Class' as implementation type under service task, a select box is displayed. For other implementation types, it is a text box. Everything seems quite well, but inside the select box we have values (one, two) which don't make much sense. So let's populate the values dynamically from an API call.
 
 ## Dynamically passing value to Select Box
 
-Let us try two ways of passing values dynamically : 
+Let us try two ways of passing values dynamically: 
 
-1. Passing value from a local json file
+1. Passing value from a local JSON file
 2. Getting values from an external network via an ajax call
 
 
 ### Rendering Values from a local JSON file :
 
-Consider you have an local JSON file in path say `delegateSelect.json` adjacent to delegateSelect.js as :
+Consider you have an local JSON file in path, say `delegateSelect.json` is adjacent to delegateSelect.js as :
 
 ```
 [
@@ -235,7 +235,7 @@ Consider you have an local JSON file in path say `delegateSelect.json` adjacent 
 
 ```
 
-We just need to import this json and bind to selectOptions in `delegateSelect.js` as follows : 
+We just need to import this JSON and bind to `selectOptions` in `delegateSelect.js` as follows : 
 
 ```
   var selectValues = require('./delegateSelect.json');
@@ -246,12 +246,12 @@ We just need to import this json and bind to selectOptions in `delegateSelect.js
   .
 ``` 
 
-### Resolving values from an external resouce via an ajax call
+### Resolving values from an external resource via an ajax call
 
-To accomplish this, We will leverage the `setControlValue` attribute from [selectFactory](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/factory/SelectEntryFactory.js#L86) To do so we need to do some changes inside `DelegateSelect.js` file as floows :
+To accomplish this, We will leverage the `setControlValue` attribute from [selectFactory](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/factory/SelectEntryFactory.js#L86) To do so we need to do some changes inside `DelegateSelect.js` file as follows:
 
 1. Need to change value of **selectOptions** from list to **function** as we see the function being called.
-2. We need to add one more property as setControlValue to true to register it as dynamic rendering value component.
+2. We need to add one more property as setControlValue to `true` to register it as dynamic rendering value component.
 
 ```
 selectOptions: function(element, node) {
@@ -268,7 +268,7 @@ selectOptions: function(element, node) {
 },
 setControlValue :true
 ```
-*Note : result of the ajax call is something similar to the json above*
+*Note : The result of the ajax call is something similar to the JSON above*
 
 I have used $ because of the import statement added above as :
 
@@ -276,10 +276,10 @@ I have used $ because of the import statement added above as :
 var $ = require("jquery");
 ```
 
-So now whenever selectOptions is called a server call is resolved and the value is passed back to select factory to populate inside component. So if everything works well you will get your custom select box auto-populated with the values returned from the server as :
+So now, whenever selectOptions is called, a server call is resolved and the value is passed back to select factory to populate the inside component. So if everything works well, you will get your custom select box auto-populated with the values returned from the server as :
 
 {{< figure  src="result.png" alt="Dynamic values passed to select box" caption="Dynamic values passed to select box" >}}
 
 # Summary
 
-In this post I showed how to add custom element to the bmpn properties panel as select box and pass dynamic options to it. While doing this task I faced quite a few problems which I posted on [forum](https://forum.camunda.org/t/changes-to-delegate-entries-under-servive-task-for-bpmn-properties-panel-not-getting-updated-on-ui/3171). But then I got the answers by understanding the camunda code itself to hide the elemets I just followed [resultVariale.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js#L68) and to pass dynamic options I followed [inputOutputParameter.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/implementation/InputOutputParameter.js#L345) to reach the solution.
+In this post, I showed how to add a custom element to the BPMN properties panel as a select box and pass dynamic options to it. While doing this task, I faced quite a few problems which I posted on the [forum](https://forum.camunda.org/t/changes-to-delegate-entries-under-servive-task-for-bpmn-properties-panel-not-getting-updated-on-ui/3171). But then I got the answers by understanding the camunda code itself, to hide the elements I just followed [resultVariable.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js#L68) and to pass dynamic options I followed [inputOutputParameter.js](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/implementation/InputOutputParameter.js#L345) to reach the solution.
