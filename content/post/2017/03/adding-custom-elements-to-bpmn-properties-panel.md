@@ -131,7 +131,7 @@ Basically, it's the code borrowed from the `Delegate.js` file. A few keys points
 
 Once we have the file ready, we need it to now cue into the tab details section. Navigate to the file [ServiceTaskDelegateProps.js #Line60](https://github.com/bpmn-io/bpmn-js-properties-panel/blob/master/lib/provider/camunda/parts/ServiceTaskDelegateProps.js#L60), where you can see the entry `group.entries.concat(delegate(element, bpmnFactory,..`. The original `Delegate.js` file is imported at the top and used here. Similarly, we need to import our newly created file `DelegateSelect.js` and implement it in similar manner.
 
-Initially, for all the options (Class, Eelegate, Expression], a textbox was displayed. But now, only when the implementaion type is 'Class', we want our select box to be displayed. Otherwise, the regular textbox should always be displayed. Now the disabled condition left in the *TODO* section of the above file makes sense. First, let's see how to cue the selectbox inside the group entry.
+Initially, for all the options [Class, Delegate, Expression], a textbox was displayed. But now, only when the implementaion type is 'Class', we want our select box to be displayed. Otherwise, the regular textbox should always be displayed. Now the disabled condition left in the *TODO* section of the above file makes sense. First, let's see how to cue the selectbox inside the group entry.
 
 Inside `ServiceTaskDelegateProps.js` let's first import the file and then push the Delegate Select item.
 
