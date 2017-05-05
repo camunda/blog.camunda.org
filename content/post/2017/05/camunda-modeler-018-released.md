@@ -8,7 +8,7 @@ title = "Camunda Modeler 1.8 Released"
 
 We are happy to announce the Camunda Modeler version 1.8 release!
 
-This release brings extensibility through plugins, a minimap that helps you navigating big processes and a number of improvements for the modeling experience.
+This release brings extensibility through plugins, a minimap that helps you to navigate big processes and a number of improvements for the modeling experience.
 
 [Download](https://camunda.org/bpmn/tool/) the new version from [camunda.org](https://camunda.org/bpmn/tool/).
 
@@ -37,7 +37,7 @@ Check out the [plugin documentation](https://github.com/camunda/camunda-modeler/
 
 ## Navigate Huge Processes
 
-If you have ever modeled a bigger process you know that navigation can be hard sometimes. The new minimap helps you navigating these big processes with ease:
+If you have ever modeled a bigger process you know that navigation can be hard sometimes. The new minimap helps you to navigate these big processes with ease:
 
 {{< figure class="teaser no-border" src="minimap.gif" alt="Minimap screencast" caption="Navigate with ease!" >}}
 
@@ -45,7 +45,7 @@ You can see which part of the process you are looking at at any time. Click, dra
 
 ## Other Improvements
 
-In BPMN and DMN modeling we have included in a number of minor improvements and bug fixes.
+In BPMN and DMN modeling we have included a number of minor improvements and bug fixes.
 
 ## What's next?
 
