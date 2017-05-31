@@ -25,6 +25,8 @@ The [complete release notes][release-notes] are available in Jira.
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
+[release-notes]: https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14607
+
 <!--more-->
 
 # Automated, configurable cleanup of history data
@@ -136,6 +138,3 @@ If you have not already, make sure to place a last-minute registration for the f
 ## Feedback Welcome
 
 Please try out the awesome new features of this release and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/).
-
-
-[release-notes]: https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14607
