@@ -6,7 +6,7 @@ tags = ["Release Note"]
 title = "Camunda BPM 7.7.0 Released"
 +++
 
-Camunda BPM Platform 7.7.0 is here, greatly increasing the technical operations of the platform.
+Camunda BPM Platform 7.7.0 is here, greatly improving the technical operations of the platform.
 
 The highlights are:
 
