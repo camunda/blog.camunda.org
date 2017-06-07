@@ -3,14 +3,14 @@ author = "Sebastian Stamm"
 categories = ["Execution"]
 date = "2017-06-07T11:00:00+01:00"
 tags = ["Release Note"]
-title = "Camunda Optimze 1.0.0 Released"
+title = "Camunda Optimize 1.0.0 Released"
 +++
 
 Today we release the first version of a brand new product: Camunda Optimize.
 
 With Camunda BPM, we have a rock-solid, freaking fast execution engine with web-applications for administrators (Camunda Admin), operators (Camunda Cockpit) and end users (Camunda Tasklist).
 
-Camunda Optimize is an addition to Camunda BPM, that provides continuous monitoring and insights to your deployed business processes. This Big Data solution **helps process owners to make informed decisions** to optimize their processes.
+Camunda Optimize is an addition to Camunda BPM, that provides continuous monitoring and insights about your deployed business processes. This Big Data solution **helps process owners to make informed decisions** to optimize their processes.
 
 Version 1.0.0 is already packed with features. The highlights are:
 
@@ -18,7 +18,7 @@ Version 1.0.0 is already packed with features. The highlights are:
 * Visualization of average execution duration for any activity
 * Eliminating bottle-necks of your process by finding steps that take longer than a specified target value
 * Find out which paths process instances took that reached a desired outcome
-* Perform analysis based on a subset of all process instances, i.e. by variable value or start date
+* Perform analysis based on a subset of all process instances, i.e., by variable value or start date
 
 # Visualization of flow node frequency
 
@@ -36,7 +36,7 @@ In addition to the frequency visualization, Camunda Optimize also displays infor
 
 {{< figure class="main teaser no-border" src="targetValue.png">}}
 
-Based on the duration heatmap, Optimize allows you to specify a target value for every activity. For example, if an user task has to be completed within one day, you can set the target value to one day. If the average time it takes to complete the user task exceeds this target value, the task is highlighted in the heatmap.
+Based on the duration heatmap, Optimize allows you to specify a target value for every activity. For example, if a user task has to be completed within one day, you can set the target value to one day. If the average time it takes to complete the user task exceeds this target value, the task is highlighted in the heatmap.
 
 # Find out which paths lead to a desired outcome
 
