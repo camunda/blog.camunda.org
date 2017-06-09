@@ -12,6 +12,8 @@ This patch release contains a bug fix where changing process properties using th
 
 We recommend all users of version 1.8.1 to [download](https://camunda.org/bpmn/tool/) the new version from [camunda.org](https://camunda.org/bpmn/tool/) as soon as possible.
 
+You can learn about all new features introduced in version 1.8.1 in [this blog post](http://blog.camunda.org/post/2017/06/camunda-modeler-0181-released/).
+
 
 ## What's next?
 
