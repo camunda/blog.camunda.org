@@ -1,7 +1,7 @@
 +++
 author = "Patrick Schalk"
 categories = ["Community"]
-date = "2017-06-09T16:00:00Z"
+date = "2017-06-28T16:30:00Z"
 tags = ["Release Note", "Batch"]
 title = "Camunda BPM Custom Batch 1.0.0 - new community extension"
 
@@ -9,10 +9,9 @@ title = "Camunda BPM Custom Batch 1.0.0 - new community extension"
 
 Have you ever tried to create your own custom batch with Camunda BPM?
 Well, I did, and it was very time consuming and quite complex. There is no any really public API for this purpose.
-You have to work at entity level, and take care that batch configuration uis saved to ByteArray database table.
+You have to work at entity level, and take care that batch configuration is saved to ACT_GE_BYTEARRAY database table.
 
 That's why I've decided to create the [Camunda BPM Custom Batch](https://github.com/camunda/camunda-bpm-custom-batch) Extension.
-Thanks to [Kühne + Nagel](https://home.kuehne-nagel.com/) for sponsoring the extension!
 
 The goal of this extension is to provide a simple way of using the Camunda Batch functionality for your own purpose.
 
@@ -25,7 +24,7 @@ See official Camunda docs for more details: [Camunda Batch](https://docs.camunda
 
 The idea of the Camunda Batch is to separate the entire work called batch into smaller pieces called chunks
 First you have to define a job handler, which processes the batch chunks.
-All the boilerplate stuff like creating batch jobs,  
+All the boilerplate work like creating batch jobs,  
 saving and reading batch configuration is done in the abstract class `CustomBatchJobHandler`, which is part of the extension.
 
 A good starting point is to extend the `CustomBatchJobHandler` and override the following two methods:
@@ -106,8 +105,10 @@ There are a lot of ideas which are planned for the next versions:
 - Provide helper utils to simplify testing
 - And many more... 
 
-# Last but Not Least?
+# Last but Not Least
 
-If you have any questions or ideas, feel free to contact me, or much more better, start contributing to the extension. :)
+If you have any questions or ideas, feel free to contact me, or much better, start contributing to the extension. :)
+
+Special thanks to [Kühne + Nagel](https://home.kuehne-nagel.com/) for sponsoring the extension!
 
 This is a guest post by [Patrick Schalk](mailto:patrick.schalk@holisticon.de) (Consultant @ [Holisticon AG](https://holisticon.de/)).
