@@ -1,28 +1,28 @@
 +++
 author = "Patrick Schalk"
 categories = ["Community"]
-date = "2017-06-28T16:30:00Z"
+date = "2017-06-29T16:30:00Z"
 tags = ["Release Note", "Batch"]
-title = "Camunda BPM Custom Batch 1.0.0 - new community extension"
+title = "Camunda BPM Custom Batch 1.0.0 - New Community Extension"
 
 +++
 
 Have you ever tried to create your own custom batch with Camunda BPM?
-Well, I did, and it was very time consuming and quite complex. There is no any really public API for this purpose.
-You have to work at entity level, and take care that batch configuration is saved to ACT_GE_BYTEARRAY database table.
+Well, I did, and it was very time consuming and quite complex. There isn't really a public API for this purpose.
+You have to work at the entity level and take care that batch configuration is saved to the ACT_GE_BYTEARRAY database table.
 
 That's why I've decided to create the [Camunda BPM Custom Batch](https://github.com/camunda/camunda-bpm-custom-batch) Extension.
 
-The goal of this extension is to provide a simple way of using the Camunda Batch functionality for your own purpose.
+The goal of this extension is to provide a simple way of using the Camunda Batch functionality for your own purposes.
 
-If you have no clue what Camunda Batch is for, it could be used to split a huge workload (e.g. like reassigning all tasks) into small asynchronous jobs. 
-See official Camunda docs for more details: [Camunda Batch](https://docs.camunda.org/manual/7.6/user-guide/process-engine/batch/)
+If you have no clue what Camunda Batch is for, it can be used to split a huge workload (e.g., like reassigning all tasks) into small asynchronous jobs. 
+See the official Camunda docs for more details: [Camunda Batch](https://docs.camunda.org/manual/7.7/user-guide/process-engine/batch/)
 
 <!--more-->
 
 # So How Does the Extension Work?
 
-The idea of the Camunda Batch is to separate the entire work called batch into smaller pieces called chunks
+The idea of the Camunda Batch is to separate the entire work called batch into smaller pieces called chunks.
 First you have to define a job handler, which processes the batch chunks.
 All the boilerplate work like creating batch jobs,  
 saving and reading batch configuration is done in the abstract class `CustomBatchJobHandler`, which is part of the extension.
@@ -44,7 +44,7 @@ public class PrintStringBatchJobHandler extends CustomBatchJobHandler<String> {
 }
 ```
 
-Every job handler needs to provide a unique job handler type, and the implementation itself. 
+Every job handler needs to provide a unique job handler type and the implementation itself. 
 In default configuration, the JobData parameter contains one object, the size is configurable. 
 
 `getType()` returns a job handler type which has to be unique for all job handlers.
@@ -99,9 +99,9 @@ The batch will also be visible for monitoring in the batch overview section of C
 
 There are a lot of ideas which are planned for the next versions:
 
-- Provide possibility for using of a data collector class
-- Provide a timer job for automatically triggering of batch creation
-- Provide a service bean for creation of the batch (additionally to the builder)
+- Provide possibility for usage of a data collector class
+- Provide a timer job for automated triggering of batch creation
+- Provide a service bean for creation of the batch (in addition to the builder)
 - Provide helper utils to simplify testing
 - And many more... 
 
