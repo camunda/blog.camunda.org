@@ -127,7 +127,7 @@ This resolves the issue of a NullPointerException in heavy load scenarios which 
 ## Take a Sneak Peek at What Is Next
 We are already eagerly busy preparing for the next alpha release, which is scheduled for end of July. 
 
-Among other things, we are working on the the following features, which are planned to be released in one of the next alpha releases: 
+Among other things, we are working on the following features, which are planned to be released in one of the next alpha releases: 
 
 * Batch modification of process instances (EE)
 * Faster rendering of BPMN diagrams in Cockpit
