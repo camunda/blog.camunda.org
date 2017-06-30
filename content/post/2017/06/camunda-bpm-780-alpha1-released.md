@@ -15,7 +15,7 @@ It is packed with new features. In a nutshell, the highlights are:
 * More notation elements for the fluent BPMN builder API
 * New batch operation for changing the suspension state of process instances
 * Upgrade to the latest version of MyBatis
-* [17 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha1)
+* [22 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha1)
 
 Also see the complete list of [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?version=14905&projectId=10230) 
 and the list of [known issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.8.0-alpha1).
