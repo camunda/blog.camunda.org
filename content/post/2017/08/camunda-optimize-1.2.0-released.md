@@ -13,6 +13,6 @@ Camunda Optimize 1.2.0 is here and it is packed with new features. The highlight
 * Import most recent data first
 * [Documentation](https://docs.camunda.org/optimize/)
 
-# Feedback Welcome
+# How to get it
 
-Please try out the awesome new features of this release and provide feedback by commenting on this post or reaching out to us in the [forum](https://forum.camunda.org/).
+In contrast to the core engine, Camunda Optimize is not open source, so please [get in touch with us](https://camunda.com/about/contact/) to find out how you can use Camunda Optimize for your processes.
