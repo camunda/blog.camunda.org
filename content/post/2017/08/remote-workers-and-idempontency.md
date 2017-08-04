@@ -6,18 +6,6 @@ date = "2017-08-04T12:00:00+01:00"
 title = "Remote workers  and idempontency"
 +++
 
-Camunda Optimize 1.2.0 is here and it is packed with new features. The highlights are:
-
-* Import Based on Process Definitions
-* Adaptive page sizes
-* Import most recent data first
-* [Documentation](https://docs.camunda.org/optimize/)
-
-# How to get it
-
-In contrast to the core engine, Camunda Optimize is not open source, so please [get in touch with us](https://camunda.com/about/contact/) to find out how you can use Camunda Optimize for your processes.
-
-
 
 In Camunda there is a concept called External Tasks. See [External Tasks allows new Use Cases with Camunda BPM](https://blog.camunda.org/post/2015/11/external-tasks/) or [External Tasks in the docs](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/). The basic idea is simple: Camunda does not actively call a service (which would be PUSH), but worker fetch work items queued for them (PULL). Whenever a worker finishes his work item, he reports completion back to Camunda. 
 
