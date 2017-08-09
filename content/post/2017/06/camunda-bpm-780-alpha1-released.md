@@ -53,7 +53,7 @@ Additionally, the report of finished process instances highlights processes whic
 This helps to take a well-informed decision for the history time to live parameter.
 
 For more details, please see the documentation about [Metrics](https://docs.camunda.org/manual/latest/reference/rest/metrics/get-metrics-interval/) and the
-[Finished Process Instance Report](https://docs.camunda.org/manual/latest/reference/rest/history/process-definition/get-finished-process-instance-report/).
+[Finished Process Instance Report](https://docs.camunda.org/manual/latest/reference/rest/history/process-definition/get-cleanable-process-instance-report/).
 
 ## More Notation Elements for the Fluent BPMN Builder API
 The fluent BPMN builder API allows to create simple process definitions in Java. This release expands the range of notation 
