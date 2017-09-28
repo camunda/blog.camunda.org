@@ -1,11 +1,10 @@
 ---
-title: "Share Your Feedback for Camunda Cockpit"
+title: "We’re listening — share your feedback for Camunda Cockpit!"
 date: "2017-09-28"
 author: "Franz Heidl"
 categories: ["Community"]
 ---
 
-# We’re listening — share your feedback for Camunda Cockpit!
 
 Last Thursday, for our annual Community Day, we hosted our first user feedback session for Camunda Cockpit.
 
