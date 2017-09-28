@@ -11,6 +11,8 @@ Last Thursday, for our annual Community Day, we hosted our first user feedback s
 
 If you attended and even better joined the conversation and provided your feedback — thank you! We truly appreciated your input  and are committed to base the future evolution of Cockpit on it.
 
+<!--more-->
+
 {{< figure src="feedback-session.png" alt="Cockpit feedback session in full swing" title="Cockpit feedback session in full swing" caption="Cockpit feedback session in full swing" >}}
 
 However, we don’t want this to be a one-off event, we want to continuously get your feedback and keep the conversation going.
