@@ -3,7 +3,6 @@ title: "Share Your Feedback for Camunda Cockpit"
 date: "2017-09-28"
 author: "Franz Heidl"
 categories: ["Community"]
-draft: "true"
 ---
 
 # We’re listening — share your feedback for Camunda Cockpit!
