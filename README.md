@@ -26,7 +26,8 @@ Long version: follow the steps below :)
 
 ### Install Hugo
 
-> *IMPORTANT*: we use a custom build of Hugo and you need to download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/
+> *IMPORTANT*: You can use our custom build of Hugo (you can download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/) or the standard version from https://gohugo.io/.
+> The standard version however will only work in version v0.16. To use a newer version, you have to comment out the following line locally (*Do not commit/push this change!* ): https://github.com/camunda/blog.camunda.org/blob/b50c8bdf90d0033e1ae001c1e9988b3ab56451aa/theme-src/layouts/partials/header.html#L17 until we fixed issue #37.
 
 We use Hugo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
 
