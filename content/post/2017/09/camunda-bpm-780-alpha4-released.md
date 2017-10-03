@@ -29,7 +29,7 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Deletion of Process Definitions in Cockpit (EE)
 Until now, it has only been possible to erase process definitions in Cockpit by deleting a whole deployment. This behaviour is not sensible for any case as, generally speaking, a deployment consists of several process definitions and resources – including those that are possibly still required and not supposed to be deleted.
 
-This release brings a new feature to Cockpit that allows deletion process definitions, regardless of their respective
+This release brings a new feature to Cockpit that allows to delete process definitions, regardless of their respective
 deployments.
 
 {{< video mp4="processDefinitionDeletion.mp4" title="Camunda BPM Cockpit" caption="Deleting process definitions" >}}
