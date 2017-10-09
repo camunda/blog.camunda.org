@@ -26,7 +26,7 @@ The current release does not implement new features. Is mostly concentrated on i
 
 Here are some changes:
 
-* The `groupId` for Maven dependencies has changed, it is now `org.camunda.bpm.springboot.project`. For example:
+* The `groupId` for Maven dependencies has changed, it is now `org.camunda.bpm.springboot`. For example:
 
 ```xml
 <dependency>
