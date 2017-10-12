@@ -1,7 +1,7 @@
 +++
 author = "Bernd Rücker"
 categories = ["Execution"]
-tags = []
+tags = ["External Tasks"]
 date = "2017-08-04T12:00:00+01:00"
 title = "Remote workers  and idempotency"
 +++
