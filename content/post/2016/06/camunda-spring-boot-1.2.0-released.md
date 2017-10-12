@@ -1,6 +1,6 @@
 +++
 author = "Jan Galinski"
-categories = ["execution"]
+categories = ["Execution"]
 date = "2016-06-17T12:00:00+02:00"
 tags = ["extension"]
 title = "Camunda BPM SpringBoot 1.2.0 released"
