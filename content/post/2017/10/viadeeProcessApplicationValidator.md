@@ -32,7 +32,7 @@ Integrated in your CD/CI pipeline you'll be able to find inconsistencies in the 
 
 
 ## Get Started
-In order to provide ease of use we developed the viadeeProcessApplicationValidator as a Maven Plugin, which should be executed as JUnit test. For demonstration purposes we forked the [Camunda BPM examples](https://github.com/viadee/camunda-bpm-examples/) to demonstrate the easy integration of vPAV. 
+In order to provide ease of use, the viadeeProcessApplicationValidator can be integrated as a Maven dependency and executed as JUnit test. For demonstration purposes we forked the [Camunda BPM examples](https://github.com/viadee/camunda-bpm-examples/) to demonstrate the easy integration of vPAV. 
 
 ### Maven
 You can start the validation by adding the dependency to your local projects POM.xml. 
