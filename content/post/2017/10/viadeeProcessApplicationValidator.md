@@ -6,11 +6,9 @@ categories = ["Community"]
 tags = ["BPMN 2.0", "Tooling", "BPMN Validation", "Model-Code Inconsistencies", "Check", "viadee"]
 +++
 
-Are you an avid user of BPMN2.0 and camunda-based process applications? Are you also spending hours of debugging when your code does not fit the process model? 
+Process applications basically consist of process model(s) and Java code which both exist side by side and are edited in different tools. For the process models you will most likely use the Camunda Modeler, for the Java code the IDE of your choice. However, no one checks whether model and code are aligned beforehand, e.g. if a bean referenced in a delegate expression actually exist in the code. With the viadee Process Application Validator (vPAV, Open-Source), you can validate your process application regarding these inconsistencies with a simple JUnit test. You can also ensure that specific best-practices are met (e.g. naming conventions).
 
-If you feel adressed by now, we might have something to help you out. We developed a tool that is able to check your BPMN process model and its underlying implementation for congruency. 
-
-Integrated in your CD/CI pipeline you'll be able to find inconsistencies in the early stages. The viadeeProcessApplicationValidator can also help implementing process applications in your local IDE.
+If you feel addressed by now, we might give it a try. It is as easy as adding a maven dependency (see below). Integrated in your CD/CI pipeline you'll be able to find inconsistencies in the early stages. 
 
 {{< figure src="output1.PNG" alt="bpmn.io" title="Error highlighting of critical elements" >}}
 
