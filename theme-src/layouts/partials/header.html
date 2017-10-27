@@ -14,7 +14,9 @@
 
   <link rel="canonical" href="{{ .Permalink }}">
 
+  {{ if le .Hugo.Version "0.17.0" }}
   {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+  {{ end }}
 
   {{ .Hugo.Generator }}
 
