@@ -22,7 +22,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <link rel="canonical" href="{{ .Permalink }}">
 
+  {{ if le .Hugo.Version "0.17.0" }}
   {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+  {{ else }}
+  {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+  {{ end }}
 
   {{ .Hugo.Generator }}
 
