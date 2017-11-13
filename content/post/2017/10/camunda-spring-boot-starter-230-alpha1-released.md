@@ -1,5 +1,5 @@
 ---
-title: "Camunda BPM SpringBoot 2.3.0-alpha1 Released"
+title: "Camunda Spring Boot Starter 2.3.0-alpha1 Released"
 date: "2017-10-06"
 author: "Svetlana Dorokhova"
 tags: ["Release Note"]
