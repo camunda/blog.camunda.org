@@ -15,7 +15,6 @@ Technically, the blog is generated as a list of html files that are uploaded to 
 We want you to write as many blogposts as humanly possible. If you experience any trouble or have any questions about the technology used here make sure to talk to the following people, they are eager to help you out!
 
 * Daniel Meyer
-* Valentin Vago
 * Sebastian Menski
 
 ## Creating a new Post
