@@ -72,8 +72,7 @@ indexing performance and search capabilities.
 
 ## How to get it
 
-If you want to give the new Camunda Optimize a shot you can download the alpha release [here](https://camunda.com/download/enterprise/).
+If you want to give the new Camunda Optimize a shot, you can download the alpha release from [here](https://docs.camunda.org/enterprise/download/#camunda-optimize) with your enterprise customer credentials. In contrast to the core engine, Camunda Optimize is not open source, so please sign up [here](https://camunda.com/download/enterprise/) for a free 30 days trail version.
 
-## What's next?
 
-Do you miss anything or spot a bug? Or do you have feedback on this release? Reach out to us via [our forums](https://forum.camunda.org/) or tweet us [@CamundaBPM](https://twitter.com/CamundaBPM).
+
