@@ -35,7 +35,7 @@ My personal highlight this year was the presentation given by Galen Hollins, who
 
 In April, we won the [bpmNEXT Award](http://bpmnext.com) - for the second year in a row. 
 
-In May, we released Camunda 7.7 with significant improvements. In June, we published [Cawemo](https://cawemo.com), our very first SaaS product, that sports more than 5,000 users by now. In July, we launched [Zeebe](https://zeebe.io), an entirely now workflow technology (that brought us the aforementioned award) as an open source project, and we released [Optimize](https://camunda.com/products/optimize/), a web app that combines big data analytics with workflow automation. Then we caught our breath for a few months, before releasing Camunda 7.8 in November, as always right on schedule. 
+In May, we released Camunda 7.7 with significant improvements. In June, we published [Cawemo](https://cawemo.com), our very first SaaS product, that sports more than 5,000 users by now. In July, we launched [Zeebe](https://zeebe.io), an entirely new workflow technology (that brought us the aforementioned award) as an open source project, and we released [Optimize](https://camunda.com/products/optimize/), a web app that combines big data analytics with workflow automation. Then we caught our breath for a few months, before releasing Camunda 7.8 in November, as always right on schedule. 
 
 In between, we constantly improved the [Camunda Modeler](https://camunda.com/products/modeler/) and the underlying [bpmn.io](https://bpmn.io) libraries, did a hackathon that produced things like a [VR experience for BPMN](https://twitter.com/CamundaBPM/status/911199602925293570) and still found the time to do what <i>really</i> matters: 
 
