@@ -12,7 +12,7 @@ Here is a summary of how the Camunda company did in 2017. I hope you'll enjoy re
 
 For our revenue growth 2013-2016, we've already been awarded by Deloitte as one of the 50 fastest growing tech companies in Germany, and one of the 500 fastest in EMEA.
 
-This year, we accelerated even more and grew the Annual Recurring Revenue (ARR) by 80%. 
+This year, we accelerated even more and grew the Annual Recurring Revenue (ARR) by 89%. 
 
 We are still fully profitable and self-funded, despite the fact that we grew our staff to a total of 70 employees and opened two offices in the US.
 
@@ -57,7 +57,7 @@ Camunda is in a pole position to become a leader in this new category, and I am 
 
 # Thank you
 
-You could think that our team was freaking out during this crazy year, with 80% growth and all that. But in fact everyone was just focused, efficient and nevertheless excited. I think it is important to keep a cool head and stay humble, and I am grateful that I can work with people who love to be successful without becoming too cocky.
+You could think that our team was freaking out during this crazy year, with the growth and all that. But in fact everyone was just focused, efficient and nevertheless excited. I think it is important to keep a cool head and stay humble, and I am grateful that I can work with people who love to be successful without becoming too cocky.
 
 Any company, in fact any group of people that strives to achieve something extraordinary, depends on people who combine great talent with full dedication. You can find this combination at Camunda, to an extend that I believe is above average even for a tech startup. At the same time, those people are friendly, funny and just great to have around, every day. 
 
