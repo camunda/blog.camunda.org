@@ -51,7 +51,7 @@ It's hard to imagine how we could surpass such a year. However, I truly believe 
 
 I am convinced that we are witnessing the emergence of a new market, and that is because all markets start with a problem. In this case, the problem results out of the economy's digital transformation. This transformation has initially lead to the big data problem - and the respective market. The next logical, inevitable stage is the "big workflow problem": How can we handle activity chains that are complex, distributed, long-running and mission-critical? How can we handle them on a <i>massive</i> scale? 
 
-This problem has three critical dimenions: Software development, technical operations and business visibility. I am not yet seeing anyone who is able to solve that problem in all three dimensions to a sufficient extend. At the same time, the relevance of this problem is magnitudes larger than, say, the problem that is solved by Robotic Process Automation, and the pain is way more tangible and near-term than the one that Artificial Intelligence is supposed to cure. 
+This problem has three critical dimensions: Software development, technical operations and business visibility. I am not yet seeing anyone who is able to solve that problem in all three dimensions to a sufficient extend. At the same time, the relevance of this problem is magnitudes larger than, say, the problem that is solved by Robotic Process Automation, and the pain is way more tangible and near-term than the one that Artificial Intelligence is supposed to cure. 
 
 Camunda is in a pole position to become a leader in this new category, and I am very much looking forward to 2018 :)
 
