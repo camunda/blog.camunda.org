@@ -1,6 +1,6 @@
 +++
 author = "Jan Galinski"
-categories = ["execution"]
+categories = ["Execution"]
 date = "2016-02-08T10:00:00+01:00"
 tags = ["extension"]
 title = "Event based process applications with camunda-bpm-reactor"
