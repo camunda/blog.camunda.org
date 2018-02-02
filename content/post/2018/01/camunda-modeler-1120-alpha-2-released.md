@@ -44,7 +44,7 @@ If you want to give the new Camunda Modeler a shot you can download the alpha re
 
 ## What's next?
 
-There are a couple of topics we are going to tackle next in order to further improve the DMN modeling experience and to come closer to a stable release:
+There are a couple of topics we are going to tackle next in order to further improve the DMN modeling experience and to come closer to a stable release which you can expect at the end of March:
 
 * literal expressions
 * copy rules/inputs/outputs
