@@ -15,7 +15,7 @@ The first alpha version of Camunda 7.9.0 is here and it is loaded with new featu
 * Manual User Operations in Cockpit Full (Enterprise)
 * Transient variables
 * Conditional Start Event
-* Support for Wildfly 11 (Enterprise)
+* Support for Wildfly 11
 * [40 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha1)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15191) are available in Jira.
