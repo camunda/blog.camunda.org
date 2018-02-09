@@ -2,7 +2,7 @@
 author = "Felix Müller"
 categories = ["Camunda BPM"]
 tags = ["Tasklist", "React", "vue.js", "Angular"]
-date = "2018-02-01T15:00:00+01:00"
+date = "2018-02-09T15:00:00+01:00"
 title = "Custom Tasklist examples"
 +++
 
