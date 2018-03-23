@@ -77,7 +77,7 @@ client.subscribe("creditScoreChecker")
 
   }).open();
 
-Thread.sleep(60 * 5);
+Thread.sleep(1000 * 60 * 5);
 ```
 
 Finally, run the application. You should see the following output:
