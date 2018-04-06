@@ -4,7 +4,6 @@ categories = ["Camunda Optimize"]
 date = "2018-04-05T12:00:00+01:00"
 tags = ["Camunda Optimize", "Release Note"]
 title = "Camunda Optimize 2.0.0 Released"
-draft = true
 +++
 
 You had to wait several months and were already desperately longing to try it out. There is good news: no need to wait any longer because finally the second major version of our latest product Camunda Optimize is out!
@@ -101,7 +100,7 @@ There are many more smaller features and bugfixes in the release which aren't pr
 
 # Register for the Webinar
 
-If you have not registered already, make sure to reserve a spot for the free release webinars next week - [German](https://register.gotowebinar.com/register/6723119265615514113) and [English](https://register.gotowebinar.com/register/8385014598244744706).
+If you have not registered already, make sure to reserve a spot for the free release webinars next week - [German](https://register.gotowebinar.com/register/618380022669097217) and [English](https://register.gotowebinar.com/register/1924243594699537665).
 
 ## How to get it
 
