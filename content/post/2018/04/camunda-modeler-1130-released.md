@@ -12,7 +12,7 @@ We are happy to announce the release of Camunda Modeler version 1.13.0. This rel
 
 After working hard on rewriting the whole DMN modeling part of the Camunda Modeler for this release we focussed on BPMN, making sure that you can use the new features that will be introduced in Camunda BPM 7.9.0.
 
-## Edit More BPMN Porperties
+## Edit More BPMN Properties
 
 We've added a number of properties that can now be edited:
 
