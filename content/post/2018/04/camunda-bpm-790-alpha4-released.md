@@ -24,24 +24,25 @@ and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affected
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0-alpha3).
 
-## External task notification for long polling fetch and lock handler
+## External Task Notifications for Long Polling
 
-With the Camunda 7.9.0-alpha2 release, we introduced a long polling fetch and lock handler for External Tasks. This provided a reduced number of requests and a more efficient use of client, and server side resources.
+With the preceding Camunda 7.9.0-alpha2 release, we introduced a long polling fetch and lock handler for External Tasks. This provides a reduction of requests and a more efficient use of client, and server side resources.
 
-However, it was possible that a new External Task had been created before the long polling timer ran out. And it would have been great if the clients were notified immediately about this change. Now, through the implementation of an ExternalTask notification for the long polling fetch and lock handler, this is possible. Immediately after a new ExternalTask is created, the handler is notified that a new External Task exists. Then, the  handler interupts the suspension periods and attempts to respond with the new External Task to some of the pending client requests.
+However, it is possible that a new External Task had been created before the long polling timer runs out. The clients were not notified about this change in the previous alpha release version. Now, through the implementation of an ExternalTask notification for the long polling _Fetch & Lock_ handler, this is possible. Immediately after a new External Task is created, the handler is notified that a new External Task exists. Then, the handler interrupts the suspension periods and attempts to respond with the new External Task to some of the pending client requests
 
-## VersionTag binding in Business rule task and Call activity
+## Version Tag Binding in Business Rule Task and Call Activity
 
-[Version Tag](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-versioning/#version-tag) is useful feature for those who want to maintain customized versioning of their processes.
-This alpha extends the usage of the version tag with two new features:
-* version tag binding of a decision to evaluate in a business rule task - find more info [here](https://docs.camunda.org/manual/latest/reference/bpmn20/subprocesses/call-activity/#calledelement-binding)
-* version tag binding of a process in a call activity - find more info [here](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/business-rule-task/#using-camunda-dmn-engine)
+[Version Tag](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-versioning/#version-tag) is a useful feature for those who want to maintain customized versioning of their processes.
+This alpha extends the usage of the version tag with two new bindings:
+* Decision to evaluate in a business rule task - [learn more](https://docs.camunda.org/manual/latest/reference/bpmn20/subprocesses/call-activity/#calledelement-binding)
+* Process in a call activity - [learn more](https://docs.camunda.org/manual/latest/reference/bpmn20/tasks/business-rule-task/#using-camunda-dmn-engine)
 
 
-## Asynchronous modification of a single process instance
+## Asynchronous Modification of a Single Process Instance
 
 Process instance modification allows users to flexibly start an activity again or cancel a running activity. 
-Within this alpha it is possible to execute modification of single process instance asynchronously.
+Within this alpha release it is possible to execute a modification of single process instance asynchronously.
+
 Here is an example of async modification:
 ```java
 Batch modificationBatch = runtimeService.createProcessInstanceModification(processInstanceId)
@@ -49,13 +50,13 @@ Batch modificationBatch = runtimeService.createProcessInstanceModification(proce
         .startBeforeActivity("exampleActivityId:2")
         .executeAsync();
 ```		
-As you can see new batch is created which will execute asynchronously the desired modification in separate job. For more information please check the [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-modification/#asynchronous-modification-of-a-process-instance) in the docs.
+As you can see a new batch is created which will asynchronously execute the desired modification in separate job. For more information please check the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-modification/#asynchronous-modification-of-a-process-instance) in the docs.
 
 ## Feature 4
 
 ## What's Next?
 
-The next alpha version is scheduled for the end of May and our team is already working on it.
+The next minor version is scheduled for the end of May and our team is already working on it.
 
 Here is a highlight if you want to know what the team is preparing for the next releases:
 
