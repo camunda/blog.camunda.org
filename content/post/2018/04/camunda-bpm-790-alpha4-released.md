@@ -46,8 +46,8 @@ Within this alpha release it is possible to execute a modification of single pro
 Here is an example of async modification:
 ```java
 Batch modificationBatch = runtimeService.createProcessInstanceModification(processInstanceId)
-        .cancelActivityInstance("exampleActivityId:1")
-        .startBeforeActivity("exampleActivityId:2")
+        .cancelActivityInstance("anActivityInstanceId")
+        .startBeforeActivity("anActivityId")
         .executeAsync();
 ```		
 As you can see a new batch is created which will asynchronously execute the desired modification in separate job. For more information please check the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-modification/#asynchronous-modification-of-a-process-instance) in the docs.
