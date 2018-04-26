@@ -9,11 +9,11 @@ title = "Camunda 7.9.0-alpha4 Released"
 
 Camunda BPM platform 7.9.0-alpha4 is here and the highlights are:
 
-* External task notification for long polling fetch and lock handler
-* VersionTag binding in Business rule task and Call activity
-* Asynchronous modification of a single process instance
-* History cleanup in multiple threads
-* Camunda Wildfly Swarm community extention
+* External Task Notifications for Long Polling
+* Version Tag Binding in Business Rule Task and Call Activity
+* Asynchronous Modification of a Single Process Instance
+* History Cleanup in Multiple Threads
+* Camunda Wildfly Swarm Community Extention
 * [XX Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha4)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -23,7 +23,7 @@ To see a full list of the changes, please check out our [Release Notes](https://
 and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0-alpha4).
 
 
-If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0-alpha3).
+If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0-alpha4).
 
 ## External Task Notifications for Long Polling
 
@@ -53,26 +53,20 @@ Batch modificationBatch = runtimeService.createProcessInstanceModification(proce
 ```		
 As you can see a new batch is created which will asynchronously execute the desired modification in separate job. For more information please check the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-modification/#asynchronous-modification-of-a-process-instance) in the docs.
 
-## History cleanup in multiple threads
+## History Cleanup in Multiple Threads
 
-By defining configuration parameter `historyCleanupDegreeOfParallelism` you can now make historic data to be removed faster.
+Now you can make historic data to be removed faster by By defining the configuration parameter `historyCleanupDegreeOfParallelism`.
 This parameter defines how many history cleanup jobs will be created by the engine. Allowed values are between 1 (default) and 8.
-With the appropriate configuration of job executor, these jobs may be executed in parallel, speeding up the history cleanup process.
+With the appropriate [configuration](https://docs.camunda.org/manual/7.8/reference/deployment-descriptors/tags/job-executor/) of the job executor, these jobs may be executed in parallel, speeding up the history cleanup process.
 
-## Camunda Wildfly Swarm community extention
+## Camunda Wildfly Swarm Community Extention
 
 In case you're using [Wildfly Swarm](http://wildfly-swarm.io/) to build your application, the new community extension is now available to easily include Camunda Engine and/or 
 Web applications to Wildfly Swarm projects. Please check the project on [GitHub](https://github.com/camunda/camunda-bpm-wildfly-swarm).
 
 ## What's Next?
 
-The next minor version is scheduled for the end of May and our team is already working on it.
-
-Here is a highlight if you want to know what the team is preparing for the next releases:
-
-* Next Feature 1
-* Next Feature 2
-
+Next month we will release a minor version. It is scheduled for the end of May and our team is already working on it. Finalising larger features and clearing the backlog are the clear focus.
 
 You can also find out more details if you check out our [roadmap](https://camunda.com/learn/community/#roadmap).
 
