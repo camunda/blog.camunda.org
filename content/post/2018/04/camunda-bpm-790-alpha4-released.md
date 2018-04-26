@@ -12,7 +12,8 @@ Camunda BPM platform 7.9.0-alpha4 is here and the highlights are:
 * External task notification for long polling fetch and lock handler
 * VersionTag binding in Business rule task and Call activity
 * Asynchronous modification of a single process instance
-* Feature 4
+* History cleanup in multiple threads
+* Camunda Wildfly Swarm community extention
 * [XX Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha4)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -52,7 +53,16 @@ Batch modificationBatch = runtimeService.createProcessInstanceModification(proce
 ```		
 As you can see a new batch is created which will asynchronously execute the desired modification in separate job. For more information please check the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/process-instance-modification/#asynchronous-modification-of-a-process-instance) in the docs.
 
-## Feature 4
+## History cleanup in multiple threads
+
+By defining configuration parameter `historyCleanupDegreeOfParallelism` you can now make historic data to be removed faster.
+This parameter defines how many history cleanup jobs will be created by the engine. Allowed values are between 1 (default) and 8.
+With the appropriate configuration of job executor, these jobs may be executed in parallel, speeding up the history cleanup process.
+
+## Camunda Wildfly Swarm community extention
+
+In case you're using [Wildfly Swarm](http://wildfly-swarm.io/) to build your application, the new community extension is now available to easily include Camunda Engine and/or 
+Web applications to Wildfly Swarm projects. Please check the project on [GitHub](https://github.com/camunda/camunda-bpm-wildfly-swarm).
 
 ## What's Next?
 
