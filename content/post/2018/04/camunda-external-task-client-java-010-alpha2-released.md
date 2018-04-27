@@ -1,6 +1,5 @@
 +++
 author = "Tassilo Weidner"
-draft = true
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2018-04-27T12:00:00+01:00"
