@@ -14,6 +14,7 @@ Camunda BPM platform 7.9.0-alpha4 is here and the highlights are:
 * Asynchronous Modification of a Single Process Instance
 * History Cleanup in Multiple Threads
 * Camunda Wildfly Swarm Community Extension
+* Integration of the Latest Version of dmn-js
 * [XX Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha4)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -63,6 +64,15 @@ With the appropriate [configuration](https://docs.camunda.org/manual/7.8/referen
 
 In case you're using [Wildfly Swarm](http://wildfly-swarm.io/) to build your application, the new community extension is now available to easily include Camunda Engine and/or 
 Web applications to Wildfly Swarm projects. Please check the project on [GitHub](https://github.com/camunda/camunda-bpm-wildfly-swarm).
+
+## Integration of the Latest Version of DMN-JS in Cockpit
+
+This alpha release integrates the last version of DMN-JS, the DMN library Cockpit uses internally and which was completly rewritten recently. The benefits are mainly UX improvements and 
+a huge performance boost when vieweing & modeling Decision Tables and Decision Requirement Diagrams. 
+
+{{< figure class="teaser" src="new-dmn.gif" alt="Large decision table with the new dmn-js" caption="Large decision table with the new dmn-js" title="Camunda BPM Cockpit" >}}
+{{< figure class="teaser" src="old-dmn.gif" alt="Large decision table with the old dmn-js" caption="Large decision table with the old dmn-js" title="Camunda BPM Cockpit" >}}
+
 
 ## What's Next?
 
