@@ -15,7 +15,7 @@ Camunda BPM platform 7.9.0-alpha4 is here and the highlights are:
 * History Cleanup in Multiple Threads
 * Camunda Wildfly Swarm Community Extension
 * Integration of the Latest Version of dmn-js
-* [XX Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha4)
+* [20 Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0-alpha4)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
