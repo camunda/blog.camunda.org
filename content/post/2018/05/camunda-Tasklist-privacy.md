@@ -3,10 +3,12 @@
 In a recent blog post, I described a use case based on facial image recognition to perform an authentication task. In an ideal process, the recognition system either passes or fails the recognition task and the process proceeds via straight through processing to completion. In practice there is a fuzzy boundary between these two outcomes where human judgement via a human task is injected into the process. Now consider the case where say an image of a driver licence is used as a reference image. This image contains particularly sensitive information. Hence if a user is required to access this image, have we taken all reasonable steps to protect this information and provide access on a need to know basis?
 
 ![Facematch Process](../../../../static/post/2018/05/camunda-AWS-Rekognition/FaceMatchProcess.png)
-
 <sub>Sample process model for context</sub>
 
 Confidentiality is a well-known principle of information security. Confidentiality is the ability of a system to prevent sensitive information from reaching the wrong hands whilst restricting access to those authorised to view the information. In Tasklist, we can provide an access control such that only members of an authorised group have access to this review task. This is readily achieved by using the candidate group feature within the process modeller. As per the example below, access to the sensitive task in Tasklist can be restricted to members of an authorised group.
+
+![Facematch Process](../../../../static/post/2018/05/camunda-AWS-Rekognition/Candidate_Groups.png)
+<sub>Candidate group assignment</sub>
 
 Is this enough, have we taken all reasonable steps to restrict access? This solution still has a weakness in that all members of the authorised group may be able to view the sensitive information via the form preview panel in Tasklist. Thus users within this group may have access to the sensitive data without the system being able to record the access event for audit purposes. Hence what if we introduced a new requirement that all view access to the data must be recorded at the individual level of granularity? There is a way and it relies on scopes, tolerant readers and task listeners.
 
@@ -20,8 +22,14 @@ Ultimately this mechanism works because the Tasklist forms can be considered tol
 
 A screen shot of the task prior to user assignment is shown below. Note that the sensitive images are not visible as the task has not been claimed.
 
+![Facematch Process](../../../../static/post/2018/05/camunda-AWS-Rekognition/Unassigned_Task.png)
+<sub>Unassigned Task view</sub>
+
 A screen shot of the task after it has been claimed is shown below. Note how the sensitive images are now visible and the task has an assignee.
+
+![Facematch Process](../../../../static/post/2018/05/camunda-AWS-Rekognition/Assigned_Task.png)
+<sub>Assigned Task view</sub>
 
 So in summary, the combination of local scope, task listener and authorisation ensure confidentiality of data access by providing audited access to sensitive data on a need to know basis. Whilst this is not the only way to access sensitive content, this technique is assuming that the other access mechanisms such as database, API and cockpit access have adequate controls. The intent of the post is not to be definitive, but to raise awareness as to what’s possible…
 
-<sub>This is a guest blog post by Rob Parker. Rob is an Enterprise ARchitect with a passion for process.<sub>
+<sub>This is a guest blog post by Rob Parker. Rob is an Enterprise Architect with a passion for process.<sub>
