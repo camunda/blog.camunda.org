@@ -1,5 +1,6 @@
 +++
 title = "End-To-End Workflow Automation with RPA and Camunda BPM"
+description = "Learn more about the role of robotic process automation (RPA) in workflow automation and how to combine RPA with Camunda BPM."
 date = "2018-05-28T12:00:00+01:00"
 author = "Mike Winters"
 draft = true
