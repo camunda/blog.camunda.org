@@ -14,7 +14,7 @@ Camunda BPM platform 7.9.0 is now available, and the highlights are:
 * History Cleanup Performance Improvements
 * Transient Variables
 * New Features in Camunda Cockpit
-* [119 Bug Fixes](https://app.camunda.com/jira/browse/CAM-9093?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0)
+* [119 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0)
 <!-- FEATURES LIST ENDS -->
 
 <!--more-->
@@ -26,7 +26,7 @@ You can [Download Camunda for free](https://camunda.com/download/) (click on Pre
 We have also released the Camunda Spring Boot Starter 3.0.0, which relies on Spring Boot 2.0.0 by default.
 
 To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096)
-and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0).
+and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0%20and%20status%20!%3D%20Closed).
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0).
 
