@@ -18,7 +18,25 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Authorization
 
-TODO
+Before this release every user that was registered within the engine, could access Camunda Optimize. However, this behavior could lead to a situation where unauthorized people read sensitive data. To prevent this there are now two options: first you can restrict the access to Camunda Optimize and second you can define which Process Definitions users have access to. 
+
+The former can be achieved by creating an application authorization for Optimize. In Camunda Admin this could for example look like the following:
+
+{{< figure class="main teaser no-border" src="Admin-Authorize-Optimize-Access.png">}}
+
+By this configuration we allow the user John to login into Optimize. If now want to go to Optimize without beeing authorized, I get a notifiaction that it was not possible to log you in. For instance like it is done with the user mary in the following:
+
+{{< figure class="main teaser no-border" src="Optimize-Login-Mary.png">}}
+
+To define authorization on Process Definitions you use again the authorization system from the Camunda Platform. Let's for example grant the user john access to the process definiton invoice in Camunda Admin:
+
+{{< figure class="main teaser no-border" src="Admin-Authorize-ProcessDefinition-Access.png">}}
+
+With this setting the user john can only access Optimize reports that are based on the Process Definition invoice. If john now accesses a dashboard where a report is added that john has no access to, he sees a message informing him about this fact, e.g. like in the following:
+
+{{< figure class="main teaser no-border" src="Optimize-Dashboard-Restricted-Reports.png">}}
+
+If you interested in more details, just read through the respective sections [User Access Management](https://docs.camunda.org/optimize/latest/technical-guide/user-management/) and [Authorization Management](https://docs.camunda.org/optimize/latest/technical-guide/authorization/) in the Optimize documentation.
 
 # External Reports
 
