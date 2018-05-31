@@ -110,15 +110,15 @@ Message correlation will start the new process instance, then the service task "
  client id and another data. After that, the database transaction will be committed (as the process has reached the waiting state), saving client id and other data in dedicated variables, 
  but `requestData` will cease to exist.
 
-More information on usage of transient variables can be found in [the docs](https://docs.camunda.org/manual/latest/user-guide/process-engine/variables/#transient-variables).
+More information on usage of transient variables can be found in [the docs](https://docs.camunda.org/manual/7.9/user-guide/process-engine/variables/#transient-variables).
 
 ## More BPMN Features
 
-Another super useful feature that Camunda now provides are [conditional start events](https://docs.camunda.org/manual/latest/reference/bpmn20/events/conditional-events/#conditional-start-event) and [sending a payload when throwing a signal](https://docs.camunda.org/manual/7.9/reference/bpmn20/events/signal-events/#passing-variables). 
+Another super useful feature that Camunda now provides are [conditional start events](https://docs.camunda.org/manual/7.9/reference/bpmn20/events/conditional-events/#conditional-start-event) and [sending a payload when throwing a signal](https://docs.camunda.org/manual/7.9/reference/bpmn20/events/signal-events/#passing-variables).
 
 ## Docker Container for Camunda BPM Platform Enterprise
 
-A Docker Container for Camunda BPM Platform Enterprise Edition is now available. Read more in the docs [here](https://stage.docs.camunda.org/manual/7.9/installation/docker/).
+A Docker Container for Camunda BPM Platform Enterprise Edition is now available. Read more in the docs [here](https://docs.camunda.org/manual/7.9/installation/docker/).
 
 ## New Features in Camunda Cockpit
 
