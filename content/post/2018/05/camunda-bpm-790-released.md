@@ -21,7 +21,7 @@ Camunda BPM platform 7.9.0 is now available, and the highlights are:
 
 In addition, Wildfly 11, JBoss EAP 7.1, Tomcat 9, and the database Maria DB 10.2 are now officially supported.
 
-You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
+You can [Download Camunda for free](https://camunda.com/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 We have also released the Camunda Spring Boot Starter 3.0.0, which relies on Spring Boot 2.0.0 by default.
 
