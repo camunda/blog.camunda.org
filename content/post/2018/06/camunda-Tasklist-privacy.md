@@ -1,7 +1,6 @@
 +++
 title = "Listen up, keep your privates private!"
-date = "2018-06-04T09:00:00+01:00"
-draft = true
+date = "2018-06-06T08:00:00+01:00"
 author = "Rob Parker"
 categories = ["Execution"]
 tags = ["Information Security", "Privacy"]
