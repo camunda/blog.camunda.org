@@ -2,7 +2,7 @@
 author = "Philipp Fromme"
 categories = ["Modeling"]
 tags = ["BPMN 2.0", "Tooling", "Release Note"]
-date = "2018-06-15T11:00:00+01:00"
+date = "2018-06-18T10:00:00+01:00"
 title = "Camunda Modeler 1.16.0 Released"
 +++
 
