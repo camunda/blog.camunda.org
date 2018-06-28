@@ -147,7 +147,7 @@ The same problem occurred also for variable values, since each variable can have
 
 # Much more
 
-There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15095) provide those details.
+There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15317) provide those details.
 
 ## How to get it
 
