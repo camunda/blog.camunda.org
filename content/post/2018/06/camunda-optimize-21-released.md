@@ -16,12 +16,12 @@ Version 2.1.0 is again packed with features. The highlights are:
 * Table improvements
 * Configure Access and Authorizations
 * New additional reports
-* Instpect your data in Cockpit
+* Inspect your data in Cockpit
 * Typeahead in variable filter
 
 <!--more-->
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15095) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15317) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
@@ -46,7 +46,7 @@ Please be aware that Optimize only imports the data that it can use for its anal
 * the history of the activity instances.
 * the history of the process instances.
 * the history of variables. Though here we only keep the latest version of the variable and only import primitive types.
-* the pocess definitions.
+* the process definitions.
 * the process definition xmls.
 
 
@@ -69,7 +69,7 @@ To test the performance of the new import, we took a data set consisting of the 
   </tr>
 </table>
 
-While the old import implementation took about 5 hours for the whole import process, the new version only take about 30 minutes to import all data to Camunda Optimize and with that became 8 times faster. 
+While the old import implementation took about 5 hours for the whole import process, the new version only take about 30 minutes to import all data to Camunda Optimize and with that became 8 times faster.
 
 # Table improvements
 
@@ -89,13 +89,13 @@ You can also re-arrange the order of columns by grabbing any column by the heade
 
 # Configure Access and Authorizations
 
-Before this release every user that was registered within the engine, could access Camunda Optimize. However, this behavior could lead to a situation where unauthorized people read sensitive data. To prevent this there are now two options: first you can restrict the access to Camunda Optimize and second you can define which Process Definitions users have access to. 
+Before this release every user that was registered within the engine, could access Camunda Optimize. However, this behavior could lead to a situation where unauthorized people read sensitive data. To prevent this there are now two options: first you can restrict the access to Camunda Optimize and second you can define which Process Definitions users have access to.
 
 The former can be achieved by creating an application authorization for Optimize. In Camunda Admin this could for example look like the following:
 
 {{< figure class="main teaser no-border" src="Admin-Authorize-Optimize-Access.png">}}
 
-By this configuration we allow the user John to login into Optimize. If now want to go to Optimize without beeing authorized, I get a notifiaction that it was not possible to log you in. For instance like it is done with the user mary in the following:
+By this configuration we allow the user John to login into Optimize. If now want to go to Optimize without being authorized, I get a notifiaction that it was not possible to log you in. For instance like it is done with the user mary in the following:
 
 {{< figure class="main teaser no-border" src="Optimize-Login-Mary.png">}}
 
@@ -137,7 +137,7 @@ As you can see the entries the process instance column are highligted. By clicki
 
 # Typeahead in variable filter
 
-One of the core features of Optimize are filters, that allow you to narrow down your view on the data to see only the information you are interested in. Especially, the variable filter is a core element there, because the variables additional that is not contained in the bpmn model itsself. Since Optimize is a big data application this also results in having a huge amount of variables. Picking one of those variables became in those cases a challenge, becuase you had to choose your variable from a dropdown menu. This problem is in the past. Now you have an input field, where you can search for the variables you are interested in and thus swiftly pick them:
+One of the core features of Optimize are filters, that allow you to narrow down your view on the data to see only the information you are interested in. Especially, the variable filter is a core element there, because the variables provide additional information that is not contained in the bpmn model itself. Since Optimize is a big data application this also results in having a huge amount of variables. Previously, all variable names were part of a dropdown, which could grow quite large when a process contains many variables. Now you have an input field, where you can search for the variables you are interested in and thus swiftly pick them:
 
 {{< figure class="main teaser no-border" src="Typeahead_VariableName.png">}}
 
