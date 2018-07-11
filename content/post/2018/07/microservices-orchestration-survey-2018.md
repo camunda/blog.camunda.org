@@ -24,6 +24,7 @@ The survey is open to anyone with interest in this topic! You don't need to be a
 After collecting responses, we'll publish a report summarizing the survey results. We'll only include aggregated data in this report–no individual response data.
 
 Here are a few other details:
+
 * The survey will remain open until July 30, 2018.
 * It's possible to respond to the survey anonymously if you'd like.
 * Almost all questions in the survey are optional, so you can skip questions you prefer not to answer.
