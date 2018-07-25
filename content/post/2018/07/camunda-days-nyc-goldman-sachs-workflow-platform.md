@@ -43,6 +43,6 @@ If you'd like an inside look at the process of rolling out and supporting workfl
 
 {{< figure src="goldman-sachs-title-slide.png" alt="Watch the Goldman Sachs workflow platform presentation" attr="Click here to watch the entire Goldman Sachs talk on Vimeo" attrlink="https://vimeo.com/279286243" >}}
 
-_Looking for more like this? Goldman Sachs will be presenting live at CamundaCon on September 20-21, 2018 in Berlin. [You can learn more and buy tickets here.](https://camunda.com/events/camundacon/)._
+_Goldman Sachs will be presenting live at CamundaCon on September 20-21, 2018 in Berlin. [You can learn more and buy tickets here.](https://camunda.com/events/camundacon/). Join us to learn how their platform has evolved over the summer and to ask their team questions in person._
 
 _Want to watch recordings of talks from all of our Camunda Days events around the world? [We've got you covered](https://vimeo.com/camunda). And we're hosting seven more Camunda Days events in 2018--[take a look at the schedule and sign up for the event near you](https://camunda.com/events/camundadays/)._
