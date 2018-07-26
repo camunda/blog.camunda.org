@@ -7,7 +7,7 @@ categories = ["Use Cases"]
 tags = ["platforms"]
 +++
 
-In June 2018, Camunda hosted a [Camunda Days](https://camunda.com/events/camundadays/) New York City event at the Galvanize space in SoHo, our second New York community event in the past 12 months. Members of the Camunda team from our Berlin, Denver, and San Francisco offices traveled to spend time with the local user and customer community and to share updates on Camunda's product lineup, from [Zeebe](zeebe.io) to [Optimize](https://camunda.com/products/optimize/).
+In June 2018, Camunda hosted a [Camunda Days](https://camunda.com/events/camundadays/) New York City event at the Galvanize space in SoHo, our second New York community event in the past 12 months. Members of the Camunda team from our Berlin, Denver, and San Francisco offices traveled to spend time with the local user and customer community and to share updates on Camunda's product lineup, from [Zeebe](https://zeebe.io) to [Optimize](https://camunda.com/products/optimize/).
 
 Headlining the event was an [in-depth presentation from Richard Tarling and Randall Graebner of Goldman Sachs](https://vimeo.com/279286243), who discussed how the firm has built widely-used internal platforms for both workflows and decisions.
 
@@ -43,6 +43,6 @@ If you'd like an inside look at the process of rolling out and supporting workfl
 
 {{< figure src="goldman-sachs-title-slide.png" alt="Watch the Goldman Sachs workflow platform presentation" attr="Click here to watch the entire Goldman Sachs talk on Vimeo" attrlink="https://vimeo.com/279286243" >}}
 
-_Goldman Sachs will be presenting live at CamundaCon on September 20-21, 2018 in Berlin. [You can learn more and buy tickets here.](https://camunda.com/events/camundacon/). Join us to learn how their platform has evolved over the summer and to ask their team questions in person._
+_Goldman Sachs will be presenting live at CamundaCon, which is happening on September 20-21, 2018 in Berlin. [You can learn more about the event and buy tickets here](https://camunda.com/events/camundacon/). Join us to see how their platform has evolved and to engage with their team (and the broader Camunda community) in person!_
 
-_Want to watch recordings of talks from all of our Camunda Days events around the world? [We've got you covered](https://vimeo.com/camunda). And we're hosting seven more Camunda Days events in 2018--[take a look at the schedule and sign up for the event near you](https://camunda.com/events/camundadays/)._
+_If you want to watch recordings of talks from all of our Camunda Days events around the world, [you can find them here](https://vimeo.com/camunda). And we're hosting seven more Camunda Days events in 2018. [Take a look at the schedule and sign up for the event near you](https://camunda.com/events/camundadays/)._
