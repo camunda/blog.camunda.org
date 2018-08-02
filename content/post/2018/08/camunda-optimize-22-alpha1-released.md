@@ -57,6 +57,14 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 // TODO: Sebastian
 
+## Show Percentage on Hover in Heatmap & Charts
+
+// TODO: Sebastian
+
+## Toggle badge overlay with all actual values in Heatmap
+
+// TODO: Sebastian
+
 ## See where you drop your report in the dashboard
 
 // TODO: Sebastian
