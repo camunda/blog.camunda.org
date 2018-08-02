@@ -41,7 +41,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 // TODO: Johannes
 
-# Search trough report/dashboard lists
+# UI/UX improvements
 
 // TODO: Omran -> write short summary
 
