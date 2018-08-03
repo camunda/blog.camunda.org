@@ -52,13 +52,19 @@ As you can see, Optimize is fetching all variables including the complex ones. L
 
 # UI/UX improvements
 
-// TODO: Omran -> write short summary
+In this release, since there are many new features that got added to Camunda Optimize, It was necessary to organize all the new options in a ways to allow easy selection. To achieve that, a new menu selection for the report control panel is implemented. The new menu selection is designed to group existing features that are similar to submenus. This makes existing menus much simpler and easier to choose from.
 
-## Search trough report/dashboard lists
+Another important feature is the added search box in the dashboard and report list. Now it is much easier to find a report by just typing any part of the report name in the search box. Moreover, searchable selection menus were introduced to makes it easy to select from a long lists of entries. It is used in a number of places throughout the application especially in places where selecting from a list of variables is needed.
 
-// TODO: Omran
+Dashboards also got some UI/UX improvements. For example, when moving a dashboard from one place to another, the dashboard snaps to a grid. It also shows feedback to the user when the placement is not possible due to an overlapping with another report.
 
-## Search trough number reports during the alert definition
+## Search through report/dashboard lists
+
+Before this release, finding a report/dashboard was only possible by scrolling through the list. This is not very efficient especially if there are a large number of entries in the list. To solve that, a new search input box is added to the dashboard/report list where users can just type the name of the report/dashboard. Doing that will automatically filter the list to show the reports that only matches what was typed into the search box. The search is case insensitive and can match any part of the report/dashboard name.
+The following figure illustrates the added feature:
+{{< figure class="main teaser no-border" src="list-search-feature.gif">}}
+
+## Search through number reports during the alert definition
 
 // TODO: Sebastian
 
