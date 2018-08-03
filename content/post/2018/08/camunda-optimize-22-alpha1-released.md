@@ -33,6 +33,12 @@ With the old version of Optimize it was already possible to get the average dura
 
 But that not the end of the story. The new operations can not only be applied on the process instance duration, but also on the flow node duration. This gives you even more flexibility to find outliers and make your reports more robost against outliers on a flow node level.
 
+# Bar chart goal line
+
+It is possible now to set a goal line on bar charts in Optimize. This is useful to highlight the bars above or below a certain value. For example, supposing that the number of completed process instances every month should always be above 10. This can be done by setting the target value in the bar chart view to 10. Now if the number of process instances is below 10 in any month, that month will be highlighted in red as shown.
+{{< figure class="main teaser no-border" src="bargoal.png">}}
+This feature can be also used with every other bar chart visualization.
+
 # New filters
 
 // TODO: Kyrylo -> write short summary
