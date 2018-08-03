@@ -10,10 +10,7 @@ We are happy to announce the release of Camunda Optimize version 2.2.0-alpha1.
 
 This release marks the first alpha release of Camunda Optimize 2.2.0. Although it is just an alpha release, it is already packed with new brilliant features. The release allows to group process instance frequencies and durations by variable. Also you can perform additional operations like minimum, maximum and median on duration reports. Narrow down your view on the data even further by using the new `canceled process instance only` or `non-executed flow node` filter. Use Optimize to see even faster when certain targets (e.g. KPI's or SLA's) were not met by using the the new goal line in the bar chart. The new version contains not only improvements in the report builder - now you have advanced possibilities regarding the import of complex process variables. Also the UI/UX of Optimize got some improvements, e.g. finding your desried report or dashboard is now a piece of cake, since you can just filter for the name you are looking for.
 
-<!--more-->
-
-// TODO: add jira release
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15313) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15328) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
@@ -41,11 +38,13 @@ This feature can be also used with every other bar chart visualization.
 
 # New filters
 
-// TODO: Kyrylo -> write short summary
+In order to give you the possibility to create even more specific and precise reports, with the newest Camunda Optimize version we introduce new filters: `cancelled instances only` filter and the extension for the `executed flow nodes` filter, which was present in previous releases as well, but now you can also filter by flow nodes which were not executed during the process.
 
 ## Filter by canceled process instances
 
-// TODO: Kyrylo
+In the `Add Filter` dropdown you can now select a `Canceled Instances Only` Filter. Reports with this filter applied will only evaluate data from the process instances, that were terminated (canceled) during the execution.
+
+{{<figure src="canceled-processes-filter.png" class="main teaser no-border">}}
 
 ## Filter by non-executed flow nodes
 
