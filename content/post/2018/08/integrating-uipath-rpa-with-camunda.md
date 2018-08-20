@@ -63,7 +63,7 @@ Camunda is responsible for orchestrating the end-to-end process, possibly includ
 
 {{< figure src="process-more-features.png" alt="Extending the workflow to include RPA error handling" >}}
 
-If you are interested in seeing the showcase in action, you are invited to [check out my screencast](#), where I do a live demo and show all components in more detail.
+If you are interested in seeing the showcase in action, you are invited to [check out my screencast](https://vimeo.com/285802324), where I do a live demo and show all components in more detail.
 
 Also, I plan on trying out a couple of other RPA products with a similar scenario, so stay tuned for future follow-up posts!
 
