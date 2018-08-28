@@ -13,7 +13,7 @@ The second alpha release of **Camunda BPM 7.10** is here and the highlights are:
 * Notable security fixes
 * Start process list changes in Tasklist
 * Modify single process asynchronously
-* More supported enviorments - PostgreSQL 10.4 and MariaDB 10.3
+* More supported environments - PostgreSQL 10.4 and MariaDB 10.3
 * [18 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha2)
 
 <!--more-->
