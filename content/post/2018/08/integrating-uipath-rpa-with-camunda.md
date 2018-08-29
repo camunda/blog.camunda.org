@@ -11,7 +11,7 @@ Having read [Mike's post](https://blog.camunda.com/post/2018/05/combining-bpm-rp
 
 ## Scenario
 
-The example can be applied to any scenario where you need to replace manual work (the User Task in BPMN) with an automated task and where an external system--often a legacy graphical user interface--does not provide an API that can be called directly from Camunda. So instead of making a service call to the external system, you would call the RPA tool's API, let the software "robot" execute the task, then wait for a callback from the RPA tool that triggers the progression of the end-to-end workflow.
+The example can be applied to any scenario where you need to replace manual work (the User Task in BPMN) with an automated task and where an external system -- often a legacy graphical user interface -- does not provide an API that can be called directly from Camunda. So instead of making a service call to the external system, you would call the RPA tool's API, let the software "robot" execute the task, then wait for a callback from the RPA tool that triggers the progression of the end-to-end workflow.
 
 You could also think of a use case where multiple RPA flows, possibly even managed by different RPA tools, need to be composed to form an end-to-end process. Camunda BPM can serve as the central orchestration engine here. Camunda BPM would also provide a significant benefit by giving visibility into the overall process as well as by generating runtime-related and historical monitoring data that can be subject to further analysis, using a tool such as [Camunda Optimize](https://camunda.com/products/optimize/).
 
