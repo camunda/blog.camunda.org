@@ -13,7 +13,7 @@ We are happy to announce the Camunda Modeler 2.0 release. The new Modeler ships 
 
 {{< figure class="teaser no-border" src="boundary-events.png" alt="Model Boundary Event and activity loops" caption="Model Boundary Event and Activity loops" >}}
 
-The improved BPMN editor allows you model Boundary Event to Activity loops and Activity self-referencing loops in a convenient manner. Additional BPMN editor improvements improvements include, among others, a reworked minimap and better message flow layouting. Checkout the [BPMN changelog](#bpmn) for all noteworthy improvements.
+The improved BPMN editor allows you model to Boundary Event to Activity loops and Activity self-referencing loops in a convenient manner. Additional BPMN editor improvements include, among others, a reworked minimap and better message flow layout. Check out the [BPMN changelog](#bpmn) for all noteworthy improvements.
 
 [Download the Camunda Modeler](https://camunda.com/download/modeler/) and start modeling right away.
 
@@ -24,18 +24,18 @@ A new properties panel for DMN allows you to inspect and edit technical properti
 
 {{< figure class="teaser no-border" src="dmn-properties-panel.png" alt="Inspect and edit DMN technical properties using the properties panel" caption="Inspect and edit DMN technical properties" >}}
 
-The panel is available for all editors (DRD, Decision Table and Literal Expression) and may be toggled open / closed via the menu or a keyboard shortcut.
+The panel is available for all editors (DRD, Decision Table, and Literal Expression) and may be toggled open / closed via the menu or a keyboard shortcut.
 
 Using the panel you may edit the name and ID property of DRD and decision elements as well as [Camunda extensions](https://docs.camunda.org/manual/7.9/reference/dmn11/custom-extensions/camunda-attributes/) such as `camunda:versionTag`. As seen in the screenshot above we dropped the DRD editing overlay. Edit the properties using the properties panel from now on.
 
 
 ## Signing, Installers and More
 
-Starting with this release the Camunda Modeler ships with signed executables for both MacOS and Windows. This makes it possible to run the application without hazzles, even in locked down, corporate environments.
+Starting with this release the Camunda Modeler ships with signed executables for both MacOS and Windows. This makes it running the application hassle-free, even in locked down, corporate environments.
 
-In the future we will provide native installers that make installing and updating the application easier. As a preparation we dropped the automatic in-app file association wiring on Windows.
+In the future we will provide native installers that make installing and updating the application easier. In preparation, we dropped the automatic in-app file association wiring on Windows.
 
-File associations that previously wired automatically on Windows must now be wired explicitly using scripts provided in the `support` directory. Checkout the [updated installation documentation](https://docs.camunda.org/manual/latest/installation/camunda-modeler/) to learn more.
+File associations that previously were wired automatically on Windows must now be wired explicitly using scripts provided in the `support` directory. Check out the [updated installation documentation](https://docs.camunda.org/manual/latest/installation/camunda-modeler/) to learn more.
 
 
 ## Full Changelog
@@ -54,7 +54,7 @@ Have a look at the following sections for the full list of changes.
 
 #### DMN
 
-* `FEAT`: add DMN properties panel, avaliable for all DMN editors ([#847](https://github.com/camunda/camunda-modeler/issues/847))
+* `FEAT`: add DMN properties panel, available for all DMN editors ([#847](https://github.com/camunda/camunda-modeler/issues/847))
 * `FEAT`: add ability to edit `camunda:historyTimeToLive` on `dmn:Decision` elements ([#581](https://github.com/camunda/camunda-modeler/issues/581))
 * `FEAT`: add ability to edit `camunda:versionTag` on `dmn:Decision` elements ([#802](https://github.com/camunda/camunda-modeler/issues/802))
 * `CHORE`: drop `dmn:Definitions` `name` and `id` editing from DRD editor; you may edit these properties via the DMN properties panel ([`653eb607`](https://github.com/camunda/camunda-modeler/commits/653eb607183c6cf0457b8023a2d61cf8343da7fb))
@@ -79,4 +79,4 @@ This release ships important updates to improve BPMN and DMN editing as well as 
 
 Do you miss anything? Did you spot a bug or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.camunda.org/c/modeler) or tweet us [@Camunda](https://twitter.com/Camunda).
 
-Stay tuned for bigger under the hood improvements that touch the editor core to improve navigation, performance and ease of use.
+Stay tuned for bigger under the hood improvements that touch the editor core to improve navigation, performance, and ease of use.
