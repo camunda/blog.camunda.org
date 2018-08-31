@@ -7,11 +7,11 @@ categories = ["Modeling"]
 tags = ["forms"]
 +++
 
-_Tl;dr_ _We just released a [new Camunda Modeler plugin](https://github.com/camunda-consulting/code/tree/master/snippets/camunda-modeler-plugins/camunda-modeler-plugin-usertask-generatedform-preview) that makes it possible to preview task forms and to automatically generate HTML for [embedded task forms](https://docs.camunda.org/manual/7.9/user-guide/task-forms/#embedded-task-forms)--all without leaving the Camunda Modeler. The plugin makes it much faster and easier to do form prototyping at the beginning of a project and then get up and running with an embedded task form._
+_Tl;dr_ _We just released a [new Camunda Modeler plugin](https://github.com/camunda-consulting/code/tree/master/snippets/camunda-modeler-plugins/camunda-modeler-plugin-usertask-generatedform-preview) that makes it possible to preview task forms and to automatically generate HTML for [embedded task forms](https://docs.camunda.org/manual/user-guide/task-forms/#embedded-task-forms)--all without leaving the Camunda Modeler. The plugin makes it much faster and easier to do form prototyping at the beginning of a project and then get up and running with an embedded task form._
 
-While some workflow automation use cases can be solved with "straight-through processing"--that is, a process where all tasks are completed by software systems and with no manual intervention--we human beings still have an important role to play in many scenarios. For reasons ranging from regulatory compliance to quality assurance, BPMN's [user task](https://docs.camunda.org/manual/7.9/reference/bpmn20/tasks/user-task/) is frequently a part of process models.
+While some workflow automation use cases can be solved with "straight-through processing"--that is, a process where all tasks are completed by software systems and with no manual intervention--we human beings still have an important role to play in many scenarios. For reasons ranging from regulatory compliance to quality assurance, BPMN's [user task](https://docs.camunda.org/manual/reference/bpmn20/tasks/user-task/) is frequently a part of process models.
 
-And user tasks almost always connect to a [form](https://docs.camunda.org/manual/7.9/reference/bpmn20/tasks/user-task/#forms) that needs to be submitted by the human who's responsible for completing the task. There are a couple different ways to work with forms in Camunda, and a little more than half of our user base chooses to build their own [external form UI](https://docs.camunda.org/manual/7.9/user-guide/task-forms/#external-task-forms) then send form data back to the process engine via our REST or Java APIs.
+And user tasks almost always connect to a [form](https://docs.camunda.org/manual/reference/bpmn20/tasks/user-task/#forms) that needs to be submitted by the human who's responsible for completing the task. There are a couple different ways to work with forms in Camunda, and a little more than half of our user base chooses to build their own form UI then send form data back to the process engine via our [REST](https://docs.camunda.org/manual/reference/rest/task/) or Java APIs. Few months back we also published a blogpost on how to build your [own custom tasklist](https://blog.camunda.com/post/2018/02/custom-tasklist-examples/).
 
 ## Camunda Tasklist: A Ready-To-Use Web UI For User Tasks
 
@@ -21,7 +21,7 @@ The rest of users, though, take advantage of [Camunda Tasklist](https://camunda.
 
 The way Tasklist works is pretty simple: during process execution, the Camunda Engine will create tasks based on a predefined BPMN model. The engine assigns those tasks to end users as defined in the model. When end users click on a task in Tasklist, they'll see a task form that displays information and asks them to enter data. After they've finished working on the task form, they complete it by clicking on a button prompting the Camunda Engine to continue model execution.
 
-There are two different types of forms that Tasklist users can implement for a user task where the form is part of the Camunda Tasklist (rather than part of an external application): [generated task forms](https://docs.camunda.org/manual/7.9/user-guide/task-forms/#generated-task-forms) and [embedded task forms](https://docs.camunda.org/manual/7.9/user-guide/task-forms/#embedded-task-forms). Let's quickly review both of these form types.
+There are two different types of forms that Tasklist users can implement for a user task where the form is part of the Camunda Tasklist (rather than part of an external application): [generated task forms](https://docs.camunda.org/manual/user-guide/task-forms/#generated-task-forms) and [embedded task forms](https://docs.camunda.org/manual/user-guide/task-forms/#embedded-task-forms). Let's quickly review both of these form types.
 
 ### Generated task forms: fast, but not so flexible
 
@@ -35,9 +35,9 @@ That's where the embedded task form comes in.
 
 ### Embedded task forms: anything you want--you just have to build it
 
-Embedded task forms are HTML and JavaScript forms that are displayed directly within Tasklist. An embedded task form is simply an HTML file that you embed in your Camunda project, and it gives you much more flexibility regarding what your form looks like and the types of fields it supports. Our [embedded forms reference](https://docs.camunda.org/manual/7.9/reference/embedded-forms/) in the docs goes into more detail on how to build embedded forms.
+Embedded task forms are HTML and JavaScript forms that are displayed directly within Tasklist. An embedded task form is simply an HTML file that you embed in your Camunda project, and it gives you much more flexibility regarding what your form looks like and the types of fields it supports. Our [embedded forms reference](https://docs.camunda.org/manual/reference/embedded-forms/) in the docs goes into more detail on how to build embedded forms.
 
-One thing about embedded forms is that you have to more or less build them from scratch. Every [Camunda project archetype](https://docs.camunda.org/manual/7.9/user-guide/process-applications/maven-archetypes/) includes a couple of sample form HTML files, but these are simple reference forms that are much more basic than what's required in most real-world use cases. Building an embedded task form is relatively hands-on and labor-intensive for a user, especially when compared to generated task forms.
+One thing about embedded forms is that you have to more or less build them from scratch. Every [Camunda project archetype](https://docs.camunda.org/manual/user-guide/process-applications/maven-archetypes/) includes a couple of sample form HTML files, but these are simple reference forms that are much more basic than what's required in most real-world use cases. Building an embedded task form is relatively hands-on and labor-intensive for a user, especially when compared to generated task forms.
 
 What if we could combine the ease-of-use of generated task forms with the flexibility of embedded task forms? Sounds like a pretty nice idea! And that's why today we're excited to share…
 
