@@ -71,7 +71,10 @@ In the "Filter by Flownodes" modal dialog, there is a new button that allows you
 
 ## End date filter
 
-// TODO: Kyrylo
+In the newest version of Camunda Optimize, you can filter process instances by the end date.
+Report will only show instances that ended within the defined range of time, if you apply this filter.
+It is also possible to apply an end date filter in a rolling fashion, this works similar to the rolling start date filter, that was present in previous versions of optimize as well, – the defined range will change as the time goes. You can also apply the start date and the end date filters together.
+{{< figure class="End date filter" src="optimize-end-date-filter.png">}}
 
 # Night-time mode
 
