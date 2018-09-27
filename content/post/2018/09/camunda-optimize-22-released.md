@@ -12,16 +12,16 @@ Optimize is an add-on to Camunda that provides continuous monitoring and insight
 
 Version 2.2.0 is again packed with features. The highlights are:
 
-* Group by Variable
-* New durations operations
-* Combining reports
-* Process Parts
-* New filters
-* Night-time mode
-* UI/UX improvements
-* Define goal lines
-* Import complex variables
-* Secure Elasticsearch
+- Group by Variable
+- New durations operations
+- Combining reports
+- Process Parts
+- New filters
+- Night-time mode
+- UI/UX improvements
+- Define goal lines
+- Import complex variables
+- Secure Elasticsearch
 
 <!--more-->
 
@@ -48,7 +48,7 @@ But that not the end of the story. The new operations can not only be applied on
 
 # Combining reports
 
-Creating reports in Optimize is already a very powerful feature. You can monitor and analyze your business process data with it. The more reports you create the more you also want to compare the results to add context to the reports, because isolated data is less useful and might be hard to interpret. Therefore, the new release offers a new feature to combine reports to show data side-by-side with other data. 
+Creating reports in Optimize is already a very powerful feature. You can monitor and analyze your business process data with it. The more reports you create the more you also want to compare the results to add context to the reports, because isolated data is less useful and might be hard to interpret. Therefore, the new release offers a new feature to combine reports to show data side-by-side with other data.
 
 To illustrate this new feature, let's take an example: let's assume we track the sales leads that are coming in. Now we don't want to see all the leads coming in, but compare them based on the region they are coming from to see how good we are performing there. An example diagram could then look like the following:
 
@@ -56,7 +56,9 @@ To illustrate this new feature, let's take an example: let's assume we track the
 
 # Process Parts
 
-// TODO: Sebastian
+Sometimes you are not interested in the duration of the whole process instance, but only a certain part of it. Let's say you have a process for your lead qualification. While this process may include all steps from the lead arriving to the final classification, you might be interested in the time it took between the research of a lead and the discovery call. For such scenarios, you can now define Process Instance Parts. When specifying a process part, the process instance duration report now refers to the selected part only instead of the whole instance.
+
+{{< figure class="main teaser no-border" src="process-part.png">}}
 
 # New filters
 
@@ -88,7 +90,6 @@ One of the key features that Optimize provides is the monitoring of the data. Yo
 However, during the night a bright screen can be really painful to look at after a while. To mitigate this problem, the new release of Optimize allows to toggle the theme in the fullscreen dashboard mode, such that everything becomes dark. That makes watching the Optimize dashboard even during the night time a pleasent experience. In the following you can see an example dark mode version of the dashboard:
 
 {{< figure class="main teaser no-border" src="nighttime-mode.png">}}
-
 
 # UI/UX improvements
 
@@ -162,7 +163,7 @@ When using Optimize, we often need bpmn diagrams, e.g. to display the model, to 
 
 ## See process instance count
 
-// TODO: Sebastian
+When defining a report, you often use filters to get exactly the process instances you are interested in. Previously, there was no indication about how many process instances are in the defined filter for the selected process definition. With this release, the information how many instances are in the current filter is displayed in the report control panel right next to the filter itself.
 
 # Define goal lines
 
