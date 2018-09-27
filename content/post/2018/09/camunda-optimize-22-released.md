@@ -166,17 +166,18 @@ When using Optimize, we often need bpmn diagrams, e.g. to display the model, to 
 
 # Define goal lines
 
-// TODO: write a short introduction to that paragraph. Maybe shortly mention the use-case (Omran)
+In some use cases, The visualized data follow an expected pattern and the user is not interested in seeing it repeat over and over again; rather, it is more important to detect any outliers or problems that occur through the pattern. To achieve that Optimize allows you to set a goal line in any bar chart and area chart reports. Setting a goal line, highlights in red parts of visualization that is below or above a certain value. This is usefull for example, to detect if a certain activity suddently taking hours instead of minutes to finish or if the monthly sales dropped below or crossed a certain value.
 
 ## Bar chart goal line
 
-It is possible now to set a goal line on bar charts in Optimize. This is useful to highlight the bars above or below a certain value. For example, supposing that the number of completed process instances every month should always be above 10. This can be done by setting the target value in the bar chart view to 10. Now if the number of process instances is below 10 in any month, that month will be highlighted in red as shown.
+It is possible to set a goal line on bar chart reports to highlight the bars above or below a certain value. For example, supposing that the number of completed process instances every month should always be above 10. This can be done by setting the target value in the bar chart view to 10. Now if the number of process instances is below 10 in any month, that month will be highlighted in red as shown.
 {{< figure class="main teaser no-border" src="bargoal.png">}}
-This feature can be also used with every other bar chart visualization.
 
 ## Area chart goal line
 
-// TODO: Omran
+It is also possible to set a goal line on area chart reports. The feature works exactly like Bar chart goal line. However, instead of highlighting the bar chart bars, It highlights the parts of the line that is below or above a certain value as shown in the chart below:
+
+{{< figure class="main teaser no-border" src="lineGoal.png">}}
 
 # Import complex variables
 
