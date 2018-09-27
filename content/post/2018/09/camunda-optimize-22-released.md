@@ -25,8 +25,7 @@ Version 2.2.0 is again packed with features. The highlights are:
 
 <!--more-->
 
-// TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! (Johannes)
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15317) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15338) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
@@ -190,14 +189,11 @@ As you can see, Optimize is fetching all variables including the complex ones. L
 
 # Secure Elasticsearch
 
-// TODO: change link to docs to latest when it is released (Johannes)
-
-The Camunda Platform collects a lot of sensitive. To protect the database and the information it contains from compromise you can secure the database. Now Optimize is importing this sensitive data to Elasticsearch and so far it was not possible to use Optimize with a secured Elasticsearch version. This changes with the new 2.2 release. Add elastics X-Pack feature to your Elasticsearch instance to restrain the access to the instance and encrypt the communication. Read more about how to do that in the documentation about [Secure Elasticsearch](https://docs.camunda.org/optimize/develop/technical-guide/secure-elasticsearch/).
+The Camunda Platform collects a lot of sensitive. To protect the database and the information it contains from compromise you can secure the database. Now Optimize is importing this sensitive data to Elasticsearch and so far it was not possible to use Optimize with a secured Elasticsearch version. This changes with the new 2.2 release. Add elastics X-Pack feature to your Elasticsearch instance to restrain the access to the instance and encrypt the communication. Read more about how to do that in the documentation about [Secure Elasticsearch](https://docs.camunda.org/optimize/latest/technical-guide/secure-elasticsearch/).
 
 # Much more
 
-// TODO:!!!!!!!!!!!!!!!!!!!!!!!! (Johannes)
-There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15317) provide those details.
+There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15338) provide those details.
 
 ## How to get it
 
