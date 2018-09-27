@@ -48,7 +48,11 @@ But that not the end of the story. The new operations can not only be applied on
 
 # Combining reports
 
-// TODO: Johannes
+Creating reports in Optimize is already a very powerful feature. You can monitor and analyze your business process data with it. The more reports you create the more you also want to compare the results to add context to the reports, because isolated data is less useful and might be hard to interpret. Therefore, the new release offers a new feature to combine reports to show data side-by-side with other data. 
+
+To illustrate this new feature, let's take an example: let's assume we track the sales leads that are coming in. Now we don't want to see all the leads coming in, but compare them based on the region they are coming from to see how good we are performing there. An example diagram could then look like the following:
+
+{{<figure src="sales-leads.png" class="main teaser no-border">}}
 
 # Process Parts
 
