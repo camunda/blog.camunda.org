@@ -21,6 +21,7 @@ Version 2.2.0 is again packed with features. The highlights are:
 * UI/UX improvements
 * Define goal lines
 * Import complex variables
+* Secure Elasticsearch
 
 <!--more-->
 
@@ -180,6 +181,12 @@ Filtering for variables or grouping by variables are powerful tools to analyse y
 {{< figure class="main teaser no-border" src="map-complex-variables-to-primitives.png">}}
 
 As you can see, Optimize is fetching all variables including the complex ones. Later on it is filtering out the complex variables and only stores the primitive variables into Optimize. Bad news is, that Optimize does not store the complex variables directly, but on the bright side gives you the power to write your own variable adpation plugin to map data of complex to primitives variables and then those new variables are imported to Elasticsearch.
+
+# Secure Elasticsearch
+
+// TODO: change link to docs to latest when it is released (Johannes)
+
+The Camunda Platform collects a lot of sensitive. To protect the database and the information it contains from compromise you can secure the database. Now Optimize is importing this sensitive data to Elasticsearch and so far it was not possible to use Optimize with a secured Elasticsearch version. This changes with the new 2.2 release. Add elastics X-Pack feature to your Elasticsearch instance to restrain the access to the instance and encrypt the communication. Read more about how to do that in the documentation about [Secure Elasticsearch](https://docs.camunda.org/optimize/develop/technical-guide/secure-elasticsearch/).
 
 # Much more
 
