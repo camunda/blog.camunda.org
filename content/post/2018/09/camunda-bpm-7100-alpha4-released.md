@@ -10,7 +10,7 @@ title = "Camunda 7.10.0-alpha4 Released"
 
 * Extending the BPMN Viewer in Cockpit
 * Support for Java 9 / 10 & 11
-* [17 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha4)
+* [18 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha4)
 
 
 You can <a href="https://camunda.com/download/">Download Camunda for free</a> (click on Preview Release) or <a href="https://hub.docker.com/r/camunda/camunda-bpm-platform/">Run it with Docker</a>.
