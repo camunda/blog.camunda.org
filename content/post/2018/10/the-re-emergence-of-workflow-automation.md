@@ -6,36 +6,42 @@ tags = ["Camunda", "Workflow"]
 title = "The (Re-)Emergence of Workflow Automation"
 +++
 
+This is the blog post version of the keynote I gave at CamundaCon 2018. It consists of these basic statements: 
+
 * We’re all turning into technology companies.
 * Digital Transformation relies on Business Process Automation (BPA).
 * BPA is a technology puzzle that suits <u>your</u> business.
 * Workflow automation is always one piece of that puzzle.
 
+I am going to explain these statements, and how I see Camunda contributing to this general development. 
+
 # We’re all turning into technology companies
 
-Two weeks ago, the news broke that Germany’s 2nd largest bank, Commerzbank, founded 150 years ago, is not a blue chip anymore. Commerzbank was bumped out of the DAX 30 Index by a fintech company that was founded about 15 years ago. Commerzbank CEO Martin Zielke wants to "push ahead with the transformation into a digital enterprise."
+In early September, [the news broke](https://www.ft.com/content/2d32b806-b150-11e8-8d14-6f049d06439c) that Germany’s 2nd largest bank, Commerzbank, founded 150 years ago, is not a blue chip anymore. Commerzbank was bumped out of the DAX 30 Index by a fintech company that was founded about 15 years ago. Commerzbank CEO Martin Zielke wants to "push ahead with the transformation into a digital enterprise."
 
-For 7 years, Germany's biggest discount grocer Lidl tried to introduce SAP to replace their homegrown core system, spending more than 500 million EUR for customization before eventually cancelling the whole project in July this year. Now they intend to further develop their homegrown system.
+For 7 years, Germany's biggest discount grocer Lidl tried to introduce SAP to replace their homegrown core system, spending more than 500 million EUR for customization before eventually [cancelling the whole project](https://global.handelsblatt.com/companies/lidl-software-flop-germany-digital-failure-950223) in July this year. Now they intend to further develop their homegrown system.
 
-In late August, the Volkswagen CEO gave an interview stating that his company needs to build up extensive software development skills as soon as possible, most likely by acquiring software companies. He sees this digital transformation as mandatory in order to survive.
+In late August, the Volkswagen CEO [gave an interview](http://www.spiegel.de/wirtschaft/unternehmen/volkswagen-chef-herbert-diess-erwaegt-zukaeufe-von-software-firmen-a-1224408.html) stating that his company needs to build up extensive software development skills as soon as possible, most likely by acquiring software companies. He sees this digital transformation as mandatory in order to survive.
 
-So, what's happening?
+There is a pattern.
 
 <!--more-->
 
-In June, Microsoft announced their acquisition of GitHub for $7.5 billion dollars. In case you're not familiar with GitHub, I personally like to call it Facebook for software developers. It's a place where developers can share and contribute to open source projects. So why would Microsoft spend $7.5 billion on such a thing? The answer is in their press release.
+In June, Microsoft announced their acquisition of GitHub for $7.5 billion dollars. In case you're not familiar with GitHub, I personally like to call it Facebook for software developers. It's a place where developers can share and contribute to open source projects. So why would Microsoft spend $7.5 billion on such a thing? The answer is in their [press release](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/):
 
-That's why. My first message for today is: No matter if you’re a bank, or a retailer, or a car manufacturer, you will turn into a tech company.
+"Today, every company is becoming a software company and developers are at the center of digital transformation; they drive business processes and functions across organizations from customer service and HR to marketing and IT. And the choices these developers make will increasingly determine value creation and growth across every industry."
 
-And I don’t simply mean that tech becomes more important, or companies will spend lots of money on buying technology. I mean that all of those banks, retailers, and automotive companies will be <i>creating</i> technology - software technology. That’s what’s happening.  
+That's why. No matter if you’re a bank, or a retailer, or a car manufacturer, you will turn into a tech company.
+
+And I don’t simply mean that tech becomes more important, or companies will spend lots of money on buying technology. I mean that all those banks, retailers, and automotive companies will be <i>creating</i> technology - software technology.  
 
 # Digital Transformation relies on Business Process Automation (BPA)
 
 I often discuss this development with senior managers, all the way up to the C-level. More and more often, those C-level executives have new titles, like Chief Digital Officer (CDO).
 
-According to Wikipedia, a CDO's mission is to convert a traditional analog business to a digital one, in essence a "digital transformation". In reality, however, it’s a bit more nuanced. Let me explain.
+[According to Wikipedia](https://en.wikipedia.org/wiki/Chief_digital_officer), a CDO's mission is to convert a traditional analog business to a digital one, in essence a "digital transformation". In reality, however, it’s a bit more nuanced. Let me explain.
 
-A German newspaper recently wrote that senior executives in insurance companies--the executives who drive digital transformation--essentially say, "Amazon.com is our benchmark in terms of customer experience". And I can confirm this. I've heard that very often myself. In fact, there is an entire study that confirms it: the "World Insurance Report" recently published by Capgemini. It’s the customer experience that insurance companies need to catch up with, especially since the large tech companies like Amazon and Google are more and more likely to enter the market soon.
+A German newspaper [recently wrote](https://www.sueddeutsche.de/wirtschaft/digitalisierung-versichertvon-amazon-1.3747260) that senior executives in insurance companies--the executives who drive digital transformation--essentially say, "Amazon.com is our benchmark in terms of customer experience". And I can confirm this. I've heard that very often myself. In fact, there is an entire study that confirms it: the [World Insurance Report](https://www.worldinsurancereport.com/) recently published by Capgemini. As their [infographic highlights](https://www.worldinsurancereport.com/sites/all/themes/wir_theme/frontend/dist/images/other/infograph.jpg), it's the customer experience that insurance companies need to catch up with, especially since the large tech companies like Amazon and Google are more and more likely to enter the market soon.
 
 So, all right, there's a nice, fancy study, and we need to improve the customer experience. But how can we actually do it? Let’s look at just [one example I recently learned about](https://twitter.com/jakobfreund/status/988443242751582209) from ING Bank when I attended the Apache Kafka Summit in London. So, when ING customers travel to other countries, they'll want to use "international payment services" that sometimes requires a dedicated activation. It's not acceptable to handle this activation in a batch processing fashion, because this means it might take as long as a day or so.
 
@@ -100,3 +106,29 @@ Sounds like a plan, right? Sure, that was a bit simplified and it's a quite ambi
 So, in summary, you must understand you won’t master digital transformation by introducing any particular product, because business process automation done right always means you’re looking at a bespoke puzzle of technologies that fit together and make sense for your business today. And in order for it to make sense tomorrow, it’s mandatory that this puzzle will always be evolving and changing, not every 10 years but every 10 months.
 
 # Workflow automation is always one piece of that puzzle
+
+As you see, workflow automation can play a crucial rule in very different approaches to process automation, all the way from RPA to microservices. Given the immense diversity of [use cases we're seeing with our customers](https://camunda.com/case-studies/), it looks like workflow automation is (almost) always a central pillar for <i>any</i> automation technology stack, and I think there is a good explanation for that.  
+
+If you don't know it yet, I strongly recommend Harari's book [Homo Deus](https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow), basically a prediction of potential developments in the 21st century. Harari states that "The 21st century will be dominated by algorithms. ‘Algorithm’ is arguably the single most important concept in our world.”
+
+He continues to give a few examples for algorithms, from simple calculations over cooking recipes to beverage vending machines. Interestingly, you can express all those examples in [BPMN](https://camunda.com/bpmn/). 
+
+And when I am thinking about the business processes that are being automated with Camunda, I actually realize that they are simply the algorithms that our customers use to execute their business models. 
+
+{{<figure src="bpmn-algorithms.png" >}}
+
+BPMN is perfectly well suited to express almost any aspect of a (structured) business process in a way that makes it technically executable, while providing a direct visualization that is understandable by just anyone. By feeding the model into a [workflow engine](https://camunda.com/products/bpmn-engine/) that executes it directly, we're generating real-time data that can be observed by business stakeholders and used for further improvement. 
+
+{{<figure src="model-execute-improve.png" >}}
+
+This is an extremely powerful concept, and provided your workflow automation technology is lightweight, open and flexible, you can apply it to almost any business process automation initiative. You can integrate it with an event bus and communicate with microservices via publish/subscribe (while treating the workflow engine as a microservice itself!), you can use traditional request/response to orchestrate API endpoints, you can integrate it with RPA to involve legacy applications and you can provide an end user frontend for human task orchestration. All of this not only in the same workflow engine, but actually in the <i>same workflow</i>, which -for example- can help you to transition smoothly from a legacy application to a modern architecture. 
+
+{{<figure src="workflow-stack.png" >}}
+
+# Camunda's Contribution
+
+Unlike RPA or process mining, workflow automation is not a hype topic. It's pretty clear however that workflow automation is not always visible, but always present when it comes to  automation initiatives - it's basically the backbone for almost any digital transformation. 
+
+At Camunda, we're working hard to provide the [best possible technology stack for workflow automation](https://camunda.com/products/). We would love to see any significant business process automation project in any organization being powered by Camunda technology, and it looks like we're on a good track to get there. 
+
+Thank you for reading!
