@@ -6,14 +6,14 @@ tags = ["Camunda", "Workflow"]
 title = "The (Re-)Emergence of Workflow Automation"
 +++
 
-This is the blog post version of the keynote I gave at CamundaCon 2018. It consists of these basic statements: 
+This blog post is based on the keynote I presented at CamundaCon 2018. It covers these four points:
 
 * We’re all turning into technology companies.
 * Digital Transformation relies on Business Process Automation (BPA).
 * BPA is a technology puzzle that suits <u>your</u> business.
 * Workflow automation is always one piece of that puzzle.
 
-I am going to explain these statements, and how I see Camunda contributing to this general development. 
+I am going to elaborate on each point and describe how I see Camunda contributing to this general development.
 
 # We’re all turning into technology companies
 
@@ -55,11 +55,11 @@ Just to be clear, Business Process Automation (BPA) should not be used as a name
 
 # BPA is a technology puzzle that suits YOUR business.
 
-They have good news for German insurance companies, because according to their study, the German insurance industry is leading the way when it comes to automation! Why? Because a lot of them claim to be using things like Robotic Process Automation, artificial intelligence, machine learning or blockchain already. That’s why they’re considered to be well ahead in terms of automation. Sadly, I can imagine how this came about.
+They have good news for German insurance companies, because according to their study, the German insurance industry is leading the way when it comes to automation! Why? Because a lot of them claim to be using things like Robotic Process Automation, artificial intelligence, machine learning, or blockchain already. That’s why they’re considered to be well ahead in terms of automation. Sadly, I can imagine how this came about.
 
-It's pretty much like in this wonderful comic strip, the [Blockchain Bandwagon](https://marketoonist.com/2018/01/blockchain.html): some executive is wondering what to focus on, and some expert says "Blockchain! It will change everything! Everybody talking about it, we don’t want to be left behind!" So instead of actually understanding this new tech, they just kick off some prestige project that needs to "do something with blockchain". Or AI, or whatever. And that’s how those studies come about. It would be funny if it wasn’t so depressing. However, it’s clear that those projects are not what actually enables conservative companies to compete with Amazon, Google or others - right?
+It's pretty much like in this wonderful comic strip, the [Blockchain Bandwagon](https://marketoonist.com/2018/01/blockchain.html): some executive is wondering what to focus on, and some expert says "Blockchain! It will change everything! Everybody is talking about it, we don’t want to be left behind!" So instead of actually understanding this new tech, they just kick off some prestige project that needs to "do something with blockchain". Or AI, or whatever. And that’s how those studies come about. It would be funny if it wasn’t so depressing. However, it’s clear that those projects are not what actually enables conservative companies to compete with Amazon, Google or others - right?
 
-Here’s another example: Just do a [Google image search for Robotic Process Automation](https://www.google.de/search?q=robotic+process+automation&tbm=isch). You'll find an abundance of weird associations, like a robot typing, a guy pushing a glass board, then a robot pushing a glass board, a robot making a phone call, a robot thinking, a robot having a surprising idea, and so on. None of these pictures have anything to do with the <i>actual</i> problem RPA is trying to solve.
+Here’s another example: just do a [Google image search for Robotic Process Automation](https://www.google.de/search?q=robotic+process+automation&tbm=isch). You'll find an abundance of weird associations, like a robot typing, a guy pushing a giant glass monitor, then a robot pushing a giant glass monitor, a robot making a phone call, a robot thinking, a robot having a surprising idea, and so on. None of these pictures have anything to do with the <i>actual</i> problem RPA is trying to solve.
 
 So in essence, we’re facing this good old problem of the [technology adoption life cycle](https://en.wikipedia.org/wiki/Technology_adoption_life_cycle) overheating, which then leads the early and late majority to [inflated expectations](https://en.wikipedia.org/wiki/Hype_cycle). Ironically, most of these technology trends do of course deliver certain value, if they’re applied appropriately.
 
@@ -67,15 +67,15 @@ To illustrate this, let’s imagine that your company is currently using a large
 
 {{<figure src="tlm.png" >}}
 
- Fortunately, we can apply some of the new technologies to work around these issues. For example, we can use process mining to parse and interpret the log files produced by the TLM, and reverse-engineer them into process models in order to get more transparency. This is of course limited to the data that is actually available in those files, and it is certainly not a real-time view on what’s going on, but it’s still better than nothing.
+Fortunately, we can apply some of the new technologies to work around these issues. For example, we can use process mining to parse and interpret the log files produced by the TLM, and reverse-engineer them into process models in order to get more transparency. This is of course limited to the data that is actually available in those files, and it is certainly not a real-time view on what’s going on, but it’s still better than nothing.
 
  {{<figure src="process-mining.png" >}}
 
-Also, we can apply Robotic Process Automation to integrate the TLM even though it doesn’t have an API. RPA products let you describe the steps a user would take in order to read or enter data, and then executes those steps automatically, interacting with the legacy application's user interface. Just to be clear, this screenshot below comes from one of those vendors - I would never dare to call Salesforce a terrible legacy monolith!
+Also, we can apply Robotic Process Automation to integrate the TLM even though it doesn’t have an API. RPA products let you describe the steps a user would take in order to read or enter data, and then they execute those steps automatically, interacting with the legacy application's user interface. Just to be clear, this screenshot below comes from one of those vendors - I would never dare to call Salesforce a terrible legacy monolith!
 
  {{<figure src="rpa-screenshot.png" >}}
 
-You could argue now that the "P" in RPA is a bit exaggerated, like someone from Johnson and Johnson points out [in her abstract for a presentation](https://www.rpaandaisummit.com/speakers/sam-horton-2) in November this year. After all, what you're actually automating are tasks, not processes: The RPA procedures are typically quite granular, and as soon as you look at an actual business process end-to-end, you will be looking at a few steps that can run in that particular RPA product, but there might be other steps executed in _other_ RPA products or even completely outside of RPA. So RPA products typically don't support end-to-end process automation, and that is a serious problem that RPA users are becoming more and more aware of.
+You could argue now that the "P" in RPA is a bit exaggerated, like someone from Johnson and Johnson points out [in her abstract for a presentation](https://www.rpaandaisummit.com/speakers/sam-horton-2) in November this year. After all, what you're actually automating are tasks, not processes: the RPA procedures are typically quite granular, and as soon as you look at an actual business process end-to-end, you will be looking at a few steps that can run in that particular RPA product, but there might be other steps executed in _other_ RPA products or even completely outside of RPA. So RPA products typically don't support end-to-end process automation, and that is a serious problem that RPA users are becoming more and more aware of.
 
  {{<figure src="rpa-flows.png" >}}
 
@@ -83,7 +83,7 @@ You can compensate for this problem by applying workflow automation technology t
 
 {{<figure src="rpa-orchestration.png" >}}
 
-However, despite the popularity of RPA, we must understand that all of these are just temporary workarounds and <i>not</i> true digital transformation - these approaches will not bring us on par with leading tech companies like Amazon. In the long run, there is no way around actually replacing the TLM with a flexible solution stack that we produce and own ourselves, thus making things like process mining and RPA obsolete. Remember? We need to become a technology company. So if we’re breaking up the monolith and replace it with a modern software architecture pattern, that is about autonomous, decoupled units, which pattern could you think of? Yes, microservices!
+However, despite the popularity of RPA, we must understand that all of these are just temporary workarounds and <i>not</i> true digital transformation - these approaches will not bring us on par with leading tech companies like Amazon. In the long run, there is no way around actually replacing the TLM with a flexible solution stack that we produce and own ourselves, thus making things like process mining and RPA obsolete. Remember? We need to become a technology company. So if we’re breaking up the monolith and replace it with a modern software architecture pattern that's about autonomous, decoupled units, which pattern could you think of? Yes, microservices!
 
 Microservices-oriented patterns have become super popular, and for good reason. Still, they are of course no silver bullet. One problem when designing decoupled, independent, and autonomous units is local optimization, which again can become a problem when those microservices need to play together to automate business processes end-to-end.
 
@@ -91,7 +91,7 @@ Martin Fowler [connects this to the challenge around event driven architectures]
 
  {{<figure src="workflow-events.png" >}}
 
-Again, workflow automation to the rescue: we can integrate a workflow engine with an event bus (like Apache Kafka) in order to observe and correlate events to business processes. This process event monitoring is a bit like process mining, but much more precise, with a complete set of data and in real time. The potential next stage of this pattern is letting the workflow engine not just subscribe to events but also publish them, which can be seen as a way to orchestrate microservices. I'm just teasing this topic here, but my co-founder Bernd is currently talking and writing a lot about it - if you happen to visit the Apache Kafka Summit in San Francisco (Oct 16-17, 2018), make sure to [attend his session](https://kafka-summit.org/sessions/monitoring-orchestration-microservices-landscape/).
+Again, workflow automation to the rescue: we can integrate a workflow engine with an event bus (like Apache Kafka) in order to observe and correlate events to business processes. This process event monitoring is a bit like process mining, but much more precise, with a complete set of data, and in real time. The potential next stage of this pattern is letting the workflow engine not just subscribe to events but also publish them, which can be seen as a way to orchestrate microservices. I'm just teasing this topic here, but my co-founder Bernd is currently talking and writing a lot about it - if you happen to visit the Apache Kafka Summit in San Francisco (Oct 16-17, 2018), make sure to [attend his session](https://kafka-summit.org/sessions/monitoring-orchestration-microservices-landscape/).
 
 Now let's arrange this whole puzzle on a timeline. Let’s assume it's early October 2018, and you're really pumped about this whole automation thing and you're going to tackle it, like right away.
 
@@ -109,26 +109,26 @@ So, in summary, you must understand you won’t master digital transformation by
 
 As you see, workflow automation can play a crucial rule in very different approaches to process automation, all the way from RPA to microservices. Given the immense diversity of [use cases we're seeing with our customers](https://camunda.com/case-studies/), it looks like workflow automation is (almost) always a central pillar for <i>any</i> automation technology stack, and I think there is a good explanation for that.  
 
-If you don't know it yet, I strongly recommend Harari's book [Homo Deus](https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow), basically a prediction of potential developments in the 21st century. Harari states that "The 21st century will be dominated by algorithms. ‘Algorithm’ is arguably the single most important concept in our world.”
+In case you haven't heard of it, I strongly recommend Harari's book [Homo Deus](https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow), basically a prediction of potential developments in the 21st century. Harari states that "The 21st century will be dominated by algorithms. ‘Algorithm’ is arguably the single most important concept in our world.”
 
-He continues to give a few examples for algorithms, from simple calculations over cooking recipes to beverage vending machines. Interestingly, you can express all those examples in [BPMN](https://camunda.com/bpmn/). 
+He continues to give a few examples for algorithms, from simple calculations over cooking recipes to beverage vending machines. Interestingly, you can express all those examples in [BPMN](https://camunda.com/bpmn/).
 
-And when I am thinking about the business processes that are being automated with Camunda, I actually realize that they are simply the algorithms that our customers use to execute their business models. 
+And when I am thinking about the business processes that are being automated with Camunda, I actually realize that they are simply the algorithms that our customers use to execute their business models.
 
 {{<figure src="bpmn-algorithms.png" >}}
 
-BPMN is perfectly well suited to express almost any aspect of a (structured) business process in a way that makes it technically executable, while providing a direct visualization that is understandable by just anyone. By feeding the model into a [workflow engine](https://camunda.com/products/bpmn-engine/) that executes it directly, we're generating real-time data that can be observed by business stakeholders and used for further improvement. 
+BPMN is perfectly well suited to express almost any aspect of a (structured) business process in a way that makes it technically executable, while providing a direct visualization that is understandable by just about anyone. By feeding the model into a [workflow engine](https://camunda.com/products/bpmn-engine/) that executes it directly, we're generating real-time data that can be observed by business stakeholders and used for further improvement.
 
 {{<figure src="model-execute-improve.png" >}}
 
-This is an extremely powerful concept, and provided your workflow automation technology is lightweight, open and flexible, you can apply it to almost any business process automation initiative. You can integrate it with an event bus and communicate with microservices via publish/subscribe (while treating the workflow engine as a microservice itself!), you can use traditional request/response to orchestrate API endpoints, you can integrate it with RPA to involve legacy applications and you can provide an end user frontend for human task orchestration. All of this not only in the same workflow engine, but actually in the <i>same workflow</i>, which -for example- can help you to transition smoothly from a legacy application to a modern architecture. 
+This is an extremely powerful concept, and provided your workflow automation technology is lightweight, open, and flexible, you can apply it to almost any business process automation initiative. You can integrate it with an event bus and communicate with microservices via publish/subscribe (while treating the workflow engine as a microservice itself!), you can use traditional request/response to orchestrate API endpoints, you can integrate it with RPA to involve legacy applications, and you can provide an end user frontend for human task orchestration. All of this not only in the same workflow engine, but actually in the <i>same workflow</i>, which, for example, can help you to transition smoothly from a legacy application to a modern architecture.
 
 {{<figure src="workflow-stack.png" >}}
 
 # Camunda's Contribution
 
-Unlike RPA or process mining, workflow automation is not a hype topic. It's pretty clear however that workflow automation is not always visible, but always present when it comes to  automation initiatives - it's basically the backbone for almost any digital transformation. 
+Unlike RPA or process mining, workflow automation is not a hype topic. It's pretty clear, however, that workflow automation is not always visible, but always present when it comes to  automation initiatives - it's basically the backbone for almost any digital transformation.
 
-At Camunda, we're working hard to provide the [best possible technology stack for workflow automation](https://camunda.com/products/). We would love to see any significant business process automation project in any organization being powered by Camunda technology, and it looks like we're on a good track to get there. 
+At Camunda, we're working hard to provide the [best possible technology stack for workflow automation](https://camunda.com/products/). We would love to see any significant business process automation project in any organization being powered by Camunda technology, and it looks like we're on track to get there.
 
 Thank you for reading!
