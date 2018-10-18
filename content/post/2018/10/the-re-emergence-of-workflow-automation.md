@@ -1,12 +1,12 @@
 +++
 author = "Jakob Freund"
 categories = ["General"]
-date = "2018-10-02T12:00:00+01:00"
+date = "2018-10-18T12:00:00+01:00"
 tags = ["Camunda", "Workflow"]
 title = "The (Re-)Emergence of Workflow Automation"
 +++
 
-This blog post is based on the keynote I presented at CamundaCon 2018. It covers these four points:
+This blog post is based on the [keynote I presented at CamundaCon 2018](https://www.youtube.com/watch?v=uM3P4Ev3YKM). It covers these four points:
 
 * We’re all turning into technology companies.
 * Digital Transformation relies on Business Process Automation (BPA).
@@ -14,6 +14,8 @@ This blog post is based on the keynote I presented at CamundaCon 2018. It covers
 * Workflow automation is always one piece of that puzzle.
 
 I am going to elaborate on each point and describe how I see Camunda contributing to this general development.
+
+<!--more-->
 
 # We’re all turning into technology companies
 
@@ -24,8 +26,6 @@ For 7 years, Germany's biggest discount grocer Lidl tried to introduce SAP to re
 In late August, the Volkswagen CEO [gave an interview](http://www.spiegel.de/wirtschaft/unternehmen/volkswagen-chef-herbert-diess-erwaegt-zukaeufe-von-software-firmen-a-1224408.html) stating that his company needs to build up extensive software development skills as soon as possible, most likely by acquiring software companies. He sees this digital transformation as mandatory in order to survive.
 
 There is a pattern.
-
-<!--more-->
 
 In June, Microsoft announced their acquisition of GitHub for $7.5 billion dollars. In case you're not familiar with GitHub, I personally like to call it Facebook for software developers. It's a place where developers can share and contribute to open source projects. So why would Microsoft spend $7.5 billion on such a thing? The answer is in their [press release](https://news.microsoft.com/2018/06/04/microsoft-to-acquire-github-for-7-5-billion/):
 
