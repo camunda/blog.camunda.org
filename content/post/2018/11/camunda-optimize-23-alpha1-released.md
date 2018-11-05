@@ -8,7 +8,7 @@ title = "Camunda Optimize 2.3.0-alpha1 Released"
 
 We are happy to announce the release of Camunda Optimize version 2.3.0-alpha1. You can find many improvements and features of the upcoming Optimize version 2.3.0 in this first alpha release:
 
-* A completely redesigned the Analysis page to help you to better make sense of the information provided on this page.
+* A completely redesigned Analysis page to help you to better make sense of the information provided on this page.
 * The ability to delete old data with the history cleanup feature in order to keep the database size small.
 * Warnings when a change you make to a report causes this report to no longer be qualified for alerts or combined reports.
 * Speaking of combined reports: it is now possible to combine single-number reports to see them all next to each other in a bar chart.
@@ -33,7 +33,7 @@ In order to satisfy data protection laws or just for general storage management 
 
 The cleanup is performed based on process instance data. The criteria to decide about whether an instance is to be cleaned up is based on its end date and the configured time to live period (ttl). There is a global ttl as well as the possibility to configure process definition-specific ttls. The cleanup has two different cleanup modes: one that completely deletes the process instance (`'all'`) and another that only clears out the variables of the process instance but keeps the instance itself (`'variables'`). Same as the ttl, the mode can be overridden for specific process definitions.
 
-By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/history-cleanup/) section in the Optimize Configuration Technical Guide.
+By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/history-cleanup/) section in the Optimize Technical Guide.
 
 # Warning when changing a report affects other resources
 
@@ -69,11 +69,11 @@ Finished upgrade successfully!
 # Examples of variable filter plugins
 
 Optimize is very convenient in the sense that it does all the hard work for you: just configure the connection to the Camunda Engine and
-Optimize imports all the data. As great as the import already works, sometimes you need to adjust the import to meet your own needs.
+Optimize imports all the data. Sometimes you need to adjust the import to meet your own needs.
 This is where the variable filter system is the right tool, because it allows you to hook into the import pipeline and adjust the variable
 import to your needs. You can read all the details of how you implement one yourself in the [Optimize Plugin System](https://docs.camunda.org/optimize/2.2/technical-guide/import/plugins/) documentation.
 
-Although you can already read documentation on how implement a plugin, it was sometimes hard to get started or find a way use
+Although you can already read documentation on how to implement a plugin, it was sometimes hard to get started or find a way to use
 the plugin system for certain use cases. To help you with that we created an [Optimize example repository](https://github.com/camunda/camunda-optimize-examples)
 which contains a collection of usage examples to quickly get you started.
 
