@@ -11,14 +11,14 @@ Camunda BPM platform 7.10.0 is now available, and the highlights are:
 
 <!-- FEATURES LIST BEGINS -->
 
-* Feature 1
-* Feature 2
-* Feature 3
+* History Cleanup across process hierarchies
+* Fetch and Lock External Tasks based on Process Definition and Tenant
+* Extending the "Handle External Task BPMN Error" API
+* Tasklist-startable Process Definitions
+* Additional Supported Environments
 * [# Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0)
 
 <!-- FEATURES LIST ENDS -->
-
-In addition, we will provide only a single Wildfly distribution from now on (currently with WildFly 14) and the database PostgreSQL 11 is now officially supported.
 
 You can [Download Camunda for free](https://camunda.com/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
@@ -31,21 +31,141 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 
 <!-- FEATURES EXPLANATIONS BEGIN -->
 
-## Feature 1
+## History Cleanup across process hierarchies
 
-## Feature 2
+<!-- Larger focus on process instance hierarchies and their removal -->
 
-## Feature 3
+When creating BPMN models, it is possible to introduce call activities and create process hierarchies spanning multiple levels. In cases like these, when a process is started, and some of the (child) call activities are completed but the root process is still running, inconsistencies in the historical data might occur. The inconsistencies happen when call activities have a smaller history time to live (TTL) value than the containing process run time, leading to a removal by the History Cleanup job.
+
+## Fetch and Lock External Tasks based on Process Definition and Tenant
+
+The "fetch and lock" mechanism is popular among the users implementing [External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks). Now you can filter tasks based on two new options - process definition and tenant id. You can find a
+java example below:
+```java
+externalTasks = externalTaskService.fetchAndLock(2, "aWorkerId")
+      .topic("createOrder", 10000)
+      .processDefinitionId("aProcessDefinitionId")
+      .withoutTenantId()
+      .execute();
+```
+and here is a REST API example:
+
+POST `/external-task/fetchAndLock`
+```json
+ {
+      "workerId":"aWorkerId",
+      "maxTasks":2,
+      "usePriority":true,
+      "topics":
+          [{"topicName": "createOrder",
+            "lockDuration": 10000,
+            "processDefinitionId": "aProcessDefinitionId",
+            "tenantIdIn": "tenantOne"
+          }]
+  }
+```
+For more infomation please check the [REST documentation](https://docs.camunda.org/manual/latest/reference/rest/external-task/fetch/).
+
+## Extending the "Handle External Task BPMN Error" API
+
+During process execution, a [business error](https://docs.camunda.org/manual/develop/reference/bpmn20/events/error-events/#business-errors-vs-technical-errors) can occur. In the world of External tasks, the worker can report a BPMN error to the process engine by using `handleBpmnError` method of the `ExternalTaskService` (or the respective REST API endpoint). The method can only be invoked by the worker possessing the most recent lock for a task. Now, when reporting this kind of BPMN errors, additional data in the form of an error message and variables can be passed. This additional information can then be used later in the process flow.
+Here is an example on how this can be achieved via [Java API](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/#reporting-bpmn-error):
+```java
+externalTaskService.handleBpmnError(externalTaskId, "aWorker", "ERROR-SPEC-10", "anErrorMessage", variables);
+```
+The [REST API](https://docs.camunda.org/manual/latest/reference/rest/external-task/post-bpmn-error/) call would look like this:
+
+POST /external-task/externalTaskId/bpmnError
+
+Request Body:
+```json
+{
+  "workerId": "aWorker",
+  "errorCode": "ERROR-SPEC-10",
+  "errorMessage": "anErrorMessage",
+  "variables": {
+	  "aVariable" : {
+		  "value" : "aStringValue",
+		  "type": "String"
+	  },
+	  "anotherVariable" : {
+		  "value" : true,
+		  "type": "Boolean"
+	  }
+  }
+}
+```
+
+## Tasklist-startable Process Definitions
+
+Imagine you have a process, which is referenced from a call activity of a parent process, or processes with a message, signal or conditional start events. Usually, such processes
+are not intended to be started directly, but rather triggered by some internal events. So far, they would still be shown under Tasklist "Start process" menu.
+Now, with the new process attribute "*isStartableInTasklist*", you can define, whether the process should be startable from tasklist or not.
+
+You can find a simple example of a process below:
+```xml
+<process id="subProcess"
+         name="Process called from Super Process"
+		 isExecutable="true"
+		 camunda:isStartableInTasklist="false">
+...
+</process>
+```
+
+With the new Camunda version, you can query for "startable in Tasklist" processes via Java API or REST API:
+```json
+GET /process-definition?latestVersion=true&startableInTasklist=true
+```
+```java
+repositoryService.createProcessDefinitionQuery()
+        .latestVersion()
+        .startableInTasklist()
+        .list();
+```
+"notStartableInTasklist" filter option is available as well.
+
+The process definitions list provided through the `Start process` feature in Tasklist respects this query option and displays only the "startable" process definitions.
+However, for the feature to work, the user needs the following permissions to see a process definition in this list, and of course, to start one:
+
+* `CREATE` permission for all Process instances
+* `CREATE_INSTANCE` and `READ` permissions on the Process Definition level
+
+## Configure Business Key in Delegation Code
+
+Version 7.10 makes available the much-requested option to configure the business key of an already running process instance. The setting can be done inside delegation code (Execution listener, Task listner or Java delegate implementation). Here is an example:
+```java
+public class SetNewBusinessKeyDelegate implements JavaDelegate {
+   public void execute(DelegateExecution execution) throws Exception {
+    execution.setProcessBusinessKey("businessKey");
+  }
+ }
+```
+You can find more information about the delegation code in our [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/delegation-code/#set-business-key-from-delegation-code).
+What is a business key? - you can check this [How to Use Business Keys?](https://blog.camunda.com/post/2018/10/business-key/) blog post.
+
+## Additional Supported Environments
+
+### Support for Java 9 / 10 / 11
+
+Camunda BPM is now on the cutting-edge of Java, since this release brings support for Java 9 & 10 as well as for Java 11.
+
+### Extending our Database support
+
+Version 7.10.0 also extends the database support of Camunda BPM, now adding PostgreSQL 10.4 and MariaDB 10.3 to our supported environments.
+
+### A Single WildFly distro
+
+Finally, from Camunda BPM 7.10.0 onwards, a single WildFly distro will be provided, always with the latest version of WildFly (currently WildFly 14). New Camunda BPM users, that wish to use it with WildFly 8 or WildFly 10-13, will need to do a [full manual installation](https://docs.camunda.org/manual/latest/installation/full/jboss/manual/) on the appropriate vanilla WildFly application server. WildFly 8 continues to be supported through a separate `camunda-wildfly8-subsystem` (included with [this](https://app.camunda.com/nexus/content/groups/public/org/camunda/bpm/wildfly/camunda-wildfly8-modules/) archive).
 
 <!-- FEATURES EXPLANATIONS END -->
 
 ## And Much More
 
-There are many smaller features and bugfixes in the release that aren't included in this blog post. The [full release notes]() provide the details.
+There are many smaller features and bug-fixes in the release that aren't included in this blog post. The [full release notes]() provide the details.
 
 ## Register for the Webinar
 
-If you're not already registered, be sure to secure a last-minute spot at the free release webinars, available in [German]() and [English]().
+If you're not already registered, be sure to secure a last-minute spot at the free release webinars, available in [German](https://register.gotowebinar.com/register/7430032682918026764) and [English](https://register.gotowebinar.com/register/5312228152286683916).
 
 ## Your Feedback Matters!
 
