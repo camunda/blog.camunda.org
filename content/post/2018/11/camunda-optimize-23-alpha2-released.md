@@ -6,8 +6,8 @@ date = "2018-11-30T15:00:00+01:00"
 title = "Camunda Optimize 2.3.0-alpha2 Released"
 +++
 
-We are happy to announce the release of Camunda Optimize version 2.3.0-alpha1.
-You can find many improvements and features of the upcoming Optimize version 2.3.0 in this first alpha release:
+We are happy to announce the release of Camunda Optimize version 2.3.0-alpha2.
+You can find many improvements and features of the upcoming Optimize version 2.3.0 in this second alpha release:
 
 * Raw data table sorting
 * Line charts with improved goal line visualizations
@@ -22,10 +22,18 @@ The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jsp
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Raw data table sorting
-**@TODO Sebastian**
+
+{{< figure class="main teaser" src="tableSort.gif">}}
+
+Raw data reports are becoming even more powerful. In addition to hiding and re-arranging columns, with this release it is now possible to sort the table by any column. To do so, simply click on any column header in the report edit mode. Clicking the same column again reverses the sort order.
+
+The sorting that is defined for the report is applied to any instance of the report, so even if you embed the report in a dashboard, it will keep its sorting.
 
 # Line charts with improved goal line visualization
-**@TODO Sebastian**
+
+{{< figure class="main teaser" src="lineChart.png">}}
+
+When you define a goal value for a line chart, we display a goal line to visualize whether the goal was reached or not. With this release, we re-designed the goal line and its interaction with the line chart. The datapoints as well as the line is now colored in red when the goal is not reached. In addition, the line is now much smoother than before.
 
 # New improved progress bar styling
 new style + precision configuration
