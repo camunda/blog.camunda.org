@@ -39,7 +39,8 @@ configuration overlay, charts configuration, Rearrangement of reports in combine
 **@TODO Johannes**
 
 # Improved upgrade performance #1
-**@TODO meggle**
+
+This Optimize release yields an increased upgrade performance by a magnitude of 2 compared to previous releases. It does that by cutting the amount of reindex operations performed for each index upgrade in half. Stay tuned for further improvements in future that will ensure the Optimize upgrade takes the least time possible with the available hardware resources. So you can enjoy new features as soon as possible.
 
 # How to get it
 
