@@ -77,7 +77,7 @@ It is now possible to select a time span in the chart and find the corresponding
 
 # Drastic reduction of optimistic locking exceptions when using Job Executor
 
-This release features an optimization which drastically reduces the number of optimistic locking exceptions when using the job executor. Our [blogpost on the alpha version release]({{< relref "post/2017/02/camunda-bpm-770-alpha1-released.md" >}}) which first introduced this feature has the details.
+This release features an optimization which drastically reduces the number of optimistic locking exceptions when using the job executor. Our [blogpost on the alpha version release]({{< ref "/post/2017/02/camunda-bpm-770-alpha1-released.md" >}}) which first introduced this feature has the details.
 
 # Batch Process Instance Modification and Restart API
 
@@ -123,7 +123,7 @@ First, the security of user passwords was improved:
 * Random salt generation is now used to defend against dictionary attacks.
 * By default, a stronger hashing algorithm is used.
 
-As almost everything in Camunda, both hashing and salting is implemented as pluggable SPIs, allowing users to customize the process and use the algorithms of their choice. The [documentation](http://docs.camunda.org/manual/7.7/user-guide/process-engine/password-hashing) has the details and the following [blogpost]({{< relref "post/2017/02/customize-pw-hash.md" >}}) gives an example.
+As almost everything in Camunda, both hashing and salting is implemented as pluggable SPIs, allowing users to customize the process and use the algorithms of their choice. The [documentation](http://docs.camunda.org/manual/7.7/user-guide/process-engine/password-hashing) has the details and the following [blogpost]({{< ref "/post/2017/02/customize-pw-hash.md" >}}) gives an example.
 
 Second, there is now a [step by step documentation](https://docs.camunda.org/manual/7.7/user-guide/security/) guiding users through aspects of Camunda which are relevant from a a security point of view.
 

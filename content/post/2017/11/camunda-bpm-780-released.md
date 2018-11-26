@@ -25,7 +25,7 @@ The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jsp
 
 You can [Download Camunda For Free](https://camunda.org/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
-We have also released the [Camunda Spring Boot Starter 2.3.0]({{< relref "post/2017/11/camunda-spring-boot-starter-230-released.md" >}}) project, which relies on Camunda BPM 7.8 by default. 
+We have also released the [Camunda Spring Boot Starter 2.3.0]({{< ref "/post/2017/11/camunda-spring-boot-starter-230-released.md" >}}) project, which relies on Camunda BPM 7.8 by default. 
 
 # Significant performance improvements
 
