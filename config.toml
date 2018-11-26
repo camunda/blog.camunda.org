@@ -12,7 +12,7 @@ preservetaxonomynames = true
 #   author = "authors"
 
 # pagination setup
-# http://gohugo.io/extras/pagination/
+# https://gohugo.io/templates/pagination/
 Paginate = 5
 
 
