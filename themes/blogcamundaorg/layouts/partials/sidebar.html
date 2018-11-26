@@ -3,19 +3,19 @@
     <div class="col categories">
       <h4>Categories:</h4>
       <ul>
-        <li><a href="{{ .Site.BaseURL }}categories/modeling">Modeling</a></li>
-        <li><a href="{{ .Site.BaseURL }}categories/execution">Execution</a></li>
-        <li><a href="{{ .Site.BaseURL }}categories/community">Community</a></li>
+        <li><a href='{{ "categories/modeling" | absURL }}'>Modeling</a></li>
+        <li><a href='{{ "categories/execution"| absURL }}'>Execution</a></li>
+        <li><a href='{{ "categories/community" | absURL }}'>Community</a></li>
       </ul>
     </div>
 
     <div class="col blogroll">
       <h4>Blog:</h4>
       <ul>
-        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-        <li><a href="{{ .Site.BaseURL }}tags/">Tags</a></li>
-        <li><a target="_blank" href="{{ .Site.BaseURL }}index.xml">RSS</a></li>
-        <li><a href="{{ .Site.BaseURL }}post/">Archives</a></li>
+        <li><a href='{{ "/" | absURL }}'>Home</a></li>
+        <li><a href='{{ "tags/" | absURL }}'>Tags</a></li>
+        <li><a target="_blank" href='{{  "index.xml"| absURL }}'>RSS</a></li>
+        <li><a href='{{ "post/" | absURL }}'>Archives</a></li>
       </ul>
     </div>
 

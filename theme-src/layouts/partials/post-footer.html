@@ -4,7 +4,7 @@
       <span class="glyphicon glyphicon-tag"></span>
       <ul class="list-inline">
         {{ range .Params.tags }}
-          <li><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> </li>
+          <li><a href="{{ . | urlize | printf "tags/%s" | absURL }}">{{ . }}</a> </li>
         {{ end }}
       </ul>
     </div>

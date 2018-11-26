@@ -34,7 +34,7 @@
           </a>
         </li>
         <li>
-          <a href="{{ .Site.BaseURL }}index.xml">
+          <a href='{{ "index.xml" | absURL }}'>
             <span class="cam-blog-rss"></span>
           </a>
         </li>
@@ -48,13 +48,13 @@
 </footer>
 
 <script type="text/javascript">var _siteSetup = {
-  baseUrl: "{{ $.Site.BaseURL }}",
+  baseUrl: '{{ "/" | absURL }}',
   gaCode: "{{ $.Site.Params.gaCode }}",
   disqusName: "{{ $.Site.Params.disqusShortname }}",
   gSearchApiKey: "{{ $.Site.Params.gSearchApiKey }}",
   gSearchCtx: "{{ $.Site.Params.gSearchCtx }}"
 };</script>
 
-<script type="text/javascript" src="{{ $.Site.BaseURL }}js/scripts.js"></script>
+<script type="text/javascript" src='{{ "js/scripts.js" | absURL }}'></script>
 </body>
 </html>
