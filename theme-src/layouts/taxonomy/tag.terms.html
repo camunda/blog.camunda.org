@@ -9,12 +9,13 @@
     <div class="content">
       <div class="content-wrapper">
         <ul>
-        {{ $data := .Data }}
+        {{ $type := .Type }}
         {{ range $key, $value := .Data.Terms.ByCount }}
-          <li>
-            <a href="{{ "/" | absURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
-            {{ $value.Count }}
-          </li>
+          {{ $name := .Name }}
+          {{ $count := .Count }}
+          {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+            <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
+          {{ end }}
         {{ end }}
         </ul>
       </div>
