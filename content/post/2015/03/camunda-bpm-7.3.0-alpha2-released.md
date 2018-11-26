@@ -5,7 +5,7 @@ author: "Daniel Meyer"
 
 categories:
   - "Execution"
-tags: 
+tags:
   - "Release Note"
 
 aliases:
@@ -79,7 +79,7 @@ You get the same benefit if you request the variable from java code:<br />
 
   public void execute(DelegateExecution execution) {
     JsonValue customerData = execution.getVariableTyped("customerData");
-    
+
     double revenue = customerData.getValue().prop("revenue").doubleValue();
   }
 
