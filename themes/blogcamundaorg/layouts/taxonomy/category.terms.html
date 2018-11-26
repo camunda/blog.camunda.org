@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<div class="page-content taxonomy-terms-list list">
+  <header>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Description }}<div class="description">{{ .Description }}</div>{{ end }}
+  </header>
+
+  <section>
+    <div class="content">
+      <div class="content-wrapper">
+        <ul>
+        {{ $type := .Type }}
+        {{ range $key, $value := .Data.Terms.ByCount }}
+          {{ $name := .Name }}
+          {{ $count := .Count }}
+          {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+            <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ $count }}</li>
+          {{ end }}
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+{{ partial "footer.html" . }}
