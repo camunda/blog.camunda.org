@@ -54,7 +54,7 @@ If you would like to gain a broader understanding of how the new cleanup strateg
 
 ## Fetch and Lock External Tasks based on Process Definition and Tenant
 
-When some logic needs to be implemented/executed outside of the engine [External tasks](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks), could be the right pattern for you. That way the process engine publishes a unit of work to a worker to fetch and complete. Fetch and lock mechanism is extend further by filtering tasks based on two new options - process definition and tenant id. You can find a
+[External tasks](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks) are the right pattern for you when some logic needs to be implemented/executed outside of the engine. Using this approach the process engine publishes a unit of work to a worker to fetch and complete. In this release [fetch and lock](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks/#fetching-tasks) mechanism is extend further by filtering tasks based on two new options - process definition and tenant id. You can find a
 java example below:
 ```java
 externalTasks = externalTaskService.fetchAndLock(2, "aWorkerId")
@@ -113,7 +113,7 @@ Request Body:
 }
 ```
 
-The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java)
+The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java).
 
 ## Tasklist-startable Process Definitions
 
@@ -121,7 +121,7 @@ Imagine you have a process, which is referenced from a call activity of a parent
 are not intended to be started directly, but rather triggered by some internal events. So far, they would still be shown under Tasklist "Start process" menu.
 Now, with the new process attribute "*isStartableInTasklist*", you can define, whether the process should be startable from tasklist or not.
 
-You can find a simple example of a process and further documentation in the [User guide](https://docs.camunda.org/manual/7.10/user-guide/process-engine/process-engine-concepts/#start-process-instances-via-tasklist)
+You can find a simple example of a process and further documentation in the [User guide](https://docs.camunda.org/manual/7.10/user-guide/process-engine/process-engine-concepts/#start-process-instances-via-tasklist).
 
 Please note that the user needs the following permissions to see a process definition in this list, and of course, to start one:
 
