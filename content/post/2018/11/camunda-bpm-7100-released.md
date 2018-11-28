@@ -39,7 +39,7 @@ When creating BPMN models, it is possible to introduce call activities and creat
 
 ## Fetch and Lock External Tasks based on Process Definition and Tenant
 
-The "fetch and lock" mechanism is popular among the users implementing [External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks). Now you can filter tasks based on two new options - process definition and tenant id. You can find a
+When some logic needs to be implemented/executed outside of the engine [External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks), could be the right pattern for you. That way the process engine publishes a unit of work to a worker to fetch and complete. Fetch and lock mechanism is extend further by filtering tasks based on two new options - process definition and tenant id. You can find a
 java example below:
 ```java
 externalTasks = externalTaskService.fetchAndLock(2, "aWorkerId")
@@ -65,6 +65,10 @@ POST `/external-task/fetchAndLock`
   }
 ```
 For more infomation please check the [REST documentation](https://docs.camunda.org/manual/latest/reference/rest/external-task/fetch/).
+
+The feature is expose to both of the external task clients:
+* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) - 1.1.0 version for non-Java developers
+* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) - 1.1.1 version can be embedded in Java applications
 
 ## Extending the "Handle External Task BPMN Error" API
 
@@ -112,20 +116,7 @@ You can find a simple example of a process below:
 </process>
 ```
 
-With the new Camunda version, you can query for "startable in Tasklist" processes via Java API or REST API:
-```json
-GET /process-definition?latestVersion=true&startableInTasklist=true
-```
-```java
-repositoryService.createProcessDefinitionQuery()
-        .latestVersion()
-        .startableInTasklist()
-        .list();
-```
-"notStartableInTasklist" filter option is available as well.
-
-The process definitions list provided through the `Start process` feature in Tasklist respects this query option and displays only the "startable" process definitions.
-However, for the feature to work, the user needs the following permissions to see a process definition in this list, and of course, to start one:
+Please note that the user needs the following permissions to see a process definition in this list, and of course, to start one:
 
 * `CREATE` permission for all Process instances
 * `CREATE_INSTANCE` and `READ` permissions on the Process Definition level
