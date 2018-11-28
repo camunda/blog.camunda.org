@@ -28,16 +28,16 @@ We have also released:
 * [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.1 version can be embedded in Java applications
 
 To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096)
-and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0%20and%20status%20!%3D%20Closed).
+and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.10.0%20and%20status%20!%3D%20Closed).
 
-If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0).
+If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.10.0).
 
 <!-- FEATURES EXPLANATIONS BEGIN -->
 <!--more-->
 
 ## History Cleanup Across Hierarchies
 
-When creating a BPMN process, it is possible to introduce [Call Activities](https://docs.camunda.org/manual/reference/bpmn20/subprocesses/call-activity/) which can in turn reference BPMN processes.
+When creating a BPMN process, it is possible to introduce [Call Activities](https://docs.camunda.org/manual/7.10/reference/bpmn20/subprocesses/call-activity/) which can in turn reference BPMN processes.
 This allows to model process hierarchies spanning multiple levels.
 
 Previously, historical data related to child processes has been cleaned-up without taking the runtime of the 
@@ -50,11 +50,11 @@ Starting with this release, a new cleanup strategy has been introduced which tac
 inherits the removal time of the top-level process instance. This allows to always cleanup the historical data consistently.
 
 If you would like to gain a broader understanding of how the new cleanup strategy works, please see the updated 
-[History Cleanup](https://docs.camunda.org/manual/user-guide/process-engine/history/#history-cleanup) documentation.
+[History Cleanup](https://docs.camunda.org/manual/7.10/user-guide/process-engine/history/#history-cleanup) documentation.
 
 ## Fetch and Lock External Tasks based on Process Definition and Tenant
 
-When some logic needs to be implemented/executed outside of the engine [External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks), could be the right pattern for you. That way the process engine publishes a unit of work to a worker to fetch and complete. Fetch and lock mechanism is extend further by filtering tasks based on two new options - process definition and tenant id. You can find a
+When some logic needs to be implemented/executed outside of the engine [External tasks](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks), could be the right pattern for you. That way the process engine publishes a unit of work to a worker to fetch and complete. Fetch and lock mechanism is extend further by filtering tasks based on two new options - process definition and tenant id. You can find a
 java example below:
 ```java
 externalTasks = externalTaskService.fetchAndLock(2, "aWorkerId")
@@ -79,18 +79,18 @@ POST `/external-task/fetchAndLock`
           }]
   }
 ```
-For more infomation please check the [REST documentation](https://docs.camunda.org/manual/latest/reference/rest/external-task/fetch/).
+For more infomation please check the [REST documentation](https://docs.camunda.org/manual/7.10/reference/rest/external-task/fetch/).
 
 The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java).
 
 ## Extending the "Handle External Task BPMN Error" API
 
-During process execution, a [business error](https://docs.camunda.org/manual/develop/reference/bpmn20/events/error-events/#business-errors-vs-technical-errors) can occur. In the world of External tasks, the worker can report a BPMN error to the process engine by using `handleBpmnError` method of the `ExternalTaskService` (or the respective REST API endpoint). The method can only be invoked by the worker possessing the most recent lock for a task. Now, when reporting this kind of BPMN errors, additional data in the form of an error message and variables can be passed. This additional information can then be used later in the process flow.
-Here is an example on how this can be achieved via [Java API](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/#reporting-bpmn-error):
+During process execution, a [business error](https://docs.camunda.org/manual/7.10/reference/bpmn20/events/error-events/#business-errors-vs-technical-errors) can occur. In the world of External tasks, the worker can report a BPMN error to the process engine by using `handleBpmnError` method of the `ExternalTaskService` (or the respective REST API endpoint). The method can only be invoked by the worker possessing the most recent lock for a task. Now, when reporting this kind of BPMN errors, additional data in the form of an error message and variables can be passed. This additional information can then be used later in the process flow.
+Here is an example on how this can be achieved via [Java API](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks/#reporting-bpmn-error):
 ```java
 externalTaskService.handleBpmnError(externalTaskId, "aWorker", "ERROR-SPEC-10", "anErrorMessage", variables);
 ```
-The [REST API](https://docs.camunda.org/manual/latest/reference/rest/external-task/post-bpmn-error/) call would look like this:
+The [REST API](https://docs.camunda.org/manual/7.10/reference/rest/external-task/post-bpmn-error/) call would look like this:
 
 POST /external-task/externalTaskId/bpmnError
 
@@ -121,15 +121,7 @@ Imagine you have a process, which is referenced from a call activity of a parent
 are not intended to be started directly, but rather triggered by some internal events. So far, they would still be shown under Tasklist "Start process" menu.
 Now, with the new process attribute "*isStartableInTasklist*", you can define, whether the process should be startable from tasklist or not.
 
-You can find a simple example of a process below:
-```xml
-<process id="subProcess"
-         name="Process called from Super Process"
-		 isExecutable="true"
-		 camunda:isStartableInTasklist="false">
-...
-</process>
-```
+You can find a simple example of a process and further documentation in the [User guide](https://docs.camunda.org/manual/7.10/user-guide/process-engine/process-engine-concepts/#start-process-instances-via-tasklist)
 
 Please note that the user needs the following permissions to see a process definition in this list, and of course, to start one:
 
@@ -146,7 +138,7 @@ public class SetNewBusinessKeyDelegate implements JavaDelegate {
   }
  }
 ```
-You can find more information about the delegation code in our [User guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/delegation-code/#set-business-key-from-delegation-code).
+You can find more information about the delegation code in our [User guide](https://docs.camunda.org/manual/7.10/user-guide/process-engine/delegation-code/#set-business-key-from-delegation-code).
 What is a business key? - you can check this [How to Use Business Keys?](https://blog.camunda.com/post/2018/10/business-key/) blog post.
 
 ## Additional Supported Environments
@@ -161,7 +153,7 @@ Version 7.10.0 also extends the database support of Camunda BPM, now adding Post
 
 ### A Single WildFly distro
 
-Finally, from Camunda BPM 7.10.0 onwards, a single WildFly distro will be provided, always with the latest version of WildFly (currently WildFly 14). New Camunda BPM users, that wish to use it with WildFly 8 or WildFly 10-13, will need to do a [full manual installation](https://docs.camunda.org/manual/latest/installation/full/jboss/manual/) on the appropriate vanilla WildFly application server. WildFly 8 continues to be supported through a separate `camunda-wildfly8-subsystem` (included with [this](https://app.camunda.com/nexus/content/groups/public/org/camunda/bpm/wildfly/camunda-wildfly8-modules/) archive).
+Finally, from Camunda BPM 7.10.0 onwards, a single WildFly distro will be provided, always with the latest version of WildFly (currently WildFly 14). New Camunda BPM users, that wish to use it with WildFly 8 or WildFly 10-13, will need to do a [full manual installation](https://docs.camunda.org/manual/7.10/installation/full/jboss/manual/) on the appropriate vanilla WildFly application server. WildFly 8 continues to be supported through a separate `camunda-wildfly8-subsystem` (included with [this](https://app.camunda.com/nexus/content/groups/public/org/camunda/bpm/wildfly/camunda-wildfly8-modules/) archive).
 
 <!-- FEATURES EXPLANATIONS END -->
 
