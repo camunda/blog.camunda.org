@@ -3,7 +3,7 @@ author = "Nikola Koevski"
 categories = ["Execution"]
 date = "2018-11-30T12:00:00+02:00"
 tags = ["Release Note"]
-title = "Camunda 7.10.0 Released"
+title = "Camunda BPM 7.10.0 Released"
 
 +++
 
@@ -11,7 +11,7 @@ Camunda BPM platform 7.10.0 is now available, and the highlights are:
 
 <!-- FEATURES LIST BEGINS -->
 
-* History Cleanup across process hierarchies
+* History Cleanup across hierarchies
 * Fetch and Lock External Tasks based on Process Definition and Tenant
 * Extending the "Handle External Task BPMN Error" API
 * Tasklist-startable Process Definitions
@@ -30,12 +30,24 @@ and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affected
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0).
 
 <!-- FEATURES EXPLANATIONS BEGIN -->
+<!--more-->
 
-## History Cleanup across process hierarchies
+## History Cleanup Across Hierarchies
 
-<!-- Larger focus on process instance hierarchies and their removal -->
+When creating a BPMN process, it is possible to introduce [Call Activities](https://docs.camunda.org/manual/reference/bpmn20/subprocesses/call-activity/) which can in turn reference BPMN processes.
+This allows to model process hierarchies spanning multiple levels.
 
-When creating BPMN models, it is possible to introduce call activities and create process hierarchies spanning multiple levels. In cases like these, when a process is started, and some of the (child) call activities are completed but the root process is still running, inconsistencies in the historical data might occur. The inconsistencies happen when call activities have a smaller history time to live (TTL) value than the containing process run time, leading to a removal by the History Cleanup job.
+Previously, historical data related to child processes has been cleaned-up without taking the runtime of the 
+top-level process into account. This led to inconsistencies, as it might happen that the historical data of child 
+processes was cleaned-up before the respective top-level process instance has been finished.
+
+{{< figure class="teaser no-border" src="hierarchy.png" alt="" >}}
+
+Starting with this release, a new cleanup strategy has been introduced which tackles this issue: each historical instance
+inherits the removal time of the top-level process instance. This allows to always cleanup the historical data consistently.
+
+If you would like to gain a broader understanding of how the new cleanup strategy works, please see the updated 
+[History Cleanup](https://docs.camunda.org/manual/user-guide/process-engine/history/#history-cleanup) documentation.
 
 ## Fetch and Lock External Tasks based on Process Definition and Tenant
 
