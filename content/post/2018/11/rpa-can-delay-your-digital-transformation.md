@@ -50,5 +50,5 @@ Since I work for a workflow automation software company, I am clearly biased in 
 
 Nevertheless, I firmly believe you should not use this approach to automate your actual core business processes. In those cases, you must undergo the digital transformation and set up a proper IT infrastructure that comes with sound APIs and other integration points, and base your process automation on that. 
 
-I do not advocate this approach because we offer the product to support it, but the other way round: We have designed Camunda to support this approach, because we believe in it. That's a big difference.
+{{< figure src="camunda-rpa.png" alt="Contrasting RPA products and Camunda BPM." caption="Contrasting RPA products and Camunda BPM." >}}
 
