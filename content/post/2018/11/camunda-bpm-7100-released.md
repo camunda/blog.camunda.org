@@ -22,7 +22,10 @@ Camunda BPM platform 7.10.0 is now available, and the highlights are:
 
 You can [Download Camunda for free](https://camunda.com/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
-We have also released the Camunda Spring Boot Starter 3.1.0, which relies on Spring Boot 2.0.2 by default.
+We have also released:
+* Camunda Spring Boot Starter 3.1.0, which relies on Spring Boot 2.0.2 by default.
+* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.0 version for non-Java developers
+* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.1 version can be embedded in Java applications
 
 To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096)
 and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0%20and%20status%20!%3D%20Closed).
@@ -78,9 +81,7 @@ POST `/external-task/fetchAndLock`
 ```
 For more infomation please check the [REST documentation](https://docs.camunda.org/manual/latest/reference/rest/external-task/fetch/).
 
-The feature is expose to both of the external task clients:
-* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) - 1.1.0 version for non-Java developers
-* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) - 1.1.1 version can be embedded in Java applications
+The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java).
 
 ## Extending the "Handle External Task BPMN Error" API
 
@@ -111,6 +112,8 @@ Request Body:
   }
 }
 ```
+
+The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java)
 
 ## Tasklist-startable Process Definitions
 
