@@ -63,55 +63,17 @@ externalTasks = externalTaskService.fetchAndLock(2, "aWorkerId")
       .withoutTenantId()
       .execute();
 ```
-and here is a REST API example:
-
-POST `/external-task/fetchAndLock`
-```json
- {
-      "workerId":"aWorkerId",
-      "maxTasks":2,
-      "usePriority":true,
-      "topics":
-          [{"topicName": "createOrder",
-            "lockDuration": 10000,
-            "processDefinitionId": "aProcessDefinitionId",
-            "tenantIdIn": "tenantOne"
-          }]
-  }
-```
-For more infomation please check the [REST documentation](https://docs.camunda.org/manual/7.10/reference/rest/external-task/fetch/).
+It is available in the REST API as well, for more infomation please check the [REST documentation](https://docs.camunda.org/manual/7.10/reference/rest/external-task/fetch/).
 
 The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java).
 
 ## Extending the "Handle External Task BPMN Error" API
 
 During process execution, a [business error](https://docs.camunda.org/manual/7.10/reference/bpmn20/events/error-events/#business-errors-vs-technical-errors) can occur. In the world of External tasks, the worker can report a BPMN error to the process engine by using `handleBpmnError` method of the `ExternalTaskService` (or the respective REST API endpoint). The method can only be invoked by the worker possessing the most recent lock for a task. Now, when reporting this kind of BPMN errors, additional data in the form of an error message and variables can be passed. This additional information can then be used later in the process flow.
-Here is an example on how this can be achieved via [Java API](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks/#reporting-bpmn-error):
 ```java
 externalTaskService.handleBpmnError(externalTaskId, "aWorker", "ERROR-SPEC-10", "anErrorMessage", variables);
 ```
-The [REST API](https://docs.camunda.org/manual/7.10/reference/rest/external-task/post-bpmn-error/) call would look like this:
-
-POST /external-task/externalTaskId/bpmnError
-
-Request Body:
-```json
-{
-  "workerId": "aWorker",
-  "errorCode": "ERROR-SPEC-10",
-  "errorMessage": "anErrorMessage",
-  "variables": {
-	  "aVariable" : {
-		  "value" : "aStringValue",
-		  "type": "String"
-	  },
-	  "anotherVariable" : {
-		  "value" : true,
-		  "type": "Boolean"
-	  }
-  }
-}
-```
+Available via [Java API](https://docs.camunda.org/manual/7.10/user-guide/process-engine/external-tasks/#reporting-bpmn-error) and [REST API](https://docs.camunda.org/manual/7.10/reference/rest/external-task/post-bpmn-error/).
 
 The feature is expose in the latest version of the external task clients [NodeJS client](https://github.com/camunda/camunda-external-task-client-js) and [Java client](https://github.com/camunda/camunda-external-task-client-java).
 
