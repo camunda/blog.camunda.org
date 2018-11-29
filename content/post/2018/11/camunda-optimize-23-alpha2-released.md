@@ -2,7 +2,7 @@
 author = "Sebastian Stamm, Johannes Heinemann, Omran Abazeed, Sebastian Bathke"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2018-11-30T15:00:00+01:00"
+date = "2018-11-28T15:00:00+01:00"
 title = "Camunda Optimize 2.3.0-alpha2 Released"
 +++
 
@@ -58,8 +58,12 @@ A drag-drop behavior is added to the selected reports section to allow reorderin
 
 This feature also works for every other visualization in the combined report.
 
-# Single-Sign-On support with auth plugins
-**@TODO Johannes**
+# Single-Sign-On (SSO) support with auth plugins
+
+People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it, can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all tools. 
+
+With the new release also Optimize supports this feature. Just implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read all about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to find out how to enable SSO with Optimize and Keycloak.
+
 
 # Improved upgrade performance #1
 
