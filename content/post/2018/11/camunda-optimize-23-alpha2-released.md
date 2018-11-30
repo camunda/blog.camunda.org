@@ -41,11 +41,11 @@ The progress bar colors and shape are improved to match the overall Optimize sty
 {{< figure class="main teaser" src="progressBar.png">}}
 
 # Improved report configurations
-A new configuration panel is added to single and combined reports in order to allow the user to easily customize and configure reports. The panel appears by clicking on the cog button available in the edit mode of the report. Every visualization has different settings included in the panel. In line chart and bar chart reports, it is possible to select the color of the graph, add names to the x-axis and y-axis and other additional settings as shown in the figure below. 
+A new configuration panel is added to single and combined reports in order to allow the user to easily customize and configure reports. The panel appears by clicking on the cog button available in the edit mode of the report. Every visualization has different settings included in the panel. In line chart and bar chart reports, it is possible to select the color of the graph, add names to the x-axis and y-axis and other additional settings as shown in the figure below.
 
 {{< figure class="main teaser" src="chartConfiguration.png">}}
 
-In number reports, number precision can be configured from the panel to limit the most significant units to be shown. 
+In number reports, number precision can be configured from the panel to limit the most significant units to be shown.
 
 {{< figure class="main teaser" src="NumberConfiguration.png">}}
 
@@ -60,14 +60,14 @@ This feature also works for every other visualization in the combined report.
 
 # Single-Sign-On (SSO) support with auth plugins
 
-People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it, can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all tools. 
+People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it, can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all tools.
 
 With the new release also Optimize supports this feature. Just implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read all about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to find out how to enable SSO with Optimize and Keycloak.
 
 
-# Improved upgrade performance #1
+# Improved upgrade performance
 
-This Optimize release yields an increased upgrade performance by a magnitude of 2 compared to previous releases. It does that by cutting the amount of reindex operations performed for each index upgrade in half. Stay tuned for further improvements in future that will ensure the Optimize upgrade takes the least time possible with the available hardware resources. So you can enjoy new features as soon as possible.
+This Optimize release yields an increased upgrade performance by a magnitude of 2 compared to previous releases. It does that by cutting the amount of reindex operations performed for each index upgrade in half.
 
 # How to get it
 
