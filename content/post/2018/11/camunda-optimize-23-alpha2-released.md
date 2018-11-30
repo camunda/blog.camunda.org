@@ -13,8 +13,9 @@ You can find many improvements and features of the upcoming Optimize version 2.3
 * Line charts with improved goal line visualizations
 * New improved progress bar styling
 * Improved report configurations
-* Single-Sign-On support with auth plugins
-* Improved upgrade performance #1
+* Rearrangement of reports in combined reports
+* Single-Sign-On (SSO) support with auth plugins
+* Improved upgrade performance
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15357) are available in Jira.
 
