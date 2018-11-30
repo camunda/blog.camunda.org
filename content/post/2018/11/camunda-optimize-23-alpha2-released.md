@@ -2,7 +2,7 @@
 author = "Sebastian Stamm, Johannes Heinemann, Omran Abazeed, Sebastian Bathke"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2018-11-28T15:00:00+01:00"
+date = "2018-11-30T09:00:00+01:00"
 title = "Camunda Optimize 2.3.0-alpha2 Released"
 +++
 
@@ -16,8 +16,7 @@ You can find many improvements and features of the upcoming Optimize version 2.3
 * Single-Sign-On support with auth plugins
 * Improved upgrade performance #1
 
-**@TODO meggle: update the link after Jira release:**
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=<TODO>) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15357) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
