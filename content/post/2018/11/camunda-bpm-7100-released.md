@@ -15,6 +15,7 @@ We're excited to announce that Camunda BPM platform 7.10.0 is now available. Hig
 * Fetch and Lock External Tasks based on Process Definition and Tenant
 * Extending the "Handle External Task BPMN Error" API
 * Tasklist-startable Process Definitions
+* Configure Business Key in Delegation Code
 * Additional Supported Environments
 * [89 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0)
 
@@ -25,8 +26,8 @@ You can [download Camunda 7.10.0 for free](https://camunda.com/download/) or [ru
 Also included in the release:
 
 * Camunda Spring Boot Starter 3.1.0, which relies on Spring Boot 2.0.2 by default.
-* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.0 version for non-Java developers
-* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.1 version can be embedded in Java applications
+* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.1 version for non-Java developers
+* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.0 version can be embedded in Java applications
 
 <!--more-->
 
@@ -47,7 +48,7 @@ Previously, historical data related to child processes was cleaned-up without ta
 top-level process into account. This led to inconsistencies, as it was possible that the historical data of child
 processes was cleaned-up before the respective top-level process instance has been finished.
 
-{{< figure class="teaser no-border" src="hierarchy.png" alt="" >}}
+{{< figure class="teaser no-border" src="process-hierarchy.png" alt="History cleanup across hierarchies" >}}
 
 Starting with this release, a new cleanup strategy has been introduced to tackle this issue: each historical instance
 inherits the removal time of the top-level process instance. This ensures historical data is always cleaned up consistently.
