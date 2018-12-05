@@ -29,4 +29,6 @@ Thank you to everyone for making today possible. I look forward to growing Camun
 
 <strong>Further Reading</strong>
 
+[Official Press Release](https://camunda.com/about/press/workflow-automation-innovator-camunda-secures-25-million-in-series-a-funding/)
+
 [Bernd's Blog Post](http://blog.bernd-ruecker.com/camunda-raised-25m-series-a-funding-fcf438b66c7a)
