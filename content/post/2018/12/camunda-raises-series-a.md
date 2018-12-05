@@ -2,7 +2,7 @@
 author = "Jakob Freund"
 categories = ["Community"]
 tags = ["Company"]
-date = "2018-12-05T02:00:00+01:00"
+date = "2018-12-05"
 title = "Shifting Gears - Camunda raises Series A"
 draft = false
 +++
