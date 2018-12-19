@@ -29,7 +29,7 @@ The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jsp
 
 Ready to get hands-on? [Try out a free trial of Camunda Optimize 2.2.0](#how-to-get-it).
 
-In the rest of this post, we'll give more detail on features in this release and what you can achieve with them. 
+In the rest of this post, we'll give more detail on features in this release and what you can achieve with them.
 
 # Group by Variable
 
@@ -181,7 +181,7 @@ It is also possible to set a goal line on area chart reports. The feature works 
 
 # Import complex variables
 
-Filtering for variables or grouping by variables are powerful tools to analyse your data. A problem with the previous version of Optimize was that the application only imported primitive variables. Many users have their important information hidden in complex variables, e.g. represented as JSON variables, and then want to analyze values that are hidden in those fields. With the new alpha release you can now write your own [variable plugin](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization) to transform your complex variables to primitive ones to still be able to filter for your desired information. The whole import/plugin system is depicted in the following diagram:
+Filtering for variables or grouping by variables are powerful tools to analyse your data. A problem with the previous version of Optimize was that the application only imported primitive variables. Many users have their important information hidden in complex variables, e.g. represented as JSON variables, and then want to analyze values that are hidden in those fields. With the new alpha release you can now write your own [variable plugin](https://docs.camunda.org/optimize/2.2/technical-guide/import/plugins/#variable-import-customization) to transform your complex variables to primitive ones to still be able to filter for your desired information. The whole import/plugin system is depicted in the following diagram:
 
 {{< figure class="main teaser no-border" src="map-complex-variables-to-primitives.png">}}
 
@@ -189,7 +189,7 @@ As you can see, Optimize fetches all variables including the complex ones. Later
 
 # Secure Elasticsearch
 
-The Camunda Platform collects a lot of sensitive data. To protect the database and the information it contains from being compromised, you can secure the database. But then Optimize imports this same sensitive data to Elasticsearch, and prior to this release, it was not possible to use Optimize with a secured Elasticsearch version. This changes with the new 2.2 release. You can add Elastic's X-Pack feature to your Elasticsearch instance to restrain the access to the instance and encrypt the communication. Read more about how to do that in the documentation about [secure Elasticsearch](https://docs.camunda.org/optimize/latest/technical-guide/secure-elasticsearch/).
+The Camunda Platform collects a lot of sensitive data. To protect the database and the information it contains from being compromised, you can secure the database. But then Optimize imports this same sensitive data to Elasticsearch, and prior to this release, it was not possible to use Optimize with a secured Elasticsearch version. This changes with the new 2.2 release. You can add Elastic's X-Pack feature to your Elasticsearch instance to restrain the access to the instance and encrypt the communication. Read more about how to do that in the documentation about [secure Elasticsearch](https://docs.camunda.org/optimize/2.2/technical-guide/secure-elasticsearch/).
 
 # And much more!
 

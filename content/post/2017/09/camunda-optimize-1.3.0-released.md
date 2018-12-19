@@ -1,6 +1,6 @@
 +++
 author = "Johannes Heinemann"
-categories = ["Execution"]
+categories = ["Execution", "Camunda Optimize"]
 tags = ["Release Note"]
 date = "2017-09-01T12:00:00+01:00"
 title = "Camunda Optimize 1.3.0 Released"
@@ -8,8 +8,8 @@ title = "Camunda Optimize 1.3.0 Released"
 
 Camunda Optimize 1.3.0 is here and it is packed with new features. The highlights are:
 
-* [Multiple Engine Support](https://docs.camunda.org/optimize/technical-guide/import/multiple-engines/)
-* [Executed Flow Node Filter](https://docs.camunda.org/optimize/user-guide/filter/)
+- [Multiple Engine Support](https://docs.camunda.org/optimize/technical-guide/import/multiple-engines/)
+- [Executed Flow Node Filter](https://docs.camunda.org/optimize/user-guide/filter/)
 
 # How to get it
 
