@@ -1,13 +1,12 @@
 +++
 author = "Sebastian Stamm"
-categories = ["Execution"]
+categories = ["Execution", "Camunda Optimize"]
 tags = ["Release Note"]
 date = "2017-10-27T14:00:00+02:00"
 title = "Camunda Optimize 1.5.0 Released"
 +++
 
 We are proud to announce the latest release of Camunda Optimize! With version 1.5.0 we fixed several bugs and made usability improvements that help you make informed decisions in order to optimize your processes. Check out our [documentation](https://docs.camunda.org/optimize/) and [get in touch with us](https://camunda.com/about/contact/) to find out how you can use Camunda Optimize to improve your processes.
-
 
 # Great Things are Coming
 

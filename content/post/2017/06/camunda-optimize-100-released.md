@@ -1,6 +1,6 @@
 +++
 author = "Sebastian Stamm"
-categories = ["Execution"]
+categories = ["Execution", "Camunda Optimize"]
 date = "2017-06-07T11:00:00+01:00"
 tags = ["Release Note"]
 title = "Camunda Optimize 1.0.0 Released"
@@ -14,11 +14,11 @@ Camunda Optimize is an addition to Camunda BPM, that provides continuous monitor
 
 Version 1.0.0 is already packed with features. The highlights are:
 
-* Visualization of flow nodes execution frequencies in a process
-* Visualization of average execution duration for any activity
-* Eliminating bottle-necks of your process by finding steps that take longer than a specified target value
-* Find out which paths process instances took that reached a desired outcome
-* Perform analysis based on a subset of all process instances, i.e., by variable value or start date
+- Visualization of flow nodes execution frequencies in a process
+- Visualization of average execution duration for any activity
+- Eliminating bottle-necks of your process by finding steps that take longer than a specified target value
+- Find out which paths process instances took that reached a desired outcome
+- Perform analysis based on a subset of all process instances, i.e., by variable value or start date
 
 # Visualization of flow node frequency
 

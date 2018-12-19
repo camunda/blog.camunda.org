@@ -18,7 +18,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Authorization
 
-Before this release every user that was registered within the engine, could access Camunda Optimize. However, this behavior could lead to a situation where unauthorized people read sensitive data. To prevent this there are now two options: first you can restrict the access to Camunda Optimize and second you can define which Process Definitions users have access to. 
+Before this release every user that was registered within the engine, could access Camunda Optimize. However, this behavior could lead to a situation where unauthorized people read sensitive data. To prevent this there are now two options: first you can restrict the access to Camunda Optimize and second you can define which Process Definitions users have access to.
 
 The former can be achieved by creating an application authorization for Optimize. In Camunda Admin this could for example look like the following:
 
@@ -36,7 +36,7 @@ With this setting the user john can only access Optimize reports that are based 
 
 {{< figure class="main teaser no-border" src="Optimize-Dashboard-Restricted-Reports.png">}}
 
-If you interested in more details, just read through the respective sections [User Access Management](https://docs.camunda.org/optimize/latest/technical-guide/user-management/) and [Authorization Management](https://docs.camunda.org/optimize/latest/technical-guide/authorization/) in the Optimize documentation.
+If you interested in more details, just read through the respective sections [User Access Management](https://docs.camunda.org/optimize/2.1/technical-guide/user-management/) and [Authorization Management](https://docs.camunda.org/optimize/2.1/technical-guide/authorization/) in the Optimize documentation.
 
 # External Reports
 

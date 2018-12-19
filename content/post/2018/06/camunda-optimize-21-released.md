@@ -12,12 +12,12 @@ Optimize is an add-on to Camunda that provides continuous monitoring and insight
 
 Version 2.1.0 is again packed with features. The highlights are:
 
-* Data import performance improvements
-* Table improvements
-* Configure Access and Authorizations
-* New additional reports
-* Inspect your data in Cockpit
-* Typeahead in variable filter
+- Data import performance improvements
+- Table improvements
+- Configure Access and Authorizations
+- New additional reports
+- Inspect your data in Cockpit
+- Typeahead in variable filter
 
 <!--more-->
 
@@ -43,12 +43,11 @@ With the new release, Camunda Optimize is now able to cope with this scenario. A
 
 Please be aware that Optimize only imports the data that it can use for its analysis. Currently, that is:
 
-* the history of the activity instances.
-* the history of the process instances.
-* the history of variables. Though here we only keep the latest version of the variable and only import primitive types.
-* the process definitions.
-* the process definition xmls.
-
+- the history of the activity instances.
+- the history of the process instances.
+- the history of variables. Though here we only keep the latest version of the variable and only import primitive types.
+- the process definitions.
+- the process definition xmls.
 
 ## Performance enhancements
 
@@ -107,7 +106,7 @@ With this setting the user john can only access Optimize reports that are based 
 
 {{< figure class="main teaser no-border" src="Optimize-Dashboard-Restricted-Reports.png">}}
 
-If you interested in more details, just read through the respective sections [User Access Management](https://docs.camunda.org/optimize/latest/technical-guide/user-management/) and [Authorization Management](https://docs.camunda.org/optimize/latest/technical-guide/authorization/) in the Optimize documentation.
+If you interested in more details, just read through the respective sections [User Access Management](https://docs.camunda.org/optimize/2.1/technical-guide/user-management/) and [Authorization Management](https://docs.camunda.org/optimize/2.1/technical-guide/authorization/) in the Optimize documentation.
 
 # New additional Reports
 

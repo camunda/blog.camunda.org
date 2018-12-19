@@ -54,7 +54,7 @@ In the "Filter by Flownodes" modal dialog, there is a new button that allows you
 
 # Import complex variables
 
-Filtering for variables or grouping by variables are powerful tools to analyse your data. The problem with the previous version of Optimize was, that the application only imported primitive variables. Many users have their important information hidden in complex variables, e.g. represented as JSON variables and then want to analyze fields that are hidden in those fields. With the new alpha release you can now write your own [variable plugin](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization) to transform your complex variables to primitive ones to still be able to filter for your desired information. The whole import/plugin system is depicted in the following diagram:
+Filtering for variables or grouping by variables are powerful tools to analyse your data. The problem with the previous version of Optimize was, that the application only imported primitive variables. Many users have their important information hidden in complex variables, e.g. represented as JSON variables and then want to analyze fields that are hidden in those fields. With the new alpha release you can now write your own [variable plugin](https://docs.camunda.org/optimize/2.2/technical-guide/import/plugins/#variable-import-customization) to transform your complex variables to primitive ones to still be able to filter for your desired information. The whole import/plugin system is depicted in the following diagram:
 
 {{< figure class="main teaser no-border" src="map-complex-variables-to-primitives.png">}}
 

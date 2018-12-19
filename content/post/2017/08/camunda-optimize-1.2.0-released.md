@@ -1,6 +1,6 @@
 +++
 author = "Askar Akhmerov"
-categories = ["Execution"]
+categories = ["Execution", "Camunda Optimize"]
 tags = ["Release Note"]
 date = "2017-08-01T12:00:00+01:00"
 title = "Camunda Optimize 1.2.0 Released"
@@ -8,10 +8,10 @@ title = "Camunda Optimize 1.2.0 Released"
 
 Camunda Optimize 1.2.0 is here and it is packed with new features. The highlights are:
 
-* Import Based on Process Definitions
-* Adaptive page sizes
-* Import most recent data first
-* [Documentation](https://docs.camunda.org/optimize/)
+- Import Based on Process Definitions
+- Adaptive page sizes
+- Import most recent data first
+- [Documentation](https://docs.camunda.org/optimize/)
 
 # How to get it
 
