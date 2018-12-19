@@ -1,7 +1,7 @@
 +++
 author = "Jakob Freund"
 categories = ["Community"]
-tags = ["RPA"]
+tags = ["rpa", "robotic process automation"]
 date = "2018-11-28T10:00:00+01:00"
 title = "RPA can delay your Digital Transformation"
 +++
