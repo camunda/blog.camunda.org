@@ -14,13 +14,12 @@ Version 2.3.0 is feature-rich and highlights include:
 
 * First DMN Report
 * History Cleanup
-* Single Sign-On (SSO)
 * New Report configurations
 * Enhanced Combined Reports
 * Sharing can be disabled via configuration
 * UI/UX Improvements
 * Enhanced Version Upgrade
-* New Plugin Examples
+* Plugins: Single Sign-On (SSO), Examples, Debug Mode
 * Restructured Documentation
 * Pick up license from file
 
@@ -43,12 +42,6 @@ In order to satisfy data protection laws or just for general storage management 
 The cleanup is performed based on process instance data. The criteria to decide about whether an instance is to be cleaned up is based on its end date and the configured time to live period (ttl). There is a global ttl as well as the possibility to configure process definition-specific ttls. The cleanup has two different cleanup modes: one that completely deletes the process instance (`'all'`) and another that only clears out the variables of the process instance but keeps the instance itself (`'variables'`). Same as the ttl, the mode can be overridden for specific process definitions.
 
 By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/history-cleanup/) section in the Optimize Technical Guide.
-
-# Single Sign-On (SSO)
-
-People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all of their tools.
-
-Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
 
 # New Report Configurations
 
@@ -137,17 +130,32 @@ Finished upgrade successfully!
 
 Besides that this Optimize release yields an improved upgrade performance by a magnitude of 2 compared to previous releases. It achieves this by cutting the number of reindex operations performed for each index upgrade in half.
 
-# New Plugin Examples
+# Plugins
 
-As mentioned above with this release we added another plugin point (SSO) in Optimize. It was sometimes hard to get started or find a way to use
+Optimize allows you adapt the behavior of Optimize, e.g. to decide which kind of data should be analyzed and to tackle technical issues. Within this release we added another plugin point, added example plugins for different use cases, and let you enable the debug mode of Optimize to easier develop your plugins.
+
+## Single Sign-On (SSO)
+
+People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all of their tools.
+
+Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
+
+## New Plugin Examples
+
+It was sometimes hard to get started or find a way to use
 the plugin system for certain use cases. To help you with that we created an [Optimize example repository](https://github.com/camunda/camunda-optimize-examples)
 which contains a collection of usage examples to quickly get you started
 
+Within this repository you will find examples for [SSO plugins](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin) as well as [variable import plugins](https://github.com/camunda/camunda-optimize-examples/tree/master/variable-import-plugin).
 
---- mention Variable Filter plugins & SSO plugins [Felix]
+The SSO plugin shows how you can enable SSO with Optimize and Keycloak.
+For the variable import plugins we added four different examples to show the most common use cases for this type of plugin: anonymizing variables, filtering out variables, resolving References to external Systems and transforming complex variables.
 
 If there is an example that you would like to be added there and that you think other users might benefit from, too, feel free to provide a [pull request](https://github.com/camunda/camunda-optimize-examples/pulls) anytime.
 
+## Debug mode
+
+[Johannes]
 
 # Restructured documentation
 
