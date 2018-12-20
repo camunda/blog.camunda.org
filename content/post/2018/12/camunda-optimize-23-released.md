@@ -38,20 +38,20 @@ To handle the creation of different report types Optimize now offers a drop-down
 
 {{< figure class="main teaser" src="dmn_report_create.png">}}
 
-Selecting `Create DMN Report` allows you to create a raw date report for a particular decision definition.
+Selecting `Create DMN Report` allows you to create a raw data report for a particular decision definition.
 
 {{< figure class="main teaser" src="dmn_raw_data_report.png">}}
 
 While this marks the first milestone for DMN reports in Optimize, more report types are being scheduled for upcoming releases.
-Please note that in order to see decision definition and instance data, the user needs to be granted access to decision data in Camunda Admin. See our documentation on [Authorization Management](https://docs.camunda.org/optimize/develop/technical-guide/setup/authorization/).
+Please note that in order to see decision definition and instance data, the user needs to be granted access to decision data in Camunda Admin. See our documentation on [Authorization Management](https://docs.camunda.org/optimize/latest/technical-guide/setup/authorization/).
 
 # History Cleanup
 
 In order to satisfy data protection laws or just for general storage management purposes, Optimize now provides an automated cleanup functionality.
 
-The cleanup is performed based on process instance data. The criteria to decide about whether an instance is to be cleaned up is based on its end date and the configured time to live period (ttl). There is a global ttl as well as the possibility to configure process definition-specific ttls. The cleanup has two different cleanup modes: one that completely deletes the process instance (`'all'`) and another that only clears out the variables of the process instance but keeps the instance itself (`'variables'`). Same as the ttl, the mode can be overridden for specific process definitions.
+The cleanup is performed based on process and decision instance data. The criteria to decide about whether an instance is to be cleaned up is based on its end date and the configured time to live period (ttl). There is a global ttl as well as the possibility to configure process and decision definition-specific ttls. The cleanup has two different cleanup modes for processes: one that completely deletes the process instance (`'all'`) and another that only clears out the variables of the process instance but keeps the instance itself (`'variables'`). Same as the ttl, the mode can be overridden for specific process definitions. For decision instances always the whole instance including input and output variables is being cleaned up.
 
-By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/history-cleanup/) section in the Optimize Technical Guide.
+By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/setup/history-cleanup/) section in the Optimize Technical Guide.
 
 # New Report Configurations
 
