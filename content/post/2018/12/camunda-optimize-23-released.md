@@ -33,7 +33,17 @@ You don't want to read the whole post but rather get the new features demonstrat
 
 # First DMN Report
 
-Raw Data Report [meggle]
+This version features DMN raw data reports.
+To handle the creation of different report types Optimize now offers a drop-down menu on the create report button with BPMN Report as the default.
+
+{{< figure class="main teaser" src="dmn_report_create.png">}}
+
+Selecting `Create DMN Report` allows you to create a raw date report for a particular decision definition.
+
+{{< figure class="main teaser" src="dmn_raw_data_report.png">}}
+
+While this marks the first milestone for DMN reports in Optimize, more report types are being scheduled for upcoming releases.
+Please note that in order to see decision definition and instance data, the user needs to be granted access to decision data in Camunda Admin. See our documentation on [Authorization Management](https://docs.camunda.org/optimize/develop/technical-guide/setup/authorization/).
 
 # History Cleanup
 
@@ -78,7 +88,7 @@ This feature also works for every other visualization in the combined report.
 
 # Sharing can be disabled via configuration
 
-[Meggle]
+The report sharing feature which is enabled by default can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#other). Once disabled the share button will be deactivated with a tooltip hint that sharing is disabled.
 
 # UI/UX Improvements
 
