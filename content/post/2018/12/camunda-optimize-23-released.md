@@ -8,7 +8,7 @@ title = "Camunda Optimize 2.3.0 Released"
 
 We are happy to announce the release of Camunda Optimize version 2.3.0.
 
-Optimize works alongside Camunda BPM to provide continuous monitoring and insights for your deployed business processes. Optimize tames huge quantities of data to help process owners make informed decisions to improve their processes.
+Optimize works alongside Camunda BPM to provide continuous monitoring and insights for your deployed business processes and decision tables. Optimize tames huge quantities of data to help process owners make informed decisions to improve their processes and decisions.
 
 Version 2.3.0 is a feature-rich release, and highlights include:
 
@@ -88,7 +88,7 @@ This feature also works for every other visualization in the combined report.
 
 # Sharing can be disabled via configuration
 
-The report sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
+The report and dashboard sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/latest/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
 
 # UI/UX Improvements
 
