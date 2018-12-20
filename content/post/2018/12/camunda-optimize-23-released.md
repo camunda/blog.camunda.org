@@ -1,8 +1,8 @@
 +++
-author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Sebastian Stamm"
+author = "Felix Müller, Johannes Heinemann, Sebastian Bathke"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2018-12-19T09:00:00+01:00"
+date = "2018-12-20T09:00:00+01:00"
 title = "Camunda Optimize 2.3.0 Released"
 +++
 
@@ -23,7 +23,7 @@ Version 2.3.0 is a feature-rich release, and highlights include:
 * Restructured Documentation
 * Pick up license from file
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15342) are available in Jira.
 
 Ready to get hands-on? [Try out a free trial of Camunda Optimize 2.3.0](#how-to-get-it).
 
@@ -148,7 +148,7 @@ Optimize allows you adapt the behavior of Optimize, e.g. to decide which kind of
 
 People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all of their tools.
 
-Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
+Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
 
 ## New Plugin Examples
 
@@ -165,18 +165,21 @@ If there is an example that you would like to see added there and that you think
 
 ## Debug mode
 
-[Johannes]
+Optimize has more and more plugins to adjust it to your needs. As fun it is to create your plugin, up until the last release it turned out to be combersome task, because you got no insights what actually happended during your custom plugin execution. The only clue that provided you with some information was the Optimiz log. 
 
-# Restructured documentation
+Those times are over now. With the new debug mode it has never been easier to implement your own plugin. Just start Optimize in the debug mode, connect your favorite IDE to the debug port and step through your plugin implementation to find out what's happening. With this feature it becomes a piece of cake to implement your own Optimize plugin. Read all about it in the [plugin documentation](https://docs.camunda.org/optimize/develop/technical-guide/plugins/#debug-your-plugin).
 
-[Johannes]
+# Documentation restructuring
+
+Starting from 2.0, we added a myriad of features to Optimize. By that the platform extension started to grow up and get more mature. As with every software adding more functionality to it also comes with a price: you have to refactore old code and rewrite documentation that does not fit the new product anymore. It turned out that the time had come for Optimize to do exactly that. The documentation structure did not match all the new features anymore and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/) and read your kids a good bedtime story.
 
 # Pick up license from file
 
-[Johannes]
+So far adding a license to Optimize was as simple as copying it and pasting it into the input box of the Optimize license page. However, often companies don't want their users to add the license manually, but let the software automatically read the license, so users don't get bothered by the license prompt. With the new release this is now possible by adding the license file to your Optimize distribution. Read all about it in the [Optimize license documentation](https://docs.camunda.org/optimize/latest/user-guide/license/).
 
 # And much more!
-There are many additional smaller features and bugfixes in the release that we didn’t mention in this blog post. The [full release notes]() include those details.
+
+There are many additional smaller features and bugfixes in the release that we didn’t mention in this blog post. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15342) include those details.
 
 # How to get it
 
