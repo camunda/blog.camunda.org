@@ -43,7 +43,7 @@ Selecting `Create DMN Report` allows you to create a raw data report for a parti
 {{< figure class="main teaser" src="dmn_raw_data_report.png">}}
 
 While this marks the first milestone for DMN reports in Optimize, more report types are planned for upcoming releases.
-Please note that in order to see decision definition and instance data, the user needs to be granted access to decision data in Camunda Admin. See our documentation on [Authorization Management](https://docs.camunda.org/optimize/latest/technical-guide/setup/authorization/).
+Please note that in order to see decision definition and instance data, the user needs to be granted access to decision data in Camunda Admin. See our documentation on [Authorization Management](https://docs.camunda.org/optimize/2.3/technical-guide/setup/authorization/).
 
 # History Cleanup
 
@@ -51,7 +51,7 @@ In order to satisfy data protection laws or just for general storage management 
 
 The cleanup is performed based on process and decision instance data. The criteria to decide whether an instance should be cleaned up is based on its end date and the configured time to live period (ttl). There is a global ttl as well as the option to configure process and decision definition-specific ttls. The cleanup has two different cleanup modes for processes: one that completely deletes the process instance (`'all'`) and another that only clears out the variables of the process instance but keeps the instance itself (`'variables'`). Same as the ttl, the mode can be overridden for specific process definitions. For decision instances, the whole instance including input and output variables is always cleaned up.
 
-By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/latest/technical-guide/setup/history-cleanup/) section in the Optimize Technical Guide.
+By default, the cleanup is disabled to prevent unintended data loss. The details of its configuration are explained thoroughly in a dedicated [History Cleanup](https://docs.camunda.org/optimize/2.3/technical-guide/setup/history-cleanup/) section in the Optimize Technical Guide.
 
 # New Report Configurations
 
@@ -92,7 +92,7 @@ Optimize allows you to easily share reports and dashboards.
 By switching the share button on the report or dashboard page, Optimize automatically generates a link that you can send to people who do not have access to Camunda Optimize and thus enable them to see the dashboard or report.
 
 As Optimize can contain sensitive data regarding your processes and decisions, you eventually do not want to enable this feature for your Optimize users.
-With this release the report and dashboard sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/latest/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
+With this release the report and dashboard sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/2.3/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
 
 # UI/UX Improvements
 
@@ -152,7 +152,7 @@ Optimize allows you adapt the behavior of Optimize, e.g. to decide which kind of
 
 People working in large companies usually have a broad range of tools they use during their daily work. Logging into each tool seperately to access it can be a real pain. To mitigate this problem, many tools support a single-sign-on mechanism, such that the user only needs to log in once and automatically has access to all of their tools.
 
-Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
+Optimize now also supports this feature. Simply implement an Optimize single-sign-on plugin and add it to your Optimize distribution. Read more about how to implement the plugin in the [Optimize Plugin System documentation](https://docs.camunda.org/optimize/2.3/technical-guide/plugins/single-sign-on/) or check out the [Camunda Optimize Keycloak SSO Example](https://github.com/camunda/camunda-optimize-examples/tree/master/sso-plugin/optimize-sso-keycloak) to learn how to enable SSO with Optimize and Keycloak.
 
 ## New Plugin Examples
 
@@ -175,11 +175,11 @@ Those times have past! With the new debug mode, it has never been easier to impl
 
 # Documentation restructuring
 
-Starting from 2.0, we added a myriad of features to Optimize. As with all software, adding more functionality also comes with a price: you have to refactor old code and rewrite documentation that no longer fits the evolving product. The time had come for Optimize to do exactly that. The old documentation structure did not align with all of Optimize's new features and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/).
+Starting from 2.0, we added a myriad of features to Optimize. As with all software, adding more functionality also comes with a price: you have to refactor old code and rewrite documentation that no longer fits the evolving product. The time had come for Optimize to do exactly that. The old documentation structure did not align with all of Optimize's new features and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/2.3/).
 
 # Pick up license from file
 
-So far adding a license to Optimize was as simple as copying it and pasting it into the input box of the Optimize license page. However, often companies do not want their users to add the license manually, but let the software automatically read the license, so users do not get bothered by the license prompt. With the new release this is now possible by adding the license file to your Optimize distribution. Read all about it in the [Optimize license documentation](https://docs.camunda.org/optimize/latest/user-guide/license/).
+So far adding a license to Optimize was as simple as copying it and pasting it into the input box of the Optimize license page. However, often companies do not want their users to add the license manually, but let the software automatically read the license, so users do not get bothered by the license prompt. With the new release this is now possible by adding the license file to your Optimize distribution. Read all about it in the [Optimize license documentation](https://docs.camunda.org/optimize/2.3/user-guide/license/).
 
 # And much more!
 
