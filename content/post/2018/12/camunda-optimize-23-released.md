@@ -169,13 +169,13 @@ If there is an example that you would like to see added there and that you think
 
 ## Debug mode
 
-Optimize has more and more plugins to adjust it to your needs. As fun it is to create your plugin, up until the last release it turned out to be combersome task, because you got no insights what actually happended during your custom plugin execution. The only clue that provided you with some information was the Optimiz log.
+Optimize offers more and more plugins so that you can adapt it to your needs. As fun as it can be to create a plugin, up until the last release, it was a rather cumbersome task because you received no insights into what actually happened during your custom plugin execution. The only resource that provided you with some information was the Optimize log.
 
-Those times are over now. With the new debug mode it has never been easier to implement your own plugin. Just start Optimize in the debug mode, connect your favorite IDE to the debug port and step through your plugin implementation to find out what's happening. With this feature it becomes a piece of cake to implement your own Optimize plugin. Read all about it in the [plugin documentation](https://docs.camunda.org/optimize/develop/technical-guide/plugins/#debug-your-plugin).
+Those times have past! With the new debug mode, it has never been easier to implement your own plugin. Just start Optimize in the debug mode, connect your favorite IDE to the debug port, and step through your plugin implementation to find out what's happening. With this feature, it becomes a piece of cake to implement your own Optimize plugin. Read all about it in the [plugin documentation](https://docs.camunda.org/optimize/develop/technical-guide/plugins/#debug-your-plugin).
 
 # Documentation restructuring
 
-Starting from 2.0, we added a myriad of features to Optimize. By that the platform extension started to grow up and get more mature. As with every software adding more functionality to it also comes with a price: you have to refactore old code and rewrite documentation that does not fit the new product anymore. It turned out that the time had come for Optimize to do exactly that. The documentation structure did not match all the new features anymore and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/).
+Starting from 2.0, we added a myriad of features to Optimize. As with all software, adding more functionality also comes with a price: you have to refactor old code and rewrite documentation that no longer fits the evolving product. The time had come for Optimize to do exactly that. The old documentation structure did not align with all of Optimize's new features and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/).
 
 # Pick up license from file
 
