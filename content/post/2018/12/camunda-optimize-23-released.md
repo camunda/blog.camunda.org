@@ -2,7 +2,7 @@
 author = "Felix Müller, Johannes Heinemann, Sebastian Bathke"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2018-12-20T09:00:00+01:00"
+date = "2018-12-21T08:00:00+01:00"
 title = "Camunda Optimize 2.3.0 Released"
 +++
 
@@ -88,7 +88,11 @@ This feature also works for every other visualization in the combined report.
 
 # Sharing can be disabled via configuration
 
-The report and dashboard sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/latest/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
+Optimize allows you to easily share reports and dashboards.
+By switching the share button on the report or dashboard page, Optimize automatically generates a link that you can send to people who do not have access to Camunda Optimize and thus enable them to see the dashboard or report.
+
+As Optimize can contain sensitive data regarding your processes and decisions, you eventually do not want to enable this feature for your Optimize users.
+With this release the report and dashboard sharing feature, which is enabled by default, can now be disabled via the `sharing.enabled` property in the [configuration](https://docs.camunda.org/optimize/latest/technical-guide/setup/configuration/#other). Once disabled, the share button will be deactivated with a tooltip hint that sharing is disabled.
 
 # UI/UX Improvements
 
@@ -165,17 +169,17 @@ If there is an example that you would like to see added there and that you think
 
 ## Debug mode
 
-Optimize has more and more plugins to adjust it to your needs. As fun it is to create your plugin, up until the last release it turned out to be combersome task, because you got no insights what actually happended during your custom plugin execution. The only clue that provided you with some information was the Optimiz log. 
+Optimize has more and more plugins to adjust it to your needs. As fun it is to create your plugin, up until the last release it turned out to be combersome task, because you got no insights what actually happended during your custom plugin execution. The only clue that provided you with some information was the Optimiz log.
 
 Those times are over now. With the new debug mode it has never been easier to implement your own plugin. Just start Optimize in the debug mode, connect your favorite IDE to the debug port and step through your plugin implementation to find out what's happening. With this feature it becomes a piece of cake to implement your own Optimize plugin. Read all about it in the [plugin documentation](https://docs.camunda.org/optimize/develop/technical-guide/plugins/#debug-your-plugin).
 
 # Documentation restructuring
 
-Starting from 2.0, we added a myriad of features to Optimize. By that the platform extension started to grow up and get more mature. As with every software adding more functionality to it also comes with a price: you have to refactore old code and rewrite documentation that does not fit the new product anymore. It turned out that the time had come for Optimize to do exactly that. The documentation structure did not match all the new features anymore and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/) and read your kids a good bedtime story.
+Starting from 2.0, we added a myriad of features to Optimize. By that the platform extension started to grow up and get more mature. As with every software adding more functionality to it also comes with a price: you have to refactore old code and rewrite documentation that does not fit the new product anymore. It turned out that the time had come for Optimize to do exactly that. The documentation structure did not match all the new features anymore and needed a new shiny layout that makes it more intuitive to find what you are looking for. Feel free to check out the [new documentation version](https://docs.camunda.org/optimize/latest/).
 
 # Pick up license from file
 
-So far adding a license to Optimize was as simple as copying it and pasting it into the input box of the Optimize license page. However, often companies don't want their users to add the license manually, but let the software automatically read the license, so users don't get bothered by the license prompt. With the new release this is now possible by adding the license file to your Optimize distribution. Read all about it in the [Optimize license documentation](https://docs.camunda.org/optimize/latest/user-guide/license/).
+So far adding a license to Optimize was as simple as copying it and pasting it into the input box of the Optimize license page. However, often companies do not want their users to add the license manually, but let the software automatically read the license, so users do not get bothered by the license prompt. With the new release this is now possible by adding the license file to your Optimize distribution. Read all about it in the [Optimize license documentation](https://docs.camunda.org/optimize/latest/user-guide/license/).
 
 # And much more!
 
