@@ -7,7 +7,7 @@ title = "The Camunda Stack In 2018: The Year In Review"
 draft = false
 +++
 
-The year is coming to an end, so I want to take a moment to consider the progress our product teams have made this year and, most of all, thank everybody for their fantastic work. We have achieved great things this year, and we are planning to tackle many more in the year and years to come.
+The year is coming to an end, so I want to take a moment to consider the progress our product teams have made this year and, most of all, thank everybody for their fantastic work. We have achieved great things this year, taking major steps in our mission to set the standard for workflow automation technology that brings developers and business people together.
 
 ## Where we are coming from and what drives us
 
