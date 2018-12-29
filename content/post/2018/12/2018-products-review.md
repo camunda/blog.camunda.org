@@ -61,7 +61,7 @@ Our vision is that one day, every business process automation project uses Camun
 
 ## Goals for 2019
 
-Or course we can’t reveal everything yet... but here are a few of our goals for 2019:
+Of course we can’t reveal everything yet... but here are a few of our goals for 2019:
 
 * Next year, we are reinforcing our efforts to support the Camunda developer and open source community. We will further improve developer tooling and target even more communities such as the C# and .Net community while still maintaining prime support for the Java ecosystem
 * The popular [Camunda Assertions Library](https://github.com/camunda/camunda-bpm-assert) will be officially supported
