@@ -52,9 +52,11 @@ Elastic has already announced their End Of Life Support for 6.0.x (2019-05-14) a
 
 # DMN Import Plugin Point
 
-With Optimize 2.3.0 we added the first DMN Report in Optimize and since then import historic decision instances from the Camunda BPM Runtime Platform into Optimize. These historic decision instances can include input and output variables which contain sensitive information.
+With Optimize 2.3.0 we added the first DMN Report in Optimize and since then import historic decision instances from the Camunda BPM Runtime Platform into Optimize. These historic decision instances can include input and output variables which contain sensitive, irrelevant or incomplete information.
 To allow customization of these inputs and outputs we added a new Plugin Point to Camunda Optimize that works in a similar fashion to the existing Variable Import Plugin Point for BPMN process variables.
-[more details]
+Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), filter out or anonymize information that you don't want to have in Optimize for any reasons, and much more.
+Read more about that feature in the [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/), also you can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
+
 
 # Export Reports to CSV
 
