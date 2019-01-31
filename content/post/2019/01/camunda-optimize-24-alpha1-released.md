@@ -48,7 +48,9 @@ Elastic has already announced their End Of Life Support for 6.0.x (2019-05-14) a
 
 # Java 11 Support
 
-(Meggle)
+With Optimize 2.4.0-alpha1 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/latest/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8 which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
+
+So feel free to run Optimize 2.4.0-alpha1 with the latest Oracle/OpenJDK Java 11 LTS Runtime.
 
 # DMN Import Plugin Point
 
