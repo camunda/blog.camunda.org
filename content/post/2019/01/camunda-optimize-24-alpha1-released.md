@@ -85,7 +85,7 @@ With this release we add the possibility to export all Reports that are currentl
 
 # Automatic interval selection for date grouping
 
-While adding more and more features to Optimize, we are also trying to improve the user experience of Optimize and this is exactly what this feature is about. 
+While adding more and more features to Optimize, we are also trying to improve the user experience of Optimize and this is exactly what this feature is about. From now on the grouping by date can automatically be done for you, without you worrying about what is the best time range to select.
 
 Let's say you have process for your lead qualification and you want to see how many leads arrived over time. Since you are not sure when the process was actually rolled out in production you don't know if you need to group the data by week, month or year. With the new version you now can select to an automatic grouping. This way Optimize decides for you, based on the data that exists, how the data should be distributed. Have a look here on how this could look like:
 
