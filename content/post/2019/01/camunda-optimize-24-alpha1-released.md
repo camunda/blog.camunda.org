@@ -12,7 +12,7 @@ You can find many improvements and features of the upcoming Optimize version 2.4
 * ElasticSearch REST Client
 * ElasticSearch updated version support
 * Java 11 Support
-* DMN Import Plugin Point
+* DMN Improvements
 * Export Reports to CSV
 * Automatic interval selection for date grouping
 
@@ -52,18 +52,35 @@ With Optimize 2.4.0-alpha1 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](
 
 So feel free to run Optimize 2.4.0-alpha1 with the latest Oracle/OpenJDK Java 11 LTS Runtime.
 
-# DMN Import Plugin Point
+# DMN Improvements
 
-With Optimize 2.3.0 we added the first DMN Report in Optimize and since then import historic decision instances from the Camunda BPM Runtime Platform into Optimize. These historic decision instances can include input and output variables which contain sensitive, irrelevant or incomplete information.
+With Optimize 2.3.0 we added the first DMN Report and since then Optimize imports historic decision instances from the Camunda BPM Runtime Platform.
+
+## DMN Import Plugin Point
+
+The historic decision instances that are being imported can include input and output variables which contain sensitive, irrelevant or incomplete information.
 To allow customization of these inputs and outputs we added a new Plugin Point to Camunda Optimize that works in a similar fashion to the existing Variable Import Plugin Point for BPMN process variables.
 Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), filter out or anonymize information that you don't want to have in Optimize for any reasons, and much more.
 Read more about that feature in the [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/), also you can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
+## DMN Import can be disabled
+
+DMN can be used for many different use-cases. Eventually you use DMN tables for making decisions where it does not make really sense to trying improve the decisions or you simply want to focus on processes rather than decisions.
+
+With this release we added the possibility to completely disable the DMN data import such that decision definitions and decision instances are not imported.
+
+By setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml` you disable the import. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#engine-common-settings)
+
+## DMN Raw Data Report Links to Cockpit
+
+When looking at a number of decisions in the Raw Data report, you might be interested in the details for a certain instance. With this release we added a deep link from decision instances to the Cockpit meaning that Decision Raw Data reports have a similar deep link as you are already used to from BPMN Raw Data reports.
+
+[add picture here]
 
 # Export Reports to CSV
 
 For a while it is already possible to export Raw Data Reports as CSV files allowing users to view historic process information in tools like Microsoft Excel to eventually combine them with other data or do further analysis outside of Optimize.
-With this release we add the possibility to export all single BPMN reports as CSV.
+With this release we add the possibility to export all Reports that are currently available in Optimize as CSV.
 [bit more here]
 
 # Automatic interval selection for date grouping
