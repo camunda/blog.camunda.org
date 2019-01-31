@@ -16,7 +16,7 @@ You can find many improvements and features of the upcoming Optimize version 2.4
 * Export Reports to CSV
 * Automatic interval selection for date grouping
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15369) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 <!--more-->
