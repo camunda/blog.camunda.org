@@ -26,7 +26,7 @@ Elasticsearch plays an important role for Camunda Optimize since we use it to st
 
 ## Elasticsearch REST Client
 
-When we started the development of Camunda Optimize, Elastic's recommendation for communicating to Elasticsearch was to use their Java TransportClient. Since then, Elastic has updated their recommended approach. 
+When we started the development of Camunda Optimize, Elastic's recommendation for communicating to Elasticsearch was to use their Java TransportClient. Since then, Elastic has updated their recommended approach.
 
 Elastic now officially recommends using the Java REST Client for communication with the Elasticsearch nodes. Additionally, Elastic plans to deprecate the TransportClient in [future releases](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.5/client.html).
 In addition, some cloud service providers who offer Elastic as a service no longer support the TransportClient.
@@ -65,9 +65,9 @@ Implementing such plugins allows you to enrich inputs and outputs with some exte
 
 Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
-## Disable DMN Import 
+## Disable DMN Import
 
-DMN can be used for many different use-cases. Eventually you use DMN tables for making decisions where it does not make really sense to trying improve the decisions or you simply want to focus on processes rather than decisions.
+DMN can be used for many different use cases where the business rules for a decision are well-established and won’t be changing often. Eventually there is even no need to improve the business rules at all.
 
 With this release, we made it possible to completely disable the DMN data import such that decision definitions and decision instances are not imported.
 
