@@ -1,8 +1,8 @@
 +++
-author = "Felix Mueller, Kyrylo Zakurdaiev"
+author = "Sebastian Bathke, Johannes Heinemann, Felix Mueller, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-01-29T09:00:00+01:00"
+date = "2019-02-01T09:00:00+01:00"
 title = "Camunda Optimize 2.4.0-alpha1 Released"
 +++
 
@@ -33,8 +33,6 @@ Besides this some Cloud service providers, who offer Elastic as a Service, do no
 
 With this release of Optimize we reworked the communication from Optimize to ElasticSearch and are using the REST Client in favour of Elastic's TransportClient.
 
-[something about why this is great]
-
 ## ElasticSearch updated version support
 
 With this release of Camunda Optimize we update our support for ElasticSearch meaning that from 2.4.0-alpha1 onwards we will not support ElasticSearch 6.0.0 anymore. Instead we add official support for following ElasticSearch versions:
@@ -46,6 +44,7 @@ With this release of Camunda Optimize we update our support for ElasticSearch me
 
 Elastic has already announced their End Of Life Support for 6.0.x (2019-05-14) and 6.1.x (2019-06-13) and Optimize will reject any versions earlier than 6.2.0 and later/equal to 7.0.0 during startup.
 
+
 # Java 11 Support
 
 With Optimize 2.4.0-alpha1 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/latest/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8 which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
@@ -54,13 +53,14 @@ So feel free to run Optimize 2.4.0-alpha1 with the latest Oracle/OpenJDK Java 11
 
 # DMN Improvements
 
-With Optimize 2.3.0 we added the first DMN Report and since then Optimize imports historic decision instances from the Camunda BPM Runtime Platform.
+With Optimize 2.3.0 we added the first DMN Report and since then Optimize imports historic decision instances from the Camunda BPM Runtime Platform. Within this release we added a couple of improvements to lay the ground for more exciting features in this area.
 
 ## DMN Import Plugin Point
 
 The historic decision instances that are being imported can include input and output variables which contain sensitive, irrelevant or incomplete information.
 To allow customization of these inputs and outputs we added a new Plugin Point to Camunda Optimize that works in a similar fashion to the existing Variable Import Plugin Point for BPMN process variables.
 Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), filter out or anonymize information that you don't want to have in Optimize for any reasons, and much more.
+
 Read more about that feature in the [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/), also you can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
 ## DMN Import can be disabled
@@ -69,27 +69,30 @@ DMN can be used for many different use-cases. Eventually you use DMN tables for 
 
 With this release we added the possibility to completely disable the DMN data import such that decision definitions and decision instances are not imported.
 
-By setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml` you disable the import. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#engine-common-settings)
+By setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml` you disable the import. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#engine-common-settings).
 
 ## DMN Raw Data Report Links to Cockpit
 
 When looking at a number of decisions in the Raw Data report, you might be interested in the details for a certain instance. With this release we added a deep link from decision instances to the Cockpit meaning that Decision Raw Data reports have a similar deep link as you are already used to from BPMN Raw Data reports.
 
-[add picture here]
+{{< figure class="Decision Instance Link to Cockpit" src="decision-instance-cockpit-link.png">}}
+
 
 # Export Reports to CSV
 
 For a while it is already possible to export Raw Data Reports as CSV files allowing users to view historic process information in tools like Microsoft Excel to eventually combine them with other data or do further analysis outside of Optimize.
-With this release we add the possibility to export all Reports that are currently available in Optimize as CSV.
-[bit more here]
+With this release we add the possibility to export **all report types** that are currently available in Optimize as CSV.
+This allows you to continue your analysis outside of Optimize - no matter what kind of view your are using and which visualization type you chose.
 
 # Automatic interval selection for date grouping
 
 While adding more and more features to Optimize, we are also trying to improve the user experience of Optimize and this is exactly what this feature is about. From now on the grouping by date can automatically be done for you, without you worrying about what is the best time range to select.
 
-Let's say you have process for your lead qualification and you want to see how many leads arrived over time. Since you are not sure when the process was actually rolled out in production you don't know if you need to group the data by week, month or year. With the new version you now can select to an automatic grouping. This way Optimize decides for you, based on the data that exists, how the data should be distributed. Have a look here on how this could look like:
+Let's say you have a process for your lead qualification and you want to see how many leads arrived over time. Since you are not sure when the process was actually rolled out in production, you don't know if you need to group the data by week, month or year. With the new version you can select the automatic grouping. This way Optimize decides for you, based on the data that exists, how the data should be distributed. Have a look here on how this could look like:
 
 {{< figure class="Automatic Interval Selection for grouping by date" src="automatic-selection.png">}}
+
+Of course you can still decide to group by Year, Month, Week, Day, and Hour.
 
 # What's Next?
 
