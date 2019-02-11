@@ -1,4 +1,4 @@
-+++
+﻿+++
 author = "Charley Mann"
 draft = false
 categories = ["Community"]
@@ -12,9 +12,6 @@ We recently hosted the Domain Driven Design Berlin Meetup: Real World Domain Dri
 Our speaker for the evening, the talented [Sandra Ahlgrimm](https://twitter.com/skriemhild), Cloud Advocate at Microsoft, walked us through an [interesting real-life case study](https://www.slideshare.net/sandramarlii/real-world-domain-driven-design-example), brimming with DevOps lessons. Here’s our key takeaways from this insightful evening
 
 <!--more-->
-We recently hosted the Domain Driven Design Berlin Meetup: Real World Domain Driven Design Example from the Startup World... and why this architecture failed in the end.
-
-Our speaker for the evening, the talented [Sandra Ahlgrimm](https://twitter.com/skriemhild), Cloud Advocate at Microsoft, walked us through an [interesting real-life case study](https://www.slideshare.net/sandramarlii/real-world-domain-driven-design-example), brimming with DevOps lessons. Here’s our key takeaways from this insightful evening:
 
 ####Lesson #1: Don’t expect startup IT to be full of Greenfield opportunities for DDD
 
