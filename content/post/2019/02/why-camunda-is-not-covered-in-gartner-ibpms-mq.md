@@ -13,7 +13,7 @@ Gartner has recently released the latest version of their [Magic Quadrant for In
 Despite rumours to the contrary, Gartner will look at your product even if you’re not a paying customer. So although we aren’t Gartner customers, they reached out to us in June last year announcing that a new version of the MQ was in the making and they were considering including Camunda BPM, since it is coming up more and more often in client conversations. They have a standardized approach to this, and in the first step they asked us if we believe our product qualifies for the MQ. Here is what I replied:
 
 <!--more-->
-![alt text](https://blog.camunda.com/post/2019/02/Camunda-Gartner.png "Camunda-Gartner")
+{{< figure class="main teaser" src="camunda-gartner.png" alt="Camunda-Gartner">}}
 
 So why would I say that?
 
