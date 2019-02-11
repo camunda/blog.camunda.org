@@ -46,7 +46,7 @@ Another analyst firm that literally put Camunda on their radar last year is Thou
 
 [They recommend assessing Camunda in their latest technology radar](https://www.thoughtworks.com/radar/languages-and-frameworks/camunda) and their reasoning is at complete odds with the way Gartner defines an iBPMS:
 
-#### *We tend to be quite skeptical of business process model and notation (BPMN) tools in general as they're often associated with low-code environments and their downsides. Although the OSS BPMN framework Camunda provides some of this whizziness, it also offers workflow and decision engines that can be directly integrated as a library in your Java code. This makes it easy to test, version and refactor workflows. Camunda also integrates with Spring and Spring Boot, among other frameworks, making it a solid choice.*
+### *We tend to be quite skeptical of business process model and notation (BPMN) tools in general as they're often associated with low-code environments and their downsides. Although the OSS BPMN framework Camunda provides some of this whizziness, it also offers workflow and decision engines that can be directly integrated as a library in your Java code. This makes it easy to test, version and refactor workflows. Camunda also integrates with Spring and Spring Boot, among other frameworks, making it a solid choice.*
 
 So in a nutshell, Thoughtworks recommends looking at Camunda because it’s anything but a low-code platform, which is exactly how Gartner defines an iBPMS.
 
