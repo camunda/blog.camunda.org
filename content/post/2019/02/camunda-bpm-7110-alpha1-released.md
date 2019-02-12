@@ -84,7 +84,7 @@ For more infomation please check the REST documentation [here](https://docs.camu
 
 ## What's Next?
 
-This is the first alpha release on the road to **Camunda BPM 7.11** (due May 30, 2018). Stay tuned for more features around permissions, job execution and testing support. For details see our [roadmap](https://camunda.com/learn/community/#roadmap).
+This is the first alpha release on the road to **Camunda BPM 7.11** (due May 31, 2018). Stay tuned for more features around permissions, job execution and testing support. For details see our [roadmap](https://camunda.com/learn/community/#roadmap).
 
 ## Your Feedback Matters!
 
