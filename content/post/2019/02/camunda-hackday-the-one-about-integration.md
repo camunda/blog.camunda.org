@@ -25,7 +25,6 @@ Our judges, the brilliant software engineer and Camunda open source contributor 
 - The complexity of the integration
 - Usefulness of the integration
 - Strange and funny creations
-- testing
 
 ## Hack Time
 <img src = "integrationhackday1.png" width="700">
