@@ -21,6 +21,7 @@ One of the best aspects of the day was welcoming a number of Camunda newcomers a
 You can’t hack without a reason, and ours was the Integration Challenge. Hackers had seven hours to bring together as many different systems as possible, using Camunda as the central orchestrator.
 
 Our judges, the brilliant software engineer and Camunda open source contributor [Jan Galinski](https://github.com/jangalinski), and Camunda super-consultant [Falko Menge](https://github.com/falko), based their judgments on:
+
 - The number of different systems and frameworks involved
 - The complexity of the integration
 - Usefulness of the integration
