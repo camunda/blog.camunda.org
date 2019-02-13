@@ -8,7 +8,7 @@ title = "Camunda Hackday – the One about Integration"
 
 +++
 
-On a freezing, snowy Saturday recently, more than 30 hackers joined us at our Berlin HQ for Camunda’s first Hackday to orchestrate some seriously smart workflows.
+On a freezing, snowy Saturday recently , more than 30 hackers joined us at our Berlin HQ for Camunda’s first Hackday to orchestrate some seriously smart workflows.
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/lfI4ShIi9YI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
