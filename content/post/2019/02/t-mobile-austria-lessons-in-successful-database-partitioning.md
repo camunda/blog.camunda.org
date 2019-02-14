@@ -3,7 +3,7 @@ author = "Charley Mann"
 draft = false
 categories = ["Community"]
 tags = ["Camunda","Case Study"]
-date = "2019-02-14"
+date = "2019-02-14T08:00:00+02:00"
 title = "T-Mobile Austria: lessons in successful database partitioning"
 
 +++
