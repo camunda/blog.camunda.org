@@ -88,7 +88,7 @@ As the current release is a beta version, it still [contains known issues](https
 
 ## Looking Forward
 
-This release completes the port of the app to an entirely new architecture. It incorporates many bug fixes and improvements, too. [Download it](https://camunda.org/release/camunda-modeler/3.0.0-beta.2/) and give it a try.
+This release completes the port of the app to an entirely new architecture. It incorporates many bug fixes and improvements, too. [Download the beta](https://camunda.org/release/camunda-modeler/3.0.0-beta.2/) and give it a try.
 
 Did we miss anything? Did you spot a bug or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.camunda.org/c/modeler), tweet us [@Camunda](https://twitter.com/Camunda) or file issues you found in the [Camunda Modeler issue tracker](https://github.com/camunda/camunda-modeler/issues/new/choose).
 
