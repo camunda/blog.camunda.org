@@ -15,7 +15,7 @@ Building on top of our [last pre-release](https://blog.camunda.com/post/2019/01/
 
 {{< figure class="teaser no-border" src="file-dropping.png" alt="Easily drag and drop a file inside" caption="Drop a file to open it in the app." >}}
 
-[Download Camunda Modeler](https://camunda.org/release/camunda-modeler/3.0.0-beta.0/) and start modeling right away.
+[Download the latest beta](https://camunda.org/release/camunda-modeler/3.0.0-beta.2/) and start modeling right away.
 
 
 ## BPMN-Only Mode
@@ -88,7 +88,7 @@ As the current release is a beta version, it still [contains known issues](https
 
 ## Looking Forward
 
-This release completes the port of the app to an entirely new architecture. It incorporates many bug fixes and improvements, too. Download it from [camunda.com](https://camunda.org/release/camunda-modeler/3.0.0-beta.0/).
+This release completes the port of the app to an entirely new architecture. It incorporates many bug fixes and improvements, too. [Download it](https://camunda.org/release/camunda-modeler/3.0.0-beta.2/) and give it a try.
 
 Did we miss anything? Did you spot a bug or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.camunda.org/c/modeler), tweet us [@Camunda](https://twitter.com/Camunda) or file issues you found in the [Camunda Modeler issue tracker](https://github.com/camunda/camunda-modeler/issues/new/choose).
 
