@@ -10,8 +10,8 @@ title = "T-Mobile Austria: lessons in successful database partitioning"
 
 T-Mobile Austria is one of Austria's largest telecommunications providers. It serves around 7.5 million customers, with 97% of users accessing fast LTE reception. Camunda is a key layer in T-Mobile Austria’s architecture, helping the company to maintain agility within a complex, large-scale environment. We’ve been working with the team at T-Mobile Austria since 2015, in fact, we just wrote a case study about our work with them.
 
-[Download T-Mobile case study](https://assets.ctfassets.net/vpidbgnakfvf/5vuJguInekMAdzBndkF5AA/2e0f79ecedbba0292e6cb7fb4d378ed1/Final_EN_T-Mobile_Austria.pdf)<br>
-<!-- [Download T-Mobile case study in German](https://assets.ctfassets.net/vpidbgnakfvf/5vuJguInekMAdzBndkF5AA/2e0f79ecedbba0292e6cb7fb4d378ed1/Final_EN_T-Mobile_Austria.pdf)-->
+[Read T-Mobile case study in English](https://assets.ctfassets.net/vpidbgnakfvf/5vuJguInekMAdzBndkF5AA/2e0f79ecedbba0292e6cb7fb4d378ed1/Final_EN_T-Mobile_Austria.pdf)<br>
+[Read T-Mobile case study in German](https://assets.ctfassets.net/vpidbgnakfvf/5vuJguInekMAdzBndkF5AA/45597874af3bc09b96e9b30e0c4e17a3/FINAL_DE_T-Mobile_Austria.pdf)
 
 T-Mobile Austria’s IT team of around 100 developers is responsible for ensuring existing and new products integrate seamlessly with around 40 back-end systems. But it’s not just bringing new products to market where the team excels, it also manages an incredible amount of data, at all hours. One of the solutions it uses –  database partitioning –  is something you can easily implement in your own operations.
 
