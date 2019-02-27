@@ -27,7 +27,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 [stamm?]
 
 # New Filter: Non-Canceled Instances
-[Kyrylo?]
+In addition to all of the Optimize's process instance filters, we now introduce Non-Canceled Instances Filter. Applying this filter will make Optimize query only those instances, which were not canceled during the execution. This means, that only active and completed instances are considered. Externally or internally terminated instances are not included in the report. You can combine this new filter with Completed Instances Filter (to see only instances that were successfully completed, otherwise Completed Instances Filter includes canceled instances as well), or with the duration filter (to filter only successfully completed instances by duration), etc.
 
 # Collections
 [omran?]
