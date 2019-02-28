@@ -44,7 +44,19 @@ You can find the new feature in the view options for process reports.
 In addition to all of the Optimize's process instance filters, we now introduce Non-Canceled Instances Filter. Applying this filter will make Optimize query only those instances, which were not canceled during the execution. This means, that only active and completed instances are considered. Externally or internally terminated instances are not included in the report. You can combine this new filter with Completed Instances Filter (to see only instances that were successfully completed, otherwise Completed Instances Filter includes canceled instances as well), or with the duration filter (to filter only successfully completed instances by duration), etc.
 
 # Notifications
-[omran?]
+In this release, we are also bringing you notifications. They provide timely information about the status of the application and give you direct feedback of the result of any action that was taken.
+
+Here are some of the cases where the notification appears: 
+
+* Success or failure to save a report/dashboard
+* Session timeout
+* Logout failure
+
+Notifications appear at the top center of the page. They appear in different styles depending on the type of the notification as shown in the image below. 
+
+{{< figure caption="Notifications types" src="notifications.png">}}
+
+Multiple notifications get stacked on top of each other and close automatically if the user did not interact with it.
 
 # Clustering
 [meggle?]
