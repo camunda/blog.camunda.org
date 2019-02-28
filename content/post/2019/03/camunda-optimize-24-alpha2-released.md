@@ -11,10 +11,9 @@ You can find many improvements and features from the upcoming Optimize version 2
 
 * DMN Reports
 * User Task Reports
-* New Filter: Non-Canceled Instances
+* Instance state filter enhancement
 * Notifications
 * Clustering
-
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa) are available in Jira.
 <!--more-->
@@ -25,30 +24,31 @@ With Optimize 2.3 we introduced the first report for DMN: The raw data report. W
 
 This information can then be visualized with the charts you already know from process reports. You can also set goals, configure the chart colors and define axis names.
 
-We also added a completely new visualization in form of a DMN table. If you select rules as grouping criterium, you will see the dmn table as you would see it in the Camunda modeler, but with an additional column detailing how often each rule was evaluated.
+We also added a completely new visualization in form of a DMN table. If you select rules as grouping criterium, you will see the decision table as you would see it in the Camunda modeler, but with an additional column showing you how often the rule hit.
 
 All of these reports are of course combinable with filters, which gives you maximum flexibility for creating the report you need.
 
+These new decision report types finally allow the user to analyse and improve decision tables in the same way as they are used to for processes broadening the scope of Camunda Optimize in a meaningful way.
 {{< figure caption="Decision Report showing evaluated rule count" src="decision-reports.png">}}
 
 # User Task Reports
-Since the inception of Camunda Optimize, you were able to see the duration of your flow nodes. And while user tasks are also flow nodes, they contain a lot more interesting information. With this release we add the option to create reports not only for the total duration of user tasks, but also have a look at their work and idle time separately.
+Since the inception of Camunda Optimize, you were able to see the duration of your flow nodes. And while user tasks are also flow nodes, they contain a lot more valuable information. With this release we add the option to create reports not only for the total duration of user tasks, but also have a look at their work and idle time separately.
 
-The idle time of a user task is the time it took until someone was assigned to work on the task after the it was created. The work time is the time it then took until the task was completed.
+The idle time of a user task is the time it took until someone was assigned to work on the task after it was created. The work time is the time it then took until the task was completed.
 
 You can find the new feature in the view options for process reports.
 
 {{< figure caption="Report showing the average work time for two user tasks" src="usertask-report.png">}}
 
-# New Filter: Non-Canceled Instances
+# Instance state filter enhancement
 In addition to all of the Optimize's process instance filters, we now introduce Non-Canceled Instances Filter. Applying this filter will make Optimize query only those instances, which were not canceled during the execution. This means, that only active and completed instances are considered. Externally or internally terminated instances are not included in the report. You can combine this new filter with Completed Instances Filter (to see only instances that were successfully completed, otherwise Completed Instances Filter includes canceled instances as well), or with the duration filter (to filter only successfully completed instances by duration), etc.
 
 # Notifications
-In this release, we are also bringing you notifications. They provide timely information about the status of the application and give you direct feedback of the result of any action that was taken.
+In this release, we are also adding a new notification feature to Optimize. Notifications provide timely information about the status of the application and give you direct feedback of the result of any action that was taken.
 
 Here are some of the cases where the notification appears: 
 
-* Success or failure to save a report/dashboard
+* Success or failure to save a report or dashboard
 * Session timeout
 * Logout failure
 
@@ -73,7 +73,7 @@ The following sample illustrates a simple fail-over cluster setup.
 
 {{< figure caption="Sample Optimize Cluster Setup " src="clustering.png">}}
 
-In this example Optimize #1 acts as the actively importing instance which also serves user requests if they are routed to it by the user facing load balancer. Optimize#2 on the other hand is configured to not import data from the engine and thus solely handles user-requests. If one instance is down, users will still be able to use Optimize as they are routed to the current available instance.
+In this example Optimize #1 acts as the actively importing instance which also serves user requests if they are routed to it by the user facing load balancer. Optimize #2 on the other hand is configured to not import data from the engine and thus solely handles user-requests. If one instance is down, users will still be able to use Optimize as they are routed to the current available instance.
 
 # What's Next?
 
