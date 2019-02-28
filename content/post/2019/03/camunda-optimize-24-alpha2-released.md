@@ -1,5 +1,5 @@
 +++
-author = "Sebastian Bathke, Johannes Heinemann, Felix Mueller, Kyrylo Zakurdaiev"
+author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Felix Mueller, Sebastian Stamm, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
 date = "2019-03-01T09:00:00+01:00"
