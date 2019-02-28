@@ -59,8 +59,21 @@ Notifications appear at the top center of the page. They appear in different sty
 Multiple notifications get stacked on top of each other and close automatically if the user did not interact with it.
 
 # Clustering
-[meggle?]
+Last but not least this release features configuration parameters that allow you to seamlessly run multiple Optimize instances in a cluster setup.
 
+An Optimize cluster can provide you the following advantages:
+
+* increase the availability of Optimize by scaling it horizontally (most prominently for a fail-over setup)
+* setup dedicated importing and user-serving Optimize instances - to increase responsiveness on high import loads
+* in a multi-engine scenario - distribute the import load over multiple Optimize instances
+
+In a cluster you need to configure one importing Optimize instance per connected Camunda BPM engine as well as a shared secret on instances that serve user requests. For a more details please head to the dedicated guide in our [documentation](https://docs.camunda.org/optimize/latest/technical-guide/setup/clustering/).
+
+The following sample illustrates a simple fail-over cluster setup.
+
+{{< figure caption="Sample Optimize Cluster Setup " src="clustering.png">}}
+
+In this example Optimize #1 acts as the actively importing instance which also serves user requests if they are routed to it by the user facing load balancer. Optimize#2 on the other hand is configured to not import data from the engine and thus solely handles user-requests. If one instance is down, users will still be able to use Optimize as they are routed to the current available instance.
 
 # What's Next?
 
