@@ -16,6 +16,7 @@ You can find many improvements and features from the upcoming Optimize version 2
 * Clustering
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15379) are available in Jira.
+
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
@@ -44,11 +45,11 @@ You can find the new feature in the view options for process reports.
 In addition to all of Optimize's process instance filters, we now introduce the Non-Canceled Instances Filter. Applying this filter will make Optimize query only those instances that were not canceled during execution. This means that only active and completed instances are considered. Externally or internally terminated instances are not included in the report. You can combine this new filter with a Completed Instances Filter to see only instances that were successfully completed--otherwise, the Completed Instances Filter includes canceled instances as well. The Non-Canceled Instances filter can also be combined with the duration filter to filter only successfully completed instances by duration, for example. 
 
 # Notifications
-This release includes a new notification feature in Optimize. Notifications provide timely information about the status of the application and give you direct feedback of the result of any action that was taken.
+This release includes a new notification feature in Optimize. Notifications provide timely information about the status of the application and give you direct feedback of the result of actions that were taken.
 
 Here are some of the cases where a notification appears: 
 
-* Success or failure to save a report or dashboard
+* Failure to save a report or dashboard
 * Session timeout
 * Logout failure
 
