@@ -130,7 +130,7 @@ You can find more information on how to use this feature [here](https://docs.cam
 
 ## What's Next?
 
-This is the second alpha release on the road to **Camunda BPM 7.11** (due May 30, 2019). Stay tuned for more features around permissions, job execution and testing support. For details see our [roadmap](https://camunda.com/learn/community/#roadmap).
+This is the second alpha release on the road to **Camunda BPM 7.11** (due May 31, 2019). Stay tuned for more features around permissions, job execution and testing support. For details see our [roadmap](https://camunda.com/learn/community/#roadmap).
 
 ## Your Feedback Matters!
 
