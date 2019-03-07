@@ -19,11 +19,11 @@ As Camunda grew over time, the team had to face several scalability and isolatio
 
 In general, there are several lessons that we learnt over the years:
 
-The complexity of the continuous integration system grows in parallel with the number of employees.
-When planning, spend a considerable amount of time thinking about maintainability and updates or they will bite you in the future.
-Managed Kubernetes services are the way to go for an efficient and stable CI. No limitation in term of available resources and no need to pay for idle servers.
-When growing, try to find the degree of autonomy that works for you. Your developers should be able to modify the pipelines and the jobs without asking your team.
-Everything needs to be managed as code. Automate everything you can and leave as little space as possible for manual changes.
+- The complexity of the continuous integration system grows in parallel with the number of employees.
+- When planning, spend a considerable amount of time thinking about maintainability and updates or they will bite you in the future.
+- Managed Kubernetes services are the way to go for an efficient and stable CI. No limitation in term of available resources and no need to pay for idle servers.
+- When growing, try to find the degree of autonomy that works for you. Your developers should be able to modify the pipelines and the jobs without asking your team.
+- Everything needs to be managed as code. Automate everything you can and leave as little space as possible for manual changes.
 
 ### Want to hear more?
 Andrea is speaking at [DevOps Pro Europe](https://devopspro.lt/andrea-giardini/) in Vilnius, Lithuania on March 19th. He’ll be sharing his experience of how Camunda has built an extensive CI/CD system based on Jenkins, and share best-practice tips on how you can scale in a complex environment.  
