@@ -25,9 +25,9 @@ Here are some changes:
 * The `groupId` for Maven dependencies has changed, it is now `org.camunda.bpm.assert`. For example:
 ```xml
 <dependency>
-  <groupId>org.camunda.bpm.assert</groupId>
-  <artifactId>camunda-bpm-assert</artifactId>
-  <version>3.0.0-alpha1</version>
+  <groupId>org.camunda.bpm.assert</groupId>
+  <artifactId>camunda-bpm-assert</artifactId>
+  <version>3.0.0-alpha1</version>
 </dependency>
 ```
 
@@ -43,9 +43,9 @@ and want to use Camunda BPM Assert. The AssertJ v3.9.1 artifact serves as a comp
 So, if you are using the [Camunda Spring Boot Starter](https://docs.camunda.org/manual/develop/user-guide/spring-boot-integration/) v3.1.0, you would add the following dependency:
 ```xml
 <dependency>
-  <groupId>org.camunda.bpm.assert</groupId>
-  <artifactId>camunda-bpm-assert-assertj3-9-1</artifactId>
-  <version>3.0.0-alpha1</version>
+  <groupId>org.camunda.bpm.assert</groupId>
+  <artifactId>camunda-bpm-assert-assertj3-9-1</artifactId>
+  <version>3.0.0-alpha1</version>
 </dependency>
 ```
 As to which compatibility artifact will be included in which version of BPM Assert can always be observed in the [version compatibility overview](https://docs.camunda.org/manual/develop/user-guide/testing/#assertions-version-compatibility).
