@@ -107,6 +107,8 @@ In addition, some cloud service providers who offer Elastic as a service no long
 
 With this release of Optimize, we reworked the communication from Optimize to Elasticsearch and are using the REST Client instead of Elastic's TransportClient.
 
+[meggle] what changes for the user (configuration, ssl, basic auth, proxy)
+
 ### Elasticsearch updated version support
 
 With this release of Camunda Optimize, we've updated our support for Elasticsearch, meaning that from 2.4.0 onwards, we will no longer support ElasticSearch 6.0.0. Instead, we've added official support for the following Elasticsearch versions:
