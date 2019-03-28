@@ -33,7 +33,7 @@ These new decision report types finally allow users to analyse and improve decis
 
 ## Gradient Bars
 
-[sebastian?]
+In the screenshot above you can see that the information how often each rule was matched is not only displayed as number, but also represented as a colored bar. This allows you to easily see which rules matched often and maybe even provides opportunity to clean up large decision tables by removing less often matched rules. Of course you can also disable this feature in the visualization configuration.
 
 ## DMN Import Plugin Point
 
@@ -142,18 +142,22 @@ Using Optimize by multiple people and departments might make it harder to find r
 
 ## Restructured Report Builder View / Aggregation Options
 
-[sebastian?]
+With the addition of user task reports the dropdown to select the view in the report builder became quite crowded. We took this opportunity to clean up and restructure the dropdown. It is now much clearer which entity (Process Instance, Flow Node or User Task) and which property (Count or Duration) the report should be based on. The aggregation (average, minimum, etc.) can now be selected in the visualization configuration dropdown:
+
+{{< figure src="view-dropdown.png" alt="Selecting views and aggregations">}}
 
 ## Sorting of Reports visualizes as Table
 
-Tables Reports in Optimize can be sorted in simple clicks. 
+Tables Reports in Optimize can be sorted in simple clicks.
 Clicking on the header of a column will sort the table by that column. This is shown on the table by a line on the top or the bottom of the header depending on the direction of this sorting (ascending or descending) as shown:
 
 {{< figure src="sorting.png" alt="Sorting table reports">}}
 
 ## New way of selecting a Start Date Filter
 
-[sebastian?]
+If your report is visualized as a bar- or linechart, you can use your mouse to select the area you want to create a start date filter for. This allows you to "zoom into" the chart. Afterwards you can still edit or remove the filter again.
+
+{{< video mp4="zoom-in.mp4" alt="Zoom into chart">}}
 
 ## Automatic Interval Selection for Date Grouping
 
