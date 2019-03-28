@@ -2,25 +2,28 @@
 author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Felix Mueller, Sebastian Stamm, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-03-29T09:00:00+01:00"
+date = "2019-03-28T09:00:00+01:00"
 title = "Camunda Optimize 2.4.0 Released"
 +++
 
-We are happy to announce the release of Camunda Optimize version 2.4.0.
-This release includes many features and also bug fixes. The new features can be clustered in four major areas:
+We are happy to announce the release of Camunda Optimize 2.4.0.
 
-* DMN Reports
-* User Task Reports
-* Infrastructure Enhancements (i.a. Clustering, ElasticSearch REST Client & Support)
-* UX Enhancements (i.a. Notifications, Reports in Collections)
+With this minor release we add many exciting features in the following areas:
+
+* [Decision Reports](#decision-reports)
+* [User Task Reports](#user-task-reports)
+* [UX Enhancements](#ux-enhancements) (i.a. [Reports & Dashboards in Collections](#reports-dashboards-in-collections), [Sorting of Table Reports](#sorting-of-table-reports), [Simplified Start Date Filter Selection](#simplified-start-date-filter-selection))
+* [Infrastructure Improvements](#infrastructure-improvements) (i.a. [Clustering](#clustering), [Security](#security), [ElasticSearch REST Client](#elasticsearch-rest-client) & [Support](#elasticsearch-updated-version-support))
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa#tbd) are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
-# DMN Reports
-In Optimize 2.3, we introduced the first-ever report for DMN: The raw data report. In 2.4.0, we've added many new report types for decisions. In your reports, you can now select the evaluation count view. In combination with new "group by" options, this allows you to see how often a decision was evaluated, how the frequency of evaluations changed over time, or how evaluations are distributed over different input and output variables.
+# Decision Reports
+After the introduction of DMN in Optimize 2.3, in 2.4.0, we've added many new report types for decisions. These new decision report types finally allow users to analyse and improve decision tables in the same way that it's possible for processes, broadening the scope of Camunda Optimize in a meaningful way.
+
+In your reports, you can now select the evaluation count view. In combination with new "group by" options, this allows you to see how often a decision was evaluated, how the frequency of evaluations changed over time, or how evaluations are distributed over different input and output variables.
 
 This information can then be visualized with the charts you already know from process reports. You can also set goals, configure the chart colors, and define axis names.
 
@@ -28,7 +31,7 @@ We also added a completely new visualization in the form of a DMN table. If you 
 
 All of these reports are of course combinable with filters, which gives you maximum flexibility for creating the report you need.
 
-These new decision report types finally allow users to analyse and improve decision tables in the same way that's possible for processes, broadening the scope of Camunda Optimize in a meaningful way.
+
 {{< figure caption="Decision Report showing evaluated rule count" src="decision-reports.png">}}
 
 ## Gradient Bars
@@ -43,7 +46,7 @@ To allow customization of these inputs and outputs, we added a new plugin point 
 
 Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), to filter out or anonymize information that you don't want to have in Optimize for whatever reason, and much more.
 
-Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
+Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/2.4/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
 ## Disable DMN Import
 
@@ -51,7 +54,7 @@ DMN can be used for many different use cases where the business rules for a deci
 
 With this release, we made it possible to completely disable the DMN data import such that decision definitions and decision instances are not imported.
 
-You can disable the import by setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml`. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#engine-common-settings).
+You can disable the import by setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml`. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#engine-common-settings).
 
 ## DMN Raw Data Report Links to Cockpit
 
@@ -71,89 +74,34 @@ You can find the new feature in the view options for process reports.
 
 [todo combination of User Task Reports]
 
-# Infrastructure Enhancements
-
-## Clustering
-This release also includes configuration parameters that allow you to seamlessly run multiple Optimize instances in a cluster setup.
-
-An Optimize cluster can provide you the following advantages:
-
-* Increase the availability of Optimize by scaling it horizontally (most commonly used for a failover setup)
-* Setup dedicated importing and user-serving Optimize instances to increase responsiveness on high import loads
-* In a multi-engine scenario, to distribute the import load over multiple Optimize instances
-
-In a cluster, you need to configure one importing Optimize instance per connected Camunda BPM engine as well as a shared secret on instances that serve user requests. For a more details, please read the dedicated guide in our [documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/clustering/).
-
-The following sample illustrates a simple failover cluster setup.
-
-{{< figure caption="Sample Optimize Cluster Setup " src="clustering.png">}}
-
-In this example, Optimize #1 acts as the actively-importing instance which also serves user requests if they are routed to it by the user facing load balancer. Optimize #2, on the other hand, is configured to not import data from the engine and thus solely handles user requests. If one instance is down, users will still be able to access Optimize as they are routed to the current available instance.
-
-## Security
-
-[Johannes?]
-
-## Elasticsearch Changes
-
-Elasticsearch plays an important role for Camunda Optimize since we use it to store imported historic engine data as well as reports, dashboards, and alerts. Given this close integration, we need to make sure that we always stay up-to-date with enhancements and changes that are added to Elasticsearch.
-
-### Elasticsearch REST Client
-
-When we started the development of Camunda Optimize, Elastic's recommendation for communicating to Elasticsearch was to use their Java TransportClient. Since then, Elastic has updated their recommended approach.
-
-Elastic now officially recommends using the Java REST Client for communication with the Elasticsearch nodes. Additionally, Elastic plans to deprecate the TransportClient in [future releases](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.5/client.html).
-In addition, some cloud service providers who offer Elastic as a service no longer support the TransportClient.
-
-With this release of Optimize, we reworked the communication from Optimize to Elasticsearch and are using the REST Client instead of Elastic's TransportClient.
-
-In summary you are able to configure multiple nodes to connect to, only need to care about the elasticsearch HTTP port, can configure a HTTP proxy if required and in terms of secured connections don't need a client certificate anymore. However, this also means you need to revise your Optimize configuration to comply with the new [elasticsearch connection configuration](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#connection-settings) and [elasticsearch security settings](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#security-settings)
-
-### Elasticsearch updated version support
-
-With this release of Camunda Optimize, we've updated our support for Elasticsearch, meaning that from 2.4.0 onwards, we will no longer support ElasticSearch 6.0.0. Instead, we've added official support for the following Elasticsearch versions:
-
-  - 6.2.0+
-  - 6.3.1+
-  - 6.4.0+
-  - 6.5.0+
-
-Elastic has already announced End of Life for support for 6.0.x (2019-05-14) and 6.1.x (2019-06-13), and Optimize will reject any versions earlier than 6.2.0 and later than or equal to 7.0.0 during startup.
-
-
-## Java 11 Support
-
-With Optimize 2.4.0 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/2.4.0/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8, which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
-
-So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Runtime.
-
-## Environment Variables in Config
-
-For means of externalizing configuration properties from the `environment-config.yaml` configuration file, Optimize now provides Java System Property & OS Environment [variable placeholder support](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#java-system-properties-os-environment-variable-placeholders).
-
 # UX / Report Enhancements
 
 ## Reports & Dashboards in Collections
 
-Using Optimize by multiple people and departments might make it harder to find reports and dashboards and organize them as needed. Therefore, we've added Collections to Optimize. Collections are a great way to group your reports and dashboards to make it easier for people in your organization to find the data they need. Collections exist in the top of the homepage for easy access and can be easily created using the 'Create New' button on top right of the page. Both reports and dashboard can be added to collections using the `Add to Collection` dropdown found on the reports and dashboards list items.
+Using Optimize by multiple people and departments might make it harder to find reports and dashboards and organize them as needed.
+Therefore, we've added Collections to Optimize. Collections are a great way to group your reports and dashboards to make it easier for people in your organization to find the data they need. Collections exist in the top of the Homepage for easy access and can be easily created using the 'Create New' button on top right of the page. Both reports and dashboard can be added to collections using the `Add to Collection` dropdown found on the reports and dashboards list items.
 
 {{< video mp4="collections.mp4" alt="Collections">}}
 
+As part of this feature we also removed the Dashboard & Report list pages and included them in the new Optimize Homepage which is called Dashboards & Reports. This allows you to find all of the information in a single place.
 
-## Restructured Report Builder View / Aggregation Options
+## Sorting of Table Reports
+
+Table Reports in Optimize can be sorted in simple clicks.
+Clicking on the header of a column will sort the table by that column. This is shown on the table by a line on the top or the bottom of the header depending on the direction of this sorting (ascending or descending) as shown:
+
+{{< figure src="sorting.png" alt="Sorting table reports">}}
+
+The sorting is persisted with the Report configuration, which means that the sorting you defined will also be used once the Report is placed on a Dashboard.
+
+## Restructured View Options in Report Builder
 
 With the addition of user task reports the dropdown to select the view in the report builder became quite crowded. We took this opportunity to clean up and restructure the dropdown. It is now much clearer which entity (Process Instance, Flow Node or User Task) and which property (Count or Duration) the report should be based on. The aggregation (average, minimum, etc.) can now be selected in the visualization configuration dropdown:
 
 {{< figure src="view-dropdown.png" alt="Selecting views and aggregations">}}
 
-## Sorting of Reports visualizes as Table
 
-Tables Reports in Optimize can be sorted in simple clicks.
-Clicking on the header of a column will sort the table by that column. This is shown on the table by a line on the top or the bottom of the header depending on the direction of this sorting (ascending or descending) as shown:
-
-{{< figure src="sorting.png" alt="Sorting table reports">}}
-
-## New way of selecting a Start Date Filter
+## Simplified Start Date Filter Selection
 
 If your report is visualized as a bar- or linechart, you can use your mouse to select the area you want to create a start date filter for. This allows you to "zoom into" the chart. Afterwards you can still edit or remove the filter again.
 
@@ -161,7 +109,7 @@ If your report is visualized as a bar- or linechart, you can use your mouse to s
 
 ## Automatic Interval Selection for Date Grouping
 
-As we add more and more features to Optimize, we're also trying to improve the user experience, and this is exactly what this feature is about. Moving forward, the grouping by date can be done for you automatically, without you worrying about the best time range to select.
+Moving forward, the grouping by date can be done for you automatically, without you worrying about the best time range to select. In combination with the new way of selecting a start date filter, this features gives you an enhanced user experience.
 
 Let's say you have a process for sales lead qualification, and you want to see how many leads arrived over time. Since you're not sure when the process was actually rolled out in production, you don't know if you need to group the data by week, month or year. Starting with this release, you can select automatic grouping. Optimize decides for you how the data should be distributed based on the data that exists. Here's what this might look like:
 
@@ -193,6 +141,67 @@ Notifications appear at the top center of the page. They appear in different sty
 {{< figure caption="Notifications types" src="notifications.png">}}
 
 Multiple notifications will be stacked on top of each other and will close automatically if the user does not interact with them.
+
+# Infrastructure Improvements
+
+## Clustering
+This release also includes configuration parameters that allow you to seamlessly run multiple Optimize instances in a cluster setup.
+
+An Optimize cluster can provide you the following advantages:
+
+* Increase the availability of Optimize by scaling it horizontally (most commonly used for a failover setup)
+* Setup dedicated importing and user-serving Optimize instances to increase responsiveness on high import loads
+* In a multi-engine scenario, to distribute the import load over multiple Optimize instances
+
+In a cluster, you need to configure one importing Optimize instance per connected Camunda BPM engine as well as a shared secret on instances that serve user requests. For a more details, please read the dedicated guide in our [documentation](https://docs.camunda.org/optimize/2.4/technical-guide/setup/clustering/).
+
+The following sample illustrates a simple failover cluster setup.
+
+{{< figure caption="Sample Optimize Cluster Setup " src="clustering.png">}}
+
+In this example, Optimize #1 acts as the actively-importing instance which also serves user requests if they are routed to it by the user facing load balancer. Optimize #2, on the other hand, is configured to not import data from the engine and thus solely handles user requests. If one instance is down, users will still be able to access Optimize as they are routed to the current available instance.
+
+## Security
+
+[Johannes?]
+
+## Elasticsearch Changes
+
+Elasticsearch plays an important role for Camunda Optimize since we use it to store imported historic engine data as well as reports, dashboards, and alerts. Given this close integration, we need to make sure that we always stay up-to-date with enhancements and changes that are added to Elasticsearch.
+
+### Elasticsearch REST Client
+
+When we started the development of Camunda Optimize, Elastic's recommendation for communicating to Elasticsearch was to use their Java TransportClient. Since then, Elastic has updated their recommended approach.
+
+Elastic now officially recommends using the Java REST Client for communication with the Elasticsearch nodes. Additionally, Elastic plans to deprecate the TransportClient in [future releases](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.5/client.html).
+In addition, some cloud service providers who offer Elastic as a service no longer support the TransportClient.
+
+With this release of Optimize, we reworked the communication from Optimize to Elasticsearch and are using the REST Client instead of Elastic's TransportClient.
+
+In summary you are able to configure multiple nodes to connect to, only need to care about the elasticsearch HTTP port, can configure a HTTP proxy if required and in terms of secured connections don't need a client certificate anymore. However, this also means you need to revise your Optimize configuration to comply with the new [elasticsearch connection configuration](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#connection-settings) and [elasticsearch security settings](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#security-settings)
+
+### Adding Support for more Elasticsearch Versions
+
+With this release of Camunda Optimize, we've updated our support for Elasticsearch, meaning that from 2.4.0 onwards, we will no longer support ElasticSearch 6.0.0. Instead, we've added official support for the following Elasticsearch versions:
+
+  - 6.2.0+
+  - 6.3.1+
+  - 6.4.0+
+  - 6.5.0+
+
+Elastic has already announced End of Life for support for 6.0.x (2019-05-14) and 6.1.x (2019-06-13), and Optimize will reject any versions earlier than 6.2.0 and later than or equal to 7.0.0 during startup.
+
+
+## Java 11 Support
+
+With Optimize 2.4.0 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/2.4/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8, which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
+
+So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Runtime.
+
+## Environment Variables in Config
+
+For means of externalizing configuration properties from the `environment-config.yaml` configuration file, Optimize now provides Java System Property & OS Environment [variable placeholder support](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#java-system-properties-os-environment-variable-placeholders).
+
 
 # How to get it
 
