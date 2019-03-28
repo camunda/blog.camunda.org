@@ -2,7 +2,7 @@
 author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Felix Mueller, Sebastian Stamm, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-03-29T09:00:00+01:00"
+date = "2019-03-28T09:00:00+01:00"
 title = "Camunda Optimize 2.4.0 Released"
 +++
 
@@ -43,7 +43,7 @@ To allow customization of these inputs and outputs, we added a new plugin point 
 
 Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), to filter out or anonymize information that you don't want to have in Optimize for whatever reason, and much more.
 
-Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
+Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
 ## Disable DMN Import
 
@@ -51,7 +51,7 @@ DMN can be used for many different use cases where the business rules for a deci
 
 With this release, we made it possible to completely disable the DMN data import such that decision definitions and decision instances are not imported.
 
-You can disable the import by setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml`. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/develop/technical-guide/setup/configuration/#engine-common-settings).
+You can disable the import by setting the configuration `import.data.dmn.enabled` to `false` in the `environment-config.yaml`. You can find this configuration settings in the [documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#engine-common-settings).
 
 ## DMN Raw Data Report Links to Cockpit
 
@@ -74,7 +74,7 @@ You can find the new feature in the view options for process reports.
 # Infrastructure Enhancements
 
 ## Clustering
-Last but not least, this release includes configuration parameters that allow you to seamlessly run multiple Optimize instances in a cluster setup.
+This release also includes configuration parameters that allow you to seamlessly run multiple Optimize instances in a cluster setup.
 
 An Optimize cluster can provide you the following advantages:
 
@@ -82,7 +82,7 @@ An Optimize cluster can provide you the following advantages:
 * Setup dedicated importing and user-serving Optimize instances to increase responsiveness on high import loads
 * In a multi-engine scenario, to distribute the import load over multiple Optimize instances
 
-In a cluster, you need to configure one importing Optimize instance per connected Camunda BPM engine as well as a shared secret on instances that serve user requests. For a more details, please read the dedicated guide in our [documentation](https://docs.camunda.org/optimize/latest/technical-guide/setup/clustering/).
+In a cluster, you need to configure one importing Optimize instance per connected Camunda BPM engine as well as a shared secret on instances that serve user requests. For a more details, please read the dedicated guide in our [documentation](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/clustering/).
 
 The following sample illustrates a simple failover cluster setup.
 
@@ -107,7 +107,7 @@ In addition, some cloud service providers who offer Elastic as a service no long
 
 With this release of Optimize, we reworked the communication from Optimize to Elasticsearch and are using the REST Client instead of Elastic's TransportClient.
 
-[meggle] what changes for the user (configuration, ssl, basic auth, proxy)
+In summary you are able to configure multiple nodes to connect to, only need to care about the elasticsearch HTTP port, can configure a HTTP proxy if required and in terms of secured connections don't need a client certificate anymore. However, this also means you need to revise your Optimize configuration to comply with the new [elasticsearch connection configuration](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#connection-settings) and [elasticsearch security settings](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#security-settings)
 
 ### Elasticsearch updated version support
 
@@ -123,7 +123,7 @@ Elastic has already announced End of Life for support for 6.0.x (2019-05-14) and
 
 ## Java 11 Support
 
-With Optimize 2.4.0 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/latest/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8, which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
+With Optimize 2.4.0 comes [Java 11 (LTS) Oracle/OpenJDK Runtime support](https://docs.camunda.org/optimize/2.4.0/technical-guide/supported-environments/#java-runtime). While the minimum supported Java Runtime Version remains 1.8, which is still actively supported by Oracle, Java 9 and 10 as non-LTS releases have already reached their [end of life](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html) and are thus not included as supported runtimes by Optimize.
 
 So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Runtime.
 
