@@ -135,7 +135,10 @@ So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Ru
 
 ## Reports & Dashboards in Collections
 
-[Omran?]
+Using Optimize by multiple people and departments might make it harder to find reports and dashboards and organize them as needed. Therefore, we've added Collections to Optimize. Collections are a great way to group your reports and dashboards to make it easier for people in your organization to find the data they need. Collections exist in the top of the homepage for easy access and can be easily created using the 'Create New' button on top right of the page. Both reports and dashboard can be added to collections using the `Add to Collection` dropdown found on the reports and dashboards list items.
+
+{{< video mp4="collections.mp4" alt="Collections">}}
+
 
 ## Restructured Report Builder View / Aggregation Options
 
@@ -143,7 +146,10 @@ So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Ru
 
 ## Sorting of Reports visualizes as Table
 
-[Omran?]
+Tables Reports in Optimize can be sorted in simple clicks. 
+Clicking on the header of a column will sort the table by that column. This is shown on the table by a line on the top or the bottom of the header depending on the direction of this sorting (ascending or descending) as shown:
+
+{{< figure src="sorting.png" alt="Sorting table reports">}}
 
 ## New way of selecting a Start Date Filter
 
