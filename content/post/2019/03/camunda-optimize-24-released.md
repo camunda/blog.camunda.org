@@ -129,7 +129,7 @@ So feel free to run Optimize 2.4.0 with the latest Oracle/OpenJDK Java 11 LTS Ru
 
 ## Environment Variables in Config
 
-[meggle?]
+For means of externalizing configuration properties from the `environment-config.yaml` configuration file, Optimize now provides Java System Property & OS Environment [variable placeholder support](https://docs.camunda.org/optimize/2.4.0/technical-guide/setup/configuration/#java-system-properties-os-environment-variable-placeholders).
 
 # UX / Report Enhancements
 
