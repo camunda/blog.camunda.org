@@ -2,7 +2,7 @@
 author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Felix Mueller, Sebastian Stamm, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-03-28T09:00:00+01:00"
+date = "2019-03-29T09:00:00+01:00"
 title = "Camunda Optimize 2.4.0 Released"
 +++
 
