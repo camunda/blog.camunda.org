@@ -70,9 +70,11 @@ The idle time of a user task is the time it took until someone was assigned to w
 
 You can find the new feature in the view options for process reports.
 
-{{< figure caption="Report showing the average work time for two user tasks" src="usertask-report.png">}}
+{{< figure caption="Report showing the average work time for four user tasks" src="usertask-report.png">}}
 
-[todo combination of User Task Reports]
+By this feature it is also possible to compare the idle, work and total time spent on user tasks in a Combined Report as you can see in the following screenshot.
+
+{{< figure caption="Combined Report showing the average work, idle and total time for four user tasks" src="usertask-combined-report.png">}}
 
 # UX / Report Enhancements
 
