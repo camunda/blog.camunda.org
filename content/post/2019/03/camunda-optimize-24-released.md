@@ -167,7 +167,9 @@ In this example, Optimize #1 acts as the actively-importing instance which also 
 
 ## Security
 
-[Johannes?]
+Security is a topic we take very serious at Camunda. To underline that we recently added a dedicated [Camunda Security Guide](https://docs.camunda.org/security/). There you can also find a [Security Notice](https://docs.camunda.org/security/notices/) guide, which lists all issues and fixes regarding security. In the future, Optimize will add any risk to this list as well and we already started with the new 2.4.0 release.
+
+On top of that you might be familiar with the [Camunda Platform Security Instructions](https://docs.camunda.org/manual/latest/user-guide/security/), where you can read all about how to protect your Camunda BPM Platform against possible attacks. Since more and more people are starting to use Optimize in production, there is also the same demand for Optimize, which we were happy to oblige. Read all about how to safeguard your Optimize in the [Optimize Security Instructions](https://docs.camunda.org/optimize/2.4/technical-guide/setup/security/).
 
 ## Elasticsearch Changes
 
