@@ -18,7 +18,7 @@ The release includes many exciting features in the following areas:
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
 
 <!--more-->
-You can [try out a free trial of Camunda Optimize](#how-to-get-it).
+You can [try out a free trial of Camunda Optimize](#how-to-get-it) and also [register for our webinars in English and German](#register-for-the-webinar).
 
 # Decision Reports
 DMN was first introduced in Optimize 2.3, and in 2.4.0, we've added many new report types for decisions. These new decision report types allow users to analyse and improve decision tables in the same way that's possible for processes, broadening the scope of Camunda Optimize in a meaningful way.
