@@ -6,7 +6,7 @@ date = "2019-03-27T12:00:00+01:00"
 title = "Camunda Modeler 3.0.0 Released"
 +++
 
-We are happy the Camunda Modeler 3.0.0 final release. Compared to the old stable `v2.x` series, it improves error recovery, extensibility, and the overall modeling experience. On top of this, it incorporates numerous bug fixes.
+We are excited to announce the Camunda Modeler v3.0.0 major release. It comes with improved error recovery, extensibility, and better modeling experience in comparison to the `v2.x` series. In addition to that, it incorporates numerous bug fixes.
 
 [Download the all-new app](https://camunda.com/download/modeler/) and start modeling right away.
 
@@ -81,7 +81,7 @@ On the flip side, this feature is likely to introduce additional noise when merg
 
 ## Update On Supported Environments
 
-We updated our documentation, clarifying the app's supported environments. Quoting directly from [the documentation](https://docs.camunda.org/manual/latest/installation/camunda-modeler/):
+We updated our documentation, clarifying the app's supported environments. Quoting [the documentation](https://docs.camunda.org/manual/latest/installation/camunda-modeler/) directly:
 
 ```
 Officially supported on the following operating systems:
@@ -97,7 +97,7 @@ Reported to work on these operating systems, too:
 * Debian 8
 ```
 
-As mentioned in the statement above it is reported to run on many other operating systems, especially different variances of Linux, too. We support these alternative environments on a best-effort basis.
+As mentioned in the statement above it has been reported to run on many other operating systems, especially different variants of Linux, too. We support these alternative environments on a best-effort basis.
 
 
 ## There is More
