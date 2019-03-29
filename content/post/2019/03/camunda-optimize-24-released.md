@@ -2,7 +2,7 @@
 author = "Omran Abazeed, Sebastian Bathke, Johannes Heinemann, Felix Mueller, Sebastian Stamm, Kyrylo Zakurdaiev"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-03-28T09:00:00+01:00"
+date = "2019-03-29T09:00:00+01:00"
 title = "Camunda Optimize 2.4.0 Released"
 +++
 
@@ -12,31 +12,32 @@ With this minor release we add many exciting features in the following areas:
 
 * [Decision Reports](#decision-reports)
 * [User Task Reports](#user-task-reports)
-* [UX Enhancements](#ux-enhancements) (i.a. [Reports & Dashboards in Collections](#reports-dashboards-in-collections), [Sorting of Table Reports](#sorting-of-table-reports), [Simplified Start Date Filter Selection](#simplified-start-date-filter-selection))
+* [UX & Report Enhancements](#ux-and-report-enhancements) (i.a. [Reports & Dashboards in Collections](#reports-dashboards-in-collections), [Sorting of Table Reports](#sorting-of-table-reports), [Simplified Start Date Filter Selection](#simplified-start-date-filter-selection))
 * [Infrastructure Improvements](#infrastructure-improvements) (i.a. [Clustering](#clustering), [Security](#security), [ElasticSearch REST Client](#elasticsearch-rest-client) & [Support](#elasticsearch-updated-version-support))
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa#tbd) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa#tbd) listing all features and bug fixes are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Decision Reports
-After the introduction of DMN in Optimize 2.3, in 2.4.0, we've added many new report types for decisions. These new decision report types finally allow users to analyse and improve decision tables in the same way that it's possible for processes, broadening the scope of Camunda Optimize in a meaningful way.
+After the introduction of DMN in Optimize 2.3, in 2.4.0, we've added many new report types for decisions. These new decision report types allow users to analyse and improve decision tables in the same way that it's possible for processes, broadening the scope of Camunda Optimize in a meaningful way.
 
-In your reports, you can now select the evaluation count view. In combination with new "group by" options, this allows you to see how often a decision was evaluated, how the frequency of evaluations changed over time, or how evaluations are distributed over different input and output variables.
+In your reports, you can now select the evaluation count view. In combination with new "group by" options, this allows you to see how often a decision was evaluated, how the number of evaluations changed over time, or how evaluations are distributed over different input and output variables.
 
 This information can then be visualized with the charts you already know from process reports. You can also set goals, configure the chart colors, and define axis names.
 
-We also added a completely new visualization in the form of a DMN table. If you select rules as the grouping criterion, you will see the decision table as you would see it in the Camunda Modeler, but with an additional column showing you how often the rule hit.
+We also added a completely new visualization in the form of a DMN table. If you select `rules` as the grouping criterion, you will see the decision table as you would see it in the Camunda Modeler, but with an additional column showing you how often the rule hit.
 
 All of these reports are of course combinable with filters, which gives you maximum flexibility for creating the report you need.
-
 
 {{< figure caption="Decision Report showing evaluated rule count" src="decision-reports.png">}}
 
 ## Gradient Bars
 
-In the screenshot above you can see that the information how often each rule was matched is not only displayed as number, but also represented as a colored bar. This allows you to easily see which rules matched often and maybe even provides opportunity to clean up large decision tables by removing less often matched rules. Of course you can also disable this feature in the visualization configuration.
+In the screenshot above you can see that the information how often each rule was matched is not only displayed as number, but also represented as a colored bar. This allows you to easily see which rules matched often and maybe even provides opportunity to clean up large decision tables by removing less often matched rules.
+
+Of course you can also disable this feature in the visualization configuration.
 
 ## DMN Import Plugin Point
 
@@ -44,13 +45,13 @@ Historic decision instances that are imported can include input and output varia
 
 To allow customization of these inputs and outputs, we added a new plugin point for Camunda Optimize that works in a similar fashion to the existing Variable Import Plugin Point for BPMN process variables.
 
-Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), to filter out or anonymize information that you don't want to have in Optimize for whatever reason, and much more.
+Implementing such plugins allows you to enrich inputs and outputs with some external values (resolving external variable references), to filter out or anonymize information that you don't want to have in Optimize.
 
 Read more about the feature in the [Optimize documentation](https://docs.camunda.org/optimize/2.4/technical-guide/plugins/decision-import/). You can have a look at our [example repository](https://github.com/camunda/camunda-optimize-examples/tree/master/decision-import-plugin) to find the example use cases and plugin implementations.
 
 ## Disable DMN Import
 
-DMN can be used for many different use cases where the business rules for a decision are well-established and won’t be changing often. Eventually there is even no need to improve the business rules at all.
+DMN can be used for many different use cases. Eventually in your specific use case, there is no need to improve the business rules at all.
 
 With this release, we made it possible to completely disable the DMN data import such that decision definitions and decision instances are not imported.
 
@@ -58,7 +59,7 @@ You can disable the import by setting the configuration `import.data.dmn.enabled
 
 ## DMN Raw Data Report Links to Cockpit
 
-When looking at a number of decisions in the Raw Data report, you might be interested in the details for a certain instance. With this release we added a deeplink from decision instances to the Cockpit. Decision Raw Data reports have a deeplink similar to what you've seen in BPMN Raw Data reports.
+When looking at a number of decisions in the Raw Data report, you might be interested in the details for a certain instance. With this release we added a deeplink from decision instances to the Camunda Cockpit. Decision Raw Data reports have a deeplink similar to what you've seen in BPMN Raw Data reports.
 
 {{< figure class="Decision Instance Link to Cockpit" src="decision-instance-cockpit-link.png">}}
 
@@ -72,20 +73,21 @@ You can find the new feature in the view options for process reports.
 
 {{< figure caption="Report showing the average work time for four user tasks" src="usertask-report.png">}}
 
-By this feature it is also possible to compare the idle, work and total time spent on user tasks in a Combined Report as you can see in the following screenshot.
+By making use of this feature it is also possible to compare the idle, work and total time spent on user tasks in a Combined Report.
 
 {{< figure caption="Combined Report showing the average work, idle and total time for four user tasks" src="usertask-combined-report.png">}}
 
-# UX / Report Enhancements
+# UX and Report Enhancements
 
 ## Reports & Dashboards in Collections
 
 Using Optimize by multiple people and departments might make it harder to find reports and dashboards and organize them as needed.
 Therefore, we've added Collections to Optimize. Collections are a great way to group your reports and dashboards to make it easier for people in your organization to find the data they need. Collections exist in the top of the Homepage for easy access and can be easily created using the 'Create New' button on top right of the page. Both reports and dashboard can be added to collections using the `Add to Collection` dropdown found on the reports and dashboards list items.
 
+As part of this feature we also removed the Dashboard & Report list pages and included them in the new Optimize Homepage which is called `Dashboards & Reports`. This allows you to find all of your reports and dashboards in a single place.
+
 {{< video mp4="collections.mp4" alt="Collections">}}
 
-As part of this feature we also removed the Dashboard & Report list pages and included them in the new Optimize Homepage which is called Dashboards & Reports. This allows you to find all of the information in a single place.
 
 ## Sorting of Table Reports
 
