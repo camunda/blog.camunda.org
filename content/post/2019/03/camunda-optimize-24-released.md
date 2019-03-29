@@ -15,7 +15,7 @@ The release includes many exciting features in the following areas:
 * [UX & Report Enhancements](#ux-and-report-enhancements) (e.g. [Reports & Dashboards in Collections](#reports-dashboards-in-collections), [Sorting of Table Reports](#sorting-of-table-reports), and [Simplified Start Date Filter Selection](#simplified-start-date-filter-selection))
 * [Infrastructure Improvements](#infrastructure-improvements) (i.a. [Clustering](#clustering), [Security](#security), [ElasticSearch REST Client](#elasticsearch-rest-client) & [Support](#elasticsearch-updated-version-support))
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa#tbd) listing all features and bug fixes are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
