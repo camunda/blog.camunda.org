@@ -10,10 +10,10 @@ We are happy to announce the release of Camunda Optimize 2.4.0.
 
 The release includes many exciting features in the following areas:
 
-* [Decision Reports](#decision-reports)
-* [User Task Reports](#user-task-reports)
-* [UX & Report Enhancements](#ux-and-report-enhancements) (e.g. [Reports & Dashboards in Collections](#reports-dashboards-in-collections), [Sorting of Table Reports](#sorting-of-table-reports), and [Simplified Start Date Filter Selection](#simplified-start-date-filter-selection))
-* [Infrastructure Improvements](#infrastructure-improvements) (i.a. [Clustering](#clustering), [Security](#security), [ElasticSearch REST Client](#elasticsearch-rest-client) & [Support](#elasticsearch-updated-version-support))
+* [Decision Reports](/post/2019/03/camunda-optimize-24-released/#decision-reports)
+* [User Task Reports](/post/2019/03/camunda-optimize-24-released/#user-task-reports)
+* [UX & Report Enhancements](/post/2019/03/camunda-optimize-24-released/#ux-and-report-enhancements) (e.g. [Reports & Dashboards in Collections](/post/2019/03/camunda-optimize-24-released/#reports-dashboards-in-collections), [Sorting of Table Reports](/post/2019/03/camunda-optimize-24-released/#sorting-of-table-reports), and [Simplified Start Date Filter Selection](/post/2019/03/camunda-optimize-24-released/#simplified-start-date-filter-selection))
+* [Infrastructure Improvements](/post/2019/03/camunda-optimize-24-released/#infrastructure-improvements) (e.g. [Clustering](/post/2019/03/camunda-optimize-24-released/#clustering), [Security](/post/2019/03/camunda-optimize-24-released/#security), [ElasticSearch REST Client](/post/2019/03/camunda-optimize-24-released/#elasticsearch-rest-client) & [Support](/post/2019/03/camunda-optimize-24-released/#adding-support-for-more-elasticsearch-versions))
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
 
@@ -122,7 +122,9 @@ Imagine that you have a process for sales lead qualification and you want to see
 Of course, you can still decide yourself to group by Year, Month, Week, Day, and Hour.
 
 ## Instance State Filter Enhancement
-Optimize's process instance filters now include the Non-Canceled Instances Filter. Applying this filter return _only_ the instances that were not canceled during execution. This means that only active and completed instances are included, and externally or internally terminated instances are not included in the report. You can combine this new filter with a Completed Instances Filter to see only instances that were successfully completed--otherwise, the Completed Instances Filter includes canceled instances as well. The Non-Canceled Instances filter can also be combined with the duration filter to filter only successfully completed instances by duration, for example.
+Optimize's process instance filters now include the Non-Canceled Instances Filter.
+
+Applying this filter return _only_ the instances that were not canceled during execution. This means that only active and completed instances are included, and externally or internally terminated instances are not included in the report. You can combine this new filter with a Completed Instances Filter to see only instances that were successfully completed--otherwise, the Completed Instances Filter includes canceled instances as well.
 
 ## Export Reports to CSV
 
@@ -183,7 +185,7 @@ In addition, some cloud service providers who offer Elastic as a service no long
 
 With this release of Optimize, we reworked the communication from Optimize to Elasticsearch and are using the REST Client instead of Elastic's TransportClient.
 
-In summary, you are able to configure multiple nodes to connect to, only need to care about the Elasticsearch HTTP port, can configure a HTTP proxy if required and in terms of secured connections don't need a client certificate anymore. However, this also means you need to revise your Optimize configuration to comply with the new [Elasticsearch connection configuration](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#connection-settings) and [Elasticsearch security settings](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#security-settings)
+If you are currently using a previous version of Optimize, you need to revise your Optimize configuration to comply with the new [Elasticsearch connection configuration](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#connection-settings) and [Elasticsearch security settings](https://docs.camunda.org/optimize/2.4/technical-guide/setup/configuration/#security-settings)
 
 ### Adding Support for more Elasticsearch Versions
 
