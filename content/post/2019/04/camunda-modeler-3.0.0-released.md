@@ -10,9 +10,10 @@ We are excited to announce the Camunda Modeler v3.0.0 major release. It comes wi
 
 [Download the all-new app](https://camunda.com/download/modeler/) and start modeling right away.
 
+<!--more-->
+
 More than four months ago we set out to re-build the Camunda Modeler on an entirely new architecture, improving maintainability and paving the path for future extensions. We did so successfully and incorporated numerous improvements and bug fixes on the way. Let us have a look at some of the new features shipped with this release.
 
-<!--more-->
 
 
 ## Reworked Deployment Tool
