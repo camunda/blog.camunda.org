@@ -56,7 +56,7 @@ Plug-ins are a way to extend the app with [custom features](https://github.com/c
 
 Most notably, the app now detects the presence of plug-ins and gives you the ability to re-start without plug-ins to debug if specific problems are plug-in related.
 
-Please note the [**potential breaking changes**](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md#breaking-changes) that may affect the usage of plug-ins.
+The improvements include [**potential breaking changes**](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md#breaking-changes) that may affect the usage of plug-ins. One example is, that the plug-in directories are not scanned for plug-ins recursively anymore.
 
 {{< figure class="no-border teaser" src="plugins-restart.png" alt="Restart the app with plug-ins disabled" caption="Restart the app with plug-ins disabled." >}}
 
