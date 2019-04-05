@@ -23,7 +23,7 @@ Feedback from the audience was extremely positive and lots of questions came up 
 
 For Camunda, Jenkins fits quite our scope well and, after years of experience, we are quite comfortable with it. A CI/CD system is a very personal choice and there is no one-size-fits-all. My suggestion is to try to experiment with different projects and figure out which one provides the most value to your developers.
 
-###What about cost? How do you manage such a large cluster without incurring in very high costs?
+### What about cost? How do you manage such a large cluster without incurring in very high costs?
 
 We work mainly with [Google Cloud preemptible nodes](https://cloud.google.com/preemptible-vms/). These nodes are short-lived compute instances that you can get for a fraction of the price, but that can be re-claimed by Google cloud at any time.
 
