@@ -1,9 +1,8 @@
 +++
 author = "Martin Stamm"
-draft = false
 categories = ["Community"]
 tags = ["Tasklist", "React"]
-date = "2019-04-10T08:00:00+01:00"
+date = "2019-04-15T15:00:00+01:00"
 title = "Using React Forms with Tasklist"
 +++
 
