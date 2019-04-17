@@ -16,7 +16,7 @@ In a lot of customer scenarios both tools are used together. This blog describes
 ### Approaches and how-tos
 There are many ways of running Camunda (I wrote about this in [Architecture options to run a workflow engine](https://blog.bernd-ruecker.com/architecture-options-to-run-a-workflow-engine-6c2419902d91)). But for this article I concentrate on the two recommended default architectures:
 
-![camunda 1](content/post/2019/04/camunda-on-pivotal-cloud-foundry.png)
+{{< figure class="no-border teaser" src="camunda-on-pivotal-cloud-foundry.png" alt="camunda on pivotal cloud foundry" >}}
 
 1. Embed Camunda into your Spring Boot application. This setup is only possible if you develop your applications (or microservices) in Java. If you use Spring Boot, this approach is great as Camunda will be integrated using a proper [Spring Boot Starter](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/) alongside typical Spring Boot best practices. So this is a easy to get-started setup which comes naturally for Spring Boot users.
   - There is a [step-by-step how-to available](https://github.com/berndruecker/camunda-on-pcf/tree/master/spring-boot-embedded-engine-sample) for this approach.
