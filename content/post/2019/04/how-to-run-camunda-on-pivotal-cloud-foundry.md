@@ -25,7 +25,7 @@ There are many ways of running Camunda (I wrote about this in [Architecture opti
 
 2. Run Camunda as service and connect to it via [REST API](https://docs.camunda.org/manual/latest/reference/rest/) and [External Tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/). This is the default approach that works in every stack, so you can use the programming language of your choice. This approach requires you two do two things:
   - Run Camunda itself as own PCF deployment. This is necessary as there is not yet a managed service providing Camunda in the cloud (but Camunda is currently working on it).
-      - There is a [step-by-step how-to available](https://github.com/berndruecker/camunda-on-pcf/tree/master/engine-as-a-service) to do this.
+  - There is a [step-by-step how-to available](https://github.com/berndruecker/camunda-on-pcf/tree/master/engine-as-a-service) to do this.
 <br><br>
 
 3. Deploy your own application including the workflow.
