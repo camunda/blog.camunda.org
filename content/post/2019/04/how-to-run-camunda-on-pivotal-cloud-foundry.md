@@ -29,10 +29,10 @@ There are many ways of running Camunda (I wrote about this in [Architecture opti
       - There is a [step-by-step how-to available](https://github.com/berndruecker/camunda-on-pcf/tree/master/engine-as-a-service) to do this.
       <br><br>
   2. Deploy your own application including the workflow.
-There is an example available including a [step-by-step how-to for Node.JS](https://www.youtube.com/watch?v=e0rdC8ElxLk)
-There is a [screencast available walking you through this approach using the Node.JS sample](https://www.youtube.com/watch?v=va2uf-RRhPs)
-I hope this gives you a good starting point for your Camunda on PCF endeavor.
+      - There is an example available including a [step-by-step how-to for Node.JS](https://www.youtube.com/watch?v=e0rdC8ElxLk)
+      - There is a [screencast available walking you through this approach using the Node.JS sample](https://www.youtube.com/watch?v=va2uf-RRhPs)
 
+I hope this gives you a good starting point for your Camunda on PCF endeavor.
 ## Camunda Optimize
 [Camunda Optimize](https://camunda.com/products/optimize/) is a business analysis tool that can make sense of data in Camunda workflow engines. You can also run Optimize as PCF deployment.
   - There is a [step-by-step how-to available for this approach](https://github.com/berndruecker/camunda-on-pcf/tree/master/optimize-as-a-service).
