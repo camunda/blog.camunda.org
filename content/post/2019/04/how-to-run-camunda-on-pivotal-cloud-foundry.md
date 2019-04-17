@@ -33,10 +33,12 @@ There are many ways of running Camunda (I wrote about this in [Architecture opti
       - There is a [screencast available walking you through this approach using the Node.JS sample](https://www.youtube.com/watch?v=va2uf-RRhPs)
 
 I hope this gives you a good starting point for your Camunda on PCF endeavor.
+
 ## Camunda Optimize
 [Camunda Optimize](https://camunda.com/products/optimize/) is a business analysis tool that can make sense of data in Camunda workflow engines. You can also run Optimize as PCF deployment.
-  - There is a [step-by-step how-to available for this approach](https://github.com/berndruecker/camunda-on-pcf/tree/master/optimize-as-a-service).
-  - There is a [screencast available walking you through this approach](https://www.youtube.com/watch?v=w_EOtS9-pWU).
+
+- There is a [step-by-step how-to available for this approach](https://github.com/berndruecker/camunda-on-pcf/tree/master/optimize-as-a-service).
+- There is a [screencast available walking you through this approach](https://www.youtube.com/watch?v=w_EOtS9-pWU).
 
 ## Why not Docker?
 In order to run applications on PCF you leverage so called build packs, for Camunda that's the [Java build pack of PCF](https://github.com/cloudfoundry/java-buildpack),  available by default. [Camunda also provides docker images](https://github.com/camunda/docker-camunda-bpm-platform). While you can run docker images on PCF, it [isn’t their recommend way](https://docs.pivotal.io/tiledev/2-2/bosh-release.html):
