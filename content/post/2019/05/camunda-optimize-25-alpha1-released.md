@@ -23,6 +23,14 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Improved handling of Reports with many data points
 
+Showing all the report data available in Optimize at once might not be useful in certain visualizations because doing that makes it very hard to see or extract any conclusion from the data. Moreover, some of the data might be outdated or not interesting to the user and loading them all at once will only slow down the application and make the visualization very hard to read.
+
+To solve these problems, Optimize will not show more than 1000 entries on a selected visualization. This number of data points will be enough to read the data clearly and see any patterns in the overall data. Since all the data is still stored in Optimize, The user can still look at the rest of the data by refining the results using one of the filters for example.
+
+A warning message above the visualization will appear when the visualization does not represent the whole data stored as shown.
+
+{{< figure src="data-warning.png" alt="Incomplete data warning">}}
+
 # Searchable Process and Definition Dropdowns
 
 Optimize is a tool that is especially useful, when you have a lot of data. Typically that includes a myriad of deployed process definitions within the data. However, selecting a process definition was very tedious in the past, especially if you had a lot of different definitions. That was due to how a user had to select definition name, which was rather inconvinient: the names were shown as a dropdown list and you had to sift through the whole list until you found your desired definition.
