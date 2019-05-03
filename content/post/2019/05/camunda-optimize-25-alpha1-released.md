@@ -1,5 +1,5 @@
 +++
-author = "Felix Mueller"
+author = "Felix Mueller, Omran Abazeed"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
 date = "2019-05-03T09:00:00+01:00"
@@ -23,7 +23,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 Showing all the report data available in Optimize at once might not be useful in certain visualizations because doing that makes it very hard to see or extract any conclusion from the data. Moreover, some of the data might be outdated or not interesting to the user and loading them all at once will only slow down the application.
 
-To solve these problems, Optimize will not show more than 1000 data points on a selected visualization. This number of data points will be enough to read the data clearly and see any patterns in the overall data. Since all the data is still stored in Optimize, the user can still look at the rest of the data by refining the results using one of the filters or modifying the grouping.
+To solve these problems, Optimize will not show more than 1000 data points on a selected visualization. This number of data points will be enough to read the data clearly and see any patterns in the overall data. Since all the data is stored in Optimize, the user can still look at the rest of the data by refining the results using one of the filters or modifying the grouping.
 
 A warning message above the visualization will appear when the report does not represent the whole data stored as shown.
 
@@ -31,7 +31,7 @@ A warning message above the visualization will appear when the report does not r
 
 # Searchable Definition Dropdowns
 
-Optimize is a tool that is especially useful, when you have a lot of data. Typically that includes a myriad of deployed process definitions within the data. However, selecting a process definition was very tedious in the past, especially if you had a lot of different definitions. That was due to how a user had to select definition name, which was rather inconvenient: the names were shown as a dropdown list and you had to sift through the whole list until you found your desired definition.
+Optimize is a tool that is especially useful, when you have a lot of data. Typically that includes a myriad of deployed process definitions on the workflow engine. However, selecting a process definition was very tedious in the past, especially if you had a lot of different definitions. That was due to how a user had to select definition name, which was rather inconvenient: the names were shown as a dropdown list and you had to sift through the whole list until you found your desired definition.
 
 Since Optimize 2.5 alpha1 you can search for the name definition that you are looking for and immediately select the right definition. It works for both for process and decision definitions. Have a look at the preview to get an impression how that works:
 
