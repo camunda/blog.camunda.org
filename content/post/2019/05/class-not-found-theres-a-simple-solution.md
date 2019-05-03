@@ -2,7 +2,7 @@
 author = "Bernd Rücker"
 categories = ["Community"]
 tags = ["Execution", "Tasklist", "Troubleshooting"]
-date = "2019-04-15T15:00:00+01:00"
+date = "2019-05-03T11:00:00+02:00"
 title = "Class Not Found? There’s a simple solution"
 +++
 
@@ -14,7 +14,7 @@ Generali is one of the world’s largest insurance companies, operating in 50 co
 
 IT operations are run on-premise on a custom-built platform known internally as the Connection Platform (CoPa). This platform is built on Apache Kafka and runs in Docker containers, orchestrated with OpenShift. Most microservices in the CoPa are Spring Boot applications written in Java. The entire platform is scalable and agile.
 
-{{< figure class="no-border teaser" src="1.png" alt="image1" >}}
+  {{< figure class="no-border teaser" src="1.png" alt="image1" >}}
 
 ### Understanding classloading and the impact on microservice boundaries
 Christian Nicoll, Generali Director of Platform Engineering and Operation, said: “I think generally the integration of Camunda into our Connection Platform was straightforward. However, there was one exception in the way we deployed Camunda. Our approach of deploying into various microservices came with some limitations about how we designed our processes to mitigate asynchronicity issues.”
