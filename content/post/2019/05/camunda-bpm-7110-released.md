@@ -14,6 +14,7 @@ We're excited to announce that Camunda BPM platform 7.11.0 is now available. Hig
 * Operator Authorizations
 * Operator and Admin Auditing
 * Return Variables on Task Completion / Form Submission / Message Correlation
+* Asynchronously set Removal Time on Historical Data 
 * BPMN Error Event Triggering from Execution Listeners
 * Fluent Java Testing API
 * Additional Supported Environments
@@ -43,6 +44,8 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Operator and Admin Auditing: ability to track any changes made by operators and administrators
 
 ## Return Variables on Task Completion / Form Submission / Message Correlation
+
+## Asynchronously set Removal Time on Historical Data
 
 ## BPMN Error Event Triggering from Execution Listeners
 
