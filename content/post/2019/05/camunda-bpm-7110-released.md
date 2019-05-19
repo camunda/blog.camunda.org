@@ -27,7 +27,7 @@ You can [download Camunda 7.11.0 for free](https://camunda.com/download/) or [ru
 Also included in the release:
 
 * [Camunda Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) 3.3.0, which relies on Spring Boot 2.1.5 by default.
-* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.2.0 version for non-Java developers
+* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.1 version for non-Java developers
 * [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.2.0 version can be embedded in Java applications
 
 <!--more-->
