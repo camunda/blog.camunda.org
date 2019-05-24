@@ -79,12 +79,12 @@ In Admin, all administrative actions such as creating users or granting permissi
 Read on:
 
 * [Auditing in Cockpit](https://docs.camunda.org/manual/7.11/webapps/cockpit/auditing/)
-* [User Operation Log](https://docs.camunda.org/manual/7.11/user-guide/process-engine/history/)
+* [User Operation Log](https://docs.camunda.org/manual/7.11/user-guide/process-engine/history/#user-operation-log)
 * [Glossary of Logged Operations](https://docs.camunda.org/manual/7.11/user-guide/process-engine/history/#glossary-of-operations-logged-in-the-user-operation-log)
 
 ## More APIs Return Variables
 
-This release introduces additional APIs that trigger a process instances and return variables. What was already possible for [starting process instances](https://docs.camunda.org/manual/7.11/user-guide/process-engine/process-engine-concepts/#variables-in-return) is now also available for completing tasks, submitting task forms and correlating messages. For task completion, the API looks as follows:
+This release introduces additional APIs that trigger a process instance and return variables. What was already possible for [starting process instances](https://docs.camunda.org/manual/7.11/user-guide/process-engine/process-engine-concepts/#variables-in-return) is now also available for completing tasks, submitting task forms and correlating messages. For task completion, the API looks as follows:
 
 ```java
 TaskService taskService = ...;
