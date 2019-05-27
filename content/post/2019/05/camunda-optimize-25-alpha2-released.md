@@ -7,13 +7,13 @@ title = "Camunda Optimize 2.5.0-alpha2 Released"
 +++
 
 We are happy to announce the release of Camunda Optimize version 2.5.0-alpha2.
-You can find improvements and features from the upcoming Optimize version 2.5.0 in this second alpha release, including:
+You can find improvements and features from the upcoming Optimize version 2.5.0 in this second alpha release. The highlights are:
 
-- Multi-Tenancy Support
-- Flow Node + User Task Report Enhancements
-  - Show / Hide Configuration
-  - Running, Completed, All State Configuration
-  - Duration for Running Flow Nodes
+- [Multi-Tenancy Support](#multi-tenancy-support)
+- [Flow Node + User Task Report Enhancements](#flow-node-user-task-report-enhancements)
+  - [Show / Hide Flow Nodes](#show-hide-flow-nodes)
+  - [State Configurations (Running + Completed State)](#state-configurations-running-completed-state)
+  - [Running Flow Nodes Durations](#running-flow-nodes-durations)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=xxx&version=xxxx) are available in Jira.
 
@@ -38,7 +38,7 @@ img
 
 Naturally Optimize also considers authorizations for tenant specific information - meaning that if a user does not have access to a specific tenant, this tenant will not show up in the Report Builder and the user will not have access to reports that have been created by other users for this tenant.
 
-## Setup
+## Configuration
 
 Depending on the chosen Multi-Tenancy option the Optimize configuratin has to be adjusted:
 
@@ -72,12 +72,12 @@ engines:
 
 For more details regarding Multi-Tenancy we added a section in our [Technical Guide](https://docs.camunda.org/optimize/technical-guide/setup/multi-tenancy/).
 
-# Flow Node Enhancements
+# Flow Node + User Task Report Enhancements
 
 Being able to analyze Flow Node information efficiently helps identifying bottlenecks and continuously speeding up process execution.
 Therefore, we are happy to add more support for Flow Node and User Task analysis with this release.
 
-## Show / Hide Flow Node Configuration
+## Show / Hide Flow Nodes
 
 When looking at Flow Nodes and User Tasks per default you will see all Flow Nodes and User Tasks. Especially working with larger or more complex processes requires to focus on relevant information. With this release we added the possibility to hide certain flow nodes that are not relevant for your analysis.
 
@@ -92,7 +92,7 @@ You can make your selection by just clicking on the relevant flow nodes.
 The result is a Flow Node Report focusing on the flow nodes that are relevant for you - in our example the End Events of the Hiring Process.
 {{< figure src="flow-node-report.png" alt="Flow Node Report" >}}
 
-## Running and Completed Flow Node Configuration
+## State Configurations (Running + Completed State)
 
 Flow Nodes (including User Tasks) can have the execution states running and completed. For reporting and monitoring purposes it is critical to be able to distinguish both states in order to create correct reports.
 With this release it is possible to distinguish between running and completed Flow Nodes.
@@ -100,11 +100,16 @@ You can configure your report to include running, completed or Flow Nodes with b
 
 {{< figure src="flow-node-state.png" alt="Flow Node State" >}}
 
+With the help of this configuration option we could e.g. create a combined reports comparing completed and running flow nodes:
 
-## Durations for Running Flow Nodes
+{{< figure src="flow-node-comparison.png" alt="Flow Node Comparison" >}}
+
+
+## Running Flow Nodes Durations
 
 Until this release it was already possible to analyze duration of completed flow nodes (including user tasks). As for continuous process improvement and monitoring purposes running flow nodes and user tasks are also very important, we added the duration for running flow nodes and user tasks, too. In combination with the above mentioned configuration option of running, completed or all flow node status it is now possible to create reports that focus on running flow durations.
 
+{{< figure src="flow-node-durations.png" alt="Flow Node Durations" >}}
 
 
 # What's Next?
