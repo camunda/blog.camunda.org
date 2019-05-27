@@ -10,11 +10,10 @@ We are happy to announce the release of Camunda Optimize version 2.5.0-alpha2.
 You can find improvements and features from the upcoming Optimize version 2.5.0 in this second alpha release, including:
 
 - Multi-Tenancy Support
-- Flow Node + User Task Reports Enhancements
+- Flow Node + User Task Report Enhancements
   - Show / Hide Configuration
   - Running, Completed, All State Configuration
   - Duration for Running Flow Nodes
-- Group by End Date
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=xxx&version=xxxx) are available in Jira.
 
@@ -95,21 +94,16 @@ The result is a Flow Node Report focusing on the flow nodes that are relevant fo
 
 ## Running and Completed Flow Node Configuration
 
-tbd
+Flow Nodes (including User Tasks) can have the execution states running and completed. For reporting and monitoring purposes it is critical to be able to distinguish both states in order to create correct reports.
+With this release it is possible to distinguish between running and completed Flow Nodes.
+You can configure your report to include running, completed or Flow Nodes with both states by opening the Configuration Options popover and changing choosing one of the three options in the Dropdown:
+
+{{< figure src="flow-node-state.png" alt="Flow Node State" >}}
 
 
 ## Durations for Running Flow Nodes
 
 Until this release it was already possible to analyze duration of completed flow nodes (including user tasks). As for continuous process improvement and monitoring purposes running flow nodes and user tasks are also very important, we added the duration for running flow nodes and user tasks, too. In combination with the above mentioned configuration option of running, completed or all flow node status it is now possible to create reports that focus on running flow durations.
-
-# Group by End Date
-
-Since Optimize 2.0 it is already possible to group process instance data (e.g. duration or count data) by the start date of the process instances. This is very valuable, but in some situations of analyzing historic process information it is more relevant to know when certain instances have been completed.
-
-(exmaple)
-
-With this Optimize release we add support for groping process instance information by end date.
-This works in a very similar fashion as grouping by start date as you can see in below screenshot:
 
 
 
