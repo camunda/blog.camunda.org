@@ -2,7 +2,7 @@
 author = "Jakob Freud"
 categories = ["Community"]
 tags = ["BPMN", "SaaS", "Modeling", "Cawemo "]
-date = "2019-05-28T10:30:00+02:00"
+date = "2019-05-28T13:30:00+02:00"
 title = "Please meet Cawemo - the Collaboration Hub for Business Process Automation"
 +++
 
