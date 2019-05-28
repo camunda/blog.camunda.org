@@ -20,7 +20,7 @@ Furthermore, for the pure SaaS version that is not integrated with Camunda BPM, 
 You can find the [official press release](https://camunda.com/about/press/camunda-to-offer-collaborative-workflow-modeling-tool-cawemo-for-free/) here.
 
 To get a full walk-through of Cawemo and how it integrates with Camunda BPM, please sign up for our release webinar now: [Register for the Cawemo Release Webinar]
-()
+(https://camunda.com/learn/webinars/cawemo-launch-june-2019/)
 This is just the beginning. We are going to add many more exciting features to Cawemo, including support for the popular DMN standard. And we will keep pushing the boundaries of what’s possible in order to give any stakeholder in business process automation projects a voice and empower them to contribute.
 
 I am very excited about this milestone, and grateful for the amazing Cawemo team that made this possible - Thank you!
