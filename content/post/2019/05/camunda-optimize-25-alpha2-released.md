@@ -2,20 +2,20 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-05-27T09:00:00+01:00"
+date = "2019-05-29T09:00:00+02:00"
 title = "Camunda Optimize 2.5.0-alpha2 Released"
 +++
 
 We are happy to announce the release of Camunda Optimize version 2.5.0-alpha2.
 You can find improvements and features from the upcoming Optimize version 2.5.0 in this second alpha release. The highlights are:
 
-- [Multi-Tenancy Support](#multi-tenancy-support)
-- [Flow Node + User Task Report Enhancements](#flow-node-user-task-report-enhancements)
-  - [Show / Hide Flow Nodes](#show-hide-flow-nodes)
-  - [State Configurations (Running + Completed State)](#state-configurations-running-completed-state)
-  - [Running Flow Nodes Durations](#running-flow-nodes-durations)
+- [Multi-Tenancy Support](/post/2019/05/camunda-optimize-25-alpha2-released/#multi-tenancy-support)
+- [Flow Node + User Task Report Enhancements](/post/2019/05/camunda-optimize-25-alpha2-released/#flow-node-user-task-report-enhancements)
+  - [Show / Hide Flow Nodes](/post/2019/05/camunda-optimize-25-alpha2-released/#show-hide-flow-nodes)
+  - [State Configurations (Running + Completed State)](/post/2019/05/camunda-optimize-25-alpha2-released/#state-configurations-running-completed-state)
+  - [Running Flow Nodes Durations](/post/2019/05/camunda-optimize-25-alpha2-released/#running-flow-nodes-durations)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=xxx&version=xxxx) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15407) are available in Jira.
 
 <!--more-->
 
@@ -32,9 +32,9 @@ With this release of Optimize we add support for both Multi-Tenancy options for 
 
 ## Tenant-specific Reports
 
-In case you are working with tenants, Optimize allows you to select the tenant(s) you want to focus on within the Process Definition selection. Besides this it is possible to select "none" for analyzing process instances of the definition that have no tenant information. The Process Definition will look like this:
+In case you are working with tenants, Optimize allows you to select the tenant(s) you want to focus on within the Process Definition selection. Besides this it is possible to select "Not Defined" for analyzing process instances of the definition that have no tenant information. The Process Definition selection in the Report Builder will look like this:
 
-img
+{{< figure src="tenant-selection.png" alt="Multi-Tenancy Report Builder Select" >}}
 
 Naturally Optimize also considers authorizations for tenant specific information - meaning that if a user does not have access to a specific tenant, this tenant will not show up in the Report Builder and the user will not have access to reports that have been created by other users for this tenant.
 
@@ -74,14 +74,14 @@ For more details regarding Multi-Tenancy we added a section in our [Technical Gu
 
 # Flow Node + User Task Report Enhancements
 
-Being able to analyze Flow Node information efficiently helps identifying bottlenecks and continuously speeding up process execution.
+Being able to analyze Flow Node and User Task information efficiently helps identifying bottlenecks and continuously speed up process execution.
 Therefore, we are happy to add more support for Flow Node and User Task analysis with this release.
 
 ## Show / Hide Flow Nodes
 
-When looking at Flow Nodes and User Tasks per default you will see all Flow Nodes and User Tasks. Especially working with larger or more complex processes requires to focus on relevant information. With this release we added the possibility to hide certain flow nodes that are not relevant for your analysis.
+When looking at Flow Nodes and User Tasks per default you will see all Flow Nodes and User Tasks. Especially working with larger or more complex processes requires to focus on relevant information. With this release we add the possibility to hide certain flow nodes that are not relevant for your report.
 
-Imagine a Hiring Process which can have different outcomes (End Events) then you might need to report the Number of End Events to upper management.
+Imagine a Hiring Process which can have different End Events (e.g. Candidate Hired or Rejected), then you might need to report the distribution of instances across the different outcomes of the process to upper management. You can now build a report that focuses on the Flow Nodes or User Tasks which you select:
 
 Within the Configuration Options Popover you will find a new Button which leads you to the selection overlay.
 {{< figure src="flow-node-display-configuration.png" alt="Flow Node Display Configuration" >}}
@@ -94,27 +94,29 @@ The result is a Flow Node Report focusing on the flow nodes that are relevant fo
 
 ## State Configurations (Running + Completed State)
 
-Flow Nodes (including User Tasks) can have the execution states running and completed. For reporting and monitoring purposes it is critical to be able to distinguish both states in order to create correct reports.
-With this release it is possible to distinguish between running and completed Flow Nodes.
-You can configure your report to include running, completed or Flow Nodes with both states by opening the Configuration Options popover and changing choosing one of the three options in the Dropdown:
+Flow Nodes (including User Tasks) can have the execution states running and completed. For reporting and monitoring purposes it is critical to be able to distinguish both states in order to create meaningful reports.
+With this release we allow users to distinguish between running and completed Flow Nodes.
+You can configure your report to include running, completed or Flow Nodes with both states by opening the Configuration Options popover and choosing one of the three options in the Dropdown:
 
 {{< figure src="flow-node-state.png" alt="Flow Node State" >}}
 
-With the help of this configuration option we could e.g. create a combined reports comparing completed and running flow nodes:
+With the help of this configuration option we could e.g. create a combined reports comparing the number of completed and running flow nodes:
 
 {{< figure src="flow-node-comparison.png" alt="Flow Node Comparison" >}}
 
+This report can help us to identify where our instances are stuck or where many of them are waiting.
 
 ## Running Flow Nodes Durations
 
-Until this release it was already possible to analyze duration of completed flow nodes (including user tasks). As for continuous process improvement and monitoring purposes running flow nodes and user tasks are also very important, we added the duration for running flow nodes and user tasks, too. In combination with the above mentioned configuration option of running, completed or all flow node status it is now possible to create reports that focus on running flow durations.
+Until this release it was already possible to analyze durations of completed flow nodes (including user tasks). As for continuous process improvement and monitoring purposes running flow nodes and user tasks are also very important, we added the duration for running flow nodes and user tasks, too. In combination with the above mentioned configuration option it is now possible to create reports that focus on running flow durations.
 
 {{< figure src="flow-node-durations.png" alt="Flow Node Durations" >}}
 
+This feature becomes even more valuable in situations when you are interested in the idle or work time of running user tasks and want to make sure that certain user tasks are not taking too long.
 
 # What's Next?
 
-Optimize 2.5.0-alpha2 is the last alpha release before we'll release the next minor **Camunda Optimize 2.5** at the end of the second quarter 2019. Stay tuned.
+Optimize 2.5.0-alpha2 is the last alpha release before we'll release the next minor **Camunda Optimize 2.5** at the end of the second quarter 2019. We still have more features and enhancements in the pipeline - Stay tuned.
 
 # How to get it
 
