@@ -6,8 +6,8 @@
   <div>
     <div class="boring-stuff">
       <ul class="list-inline">
-        <li><a href="https://network.camunda.org/imprint">Imprint</a></li>
-        <li><a href="https://network.camunda.org/privacy">Privacy Policy &amp; Cookies</a></li>
+        <li><a href="https://camunda.com/legal/imprint/">Imprint</a></li>
+        <li><a href="https://camunda.com/legal/privacy/">Privacy Policy &amp; Cookies</a></li>
       </ul>
     </div>
 
@@ -29,12 +29,12 @@
           </a>
         </li>
         <li>
-          <a href="https://vimeo.com/user22820658">
+          <a href="https://vimeo.com/camunda">
             <span class="cam-blog-vimeo"></span>
           </a>
         </li>
         <li>
-          <a href="{{ .Site.BaseURL }}index.xml">
+          <a href='{{ "index.xml" | absURL }}'>
             <span class="cam-blog-rss"></span>
           </a>
         </li>
@@ -48,13 +48,13 @@
 </footer>
 
 <script type="text/javascript">var _siteSetup = {
-  baseUrl: "{{ $.Site.BaseURL }}",
+  baseUrl: '{{ "/" | absURL }}',
   gaCode: "{{ $.Site.Params.gaCode }}",
   disqusName: "{{ $.Site.Params.disqusShortname }}",
   gSearchApiKey: "{{ $.Site.Params.gSearchApiKey }}",
   gSearchCtx: "{{ $.Site.Params.gSearchCtx }}"
 };</script>
 
-<script type="text/javascript" src="{{ $.Site.BaseURL }}js/scripts.js"></script>
+<script type="text/javascript" src='{{ "js/scripts.js" | absURL }}'></script>
 </body>
 </html>

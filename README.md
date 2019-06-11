@@ -15,7 +15,6 @@ Technically, the blog is generated as a list of html files that are uploaded to 
 We want you to write as many blogposts as humanly possible. If you experience any trouble or have any questions about the technology used here make sure to talk to the following people, they are eager to help you out!
 
 * Daniel Meyer
-* Valentin Vago
 * Sebastian Menski
 
 ## Creating a new Post
@@ -26,10 +25,9 @@ Long version: follow the steps below :)
 
 ### Install Hugo
 
-> *IMPORTANT*: You can use our custom build of Hugo (you can download it from here: https://app.camunda.com/nexus/content/repositories/public/hugo/) or the standard version from https://gohugo.io/.
-> The standard version however will only work in version v0.16. To use a newer version, you have to comment out the following line locally (*Do not commit/push this change!* ): https://github.com/camunda/blog.camunda.org/blob/b50c8bdf90d0033e1ae001c1e9988b3ab56451aa/theme-src/layouts/partials/header.html#L17 until we fixed issue #37.
+We use Hugo as a static site generator for generating the blog. If you want to build the blog locally, you first need to install [hugo][hugo] v0.50 (newer versions _may_ work).
 
-We use Hugo as a static site generator for generating the blog. If you want to build the blog locally you first need to [install hugo][hugo] as explained on the hugo documentation page.
+See the [hugo installation guide][hugo-installation] for more details on howto install Hugo.
 
 ### Fork & clone the repository
 
@@ -37,16 +35,16 @@ Fork & clone this repository.
 
 ### Preview the Blog locally
 
-Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing
+Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing the following command:
 
-```sh
-hugo -w server   # use 'hugo -w -D server' to include drafts
+```bash
+hugo server --baseUrl="http://localhost"
 ```
 
-To let hugo include posts which are marked as draft use the `-D` flag
+To let hugo include posts which are marked as draft use the `-D` flag:
 
 ```sh
-hugo -w -D server
+hugo server -D --baseUrl="http://localhost"
 ```
 
 Now point your browser to [http://localhost:1313](http://localhost:1313).
@@ -164,7 +162,8 @@ The project is licensed under [Apache 2.0](./LICENSE)
 
 The content (content of the `content` directory) is licensed under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
 
-[hugo]: http://gohugo.io
+[hugo]: http://gohugo.io/
+[hugo-installation]: http://gohugo.io/overview/installing/
 [nodejs]: http://nodejs.org
 [grunt]: http://gruntjs.org
 [less]: http://lesscss.org

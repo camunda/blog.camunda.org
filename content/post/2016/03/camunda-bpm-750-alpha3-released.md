@@ -30,7 +30,7 @@ With this release, Tasklist gets a new look:
 
 {{< figure class="teaser no-border" src="tasklist-2016-design-1.png" caption="The all new Tasklist!" >}}
 
-All information about this change can be read in a [dedicated blogpost]({{< relref "post/2016/03/tasklist-2016-design.md" >}}).
+All information about this change can be read in a [dedicated blogpost]({{< ref "/post/2016/03/tasklist-2016-design.md" >}}).
 
 # Accessibility Features for Tasklist Users
 
