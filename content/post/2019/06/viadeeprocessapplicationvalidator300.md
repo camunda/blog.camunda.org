@@ -25,10 +25,8 @@ In this scenario we can start a process instance by using the Camunda API and pa
 
 ```java
 final Map<String, Object> processVariables = Variables.createVariables()
-                .putValue("test", true)
                 .putValue("test1", false)
-                .putValue("test2", false)
-                .putValue("test3", true);
+                .putValue("test2", false);
 
 ProcessInstance instance = runtimeService.startProcessInstanceByMessage("initMessage", processVariables);
 ```
@@ -46,8 +44,10 @@ The most common approach to call source code is to use a Delegate Expression whi
 public void execute(DelegateExecution execution) {
     Integer val1 = (Integer) execution.getVariable("test");
     execution.setVariable("val2", val1 + 10);
+    String val2 = (String) execution.getVariable("test3");
 }
 ```
+This code snippet accesses ```test3```, even if ```test3``` was not injected to the process instance, thus returning null. The access to ```test``` seems to be suspicious, but due to the Input Mapping, this variable has been passed through the model. With growing complexity of both the process model and the underlying code base, such data-flows become increasingly confusing and hard to track prior deployment. vPAV discovers such data-flows and conduct a static code analysis in order to detect data-flow anomalies.
 
 ## Mappings
 Using the Input/Output Mapping is an additional way of injecting process variables into the process. In this scenario, the Input Mapping is used to initialize the variable "test" and pass it to the Service Task. Regarding the data-flow analysis, it is crucial to know the scopes of process variables, as a locally defined variable can not be accessed outside of the defining element.
@@ -55,8 +55,12 @@ Using the Input/Output Mapping is an additional way of injecting process variabl
 {{< figure src="servicetask-input.png" alt="Input Mapping for ServiceTask" title="Input Mapping for ServiceTask">}}
 
 ## Output
-Once the analysis has been conducted, an HTML report provides a graphical result to highlight all data-flows and anomalies discovered. Each element has an indicator attached in their lower right corner showing the variable operations (Read, Write, Delete) found. The table below the process model gives a general overview which variable has been accessed by which element.
-  
+Once the analysis has been conducted, an HTML report provides a graphical result to highlight all data-flows and anomalies discovered. 
+
+{{< figure src="pv-access.png" alt="Access to process variables" title="Overview of access of process variables">}}
+
+In the second view, each element has an indicator attached in their lower right corner showing the variable operations (Read, Write, Delete) found. The table below the process model gives a general overview which variable has been accessed by which element.
+
 {{< figure src="output.png" alt="HTML output" title="Result>}}
 
 ## Future Work
