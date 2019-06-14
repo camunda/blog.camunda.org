@@ -14,7 +14,7 @@ Since then vPAV has gained traction and more features were developed. It also pr
 The major release version 3.0.0 comes with many new features, such as a revamped HTML report, inheritance of rules, multiple instantiations of checkers with varying configurations, remote location of process models, multi-language support and most of all a reworked ProcessVariableModelChecker [(see release notes)](https://github.com/viadee/vPAV/blob/master/docs/ReleaseNotes.md).
 
 # Process Variable Flow Validation
-For the better part of the last two months, the ProcessVariableModelChecker has been reworked to finally lift the experimental status and release a stable, integrated static analysis regarding access to process variables. By converting the process model into a graph and embedding the respective call graph of the delegated beans, methods of static code analysis can be applied to discover data-flow anomalies across process model and source code: i.e. "Is there a path in the model where a delegate bean relies on a process variable that may be unknown?".
+For the better part of the last two months, the ProcessVariableModelChecker has been reworked to finally lift the experimental status and release a stable, integrated static analysis regarding access to process variables. By converting the process model into a graph and embedding the respective call graph of the delegated beans, methods of static code analysis can be applied to discover data-flow anomalies across process model and source code: i.e. "Is there a path in the model where a delegate bean relies on a process variable that may be unknown?"
 
 The following model showcases how the ProcessVariableModelChecker works.
 
@@ -30,13 +30,13 @@ final Map<String, Object> processVariables = Variables.createVariables()
 
 ProcessInstance instance = runtimeService.startProcessInstanceByMessage("initMessage", processVariables);
 ```
-This means that the variables defined and injected to the instance can be accessed globally.
+This means that these variables can be accessed globally.
 {{< figure src="startevent-message.png" alt="Message to start process" title="Message to start process">}}
 
-At build-time, however, we can already interpret the resulting class files using the [Soot](https://github.com/Sable/soot) tooling. Working backwards, we can first find the entry points of process variables into the process scope and then track their origin to find out, that they are known unconditionally. In this case vPAV may still issue a warning if you are not using one of your variables.
+At build-time, however, we can already interpret the resulting class files using the [Soot](https://github.com/Sable/soot) tooling. Working backwards, we can first find the entry points of process variables into the process scope and then track their origin to find out, that they are known unconditionally. In this case vPAV may still issue a warning if you are not using one of your variables later on.
 
 ## Delegated Code
-The most common approach to call source code is to use a Delegate Expression which points to a bean, that in turn knows the location of the corresponding class that contains the executable code. Such access to variables will be found and included in the vPAV-data-flow analysis.
+The most common approach to call custom code is a Delegate Expression which refers to a bean, that in turn knows the location of the corresponding class with the executable code. Access to variables therein will be found and included in the vPAV-data-flow analysis.
 
 {{< figure src="servicetast-delegate" alt="Delegate Expression for ServiceTask" title="Delegate Expression for ServiceTask">}}
 {{< figure src="usertask-delegate.png" alt="Delegate Expression for UserTask" title="Delegate Expression for UserTask">}}
@@ -47,10 +47,10 @@ public void execute(DelegateExecution execution) {
     String val2 = (String) execution.getVariable("test3");
 }
 ```
-This code snippet accesses ```test3```, even if ```test3``` was not injected to the process instance, thus returning null. The access to ```test``` seems to be suspicious, but due to the Input Mapping, this variable has been passed through the model. With growing complexity of both the process model and the underlying code base, such data-flows become increasingly confusing and hard to track prior deployment. vPAV discovers such data-flows and conduct a static code analysis in order to detect data-flow anomalies.
+This code snippet accesses ```test3```, even if ```test3``` was not provided to the process instance, thus returning null. The access to ```test``` seems to be suspicious, but due to the Input Mapping, this variable has been passed through the model. With growing complexity of both the process model and the underlying code base, such data-flows become increasingly confusing and hard to track (and hard to cover all paths with test cases). vPAV discovers such data-flows through a static code analysis in order to detect data-flow anomalies early on.
 
 ## Mappings
-Using the Input/Output Mapping is an additional way of injecting process variables into the process. In this scenario, the Input Mapping is used to initialize the variable "test" and pass it to the Service Task. Regarding the data-flow analysis, it is crucial to know the scopes of process variables, as a locally defined variable can not be accessed outside of the defining element.
+Using the Input/Output Mapping is an additional way of injecting process variables into the process. In this scenario, the Input Mapping is used to initialize the variable "test" and to pass it to the Service Task. Regarding the data-flow analysis, it is crucial to know the scopes of process variables, as a locally defined variable can not be accessed outside of the defining element.
 
 {{< figure src="servicetask-input.png" alt="Input Mapping for ServiceTask" title="Input Mapping for ServiceTask">}}
 
@@ -59,7 +59,7 @@ Once the analysis has been conducted, an HTML report provides a graphical result
 
 {{< figure src="pv-access.png" alt="Access to process variables" title="Overview of access of process variables">}}
 
-In the second view, each element has an indicator attached in their lower right corner showing the variable operations (Read, Write, Delete) found. The table below the process model gives a general overview which variable has been accessed by which element.
+In the second view, each element has an indicator attached in their lower right corner showing the variable operations found (Read, Write, Delete). The table below the process model gives a general overview on which variable has been accessed by which element.
 
 {{< figure src="output.png" alt="HTML output" title="Result>}}
 
