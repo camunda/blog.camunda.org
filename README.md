@@ -4,11 +4,9 @@
 
 ## Some Background Information
 
-If you wrote blogposts on our previous blog (which was based on google blogger), then you are probably familiar with logging into blogger and writing a post in blogger's editing environment. The new blog is not based on blogger and works completely differently.
-
 This blog is generated using a static site generator ([Hugo][hugo]). This means that the blog has no "backend", no database, no php, no nothing. It also means that you cannot "login somewhere" in order to write a post.
 
-Technically, the blog is generated as a list of html files that are uploaded to our webserver. Just like in the old days.
+Technically, the blog is generated as a list of html files that are uploaded to our webserver.
 
 ### Need help?
 
