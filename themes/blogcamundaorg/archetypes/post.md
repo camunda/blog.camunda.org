@@ -25,6 +25,7 @@ Some source code
 public static void main(Sring[] args) {
   // java code
 }
+```
 
 An image!
 
