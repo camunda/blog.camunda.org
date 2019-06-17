@@ -17,6 +17,7 @@ DOCKER_IMAGE := klakegg/hugo:0.50
 
 DOCKER_CMD := docker run --user $$(id -u):$$(id -g) --rm -it -v $(CURDIR):/src
 DATE_STRING := $(shell date '+%Y/%m')
+POST_PATH := post/$(DATE_STRING)/$(TITLE).md
 
 .PHONY: all
 all: open serve
@@ -29,7 +30,8 @@ serve: check-docker
 # create a new blank post
 .PHONY: new
 new: check-docker check-title
-	$(DOCKER_CMD) $(DOCKER_IMAGE) new post/$(DATE_STRING)/$(TITLE).md
+	$(DOCKER_CMD) $(DOCKER_IMAGE) new -v $(POST_PATH)
+	@printf "#Edit your post at created at\n\t./content/$(POST_PATH)\n"
 
 # check docker is available
 .PHONY: check-docker
