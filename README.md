@@ -8,7 +8,8 @@
 1. `export TITLE="my-post-title"` set the post title
 1. `git clone https://github.com/$(git config --global user.name)/blog.camunda.org.git`
 1. `cd blog.camunda.org && git checkout -b $(date +%F)-$TITLE` checkout a new git branch
-1. `make new` edit your post
+1. `make new` 
+edit your post at 
 1. `make` preview your post
 1. `git push -u`
 1. Open a pull request at [repo](https://github.com/camunda/blog.camunda.org) on github - should show in a yellow bar
@@ -82,7 +83,7 @@ Great, now you have everything in place for writing a new blogpost.
 In order to create a new post, type
 
 ```sh
-hugo new post/2015/10/camunda-introduces-bpel-support.md
+hugo new post/2015/10/camunda-introduces-BPEL-support.md
 ```
 
 (make sure to replace `2015` with the current year and `10` with the current month.)
@@ -99,31 +100,36 @@ The front matter of a post is content above the actual markdown content and is w
 For the post you just created it looks like this:
 
 ```
-+++
-title = "camunda introduces support for bpel"
-date = "2015-10-30T14:44:10+01:00"
-author = "Your Name"
-draft = true
-categories = ["Execution"]
-tags = ["X", "Y"]
-+++
+---
+author: "Your Name"
 
+categories:
+  - "Execution"
+
+tags:
+  - "X"
+  - "Y"
+
+title: "Camunda Introduces BPEL Support"
+date: 2019-06-17T14:24:30Z
+
+---
 ```
 
 Lets walk through this and look into this in more detail:
 
 * `title`: this is the title of your post. It will be the main headline. Since it was generated You may want to edit this and capitalize some words. Let's change it to `Camunda finally introduces Support for BPEL`.
 * `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hugo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
-* `author`: contains your name :)
+* `author`: Set this to your name :)
 * `categories`: choose from the following categories: `Execution`, `Modeling`, `Community`.
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
-* `draft`: value `true` means that the post is a draft. Draft posts are not published automativally.
+* `draft`: value `true` means that the post is a draft. Draft posts are not published automatically.
 
 More information on the hugo front matter can be found here: https://gohugo.io/content/front-matter/
 
 #### The markdown content.
 
-The rest of the post is written in [markdown](https://help.github.com/articles/markdown-basics/). Here are some useful things we have added:
+The rest of the post is written in [markdown](https://help.github.com/articles/markdown-basics/). The first paragraph is also used as the post preview. Here are some useful things we have added:
 
 ##### Images & Figures
 
