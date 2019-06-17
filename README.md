@@ -8,8 +8,8 @@
 1. `export TITLE="my-post-title"` set the post title
 1. `git clone https://github.com/$(git config --global user.name)/blog.camunda.org.git`
 1. `cd blog.camunda.org && git checkout -b $(date +%F)-$TITLE` checkout a new git branch
-1. `make new` 
-edit your post at 
+1. `make new` create the frontmatter boilerplate and print the location of your post to edit
+1. edit your post
 1. `make` preview your post
 1. `git push -u`
 1. Open a pull request at [repo](https://github.com/camunda/blog.camunda.org) on github - should show in a yellow bar
