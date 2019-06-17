@@ -2,6 +2,19 @@
 
 ## How to write a Blog Post
 
+## TL,DR: (linux and osx with docker)
+
+1. Fork the [repo](https://github.com/camunda/blog.camunda.org) on github (top right)
+1. `export TITLE="my-post-title"` set the post title
+1. `git clone https://github.com/$(git config --global user.name)/blog.camunda.org.git`
+1. `cd blog.camunda.org && git checkout -b $(date +%F)-$TITLE` checkout a new git branch
+1. `make new` edit your post
+1. `make` preview your post
+1. `git push -u`
+1. Open a pull request at [repo](https://github.com/camunda/blog.camunda.org) on github - should show in a yellow bar
+
+> ***NOTE*** docker workflow tested on ubuntu 18 with gnu-make 4.1 - open an issue and ping @afirth if it doesn't work for you
+
 ## Some Background Information
 
 This blog is generated using a static site generator ([Hugo][hugo]). This means that the blog has no "backend", no database, no php, no nothing. It also means that you cannot "login somewhere" in order to write a post.
@@ -14,6 +27,7 @@ We want you to write as many blogposts as humanly possible. If you experience an
 
 * Daniel Meyer
 * Sebastian Menski
+* Alastair Firth (docker preview)
 
 ## Creating a new Post
 
@@ -21,17 +35,23 @@ Short version: in order to write a new post, you can simply create a pull reques
 
 Long version: follow the steps below :)
 
-### Install Hugo
+## Building the blog locally
 
-We use Hugo as a static site generator for generating the blog. If you want to build the blog locally, you first need to install [hugo][hugo] v0.50 (newer versions _may_ work).
-
-See the [hugo installation guide][hugo-installation] for more details on howto install Hugo.
+We use Hugo as a static site generator for generating the blog. If you want to build the blog locally, you can use docker, or install [hugo][hugo] v0.50 (newer versions _may_ work).
 
 ### Fork & clone the repository
 
 Fork & clone this repository.
 
 ### Preview the Blog locally
+
+#### with Docker Hugo
+
+`make` previews the blog (including drafts) locally
+
+#### with local Hugo
+
+See the [hugo installation guide][hugo-installation] for more details on how to install Hugo locally if you can't or won't use docker.
 
 Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing the following command:
 
@@ -52,6 +72,12 @@ Great, now you have everything in place for writing a new blogpost.
 ### Create a new Post
 
 > **Warning**: if you push a non-draft post to master it will be released immediately. If you must commit non-draft posts to master instead of to a branch, please mark them as `draft` (see below).
+
+#### with Docker Hugo
+
+`make new TITLE=my-post-title` generates the boilerplate front matter for a new post and prints the location of the file you should edit.
+
+#### with local Hugo
 
 In order to create a new post, type
 
