@@ -8,6 +8,9 @@ tags:
   - "X"
   - "Y"
 
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+
 ---
 
 Text
