@@ -57,7 +57,7 @@ Using the Input/Output Mapping is an additional way of injecting process variabl
 ## Output
 Once the analysis has been conducted, an HTML report provides a graphical result to highlight all data-flows and anomalies discovered. 
 
-{{< figure src="output.png" alt="HTML output" title="Result>}}
+{{< figure src="output.png" alt="HTML output" title="Result">}}
 
 In the second view, each element has an indicator attached in their lower right corner showing the variable operations found (Read, Write, Delete). The table below the process model gives a general overview on which variable has been accessed by which element.
 
