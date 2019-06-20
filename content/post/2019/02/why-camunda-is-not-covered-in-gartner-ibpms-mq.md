@@ -8,7 +8,7 @@ title = "Why Camunda is not covered in the Gartner iBPMS MQ"
 
 +++
 
-Gartner has recently released the latest version of their [Magic Quadrant for Intelligent Business Process Management Suites (iBPMS)](https://www.gartner.com/doc/reprints?id=1-66AAPG8&ct=190131&st=sb). You will not find Camunda BPM in that MQ, and in this blog post, I want to explain why.
+Gartner has recently released the latest version of their [Magic Quadrant for Intelligent Business Process Management Suites (iBPMS)](https://www.gartner.com/en/documents/3899484/magic-quadrant-for-intelligent-business-process-manageme). You will not find Camunda BPM in that MQ, and in this blog post, I want to explain why.
 
 Despite rumours to the contrary, Gartner will look at your product even if you’re not a paying customer. So although we aren’t Gartner customers, they reached out to us in June last year announcing that a new version of the MQ was in the making and they were considering including Camunda BPM, since it is coming up more and more often in client conversations. They have a standardized approach to this, and in the first step they asked us if we believe our product qualifies for the MQ. Here is what I replied:
 
