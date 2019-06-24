@@ -8,7 +8,7 @@ tags:
   - "Kubernetes"
 
 title: "Camunda BPM on Kubernetes"
-date: 2019-06-17T14:45:00Z
+date: 2019-06-24T08:53:41
 
 ---
 
