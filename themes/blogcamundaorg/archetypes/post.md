@@ -8,6 +8,9 @@ tags:
   - "X"
   - "Y"
 
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+
 ---
 
 Text
@@ -22,6 +25,7 @@ Some source code
 public static void main(Sring[] args) {
   // java code
 }
+```
 
 An image!
 

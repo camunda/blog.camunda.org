@@ -2,13 +2,25 @@
 
 ## How to write a Blog Post
 
-## Some Background Information
+## TL,DR: (linux and osx with docker)
 
-If you wrote blogposts on our previous blog (which was based on google blogger), then you are probably familiar with logging into blogger and writing a post in blogger's editing environment. The new blog is not based on blogger and works completely differently.
+1. Fork the [repo](https://github.com/camunda/blog.camunda.org) on github (top right)
+1. `export TITLE="my-post-title"` set the post title
+1. `git clone https://github.com/$(git config --global user.name)/blog.camunda.org.git`
+1. `cd blog.camunda.org && git checkout -b $(date +%F)-$TITLE` checkout a new git branch
+1. `make new` create the frontmatter boilerplate and print the location of your post to edit
+1. edit your post
+1. `make` preview your post
+1. `git push -u`
+1. Open a pull request at [repo](https://github.com/camunda/blog.camunda.org) on github - should show in a yellow bar
+
+> ***NOTE*** docker workflow tested on ubuntu 18 with gnu-make 4.1 - open an issue and ping @afirth if it doesn't work for you
+
+## Some Background Information
 
 This blog is generated using a static site generator ([Hugo][hugo]). This means that the blog has no "backend", no database, no php, no nothing. It also means that you cannot "login somewhere" in order to write a post.
 
-Technically, the blog is generated as a list of html files that are uploaded to our webserver. Just like in the old days.
+Technically, the blog is generated as a list of html files that are uploaded to our webserver.
 
 ### Need help?
 
@@ -16,6 +28,7 @@ We want you to write as many blogposts as humanly possible. If you experience an
 
 * Daniel Meyer
 * Sebastian Menski
+* Alastair Firth (docker preview)
 
 ## Creating a new Post
 
@@ -23,17 +36,23 @@ Short version: in order to write a new post, you can simply create a pull reques
 
 Long version: follow the steps below :)
 
-### Install Hugo
+## Building the blog locally
 
-We use Hugo as a static site generator for generating the blog. If you want to build the blog locally, you first need to install [hugo][hugo] v0.50 (newer versions _may_ work).
-
-See the [hugo installation guide][hugo-installation] for more details on howto install Hugo.
+We use Hugo as a static site generator for generating the blog. If you want to build the blog locally, you can use docker, or install [hugo][hugo] v0.50 (newer versions _may_ work).
 
 ### Fork & clone the repository
 
 Fork & clone this repository.
 
 ### Preview the Blog locally
+
+#### with Docker Hugo
+
+`make` previews the blog (including drafts) locally
+
+#### with local Hugo
+
+See the [hugo installation guide][hugo-installation] for more details on how to install Hugo locally if you can't or won't use docker.
 
 Once you have installed hugo and forked and cloned the repository, you can preview the blog by typing the following command:
 
@@ -55,10 +74,16 @@ Great, now you have everything in place for writing a new blogpost.
 
 > **Warning**: if you push a non-draft post to master it will be released immediately. If you must commit non-draft posts to master instead of to a branch, please mark them as `draft` (see below).
 
+#### with Docker Hugo
+
+`make new TITLE=my-post-title` generates the boilerplate front matter for a new post and prints the location of the file you should edit.
+
+#### with local Hugo
+
 In order to create a new post, type
 
 ```sh
-hugo new post/2015/10/camunda-introduces-bpel-support.md
+hugo new post/2015/10/camunda-introduces-BPEL-support.md
 ```
 
 (make sure to replace `2015` with the current year and `10` with the current month.)
@@ -75,31 +100,36 @@ The front matter of a post is content above the actual markdown content and is w
 For the post you just created it looks like this:
 
 ```
-+++
-title = "camunda introduces support for bpel"
-date = "2015-10-30T14:44:10+01:00"
-author = "Your Name"
-draft = true
-categories = ["Execution"]
-tags = ["X", "Y"]
-+++
+---
+author: "Your Name"
 
+categories:
+  - "Execution"
+
+tags:
+  - "X"
+  - "Y"
+
+title: "Camunda Introduces BPEL Support"
+date: 2019-06-17T14:24:30Z
+
+---
 ```
 
 Lets walk through this and look into this in more detail:
 
 * `title`: this is the title of your post. It will be the main headline. Since it was generated You may want to edit this and capitalize some words. Let's change it to `Camunda finally introduces Support for BPEL`.
 * `date`: this contains the current date. In the bog it will be displayed as the publishing date of the post. It does not control when the post is published. **Important**: if it takes you some time to write the blopost, make sure to adjust the date to the actual publishing date. Hugo sorts posts by date on the front page. Faling to set the current date may lead to your post not being listed at the top.
-* `author`: contains your name :)
+* `author`: Set this to your name :)
 * `categories`: choose from the following categories: `Execution`, `Modeling`, `Community`.
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
-* `draft`: value `true` means that the post is a draft. Draft posts are not published automativally.
+* `draft`: value `true` means that the post is a draft. Draft posts are not published automatically.
 
 More information on the hugo front matter can be found here: https://gohugo.io/content/front-matter/
 
 #### The markdown content.
 
-The rest of the post is written in [markdown](https://help.github.com/articles/markdown-basics/). Here are some useful things we have added:
+The rest of the post is written in [markdown](https://help.github.com/articles/markdown-basics/). The first paragraph is also used as the post preview. Here are some useful things we have added:
 
 ##### Images & Figures
 
