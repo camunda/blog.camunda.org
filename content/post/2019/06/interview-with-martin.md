@@ -1,11 +1,10 @@
 +++
 author = "Niall Deehan"
-draft = false
-categories = "Community"
-tags = "BPMN","Microservices Orchestration","Community Extension","Testing","JUnit","camunda-bpm-asserts"
+categories = ["Community"]
+tags = ["BPMN","Microservices Orchestration","Community Extension","Testing","JUnit","camunda-bpm-asserts"]
 date = "2019-06-27T09:07:00+01:00"
 title = "The Journey of Camunda BPM Asserts: From Extension to Platform"
-
+draft = false
 +++
 
 For the people who have been in any way involved with the Camunda Community the last few years, this is unlikely to be the first time you’ve heard the name [Martin Schimak](https://github.com/martinschimak). Also if you’re a developer using Camunda, chances are that, perhaps unbeknownst to you - you’ve been greatly helped by some of the projects that Martin has created and released as open source extensions for the platform.
