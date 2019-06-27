@@ -2,7 +2,7 @@
 author = "Niall Deehan"
 categories = ["Community"]
 tags = ["BPMN","Microservices Orchestration","Community Extension","Testing","JUnit","camunda-bpm-asserts"]
-date = "2019-06-27T09:07:00+01:00"
+date = "2019-06-27T09:00:00+01:00"
 title = "The Journey of Camunda BPM Asserts: From Extension to Platform"
 draft = false
 +++
