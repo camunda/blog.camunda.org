@@ -8,16 +8,16 @@ title = "Camunda Optimize 2.5.0 Released"
 
 We are happy to announce the release of Camunda Optimize 2.5.0.
 
-The release includes many exciting features in the following areas:
+The release includes many exciting features including:
 
 - [Multi-Tenancy Support](/post/2019/06/camunda-optimize-25-released/#multi-tenancy-support)
 - [Improved Multi-Engine Support](/post/2019/06/camunda-optimize-25-released/#improved-multi-engine-support)
-- [Flow Node + User Task Report Enhancements](/post/2019/06/camunda-optimize-25-released/#flow-node-user-task-report-enhancements)
+- [New and Enhanced Flow Node + User Task Reports](/post/2019/06/camunda-optimize-25-released/#flow-node-user-task-report-enhancements)
   - [User Task Assignee & Candidate Groups](/post/2019/06/camunda-optimize-25-released/#show-hide-flow-nodes)
   - [Show / Hide Flow Nodes](/post/2019/06/camunda-optimize-25-released/#show-hide-flow-nodes)
   - [Running + Completed State](/post/2019/06/camunda-optimize-25-released/#state-configurations-running-completed-state)
   - [Running Flow Nodes Durations](/post/2019/06/camunda-optimize-25-released/#running-flow-nodes-durations)
-
+- [Group by End Date](/post/2019/06/camunda-optimize-25-released/#group-by-end-date-reports)
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
 
@@ -43,10 +43,9 @@ Naturally Optimize also considers authorizations for tenant specific information
 
 ## Configuration
 
-Depending on the chosen Multi-Tenancy option the Optimize configuratin has to be adjusted:
+Depending on the chosen Multi-Tenancy option the Optimize configuration has to be adjusted:
 
 When you are making use of the `Single Process Engine With Tenant-Identifiers` option, Optimize automatically pulls the relevant tenant information from the Process Engine during import. This means that there is no additional setup required.
-
 
 When you are making use of the `One Process Engine Per Tenant` option, it is required to configure a `defaultTenant` for each engine that you are connecting to Optimize in order to separate data correctly. During import of historic data this information will be added automatically.
 
@@ -77,12 +76,17 @@ For more details regarding Multi-Tenancy we added a section in our [Technical Gu
 
 # Improved Multi-Engine Support
 
-Besides above mentioned changes for tenancy scenarios of a multi-engine setup, with Optimize 2.5.0 we also changed the way Authentication and Authorizations work in this setup.
+Besides above mentioned changes for multi-tenancy scenarios of a multi-engine setup, with Optimize 2.5.0 we also changed the way Authentication and Authorizations work when you have more than one engine configured with Optimize.
 
-more here
+When you configured multiple engines in Optimize, each engine can host different users with a different set of authorizations. If a user is logging in, Optimize will try to authenticate and authorize the user on each configured engine.
+
+To determine if a user is allowed to log in and which resources he is allowed to access within the Multi-Engine scenario, Optimize uses the following algorithm:
+
+`Given the user X logs into Optimize, go through the list of configured engines and try to authenticate the user, for each successful authentication fetch the permissions for this user from that engine and allow the user to access Optimize if authorized by at least one engine.`
+
+For the first time this allows you to make use of Optimize in a Multi-Engine setup while ensuring that authorizations and authentication work as intended when having different authorizations per Engine and per processes.
 
 For more details regarding Authentication and Authorizations we updated the section in our [Technical Guide](https://docs.camunda.org/optimize/technical-guide/setup/multiple-engines/#authentication-authorization-in-the-multiple-engine-setup) accordingly.
-
 
 
 # Flow Node + User Task Report Enhancements
@@ -90,10 +94,31 @@ For more details regarding Authentication and Authorizations we updated the sect
 Being able to analyze Flow Node and User Task information efficiently helps identifying bottlenecks and continuously speed up process execution.
 Therefore, we are happy to add more support for Flow Node and User Task analysis with this release.
 
-
 ## User Task Assignee & Candidate Groups
 
-With this release..
+User Tasks play an important role in most processes that are being automated with Camunda BPM today. With Optimize 2.4 we added more support for User Tasks and made the Idle, Work and Total times of User Tasks available in Reports.
+
+With this release we go a step further and import additional valuable information to Optimize. This includes user task assignees and candidate groups. Based on this data Optimize allows you to create new exciting reports:
+
+First of all you can easily see how the User Tasks are distributed across the different users of your process.
+
+{{< figure src="user-task-assignee.png" alt="User Task Assignees" >}}
+
+With additional configuration this even allows you to see which user is currently working on many user tasks and which ones have only few assigned.
+
+{{< figure src="user-task-assignee-running.png" alt="User Task Assignees Running" >}}
+
+Before a user task is claimed by a specific user, usually a candidate group(s) is assigned. With the help of `group by Candidate Group` you can identify how the tasks are distributed - for running or completed user tasks.
+
+{{< figure src="user-task-candidates.png" alt="User Task Candidate Groups" >}}
+
+Besides count reports the same functionality is of course also available for durations. The User Task Duration Time settings can now be found in the configurations overlay as you can see in following screen:
+
+{{< figure src="user-task-duration-setting.png" alt="User Task Duration Setting" >}}
+
+These features can support you analyzing and improving the work load across different teams and users, hence speeding up process execution a lot.
+
+At the same time for some organizations it might not be allowed to analyze user specfiic information. Therefore, Optimize allows you to disable the import of this historic information by changing the flag `import.data.user-task-worker.enabled` to `false` in the [configuration](https://docs.camunda.org/optimize/technical-guide/setup/configuration/).
 
 ## Show / Hide Flow Nodes
 
@@ -132,6 +157,15 @@ Until this release it was already possible to analyze durations of completed flo
 
 This feature becomes even more valuable in situations when you are interested in the idle or work time of running user tasks and want to make sure that certain user tasks are not taking too long.
 
+# Group by End Date Reports
+
+With this release we add the possibility to group the process instances counts or durations by end date. This allows us to see how many instances have been completed in a certain period of time:
+
+{{< figure src="end-date-grouping.png" alt="End Date Grouping" >}}
+
+In combination with a report that groups by start date we can see easily how many instances have been started and how many have been ended in a certain period of time. This allows us to identify quickly if we completing instances quick enough:
+
+{{< figure src="end-date-grouping-combined.png" alt="End Date Grouping Combined" >}}
 
 # Supported Environments
 
@@ -146,4 +180,4 @@ If you're new to Optimize, we recommend that you watch the [Getting Started with
 
 # Register for the Webinar
 
-If you’re not already registered, be sure to sign up for a spot in our free release webinars, which are offered in [German](https://attendee.gotowebinar.com/register/6384722582779437835) and [English](https://attendee.gotowebinar.com/register/4944989072020589067).
+If you’re not already registered, be sure to sign up for a spot in our free release webinars, which are offered in [German](https://camunda.com/learn/webinars/optimize-2-5-release/) and [English](https://camunda.com/learn/webinars/optimize-2-5-release-en/).
