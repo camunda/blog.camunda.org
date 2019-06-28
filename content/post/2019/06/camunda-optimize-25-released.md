@@ -19,7 +19,7 @@ The release includes many exciting features including:
   - [Running Flow Nodes Durations](/post/2019/06/camunda-optimize-25-released/#running-flow-nodes-durations)
 - [Group by End Date](/post/2019/06/camunda-optimize-25-released/#group-by-end-date-reports)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15385) listing all features and bug fixes are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it) and also [register for our webinars in English and German](#register-for-the-webinar).
