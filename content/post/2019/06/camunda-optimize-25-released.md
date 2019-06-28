@@ -13,9 +13,9 @@ The release includes many exciting features including:
 - [Multi-Tenancy Support](/post/2019/06/camunda-optimize-25-released/#multi-tenancy-support)
 - [Improved Multi-Engine Support](/post/2019/06/camunda-optimize-25-released/#improved-multi-engine-support)
 - [New and Enhanced Flow Node + User Task Reports](/post/2019/06/camunda-optimize-25-released/#flow-node-user-task-report-enhancements)
-  - [User Task Assignee & Candidate Groups](/post/2019/06/camunda-optimize-25-released/#show-hide-flow-nodes)
-  - [Show / Hide Flow Nodes](/post/2019/06/camunda-optimize-25-released/#show-hide-flow-nodes)
   - [Running + Completed State](/post/2019/06/camunda-optimize-25-released/#state-configurations-running-completed-state)
+  - [Show + Hide Flow Nodes](/post/2019/06/camunda-optimize-25-released/#show-hide-flow-nodes)
+  - [User Task Assignee + Candidate Groups](/post/2019/06/camunda-optimize-25-released/#user-task-assignee-candidate-groups)
   - [Running Flow Nodes Durations](/post/2019/06/camunda-optimize-25-released/#running-flow-nodes-durations)
 - [Group by End Date](/post/2019/06/camunda-optimize-25-released/#group-by-end-date-reports)
 
@@ -76,7 +76,7 @@ For more details regarding Multi-Tenancy we added a section in our [Technical Gu
 
 # Improved Multi-Engine Support
 
-Besides above mentioned changes for multi-tenancy scenarios of a multi-engine setup, with Optimize 2.5.0 we also changed the way Authentication and Authorizations work when you have more than one engine configured with Optimize.
+With this version of Optimize we also changed the way Authentication and Authorizations work when you have more than one engine configured with Optimize.
 
 When you configured multiple engines in Optimize, each engine can host different users with a different set of authorizations. If a user is logging in, Optimize will try to authenticate and authorize the user on each configured engine.
 
@@ -93,47 +93,6 @@ For more details regarding Authentication and Authorizations we updated the sect
 
 Being able to analyze Flow Node and User Task information efficiently helps identifying bottlenecks and continuously speed up process execution.
 Therefore, we are happy to add more support for Flow Node and User Task analysis with this release.
-
-## User Task Assignee & Candidate Groups
-
-User Tasks play an important role in most processes that are being automated with Camunda BPM today. With Optimize 2.4 we added more support for User Tasks and made the Idle, Work and Total times of User Tasks available in Reports.
-
-With this release we go a step further and import additional valuable information to Optimize. This includes user task assignees and candidate groups. Based on this data Optimize allows you to create new exciting reports:
-
-First of all you can easily see how the User Tasks are distributed across the different users of your process.
-
-{{< figure src="user-task-assignee.png" alt="User Task Assignees" >}}
-
-With additional configuration this even allows you to see which user is currently working on many user tasks and which ones have only few assigned.
-
-{{< figure src="user-task-assignee-running.png" alt="User Task Assignees Running" >}}
-
-Before a user task is claimed by a specific user, usually a candidate group(s) is assigned. With the help of `group by Candidate Group` you can identify how the tasks are distributed - for running or completed user tasks.
-
-{{< figure src="user-task-candidates.png" alt="User Task Candidate Groups" >}}
-
-Besides count reports the same functionality is of course also available for durations. The User Task Duration Time settings can now be found in the configurations overlay as you can see in following screen:
-
-{{< figure src="user-task-duration-setting.png" alt="User Task Duration Setting" >}}
-
-These features can support you analyzing and improving the work load across different teams and users, hence speeding up process execution a lot.
-
-At the same time for some organizations it might not be allowed to analyze user specfiic information. Therefore, Optimize allows you to disable the import of this historic information by changing the flag `import.data.user-task-worker.enabled` to `false` in the [configuration](https://docs.camunda.org/optimize/technical-guide/setup/configuration/).
-
-## Show / Hide Flow Nodes
-
-When looking at Flow Nodes and User Tasks per default you will see all Flow Nodes and User Tasks. Especially working with larger or more complex processes requires to focus on relevant information. With this release we add the possibility to hide certain flow nodes that are not relevant for your report.
-
-Imagine a Hiring Process which can have different End Events (e.g. Candidate Hired or Rejected), then you might need to report the distribution of instances across the different outcomes of the process to upper management. You can now build a report that focuses on the Flow Nodes or User Tasks which you select:
-
-Within the Configuration Options Popover you will find a new Button which leads you to the selection overlay.
-{{< figure src="flow-node-display-configuration.png" alt="Flow Node Display Configuration" >}}
-
-You can make your selection by just clicking on the relevant flow nodes.
-{{< figure src="flow-node-selection-overlay.png" alt="Flow Node Display Configuration Overlay" >}}
-
-The result is a Flow Node Report focusing on the flow nodes that are relevant for you - in our example the End Events of the Hiring Process.
-{{< figure src="flow-node-report.png" alt="Flow Node Report" >}}
 
 ## State Configurations (Running + Completed State)
 
@@ -157,20 +116,61 @@ Until this release it was already possible to analyze durations of completed flo
 
 This feature becomes even more valuable in situations when you are interested in the idle or work time of running user tasks and want to make sure that certain user tasks are not taking too long.
 
+## User Task Assignee + Candidate Groups
+
+User Tasks play an important role in most processes that are being automated with Camunda BPM today. With Optimize 2.4 we added more support for User Tasks and made the Idle, Work and Total times of User Tasks available in Reports.
+
+With this release we go a step further and import additional valuable information to Optimize. This includes user task assignees and candidate groups. Based on this data Optimize allows you to create new exciting reports:
+
+First of all you can easily see how the User Tasks are distributed across the different users of your process.
+
+{{< figure src="user-task-assignee.png" alt="User Task Assignees" >}}
+
+With additional configuration this even allows you to see which user is currently working on many user tasks and which ones have only few assigned.
+
+{{< figure src="user-task-assignee-running.png" alt="User Task Assignees Running" >}}
+
+Before a User Task is claimed by a specific user, usually a candidate group(s) is assigned. With the help of `group by Candidate Group` you can identify how the tasks are distributed - for running, completed or all user tasks.
+
+{{< figure src="user-task-candidates.png" alt="User Task Candidate Groups" >}}
+
+The same functionality is also available for User Task durations. The User Task Duration Time settings can now be found in the configurations overlay as you can see in following screen:
+
+{{< figure src="user-task-duration-setting.png" alt="User Task Duration Setting" >}}
+
+These features can support you analyzing and improving the work load across different teams and users, hence speeding up process execution a lot.
+
+At the same time for some organizations it might not be allowed to analyze user specific information. Therefore, Optimize allows you to disable the import of this historic information by changing the flag `import.data.user-task-worker.enabled` to `false` in the [configuration](https://docs.camunda.org/optimize/technical-guide/setup/configuration/).
+
+## Show + Hide Flow Nodes
+
+When looking at Flow Nodes and User Tasks per default you will see all Flow Nodes and User Tasks. Especially working with larger or more complex processes requires to focus on relevant information. With this release we add the possibility to hide certain flow nodes that are not relevant for your report.
+
+Imagine a Hiring Process which can have different End Events (e.g. Candidate Hired or Rejected), then you might need to report the distribution of instances across the different outcomes of the process to upper management. You can now build a report that focuses on the Flow Nodes or User Tasks which you select:
+
+Within the Configuration Options Popover you will find a new Button which leads you to the selection overlay.
+{{< figure src="flow-node-display-configuration.png" alt="Flow Node Display Configuration" >}}
+
+You can make your selection by just clicking on the relevant flow nodes.
+{{< figure src="flow-node-selection-overlay.png" alt="Flow Node Display Configuration Overlay" >}}
+
+The result is a Flow Node Report focusing on the flow nodes that are relevant for you - in our example the End Events of the Hiring Process.
+{{< figure src="flow-node-report.png" alt="Flow Node Report" >}}
+
 # Group by End Date Reports
 
-With this release we add the possibility to group the process instances counts or durations by end date. This allows us to see how many instances have been completed in a certain period of time:
+With this release we add the possibility to group process instance counts and durations by end date. This allows you to see how many instances have been completed in a certain period of time:
 
 {{< figure src="end-date-grouping.png" alt="End Date Grouping" >}}
 
-In combination with a report that groups by start date we can see easily how many instances have been started and how many have been ended in a certain period of time. This allows us to identify quickly if we completing instances quick enough:
+In combination with a report that groups by start date we can see easily how many instances have been started and how many have been ended in a certain period of time. This allows us to identify quickly if we completing instances quickly enough:
 
 {{< figure src="end-date-grouping-combined.png" alt="End Date Grouping Combined" >}}
 
 # Supported Environments
 
 With this release we also add official support for running Optimize on Java 12.
-Additionally we expand our support for ElasticSearch to versions 6.6.0+, 6.7.0+ and 6.8.0+. You can find the full list of supported environments in our [Technical Guide](https://docs.camunda.org/optimize/technical-guide/supported-environments/).
+Additionally, we expand our support for ElasticSearch to versions 6.6.0+, 6.7.0+ and 6.8.0+. You can find the full list of supported environments in our [Technical Guide](https://docs.camunda.org/optimize/technical-guide/supported-environments/).
 
 # How to get it
 
