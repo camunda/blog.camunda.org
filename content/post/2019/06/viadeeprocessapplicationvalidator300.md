@@ -3,7 +3,7 @@ author = "Sascha Di Bernardo"
 categories = ["Community"]
 tags = ["BPMN", "BPMN Validation", "Model-Code Inconsistencies", "viadee"]
 title = "How to Find NullPointerExceptions for Process Variables During Build Time"
-date = "2019-06-18T10:28:10+01:00"
+date = "2019-06-30T10:28:10+01:00"
 +++
 
 
