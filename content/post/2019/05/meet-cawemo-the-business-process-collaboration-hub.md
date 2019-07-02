@@ -1,5 +1,5 @@
 +++
-author = "Jakob Freud"
+author = "Jakob Freund"
 categories = ["Community"]
 tags = ["BPMN", "SaaS", "Modeling", "Cawemo "]
 date = "2019-05-28T10:30:00+02:00"
