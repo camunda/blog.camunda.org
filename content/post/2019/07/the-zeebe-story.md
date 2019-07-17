@@ -12,7 +12,7 @@ Zeebe implements fundamentally new concepts for workflow automation which allow 
 
 <!--more-->
 
-You can find a more in-depth description of Zeebe and how it’s different in our CTO  Daniel’s blog post, and an explanation of the value and how it can impact your projects in my Co-founder [Bernd’s blog post](https://medium.com/@berndruecker/45788a90d549).
+You can find an explanation of Zeebe's value and how it can impact your projects in my Co-founder [Bernd’s blog post](https://medium.com/@berndruecker/45788a90d549).
 
 In this blog post, I want to focus on a journey that began almost seven years ago and led us to this point. It’s the story of a young company that started as a consulting business and then launched its own software product, with no external funding and no experience in basically anything we were about to do. It’s also the story of a young engineer who couldn’t sleep until he solved the “big workflow problem”. And most of all, it’s a story about the kind of people you need to make great things happen.
 
