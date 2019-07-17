@@ -28,12 +28,12 @@ To remove the assignee from the history tables, my first approach was to use a t
 With the help of my JUnit test, I saw that the listener will remove the user id from the TaskHistory, but the engine records a USER_OP_LOG as well. And the listener invocation is recorded here: The change in task_assignee from user Id to null is recorded. So, the user id is trackable, although it's removed from the task history.
 
 ### Custom history level
-After this surprise I tried to teak the user operations log with a custom history level. It's quite easy as you can see from this example: [https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin/custom-history-level](https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin/custom-history-level)
+After this surprise I tried to tweak the user operations log with a custom history level. It's quite easy as you can see from this example: [https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin/custom-history-level](https://github.com/camunda/camunda-bpm-examples/tree/master/process-engine-plugin/custom-history-level)
 
-But it is too coarsegrained. You can only remove all user operation log entries from the database. This will include the cockpit operations as well.
+But it is too coarse-grained. You can only remove all user operation log entries from the database. This will include the Cockpit operations as well.
 
 ### A custom history event producer helps
-After a chat with the product team, they told my about the `DefaultHistoryEventProducer`, which can be subclassed to achive my goals. The implementation is straight forward: The DefaultHistoryEventProducer offers a lot of methods for all kind of events to collect some data for the history. With this implementation you can only filter the assignee from the task history and the user operation log.
+After a chat with the product team, they told my about the `DefaultHistoryEventProducer`, which can be subclassed to achive my goals. The implementation is straight forward: The `DefaultHistoryEventProducer` offers a lot of methods for all kind of events to collect some data for the history. With this implementation you can only filter the assignee from the task history and the user operation log.
 
 ```java
 package com.camunda.consulting.anonymize_user_task_data.history;
@@ -51,7 +51,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AnonymizeTaskWorkerHistoryEventProducer extends DefaultHistoryEventProducer {
-  
+
   private static final Logger LOGGER = LoggerFactory.getLogger(AnonymizeTaskWorkerHistoryEventProducer.class);
 
   @Override
