@@ -22,20 +22,48 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 # Multi-Version Support for Process and Decision Reports
 
-- Multi-Versions
+The Camunda BPM Platform supports versioning of process and decision definitions. Whenever you deploy a modified definition to the engine it will automatically increase the version of this definition.
 
-- Latest Option
+Before this release Optimize already allowed you to create reports for a single version or for all versions at the same time.
 
-- VersionTag Support
+For many use-cases users need more flexibility for selecting versions for a report. Hence with this release we allow the user for the first time to select multiple versions of the same definition when creating a report.
+
+The Camunda engine additionally allows you to tag a process definition with a version tag attribute. This allows to make small fixes or changes to your definition and keeping a business-related version at the same time. The version tag is already visible within Cockpit, Modeler as well as in different APIs.
+With this release we add the Version Tag to Optimize, too. This allows users to select all definition versions with the same Version Tag for a specific report.
+
+In addition to that we added support for selecting the latest version of a definition automatically. This feature is especially useful in situations when you regularly deploy new versions of your process or decision definitions but always want to look at the latest version in your reports. In the past you had to update all reports manually after a deployment if you wanted to achieve the same effect.
+
+The above mentioned features can be seen in following screen:
+
+{{< figure src="multi-version-selection.png" alt="Process Definition Version Selection" >}}
+
 
 # Durations for Running Process Instances
 
-- Display of Durations
-- Filter for Durations
+Durations of process instances are a very important base for process improvements.
+So far in Optimize it was only possible to look at the duration of *completed* process instances.
+
+With this release we allow users to look at the duration of *running* process instances.
+
+This feature also has direct influence on the process instance duration filter as it now also supports running process instances.
+In combination with Alerts this feature is very powerful if you want to actively monitor your process instances for underperformance.
+
+[add image]
 
 # New User Task Assignee & Candidate Group Reports
 
-- Distributed by user task / not distributed
+Before this release we added multiple features which support you analyzing User Tasks including information regarding assignees, candidate groups as well as idle, work and total durations. Based on these features you were able to look at the running and completed user task counts and durations per user which allowed you already to see how much workload a current user has and how many he completed in the past.
+
+{{< figure src="running-tasks-by-user.png" alt="Running User Tasks by Assignee distributed by None" title="Running User Tasks by Assignee distributed by None" >}}
+
+With this release we add the possibility to distribute this information additionally by User Tasks which helps you to see which User Tasks of the Process your users are working on or have completed in the past. To allow both (distribution by User Task and no distribution) we added a new option in the configuration popover as you can see below:
+
+{{< figure src="running-tasks-by-user-by-task.png" alt="Running User Tasks by Assignee distributed by User Task" title="Running User Tasks by Assignee distributed by User Task" >}}
+
+Sometimes you might want to look into completed User Tasks and analyze how many User Tasks have been completed by which assignee. This is possible by changing the Flow Node Status to *completed* in the configuration popover.
+{{< figure src="completed-tasks-by-users-by-task.png" alt="Completed User Tasks by Assignee" title="Completed User Tasks by Assignee" >}}
+
+The same functionality is also available for durations.
 
 # What's Next?
 
