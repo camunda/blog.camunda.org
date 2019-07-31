@@ -45,10 +45,12 @@ So far in Optimize it was only possible to look at the duration of *completed* p
 
 With this release we allow users to look at the duration of *running* process instances.
 
-This feature also has direct influence on the process instance duration filter as it now also supports running process instances.
-In combination with Alerts this feature is very powerful if you want to actively monitor your process instances for underperformance.
+{{< figure src="running-instances-durations.png" alt="Running Process Instance Durations" title="Running Process Instance Durations" >}}
 
-[add image]
+This feature also has direct influence on the process instance duration filter as it now also supports running process instances.
+Additionally, you can easily compare durations of running process instances with durations of completed instance in a Combined Report which allows you to notice if your running instances are taking longer than completed instances.
+
+{{< figure src="running-vs-completed-durations.png" alt="Running vs. Completed Process Instance Durations" title="Running vs. Completed Process Instance Durations" >}}
 
 # New User Task Assignee & Candidate Group Reports
 
