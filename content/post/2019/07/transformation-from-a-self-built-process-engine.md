@@ -11,7 +11,7 @@ Niko Vogel, Manager IT-BPM and Product Owner AXA Konzern AG; and Matthias Schult
 
 <!--more-->
 
-##The interesting facts:
+## The interesting facts:
 
 ### Q: How long have you been using Camunda?
 
