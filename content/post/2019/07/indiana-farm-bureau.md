@@ -6,7 +6,7 @@ title = "CamundCon 2019 - Indiana Farm Bureau: Camunda for Modern Web Applicatio
 date = "2019-08-08T12:00:00+04:00"
 +++
 
-When Indiana Farm Bureau’s Sowmya Raghunthan, IT Application Architect; and Corinna Cohn, Senior Web Developer, sat down to develop an app using Camunda as a headless BPM, their research drew a blank. This September at CamundaCon, the talented pair will present this industry-first use case in two parts. So if you’ve been pondering how to use the Camunda REST Engine to full capability, alongside a decoupled architecture – you do not want to miss this!
+When Indiana Farm Bureau’s Sowmya Raghunthan, IT Application Architect; and Corinna Cohn, Senior Web Developer, sat down to develop an app using Camunda as a headless BPM, their research drew a blank. This September at [CamundaCon](https://www.camundacon.com/agenda), the talented pair will present this industry-first use case in two parts. So if you’ve been pondering how to use the Camunda REST Engine to full capability, alongside a decoupled architecture – you do not want to miss this!
 
 <!--more-->
 
