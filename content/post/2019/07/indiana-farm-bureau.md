@@ -19,35 +19,35 @@ A: (S) Almost a year. We did our PoC in late 2017/early 2018 and were in product
 ### Q: Do you use the Community or Enterprise edition?
 
 A: (S) Enterprise
-(C) Our Developers use the community edition for local use
+\(C\) Our Developers use the community edition for local use
 
 ### Q: How are you using Camunda?
 
-A: (C) We’re using Camunda as our workflow engine, and integrating with a modern web-based user interface written in Angular, to revamp our claims process to be more responsive to our customers’ needs and to also be easier for our claims intake personnel to capture the right information for our adjusters to start taking action.
+A: \(C\) We’re using Camunda as our workflow engine, and integrating with a modern web-based user interface written in Angular, to revamp our claims process to be more responsive to our customers’ needs and to also be easier for our claims intake personnel to capture the right information for our adjusters to start taking action.
 
 We use Camunda in a couple of ways for claims intake. First, by interfacing with our existing claims system, we are able to automatically make a number of decisions based on policy information. Then, we use Camunda's business workflow capabilities for determining what information the claims intake specialist needs to capture for processing the claim. We also use decision modeling for determining adjuster assignment, escalation scoring (subrogation and total loss determination), and for generating the sequence of questions claims intake specialists use for claim categorization.
 
 ### Q: Have you built any interesting extensions/would you recommend any plugins etc.?
 
-A: (C) We’ve been building our own internal customizations, to match our specific use case.
+A: \(C\) We’ve been building our own internal customizations, to match our specific use case.
 
 ## CamundaCon preview:
 
 ### Q: What will you be presenting?
 
-A: (C) We’ll be presenting twice. The first talk covers our implementation of Camunda as a headless BPM for driving a stateless Angular application, so that all application business logic is isolated to our Camunda workflows, and the user experience is completely decoupled from the workflow engine. The second talk is our innovative use of business modeling and decision modeling for creating completely customized, dynamically determined, survey questionnaires.
+A: \(C\) We’ll be presenting twice. The first talk covers our implementation of Camunda as a headless BPM for driving a stateless Angular application, so that all application business logic is isolated to our Camunda workflows, and the user experience is completely decoupled from the workflow engine. The second talk is our innovative use of business modeling and decision modeling for creating completely customized, dynamically determined, survey questionnaires.
 
 Our use case is building a web app where the UX is driven by the workflow – how we were able to create an interface layer that didn’t require our users to directly use Camunda for workflows.
 
 (S) The thing is, we used decoupled patterns. We have completely used Camunda’s REST Engine’s capability to communicate between the front end and the back end. We use Camunda purely for workflow management, we don’t use any forms or anything like that. Keeping the UX in mind, we use a single-phase application to completely take care of UI and UX.
 
-(C) It leaves us with the potential to completely change the front end without having to touch the Camunda code. So, for example, if we wanted to do a pure mobile version of the app, we could do so. We’d only need to implement the contract. But it also allows us to change workflows in the back end without having to do any front end changes.
+\(C\) It leaves us with the potential to completely change the front end without having to touch the Camunda code. So, for example, if we wanted to do a pure mobile version of the app, we could do so. We’d only need to implement the contract. But it also allows us to change workflows in the back end without having to do any front end changes.
 
 ### Q: What’s motivating you to share your use case?
 
 A: (S) When we were thinking about how to design the app, we couldn’t find any resources online – nothing that explained Camunda being used as a headless BPM. Plus, there was not a lot that emphasized how to use the Camunda REST Engine to its full capability – how to decouple the front and the back ends. The only advice we could find was to use Forms within Camunda, and deploy the Angular forms within Camunda, so that it’s all in one place.
 
-(C) Pretty late into the development cycle, our product owners asked for us to change a sequence in a number of screens users interact with. With the extent of changes requested, they estimated it would take between four to six weeks. We finished in about three to four business days thanks to our decoupled patterns.
+\(C\) Pretty late into the development cycle, our product owners asked for us to change a sequence in a number of screens users interact with. With the extent of changes requested, they estimated it would take between four to six weeks. We finished in about three to four business days thanks to our decoupled patterns.
 
 ### Q: Are there any CamundaCon presentations/events that you’re looking forward to?
 
