@@ -2,7 +2,7 @@
 author = "Charley Mann"
 categories = ["Community"]
 tags = ["Camundacon"]
-title = "CamundCon 2019 - AXA and viadee: Transformation from a self-built process engine"
+title = "CamundaCon 2019 - AXA and viadee: Transformation from a self-built process engine"
 date = "2019-08-01T12:00:00+04:00"
 +++
 

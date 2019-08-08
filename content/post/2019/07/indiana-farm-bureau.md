@@ -2,7 +2,7 @@
 author = "Charley Mann"
 categories = ["Community"]
 tags = ["Camundacon"]
-title = "CamundCon 2019 - Indiana Farm Bureau: Camunda for Modern Web Applications & Reusable DMN-driven Survey Forms"
+title = "CamundaCon 2019 - Indiana Farm Bureau: Camunda for Modern Web Applications & Reusable DMN-driven Survey Forms"
 date = "2019-08-08T12:00:00+04:00"
 +++
 
@@ -13,12 +13,12 @@ When Indiana Farm Bureau’s Sowmya Raghunthan, IT Application Architect; and Co
 
 ### Q: How long have you been using Camunda?
 
-A: (S) Almost a year. We did our PoC in late 2017/early 2018 and were in production by December 2018.
+A: (Sowmya) Almost a year. We did our PoC in late 2017/early 2018 and were in production by December 2018.
 
 ### Q: Do you use the Community or Enterprise edition?
 
 A: (S) Enterprise<br>
-\(C\) Our Developers use the community edition for local use
+\(Corinna\) Our Developers use the community edition for local use
 
 ### Q: How are you using Camunda?
 
