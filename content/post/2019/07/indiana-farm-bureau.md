@@ -17,7 +17,7 @@ A: (S) Almost a year. We did our PoC in late 2017/early 2018 and were in product
 
 ### Q: Do you use the Community or Enterprise edition?
 
-A: (S) Enterprise
+A: (S) Enterprise<br>
 \(C\) Our Developers use the community edition for local use
 
 ### Q: How are you using Camunda?
