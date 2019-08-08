@@ -130,7 +130,7 @@ This functionality can be found in the Operation Log in Cockpit and Admin. The c
 
 ## Stay Tuned!
 
-This is the first alpha release on the road to **Camunda BPM 7.12** (due November 30, 2019). The next developer preview
+This is the second alpha release on the road to **Camunda BPM 7.12** (due November 30, 2019). The next developer preview
 (alpha 3) is scheduled at the end of August and will be packed with new features.
 
 ## Your Feedback Matters!
