@@ -1,9 +1,11 @@
++++
 author = "Gunnar von der Beck"
 categories = ["Community"]
 tags = ["extension", "identity-management", "keycloak", "cloud", "kubernetes"]
-date = "2019-08-19T01:00:00+01:00"
+date = "2019-08-18T01:00:00+01:00"
 title = "Keycloak Identity Provider Extension Released"
----
++++
+
 
 Camunda in its current version is perfectly suited to run BPM in cloud infrastructures. From Spring Boot integration to the External Task Pattern and other features you have a lot of freedom to design your BPM architecture the way you want. Is anything missing? Hardly.
 
