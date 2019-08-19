@@ -1,32 +1,21 @@
----
-author: "Gunnar von der Beck"
-
-categories:
-  - "Community"
-
-tags:
-  - "extension"
-  - "identity-management"
-  - "keycloak"
-  - "cloud"
-  - "kubernetes"
-
-title: "Keycloak Identity Provider Extension Released"
-date: 2019-08-20T08:00:00+02:00
-
+author = "Gunnar von der Beck"
+categories = ["Community"]
+tags = ["extension", "identity-management", "keycloak", "cloud", "kubernetes"]
+date = "2019-08-19T01:00:00+01:00"
+title = "Keycloak Identity Provider Extension Released"
 ---
 
 Camunda in its current version is perfectly suited to run BPM in cloud infrastructures. From Spring Boot integration to the External Task Pattern and other features you have a lot of freedom to design your BPM architecture the way you want. Is anything missing? Hardly.
 
 Except one thing: Identity management in the cloud often differs from classical approaches. Neither the integrated Identity Management nor the optional LDAP Identity Provider fit. That's why we have been looking for a way to better integrate Camunda's Identity Management into such environments.
-
+<!--more-->
 ### Author
 
 - [Gunnar von der Beck](https://www.xing.com/profile/Gunnar_vonderBeck/portfolio "XING Profile"), [Accso - Accelerated Solutions GmbH](https://accso.de/ "https://accso.de/")
 
 ## What is Keycloak?
 
-![Keycloak](keycloak.png "https://www.keycloak.org/") 
+![Keycloak](keycloak.png "https://www.keycloak.org/")
 
 Keycloak&trade; is an Open Source Identity and Access Management platform including advanced features such as User Federation, Identity Brokering and Social Login.
 
@@ -42,7 +31,7 @@ Keycloak&trade; integrates very well in cloud architectures and is widely used t
 
 ## Why this plugin?
 
-Camunda already provides a generic sample for Single Sign On when using Spring Boot. See <https://github.com/camunda-consulting/code/tree/master/snippets/springboot-security-sso>. Of course, these principles can be applied to Keycloak as well. 
+Camunda already provides a generic sample for Single Sign On when using Spring Boot. See <https://github.com/camunda-consulting/code/tree/master/snippets/springboot-security-sso>. Of course, these principles can be applied to Keycloak as well.
 
 From my point of view this is a good starting point, but SSO is only half of the story. If one needs to use `IdentityService` APIs or wants to see actual Users and Groups show up in Cockpit, then you just can't get any further. But why should I stop using the Camunda Identity Service just because we have moved to the cloud? Why would I even invest valuable time thinking about what is possible and  what restrictions may apply? As an architect I want to integrate with Keycloak in the same way I used to with LDAP in older days and have a fully integrated solution. This would make life much easier. So here we are - we've written a Keycloak Identity Provider Plugin.
 
@@ -75,11 +64,11 @@ For this scenario you have to add a dependency ...
 ... activate the Keycloak Identity Provider Plugin ...
 
 	package <your-package>;
-	
+
 	import org.springframework.boot.context.properties.ConfigurationProperties;
 	import org.springframework.stereotype.Component;
 	import org.camunda.bpm.extension.keycloak.plugin.KeycloakIdentityProviderPlugin;
-	
+
 	@Component
 	@ConfigurationProperties(prefix="plugin.identity.keycloak")
 	public class KeycloakIdentityProvider extends KeycloakIdentityProviderPlugin {
@@ -116,17 +105,17 @@ For this scenario we simply use everything that Spring Security and e.g. the OAu
 Assuming you have added `spring-boot-starter-security` and `spring-security-oauth2-autoconfigure` to your dependencies, the main point is that you have to write a `KeycloakAuthenticationProvider` similar to the following one:
 
 	/**
-	 * OAuth2 Authentication Provider for usage with KeycloakIdentityProviderPlugin. 
+	 * OAuth2 Authentication Provider for usage with KeycloakIdentityProviderPlugin.
 	 */
-	public class KeycloakAuthenticationProvider 
+	public class KeycloakAuthenticationProvider
 	    extends ContainerBasedAuthenticationProvider {
-	
+
 	    @Override
 	    public AuthenticationResult extractAuthenticatedUser(HttpServletRequest request,
 	                                                         ProcessEngine engine) {
-	
+
 	    	// Extract authentication details
-	        OAuth2Authentication authentication = (OAuth2Authentication) 
+	        OAuth2Authentication authentication = (OAuth2Authentication)
                 SecurityContextHolder.getContext().getAuthentication();
 	        if (authentication == null) {
 	            return AuthenticationResult.unsuccessful();
@@ -135,8 +124,8 @@ Assuming you have added `spring-boot-starter-security` and `spring-security-oaut
 	        if (userAuthentication == null || userAuthentication.getDetails() == null) {
 	            return AuthenticationResult.unsuccessful();
 	        }
-	        
-	        // Extract user ID from Keycloak authentication result 
+
+	        // Extract user ID from Keycloak authentication result
 			// depending on plugin configuration
 	        String userId = ((HashMap<String, String>) userAuthentication.getDetails())
                 .get("email");              // useEmailAsCamundaUserId = true
@@ -144,13 +133,13 @@ Assuming you have added `spring-boot-starter-security` and `spring-security-oaut
             //  .get("sub");                // use internal ID
 
 	        // Authentication successful
-	        AuthenticationResult authenticationResult = 
+	        AuthenticationResult authenticationResult =
 	            new AuthenticationResult(userId, true);
 	        authenticationResult.setGroups(getUserGroups(userId, engine));
-	
+
 	        return authenticationResult;
 	    }
-	
+
 	    private List<String> getUserGroups(String userId, ProcessEngine engine){
 	        List<String> groupIds = new ArrayList<>();
 	        // query groups using KeycloakIdentityProvider plugin
@@ -158,10 +147,10 @@ Assuming you have added `spring-boot-starter-security` and `spring-security-oaut
 	        	.forEach( g -> groupIds.add(g.getId()));
 	        return groupIds;
 	    }
-	
+
 	}
 
-Of course there are different approaches of doing that. The above example is just one them. Important is that the extraction of the `userId` must match the configuration of the Keycloak Identity Provider Plugin (either use Keycloak's email, username or internal ID as Camunda User ID). That's all. 
+Of course there are different approaches of doing that. The above example is just one them. Important is that the extraction of the `userId` must match the configuration of the Keycloak Identity Provider Plugin (either use Keycloak's email, username or internal ID as Camunda User ID). That's all.
 
 A suitable `application.yaml` configuration could look similar to the following:
 
