@@ -12,7 +12,7 @@ tags:
   - "kubernetes"
 
 title: "Keycloak Identity Provider Extension Released"
-date: 2019-08-16T08:00:00+02:00
+date: 2019-08-20T08:00:00+02:00
 
 ---
 
@@ -44,7 +44,7 @@ Keycloak&trade; integrates very well in cloud architectures and is widely used t
 
 Camunda already provides a generic sample for Single Sign On when using Spring Boot. See <https://github.com/camunda-consulting/code/tree/master/snippets/springboot-security-sso>. Of course, these principles can be applied to Keycloak as well. 
 
-From my point of view this is a good starting point, but SSO is only half of the story. If one needs to use `IdentityService` APIs or wants to see actual Users and Groups show up in Cockpit, then you just can't get any further. But why should I stop using the Camunda Identity Service just because we have moved to the cloud? As an architect I want to integrate with Keycloak in the same way I used to with LDAP in older days and have a fully integrated solution. This would make life much easier. So here we are - we've written a Keycloak Identity Provider Plugin.
+From my point of view this is a good starting point, but SSO is only half of the story. If one needs to use `IdentityService` APIs or wants to see actual Users and Groups show up in Cockpit, then you just can't get any further. But why should I stop using the Camunda Identity Service just because we have moved to the cloud? Why would I even invest valuable time thinking about what is possible and  what restrictions may apply? As an architect I want to integrate with Keycloak in the same way I used to with LDAP in older days and have a fully integrated solution. This would make life much easier. So here we are - we've written a Keycloak Identity Provider Plugin.
 
 The Keycloak Identity Provider Plugin is a Community Extension and can be found here: [https://github.com/camunda/camunda-bpm-identity-keycloak](https://github.com/camunda/camunda-bpm-identity-keycloak)
 
@@ -101,7 +101,7 @@ Simple enough? For more details have a look at the [configuration options](https
 
 Let's now come to a somewhat more complex scenario: we add single sign-on.
 
-* Connect Camunda's Identity Service to Keycloak
+* Keep connecting Camunda's Identity Service to Keycloak
 * Get rid of Camunda's Login Page and use SSO including Social Login etc.
 
 ![Single Sign On](single-sign-on.png)
@@ -137,9 +137,11 @@ Assuming you have added `spring-boot-starter-security` and `spring-security-oaut
 	        }
 	        
 	        // Extract user ID from Keycloak authentication result 
-			// plugin option useEmailAsCamundaUserId = true
+			// depending on plugin configuration
 	        String userId = ((HashMap<String, String>) userAuthentication.getDetails())
-                .get("email");
+                .get("email");              // useEmailAsCamundaUserId = true
+            //  .get("preferred_username"); // useUsernameAsCamundaUserId = true
+            //  .get("sub");                // use internal ID
 
 	        // Authentication successful
 	        AuthenticationResult authenticationResult = 
