@@ -32,7 +32,7 @@ Currently if you're interested in getting started with Camunda and Springboot we
 You can [find the project here](https://github.com/tasso94/start-camunda)
 
 ### Camunda Playground
-The idea of this project is wonderful and challenging "Try out and explore Camunda in minutes, not hours." At the moment Camunda has become so generic that sometimes it can be hard to know exactly where to start. Here our great pioneer [Nico](https://github.com/nikku) teamed up with our man in black [Phillip](https://github.com/philippfromme) to create a really engaging visual guide through the Camunda Stack, starting with the [Camunda modeler](https://camunda.com/download/modeler/) you're guiding through the concepts of BPMN as well as automation and the Camunda webapps. 
+The idea of this project is wonderful and challenging "Try out and explore Camunda in minutes, not hours." At the moment Camunda has become so generic that sometimes it can be hard to know exactly where to start. Here our great pioneer [Nico](https://github.com/nikku) teamed up with our man in black [PhiliPP](https://github.com/philippfromme) to create a really engaging visual guide through the Camunda Stack, starting with the [Camunda modeler](https://camunda.com/download/modeler/) you're guiding through the concepts of BPMN as well as automation and the Camunda webapps. 
 
 {{< figure src="camundaplayground.png" alt="playground">}}
 
