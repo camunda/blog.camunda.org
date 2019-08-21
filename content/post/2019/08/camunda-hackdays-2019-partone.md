@@ -9,30 +9,30 @@ draft = true
 
 Each year the coding inclined residence of Camunda towers embark on a 3 day adventure into a realm big ideas and hacky solutions. Its starts months before when a list of potential project ideas is create. Then as the hackdays approach people find ideas that they like and teams form until the day of reckoning arrives and we all gather together to see if we can realize the lofty ambition of creating a working prototype over the course of about 60 hours. 
 
-We had some unifying themes these this year for and I'm going to write each post on the projects that are (sometimes loosely) related to that theme. In this post I'll discuss projects helping users get started with Camunda and also improvements for external tasks. 
+We had some unifying themes these this year and I'm going to write each post on the projects that are (sometimes loosely) related to that theme. In this post I'll discuss projects helping users get started with Camunda and also improvements for external tasks. 
 
 <!--more-->
 ## Getting Started
-This theme was the idea of helping someone who is getting started with Camunda. Each project is very different but each case it solves a problem which how quickly people can understand and build something with camunda. 
+This theme focused on the idea of helping someone who is getting started with Camunda. Each project is very different but in each case it tries to solve problem of being able to quickly help people build and understand a camunda project. 
 
 ### How to dramatically over-engineer a getting started guide
-This project aims to answer the question "What would happen if backend devs had to build a frontend project" the answer is a 500MB ``node_modules`` folder and 1000 lines in a ``pom.xml``. What do get for that? 9 buttons and about 5 web pages. In this project [myself](https://twitter.com/NiallDeehan), [Basti](https://twitter.com/sebwarnke) and [Felix](https://github.com/anhaltFelix) all worked on a getting started guide for camunda that is actually orchestrated by a Camunda process. Built using Springboot and React through [JHipster](https://www.jhipster.tech/) the user was guided through a getting started guide while we could observe or change the potential paths via a camunda process
+This project aims to answer the question "What would happen if backend devs had to build a frontend project" the answer is a 500MB ``node_modules`` folder and ``pom.xml`` file the goes beyond 1000 lines. What do get for that? 9 buttons and about 5 web pages. In this project [myself](https://twitter.com/NiallDeehan), [Basti](https://twitter.com/sebwarnke) and [Felix](https://github.com/anhaltFelix) all worked on a getting started guide for camunda that is actually orchestrated by a Camunda process. Built using Springboot and React through [JHipster](https://www.jhipster.tech/) the user was guided through a getting started guide while we could observe or change the potential paths via a camunda process
 
 {{< figure src="overengineered-getstarted-cockpit.png" alt="Cockpit">}}
 
 {{< figure src="overengineered-getstarted-frontend.png" alt="frontend">}}
 
-You can find the code for this [here on github](https://github.com/NPDeehan/CamundaGettingStarted)
+If you want to see how to so much code can produce such little impact, luckily it's [here on github](https://github.com/NPDeehan/CamundaGettingStarted)
 
 ### Start Camunda BPM (improved getting started experience)
-Currently if you're interested in getting started with Camunda and Springboot we have a great [spring boot starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) for you to use. But that does still require that you have some idea about how to add things to a spring boot project. adding version numbers, editing pom.xml files, this apparently was all too much for [Tassilo](https://github.com/tasso94). So he created really fantastic way to let users choose the kind of project they want to create through a GUI and then let so you download the working spring boot project. I'm already looking into putting this into production :)
+Currently if you're interested in getting started with Camunda and Springboot we have a great [spring boot starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) for you to use. But that does still require that you have some idea about how to add things to a spring boot project. adding version numbers, editing pom.xml files, this apparently was all too much for [Tassilo](https://github.com/tasso94). So he created really fantastic way to let users choose the kind of project they want to create through a GUI and then let so you inspect and download a working spring boot project based on your requirements! I'm already looking into putting this into production...
 
 {{< figure src="tassiloGetStarted.png" alt="tassilofrontend">}}
 
 You can [find the project here](https://github.com/tasso94/start-camunda)
 
 ### Camunda Playground
-The idea of this project is wonderful and challenging "Try out and explore Camunda in minutes, not hours." At the moment Camunda has become so generic that sometimes it can be hard to know exactly where to start. Here our great pioneer [Nico](https://github.com/nikku) teamed up with our man in black [PhiliPP](https://github.com/philippfromme) to create a really engaging visual guide through the Camunda Stack, starting with the [Camunda modeler](https://camunda.com/download/modeler/) you're guiding through the concepts of BPMN as well as automation and the Camunda webapps. 
+The idea of this project is wonderful and challenging "Try out and explore Camunda in minutes, not hours." At the moment Camunda has become such a generic tool that sometimes it can be hard to know exactly where to start. Here, our great pioneer [Nico](https://github.com/nikku) teamed up with our man in black [Philipp](https://github.com/philippfromme) to create a really engaging visual guide through the Camunda Stack, starting with the [Camunda modeler](https://camunda.com/download/modeler/) you're guiding through the concepts of BPMN as well as automation and the Camunda webapps. 
 
 {{< figure src="camundaplayground.png" alt="playground">}}
 
@@ -40,11 +40,11 @@ I can not recommend more that you should [give it a spin right](https://github.c
 
 
 ## External Tasks
-[External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) are a concept used by both Camunda and Zeebe although will different implementation. But this idea is that business logic is abstracted out of the orchestrator to somewhere to give it independence regarding implementation and release cycle. It's fast becoming the most common way to use Camunda BPM so not surprising to see some interest during the hackdays. 
+[External tasks](https://docs.camunda.org/manual/latest/user-guide/process-engine/external-tasks/) are a pattern concept used by both Camunda and Zeebe although with different implementations. But this idea is that business logic is abstracted out of the orchestrator to somewhere to give it independence regarding implementation and release cycle. It's fast becoming the most popular way to use Camunda BPM so not surprising to see some interest during the hackdays. 
 
 ### gRPC API for External Tasks in BPM Runtime
-At the moment external tasks that connect to Camunda BPM use the REST API. This generally works quite well although things like long poling needed to be implemented. If we used gRPC instead of REST this wouldn't be required. As a fun experiment [Tobias](https://github.com/tmetzke) decided to try to find out what other benefits could come out of introducing a gRPC API for Camunda as well as making it easy to kick off with a spring boot starter
-```
+At the moment external tasks that connect to Camunda BPM use the REST API. This generally works quite well although things like long poling needed to be implemented by us. If we used gRPC instead of REST this wouldn't be required. As a fun experiment [Tobias](https://github.com/tmetzke) decided to try to find out what other benefits could come out of introducing a gRPC API for Camunda's external task as well as making it easy to kick off with a spring boot starter
+```xml
 <dependency>
   <groupId>org.camunda.bpm.springboot</groupId>
   <artifactId>camunda-bpm-spring-boot-starter-grpc-external-task</artifactId>
@@ -55,7 +55,7 @@ Tobias also created [client and service examples](https://github.com/tmetzke/cam
 
 
 ### Module to inject reflect into your node process.
-As projects are moving towards microservices and microservice orchestration the question of monitoring starts to come up more and more. When using a monolithic architecture you could be happy in the knowledge that if one this down - everything is down. :) Distributed systems are not as kind as to entirely crash out together so [Linus](https://github.com/linus-amg) decided to looking adding a node module that can be added to your external tasks in order to keep track of them. But far more than that! He created a dashboard where you can view all your works as well as restart, terminate and even update them.
+As projects are moving towards microservices and microservice orchestration the question of monitoring starts to come up more and more. When using a monolithic architecture you could be happy in the knowledge that if one thing is down - everything is down. :) Distributed systems are not as kind as to entirely crash out all together so [Linus](https://github.com/linus-amg) decided to looking adding a node module that can be added to your external tasks in order to keep track of them. But far more than that! He created a dashboard where you can view all your works as well as restart, terminate and even update them.
 
 {{< figure src="linusReflect.png" alt="reflect">}}
 
