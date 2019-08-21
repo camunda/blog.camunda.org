@@ -60,3 +60,6 @@ As projects are moving towards microservices and microservice orchestration the 
 {{< figure src="linusReflect.png" alt="reflect">}}
 
 This is something a lot of people have been asking for and i think it's a step in the right direction. [try it out here](https://github.com/linus-amg/reflect-injector)
+
+In the next installment I'll write about the hackday projects that I'll crowbar into the themes of "Fun and Productive"
+
