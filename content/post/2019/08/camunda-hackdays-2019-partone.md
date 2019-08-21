@@ -15,13 +15,13 @@ We had some unifying themes these this year and I'm going to write each post on 
 This theme focused on the idea of helping someone who is getting started with Camunda. Each project is very different but in each case it tries to quickly help people build and understand a camunda project.. 
 
 ### How to dramatically over-engineer a getting started guide
-This project aims to answer the question “What would happen if backend devs had to build a frontend project” the answer is a 500MB ``node_modules`` folder and ``pom.xml`` file that goes beyond 1000 lines. What do get for that? Nine buttons and about 5 web pages. In this project [myself](https://twitter.com/NiallDeehan), [Basti](https://twitter.com/sebwarnke) and [Felix](https://github.com/anhaltFelix) all worked on a getting started guide for camunda that is actually orchestrated by a Camunda process. Built using Springboot and React through [JHipster](https://www.jhipster.tech/) the user was guided through a getting started guide where we could observe or change the potential paths via a camunda process
+This project aims to answer the question “What would happen if backend devs had to build a frontend project” the answer is a 500MB ``node_modules`` folder and ``pom.xml`` file that goes beyond 1000 lines. What do you get for that? Nine buttons and about 5 web pages. In this project [myself](https://twitter.com/NiallDeehan), [Basti](https://twitter.com/sebwarnke) and [Felix](https://github.com/anhaltFelix) all worked on a getting started guide for camunda that is actually orchestrated by a Camunda process. Built using Springboot and React through [JHipster](https://www.jhipster.tech/) the user was guided through a getting started guide where we could observe or change the potential paths via a camunda process
 
 {{< figure src="overengineered-getstarted-cockpit.png" alt="Cockpit">}}
 
 {{< figure src="overengineered-getstarted-frontend.png" alt="frontend">}}
 
-If you want to see how to so much code can produce such little impact, luckily it's [here on github](https://github.com/NPDeehan/CamundaGettingStarted)
+If you want to see how so much code can produce such little impact, luckily it's [here on github](https://github.com/NPDeehan/CamundaGettingStarted)
 
 ### Start Camunda BPM (improved getting started experience)
 Currently if you're interested in getting started with Camunda and Springboot we have a great [spring boot starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) for you to use. But that does still require that you have some idea about how to add things to a spring boot project. Adding version numbers, editing pom.xml files, this apparently was all too much for [Tassilo](https://github.com/tasso94). So he created really a fantastic way to let users choose the kind of project they want to create through a GUI and then lets you inspect and download a working spring boot project based on your requirements! I'm already looking into putting this into production...
