@@ -2,11 +2,11 @@
 author = "Philipp Fromme"
 categories = ["Modeling"]
 tags = ["BPMN 2.0", "Tooling", "Release Note"]
-date = "2019-08-27T16:00:00+02:00"
+date = "2019-08-27T12:00:00+02:00"
 title = "Camunda Modeler 3.3 Released"
 +++
 
-We are proud to announce the release of Camunda Modeler v3.3.0. It comes with two significant improvements to our BPMN modeler: improved navigation and a better copy & paste experience. Furthermore, we included several bug fixes.
+We are proud to announce the release of Camunda Modeler v3.3. It comes with two significant improvements to our BPMN modeler: improved navigation and a better copy & paste experience. Furthermore, we included several bug fixes.
 
 [Download the latest release](https://camunda.com/download/modeler/) and start modeling.
 
