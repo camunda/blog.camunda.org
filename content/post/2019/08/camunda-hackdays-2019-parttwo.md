@@ -6,7 +6,7 @@ date = "2019-08-28T01:00:00+01:00"
 title = "Camunda hackday projects 2019: Fun and Productive"
 +++
 
-The hackdays produced a lot of interesting projects and this is part two of those projects. If you want to catch up on all the fun. you can find[part one here](https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-partone/).  We’ve a dichotomy of project types in this post, ranging from those made for fun to those actually helping productivity. The line is slightly blurred on some of them depending on if you consider reading logs fun or not. Personally I find no better way to relax than curling up on a couch and reading through one of my favorite stack traces. Even if we can predictably assume that in the end the NPE did it.
+The hackdays produced a lot of interesting projects and this is part two of those projects. If you want to catch up on all the fun. you can find [part one here](https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-partone/).  We’ve a dichotomy of project types in this post, ranging from those made for fun to those actually helping productivity. The line is slightly blurred on some of them depending on if you consider reading logs fun or not. Personally I find no better way to relax than curling up on a couch and reading through one of my favorite stack traces. Even if we can predictably assume that in the end the NPE did it.
 
 ## Fun & Games!
 The hackdays have often produced endearing games like 2015's [BPMN Quest](https://blog.camunda.com/post/2015/09/bpmn-quest-camunda-as-game-engine/) or the amazing games like last year's [Camunda Night Mode](https://github.com/SebastianStamm/camunda-night-mode). This year is no exception andhas produced things inspired by both cards and, oddly enough, traffic.
