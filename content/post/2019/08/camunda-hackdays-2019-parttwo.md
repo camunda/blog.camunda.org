@@ -4,7 +4,6 @@ categories = ["Community"]
 tags = ["extension", "hackdays"]
 date = "2019-08-28T01:00:00+01:00"
 title = "Camunda hackday projects 2019: Fun and Productive"
-draft = true
 +++
 
 The hackdays produced a lot of interesting projects and this is part two of those projects. If you want to catch up on all the fun. you can find[part one here](https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-partone/).  We’ve a dichotomy of project types in this post, ranging from those made for fun to those actually helping productivity. The line is slightly blurred on some of them depending on if you consider reading logs fun or not. Personally I find no better way to relax than curling up on a couch and reading through one of my favorite stack traces. Even if we can predictably assume that in the end the NPE did it.
@@ -23,7 +22,7 @@ If you want to learn how to play this came in the most unconventional way take a
 ### Spot it: Camunda
 Another card-game-inspired project is [Spot It](https://boardgamegeek.com/boardgame/63268/spot-it).  which on the face of it sounds like a pretty simple pattern matching game. It has 55 cards, each card has eight symbols and the interesting thing is that every card matches another with exactly one symbol. [Maciej](https://github.com/barmac) decided to build a program that can create this game, but instead of using random symbols he decided to do it with BPMN symbols. We had a lot of fun playing this game and it’s so much harder than it sounds. Spotting a non-interrupting escalation boundary event and SAYING it out load are two very different skills.
 
-@TODO - add image. 
+{{< figure src="spotit.jpg" alt="spotit">}}
 
 You'll find the [code for it here](https://github.com/barmac/spot-it-generator).
 
