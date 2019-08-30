@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-08-29T09:00:00+01:00"
+date = "2019-08-30T09:00:00+01:00"
 title = "Camunda Optimize 2.6.0-alpha2 Released"
 +++
 
@@ -13,7 +13,7 @@ You can find improvements and features from the upcoming Optimize version 2.6.0 
 - Improved Support for Undefined and Null Variable Values
 - Supported Docker Image
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=xxx&version=xxx) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15515) are available in Jira.
 
 <!--more-->
 
