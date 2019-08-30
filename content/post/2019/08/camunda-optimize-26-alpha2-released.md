@@ -17,32 +17,32 @@ The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jsp
 
 <!--more-->
 
-You can [try out a free trial of Camunda Optimize](#how-to-get-it).
+[Try out a free trial of Camunda Optimize](#how-to-get-it).
 
 
 # Outlier Analysis
 
 Optimize 2.5 allows you to inspect the average, minimum, maximum and median durations of flow nodes within your processes.
-Using the heatmap visualization you are also able to compare the durations with target durations that can easily be set directly in Optimize.
+Using the heatmap visualization, you are also able to compare the durations with target durations that can be easily set directly in Optimize.
 
 With this release we add a very exciting feature which adds the possibility to easily identify process instances where certain flow node instances take significantly longer than others and subsequently slow down your process.
-We call this `Outlier Analysis`. Let's have a look into the feature based on a small example step-by-step.
+We call this `Outlier Analysis`. Let's have a look into the feature based on a small step-by-step example.
 
-In below example our process consists of two User Tasks and two Send Tasks.
-When using the new Outlier Analysis feature within the Analysis section and selecting the process we can directly see that the Heatmap highlights the Flow Nodes where Optimize identified many duration outliers. In our example for the Tasks *Review Lead* and *Confirm Lead* duration outliers were identified.
-When hovering over the task you can see how many instances were identified and how much longer they take than the average duration.
+In the example below, our process consists of two User Tasks and two Send Tasks.
+When using the new Outlier Analysis feature within the Analysis section and selecting the process, we can directly see that the Heatmap highlights the Flow Nodes where Optimize identified many duration outliers. In our example, the Tasks *Review Lead* and *Confirm Lead* duration outliers were identified.
+When hovering over the task you can see how many instances were identified and how much longer they take compared the average duration.
 
 {{< figure src="outlierExample_1_heatMap.png" alt="Outlier Example Heatmap" >}}
 
-A click on *View Details* allows you to directly see a Duration Distribution Chart for the specific flow node. The Duration Distribution Chart shows you how long the identified outliers take - also in comparison to the other flow node instance durations.
+A click on *View Details* on a flow node allows you to directly see a Duration Distribution Chart for that specific flow node. The Duration Distribution Chart shows you how long the identified outliers take - also in comparison to the other flow node instance durations.
 
 {{< figure src="outlierExample_2_distribution.png" alt="Outlier Example Distribution" >}}
 
 
 ## Significant Variable Values
 
-When looking at the duration outlier instances you can analyze the data further in order to do more root-causing for why these instances eventually took so long.
-A click on the significant variables tab shows you a table that lists significant variable values in the outlier instances. It also allows you to see how many times this variable value occurred in the outlier instances compared to the rest the process instances. This can give you a good idea if there is a correlation between a variable value and that a flow node takes more time than expected.
+When looking at the duration outlier instances, you can analyze the data further in order to do more root-causing for why these instances eventually took so long.
+A click on the significant variables tab shows you a table that lists significant variable values in the outlier instances. It also allows you to see how many times this variable value occurred in the outlier instances compared to the rest the process instances. This can give you a good idea if there is a correlation between a variable value and a flow node that is taking more time than expected.
 
 {{< figure src="outlierExample_3_Variables.png" alt="Outlier Example Variables" >}}
 
@@ -53,7 +53,7 @@ Variables are a very important ingredient of most workflows.
 Optimize allows you to group process instance count and durations by variables and also includes powerful variable filtering possibilities. With this release we improve in both areas.
 
 ## Group by Variable: Null + Undefined Values
-When you group the process instance count or duration by a specific variable before this release you were only able to see process instances where a value was set. With this release Optimize will additionally display the count and duration for process instances where no value is set or a variable has been set explicitly to null.
+When you group the process instance count or duration by a specific variable before this release, you were only able to see process instances where a value was set. With this release Optimize will additionally display the count and duration for process instances where no value is set or a variable has been set explicitly to null.
 
 {{< figure src="group-by-variable.png" alt="Group by Variable with Null Values" >}}
 
@@ -67,7 +67,7 @@ With this release we add the possibility for every supported data type to filter
 
 # Supported Docker Image
 
-With this release we also add an officially supported Docker Image for Optimize to our Camunda Docker Registry.
+With this release, we also add an officially supported Docker Image for Optimize to our Camunda Docker Registry.
 This will enable you to quickly run Optimize in environments where you are making use of Docker already.
 
 In order to use the Camunda Docker Registry you first have to login with your Enterprise Credentials:
