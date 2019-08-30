@@ -82,7 +82,7 @@ Afterwards you can start Optimize for example like this:
 ```
 docker run -d --name optimize -p 8090:8090 -p 8091:8091 \
            -e OPTIMIZE_CAMUNDABPM_REST_URL=http://example.org/engine-rest \
-           registry.camunda.cloud/optimize:latest
+           registry.camunda.cloud/optimize:2.6.0-alpha2
 ```
 
 A detailed documentation about the Configuration of the container you can find in our [Optimize documentation](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/#production-docker-image-without-elasticsearch).
