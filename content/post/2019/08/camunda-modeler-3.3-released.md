@@ -28,7 +28,7 @@ Copying and pasting elements may sound like a straight forward feature. Neverthe
 
 ## Looking Forward
 
-Read the [changelog](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md#320) to learn about all features and bug fixes that made it into this release. [Download the new modeler](https://camunda.com/download/modeler/), give it a try, and, most importantly, give us feedback.
+Read the [changelog](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md#330) to learn about all features and bug fixes that made it into this release. [Download the new modeler](https://camunda.com/download/modeler/), give it a try, and, most importantly, give us feedback.
 
 Did we miss anything? Did you spot a bug or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.camunda.org/c/modeler), tweet us [@Camunda](https://twitter.com/Camunda) or file issues you found in the [Camunda Modeler issue tracker](https://github.com/camunda/camunda-modeler/issues/new/choose).
 
