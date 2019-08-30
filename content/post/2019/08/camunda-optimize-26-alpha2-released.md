@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-08-29wT09:00:00+01:00"
+date = "2019-08-29T09:00:00+01:00"
 title = "Camunda Optimize 2.6.0-alpha2 Released"
 +++
 
@@ -10,7 +10,7 @@ We are happy to announce the release of Camunda Optimize version 2.6.0-alpha2.
 You can find improvements and features from the upcoming Optimize version 2.6.0 in this second alpha release, including:
 
 - Outlier Analysis
-- Undefined and Null Variable Values
+- Improved Support for Undefined and Null Variable Values
 - Supported Docker Image
 
 The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=xxx&version=xxx) are available in Jira.
@@ -41,7 +41,7 @@ A click on *View Details* allows you to directly see a Duration Distribution Cha
 
 ## Significant Variable Values
 
-When looking at the distribution of instances based on duration you can analyze the data further in order to do more root-causing for why these instances eventually took so long.
+When looking at the duration outlier instances you can analyze the data further in order to do more root-causing for why these instances eventually took so long.
 A click on the significant variables tab shows you a table that lists significant variable values in the outlier instances. It also allows you to see how many times this variable value occurred in the outlier instances compared to the rest the process instances. This can give you a good idea if there is a correlation between a variable value and that a flow node takes more time than expected.
 
 {{< figure src="outlierExample_3_Variables.png" alt="Outlier Example Variables" >}}
@@ -52,20 +52,23 @@ A click on the significant variables tab shows you a table that lists significan
 Variables are a very important ingredient of most workflows.
 Optimize allows you to group process instance count and durations by variables and also includes powerful variable filtering possibilities. With this release we improve in both areas.
 
-## Null + Undefined Values in Group by Variable
+## Group by Variable: Null + Undefined Values
 When you group the process instance count or duration by a specific variable before this release you were only able to see process instances where a value was set. With this release Optimize will additionally display the count and duration for process instances where no value is set or a variable has been set explicitly to null.
 
-[example image]
+{{< figure src="group-by-variable.png" alt="Group by Variable with Null Values" >}}
+
 
 ## Filter Process Instances by Null and Undefined Variable Values
 In certain scenarios it is necessary to find out which process instances have a null value.
 With this release we add the possibility for every supported data type to filter for null and undefined variable values.
 
-[example image2]
+{{< figure src="variable-filter-null-values.png" alt="New Variable Filter" >}}
+{{< figure src="report-active-null-variablevalue-filter.png" alt="New Variable Filter" >}}
 
 # Supported Docker Image
 
 With this release we also add an officially supported Docker Image for Optimize to our Camunda Docker Registry.
+This will enable you to quickly run Optimize in environments where you are making use of Docker already.
 
 In order to use the Camunda Docker Registry you first have to login with your Enterprise Credentials:
 ```
