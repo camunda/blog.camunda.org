@@ -3,7 +3,7 @@ author = "Camunda"
 categories = ["Community"]
 tags = ["extension", "identity-management", "keycloak", "cloud", "kubernetes"]
 date = "2019-09-02T01:00:00+01:00"
-title = "CamundaCon 2019 - Pharma Research Automation -- Connecting Researchers with Robots and Systems"
+title = "CamundaCon 2019 - Pharma Research Automation - Connecting Researchers with Robots and Systems"
 +++
 
 In the highly heterogeneous and dynamic landscape of pharma research, where hundreds of researchers and scientists must communicate and undertake deeply complex workflow processes - Camunda has proved the ideal tonic. At CamundaCon Daniel Butnaru, Solution Architect at Roche Pharma, will share how his team utilises Camunda’s Community Edition straight out of the box to streamline the interaction between researcher (human) tasks with backends and robotics platforms.
