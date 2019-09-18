@@ -26,7 +26,7 @@ The hardest part of making the transition to DevOps and microservices isn’t ne
 
 “The first and most important thing is changing the minds of people,” says Samland.
 
-Sandy Kemsley, BPM Industry Analyst and Architect for Kemsley Design Ltd. told conference attendees that microservices that trace their lineage back to service-oriented architecture (SOA) represent the only way to dynamically scale applications up and down.
+Sandy Kemsley, BPM Industry Analyst and Architect for Kemsley Design Ltd. told conference attendees that microservices often trace their lineage back to service-oriented architecture (SOA) and represent the only way to dynamically scale applications up and down.
 
 Organizations need to embrace microservices as the means to break up monolithic applications that have proven themselves to be too inflexible for the businesses to adjust to rapidly changing business conditions, adds Kemsley.
 
@@ -34,4 +34,4 @@ Organizations need to embrace microservices as the means to break up monolithic 
 
 While there may still be routine business processes that can be addressed by a packaged application, organizations that want to innovate need more control over their business processes. That requires embracing a DevOps culture that enables the organizations to customize business processes in a way that enables them to truly differentiate themselves.
 
-It may take some time for organizations to master DevOps and microservices. However, as more organizations start to appreciate the difference between thriving in the age of digital business versus merely hoping to survive, a lot of them are clearly starting to realize just how much of their future success will depend on their ability to quickly and elegantly adopt best DevOps practices using a modern BPM platform.
+It may take some time for organizations to master DevOps and microservices. However, as more organizations start to appreciate the difference between thriving in the age of digital business versus merely hoping to survive, a lot of them are clearly starting to realize just how much of their future success will depend on their ability to quickly and elegantly adopt best DevOps practices in combination with   a modern BPM platform.
