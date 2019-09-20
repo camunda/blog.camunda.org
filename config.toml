@@ -4,6 +4,7 @@ title = "Camunda Team Blog"
 theme = "blogcamundaorg"
 preservetaxonomynames = true
 # uglyurls = true
+pygmentsStyle  = "github"
 
 
 # [taxonomies]
