@@ -30,7 +30,19 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 Before Optimize 2.6 every Collection, Report or Dashboard that was created in Optimize was per default visible for all users and could be also edited by all users.
 
 With this release all newly created collections, reports and dashboards will be private per default. This means that other users will not be able to see or edit entities that have been created by other users.
-To allows other users to see or edit reports and dashboards, you can place them in a collection. Afterwards you can add users and groups to your newly created collection
+
+Due the above changed the Reports & Dashboards List page was changed in order to reflect the new concept:
+
+{{< figure src="homepage.png" alt="Optimize 2.6 Homepage" >}}
+
+To allows other users to see or edit reports and dashboards, you can place them in a collection. At the same time each collection has a separate page now:
+{{< figure src="collection-reportsdashboards.png" alt="Optimize 2.6 Reports Dashboards" >}}
+
+The new breadcrumb in the header reflects the way you navigated to your report, dashboard or collection. This allows you to easily navigate between the different pages.
+
+Afterwards creating your collection and copying or creating your reports and dashboards inside of it, you can add users and groups to your newly created collection
+
+{{< figure src="collection-users.png" alt="Optimize 2.6 Users" >}}
 
 While adding users or user groups to a collection one has to choose one of the roles for the added user or user group:
 
@@ -38,9 +50,8 @@ While adding users or user groups to a collection one has to choose one of the r
 - Editors can additionally edit all reports and dashboards within the collection, but not the collection itself.
 - Managers can edit all reports and dashboards and also manage the collection.
 
-Due the above changed the Reports & Dashboards List page was changed in order to reflect the new concept.
+{{< figure src="collection-userroles.png" alt="Optimize 2.6 User Roles" >}}
 
-...images
 
 # Outlier Analysis
 
@@ -50,8 +61,7 @@ Using the heatmap visualization you are also able to compare the durations with 
 With this release we add a very exciting feature which adds the possibility to easily identify process instances where certain flow node instances take significantly longer than others and subsequently slow down your process.
 We call this `Outlier Analysis`. Let's have a look into the feature based on a small example step-by-step.
 
-In below example our process consists of two User Tasks and two Send Tasks.
-When using the new Outlier Analysis feature within the Analysis section and selecting the process we can directly see that the Heatmap highlights the Flow Nodes where Optimize identified many duration outliers. In our example for the Tasks *Review Lead* and *Confirm Lead* duration outliers were identified.
+When using the new Outlier Analysis feature within the Analysis section and selecting the process we can directly see that the Heatmap highlights the Flow Nodes where Optimize identified many duration outliers. In our example for the Tasks *Assign Hiring Manager*, *Screen Application* and *Conduct 1st Onsite Interview* duration outliers were identified.
 When hovering over the task you can see how many instances were identified and how much longer they take than the average duration.
 
 {{< figure src="outlierExample_1_heatMap.png" alt="Outlier Example Heatmap" >}}
@@ -63,8 +73,9 @@ A click on *View Details* allows you to directly see a Duration Distribution Cha
 
 ## Significant Variable Values
 
-When looking at the duration outlier instances you can analyze the data further in order to do more root-causing for why these instances eventually took so long.
-A click on the significant variables tab shows you a table that lists significant variable values in the outlier instances. It also allows you to see how many times this variable value occurred in the outlier instances compared to the rest the process instances. This can give you a good idea if there is a correlation between a variable value and that a flow node takes more time than expected.
+When looking at the duration outlier instances you can analyze the data further in order to root-cause why these instances eventually took so long.
+A click on the significant variables tab shows a table that lists significant variable values in the outlier instances. It also allows you to see how many times this variable value occurred in the outlier instances compared to the rest the process instances. This can give you a good idea if there is a correlation between a variable value and that a flow node takes more time than expected.
+In our example we can see that for all of our Duration Outliers the Department was IT, the JobExperience was Senior and the assigned hiringManager was James. We could approach James to find out why it took so long to complete this task in order to speed up our Screen Application tasks.
 
 {{< figure src="outlierExample_3_Variables.png" alt="Outlier Example Variables" >}}
 
