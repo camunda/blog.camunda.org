@@ -19,7 +19,7 @@ The release includes many exciting features including:
   - Improved Support for Undefined and Null Variable Values
 - Supported Docker Image
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=&version=) are available in Jira.
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15491) are available in Jira.
 
 <!--more-->
 
