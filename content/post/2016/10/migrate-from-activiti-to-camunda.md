@@ -69,11 +69,11 @@ In Activiti we often see process models without layout information (so called "D
 
 Some elements in the BPMN XML file might cause parsing exceptions in Camunda (you will see `ENGINE-09005 Could not parse BPMN process` somewhere in the logs), the most prominent example is: 
 
-```<activiti:formProperty type="user" ...```
+`<activiti:formProperty type="user" ...`
 
 Camunda does not know a type user, you have to change this to 
 
-```<activiti:formProperty type="string" ...```
+`<activiti:formProperty type="string" ...`
 
 to use your process. You might find other things not parseable. In that case you have to adjust your BPMN XML file. We recommend that you verify your BPMN models by a simple unit test case: 
 
