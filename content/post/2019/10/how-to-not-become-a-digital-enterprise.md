@@ -34,7 +34,7 @@ So it is obviously not just about "as simple as buying a product online", but al
 
 Well fine, but how? Let's say you work at one of those companies, how can you turn your company that is sometimes more than a hundred years old, into a Digital Enterprise that is on par with Amazon, Google, all those tech startups, etc.?
 
-This is the question I am going to investigate in this series of blog post, and I am doing it predominantly based on the experiences we at Camunda have made when working with our customers.
+This is the question I am going to investigate in this series of blog posts, and I am doing it predominantly based on the experiences we at Camunda have made when working with our customers.
 {{< figure src="img2.png" alt="How to (not) become a digital enterprise 1">}}
 
 At Camunda we have seen some exciting growth over the past few years and besides thousands of open source users, we're now closing in on 300 enterprise customers. Because of our customer base and the nature of our product, we have a fairly unique set of insights: Established organizations, in financial services, telcos, media, energy companies etc. use Camunda as part of their digital transformation efforts. And because it's a horizontal technology, we can look at this matter across industries. And because it's about business process automation, we often have access to the senior leadership level, which leads to very enlightening discussions.
@@ -43,10 +43,10 @@ So the established organizations like Camunda because it's flexible and they can
 
 Based on our insights, we have identified four key elements that an established organization needs to put in place in order to become a Digital Enterprise:
 
-Prioritizing customer-focused innovation.
-Bringing technology to the heart of your company.
-Automating your business, one project at a time.
-Putting executives in charge who care about long-term success, their people and the world.
+- Prioritizing customer-focused innovation.
+- Bringing technology to the heart of your company.
+- Automating your business, one project at a time.
+- Putting executives in charge who care about long-term success, their people and the world.
 
 ### What’s next?
 
