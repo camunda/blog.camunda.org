@@ -2,7 +2,7 @@
 author = "Jakob Freund"
 categories = ["Community"]
 tags = ["CamundaCon"]
-date = "2019-09-22T01:00:00+02:00"
+date = "2019-10-22T01:00:00+02:00"
 title = "How to (not) become a digital Enterprise"
 +++
 
