@@ -3,7 +3,7 @@ author = "Jakob Freund"
 categories = ["Community"]
 tags = ["CamundaCon"]
 date = "2019-10-22T01:00:00+02:00"
-title = "How to (not) become a digital Enterprise"
+title = "How to (not) become a Digital Enterprise"
 +++
 
 This blog post is the first of a five-part series based on the keynote I presented at CamundaCon 2019 (You can find the [recording on YouTube](https://www.youtube.com/watch?v=zfN2-TlzlZs)).
