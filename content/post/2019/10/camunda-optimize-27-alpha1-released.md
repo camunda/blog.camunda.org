@@ -1,0 +1,89 @@
++++
+author = "Felix Mueller"
+categories = ["Camunda Optimize"]
+tags = ["Camunda Optimize", "Release Note"]
+date = "2019-11-01T09:00:00+01:00"
+title = "Camunda Optimize 2.7.0-alpha1 Released"
++++
+
+We are happy to announce the release of Camunda Optimize version 2.7.0-alpha1.
+You can find improvements and features from the upcoming Optimize version 2.7.0 in this first alpha release, including:
+
+- Executing / Pending Flow Node Filter
+- Process Instance Durations in Raw Data Table
+- Alerts moved into Collections
+- User / Group Search for Collections
+- Copy of Collections
+
+The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=&version=) are available in Jira.
+
+<!--more-->
+
+You can [try out a free trial of Camunda Optimize](#how-to-get-it).
+
+# Executing / Pending Flow Node Filter
+
+Monitoring running processes is an important capability of Optimize that provides a lot of value in many scenarios.
+
+Sometimes it is relevant to monitor only certain process instances were a specific step within this process instance is currently active and waiting to be completed. To give some examples it could be a Timer Event, a User Task that is being worked on or a Message Catch Event that has not been correlated with yet.
+
+To allow the user to filter for the relevant information we added a pending / executing flow node filter in the report builder:
+
+[figure]
+
+
+# Process Instance Durations in Raw Data Table
+
+The raw data table view gives you a good overview about the data that is available from Processes and Decisions.
+The table can be sorted and columns can be hidden. As the Process Instance Duration is an important information when it comes to Process Improvement, we decided to add the Duration for completed process instances to this table. As the other columns it can also be hidden in a specific report.
+
+[figure]
+
+# User Permission Improvements
+
+With Optimize 2.6.0 we introduced a more complex user permissions system based on our Collections.
+With this release we add even more advanced features and make further modifications to permissions in Optimize.
+
+## Alerts moved into Collections
+
+Before this release Alerts had a separate navigation point in the header of Optimize and on the referenced page only a list of exiting Alerts were displayed.
+Since Alerts are tightly coupled to reports and also inherit the Permissions from the report that the user has access to we decided with this release to mofe the Alerts into Collections.
+
+Therefore, we added a new tab within the Collections page which allows you to add alerts directly into collections. At the same time it is not possible anymore to add alerts on a global level.
+
+[figure]
+
+Existing Alerts (including their referenced Reports) will be moved into an "Archive" Collection that will be created during migration.
+
+## User / Group Search for Collections
+
+Before this release when adding users to your collections, you had to remember their User or Group ID.
+To make working with Collections and Permissions more user-friendly, we are adding a Typeahead Search for Users and Groups with this release.
+This search will be performed on Firstname, Lastname and E-Mail Address. Additionally, you can still use the IDs of Users and Groups.
+
+[figure]
+
+In order to allow this Optimize will cache the users and groups (that you gave access rights in Admin) in-memory.
+
+## Copy of Collections
+
+With this release we are adding the capability of Copying a whole Collections including all Reports, Dashboards as well as assigned Users.
+
+You can copy a collection directly from the Homepage or alternatively from within the Collection.
+
+[figure]
+
+
+# What's Next?
+
+The next alpha of Camunda Optimize 2.7 will be released End of November 2019.
+
+After the next alpha release, we'll release the minor **Camunda Optimize 2.7** at the end of 2019. Stay tuned.
+
+# How to get it
+
+If you want to give Camunda Optimize a try, you can download the alpha release [here](https://docs.camunda.org/enterprise/download/#camunda-optimize) with your Enterprise customer credentials. Please sign up [here](https://camunda.com/download/enterprise/) for a free 30-day trial version.
+
+Please note that alpha releases are not intended for production usage.
+
+If you're new to Optimize, we recommend that you watch the [Getting Started with Optimize in less than 5 Minutes](https://camunda.com/learn/videos/getting-started-optimize/) video.
