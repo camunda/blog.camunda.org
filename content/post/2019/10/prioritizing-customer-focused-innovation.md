@@ -29,6 +29,8 @@ All this you can do, but you have to prioritize it. You have to prioritize it ov
 
 This is one of the slides I used in my CamundaCon presentation, which sums this questions up nicely:
 
+{{< figure src="customer-focused-innovation.png" alt="Customer Focused Innovation">}}
+
 I am not saying the examples on the right hand side doesn't make sense, they can make a ton of sense. But the problem is that this is where big corporations tend to gravitate towards, because they already have a strong brand, or the potential for a strong buying power etc., so this is their preferred battlefield where they can occupy the high ground.
 
 Only problem being, that the battle isn't happening there. It's happening over on the left hand side. No startup has ever disrupted any industry because of stuff on the right hand side. It's always about the stuff on the left. And over there, established organizations do not have the high ground. They're suddenly fighting an uphill battle, because of their legacy. Legacy of technology, of people, of process. Especially of process.
