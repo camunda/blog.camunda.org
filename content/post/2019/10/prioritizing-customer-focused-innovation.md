@@ -3,12 +3,12 @@ author = "Jakob Freund"
 categories = ["Community"]
 tags = ["CamundaCon"]
 date = "2019-10-29T01:00:00+02:00"
-title = "How to (not) become a Digital Enterprise - Prioritizing customer-focused"
+title = "How to (not) become a Digital Enterprise - Prioritizing Customer-Focused Innovation"
 +++
 
 This blog post is the second of a five-part series based on the keynote I presented at CamundaCon 2019 (You can find the [recording on YouTube](https://www.youtube.com/watch?v=zfN2-TlzlZs&list=PLJG25HlmvsOWvVjF44qr5-xXG--cCuXnn)). You can read the first blog in this series [here](https://blog.camunda.com/post/2019/10/how-to-not-become-a-digital-enterprise/).
 
-In essence, I recommend: 
+In essence, I recommend:
 
 - Prioritizing customer-focused innovation.
 - Bringing technology to the heart of your company.
