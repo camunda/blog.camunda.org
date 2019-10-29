@@ -43,4 +43,4 @@ But that doesn't mean they can avoid the fight. They need to prioritize this, no
 
 Next week I’ll be discussing how to do just this, by bringing technology to the heart of your company.
 
-In the meantime, if you’d like to see how prioritizing customer-focussed innovation can transform a business, check out this CamundaCon 2019 presentation from Deutsche Telekom who always need to be ahead of the game to provide the best possible customer experience.
+In the meantime, if you’d like to see how prioritizing customer-focussed innovation can transform a business, check out this CamundaCon 2019 presentation from [Deutsche Telekom](https://www.youtube.com/watch?v=S1ntiiFS_iY&t=544s) who always need to be ahead of the game to provide the best possible customer experience.
