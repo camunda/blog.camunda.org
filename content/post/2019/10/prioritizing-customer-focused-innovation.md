@@ -29,7 +29,7 @@ All this you can do, but you have to prioritize it. You have to prioritize it ov
 
 This is one of the slides I used in my CamundaCon presentation, which sums this questions up nicely:
 
-{{< figure src="img1-customer-focused-innovation.png" alt="How to (not) become a digital enterprise 1">}}
+{{< figure src="img1-customer-focused-innovation.png" alt="">}}
 
 I am not saying the examples on the right hand side doesn't make sense, they can make a ton of sense. But the problem is that this is where big corporations tend to gravitate towards, because they already have a strong brand, or the potential for a strong buying power etc., so this is their preferred battlefield where they can occupy the high ground.
 
