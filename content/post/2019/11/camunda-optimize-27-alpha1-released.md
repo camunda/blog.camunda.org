@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-11-01T09:00:00+01:00"
+date = "2019-10-30T09:00:00+01:00"
 title = "Camunda Optimize 2.7.0-alpha1 Released"
 +++
 
@@ -29,7 +29,10 @@ Sometimes it is relevant to monitor only certain process instances were a specif
 
 To allow the user to filter for the relevant information we added a pending / executing flow node filter in the report builder:
 
-[figure]
+{{< figure src="executing-flow-node-filter.png" alt="Executing Flow Node Filter" >}}
+
+{{< figure src="executing-flow-node-result.png" alt="Executing Flow Node Filter Raw Data Result" >}}
+
 
 
 # Process Instance Durations in Raw Data Table
@@ -37,7 +40,8 @@ To allow the user to filter for the relevant information we added a pending / ex
 The raw data table view gives you a good overview about the data that is available from Processes and Decisions.
 The table can be sorted and columns can be hidden. As the Process Instance Duration is an important information when it comes to Process Improvement, we decided to add the Duration for completed process instances to this table. As the other columns it can also be hidden in a specific report.
 
-[figure]
+{{< figure src="process-instance-durations.png" alt="Process Instance Durations">}}
+
 
 # User Permission Improvements
 
@@ -47,11 +51,12 @@ With this release we add even more advanced features and make further modificati
 ## Alerts moved into Collections
 
 Before this release Alerts had a separate navigation point in the header of Optimize and on the referenced page only a list of exiting Alerts were displayed.
-Since Alerts are tightly coupled to reports and also inherit the Permissions from the report that the user has access to we decided with this release to mofe the Alerts into Collections.
+Since Alerts are tightly coupled to reports and also inherit the Permissions from the report that the user has access to we decided with this release to move the Alerts into Collections.
 
 Therefore, we added a new tab within the Collections page which allows you to add alerts directly into collections. At the same time it is not possible anymore to add alerts on a global level.
 
-[figure]
+{{< figure src="alerts-in-collections.png" alt="Alerts in Collections">}}
+{{< figure src="alerts-in-collections-modal.png" alt="Alerts in Collections">}}
 
 Existing Alerts (including their referenced Reports) will be moved into an "Archive" Collection that will be created during migration.
 
@@ -61,7 +66,9 @@ Before this release when adding users to your collections, you had to remember t
 To make working with Collections and Permissions more user-friendly, we are adding a Typeahead Search for Users and Groups with this release.
 This search will be performed on Firstname, Lastname and E-Mail Address. Additionally, you can still use the IDs of Users and Groups.
 
-[figure]
+{{< figure src="collections-user-group-search.png" alt="Collections User Group Search">}}
+
+{{< figure src="collections-user-group-list.png" alt="Collections User Group List">}}
 
 In order to allow this Optimize will cache the users and groups (that you gave access rights in Admin) in-memory.
 
@@ -71,8 +78,9 @@ With this release we are adding the capability of Copying a whole Collections in
 
 You can copy a collection directly from the Homepage or alternatively from within the Collection.
 
-[figure]
+{{< figure src="collection-copy.png" alt="Collections Copy">}}
 
+{{< figure src="collection-copy-modal.png" alt="Collections Copy Modal" >}}
 
 # What's Next?
 
