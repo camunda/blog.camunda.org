@@ -26,7 +26,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 Monitoring running processes is an important capability of Optimize and provides a lot of value in a range of scenarios.
 
-Sometimes it is relevant to monitor only certain process instances where a specific step within this process instance is currently active and waiting to be completed. For example, this could be a Timer Event, a User Task that is being worked on, or a Message Catch Event that has not yet been correlanted with a process instance.
+Sometimes it is relevant to monitor only certain process instances where a specific step within this process instance is currently active and waiting to be completed. For example, this could be a Timer Event, a User Task that is being worked on, or a Message Catch Event that has not yet been correlated with a process instance.
 
 To allow the user to filter for relevant information, we added a new *executing flow node filter* in the report builder.
 You can add the executing flow node filter by clicking on "Add Filter" and then on "Flow Node".
@@ -57,7 +57,7 @@ Before this release, Alerts had a separate navigation point in the header of Opt
 
 Because Alerts are tightly coupled to reports and also inherit the Permissions from the report that the user has access to, we moved the Alerts into Collections.
 
-Therefore, we added a new tab within the Collections page which allows you to add alerts directly into collections. At the same time, it is no longer possible to add alerts outside of Collections.
+Therefore, we added a new tab within the Collections page which allows you to add alerts directly into Collections. At the same time, it is no longer possible to add alerts outside of Collections.
 
 {{< figure src="alerts-in-collections.png" alt="Alerts in Collections">}}
 {{< figure src="alerts-in-collections-modal.png" alt="Alerts in Collections">}}
@@ -66,7 +66,7 @@ Existing Alerts (including their referenced Reports) will be moved into an "Arch
 
 ## User and Group Search for Collections
 
-Before this release, when adding users to your collections, you had to remember their User or Group ID.
+Before this release, when adding users to your Collections, you had to remember their User or Group ID.
 
 So that working with Collections and Permissions is more user friendly, we are adding a Typeahead Search for Users and Groups with this release.
 
@@ -82,7 +82,7 @@ To support this feature, Optimize will cache the users and groups (that you gave
 
 With this release, we've added the ability to copy entire Collections, including all Reports, Dashboards, and assigned Users.
 
-You can copy a collection directly from the homepage, or alternatively, from within the Collection.
+You can copy a Collection directly from the homepage, or alternatively, from within the Collection.
 
 {{< figure src="collection-copy.png" alt="Collections Copy">}}
 
