@@ -18,4 +18,4 @@ work together very closely with product development as well as the open source c
 
 Please join me in welcoming Mary to the Camunda Community!
 
-Get the full scoop in [Mary's Blogpost](marythengvall.com/blog/2019/11/10/joining-camunda-director-devrel).
+Get the full scoop in [Mary's Blogpost](https://www.marythengvall.com/blog/2019/11/10/joining-camunda-director-devrel).
