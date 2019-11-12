@@ -3,10 +3,10 @@ author = "Jakob Freund"
 categories = ["Community"]
 tags = ["CamundaCon"]
 date = "2019-11-12T09:00:00+01:00"
-title = "How to (not) become a Digital Enterprise -- Automate your Business, One Project at a Time"
+title = "How to (not) become a Digital Enterprise - Automate your Business, One Project at a Time"
 +++
 
-This blog post is the fourth of a five-part series based on the keynote I presented at CamundaCon 2019 (You can find the [recording on YouTube](https://www.youtube.com/watch?v=zfN2-TlzlZs)). You can read the [first blog in this series here](https://blog.camunda.com/post/2019/10/how-to-not-become-a-digital-enterprise/). 
+This blog post is the fourth of a five-part series based on the keynote I presented at CamundaCon 2019 (You can find the [recording on YouTube](https://www.youtube.com/watch?v=zfN2-TlzlZs)). You can read the [first blog in this series here](https://blog.camunda.com/post/2019/10/how-to-not-become-a-digital-enterprise/).
 
 <!--more-->
 In essence, I recommend:
