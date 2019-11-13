@@ -4,7 +4,7 @@ draft = false
 categories = ["Modeling"]
 tags = ["Cawemo"]
 date = "2019-11-12"
-title = "Integrations, Visual Diagram Comparisons, and More: Announcing the Q4 2019 Cawemo Release"
+title = "Modeler And Engine Integrations And More: Announcing the Q4 2019 Cawemo Release"
 +++
 
 This week’s Cawemo release for both the SaaS and on-premises editions introduced new capabilities for all types of users. If you’ve already seen the presentation from CamundaCon 2019 [“It’s All About People: Collaboration with Cawemo,”](https://www.youtube.com/watch?v=AktOF_Hsgzo&feature=youtu.be) then you’re probably familiar with these updates–and if you’d like to see the features demoed in a real-world scenario, then the presentation recording is a great resource for you. 
@@ -46,7 +46,7 @@ The other collaborators who contributed to the design process using Cawemo would
 
 Cawemo’s Modeler and Camunda Engine integrations ensure that the most up-to-date version of a model is synced back to Cawemo and is visible to all users–regardless of where the model has been updated. 
 
-{{< figure src="Cawemo-Integration-1.png" alt="Integrate Cawemo with Camunda Modeler and Engine">}}
+{{< figure src="Cawemo-Integration-2.png" alt="Integrate Cawemo with Camunda Modeler and Engine">}}
 
 [You can learn more about Cawemo’s integrations with the rest of the Camunda stack here.](https://docs.camunda.org/cawemo/latest/technical-guide/integrations/)  
 
