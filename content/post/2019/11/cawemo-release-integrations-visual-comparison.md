@@ -4,10 +4,10 @@ draft = false
 categories = ["Modeling"]
 tags = ["Cawemo"]
 date = "2019-11-12"
-title = "Modeler And Engine Integrations And More: Announcing the Q4 2019 Cawemo Release"
+title = "Cawemo Release: Modeler and Engine Integrations, Visual Diagram Comparisons, and More"
 +++
 
-This week’s Cawemo release for both the SaaS and on-premises editions introduced new capabilities for all types of users. If you’ve already seen the presentation from CamundaCon 2019 [“It’s All About People: Collaboration with Cawemo,”](https://www.youtube.com/watch?v=AktOF_Hsgzo&feature=youtu.be) then you’re probably familiar with these updates–and if you’d like to see the features demoed in a real-world scenario, then the presentation recording is a great resource for you. 
+This week’s Cawemo release for both the SaaS and on-premises editions introduced new capabilities for all types of users. If you’ve already seen the presentation from CamundaCon 2019 [“It’s All About People: Collaboration with Cawemo”](https://www.youtube.com/watch?v=AktOF_Hsgzo&feature=youtu.be), then you’re probably familiar with these updates–and if you’d like to see the features demoed in a real-world scenario, then the presentation recording is a great resource for you.
 
 In the rest of this post, we’ll discuss how Cawemo’s new features enable more seamless collaboration between engineers, business analysts, and everyone in between. 
 <!--more-->
@@ -51,11 +51,11 @@ Cawemo’s Modeler and Camunda Engine integrations ensure that the most up-to-da
 [You can learn more about Cawemo’s integrations with the rest of the Camunda stack here.](https://docs.camunda.org/cawemo/latest/technical-guide/integrations/)  
 
 
-### Embed Snippets For Up-To-Date Documentation {#embed-snippets-for-up-to-date-documentation}
+### Up-To-Date Documentation of Processes in Production {#embed-snippets-for-up-to-date-documentation}
 
 Teams often maintain documentation for their process models in Confluence (or similar tools) alongside other important background information about the project. In a case where a model changes frequently, keeping the documentation up-to-date can be a pain. 
 
-Cawemo supports embed snippets for models so that the current version of a model is always available, no manual updating required. With Cawemo’s Modeler and Engine integration, this applies also to models that have been synced to Cawemo. 
+Cawemo supports embed snippets for models so that the current version of a model is always available, no manual updating required. These snippets can be added to any HTML page, including wiki pages or issue tracking. With Cawemo’s Modeler and Engine integration, this applies also to models that have been synced to Cawemo, for example everything that is deployed to your production engines.
 
 
 
