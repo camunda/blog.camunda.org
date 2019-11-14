@@ -3,7 +3,7 @@ author = "Mike Winters"
 draft = false
 categories = ["Modeling"]
 tags = ["Cawemo"]
-date = "2019-11-12"
+date = "2019-11-14"
 title = "Cawemo Release: Modeler and Engine Integrations, Visual Diagram Comparisons, and More"
 +++
 
