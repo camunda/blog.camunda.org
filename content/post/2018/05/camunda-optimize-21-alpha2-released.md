@@ -12,7 +12,7 @@ This release marks the second alpha release of Camunda Optimize 2.1.0. It is als
 
 <!--more-->
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15313) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15313) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 

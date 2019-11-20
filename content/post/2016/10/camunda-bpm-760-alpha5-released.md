@@ -14,11 +14,11 @@ Camunda 7.6.0-alpha5 is here and it is packed with new features. The highlights 
 * Expressions in Signal and Message Event Names
 * Cockpit Usability Improvements
 * Pluggable Deployment Cache
-* [10 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha5)
+* [10 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha5)
 
-[List of known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.6.0-alpha5)
+[List of known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.6.0-alpha5)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14692) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14692) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -57,7 +57,7 @@ A corresponding conditional event definition can look like this:
 For more information see the documentation of [conditional events](https://docs.camunda.org/manual/latest/reference/bpmn20/events/conditional-events/).
 
 
-Note that there a currently known issues ([CAM-6862](https://app.camunda.com/jira/browse/CAM-6862)), which we are addressing for the next alpha release.
+Note that there a currently known issues ([CAM-6862](https://jira.camunda.com/browse/CAM-6862)), which we are addressing for the next alpha release.
 
 # Batch Delete of Historic Process Instances
 

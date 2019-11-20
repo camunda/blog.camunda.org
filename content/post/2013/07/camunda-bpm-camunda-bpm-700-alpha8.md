@@ -53,7 +53,7 @@ Braking change: the URL for cockpit is now <span style="background-color: white;
 <div>
 <br /></div>
 <div>
-All in all, 33 issues were closed, including 8 bugfixes. <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12993">Read the full release notes in JIRA.</a></div>
+All in all, 33 issues were closed, including 8 bugfixes. <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12993">Read the full release notes in JIRA.</a></div>
 <div>
 <br /></div>
 <div>

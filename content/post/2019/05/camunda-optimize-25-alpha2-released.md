@@ -15,7 +15,7 @@ You can find improvements and features from the upcoming Optimize version 2.5.0 
   - [State Configurations (Running + Completed State)](/post/2019/05/camunda-optimize-25-alpha2-released/#state-configurations-running-completed-state)
   - [Running Flow Nodes Durations](/post/2019/05/camunda-optimize-25-alpha2-released/#running-flow-nodes-durations)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15407) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15407) are available in Jira.
 
 <!--more-->
 

@@ -14,11 +14,11 @@ Camunda 7.7.0-alpha1 is here and it is packed with new features. The highlights 
 * Fluent BPMN builder API: now generates BPMN diagram elements
 * Supported Environments: IBM Websphere 9 and OpenJDK 8
 * Security: salts and stronger hashing of user passwords
-* [32 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
+* [32 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.7.0-alpha1)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
 
-[List of known Issues.](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.7.0-alpha1)
+[List of known Issues.](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.7.0-alpha1)
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).

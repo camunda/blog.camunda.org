@@ -42,7 +42,7 @@ Distributions are available for Apache Tomcat, JBoss Application Server 7 and Gl
 <a href="http://camunda.org/download/"><b><span style="font-size: large;">Download camunda BPM 7.0.0-Final now for free.</span></b></a></div>
 <br /></div>
 <div>
-<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12315">Complete Release Notes for the 7.0 Release in JIRA</a>,&nbsp;<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12995">Release Notes for the last development iteration.</a></div>
+<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12315">Complete Release Notes for the 7.0 Release in JIRA</a>,&nbsp;<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12995">Release Notes for the last development iteration.</a></div>
 <a name='more'></a><h3>
 Enterprise Support</h3>
 <div>

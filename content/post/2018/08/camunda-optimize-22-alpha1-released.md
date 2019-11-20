@@ -10,7 +10,7 @@ We are happy to announce the release of Camunda Optimize version 2.2.0-alpha1.
 
 This release marks the first alpha release of Camunda Optimize 2.2.0. Although it is just an alpha release, it is already packed with new brilliant features. The release allows to group process instance frequencies and durations by variable. Also you can perform additional operations like minimum, maximum and median on duration reports. Narrow down your view on the data even further by using the new `canceled process instance only` or `non-executed flow node` filter. Use Optimize to see even faster when certain targets (e.g. KPI's or SLA's) were not met by using the the new goal line in the bar chart. The new version contains not only improvements in the report builder - now you have advanced possibilities regarding the import of complex process variables. Also the UI/UX of Optimize got some improvements, e.g. finding your desried report or dashboard is now a piece of cake, since you can just filter for the name you are looking for.
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15328) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15328) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 

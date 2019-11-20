@@ -15,7 +15,7 @@ The release includes many exciting features in the following areas:
 * [UX & Report Enhancements](/post/2019/03/camunda-optimize-24-released/#ux-and-report-enhancements) (e.g. [Reports & Dashboards in Collections](/post/2019/03/camunda-optimize-24-released/#reports-dashboards-in-collections), [Sorting of Table Reports](/post/2019/03/camunda-optimize-24-released/#sorting-of-table-reports), and [Simplified Start Date Filter Selection](/post/2019/03/camunda-optimize-24-released/#simplified-start-date-filter-selection))
 * [Infrastructure Improvements](/post/2019/03/camunda-optimize-24-released/#infrastructure-improvements) (e.g. [Clustering](/post/2019/03/camunda-optimize-24-released/#clustering), [Security](/post/2019/03/camunda-optimize-24-released/#security), [ElasticSearch REST Client](/post/2019/03/camunda-optimize-24-released/#elasticsearch-rest-client) & [Support](/post/2019/03/camunda-optimize-24-released/#adding-support-for-more-elasticsearch-versions))
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15365) listing all features and bug fixes are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it) and also [register for our webinars in English and German](#register-for-the-webinar).

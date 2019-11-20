@@ -22,7 +22,7 @@ Some Numbers</h3>
 {{< figure src="http://1.bp.blogspot.com/--9ynIODsi2w/Ut_vU7x3flI/AAAAAAAAAT4/5PRgtrIJASw/s1600/screenshot.png" >}}
 We ran the benchmarks with History Logging turned on and off. Obviously turning History off will improve performance dramatically :)<br />
 <br />
-<b><a href="https://app.camunda.com/jira/secure/attachment/17665/performance-test-results-22-01-2014.zip">Download the test results here.</a>&nbsp;(Contains many more processes than shown here).</b><br />
+<b><a href="https://jira.camunda.com/secure/attachment/17665/performance-test-results-22-01-2014.zip">Download the test results here.</a>&nbsp;(Contains many more processes than shown here).</b><br />
 <b><br /></b>
 <b>You can also <a href="https://github.com/camunda/camunda-bpm-platform/tree/master/qa/performance-tests-engine">have a look at the testsuite itself</a>.</b><br />
 <br />

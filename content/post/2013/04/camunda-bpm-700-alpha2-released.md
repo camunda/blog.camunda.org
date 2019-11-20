@@ -31,7 +31,7 @@ I will dedicate a&nbsp;separate&nbsp;Blogpost to showcasing the Job Executor imp
 <div>
 <br /></div>
 <div>
-In addition, the release contains a set of small improvements and bug fixes. Read the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12590">Complete Release Notes</a>&nbsp;in JIRA.</div>
+In addition, the release contains a set of small improvements and bug fixes. Read the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12590">Complete Release Notes</a>&nbsp;in JIRA.</div>
 </div>
 <div>
 <br /></div>
@@ -48,9 +48,9 @@ What's next?</h2>
 For the next release we plan:</div>
 <div>
 <ul>
-<li><a href="https://app.camunda.com/jira/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-398">Websphere distribution (enterprise customers only)</a></li>
-<li><a href="https://app.camunda.com/jira/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-9">Lots of additions to the REST-API</a></li>
-<li><a href="https://app.camunda.com/jira/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-572">camunda cockpit</a>: Nico and Roman will start working on the new cockpit plugin concept end of this week. This will lay the groundwork for future work on the cockpit tool. Cockpit will be "the big thing" for the 7.0 final release.</li>
+<li><a href="https://jira.camunda.com/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-398">Websphere distribution (enterprise customers only)</a></li>
+<li><a href="https://jira.camunda.com/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-9">Lots of additions to the REST-API</a></li>
+<li><a href="https://jira.camunda.com/secure/RapidBoard.jspa?rapidView=23&amp;view=planning&amp;selectedEpic=CAM-572">camunda cockpit</a>: Nico and Roman will start working on the new cockpit plugin concept end of this week. This will lay the groundwork for future work on the cockpit tool. Cockpit will be "the big thing" for the 7.0 final release.</li>
 </ul>
 <div>
 <a href="http://www.camunda.org/download/">Go get it!</a></div>

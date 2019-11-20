@@ -20,7 +20,7 @@ Today we announce the official release of Camunda BPM 7.2.0 Final. This version 
 <h2>
 Highlights of 7.2.0 Final</h2>
 <div>
-This blogpost provides a summary of the highlights of the 7.2.0 Release. <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12997">The complete release notes can be found in JIRA</a>.</div>
+This blogpost provides a summary of the highlights of the 7.2.0 Release. <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12997">The complete release notes can be found in JIRA</a>.</div>
 <h3>
 New Tasklist</h3>
 <div>

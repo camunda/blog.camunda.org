@@ -12,7 +12,7 @@ You can find improvements and features from the upcoming Optimize version 2.5.0 
 - Improved handling of Reports with many data points
 - Searchable Definition Dropdowns
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15391) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15391) are available in Jira.
 
 <!--more-->
 

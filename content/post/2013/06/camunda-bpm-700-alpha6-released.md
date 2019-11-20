@@ -27,7 +27,7 @@ Today we announce the <a href="http://www.camunda.org/download/">release of camu
 <li><a href="http://docs.camunda.org/latest/api-references/rest/#execution-get-message-event-subscription">Event Subscription Query is exposed in REST and Java API</a></li>
 </ul>
 <div>
-41 issues were closed. See the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12893">complete release notes in Jira</a>.&nbsp;</div>
+41 issues were closed. See the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12893">complete release notes in Jira</a>.&nbsp;</div>
 <div>
 <a name='more'></a></div>
 <h3>
@@ -86,7 +86,7 @@ We will visualize the Activity Instance tree in the process instance detail view
 <div>
 <br /></div>
 <div>
-See&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-719">CAM-719</a></div>
+See&nbsp;<a href="https://jira.camunda.com/browse/CAM-719">CAM-719</a></div>
 <h3>
 <a href="http://camundabpm.blogspot.de/2013/06/introducing-activity-instance-model-to.html">Read more about the activity instance tree in this follow up blog post</a>.</h3>
 </div>

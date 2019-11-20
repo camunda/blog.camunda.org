@@ -20,39 +20,39 @@ Today we released camunda BPM 7.1.0-alpha4. This release provides many improveme
 <ul>
 <li>BPMN coverage:&nbsp;</li>
 <ul>
-<li>Support for Non-Interrupting Event Subprocess - (<a href="https://app.camunda.com/jira/browse/CAM-112" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-112</a>) -&nbsp;<b><span style="color: red;">HOT</span></b></li>
+<li>Support for Non-Interrupting Event Subprocess - (<a href="https://jira.camunda.com/browse/CAM-112" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-112</a>) -&nbsp;<b><span style="color: red;">HOT</span></b></li>
 </ul>
 <li>Performance Improvements:</li>
 <ul>
-<li>Execution Tree pre-fetching (<a href="https://app.camunda.com/jira/browse/CAM-1967" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1967</a>)</li>
-<li>Reduce number of database queries. (<a href="https://app.camunda.com/jira/browse/CAM-1905" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1905</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1906" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1906</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1966" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1966</a>)</li>
+<li>Execution Tree pre-fetching (<a href="https://jira.camunda.com/browse/CAM-1967" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1967</a>)</li>
+<li>Reduce number of database queries. (<a href="https://jira.camunda.com/browse/CAM-1905" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1905</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1906" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1906</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1966" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1966</a>)</li>
 </ul>
 <li>Message Correlation Improvements:&nbsp;</li>
 <ul>
-<li>Added Fluent Builder &amp; Correlation using Process Instance Id (<a href="https://app.camunda.com/jira/browse/CAM-1775" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1775</a>)</li>
+<li>Added Fluent Builder &amp; Correlation using Process Instance Id (<a href="https://jira.camunda.com/browse/CAM-1775" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1775</a>)</li>
 </ul>
 </ul>
 <li><b>camunda Cockpit </b>(Webapplication for Monitoring &amp; Operations)<b>:</b></li>
 <ul>
 <li>Community Features:</li>
 <ul>
-<li>Resolve Caching problems - Try 1 (<a href="https://app.camunda.com/jira/browse/CAM-1899" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1899</a>)</li>
-<li>Improved Plugin API (<a href="https://app.camunda.com/jira/browse/CAM-1737" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1737</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1958" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1958</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1959" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1959</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1960" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1960</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-1961" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1961</a>)</li>
-<li>Search &amp; Filter Activity Instance Tree (<a href="https://app.camunda.com/jira/browse/CAM-1874" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1874</a>)</li>
+<li>Resolve Caching problems - Try 1 (<a href="https://jira.camunda.com/browse/CAM-1899" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1899</a>)</li>
+<li>Improved Plugin API (<a href="https://jira.camunda.com/browse/CAM-1737" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1737</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1958" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1958</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1959" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1959</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1960" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1960</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-1961" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1961</a>)</li>
+<li>Search &amp; Filter Activity Instance Tree (<a href="https://jira.camunda.com/browse/CAM-1874" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1874</a>)</li>
 </ul>
 <li>Enterprise only:</li>
 <ul>
-<li>History of Variables (<a href="https://app.camunda.com/jira/browse/CAM-73" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-73</a>)</li>
-<li>History of User Tasks (<a href="https://app.camunda.com/jira/browse/CAM-1875" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1875</a>)</li>
+<li>History of Variables (<a href="https://jira.camunda.com/browse/CAM-73" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-73</a>)</li>
+<li>History of User Tasks (<a href="https://jira.camunda.com/browse/CAM-1875" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1875</a>)</li>
 </ul>
 </ul>
 <li><b>Bpmn Model API:</b></li>
 <ul>
-<li>Support for all camunda Extension elements &amp; Attributes (<a href="https://app.camunda.com/jira/browse/CAM-1854" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1854</a>)</li>
+<li>Support for all camunda Extension elements &amp; Attributes (<a href="https://jira.camunda.com/browse/CAM-1854" style="background-color: white; color: #3b73af; font-family: Arial, sans-serif; font-size: 14px; line-height: 20px; text-decoration: none;">CAM-1854</a>)</li>
 </ul>
 </ul>
 <br />
-All in all, 45 Issues were closed.&nbsp;<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13194">Find the complete release notes in Jira.</a><br />
+All in all, 45 Issues were closed.&nbsp;<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13194">Find the complete release notes in Jira.</a><br />
 <br />
 <a href="http://camunda.org/download/">Download camunda BPM 7.1.0-alpha4 now!</a>&nbsp;Give us Feedback <a href="http://camunda.org/community/forum.html">in the forums</a> and via Twitter:&nbsp;<a href="https://twitter.com/camundaBPM">@camundaBPM</a>.<br />
 <br />

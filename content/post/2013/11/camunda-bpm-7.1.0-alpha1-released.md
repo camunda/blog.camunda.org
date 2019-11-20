@@ -26,7 +26,7 @@ I am proud to announce the release of camunda BPM 7.1.0-alpha1. This is the firs
 <li>32 Bug Fixes</li>
 </ul>
 <div>
-See the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13006">complete release notes in Jira</a>.</div>
+See the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13006">complete release notes in Jira</a>.</div>
 <div>
 <br /></div>
 <div>

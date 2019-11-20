@@ -76,7 +76,7 @@ runtimeService.startProcessInstanceByKey("shipping", orderId);
 
 ### From within the Process Instance
 
-As of the time of writing, there is no API to set a business key once a process instance was started. We plan to provide such an API in the future. Follow the ticket [CAM-3947](https://app.camunda.com/jira/browse/CAM-3947) for progress updates. For the time being, we can help ourselves with internal API.
+As of the time of writing, there is no API to set a business key once a process instance was started. We plan to provide such an API in the future. Follow the ticket [CAM-3947](https://jira.camunda.com/browse/CAM-3947) for progress updates. For the time being, we can help ourselves with internal API.
 
 **WARNING**: The following code uses *internal* Camunda API. This means: The code is provided as-is, it is not guaranteed to work with future Camunda versions and it is not thoroughly tested. Please test the code in your environment and make sure you understand it and its limitations.
 
