@@ -7,7 +7,7 @@ title = "Camunda BPM 7.6.0-alpha1 Released"
 
 +++
 
-Today, we release Camunda BPM 7.6.0-alpha1. It is primarily a release that fixes a regression in the REST API's correlation method as present in 7.5.0. Check JIRA ticket [CAM-6139](https://app.camunda.com/jira/browse/CAM-6139) for whether this problem affects your application.
+Today, we release Camunda BPM 7.6.0-alpha1. It is primarily a release that fixes a regression in the REST API's correlation method as present in 7.5.0. Check JIRA ticket [CAM-6139](https://jira.camunda.com/browse/CAM-6139) for whether this problem affects your application.
 
 Also, it porvides the following improvements / features:
 
@@ -15,7 +15,7 @@ Also, it porvides the following improvements / features:
 * Get a correlation result response when correlating a Message
 * Retrieve the Error Message of a thrown Error Event
 
-Read the [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14602) for a complete list of changes.
+Read the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14602) for a complete list of changes.
 
 [Download Camunda For Free](https://camunda.org/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 

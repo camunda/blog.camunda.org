@@ -32,7 +32,7 @@ The highlights of this new release are:
 <li>Support of a further Bpmn 2.0 Element: Link Event.</li>
 <li>New user guide for <a href="http://docs.camunda.org/latest/guides/user-guide/#cycle">Cycle</a> and <a href="http://docs.camunda.org/latest/guides/user-guide/#tasklist">Tasklist</a>.</li>
 </ul>
-33 issues were closed. See the complete release notes in <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12990">Jira</a>. 
+33 issues were closed. See the complete release notes in <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12990">Jira</a>. 
 <br />
 <h3>
 Visualization of a Process Instance</h3>

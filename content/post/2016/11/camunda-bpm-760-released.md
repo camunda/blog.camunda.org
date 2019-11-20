@@ -17,9 +17,9 @@ Camunda 7.6.0 is here and it is packed with new features. The highlights are:
 * Rolling Updates (Engine)
 * 148 Bug Fixes
 
-[List of known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.6.0)
+[List of known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.6.0)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14490) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14490) are available in Jira.
 
 This is a joint release of the BPM Runtime Platform and the [Camunda Modeler version 1.5](http://blog.camunda.org/post/2016/11/camunda-modeler-015-released/).
 

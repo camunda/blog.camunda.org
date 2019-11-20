@@ -52,7 +52,7 @@ aliases:
 <li>Variable Listeners</li>
 <li>Transformer Extensions</li>
 </ul>
-<li><a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-variables-typed-value-api">New Typed Variable API</a> (<a href="https://app.camunda.com/jira/browse/CAM-2903">CAM-2903</a>)</li>
+<li><a href="http://docs.camunda.org/latest/guides/user-guide/#process-engine-process-variables-typed-value-api">New Typed Variable API</a> (<a href="https://jira.camunda.com/browse/CAM-2903">CAM-2903</a>)</li>
 <ul>
 <li>Work with both Serialized and De-serialized representation of Object Values</li>
 <li>Specify Serialization Data Format for Objects (e.g. JSON, XML...)</li>
@@ -60,14 +60,14 @@ aliases:
 <li>Better variable support in REST Api</li>
 </ul>
 <li>Improved Support for Inclusive Gateway (OR Gateway)</li>
-<li>Custom History Levels (fine grained control over the amount of Data Logged, <a href="https://app.camunda.com/jira/browse/CAM-2724">CAM-2724</a>)</li>
+<li>Custom History Levels (fine grained control over the amount of Data Logged, <a href="https://jira.camunda.com/browse/CAM-2724">CAM-2724</a>)</li>
 <li>Job Executor Improvements</li>
 <ul>
-<li>First Level Cache reuse (performance boost) (<a href="https://app.camunda.com/jira/browse/CAM-2763">CAM-2763</a>)</li>
-<li>Better Scalability and Work Distribution in clusters (<a href="https://app.camunda.com/jira/browse/CAM-2805">CAM-2805</a>)</li>
+<li>First Level Cache reuse (performance boost) (<a href="https://jira.camunda.com/browse/CAM-2763">CAM-2763</a>)</li>
+<li>Better Scalability and Work Distribution in clusters (<a href="https://jira.camunda.com/browse/CAM-2805">CAM-2805</a>)</li>
 </ul>
-<li>Improved performance of Expression Language execution (<a href="https://app.camunda.com/jira/browse/CAM-2725">CAM-2725</a> contribution by Jörn Horstmann, Zalado)</li>
-<li>Improved HAL Support in REST Api (<a href="https://app.camunda.com/jira/browse/CAM-2940">CAM-2940</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-2798">CAM-2798</a>,&nbsp;</li>
+<li>Improved performance of Expression Language execution (<a href="https://jira.camunda.com/browse/CAM-2725">CAM-2725</a> contribution by Jörn Horstmann, Zalado)</li>
+<li>Improved HAL Support in REST Api (<a href="https://jira.camunda.com/browse/CAM-2940">CAM-2940</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-2798">CAM-2798</a>,&nbsp;</li>
 <li>Upgraded Mybatis dependency to 3.2.8 (Contribution by Frank Langelage)<br /></li>
 </ul>
 <li>Improved integration of camunda SPIN for <a href="http://docs.camunda.org/latest/guides/user-guide/#data-formats-xml-json-other">working with XML and JSON data</a></li>
@@ -87,7 +87,7 @@ aliases:
 </ul>
 </ul>
 <div style="text-align: left;">
-All in all, 217 Jira Issues were closed.&nbsp;<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13499">See the complete Release Notes in JIRA</a>.</div>
+All in all, 217 Jira Issues were closed.&nbsp;<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13499">See the complete Release Notes in JIRA</a>.</div>
 <div style="text-align: left;">
 <br /></div>
 <div style="text-align: center;">

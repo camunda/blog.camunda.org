@@ -15,7 +15,7 @@ way to adjust the most used configuration settings, but still allows to use the 
 The current release does not implement new features. Is mostly concentrates on including the project in the Camunda development lifecycle:
 
 - The project will continue to be maintained in the existing [repository on Github](https://github.com/camunda/camunda-bpm-spring-boot-starter).
-- Issues are now tracked in the [Camunda Jira](https://app.camunda.com/jira/browse/CAM)
+- Issues are now tracked in the [Camunda Jira](https://jira.camunda.com/browse/CAM)
 - Documentation from now on can be found on the [Camunda docs page](https://docs.camunda.org/manual/7.8/user-guide/spring-boot-integration/), including a [Getting Started Guide](https://docs.camunda.org/get-started/spring-boot/).
 - Most common usage scenarios are demonstrated in [Examples](https://github.com/camunda/camunda-bpm-examples/tree/master/spring-boot-starter).
 

@@ -15,7 +15,7 @@ You can find many improvements and features from the upcoming Optimize version 2
 * Notifications
 * Clustering
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15379) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15379) are available in Jira.
 
 <!--more-->
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).

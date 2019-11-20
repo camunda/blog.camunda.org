@@ -111,12 +111,12 @@ It then goes on to state that Activiti 6 puts a simpler model forward, which is 
 In Camunda we have built these things (without hacking) while keeping the optimizations. Again, the key to this was to evolve the core in a way that everything is addressed correctly.
 I assume that **Activiti 6 will be slower** in certain situations.
 
-* **Problem 3: Competing Stacks of Operations**: The post states that the way the Activiti engine is built makes it impossible for it to execute some patterns (*"certain patterns cannot be executed on the v5 engine"*). I am sorry to say, that I don't get this. The post does not specify which patterns are meant. Maybe it goes to the example further down: a subprocess with a boundary event with two outgoing sequence flows. This [Bug](https://app.camunda.com/jira/browse/CAM-1730) was fixed in Camunda 7.1 (released March 2014).
+* **Problem 3: Competing Stacks of Operations**: The post states that the way the Activiti engine is built makes it impossible for it to execute some patterns (*"certain patterns cannot be executed on the v5 engine"*). I am sorry to say, that I don't get this. The post does not specify which patterns are meant. Maybe it goes to the example further down: a subprocess with a boundary event with two outgoing sequence flows. This [Bug](https://jira.camunda.com/browse/CAM-1730) was fixed in Camunda 7.1 (released March 2014).
 
 * **Problem 4: Persistence Code**: I have already discussed Camunda's rewritten persistence layer. 
 The Activiti 6 blogpost states that in Activiti 5 the code is not as nice: *"persistence code has gone everywhere"*, and that this *"makes it impossible to swap out the persistence layer with a custom implementation"*. It says nothing about deadlock prevention. 
 
-Also, the referenced Blogpost shows an example which leads to a stack overflow in Activiti 5. This [Bug](https://app.camunda.com/jira/browse/CAM-4172) was fixed in Camunda 7.4 (Released in November 2015). It is still present in Activiti.
+Also, the referenced Blogpost shows an example which leads to a stack overflow in Activiti 5. This [Bug](https://jira.camunda.com/browse/CAM-4172) was fixed in Camunda 7.4 (Released in November 2015). It is still present in Activiti.
 
 All of this leads me to the conclusion that even if Activiti 6 gets released (a big maybe), the **Camunda engine is miles ahead of it**.
 

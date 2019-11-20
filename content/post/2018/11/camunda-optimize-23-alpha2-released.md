@@ -17,7 +17,7 @@ You can find many improvements and features from the upcoming Optimize version 2
 - Single-Sign-On (SSO) support with auth plugins
 - Improved upgrade performance
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15357) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15357) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 

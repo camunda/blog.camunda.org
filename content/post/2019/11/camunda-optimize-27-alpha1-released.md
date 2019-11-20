@@ -16,7 +16,7 @@ You can find improvements and features for the upcoming Optimize version 2.7.0 i
 - User and Group Search for Collections
 - Copy of Collections
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15545) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15545) are available in Jira.
 
 <!--more-->
 

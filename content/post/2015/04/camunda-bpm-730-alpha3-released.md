@@ -50,7 +50,7 @@ A new alpha release of our open source BPM and Workflow platform is available fo
 </ul>
 </ul>
 <div>
-The <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13792">full release notes</a> can retrieved from Jira.</div>
+The <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13792">full release notes</a> can retrieved from Jira.</div>
 <br />
 <div>
 You can <a href="http://camunda.org/download#latest">download Camunda</a>, <a href="https://github.com/camunda/docker-camunda-bpm-platform">run it with Docker</a> or <a href="http://docs.camunda.org/7.2/guides/getting-started-guides/#apache-maven-apache-maven-coordinates">add it to your application with maven</a>.</div>

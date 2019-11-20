@@ -19,7 +19,7 @@ aliases:
 <span style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;"><br /></span>
 <br />
 <div style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">
-Find a complete list of issues solved in this release in&nbsp;<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13292" style="color: #2288bb; text-decoration: none;">JIRA</a>.</div>
+Find a complete list of issues solved in this release in&nbsp;<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13292" style="color: #2288bb; text-decoration: none;">JIRA</a>.</div>
 <div style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">
 <br /></div>
 <div style="background-color: white; color: #666666; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 13.1999998092651px; line-height: 18.4799995422363px;">

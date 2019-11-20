@@ -22,7 +22,7 @@ Release early and release often. Today we bring you<a href="http://www.camunda.o
 </ul>
 <div>
 <br />
-Read the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12890">full release notes</a> in Jira.<br />
+Read the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12890">full release notes</a> in Jira.<br />
 <br /></div>
 <h3>
 Message correlation in REST API</h3>

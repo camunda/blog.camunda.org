@@ -26,15 +26,15 @@ The first alpha release in the 7.3 branch is ready! This is what's inside:<br />
 <ul>
 <li>Features</li>
 <ul>
-<li>Namespaces in XPath (<a href="https://app.camunda.com/jira/browse/CAM-2342">CAM-2342</a>)</li>
-<li>Typed Variable API in CDI Module (<a href="https://app.camunda.com/jira/browse/CAM-3152">CAM-3152</a>, contribution by Michael Scholz)</li>
-<li>Support for CMMN Manual Activation Rule (<a href="https://app.camunda.com/jira/browse/CAM-3169">CAM-3169</a>)&nbsp;</li>
-<li>Use BPMN Call Activity for starting a CMMN Case Instance (<a href="https://app.camunda.com/jira/browse/CAM-3353">CAM-3353</a>)</li>
+<li>Namespaces in XPath (<a href="https://jira.camunda.com/browse/CAM-2342">CAM-2342</a>)</li>
+<li>Typed Variable API in CDI Module (<a href="https://jira.camunda.com/browse/CAM-3152">CAM-3152</a>, contribution by Michael Scholz)</li>
+<li>Support for CMMN Manual Activation Rule (<a href="https://jira.camunda.com/browse/CAM-3169">CAM-3169</a>)&nbsp;</li>
+<li>Use BPMN Call Activity for starting a CMMN Case Instance (<a href="https://jira.camunda.com/browse/CAM-3353">CAM-3353</a>)</li>
 </ul>
 <li>Bugfixes</li>
 <ul>
-<li>Multi Instance (<a href="https://app.camunda.com/jira/browse/CAM-986">CAM-986</a>,&nbsp;contribution by Ronny Bräunlich)</li>
-<li>Variable Serialization (<a href="https://app.camunda.com/jira/browse/CAM-3167">CAM-3167</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-3174">CAM-3174</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-3176">CAM-3176</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-3179">CAM-3179</a>)</li>
+<li>Multi Instance (<a href="https://jira.camunda.com/browse/CAM-986">CAM-986</a>,&nbsp;contribution by Ronny Bräunlich)</li>
+<li>Variable Serialization (<a href="https://jira.camunda.com/browse/CAM-3167">CAM-3167</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-3174">CAM-3174</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-3176">CAM-3176</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-3179">CAM-3179</a>)</li>
 </ul>
 </ul>
 <li><b>Cockpit</b></li>
@@ -48,7 +48,7 @@ The first alpha release in the 7.3 branch is ready! This is what's inside:<br />
 <li>Features</li>
 <ul>
 <li>Improved startup time: All Javascript resources are now minified (including plugins)</li>
-<li>Advanced Process Instance Search (<a href="https://app.camunda.com/jira/browse/CAM-2697">CAM-2697</a>, enterprise edition only)</li>
+<li>Advanced Process Instance Search (<a href="https://jira.camunda.com/browse/CAM-2697">CAM-2697</a>, enterprise edition only)</li>
 </ul>
 </ul>
 <li><b>Camunda Tasklist</b></li>
@@ -62,7 +62,7 @@ The first alpha release in the 7.3 branch is ready! This is what's inside:<br />
 </ul>
 </ul>
 <div>
-All together, 75 issues were closed.&nbsp;<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13506">Read the complete release notes in JIRA</a>.</div>
+All together, 75 issues were closed.&nbsp;<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13506">Read the complete release notes in JIRA</a>.</div>
 <div>
 <br /></div>
 <div>
@@ -88,7 +88,7 @@ As a result of this upgrade, the cockpit application currently has some known is
 <div class="MsoNormal">
 <span lang="EN-US"><br /></span></div>
 <div class="MsoNormal">
-<span lang="EN-US"><a href="https://app.camunda.com/jira/browse/CAM-3369">CAM-3369</a>,&nbsp;</span><a href="https://app.camunda.com/jira/browse/CAM-3370">CAM-3370</a>, <a href="https://app.camunda.com/jira/browse/CAM-3372">CAM-3372</a>, <a href="https://app.camunda.com/jira/browse/CAM-3373">CAM-3373</a>, <a href="https://app.camunda.com/jira/browse/CAM-3378">CAM-3378</a>, <a href="https://app.camunda.com/jira/browse/CAM-3379">CAM-3379</a>.</div>
+<span lang="EN-US"><a href="https://jira.camunda.com/browse/CAM-3369">CAM-3369</a>,&nbsp;</span><a href="https://jira.camunda.com/browse/CAM-3370">CAM-3370</a>, <a href="https://jira.camunda.com/browse/CAM-3372">CAM-3372</a>, <a href="https://jira.camunda.com/browse/CAM-3373">CAM-3373</a>, <a href="https://jira.camunda.com/browse/CAM-3378">CAM-3378</a>, <a href="https://jira.camunda.com/browse/CAM-3379">CAM-3379</a>.</div>
 <div class="MsoNormal">
 <br /></div>
 </div>

@@ -25,7 +25,7 @@ Two weeks after the last alpha release we bring you the freshly baked* alpha5 ve
 <li><a href="http://docs.camunda.org/guides/installation-guide/was/">Complete support for websphere application server 8.5 (enterprise customers only)</a></li>
 </ul>
 <div>
-<span style="font-family: Arial, FreeSans, Helvetica, sans-serif;"><span style="font-size: 14px; line-height: 18px;">50</span></span> JIRA issues were closed, see the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12892">complete release notes</a>.</div>
+<span style="font-family: Arial, FreeSans, Helvetica, sans-serif;"><span style="font-size: 14px; line-height: 18px;">50</span></span> JIRA issues were closed, see the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12892">complete release notes</a>.</div>
 <div>
 <br /></div>
 <div>

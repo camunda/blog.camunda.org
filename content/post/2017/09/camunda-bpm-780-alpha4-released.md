@@ -14,13 +14,13 @@ Among the long list of new features in Camunda BPM 7.8-alpha4, the highlights ar
 * History Cleanup in Cockpit (EE)
 * Batch Process Instance Restart (EE)
 * Interval Configuration for Failed Jobs
-* [11 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha4)
+* [11 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha4)
 
 You can [Download Camunda BPM 7.8](https://camunda.org/download/#latest) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 
-To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15091)
-and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.8.0-alpha4).
+To see a full list of the changes, please check out our [Release Notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15091)
+and the list of [Known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.8.0-alpha4).
 
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.8.0-alpha4).

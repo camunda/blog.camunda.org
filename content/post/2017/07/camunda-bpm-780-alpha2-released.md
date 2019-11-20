@@ -12,10 +12,10 @@ Camunda BPM platform 7.8.0-alpha2 is here and it is packed with new features. Th
 * Sorting and filtering in Admin
 * Extending of locks on external tasks
 * More batch operations in Cockpit: suspend/restart process instance and set retries on external tasks (EE)
-* [18 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha2)
+* [18 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha2)
 
-Also see the complete list of [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14906)
-and the list of [known issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.8.0-alpha2).
+Also see the complete list of [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14906)
+and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.8.0-alpha2).
 
 You can [download it](https://camunda.org/download/)
 or [run it with docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).

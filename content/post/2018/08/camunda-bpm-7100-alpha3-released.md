@@ -10,20 +10,20 @@ title = "Camunda 7.10.0-alpha3 Released"
 
 * Extending "Handle External Task BPMN Error"
 * Complete Hierarchical History Cleanup
-* [9 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha3)
+* [9 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha3)
 
 Together with the third alpha of platform, we released also:
 
-* [Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter/) 3.1.0-alpha1 - [release notes](https://app.camunda.com/jira/browse/CAM/fixforversion/15333)
-* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.0-alpha1 for non-Java developers - [release notes](https://app.camunda.com/jira/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+js%22+AND+fixVersion+in+%287.10.0-alpha1%2C+7.10.0-alpha2%2C+7.10.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000)
-* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.0-alpha1 - can be embedded in Java applications, [release notes](https://app.camunda.com/jira/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+java%22+AND+fixVersion+in+%287.10.0-alpha1%2C+7.10.0-alpha2%2C+7.10.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000)
+* [Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter/) 3.1.0-alpha1 - [release notes](https://jira.camunda.com/browse/CAM/fixforversion/15333)
+* [NodeJS external task client](https://github.com/camunda/camunda-external-task-client-js) 1.1.0-alpha1 for non-Java developers - [release notes](https://jira.camunda.com/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+js%22+AND+fixVersion+in+%287.10.0-alpha1%2C+7.10.0-alpha2%2C+7.10.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000)
+* [Java external task client](https://github.com/camunda/camunda-external-task-client-java) 1.1.0-alpha1 - can be embedded in Java applications, [release notes](https://jira.camunda.com/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+java%22+AND+fixVersion+in+%287.10.0-alpha1%2C+7.10.0-alpha2%2C+7.10.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000)
 
 
 You can <a href="https://camunda.com/download/">Download Camunda for free</a> (click on Preview Release) or <a href="https://hub.docker.com/r/camunda/camunda-bpm-platform/">Run it with Docker</a>.
 
 
-If you are interested, you can see the complete [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15332)
-and the list of [known issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.10.0-alpha3).
+If you are interested, you can see the complete [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15332)
+and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.10.0-alpha3).
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.10.0-alpha3).
 

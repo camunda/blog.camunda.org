@@ -15,15 +15,15 @@ This release features the following improvements:
 * Support for JSON and XML variable types in Cockpit
 * History time to live for batch operations
 * Global configuration for the failed job retry time cycle
-* [20 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha3)
+* [20 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.8.0-alpha3)
 
 To try out **Camunda BPM 7.8** you can [download](https://camunda.org/download/#latest) one of the distributions or pull and run the
 [docker image](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 If you want to take a deeper dive, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.8.0-alpha3).
 
-For a complete list of all improvements take a look at the [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?version=14907&projectId=10230).
-Please also see the list of [known issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.8.0-alpha3).
+For a complete list of all improvements take a look at the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?version=14907&projectId=10230).
+Please also see the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.8.0-alpha3).
 <!--more-->
 
 ## Batch Process Instance Modification in Cockpit (EE)
@@ -140,4 +140,4 @@ Your feedback is really important to us, so please download **Camunda BPM 7.8.0-
 what you think about it.
 
 You can contact us in the [forum](https://forum.camunda.org/), send a tweet to [@camundaBPM](http://twitter.com/camundaBPM),
-or file a bug in [our ticket system](https://app.camunda.com/jira/secure/CreateIssue!default.jspa).
+or file a bug in [our ticket system](https://jira.camunda.com/secure/CreateIssue!default.jspa).

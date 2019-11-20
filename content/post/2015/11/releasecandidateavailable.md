@@ -23,7 +23,7 @@ You can use the following links to download 7.4.0-alpha3.
 ## Features
 Since we are very busy finalizing 7.4, this blogpost will be very short. Expect a longer blogpost for the 7.4 final release soon.
 
-[244 issues](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14199) have been closed since 7.4.0-alpha2. In the following list you can find some of the highlights:
+[244 issues](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14199) have been closed since 7.4.0-alpha2. In the following list you can find some of the highlights:
 
 * Finalized DMN Engine API (based on DMN 1.1)
 * DMN FEEL Support

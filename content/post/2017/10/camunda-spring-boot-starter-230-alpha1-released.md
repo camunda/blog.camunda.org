@@ -21,7 +21,7 @@ First of all, we want to take this opportunity to thank [Oliver Steinhauer and t
 The current release does not implement new features. Is mostly concentrated on including the project in the Camunda development lifecycle:
 
 - The project will continue to be maintained in the existing [repository on Github](https://github.com/camunda/camunda-bpm-spring-boot-starter).
-- Issues are now tracked in the [Camunda Jira](https://app.camunda.com/jira/browse/CAM)
+- Issues are now tracked in the [Camunda Jira](https://jira.camunda.com/browse/CAM)
 - Documentation from now on can be found on the [Camunda docs page](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/), including a [Getting Started Guide](https://docs.camunda.org/get-started/).
 
 Here are some changes:

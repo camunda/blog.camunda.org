@@ -23,7 +23,7 @@ Version 2.3.0 is a feature-rich release, and highlights include:
 * Restructured Documentation
 * Pick up license from file
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15342) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15342) are available in Jira.
 
 Ready to get hands-on? [Try out a free trial of Camunda Optimize 2.3.0](#how-to-get-it).
 
@@ -183,7 +183,7 @@ So far adding a license to Optimize was as simple as copying it and pasting it i
 
 # And much more!
 
-There are many additional smaller features and bugfixes in the release that we didn’t mention in this blog post. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15342) include those details.
+There are many additional smaller features and bugfixes in the release that we didn’t mention in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15342) include those details.
 
 # How to get it
 

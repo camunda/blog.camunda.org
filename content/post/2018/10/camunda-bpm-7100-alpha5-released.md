@@ -11,14 +11,14 @@ title = "Camunda 7.10.0-alpha5 Released"
 * Configure Business Key in Delegation Code
 * Fetch and Lock Based on Process Definition and Tenant
 * Wildfly support
-* [8 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha5)
+* [8 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.10.0-alpha5)
 
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 
-If you are interested, you can see the complete [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15346)
-and the list of [known issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.10.0-alpha5).
+If you are interested, you can see the complete [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15346)
+and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.10.0-alpha5).
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.10.0-alpha5).
 

@@ -59,7 +59,7 @@ Breaking changes:</div>
 <div>
 <div>
 <br />
-In total, 80 issues have been addressed including more than 20 bug fixes. Check out the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12994">complete list</a> for all the details.</div>
+In total, 80 issues have been addressed including more than 20 bug fixes. Check out the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12994">complete list</a> for all the details.</div>
 <div>
 <br /></div>
 <div>

@@ -13,7 +13,7 @@ You can find improvements and features from the upcoming Optimize version 2.6.0 
 - Durations for Running Process Instances
 - New User Task Assignee & Candidate Group Reports
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15511) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15511) are available in Jira.
 
 <!--more-->
 

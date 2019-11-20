@@ -13,14 +13,14 @@ Camunda 7.5.0-alpha3 is here. The highlights of this release are:
 * New Cockpit Dashboard
 * Improved Support for Multi Tenancy
 * More Powerful Process Instance Migration
-* [42 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha3)
+* [42 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha3)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14591) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14591) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
-Find a [list of known issues](https://app.camunda.com/jira/issues/?jql=project%20%3D%20%22camunda%20BPM%22%20and%20affectedVersion%20%3D%207.5.0-alpha3) in Jira.
+Find a [list of known issues](https://jira.camunda.com/issues/?jql=project%20%3D%20%22camunda%20BPM%22%20and%20affectedVersion%20%3D%207.5.0-alpha3) in Jira.
 
 <!--more-->
 

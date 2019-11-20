@@ -19,17 +19,17 @@ The first alpha release of camunda BPM 7.2.0 is out. The release brings<br />
 <ul>
 <li>Rest API features:&nbsp;</li>
 <ul>
-<li><a href="https://app.camunda.com/jira/browse/CAM-1375">Deployments</a>, <a href="https://app.camunda.com/jira/browse/CAM-2134">Task Comments</a>, <a href="https://app.camunda.com/jira/browse/CAM-2136">Task Attachments</a>, <a href="https://app.camunda.com/jira/browse/CAM-2141">Task Variables</a></li>
+<li><a href="https://jira.camunda.com/browse/CAM-1375">Deployments</a>, <a href="https://jira.camunda.com/browse/CAM-2134">Task Comments</a>, <a href="https://jira.camunda.com/browse/CAM-2136">Task Attachments</a>, <a href="https://jira.camunda.com/browse/CAM-2141">Task Variables</a></li>
 </ul>
 <li>Script Execution Improvements</li>
 <ul>
-<li><a href="https://app.camunda.com/jira/browse/CAM-2098">Caching of compiled scripts</a> (=&gt; performance improvements)</li>
-<li><a href="https://app.camunda.com/jira/browse/CAM-1876">Variable handling for scripts</a>&nbsp;(=&gt; Jython, JRuby and JavaScript can now be used)</li>
+<li><a href="https://jira.camunda.com/browse/CAM-2098">Caching of compiled scripts</a> (=&gt; performance improvements)</li>
+<li><a href="https://jira.camunda.com/browse/CAM-1876">Variable handling for scripts</a>&nbsp;(=&gt; Jython, JRuby and JavaScript can now be used)</li>
 <li>Groovy is now included in all distributions and works out of the box.</li>
 </ul>
 <li>Maintenance</li>
 <ul>
-<li><a href="https://app.camunda.com/jira/browse/CAM-1481">Bumped Version of Mybatis dependency to 3.2.3</a></li>
+<li><a href="https://jira.camunda.com/browse/CAM-1481">Bumped Version of Mybatis dependency to 3.2.3</a></li>
 <li>Frontend library upgrades</li>
 <ul>
 <li>Bump version of angularjs to 1.2.16</li>
@@ -41,11 +41,11 @@ The first alpha release of camunda BPM 7.2.0 is out. The release brings<br />
 <div>
 <span style="font-size: large;"><span style="color: red;"><b>Known Issues</b></span><b style="color: red;">:</b></span></div>
 <div>
-<span style="font-size: large;">In this alpha release,&nbsp;<b>camunda Tasklist has several known issues</b>&nbsp;<span id="goog_1272215698"></span><span id="goog_1272215699"></span><a href="https://www.blogger.com/"></a>related to form handling. See:&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-2233">CAM-2233</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-2234">CAM-2234</a>,&nbsp;<a href="https://app.camunda.com/jira/browse/CAM-2236">CAM-2236</a>.</span></div>
+<span style="font-size: large;">In this alpha release,&nbsp;<b>camunda Tasklist has several known issues</b>&nbsp;<span id="goog_1272215698"></span><span id="goog_1272215699"></span><a href="https://www.blogger.com/"></a>related to form handling. See:&nbsp;<a href="https://jira.camunda.com/browse/CAM-2233">CAM-2233</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-2234">CAM-2234</a>,&nbsp;<a href="https://jira.camunda.com/browse/CAM-2236">CAM-2236</a>.</span></div>
 <div>
 <br /></div>
 <div>
-<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13293">See the complete Release Notes</a>.&nbsp;</div>
+<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13293">See the complete Release Notes</a>.&nbsp;</div>
 <div>
 <br /></div>
 <div>
@@ -60,7 +60,7 @@ Behind the scenes we started work on the big new features for 7.2.0. Currently t
 <h3>
 Case Management</h3>
 <div>
-In camunda BPM 7.2.0 we will add support for case management based on CMMN. <a href="http://www.omg.org/spec/CMMN/">CMMN (Case Management Model and Notation)</a> &nbsp;is an emerging standard by the OMG. We are currently bootstrapping support for CMMN in a way that it <b>will play together nicely with BPMN</b>. To achieve this we have done <a href="https://app.camunda.com/jira/browse/CAM-2216">some major refactorings</a>&nbsp;in order to provide a base infrastructure for both BPNN and CMMN. On top of this, Roman has already started work on the <a href="https://github.com/camunda/camunda-bpm-platform/blob/e702609b5538dd7df2439b365d8da3a91642500d/engine/src/test/java/org/camunda/bpm/engine/test/cmmn/operation/CaseInstanceTest.java">CMMN engine core</a>.</div>
+In camunda BPM 7.2.0 we will add support for case management based on CMMN. <a href="http://www.omg.org/spec/CMMN/">CMMN (Case Management Model and Notation)</a> &nbsp;is an emerging standard by the OMG. We are currently bootstrapping support for CMMN in a way that it <b>will play together nicely with BPMN</b>. To achieve this we have done <a href="https://jira.camunda.com/browse/CAM-2216">some major refactorings</a>&nbsp;in order to provide a base infrastructure for both BPNN and CMMN. On top of this, Roman has already started work on the <a href="https://github.com/camunda/camunda-bpm-platform/blob/e702609b5538dd7df2439b365d8da3a91642500d/engine/src/test/java/org/camunda/bpm/engine/test/cmmn/operation/CaseInstanceTest.java">CMMN engine core</a>.</div>
 <h3>
 Tasklist.makeAwesome()</h3>
 <div>

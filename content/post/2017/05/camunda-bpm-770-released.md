@@ -20,12 +20,12 @@ The highlights are:
 
 The [complete release notes][release-notes] are available in Jira.
 
-[List of known Issues.](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.7.0)
+[List of known Issues.](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.7.0)
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
-[release-notes]: https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14607
+[release-notes]: https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14607
 
 <!--more-->
 

@@ -14,7 +14,7 @@ Camunda BPM platform 7.9.0 is now available, and the highlights are:
 * History Cleanup Performance Improvements
 * Transient Variables
 * New Features in Camunda Cockpit
-* [119 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0)
+* [119 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.9.0)
 <!-- FEATURES LIST ENDS -->
 
 <!--more-->
@@ -25,8 +25,8 @@ You can [Download Camunda for free](https://camunda.com/download/) or [Run it wi
 
 We have also released the Camunda Spring Boot Starter 3.0.0, which relies on Spring Boot 2.0.0 by default.
 
-To see a full list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096)
-and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.9.0%20and%20status%20!%3D%20Closed).
+To see a full list of the changes, please check out our [Release Notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15096)
+and the list of [Known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.9.0%20and%20status%20!%3D%20Closed).
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.9.0).
 
@@ -140,7 +140,7 @@ The user operation log both in process definition and in process instance view n
 
 ## And Much More
 
-There are many smaller features and bugfixes in the release that aren't included in this blog post. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15096) provide the details.
+There are many smaller features and bugfixes in the release that aren't included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15096) provide the details.
 
 ## Register for the Webinar
 

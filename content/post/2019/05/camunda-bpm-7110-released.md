@@ -18,7 +18,7 @@ We are excited to announce that Camunda BPM platform 7.11.0 is now available. Hi
 * BPMN Error Event Triggering from Execution Listeners
 * Fluent Java Testing API
 * Additional Supported Environments
-* [92 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.11.0)
+* [92 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.11.0)
 
 <!-- FEATURES LIST ENDS -->
 
@@ -33,8 +33,8 @@ Also included in the release:
 
 <!--more-->
 
-For a complete list of the changes, please check out our [Release Notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15343)
-and the list of [Known Issues](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.11.0%20and%20status%20!%3D%20Closed). For patched security vulnerabilities, see our [Security Notices](https://docs.camunda.org/security/notices/).
+For a complete list of the changes, please check out our [Release Notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15343)
+and the list of [Known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.11.0%20and%20status%20!%3D%20Closed). For patched security vulnerabilities, see our [Security Notices](https://docs.camunda.org/security/notices/).
 
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.11.0).
 
@@ -200,7 +200,7 @@ Read on:
 
 ## And Much More
 
-There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=15343) provide the details.
+There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15343) provide the details.
 
 ## Register for the Webinar
 

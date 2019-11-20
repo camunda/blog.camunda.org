@@ -81,7 +81,7 @@ As second contribution <a href="http://rafael.cordones.me/">Rafael Cordones</a> 
 <b><br /></b>
 <b>How do we work, Roadmap and Feedback</b><br />
 <br />
-The rest of the afternoon was packed with some demonstrations about how we work (<a href="https://app.camunda.com/jira/">JIRA</a>, Kanban-Board, <a href="https://github.com/camunda">GitHub</a>, Pull-Requests, <a href="https://github.com/camunda/camunda.org/blob/master/CONTRIBUTION_GUIDELINES.md">Contributions-Guidelines</a>, <a href="http://camunda.org/community/forum.html">Forum</a> and so on). We discussed the current roadmap and plans - and we got pretty good feedback from the community - that further confirmed that we are on the right track. And the most amazing thing: <b>There were no issues raised which is urgent or problematic</b> - so camunda BPM 7.0 was definitely a step in the right direction. That was the right time to start partying (see below) :-)<br />
+The rest of the afternoon was packed with some demonstrations about how we work (<a href="https://jira.camunda.com/">JIRA</a>, Kanban-Board, <a href="https://github.com/camunda">GitHub</a>, Pull-Requests, <a href="https://github.com/camunda/camunda.org/blob/master/CONTRIBUTION_GUIDELINES.md">Contributions-Guidelines</a>, <a href="http://camunda.org/community/forum.html">Forum</a> and so on). We discussed the current roadmap and plans - and we got pretty good feedback from the community - that further confirmed that we are on the right track. And the most amazing thing: <b>There were no issues raised which is urgent or problematic</b> - so camunda BPM 7.0 was definitely a step in the right direction. That was the right time to start partying (see below) :-)<br />
 <br />
 <b>Which city to go next time?</b><br />
 <br />
@@ -110,7 +110,7 @@ Hard to beat next year - but we can try. If you have a recommendation for a city
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>
 <tr><td style="text-align: center;"><a href="http://1.bp.blogspot.com/-l-x7_hux0tg/UmZzXqoYzNI/AAAAAAAAAJ4/K-DZdSCzSK4/s1600/CIMG0794.JPG" imageanchor="1" style="margin-left: auto; margin-right: auto;"><img border="0" src="http://1.bp.blogspot.com/-l-x7_hux0tg/UmZzXqoYzNI/AAAAAAAAAJ4/K-DZdSCzSK4/s320/CIMG0794.JPG" height="240" width="320" /></a></td></tr>
-<tr><td class="tr-caption" style="text-align: center;">One feature was developed live (<a href="https://app.camunda.com/jira/browse/CAM-1380" target="_blank">CAM-1380</a>)!</td></tr>
+<tr><td class="tr-caption" style="text-align: center;">One feature was developed live (<a href="https://jira.camunda.com/browse/CAM-1380" target="_blank">CAM-1380</a>)!</td></tr>
 </tbody></table>
 <br />
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody>

@@ -40,7 +40,7 @@ aliases:
 <li>some contributions from <a href="https://github.com/clintmanning">Clint</a>&nbsp;and <a href="https://github.com/sm32550">Markus</a></li>
 </ul>
 <div>
-In total, about 90 Issues have been closed during the last two months. For further details have look into the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13190">Release Notes</a>&nbsp;and finally</div>
+In total, about 90 Issues have been closed during the last two months. For further details have look into the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13190">Release Notes</a>&nbsp;and finally</div>
 <div>
 <br /></div>
 <div>

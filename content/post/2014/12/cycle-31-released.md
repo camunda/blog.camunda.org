@@ -14,7 +14,7 @@ aliases:
 ---
 
 <div>
-We are happy to announce the release of Cycle version 3.1. Cycle is a tool which makes synchronization of BPMN diagrams between the camunda modeler and third party modeling tools possible. With this release we provide a feature which allows bpmn tool vendors to integrate their tool with camunda cycle by providing custom Connectors. <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13500" target="_blank">The complete release notes can be found in JIRA</a><br />
+We are happy to announce the release of Cycle version 3.1. Cycle is a tool which makes synchronization of BPMN diagrams between the camunda modeler and third party modeling tools possible. With this release we provide a feature which allows bpmn tool vendors to integrate their tool with camunda cycle by providing custom Connectors. <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13500" target="_blank">The complete release notes can be found in JIRA</a><br />
 <br />
 You can download the <a href="http://camunda.org/download/cycle/" target="_blank">distribution of Cycle 3.1 from camunda.org</a> and view the <a href="https://github.com/camunda/camunda-cycle" target="_blank">source code on GitHub</a>.<br />
 <h3>

@@ -10,7 +10,7 @@ We are happy to announce the release of Camunda Optimize version 2.2.0-alpha2. T
 
 This release marks the second alpha release of Camunda Optimize 2.2.0.
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15334) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15334) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 

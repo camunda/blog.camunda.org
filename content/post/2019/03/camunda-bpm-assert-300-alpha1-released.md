@@ -17,7 +17,7 @@ First of all, we want to take this opportunity to thank [Martin Schimak and the 
 The current release is mostly concentrated on including the project in the Camunda development lifecycle:
 
 * The project will continue to be maintained in the existing [repository on Github](https://github.com/camunda/camunda-bpm-assert).
-* Issues are now tracked in the [Camunda Jira](https://app.camunda.com/jira/browse/CAM/component/14065)
+* Issues are now tracked in the [Camunda Jira](https://jira.camunda.com/browse/CAM/component/14065)
 * Documentation from now on can also be found on the [Camunda docs page](https://docs.camunda.org/manual/develop/user-guide/testing/#camunda-assertions).
 
 Here are some changes:

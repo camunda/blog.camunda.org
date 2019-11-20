@@ -18,7 +18,7 @@ Today we release the next alpha version of camunda BPM. The highlights of this r
 <ul>
 <li><a href="http://docs.camunda.org/latest/guides/user-guide/#bpmn-model-api">Bpmn Model API</a></li>
 <li>Task Operation Log</li>
-<li><a href="https://app.camunda.com/jira/browse/CAM-1182">Edit group Identity Links</a> in&nbsp;cockpit monitoring web application</li>
+<li><a href="https://jira.camunda.com/browse/CAM-1182">Edit group Identity Links</a> in&nbsp;cockpit monitoring web application</li>
 <li>Cockpit usability improvements (Browser History, Icons)</li>
 <li><a href="https://github.com/camunda/camunda-bpm-examples">Consolidated Examples Repository</a></li>
 </ul>
@@ -31,7 +31,7 @@ On top of this we introduced new features into the cockpit monitoring web applic
 </ul>
 <br />
 <div>
-<a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13193">View the complete Relese Notes in Jira.</a></div>
+<a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13193">View the complete Relese Notes in Jira.</a></div>
 <div>
 <br /></div>
 <div>

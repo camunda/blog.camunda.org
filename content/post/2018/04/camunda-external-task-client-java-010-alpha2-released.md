@@ -17,7 +17,7 @@ The highlights of this release are:
 * Specify a response timeout to fetch and lock External Tasks (long polling)
 * More serialization formats to exchange object variables (XML and JAVA)
 
-You can find the complete release notes [here](https://app.camunda.com/jira/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+java%22+AND+fixVersion+not+in+%287.9.0-alpha1%2C+7.9.0-alpha2%2C+7.9.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000).
+You can find the complete release notes [here](https://jira.camunda.com/sr/jira.issueviews:searchrequest-printable/temp/SearchRequest.html?jqlQuery=project+%3D+CAM+AND+component+%3D+%22external+task+client+java%22+AND+fixVersion+not+in+%287.9.0-alpha1%2C+7.9.0-alpha2%2C+7.9.0-alpha3%29+AND+%28status+%3D+Closed+or+status+%3D+Resolved%29&tempMax=1000).
 
 <!--more-->
 ## Handling Orders Example
