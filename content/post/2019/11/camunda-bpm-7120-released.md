@@ -82,8 +82,8 @@ The following example shows how to trigger a BPMN error via REST API:
 }
 ```
 
-The REST API request triggers an Error with the code `invalid-data-error` and a message 
-for the instance of the User Task `482g036` and passes a variable `reportId`.
+The REST API request triggers an Error for the User Task `482g036` with the code `invalid-data-error`, 
+a message, and passes a variable `reportId`.
 
 Read on:
 
