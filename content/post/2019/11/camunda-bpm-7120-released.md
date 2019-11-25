@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2019-11-30T08:00:00+02:00"
+date = "2019-11-29T08:00:00+02:00"
 title = "Camunda BPM 7.12.0 Released"
 
 +++
@@ -30,18 +30,18 @@ You can [download Camunda 7.12.0 for free](https://camunda.com/download/) or [ru
 
 Also included in the release:
 
-* [Camunda BPM Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) 3.4.0, which relies on Spring Boot 2.2.1
-* [Camunda BPM Assert](https://github.com/camunda/camunda-bpm-assert) 5.0.0 for convenient testing of processes in Java
+* [Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) 3.4.0, which relies on Spring Boot 2.2.1
+* [Assert](https://github.com/camunda/camunda-bpm-assert) 5.0.0 for convenient testing of processes in Java
 * [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) 1.3.0 version for Javascript developer
 * [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) 1.3.0 version can be embedded in Java applications
 
-<!-- TODO: Add link to blog post -->
-You can read all about these releases in the dedicated [blog post](foo).
+<!-- TODO: Make visible
+You can read all about these releases in the dedicated [blog post](/post/2019/12/ext-task-clients-130-spring-boot-starter-340-assert-500).
+-->
 
 <!--more-->
 
-<!-- TODO add link to release notes-->
-For a complete list of the changes, please check out our [Release Notes](foo) 
+For a complete list of the changes, please check out our [Release Notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15387) 
 and the list of [Known Issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.12.0%20and%20status%20!%3D%20Closed). 
 For patched security vulnerabilities, see our [Security Notices](https://docs.camunda.org/security/notices/).
 
@@ -94,7 +94,7 @@ Read on:
 
 ### Time-triggered Listeners for User Tasks
 
-For a manual task, it may be reasonable to automatically trigger certain actions after
+For a manual task, it is sometimes necessary to automatically trigger certain actions after
 some time (e. g. escalation, reassignment, email notifications, etc.).
 
 Starting with this release, the Workflow Engine executes time-triggered listeners for User 
@@ -311,8 +311,7 @@ Read on:
 <!-- FEATURES EXPLANATIONS END -->
 
 ## And Much More
- <!-- TODO add link to full release notes -->
-There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](foo) provide the details.
+There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15387) provide the details.
 
 ## Register for the Webinar
 
