@@ -52,8 +52,8 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 ## Enhanced BPMN Execution
 
 Camunda BPM 7.12.0 comes with significant improvements in the area of BPMN process execution.
-<!-- TODO: Add link to Camunda Modeler blog post -->
-You can model all the mentioned features with the latest version of [Camunda Modeler 3.5.0](foo).
+
+You can model all the mentioned features with the latest version of [Camunda Modeler 3.5.0](https://camunda.com/download/modeler/).
 
 ### Trigger BPMN Errors and Escalations from User Tasks
 
@@ -107,25 +107,9 @@ The following process contains a time-triggered listener for the User Task "Pick
 The time-triggered listener leads to the invocation of the task listener 
 class `com.example.ReassignListener` after one hour.
 
-Represented as XML the time-triggered listener looks as follows:
+You can configure the listener in Camunda Modeler as follows:
 
-```xml
-...
-<userTask id="pick-items">
-  <extensionElements>
-    <camunda:taskListener class="com.example.ReassignListener" 
-                          event="timeout" 
-                          id="timeout-friendly">
-      <timerEventDefinition>
-        <timeDuration xsi:type="bpmn:tFormalExpression">
-          PT1H
-        </timeDuration>
-      </timerEventDefinition>
-    </camunda:taskListener>
-  </extensionElements>
-</userTask>
-...
-```
+{{< figure class="teaser no-border" src="timeout-listener-process.gif">}}
 
 Read on:
 
@@ -148,19 +132,9 @@ The following process contains an update listener for the User Task "Check invoi
 The update listener leads to the invocation of the task listener 
 class `com.example.NotifyAssigneeListener` as soon as the task is updated.
 
-Represented as XML the update listener looks as follows:
+You can configure the listener in Camunda Modeler as follows:
 
-```xml
-...
-<userTask id="check-invoice">
-  <extensionElements>
-    <camunda:taskListener class="com.example.NotifyAssigneeListener" 
-                          event="update">
-    </camunda:taskListener>
-  </extensionElements>
-</userTask>
-...
-```
+{{< figure class="teaser no-border" src="update-listener-process.gif">}}
 
 Read on:
 
