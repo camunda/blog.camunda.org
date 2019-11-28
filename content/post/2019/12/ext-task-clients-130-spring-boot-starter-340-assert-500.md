@@ -22,7 +22,7 @@ You can read all about the Camunda BPM 7.12.0 release in the dedicated [blog pos
 ## External Task Clients
 
 The [External Task Clients](https://docs.camunda.org/manual/7.12/user-guide/ext-client/) help you to decouple your services from 
-the workflow engine–a common use case, for example, in microservices architectures. We've released version 1.3.0 of our task clients for [NodeJS](https://github.com/camunda/camunda-external-task-client-js) 
+the Workflow Engine–a common use case, for example, in microservices architectures. We've released version 1.3.0 of our task clients for [NodeJS](https://github.com/camunda/camunda-external-task-client-js) 
 & [Java](https://github.com/camunda/camunda-external-task-client-java), which support the latest features of Camunda BPM 7.12.0. 
 
 The features mentioned below are available for both the NodeJS and the Java client.
@@ -32,14 +32,14 @@ The features mentioned below are available for both the NodeJS and the Java clie
 When you want to assign a custom label to a specific version of a process definition, you can 
 tag it with a version.
 
-Imagine a case where there are already older versions of a process deployed to the workflow engine, and
+Imagine a case where there are already older versions of a process deployed to the Workflow Engine and
 we want to deploy a new version of this process with the version tag `1.5.2`:
 
 {{< figure class="teaser no-border" src="fetch-and-lock-by-versiontag.png">}}
 
-The external task with the topic name `compute-total` is not only present in the process shown above
+The external task with the topic name `compute-total` is not only present in the process shown above, 
 but also in older versions of this process. However, we want our external task client to only work 
-on External Tasks belonging to the process definition with the version tag `1.5.2`.
+on external tasks belonging to the process definition with the version tag `1.5.2`.
 
 Let's have a look how we can achieve this using the NodeJS client:
 ```javascript
@@ -60,7 +60,7 @@ const topicSubscription = client.subscribe(
 );
 ```
 
-In the code example shown above, the NodeJS Client is configured, bootstrapped, and
+In the code example shown above, the NodeJS Client is configured, bootstrapped and
 finally subscribed to the topic name `compute-total`. Additionally, the subscription 
 is configured only to fetch external tasks belonging to the process with the version 
 tag `1.5.2`.
@@ -80,7 +80,7 @@ Let's consider the following process:
 
 In the process shown above, you can see two external tasks with the topic name
 `pay-money`. When the invoice is due, the payment of the invoice is prioritized 
-with `100`, and otherwise with `0`.
+with `100`, otherwise with `0`.
 
 The feature is enabled by default, meaning that no additional configuration is needed to
 fetch external tasks with priorities. If necessary, you can disable this behavior.
@@ -99,8 +99,8 @@ For a complete list of the changes, please check out our [Release Notes](https:/
 
 ### Auto-Configuration of Jackson Java 8 Modules in Spin
 
-Camunda Spin, together with Jackson, allows the exchanging of structured process data 
-in the form of JSON with the workflow engine.
+Camunda Spin, together with Jackson, allow the exchange of structured process data 
+in the form of JSON with the Workflow Engine.
 
 This release includes auto-configuration of the Jackson Java 8 modules. When adding 
 the Maven coordinates of a Jackson Java 8 module, it is configured automatically.
