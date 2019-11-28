@@ -3,7 +3,7 @@ author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2019-12-02T08:00:00+02:00"
-title = "NodeJS/Java External Task Client 1.3.0, Spring Boot Starter 3.4.0 & Assert 5.0.0"
+title = "More From Camunda BPM: NodeJS/Java External Task Client 1.3.0, Spring Boot Starter 3.4.0 & Assert 5.0.0"
 
 +++
 
@@ -22,26 +22,26 @@ You can read all about the Camunda BPM 7.12.0 release in the dedicated [blog pos
 ## External Task Clients
 
 The [External Task Clients](https://docs.camunda.org/manual/7.12/user-guide/ext-client/) help you to decouple your services from 
-the Workflow Engine. We have released version 1.3.0 of our Clients for [NodeJS](https://github.com/camunda/camunda-external-task-client-js) 
+the workflow engine–a common use case, for example, in microservices architectures. We've released version 1.3.0 of our task clients for [NodeJS](https://github.com/camunda/camunda-external-task-client-js) 
 & [Java](https://github.com/camunda/camunda-external-task-client-java), which support the latest features of Camunda BPM 7.12.0. 
 
-The features mentioned below are available for both the NodeJS and the Java Client.
+The features mentioned below are available for both the NodeJS and the Java client.
 
 ### Fetch and Lock by Version Tag
 
 When you want to assign a custom label to a specific version of a process definition, you can 
 tag it with a version.
 
-Let's pretend there are already older versions of a process deployed to the Workflow Engine and
+Imagine a case where there are already older versions of a process deployed to the workflow engine, and
 we want to deploy a new version of this process with the version tag `1.5.2`:
 
 {{< figure class="teaser no-border" src="fetch-and-lock-by-versiontag.png">}}
 
-The External Task with the topic name `compute-total` is not only present in the process shown above
-but also in older versions of this process. However, we want our External Task Client to only work 
+The external task with the topic name `compute-total` is not only present in the process shown above
+but also in older versions of this process. However, we want our external task client to only work 
 on External Tasks belonging to the process definition with the version tag `1.5.2`.
 
-Let's have a look how we can achieve this using the NodeJS Client:
+Let's have a look how we can achieve this using the NodeJS client:
 ```javascript
 const { Client, Variables } = require('camunda-external-task-client-js');
 
@@ -62,33 +62,32 @@ const topicSubscription = client.subscribe(
 
 In the code example shown above, the NodeJS Client is configured, bootstrapped, and
 finally subscribed to the topic name `compute-total`. Additionally, the subscription 
-is configured only to fetch External Tasks belonging to the process with the version 
+is configured only to fetch external tasks belonging to the process with the version 
 tag `1.5.2`.
 
-Read on:
+You can read more here:
 
 * [Version Tag](https://docs.camunda.org/manual/7.12/user-guide/process-engine/process-versioning/#version-tag)
 
 ### Fetch and Lock With Priorities
 
-Sometimes it is necessary to prioritize External Tasks over others. You can specify priorities 
+Sometimes, it's necessary to prioritize certain external tasks over others. It's now possible to specify priorities 
 on the process or task level.
 
 Let's consider the following process:
 
 {{< figure class="teaser no-border" src="fetch-and-lock-with-priority.png">}}
 
-In the process shown above, you can see two External Tasks with the topic name
+In the process shown above, you can see two external tasks with the topic name
 `pay-money`. When the invoice is due, the payment of the invoice is prioritized 
-with `100` otherwise with `0`.
+with `100`, and otherwise with `0`.
 
-The feature is enabled by default, i. e. no additional configuration is needed to
-fetch External Tasks with priorities. If necessary, you can disable this behavior.
+The feature is enabled by default, meaning that no additional configuration is needed to
+fetch external tasks with priorities. If necessary, you can disable this behavior.
 
-Read on:
+You can read more here:
 
 * [External Task Prioritization](https://docs.camunda.org/manual/7.12/user-guide/process-engine/external-tasks/#external-task-prioritization)
-
 
 ## Spring Boot Starter 3.4.0
 
@@ -100,10 +99,10 @@ For a complete list of the changes, please check out our [Release Notes](https:/
 
 ### Auto-Configuration of Jackson Java 8 Modules in Spin
 
-Camunda Spin, together with Jackson, allow the exchanging of structured process data 
-in the form of JSON with the Workflow Engine.
+Camunda Spin, together with Jackson, allows the exchanging of structured process data 
+in the form of JSON with the workflow engine.
 
-This release brings auto-configuration of the Jackson Java 8 modules. When adding 
+This release includes auto-configuration of the Jackson Java 8 modules. When adding 
 the Maven coordinates of a Jackson Java 8 module, it is configured automatically.
 
 Auto-configuration is available for the following Jackson Java 8 modules:
@@ -113,7 +112,7 @@ Auto-configuration is available for the following Jackson Java 8 modules:
 3. Java 8 Datatypes (`jackson-datatype-jsr310`)
 
 For instance, if you want to add support for Jackson Java 8 Date/time to your Spring Boot
-Process Application, add the following Maven coordinates:
+Process Application, you'd add the following Maven coordinates:
 
 ```xml
 ...
@@ -146,7 +145,7 @@ Read on:
 
 Assert helps you to test your processes conveniently in Java. 
 
-Assert 5.0.0 is compatible with Assertj 3.13.2 which is used in turn by 
+Assert 5.0.0 is compatible with Assertj 3.13.2, which is used in turn by 
 Camunda BPM Spring Boot Starter 3.4.0.
 
 This release discontinues the support of the compatibility artifacts 
@@ -154,17 +153,17 @@ for Assertj 2.9.0 and 3.11.1.
 
 For a complete list of the changes, please check out our [Release Notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15397).
 
-Read on:
+You can read more here:
 
 * [Assert](https://docs.camunda.org/manual/7.12/user-guide/testing/#camunda-assertions)
 * [Assert on GitHub](https://github.com/camunda/camunda-bpm-assert)
 
 ## Register for the Webinar
 
-If you're not already registered, be sure to secure a spot at the free release webinars, which is offered in [German](https://camunda.com/learn/webinars/camunda-bpm-7-12-release-webinar-de/) and [English](https://camunda.com/learn/webinars/camunda-bpm-7-12-release-webinar-en).
+If you're not already registered, be sure to secure a spot at the free release webinars, which are offered in [German](https://camunda.com/learn/webinars/camunda-bpm-7-12-release-webinar-de/) and [English](https://camunda.com/learn/webinars/camunda-bpm-7-12-release-webinar-en).
 
 ## Your Feedback Matters!
 
-With every release, we strive to improve Camunda BPM. To make this possible, we rely on your feedback. Feel free to share your ideas and suggestions with us.
+With every release, we strive to improve Camunda BPM. And we rely on your feedback! Feel free to share your ideas and suggestions with us.
 
 You can contact us via the [Camunda user forum](https://forum.camunda.org/).
