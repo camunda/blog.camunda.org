@@ -60,13 +60,13 @@ You can model all the features mentioned below with the latest version of [Camun
 In some cases, a human task worker cannot complete an assigned task–for instance, because an unforeseen error 
 occurs, or a decision needs to be escalated.
 
-Starting in 7.12, it's possible to trigger BPMN Error and Escalation events from User Tasks via the Java or REST APIs. 
+Starting in 7.12, it's possible to trigger BPMN Error and Escalation events from user tasks via the Java or REST APIs. 
 
-The sample process shown below has an Error as well as an Escalation Boundary Event attached to the User Task "Review annual report":
+The sample process shown below has an Error event, as well as an Escalation Boundary event, attached to the user task "Review annual report":
 
 {{< figure class="teaser no-border" src="trigger-bpmnerror-escalation-usertask.png">}}
 
-The following example shows how to trigger a BPMN error via REST API:
+The following example shows how to trigger a BPMN Error via REST API:
 
 `POST /task/482g036/bpmnError`
 ```javascript
@@ -82,8 +82,8 @@ The following example shows how to trigger a BPMN error via REST API:
 }
 ```
 
-The REST API request triggers an Error for the User Task `482g036` with the code `invalid-data-error`, 
-a message, and passes a variable `reportId`.
+The REST API request triggers an Error for the user task `482g036` with the code `invalid-data-error`, 
+a message and passes a variable `reportId`.
 
 You can read more here:
 
@@ -95,19 +95,18 @@ You can read more here:
 ### Time-triggered Listeners for User Tasks
 
 For a manual task, it is sometimes necessary to automatically trigger certain actions after
-some amount of time (e.g. for escalation, reassignment, email notifications, etc.).
+a specific amount of time (e.g. for escalation, reassignment, email notifications, etc.).
 
-Starting in 7.12, the workflow engine can execute time-triggered listeners for User 
-Tasks in your processes.
+Starting in 7.12, the Workflow Engine can execute Time-triggered Listeners for user 
+tasks in your processes.
 
-For example, the following process contains a time-triggered listener for the User Task "Pick Items":
+For example, the following process contains a Time-triggered Listener for the user task "Pick Items":
 
 {{< figure class="teaser no-border" src="time-triggered-user-task-listener.png">}}
 
-The time-triggered listener will result in the invocation of the task listener 
-class `com.example.ReassignListener` after one hour.
+The Time-triggered Listener will call the task Listener Class `com.example.ReassignListener` after one hour.
 
-You can configure the listener in Camunda Modeler as follows:
+You can configure the Listener in Camunda Modeler as follows:
 
 {{< figure class="teaser no-border" src="timeout-listener-process.gif">}}
 
@@ -119,20 +118,19 @@ Read on:
 
 ### Update Listeners for User Tasks
 
-Properties of a manual task may change over time. To react accordingly on changes, it may 
+Properties of a manual task may change over time. To react accordingly to changes, it may 
 make sense to trigger specific actions automatically. For instance, to notify an assigned 
 task worker when a due date is set or updated.
 
-This release features update listeners for User Tasks.
+This release features Update Listeners for user tasks.
 
-The following process contains an update listener for the User Task "Check invoice":
+The following process contains an Update Listener for the user task "Check invoice":
 
 {{< figure class="teaser no-border" src="update-user-task-listener.png">}}
 
-The update listener leads to the invocation of the task listener 
-class `com.example.NotifyAssigneeListener` as soon as the task is updated.
+The Update Listener calls the Task Listener class `com.example.NotifyAssigneeListener` as soon as the task is updated.
 
-You can configure the listener in Camunda Modeler as follows:
+You can configure the Listener in Camunda Modeler as follows:
 
 {{< figure class="teaser no-border" src="update-listener-process.gif">}}
 
@@ -185,7 +183,7 @@ This release leverages the *Mapped Diagnostic Context* (MDC) technique
 of SLF4J to link logs to the respective process execution context. To make use of this new feature,
 you need to add the context placeholder `%X` to the logging pattern.
 
-Here's what the configuration would look like when using the Logback implementation:
+Here's what the configuration will look like when using the Logback implementation:
 ```xml
 <configuration>
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -231,19 +229,19 @@ We continuously strive to improve the security of Camunda BPM.
 
 ### Protection against Malicious Variable Values
 
-The workflow engine allows the exchange of structured process data from untrusted 
+The Workflow Engine allows the exchange of structured process data from untrusted 
 sources in the form of JSON and XML.
 
 The deserialization of JSON and XML data from untrusted sources is prone to 
 exploitation. When the provided data is malicious, arbitrary code can be executed 
 inside the Java Virtual Machine (JVM).
 
-Camunda BPM 7.12.0 includes an all-new security mechanism to prevent the workflow 
-engine from deserializing malicious JSON and XML data. 
+Camunda BPM 7.12.0 includes an all-new security mechanism to prevent the Workflow 
+Engine from deserializing malicious JSON and XML data. 
 
 By default, common Java types like list or map structures are whitelisted. When a 
 malicious JSON or XML variable value with a non-whitelisted Java type is stored, 
-the workflow engine rejects the variable value from being deserialized. You can 
+the Workflow Engine rejects the variable value from being deserialized. You can 
 extend the whitelist with your custom Java types.
 
 You can read more here:
@@ -274,7 +272,7 @@ Read on:
 Camunda BPM 7.12.0 discontinues support for older versions of legacy application servers and database systems.
 Additionally, Java 7 is no longer supported. 
 
-Dropping support of legacy environments enables us to support new technologies and to provide a secure product. 
+Dropping support of legacy environments enables us to support new technologies and provide a secure product. 
 For more details, please read about the changes in supported environments:
 
 * [Changes in Supported Environments](http://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-12)
