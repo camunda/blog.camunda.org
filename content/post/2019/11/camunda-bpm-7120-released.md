@@ -20,9 +20,9 @@ The release includes many new capabilities. Here are some of the highlights:
 * [Improved Operations](/post/2019/11/camunda-bpm-7120-released/#improved-operations)
     * [Annotate Operation Logs with Comments](/post/2019/11/camunda-bpm-7120-released/#annotate-operation-logs-with-comments)
     * [Contextual Logging for Processes](/post/2019/11/camunda-bpm-7120-released/#contextual-logging-for-processes)
-* [Stronger Security](/post/2019/11/camunda-bpm-7120-released/#strengthened-security)
+* [Stronger Security](/post/2019/11/camunda-bpm-7120-released/#stronger-security)
     * [Protection Against Malicious Variable Values](/post/2019/11/camunda-bpm-7120-released/#protection-against-malicious-variable-values)
-* [Additional Supported Environments](/post/2019/11/camunda-bpm-7120-released/#additionally-supported-environments)
+* [Additional Supported Environments](/post/2019/11/camunda-bpm-7120-released/#additional-supported-environments)
 
 <!-- FEATURES LIST ENDS -->
 
