@@ -2,16 +2,16 @@
 author = "Johannes Heinemann"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-11-27T09:00:00+01:00"
+date = "2019-11-29T00:00:00+00:00"
 title = "Camunda Optimize 2.7.0-alpha2 Released"
 +++
 
 We are happy to announce the release of Camunda Optimize version 2.7.0-alpha2.
 
-You can find improvements and features for the upcoming Optimize version 2.7.0 in this second alpha release, including:
+In this second alpha release, you can get an early look at many improvements and features in advance of the stable Optimize version 2.7.0, including:
 
 - Data Sources for Collections
-- What's New Message
+- "What's New" Message
 
 The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15597) are available in Jira.
 
@@ -21,37 +21,37 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 #  Data Sources for Collections
 
-With Optimize 2.6.0, the new collection concept was introduced. Collections do not only contain a compilation of reports and dashboards, but also allow you to define fine grained permissions. With this release we extended the collection feature even further by allowing to define a data source. This enables you to determine on which particular definitions the collection should be based on. 
+In Optimize 2.6.0, a new collection concept was introduced. Collections contain not only a compilation of reports and dashboards, but also make it possible to define fine-grained permissions. With this release, we extended the collection feature even further by allowing the user to define a data source. This makes it possible to determine on which particular definitions the collection should be based. 
 
-The following example will illustrate how it works. Let's assume we have a sales department in our company and every member should be able to see, create and update reports based on the lead qualification process to see how the department is currently doing. To do that you just create a collection called `Sales Reports`:
+The following example illustrates how this works. Let's assume we have a sales department in our company, and every team member should be able to see, create, and update reports based on the lead qualification process to see how the department is currently doing. To make that possible, we simply create a collection called `Sales Reports`:
 
 {{< figure src="create-collection-modal.png" alt="Depicts the modal when you create a new collection." >}}
 
-Inside of the new collection you will find a new tab `Data Sources`. If you click on it you are able to add a new data source to the collection. In our case, we want to add the `Lead Qualification` process.
+Inside of the new collection, you will find a new tab called `Data Sources`. If you click on this tab, you are able to add a new data source to the collection. In our case, we want to add the `Lead Qualification` process.
 
 {{< figure src="collection-data-source-tab.png" alt="Shows the collection data source tab." >}}
 
 {{< figure src="add-data-source.png" alt="Displays the modal of adding a data source to a collection." >}}
 
-Once we are done with that, we create a new report inside of this collection. As you will see we are only able to create reports for those definitions we have defined in the data source.
+Next, we'll create a new report inside of this collection. As you can see, we're only able to create reports for those definitions that we've defined in the data source.
 
 {{< figure src="build-report-inside-collection.png" alt="Shows the report build inside the collection with the defined data source." >}}
 
-This allows us to keep the collection clean and focused on those entities it was designated for. Please be aware that for each newly created collection there is no scope defined by default. Thus, you can only select a definition in a report if you have added the respective data source to the collection before.
+This allows us to keep the collection clean and focused on those entities it was designated for. Please be aware that for each newly created collection, there is no scope defined by default. Thus, you can only select a definition in a report if you have added the respective data source to the collection before.
 
 # What's New Message on first Optimize Startup
 
-Month by month, Optimize is evolving and growing more mature. With all the new features being added, it can be hard to keep track what's actually new. Therefore, the release displays a `What's New` dialog the first time you enter Optimize.
+Every month, Optimize is evolving and becoming more robust. With many new features being added, it can be difficult to keep track what's actually new. To make this more clear, the release displays a `What's New` dialog the first time you enter Optimize.
 
 {{< figure src="whats-new-message.png" alt="What's new message on first startup of Optimize." >}}
 
-You can also have a look at it any time. In the header, you can click the `What's New` link next to the logout button, which opens up the dialog again for you.
+And you can take a look at this dialog any time you like. In the header, just click the `What's New` link next to the logout button, which opens up the dialog for you again.
 
 # What's Next?
 
 We'll release the minor **Camunda Optimize 2.7** at the end of 2019. Stay tuned.
 
-Feel free to already sign up for [our release webinar](https://camunda.com/learn/webinars/) that will take place in January.
+Feel free to go ahead and sign up for [our release webinar](https://camunda.com/learn/webinars/), which will take place in January.
 
 # How to get it
 
