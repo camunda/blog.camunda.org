@@ -13,7 +13,7 @@ You can find improvements and features for the upcoming Optimize version 2.7.0 i
 - Data Sources for Collections
 - What's New Message
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15545) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15597) are available in Jira.
 
 <!--more-->
 
