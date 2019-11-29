@@ -5,7 +5,8 @@ author: "Robert Gimbel"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:

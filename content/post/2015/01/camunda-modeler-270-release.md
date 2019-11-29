@@ -5,8 +5,9 @@ author: "Michael Schöttes"
 
 categories:
   - "Execution"
-tags: 
+tags:
   - "Release Note"
+  - "Camunda Modeler Eclipse Plug-in"
 
 aliases:
   - "/2015/01/camunda-modeler-270-release.html"

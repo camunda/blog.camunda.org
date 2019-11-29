@@ -5,7 +5,8 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
