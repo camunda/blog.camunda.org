@@ -2,7 +2,7 @@
 author = "Nico Rehwaldt"
 categories = ["Modeling"]
 date = "2015-11-30T11:00:00+01:00"
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 title = "Hello new Camunda Modeler"
 +++
 

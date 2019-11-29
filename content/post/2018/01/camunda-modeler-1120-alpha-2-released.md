@@ -1,7 +1,7 @@
 +++
 author = "Philipp Fromme"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2018-01-31T20:00:00+01:00"
 title = "Camunda Modeler 1.12.0-alpha-2 Released"
 +++

@@ -1,7 +1,7 @@
 +++
 author = "Patrick Dehn"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "CMMN", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "CMMN", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2016-10-24T16:00:00+01:00"
 title = "Camunda Modeler 1.4 Released"
 +++

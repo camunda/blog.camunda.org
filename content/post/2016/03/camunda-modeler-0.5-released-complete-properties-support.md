@@ -1,7 +1,7 @@
 +++
 author = "Nico Rehwaldt"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2016-03-08T15:00:00+01:00"
 title = "Camunda Modeler v0.5.0 released"
 +++

@@ -1,7 +1,7 @@
 +++
 author = "Maciej Barelkowski"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2019-07-22T16:00:00+02:00"
 title = "Camunda Modeler 3.2.0 Released"
 +++

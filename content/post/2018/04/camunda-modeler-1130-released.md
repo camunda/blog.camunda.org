@@ -1,7 +1,7 @@
 +++
 author = "Philipp Fromme"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2018-04-12T20:00:00+01:00"
 title = "Camunda Modeler 1.13.0 Released"
 +++
@@ -47,7 +47,7 @@ This release also ships with the latest BPMN, DMN and CMMN modeling. This means 
 
 * dots in XML attribute names are handled correctly
 
-* reserved entities in body properties are now encoded instead of being escaped using CDATA 
+* reserved entities in body properties are now encoded instead of being escaped using CDATA
 
 {{< figure class="teaser no-border" src="no-inputs.gif" alt="DMN decision table inputs can be removed" caption="DMN decision table inputs can be removed" >}}
 

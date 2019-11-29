@@ -2,7 +2,7 @@
 author = "Ricardo Matias"
 categories = ["Modeling"]
 date = "2016-02-01T15:00:57+01:00"
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 title = "Camunda Modeler v0.4.0 released"
 
 +++

@@ -1,7 +1,7 @@
 +++
 author = "Philipp Fromme"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2018-03-27T20:00:00+01:00"
 title = "Camunda Modeler 1.12.0 Released"
 +++
@@ -26,7 +26,7 @@ Copying, cutting and pasting elements is standard functionality in most tools. T
 
 ## Improved Visibility
 
-We've changed a few things in order to improve the visibility of certain information. Setting a label for an input or output now hides the expression behind it. A set variable name will now always be visible which is especially helpful if you want to refer to this variable later on. Furthermore, non-default expression languages now will be indicated through a badge. 
+We've changed a few things in order to improve the visibility of certain information. Setting a label for an input or output now hides the expression behind it. A set variable name will now always be visible which is especially helpful if you want to refer to this variable later on. Furthermore, non-default expression languages now will be indicated through a badge.
 
 {{< figure class="teaser no-border" src="visibility.gif" alt="Complex expressions can be hidden behind labels" caption="Complex expressions can be hidden behind labels" >}}
 

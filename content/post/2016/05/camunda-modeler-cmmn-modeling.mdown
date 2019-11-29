@@ -2,7 +2,7 @@
 author = "Patrick Dehn"
 categories = ["Modeling"]
 date = "2016-05-24T13:59:00+02:00"
-tags = ["CMMN"]
+tags = ["CMMN", "Camunda Modeler", "Release Note"]
 title = "Model CMMN with the Camunda Modeler"
 +++
 
