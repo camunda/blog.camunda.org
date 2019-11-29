@@ -51,7 +51,7 @@ And you can take a look at this dialog any time you like. In the header, just cl
 
 We'll release the minor **Camunda Optimize 2.7** at the end of 2019. Stay tuned.
 
-Feel free to go ahead and sign up for [our release webinar](https://camunda.com/learn/webinars/), which will take place in January.
+Within the next few days, you'll be able to sign up the [Optimize 2.7 release webinar](https://camunda.com/learn/webinars/), which will take place in January.
 
 # How to get it
 
