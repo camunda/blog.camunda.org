@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2019-11-29T08:00:00+02:00"
+date = "2019-11-29T11:00:00+01:00"
 title = "Camunda BPM 7.12.0 Released"
 
 +++
@@ -30,10 +30,10 @@ You can [download Camunda 7.12.0 for free](https://camunda.com/download/) or [ru
 
 Also included in the release:
 
-* [Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) 3.4.0, which relies on Spring Boot 2.2.1
+* [Spring Boot Starter](https://github.com/camunda/camunda-bpm-spring-boot-starter) 3.4.0, which relies on Spring Boot 2.2.1 by default
 * [Assert](https://github.com/camunda/camunda-bpm-assert) 5.0.0 for convenient testing of processes in Java
-* [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) version 1.3.0 for JavaScript developers
-* [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) version 1.3.0, which can be embedded in Java applications
+* [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) 1.3.0 for JavaScript developers
+* [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) 1.3.0, which can be embedded in Java applications
 
 <!-- TODO: Make visible
 You can read all about these releases in the dedicated [blog post](/post/2019/12/ext-task-clients-130-spring-boot-starter-340-assert-500).
@@ -53,11 +53,11 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 Camunda BPM 7.12.0 includes significant improvements around BPMN process execution.
 
-You can model all the features mentioned below with the latest version of [Camunda Modeler 3.5.0](https://camunda.com/download/modeler/).
+You can model all the features mentioned below with the version 3.5.0 of [Camunda Modeler](https://camunda.com/download/modeler/).
 
 ### Trigger BPMN Errors and Escalations from User Tasks
 
-In some cases, a human task worker cannot complete an assigned task–for instance, because an unforeseen error 
+In some cases, a human task worker cannot complete an assigned task – for instance, because an unforeseen error 
 occurs, or a decision needs to be escalated.
 
 Starting in 7.12, it's possible to trigger BPMN Error and Escalation events from user tasks via the Java or REST APIs. 
@@ -110,7 +110,7 @@ You can configure the Listener in Camunda Modeler as follows:
 
 {{< figure class="teaser no-border" src="timeout-listener-process.gif">}}
 
-Read on:
+You can read more here:
 
 * [Defining a Task Listener](https://docs.camunda.org/manual/7.12/user-guide/process-engine/delegation-code/#defining-a-task-listener)
 * [BPMN Extension Elements](https://docs.camunda.org/manual/7.12/reference/bpmn20/custom-extensions/extension-elements/#tasklistener)
@@ -149,9 +149,9 @@ You can read more here:
 This release introduces powerful features to improve operations such as annotating 
 operation logs with comments or contextual logging for processes.
 
-### Annotate Operations Logs with Comments
+### Annotate Operation Logs with Comments
 
-Operations logs are helpful for auditing manual operations. However, the logged technical 
+Operation logs are helpful for auditing manual operations. However, the logged technical 
 information might be not enough to understand the specific reason that an operator 
 performed a specific operation.
 
@@ -263,7 +263,7 @@ Camunda BPM 7.12.0 introduces support for new environments:
 * Ready-to-use Docker Images that are based on OpenJDK 11 (LTS)
 * Support for WildFly Application Server 17 and 18
 
-Read on:
+You can read more here:
 
 * [List of Supported Environments](https://docs.camunda.org/manual/7.12/introduction/supported-environments/)
 
@@ -273,9 +273,7 @@ Camunda BPM 7.12.0 discontinues support for older versions of legacy application
 Additionally, Java 7 is no longer supported. 
 
 Dropping support of legacy environments enables us to support new technologies and provide a secure product. 
-For more details, please read about the changes in supported environments:
-
-* [Changes in Supported Environments](http://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-12)
+For more details, please read about the [Changes in Supported Environments](http://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-12).
 
 
 <!-- FEATURES EXPLANATIONS END -->
