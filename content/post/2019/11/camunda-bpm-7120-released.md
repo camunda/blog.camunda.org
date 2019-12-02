@@ -35,9 +35,7 @@ Also included in the release:
 * [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) 1.3.0 for JavaScript developers
 * [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) 1.3.0, which can be embedded in Java applications
 
-<!-- TODO: Make visible
 You can read all about these releases in the dedicated [blog post](/post/2019/12/ext-task-clients-130-spring-boot-starter-340-assert-500).
--->
 
 <!--more-->
 
