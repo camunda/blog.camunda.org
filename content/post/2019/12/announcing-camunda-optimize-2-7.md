@@ -2,7 +2,7 @@
 author = "Mike Winters"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2019-12-19T09:00:00+01:00"
+date = "2019-12-20T09:00:00+01:00"
 title = "Announcing Camunda Optimze 2.7.0"
 +++
 
