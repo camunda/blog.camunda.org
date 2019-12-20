@@ -87,7 +87,7 @@ Next, we’ll create a new report inside of this Collection. As you can see, **w
 
 This allows us to keep the Collection clean and focused on the entities it was intended for.
 
-Please be aware that for each newly created Collection, there is no Data Source defined by default. Thus, you can only select a process definition in a Report if you have added already added the respective Data Source to the Collection.
+Please be aware that for each newly created Collection, there is no Data Source defined by default. Thus, you can only select a process definition in a Report if you have already added the respective Data Source to the Collection.
 
 ### Getting Started and Next Steps
 
