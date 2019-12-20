@@ -20,7 +20,7 @@ You can also use [Docker to run Camunda Optimize](https://docs.camunda.org/optim
 
 And if you’re not yet a Camunda customer, [you can sign up here](https://camunda.com/download/enterprise/) for a free 30-day trial of the Camunda Enterprise Platform, which includes Camunda Optimize.
 
-In the rest of this post, we’ll highlight some of the new capabilities introduced in Optimize 2.7.
+In the rest of this post, we’ll highlight some of the [new capabilities introduced in Optimize 2.7](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15513).
 
 
 ### Faster Insights into the Live State of your Business
