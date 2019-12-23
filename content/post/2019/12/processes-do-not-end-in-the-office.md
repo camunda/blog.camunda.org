@@ -1,6 +1,6 @@
 +++
 author = "Björn Richerzhagen"
-categories = ["Camunda Optimize"]
+categories = ["Community"]
 tags = ["Community"]
 date = "2019-12-23T09:00:00+01:00"
 title = "Ubiquitous Process Management for Industry 4.0 - Processes do not end in the Office"
