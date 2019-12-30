@@ -89,9 +89,9 @@ What is life at Camunda if not fun? We’ve had an absolute blast this year.
 
 We grew by over 70% and welcomed countless new Camundos across a variety of roles. We now hail from 31 different nationalities, working distributed across the entire world, from Australia and the US, to Singapore, the UK and Germany.
 
-Our annual hackdays saw some of the greatest Camunda hacks yet, from the Jenkins Traffic Light to the Camunda Playground. You can read Niall’s musing on our hackdays in these two blogs:<br>
+Our annual hackdays saw some of the greatest Camunda hacks yet, from the Jenkins Traffic Light to the Camunda Playground. You can read Niall’s musing on our hackdays in these two blogs:
 [https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-partone/](https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-partone/
-)<br>
+)
 [https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-parttwo/](https://blog.camunda.com/post/2019/08/camunda-hackdays-2019-parttwo/)
 
 {{< figure src="TrafficLight.png" alt="Traffic light project" >}}
