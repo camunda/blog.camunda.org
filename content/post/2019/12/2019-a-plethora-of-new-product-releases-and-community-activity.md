@@ -10,7 +10,7 @@ title = "2019: A Plethora of new Product Releases and Community Activity"
 
 {{< figure src="EscalationAle.png" alt="Escalation Ale" >}}
 
-At Camunda, we’re all about continuous improvement. We love talking to our customers and user community to understand how our products can even better solve their process automation problems. In that spirit, we released two new versions of our Camunda BPM platform that included a lot of community driven enhancements. The most recent release, 7.12, made its debut right on schedule at the end of November. And just this week, we released our fourth Optimize update of 2019, with 2.7 now ready and available to deliver deep process insights. 
+At Camunda, we’re all about continuous improvement. We love talking to our customers and user community to understand how our products can even better solve their process automation problems. In that spirit, we released two new versions of our Camunda BPM platform that included a lot of community driven enhancements. The most recent release, 7.12, made its debut right on schedule at the end of November. And just this week, we released our fourth Optimize update of 2019, with 2.7 now ready and available to deliver deep process insights.
 
 Alongside, we’ve released some very special products this year.
 
