@@ -65,7 +65,7 @@ Gartner defines an iBPMS as a type of high-productivity (low-code/no-code) appli
 
 ### Real-Life BPMN
 
-This year was a busy one for our chief technologist, Bernd - not only did he speak at more than 40 conferences on a mission to help developers tackle microservices orchestration, he updated the popular handbook: _[Real-Life BPMN]_(https://www.amazon.de/Real-Life-BPMN-4th-introduction-DMN/dp/1086302095/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=bernd+r%C3%BCcker&qid=1576510106&s=books&sr=1-5).
+This year was a busy one for our chief technologist, Bernd - not only did he speak at more than 40 conferences on a mission to help developers tackle microservices orchestration, he updated the popular handbook: [Real-Life BPMN](https://www.amazon.de/Real-Life-BPMN-4th-introduction-DMN/dp/1086302095/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=bernd+r%C3%BCcker&qid=1576510106&s=books&sr=1-5).
 
 We’ve been pleasantly surprised by just how fast the fourth English edition has flown off the shelves and more than 900 of you joined Bernd and Jakob in an October [webinar](https://camunda.com/learn/webinars/real-life-bpmn/) to learn more about the growing trend of microservice architectures and how we’re covering these in our handbook.
 
