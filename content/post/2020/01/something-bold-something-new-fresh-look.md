@@ -8,7 +8,7 @@ title = "Something Bold, Something New - introducing our freshly updated look!"
 
 You've probably noticed something different about us today, something bright, bold and yes, maybe it will turn some heads...
 
-{{< figure src="camunda-logo-new.png" alt="Camunda logo" >}}
+{{< figure src="camunda-logo-new.png" alt="Camunda" >}}
 
 You know that at Camunda, we’re anything but boring. So today, we’re thrilled to introduce our updated logo and color palette with fresh, fun, new colors.
 
@@ -23,4 +23,4 @@ Now, you’ll just be able to spot us more easily in brighter T-shirts!
 Look out for our new swag, including holographic Camunda stickers for your laptop, at our dedicated Camunda events and wherever our fantastic developers are speaking: [https://camunda.com/events/](https://camunda.com/events/)
 Or if you can’t wait to get your hands on it - we’ll send some to you! Simply contact us: [https://camunda.com/contact/](https://camunda.com/contact/)
 
-{{< figure src="animated-camunda.gif" alt="Camunda logo" >}}
+{{< figure src="camunda-animated-logo.gif" alt="Camunda animation" >}}
