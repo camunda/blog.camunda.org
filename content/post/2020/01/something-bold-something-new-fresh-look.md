@@ -10,7 +10,7 @@ You've probably noticed something different about us today, something bright, bo
 
 You know that at Camunda, we’re anything but boring. So today, we’re thrilled to introduce our updated logo and color palette with fresh, fun, new colors.
 
-{{< figure src="Social-Media-Favicon.jpg" alt="Camunda" >}}
+{{< figure src="Social-Media-Fav.png" alt="Camunda" >}}
 
 We’ve been proudly using our ‘Camunda Cogs’ logo for many years, but it’s time to shake things up with an updated logo and visual identity that better represents our company and offerings today.
 
