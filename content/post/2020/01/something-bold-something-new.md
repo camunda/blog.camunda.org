@@ -2,7 +2,7 @@
 author = "Gottfried Sehringer"
 categories = ["Community"]
 tags = ["Community"]
-date = "2020-01-22T09:00:00+01:00"
+date = "2020-01-22T09:30:00+01:00"
 title = "Something Bold, Something New - introducing our freshly updated look!"
 +++
 
