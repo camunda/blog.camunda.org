@@ -9,8 +9,8 @@ title = "Camunda BPM 7.13.0-alpha1 Released"
 **Camunda BPM 7.13.0-alpha1** is here and the highlights are:
 
 * Feat 1
-* Feat 2
-* Feat 3
+* Show Failed Activity in Jobs & Incidents
+* Oracle 19c Support
 * [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha1)
 
 
@@ -27,13 +27,23 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 
 Your text here...
 
-## Feat 2
+## Show Failed Activity in Jobs & Incidents
 
-Your text here...
+Quick discovery of exception root causes can be key to a frictionless operation of processes. Among other tools, Camunda provides job logs and incidents to easily gain insights into failures and their causes. For specific scenarios this can however be harder to achieve than desired. Take the following example:
 
-## Feat 3
+1. A process has two tasks `foo` and `bar`.
+2. Task `foo` is marked as `asyncBefore`.
+3. The execution of task `bar` fails.
 
-Your text here...
+In that case, the job and its job log will only show the failure's stacktrace and the id of task `foo` as the related activity of the asynchronous continuation job. However, identifying the actually failing task `bar` as the root cause here is a rather manual task that might for example involve further investigations of server log statements.
+
+With this release, runtime and history data for jobs and incidents will additionally provide the id of the activity that caused the failure. With this, the root cause of a failure will be more accessible and also digestible as structured information.
+
+You can find the new `lastFailingActivityId` in numerous REST request results as shown in the [Get Jobs](https://docs.camunda.org/manual/latest/reference/rest/job/get-query/#result) and the [Get Historic Incidents](https://stage.docs.camunda.org/manual/latest/reference/rest/history/incident/get-incident-query/#result) endpoints.
+
+## Oracle 19c Support
+
+Starting with this alpha, Camunda is officially supported to run on Oracle 19c.
 
 ## What's Next?
 
