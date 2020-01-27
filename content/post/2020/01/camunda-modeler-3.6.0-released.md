@@ -6,7 +6,7 @@ date = "2020-01-27T10:00:00+02:00"
 title = "Camunda Modeler 3.6 Released"
 +++
 
-We are happy to announce the Camunda Modeler v3.6.0 release. Along numerous minor improvements it ships a new feature to start process instances right from the app and a brand new updates notification mechanism.
+We are happy to announce the Camunda Modeler v3.6.0 release. Along numerous minor improvements it ships a new feature to start process instances right from the app. A brand new updates notification mechanism ensures you won't ever miss an update again.
 
 [Download the latest release](https://camunda.com/download/modeler/) and start modeling.
 
