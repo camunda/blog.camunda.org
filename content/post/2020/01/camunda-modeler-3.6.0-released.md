@@ -2,7 +2,7 @@
 author = "Niklas Kiefer"
 categories = ["Modeling"]
 tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
-date = "2020-01-27T12:00:00+02:00"
+date = "2020-01-27T10:00:00+02:00"
 title = "Camunda Modeler 3.6 Released"
 +++
 
