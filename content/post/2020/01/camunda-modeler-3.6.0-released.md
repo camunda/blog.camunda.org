@@ -6,7 +6,7 @@ date = "2020-01-27T12:00:00+02:00"
 title = "Camunda Modeler 3.6 Released"
 +++
 
-We are happy to announce the release of Camunda Modeler v3.6.0. It comes along with a new feature to start process instances right from the app and a brand new updates notification mechanism.
+We are happy to announce the Camunda Modeler v3.6.0 release. Along numerous minor improvements it ships a new feature to start process instances right from the app and a brand new updates notification mechanism.
 
 [Download the latest release](https://camunda.com/download/modeler/) and start modeling.
 
@@ -26,7 +26,7 @@ After executing once, no configuration is needed anymore for this diagram by def
 
 {{< figure class="no-border teaser" src="start-instance-directly.gif" alt="Start process instance directly" caption="Start process instance directly" >}}
 
-We believe this will help developers a lot to implement executable processes in the Modeler end to end. We'd love you to check it out and hear some feedback in [our forum](https://forum.camunda.org/c/modeler).
+We believe this will help developers a lot to implement executable processes in the Modeler end to end. Check it out and give us feedback in [our forum](https://forum.camunda.org/c/modeler).
 
 ## Get New Versions Notifications
 
@@ -38,11 +38,11 @@ When we release a new version, you'll see a notification like this:
 
 Note that you can always disable this feature if you don't need such functionality by going to `Help > Privacy Preferences` and uncheck the `Enable Update Checks` option.
 
-We'd love to hear what you think about this feature in [our forum](https://forum.camunda.org/c/modeler).
+Wait for future updates to come in and tell us what you think about this feature in [our forum](https://forum.camunda.org/c/modeler).
 
 ## BPMN
 
-This release comes with a couple of bug fixes and improvements to the BPMN modeling experience. For more details, check out the [changelog](https://github.com/camunda/camunda-modeler/blob/develop/CHANGELOG.md#360).
+This release includes numerous bug fixes and improvements to the BPMN modeling experience. For more details, check out the [changelog](https://github.com/camunda/camunda-modeler/blob/develop/CHANGELOG.md#360).
 
 {{< figure class="no-border teaser" src="copy-paste-loops.gif" alt="Copy and paste loops" caption="We added a couple of copy and paste improvements" >}}
 
