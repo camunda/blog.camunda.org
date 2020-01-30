@@ -49,26 +49,23 @@ One piece of functionality that was missing was the selection of instances that 
 
 We have added this functionality by reworking the Date Filter for Start and End Date of Process Instances completely.
 
-This means you can now select all the process instances that have been started last quarter by just two clicks.
-
 ## Fixed Period
 
-Example: Show me all process instances start have been started in January 2020.
+Example: Show me all process instances that have been started in January 2020.
 
 {{< figure src="date-filter-fixed.png" alt="Camunda" >}}
 
 ## Rolling Period
 
-Example: Show me all process instances that have been started this month.
-
-{{< figure src="date-filter-rolling.png" alt="Camunda" >}}
-
-## Relative Period
-
 Example: Show me all process instances that have been started in the past 30 days.
 
-{{< figure src="date-filter-relative.png" alt="Camunda" >}}
+{{< figure src="date-filter-rolling2.png" alt="Camunda" >}}
 
+## New Relative Period
+
+Example: Show me all process instances that have been started this month.
+
+{{< figure src="date-filter-new-relative.png" alt="Camunda" >}}
 
 
 # Support for Elasticsearch 7
@@ -80,6 +77,8 @@ If you are currently running Optimize in production, it is possible to easily up
 # What's Next?
 
 We'll release the next alpha of **Camunda Optimize 3.0** end of February 2020. Stay tuned.
+
+A smooth update from Camunda Optimize 2.7 to Optimize 3.0 will be possible. Along with the release we will publish a dedicated update guide.
 
 # How to get it
 
