@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2020-01-30T00:00:00+00:00"
+date = "2020-01-31T00:00:00+00:00"
 title = "Camunda Optimize 3.0.0-alpha1 Released"
 +++
 
