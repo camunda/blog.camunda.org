@@ -16,7 +16,7 @@ In this release, we focused on:
 - Enhanced Date Filters
 - Support for Elasticsearch 7
 
-The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=XXX) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15695) are available in Jira.
 
 <!--more-->
 
