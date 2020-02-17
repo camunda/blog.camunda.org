@@ -9,7 +9,7 @@ CamundaCon is back and better than ever before! For the first time ever, we’re
 
 <!--more-->
 
-{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_1.jpg" alt="CamundaConNYC" >}}
+{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-new-york/20190912_1.jpg" alt="CamundaConNYC" >}}
 
 [CamundaCon](https://www.camundacon.com/) brings together developers, architects and IT executives from all over the world, to learn more about workflow and decision automation. Following a completely sold out CamundaCon Berlin in 2019, we’ve decided to hold two CamundaCon events this year, to make it easier for our global community to connect, share ideas and best practices and discuss their requirements directly with Camunda engineers.
 
@@ -25,7 +25,7 @@ Early Bird Tickets are available until February 29th - [so register soon](https:
 
 For an idea of what to expect, check out our CamundaCon 2019 [recap video](https://www.youtube.com/playlist?list=PLJG25HlmvsOUIYnclbT4ZTuCcwOhvJBXC&utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt)[presentations] and [slides](https://www.slideshare.net/camunda/presentations?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt). Plus, you can keep up to date with the action ahead of CamundaCon New York on our (https://camunda.com/events/camundacon/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [website] and [social channels] [Twitter],(https://twitter.com/Camunda?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [Facebook](https://www.facebook.com/CamundaBPM/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) and [LinkedIn](https://www.linkedin.com/company/camunda-services-gmbh/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) 
 
-{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_2.jpg" alt="CamundaConNYC" >}}
+{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-new-york/20190912_2.jpg" alt="CamundaConNYC" >}}
 
-{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_3.jpg" alt="CamundaConNYC" >}}
+{{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-new-york/20190912_3.jpg" alt="CamundaConNYC" >}}
 
