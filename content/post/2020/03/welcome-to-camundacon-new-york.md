@@ -15,9 +15,9 @@ CamundaCon is back and better than ever before! For the first time ever, we’re
 
 CamundaCon NYC will feature a stellar lineup of experienced Camunda users who’ll share genuine and insightful case studies based on their own implementation experiences, including:
 
-*Future X Networks with Camunda: Nokia Bell Labs Showcase with Kris Barczynski, Lead Java Engineer at Nokia Bell Labs
-*Process Automation Reimagined at Capital One with Senior Software Engineering Manager Muthukumar Vaidhianathan
-*Three Products – One Microservice Ecosystem - Cox Automotive with Senior Software Engineer Mary Rose Matira
+* Future X Networks with Camunda: Nokia Bell Labs Showcase with Kris Barczynski, Lead Java Engineer at Nokia Bell Labs
+* Process Automation Reimagined at Capital One with Senior Software Engineering Manager Muthukumar Vaidhianathan
+* Three Products – One Microservice Ecosystem - Cox Automotive with Senior Software Engineer Mary Rose Matira
 
 In addition, Camunda engineers and consultants will run a series of tech talks and demonstrations, so you can gather inspiration for your next project.
 
