@@ -2,7 +2,7 @@
 author = "Charley Mann"
 categories = ["Community"]
 tags = ["camundacon"]
-date = "2020-03-17T09:30:00+01:00"
+date = "2020-02-17T09:30:00+01:00"
 title = "Welcome to CamundaCon New York"
 +++
 CamundaCon is back and better than ever before! For the first time ever, we’re bringing the Berlin action across the Atlantic to New York City.
@@ -23,9 +23,8 @@ In addition, Camunda engineers and consultants will run a series of tech talks a
 
 Early Bird Tickets are available until February 29th - [so register soon](https://www.camundacon.com/)
 
-For an idea of what to expect, check out our CamundaCon 2019 [recap video](https://www.youtube.com/playlist?list=PLJG25HlmvsOUIYnclbT4ZTuCcwOhvJBXC&utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt)[presentations] and [slides](https://www.slideshare.net/camunda/presentations?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt). Plus, you can keep up to date with the action ahead of CamundaCon New York on our (https://camunda.com/events/camundacon/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [website] and [social channels] [Twitter],(https://twitter.com/Camunda?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [Facebook](https://www.facebook.com/CamundaBPM/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) and [LinkedIn](https://www.linkedin.com/company/camunda-services-gmbh/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) 
+For an idea of what to expect, check out our CamundaCon 2019 [recap video](https://www.youtube.com/playlist?list=PLJG25HlmvsOUIYnclbT4ZTuCcwOhvJBXC&utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt)[presentations] and [slides](https://www.slideshare.net/camunda/presentations?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt). Plus, you can keep up to date with the action ahead of CamundaCon New York on our (https://camunda.com/events/camundacon/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [website] and [social channels] [Twitter],(https://twitter.com/Camunda?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) [Facebook](https://www.facebook.com/CamundaBPM/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt) and [LinkedIn](https://www.linkedin.com/company/camunda-services-gmbh/?utm_campaign=2019%2F09%20-%20CamundaCon%20Berlin&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz--6FUHu5LEJPCGveb0wWuJWEx4kLnhUXA80z3PzvwY5d8hFfEmlRLp0LylrnIakbV73A0Yt)
 
 {{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_2.jpg" alt="CamundaConNYC" >}}
 
 {{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_3.jpg" alt="CamundaConNYC" >}}
-
