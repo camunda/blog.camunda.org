@@ -7,6 +7,8 @@ title = "Welcome to CamundaCon New York"
 +++
 CamundaCon is back and better than ever before! For the first time ever, we’re bringing the Berlin action across the Atlantic to New York City.
 
+<!--more-->
+
 {{< figure src="https://blog.camunda.com/post/2020/03/welcome-to-camundacon-nyc/20190912_1.jpg" alt="CamundaConNYC" >}}
 
 [CamundaCon](https://www.camundacon.com/) brings together developers, architects and IT executives from all over the world, to learn more about workflow and decision automation. Following a completely sold out CamundaCon Berlin in 2019, we’ve decided to hold two CamundaCon events this year, to make it easier for our global community to connect, share ideas and best practices and discuss their requirements directly with Camunda engineers.
