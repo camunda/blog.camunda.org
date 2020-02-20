@@ -2,7 +2,7 @@
 author = "Bernd Ruecker"
 categories = ["Community"]
 tags = ["microservices"]
-date = "2020-02-20T06wq:30:00+01:00"
+date = "2020-02-20T06:30:00+01:00"
 title = "The Microservices Workflow Automation Cheat Sheet"
 +++
 
@@ -10,9 +10,7 @@ We recently shared [3 Common Pitfalls in Microservice Integration - and how to a
 
 <!--more-->
 
-## Scope and boundaries - 
-what workflow do you want to automate and how is this mapped to multiple microservices or bounded contexts in your landscape?
-
+* <strong>Scope and boundaries </strong> - what workflow do you want to automate and how is this mapped to multiple microservices or bounded contexts in your landscape?
 * Stack and tooling - what kind of workflow engine can I use?
 * Architecture** - do I run a workflow engine centralized or decentralized?
 * Governance - who owns the workflow model and how does it get deployed?
