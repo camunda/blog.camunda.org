@@ -2,7 +2,7 @@
 author = "Bernd Ruecker"
 categories = ["Community"]
 tags = ["microservices"]
-date = "2020-02-20T06:30:00+01:00"
+date = "2020-02-20T06wq:30:00+01:00"
 title = "The Microservices Workflow Automation Cheat Sheet"
 +++
 
@@ -69,5 +69,5 @@ In our next blog, we’ll discuss the role of the **workflow engine** and provid
 
 This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet-fc0a80dc25aa)  - check it out if you want to dive even deeper into microservices!
 
-[![Webinar](https://blog.camunda.com/post/2020/02/microservices-workflow-automation-cheat-sheet/Email_Webinar-600.jpg" “Microservices Webinar”)](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)
+[![Register for the Webinar](https://blog.camunda.com/post/2020/02/microservices-workflow-automation-cheat-sheet/webinar.jpg" “Microservices Webinar”)](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)
 
