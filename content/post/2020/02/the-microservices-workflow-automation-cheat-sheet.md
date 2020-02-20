@@ -10,11 +10,11 @@ We recently shared [3 Common Pitfalls in Microservice Integration - and how to a
 
 <!--more-->
 
-* <strong>Scope and boundaries </strong> - what workflow do you want to automate and how is this mapped to multiple microservices or bounded contexts in your landscape?
+* Scope and boundaries - what workflow do you want to automate and how is this mapped to multiple microservices or bounded contexts in your landscape?
 * Stack and tooling - what kind of workflow engine can I use?
-* Architecture** - do I run a workflow engine centralized or decentralized?
+* Architecture - do I run a workflow engine centralized or decentralized?
 * Governance - who owns the workflow model and how does it get deployed?
-* Operations** - how do I stay in control?
+* Operations - how do I stay in control?
 
 In this four-part blog series, I’ll tackle the most common questions we get asked by our users and provide guidance on the core architecture decisions you’ll have to make. I’ll give simplified answers to help you get started and orientated on this complex topic.
 
