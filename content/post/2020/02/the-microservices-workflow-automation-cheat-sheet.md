@@ -6,7 +6,7 @@ date = "2020-02-20T06:30:00+01:00"
 title = "The Microservices Workflow Automation Cheat Sheet"
 +++
 
-We recently shared [3 Common Pitfalls in Microservice Integration - and how to avoid them](https://camunda.com/learn/whitepapers/3-common-pitfalls/) and lots of you wanted more. So this four-part blog series takes us one step back to the things you’ll be considering before migrating to a microservices architecture and applying workflow automation. You’ll have a lot of questions, right? Questions ike:
+We recently shared [3 Common Pitfalls in Microservice Integration - and how to avoid them](https://camunda.com/learn/whitepapers/3-common-pitfalls/) and lots of you wanted more. So this four-part blog series takes us one step back to the things you’ll be considering before migrating to a microservices architecture and applying workflow automation. You’ll have a lot of questions, right? Questions like:
 
 <!--more-->
 
