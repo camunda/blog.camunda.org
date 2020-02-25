@@ -3,8 +3,7 @@ author = "DevRels Team"
 categories = ["Community"]
 tags = ["Event-driven-architecture"]
 date = "2020-02-25T09:30:00+01:00"
-title = "Camunda’s Chief Technologist Bernd Rücker to Discuss Pitfalls of Event-Driven Architectures at O’Reilly and QCon
-"
+title = "Camunda’s Chief Technologist Bernd Rücker to Discuss Pitfalls of Event-Driven Architectures at O’Reilly and QCon"
 +++
 
 Our Chief Technologist and Co-Founder Bernd Rücker is speaking at two leading tech conferences in the next few weeks: [O'Reilly Software Architecture](https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/speakers) at New York City on February 26 and [QCon London](https://qconlondon.com/london2020/speakers/bernd-ruecker) March 3. 
