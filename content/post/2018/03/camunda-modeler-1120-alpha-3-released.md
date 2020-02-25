@@ -1,7 +1,7 @@
 +++
 author = "Philipp Fromme"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "DMN 1.1", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2018-03-01T20:00:00+01:00"
 title = "Camunda Modeler 1.12.0-alpha-3 Released"
 +++
@@ -24,13 +24,13 @@ Editing input expressions has also been improved. As of this release you don't h
 
 Deploying manually modeled diagrams to a Camunda BPM engine can sometimes be inconvenient, especially when you try to change the model and redeploy several times.
 
-You can now deploy BPMN, DMN and CMMN diagrams directly from the modeler. 
+You can now deploy BPMN, DMN and CMMN diagrams directly from the modeler.
 
 To do so, you must first have a configured deployment endpoint.
 
 {{< figure class="teaser no-border" src="deployment-endpoint-configuration.gif" alt="Configuring a deployment endpoint" caption="Configuring a deployment endpoint" >}}
 
-To deploy the current diagram, simply click the deploy icon in the menu bar and choose `Deploy Current Diagram`. 
+To deploy the current diagram, simply click the deploy icon in the menu bar and choose `Deploy Current Diagram`.
 
 {{< figure class="teaser no-border" src="deployment-configuration.gif" alt="Configuring a deployment endpoint" caption="Configuring a deployment endpoint" >}}
 

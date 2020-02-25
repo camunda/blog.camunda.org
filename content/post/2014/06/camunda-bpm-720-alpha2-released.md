@@ -26,7 +26,7 @@ The highlights of this release are:
 <li>Simple SOAP Http Connector</li>
 </ul>
 <div>
-See <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13296">complete release notes in Jira</a>.</div>
+See <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13296">complete release notes in Jira</a>.</div>
 <div>
 
 </div>

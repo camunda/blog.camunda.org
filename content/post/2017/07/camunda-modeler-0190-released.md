@@ -1,7 +1,7 @@
 +++
 author = "Patrick Dehn"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2017-08-01T20:00:00+01:00"
 title = "Camunda Modeler 1.9.0 Released"
 +++
@@ -35,7 +35,7 @@ Learn more about [history cleanup](https://docs.camunda.org/manual/latest/user-g
 
 ## Other Improvements
 
-* Pasting a elements many times after copying is now possible 
+* Pasting a elements many times after copying is now possible
 * Processes are now executable by default
 * Dropping files from other applications is now possible
 * Fixes regarding detection of file changes, reopening tabs that weren't saved

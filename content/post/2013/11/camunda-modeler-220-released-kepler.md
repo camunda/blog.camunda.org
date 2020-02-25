@@ -5,7 +5,8 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
@@ -89,7 +90,7 @@ To help mitigating common modeling errors we added further checks to the Modeler
 <div>
 <br /></div>
 <div>
-<span style="line-height: 15.453125px;">Check out the&nbsp;</span><a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13001">all closed issues</a>&nbsp;for a complete list of changes.</div>
+<span style="line-height: 15.453125px;">Check out the&nbsp;</span><a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13001">all closed issues</a>&nbsp;for a complete list of changes.</div>
 <div>
 </div>
 <h3>

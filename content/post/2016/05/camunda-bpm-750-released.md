@@ -24,7 +24,7 @@ Register for release webinars held in [English language](https://network.camunda
 
 Read the [update guide](https://docs.camunda.org/manual/7.5/update/minor/74-to-75/) to learn how to update an existing installation or application.
 
-See our JIRA for a [list of known issues](https://app.camunda.com/jira/issues/?jql=project%20%3D%20%22camunda%20BPM%22%20and%20affectedVersion%20%3D%207.5.0) and the section at the end of this post on issues that we are fixing in the near future.
+See our JIRA for a [list of known issues](https://jira.camunda.com/issues/?jql=project%20%3D%20%22camunda%20BPM%22%20and%20affectedVersion%20%3D%207.5.0) and the section at the end of this post on issues that we are fixing in the near future.
 
 <!--more-->
 
@@ -124,12 +124,12 @@ We add the following application servers to the list of supported environments:
 * [Per-Process-Application Configuration of Object Variable Serialization](https://docs.camunda.org/manual/7.5/user-guide/data-formats/data-formats-in-processes/#extending-serialization)
 * 186 bugfixes
 
-Read the [release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14091) for a complete list of features.
+Read the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14091) for a complete list of features.
 
 
 # Known Issues
 
-Camunda 7.5.0 has a regression with the REST API resource for message correlation (see ticket [CAM-6139](https://app.camunda.com/jira/browse/CAM-6139)). We will release Camunda 7.6.0-alpha1 with a bug fix in the near future.
+Camunda 7.5.0 has a regression with the REST API resource for message correlation (see ticket [CAM-6139](https://jira.camunda.com/browse/CAM-6139)). We will release Camunda 7.6.0-alpha1 with a bug fix in the near future.
 
 
 # What Do You Think?

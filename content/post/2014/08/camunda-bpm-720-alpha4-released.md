@@ -24,7 +24,7 @@ Today we release the next alpha release of camunda BPM platform. The highlights 
 <li>Simple REST HTTP Connector</li>
 </ul>
 <div>
-See <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13490" target="_blank">complete release notes in Jira.</a></div>
+See <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13490" target="_blank">complete release notes in Jira.</a></div>
 <div>
 <br /></div>
 <div style="text-align: center;">

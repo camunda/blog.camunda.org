@@ -5,7 +5,8 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
@@ -44,7 +45,7 @@ Other things worth noting include<br />
 <br />
 We also fixed some crucial bugs, reworked the layouting of participants and the resize behavior of pools, lanes and subprocesses.<br />
 <br />
-For details refer to the <a href="https://app.camunda.com/jira/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=fixVersion+%3D+%22modeler+2.0.12%22&amp;runQuery=true&amp;clear=true" target="_blank">issues closed in this release</a>&nbsp;or check our&nbsp;<a href="https://github.com/camunda/camunda-modeler/blob/kepler/CHANGELOG.md" target="_blank">detailed technical changelog</a>.<br />
+For details refer to the <a href="https://jira.camunda.com/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=fixVersion+%3D+%22modeler+2.0.12%22&amp;runQuery=true&amp;clear=true" target="_blank">issues closed in this release</a>&nbsp;or check our&nbsp;<a href="https://github.com/camunda/camunda-modeler/blob/kepler/CHANGELOG.md" target="_blank">detailed technical changelog</a>.<br />
 <br />
 As always, <a href="http://camunda.org/download/modeler/" target="_blank">upgrade your modeler</a> installation and tell us what you think!<br />
 <br /></div>

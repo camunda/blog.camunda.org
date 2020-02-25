@@ -2,7 +2,7 @@
 author = "Robert Gimbel"
 categories = ["Execution, Modelling"]
 date = "2015-11-30T10:00:00+01:00"
-tags = ["Release Note", "Tooling"]
+tags = ["Release Note", "Tooling", "Camunda Modeler Eclipse Plug-in"]
 title = "Camunda Eclipse Plugin 3.0.0 Released"
 
 +++

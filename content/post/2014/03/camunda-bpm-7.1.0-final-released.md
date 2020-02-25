@@ -30,7 +30,7 @@ This blog post contains a more detailed feature overview below. The release is n
 <div style="text-align: center;">
 <br /></div>
 <div style="text-align: left;">
-All in all, 320 issues were closed. See the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=12891">complete release notes in Jira</a>.<br />
+All in all, 320 issues were closed. See the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=12891">complete release notes in Jira</a>.<br />
 <a name='more'></a></div>
 <h3>
 Enterprise support&nbsp;</h3>

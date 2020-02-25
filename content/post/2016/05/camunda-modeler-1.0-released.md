@@ -1,7 +1,7 @@
 +++
 author = "Vladimirs Katusenoks"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2016-05-24T14:00:00+02:00"
 title = "Camunda Modeler 1.0 released"
 

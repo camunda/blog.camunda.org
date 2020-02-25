@@ -5,7 +5,8 @@ author: "Nico Rehwaldt"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
@@ -52,7 +53,7 @@ We fixed a number of bugs, too, including the sudden popup of error markers on B
 <div>
 <br /></div>
 <div>
-Checkout the complete list of issues <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13003">solved in this release</a>. And of course, <a href="http://camunda.org/download/modeler/">try out the new modeler</a>&nbsp;and tell us what you thing via&nbsp;<a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">our forums</a>&nbsp;or&nbsp;on&nbsp;<a href="https://twitter.com/camundaBPM">twitter</a>.<br />
+Checkout the complete list of issues <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13003">solved in this release</a>. And of course, <a href="http://camunda.org/download/modeler/">try out the new modeler</a>&nbsp;and tell us what you thing via&nbsp;<a href="https://groups.google.com/forum/?fromgroups#!forum/camunda-bpm-users">our forums</a>&nbsp;or&nbsp;on&nbsp;<a href="https://twitter.com/camundaBPM">twitter</a>.<br />
 <br />
 Thanks go to&nbsp;<a href="https://twitter.com/hawky4s">Christian</a>, <a href="https://twitter.com/meyerdan">Daniel </a>and <a href="https://twitter.com/_mschoe">Michael </a>for <a href="https://twitter.com/meyerdan/status/408633474992459776">getting this Release through QA</a>.</div>
 </div>

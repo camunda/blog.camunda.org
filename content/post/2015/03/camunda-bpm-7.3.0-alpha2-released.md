@@ -32,7 +32,7 @@ A new alpha release of our open source BPM and Workflow platform is available fo
 </ul><li>JavaScript SDK</li>
 <ul><li>Add group resource</li>
 <li>Support local variables</li>
-</ul></ul><div>The <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13690">full release notes</a> can retrieved from Jira. The <a href="https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.3.0-alpha2">known issues</a> as well.</div><br />
+</ul></ul><div>The <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13690">full release notes</a> can retrieved from Jira. The <a href="https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.3.0-alpha2">known issues</a> as well.</div><br />
 <div>You can <a href="http://camunda.org/download#latest">download Camunda</a>, <a href="https://github.com/camunda/docker-camunda-bpm-platform">run it with Docker</a> or <a href="http://docs.camunda.org/7.2/guides/getting-started-guides/#apache-maven-apache-maven-coordinates">add it to your application with maven</a>.</div><a name='more'></a><br />
 <h3>Run this Release with Docker<br />
 </h3>If you want to run this release with <a href="http://docker.io/">Docker</a>, you can use the freshly baked Docker images. The following command line will start the tomcat distribution:<br />

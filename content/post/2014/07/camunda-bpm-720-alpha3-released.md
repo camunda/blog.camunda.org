@@ -50,7 +50,7 @@ So what is in the new Release?<br />
 <li>...</li>
 </ul>
 <div>
-Over the last 4 Weeks, over 70 Issues were closed. See the <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13390">complete release Notes in JIRA</a>.</div>
+Over the last 4 Weeks, over 70 Issues were closed. See the <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13390">complete release Notes in JIRA</a>.</div>
 <div>
 <br /></div>
 <div style="text-align: center;">

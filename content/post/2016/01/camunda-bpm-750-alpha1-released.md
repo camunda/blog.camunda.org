@@ -13,9 +13,9 @@ I am pleased to announce the availability of Camunda 7.5.0-alpha1. The highlight
 * Customize Serialization of Java Object Variables inside a Process Application
 * Added Oracle WebLogic Server 12c R2 (12.2.1) to supported Environments (Camunda Enterprise Edition only)
 * Improved Javascript Client / SDK
-* [52 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha1)
+* [52 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.5.0-alpha1)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14293) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14293) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).

@@ -43,7 +43,7 @@ If you are interested in contributing to this project, please talk to us on the 
 <br />
 <br />
 Jira:<br />
-<a href="https://app.camunda.com/jira/browse/CIS/component/12056">https://app.camunda.com/jira/browse/CIS/component/12056</a><br />
+<a href="https://jira.camunda.com/browse/CIS/component/12056">https://jira.camunda.com/browse/CIS/component/12056</a><br />
 <br />
 <br />
 <br />

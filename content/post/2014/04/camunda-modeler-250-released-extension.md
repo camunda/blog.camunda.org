@@ -5,7 +5,8 @@ author: "Michael Schöttes"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
@@ -20,7 +21,7 @@ The camunda BPM team is pleased to announce the release of camunda Modeler 2.5.0
 <div>
 <br /></div>
 <div>
-Find a complete list of issues solved in this release in <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13191">JIRA</a>.</div>
+Find a complete list of issues solved in this release in <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13191">JIRA</a>.</div>
 <div>
 <br /></div>
 <div>
@@ -43,7 +44,7 @@ The new features where mainly developed by <a href="http://camunda.org/community
 <div class="MsoNormal">
 <span lang="EN-US"><b>Follow Up Date</b></span></div>
 <div class="MsoNormal">
-<span lang="EN-US">According to <a href="https://app.camunda.com/jira/browse/CAM-1654">CAM-1654</a>&nbsp;you can define a follow up date for User Tasks. Find more information in our <a href="http://docs.camunda.org/latest/api-references/bpmn20/#tasks-user-task-follow-up-date">docs</a>.</span></div>
+<span lang="EN-US">According to <a href="https://jira.camunda.com/browse/CAM-1654">CAM-1654</a>&nbsp;you can define a follow up date for User Tasks. Find more information in our <a href="http://docs.camunda.org/latest/api-references/bpmn20/#tasks-user-task-follow-up-date">docs</a>.</span></div>
 <div class="MsoNormal">
 <span lang="EN-US"><br /></span></div>
 <div class="MsoNormal">

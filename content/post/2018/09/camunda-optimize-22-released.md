@@ -25,7 +25,7 @@ Version 2.2.0 is feature-rich, and highlights include:
 
 <!--more-->
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15338) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15338) are available in Jira.
 
 Ready to get hands-on? [Try out a free trial of Camunda Optimize 2.2.0](#how-to-get-it).
 
@@ -193,7 +193,7 @@ The Camunda Platform collects a lot of sensitive data. To protect the database a
 
 # And much more!
 
-There are many additional smaller features and bugfixes in the release that we didn't mention in this blog post. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15338) include those details.
+There are many additional smaller features and bugfixes in the release that we didn't mention in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15338) include those details.
 
 ## How to get it
 

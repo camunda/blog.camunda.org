@@ -13,9 +13,9 @@ Camunda 7.6.0-alpha3 is here and it is packed with new features. The highlights 
 * Support for Decisions with Literal Expressions
 * CMMN Engine Improvements
 * Rolling Upgrades
-* [23 Bug Fixes](https://app.camunda.com/jira/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha3)
+* [23 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.6.0-alpha3)
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14609) are available in Jira.
 
 You can [Download Camunda For Free](https://camunda.org/download/)
 or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -115,7 +115,7 @@ caseService.terminateCaseExecution(...);
 ```
 
 ## Manual Activation Rule
-Also, please note the following bugfix concerning the interpretation of the manual activation rule attribute of CMMN. This [bugfix](https://app.camunda.com/jira/browse/CAM-6362) is included in this release and originates from an official [bugfix](https://app.camunda.com/jira/browse/OMG-12) in the OMG CMMN standard.
+Also, please note the following bugfix concerning the interpretation of the manual activation rule attribute of CMMN. This [bugfix](https://jira.camunda.com/browse/CAM-6362) is included in this release and originates from an official [bugfix](https://jira.camunda.com/browse/OMG-12) in the OMG CMMN standard.
 
 # Rolling Upgrades
 

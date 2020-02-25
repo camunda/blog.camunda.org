@@ -37,6 +37,6 @@ Shortly, we will also offer this through the REST API and publish a more detaile
 <h3>What else?</h3>
 <p>
 <p>
-A number of bug fixes. Check our <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=12790">release notes</a> to see what ships in alpha3.
+A number of bug fixes. Check our <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=12790">release notes</a> to see what ships in alpha3.
 </p>
 </div>

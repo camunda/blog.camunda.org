@@ -24,9 +24,9 @@ Camunda BPM 7.2.0-alpha5 has been released. This alpha release contains<br />
 </ul>
 <li>Process Engine:</li>
 <ul>
-<li><a href="https://app.camunda.com/jira/browse/CAM-1971">New Persistence layer minimizing Deadlock Issues</a></li>
+<li><a href="https://jira.camunda.com/browse/CAM-1971">New Persistence layer minimizing Deadlock Issues</a></li>
 <li>Persistent Task Filters</li>
-<li><a href="https://app.camunda.com/jira/browse/CAM-2213">Improved Deployment Duplicate Filtering</a></li>
+<li><a href="https://jira.camunda.com/browse/CAM-2213">Improved Deployment Duplicate Filtering</a></li>
 <li>Serialize Java Object Variables with JAX-B</li>
 <li>Many bugfixes</li>
 <li>CMMN Milestones</li>
@@ -41,7 +41,7 @@ Camunda BPM 7.2.0-alpha5 has been released. This alpha release contains<br />
 </ul>
 <br />
 <div>
-All in all, 120 issues were closed. <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13493">See complete Release Notes in Jira.</a></div>
+All in all, 120 issues were closed. <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13493">See complete Release Notes in Jira.</a></div>
 <div>
 <br /></div>
 <div>

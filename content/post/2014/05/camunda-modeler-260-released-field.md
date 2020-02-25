@@ -5,7 +5,8 @@ author: "Michael Schöttes"
 
 categories:
   - "Execution"
-tags: 
+tags:
+  - "Camunda Modeler Eclipse Plug-in"
   - "Release Note"
 
 aliases:
@@ -16,7 +17,7 @@ aliases:
 <div>
 <div dir="ltr" style="text-align: left;" trbidi="on">
 The camunda BPM team is happy to announce the release of camunda Modeler 2.6.0. This release contains updates on the properties panel, a new properties tab, bpmn 2.0 alignment and bug fixes.<br />
-Find a complete list of issues solved in this release in <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=13192">JIRA</a>.<br />
+Find a complete list of issues solved in this release in <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=13192">JIRA</a>.<br />
 <br />
 This release covers Eclipse&nbsp;&nbsp;Eclipse&nbsp;<a href="http://camunda.org/release/camunda-modeler/update-sites/kepler/latest/site/">Kepler</a>&nbsp;and&nbsp;<a href="http://camunda.org/release/camunda-modeler/update-sites/latest/site/">Juno/Indigo</a>&nbsp;as well as the&nbsp;<a href="http://camunda.org/bpmn/tool/">camunda Modeler Standalone</a>.<br />
 <a name='more'></a><br />

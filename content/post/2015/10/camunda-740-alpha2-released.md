@@ -38,7 +38,7 @@ The highlights of this release are:<br />
 <li>New Documenation</li>
 <li>Many Bugfixes</li>
 </ul><br />
-Overall more than 170 issues were closed. See <a href="https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&amp;version=14194">complete Release Notes in Jira</a>.<br />
+Overall more than 170 issues were closed. See <a href="https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&amp;version=14194">complete Release Notes in Jira</a>.<br />
 <div style="background-color: #f4f6f4; border-radius: 3px; border: 1px solid #e4e6e4; margin: 30px auto; max-width: 500px; overflow: hidden;"><h2 style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: left; margin: 0; padding: 15px; position: relative; text-align: center; width: 300px;"><a href="http://camunda.org/download#latest" style="display: block; font-size: 28px; line-height: 32px; text-align: center;">Download For Free</a>   </h2><h3 style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; float: right; margin: 0; padding: 15px; position: relative; text-align: center; width: 200px;"><a href="https://registry.hub.docker.com/u/camunda/camunda-bpm-platform/" style="display: block; font-size: 20px; line-height: 32px; text-align: center;">Run with Docker</a>   </h3></div><a name='more'></a><h2>DMN Auditing in Cockpit</h2><br />
 Cockpit now provides a preview of the support for DMN-based Decision Auditing.<br />
 <br />

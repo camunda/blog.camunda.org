@@ -1,7 +1,7 @@
 +++
 author = "Philipp Fromme"
 categories = ["Modeling"]
-tags = ["BPMN 2.0", "Tooling", "Release Note"]
+tags = ["BPMN 2.0", "Tooling", "Release Note", "Camunda Modeler"]
 date = "2017-10-27T20:00:00+01:00"
 title = "Camunda Modeler 1.11.0 Released"
 +++
@@ -47,7 +47,7 @@ Let's look at an example of a template that can be applied to a BPMN 2.0 task el
 }
 ```
 
-Once you apply this template to a task a connector will be created and added to it. The connector's properties can templated like any other property. 
+Once you apply this template to a task a connector will be created and added to it. The connector's properties can templated like any other property.
 
 Feel free to check out the [documentation](https://github.com/camunda/camunda-modeler/tree/master/docs/element-templates#scoped-bindings) of how to use connector templates.
 

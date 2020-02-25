@@ -19,9 +19,9 @@ Besides that, we have made numerous improvements for Cockpit. The highlights are
 
 In addition, the database Microsoft Sql Server 2016 and the Microsoft Edge browser are now officially supported.
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14894) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14894) are available in Jira.
 
-[List of known Issues.](https://app.camunda.com/jira/issues/?jql=affectedVersion%20%3D%207.8.0%20AND%20status%20!%3D%20Closed)
+[List of known Issues.](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.8.0%20AND%20status%20!%3D%20Closed)
 
 You can [Download Camunda For Free](https://camunda.org/download/) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
@@ -109,7 +109,7 @@ More details can be found in the documentation on [process definition deletion](
 
 # Much more
 
-There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10230&version=14894) provide the details.
+There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=14894) provide the details.
 
 # Register for the Webinar
 

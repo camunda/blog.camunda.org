@@ -20,7 +20,7 @@ Version 2.0.0 is again packed with features. The highlights are:
 
 <!--more-->
 
-The [complete release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15095) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15095) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
@@ -96,7 +96,7 @@ Being able to quickly get notified when the system status changes is important. 
 
 # Much more
 
-There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://app.camunda.com/jira/secure/ReleaseNote.jspa?projectId=10730&version=15095) provide those details.
+There are many more smaller features and bugfixes in the release which aren't presented here in the blogpost. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15095) provide those details.
 
 # Register for the Webinar
 
