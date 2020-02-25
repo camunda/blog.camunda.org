@@ -27,4 +27,4 @@ __QCon London__
 Tuesday, March 3, 2020 from 4:10pm - 5:00pm
 Location: Westminster, 4th floor
 
-Don’t forget -- Bernd will also be joining us for [CamundaCon](https://camundacon.com) New York, April 23-24 - the event for software developers, architects and IT executives interested in learning about innovative process automation. Early Bird ticket prices close this Saturday - February 29th. Sign up today to [secure your seat!](https://www.camundacon.com/event/a47c0cb7-c915-4e48-97bc-7775f59bbe44/regProcessStep1:3feca92a-3b58-4ac4-987a-d911e2d6352a?RefId=ccny_home)
+Don’t forget -- Bernd will also be joining us for [CamundaCon](https://camundacon.com) New York, April 23-24 - the event for software developers, architects and IT executives interested in learning about innovative process automation. __Early Bird ticket prices close this Saturday__ - February 29th. Sign up today to [secure your seat!](https://www.camundacon.com/event/a47c0cb7-c915-4e48-97bc-7775f59bbe44/regProcessStep1:3feca92a-3b58-4ac4-987a-d911e2d6352a?RefId=ccny_home)
