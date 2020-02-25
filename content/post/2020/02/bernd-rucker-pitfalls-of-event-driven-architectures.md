@@ -13,11 +13,9 @@ Our Chief Technologist and Co-Founder Bernd Rücker is speaking at two leading t
 
 Bernd will be speaking at both conferences about how to avoid the pitfalls of event-driven architectures, sharing more about the concepts, advantages and pitfalls of “event-driven utopia” through real-life stories and source code examples. Here’s more: 
 
-
 *“Event-driven architectures are on the rise. They promise better decoupling of components by using an event bus and improved scalability in terms of throughput. Decoupled modules help to scale your software development efforts itself. Event streaming promises to handle ever-growing amounts of ‘data in motion’ in real time, event sourcing allows you to time travel, and domain events have turned out to be powerful building blocks that lead to a better understanding of underlying business requirements.*
 
 *But there are pitfalls you should be aware of. For example, event notifications used inappropriately can lead to tighter coupling or cyclic dependencies between components. It’s also easy to lose sight of flows across service boundaries, making it hard to understand how core business logic is actually implemented. This can get even worse if you lack tooling to get insights into your event flows. Last but not least, the event-driven approach is not well understood by most developers or business analysts, making it hard for companies to adopt.”*
-
 
 If you are planning to attend either O’Reilly Software Architecture or QCon London, head along to Bernd’s sessions and stick around afterwards for a chat! 
 
