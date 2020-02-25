@@ -17,7 +17,6 @@ Bernd will be speaking at both conferences about how to avoid the pitfalls of ev
 
 *But there are pitfalls you should be aware of. For example, event notifications used inappropriately can lead to tighter coupling or cyclic dependencies between components. It’s also easy to lose sight of flows across service boundaries, making it hard to understand how core business logic is actually implemented. This can get even worse if you lack tooling to get insights into your event flows. Last but not least, the event-driven approach is not well understood by most developers or business analysts, making it hard for companies to adopt.”*
 
-
 If you are planning to attend either O’Reilly Software Architecture or QCon London, head along to Bernd’s sessions and stick around afterwards for a chat! 
 
 __O’Reilly Software Architecture in NYC__
