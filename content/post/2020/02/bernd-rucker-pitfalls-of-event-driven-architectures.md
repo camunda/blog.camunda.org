@@ -3,14 +3,14 @@ author = "DevRels Team"
 categories = ["Community"]
 tags = ["Event-driven-architecture"]
 date = "2020-02-25T09:30:00+01:00"
-title = "Camunda’s Chief Technologist Bernd Rücker to Discuss Pitfalls of Event-Driven Architectures at O’Reilly and QCon"
+title = "Camunda’s Chief Technologist Bernd Ruecker to Discuss Pitfalls of Event-Driven Architectures at O’Reilly and QCon"
 +++
 
-Our Chief Technologist and Co-Founder Bernd Rücker is speaking at two leading tech conferences in the next few weeks: [O'Reilly Software Architecture](https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/speakers) at New York City on February 26 and [QCon London](https://qconlondon.com/london2020/speakers/bernd-ruecker) March 3. 
+Our Chief Technologist and Co-Founder Bernd Ruecker is speaking at two leading tech conferences in the next few weeks: [O'Reilly Software Architecture](https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/speakers) at New York City on February 26 and [QCon London](https://qconlondon.com/london2020/speakers/bernd-ruecker) March 3. 
 
 <!--more-->
 
-Bernd will be speaking at both conferences about how to avoid the pitfalls of event-driven architectures, sharing more about the concepts, advantages and pitfalls of “event-driven utopia” through real-life stories and source code examples. Here’s more: 
+Bernd will be speaking at both conferences about how to avoid the pitfalls of event-driven architectures, sharing more about the concepts, advantages and pitfalls of *“event-driven utopia”* through real-life stories and source code examples. Here’s more: 
 
 *“Event-driven architectures are on the rise. They promise better decoupling of components by using an event bus and improved scalability in terms of throughput. Decoupled modules help to scale your software development efforts itself. Event streaming promises to handle ever-growing amounts of ‘data in motion’ in real time, event sourcing allows you to time travel, and domain events have turned out to be powerful building blocks that lead to a better understanding of underlying business requirements.*
 
