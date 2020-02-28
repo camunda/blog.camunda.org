@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-02-28T09:55:00+01:00"
+date = "2020-02-28T08:55:00+01:00"
 title = "Camunda BPM 7.13.0-alpha2 Released"
 +++
 
