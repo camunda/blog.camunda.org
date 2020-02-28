@@ -10,7 +10,7 @@ We’re excited to announce the release of Camunda Optimize 3.0.0-alpha2.
 
 In this second alpha release of the year, you can get an early look at many improvements and features in advance of the stable Optimize 3.0.0.
 
-In this release, we focused on:
+This release focuses on:
 
 * Enhanced User Task Monitoring and Reporting
 * Improved Dashboard Handling
