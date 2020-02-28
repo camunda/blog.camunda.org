@@ -16,7 +16,7 @@ In this release, we focused on:
 * Improved Dashboard Handling
 * Support for Elasticsearch 7.6
 
-The [complete release notes]( https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15891) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15891) are available in Jira.
 
 <!--more-->
 
