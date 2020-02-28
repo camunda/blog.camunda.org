@@ -43,7 +43,7 @@ In addition to the new report capabilities, we also improved the way you can wor
 
 # Support for Elasticsearch 7.6
 
-From this version we are now officially supporting Elasticsearch 7.0.x - 7.6.x.
+From this version on, Elasticsearch 7.0.x - 7.6.x is now officially supported.
 
 # What's Next?
 
