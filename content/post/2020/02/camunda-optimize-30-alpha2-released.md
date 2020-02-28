@@ -30,7 +30,7 @@ Up to this point when monitoring the distribution of User Tasks across Assignees
 
 {{< figure src="usertask-report1.png" alt="User Task Group by Assignee distribute by Flow Node " >}}
 
-With this release we add the possibility to group by Flow Node and distributed by Assignee and Candidate Group. The resulting report could look like this:
+This release adds the possibility to group by Flow Node and distribute by Assignee or Candidate Group. The resulting report could look like this:
 {{< figure src="usertask-report2.png" alt="User Task Group by Flow Node distribute by Assignee" >}}
 
 This report can help to get a good overview about the distribution of each User Task across different Assignees or Candidate Groups and makes Optimize's User Task Reporting capabilities even stronger.
