@@ -37,7 +37,7 @@ This report can help to get a good overview about the distribution of each User 
 
 # Improved Dashboard Handling
 
-In addition to the new report capabilities, we also improved the way you can work with dashboards. When adding a report to a dashboard other reports automatically make space for the report. Especially in dashboards that contain many reports this improvement simplifies dashboard interactions a lot.  
+In addition to the new reporting capabilities, this release also improves the way you can work with dashboards. When adding a report to a dashboard other reports automatically make space for the report. Especially in dashboards that contain many reports this improvement simplifies dashboard interactions a lot.  
 
 {{< video mp4="dashboard-behaviour.mp4" alt="Improved Dashboard Behaviour" >}}
 
