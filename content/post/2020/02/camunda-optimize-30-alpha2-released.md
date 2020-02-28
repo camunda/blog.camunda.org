@@ -26,7 +26,7 @@ You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
 Optimize 3.0-alpha2 includes new User Task Monitoring and Reporting capabilities.
 
-Up to this point when monitoring the distribution of UserTasks across Assignees or Candidate Groups, it was only possible to see the number or duration of each User Task per Assignee or Candidate Group:
+Up to this point when monitoring the distribution of User Tasks across Assignees or Candidate Groups, it was only possible to see the number or duration of each User Task per Assignee or Candidate Group:
 
 {{< figure src="usertask-report1.png" alt="User Task Group by Assignee distribute by Flow Node " >}}
 
