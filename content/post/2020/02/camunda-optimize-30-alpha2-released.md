@@ -49,7 +49,7 @@ From this version on, Elasticsearch 7.0.x - 7.6.x is now officially supported.
 
 The next major release of Camunda Optimize is getting closer and will be released beginning of April. Stay tuned!
 
-A smooth update from Camunda Optimize 2.7 to Optimize 3.0 will be possible. Along with the release we will publish a dedicated update guide.
+A smooth upgrade from Camunda Optimize 2.7 to Optimize 3.0 will be possible. Together with the final 3.0.0 release we will publish a dedicated upgrade guide.
 
 # How to get it
 
