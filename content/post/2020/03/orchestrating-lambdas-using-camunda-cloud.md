@@ -1,7 +1,7 @@
 +++
 author = "Felix Jordan, CTO, MINEKO"
 categories = ["Community"]
-date = "2020-02-28T09:30:00+01:00"
+date = "2020-03-02T09:30:00+01:00"
 tags = ["Cloud,Zeebe"]
 title = "Orchestrating Lambdas using Camunda Cloud"
 +++
