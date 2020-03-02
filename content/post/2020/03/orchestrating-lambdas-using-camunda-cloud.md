@@ -64,7 +64,7 @@ The poll method architecture:
 
 Our BPMN model (simplified):
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/bpmn-model.jpg" alt="bpmn model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud.md/bpmn-model.jpg" alt="bpmn model" >}}
 
 With task settings:
 
