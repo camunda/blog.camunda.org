@@ -51,7 +51,7 @@ Camuna Cloud offers two ways of getting jobs into your system. Either using a po
 
 The official [zeebe nodejs sdk](https://www.npmjs.com/package/zeebe-node) comes with native Camunda Cloud support, which kept our implementation effort minimal. To ensure the poll method was as serverless as possible, we decided to run our job worker on AWS Lambda. We set the execution timeout to 15 minutes and created a Cloudwatch event scheduled every 14 minutes to invoke the lambda to make  sure we always had an active job worker running. This cost us less than 5€ a month (128MB AWS Lambda, invocation every 15 minutes = ~3000 invocations a month each running 900.000ms).
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/camunda-cloud.jpg" alt="camunda cloud" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/camunda-cloud.jpg" alt="camunda cloud" >}}
 
 The poll method architecture:
 
@@ -68,11 +68,11 @@ Our BPMN model (simplified):
 
 With task settings:
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/task.jpg" alt="task" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/task.jpg" alt="task" >}}
 
 We automated the creation of necessary artifacts like SNS, SQS, Lambda or Subscription resources using Terraform. In addition we created a custom Terraform module to create Zeebe-ready lambdas:
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/aws-lambda.jpg" alt="aws lambda" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/aws-lambda.jpg" alt="aws lambda" >}}
 
 You’re welcome to check out the source code here: [https://github.com/mineko-io/blog-orchestration-lambdas-using-camunda-cloud](https://github.com/mineko-io/blog-orchestration-lambdas-using-camunda-cloud)
 
@@ -80,11 +80,11 @@ Luckily we already had our own lambda framework in place, which we bundled with 
 
 Simplified usage of the framework:
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/const-handler.jpg" alt="const handler" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/const-handler.jpg" alt="const handler" >}}
 
 Simplified abstract of the *RuntimeInstance:*
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/runtime.jpg" alt="runtime" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/runtime.jpg" alt="runtime" >}}
 
 We have to point out one pitfall which should remind you to keep an eye on the retry logic.
 We didn’t think properly about the retry mechanism of SQS, Lambda and Camunda Cloud. As each of our lambdas has an SQS in front, which has a built-in retry mechanism, we accidentally did a Denial-of-Service attack against Camunda Cloud (btw. sorry for that!).
@@ -101,7 +101,7 @@ What happened?
 
 Basically we had two queuing systems in place: Camunda Cloud and SQS. We decided to set Camunda Cloud as our master. To do so, we defined a *maxReceiveCount* property to the redrive policy of the SQS in our Terraform module:
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/aws-sqs-queue.jpg" alt="aws sqs" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/aws-sqs-queue.jpg" alt="aws sqs" >}}
 
 This ensures that SQS will only invoke the lambda once - this shifted the retry responsibility to Camunda Cloud.
 
@@ -109,7 +109,7 @@ This ensures that SQS will only invoke the lambda once - this shifted the retry 
 
 In addition to the polling, we are also using the Camunda Cloud http worker (available by default) to invoke our lambdas. We have an API Gateway which acts as an SNS sink to the *zeebe_jobs* topic.
 
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/microservices-workflow-automation-cheat-sheet/camunda-http-worker.jpg" alt="camunda http server" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/camunda-http-worker.jpg" alt="camunda http server" >}}
 
 The http method architecture:
 
