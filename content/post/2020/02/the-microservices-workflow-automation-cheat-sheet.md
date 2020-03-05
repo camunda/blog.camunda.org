@@ -69,6 +69,5 @@ In our next blog, we’ll discuss the role of the __workflow engine__ and provid
 
 This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet-fc0a80dc25aa)  - check it out if you want to dive even deeper into microservices!
 
-
-<a href="https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/" target="new"><img src="https://blog.camunda.com/post/2020/02/microservices-workflow-automation-cheat-sheet/webinar.jpg" width="600" height="237" alt=""/></a>
+<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-35700cf8-c100-49ff-8235-8c33d79dc465"><span class="hs-cta-node hs-cta-35700cf8-c100-49ff-8235-8c33d79dc465" id="hs-cta-35700cf8-c100-49ff-8235-8c33d79dc465"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/35700cf8-c100-49ff-8235-8c33d79dc465"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-35700cf8-c100-49ff-8235-8c33d79dc465" style="border-width:0px;" height="237" width="600" src="https://no-cache.hubspot.com/cta/default/4513465/35700cf8-c100-49ff-8235-8c33d79dc465.png"  alt="Save my spot"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, '35700cf8-c100-49ff-8235-8c33d79dc465', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
 
