@@ -7,6 +7,8 @@ title = "The Microservices Workflow Automation Cheat Sheet - to Centralize or De
 
 We recently shared [3 Common Pitfalls in Microservice Integration - and how to avoid them](https://camunda.com/learn/whitepapers/3-common-pitfalls/) and lots of you wanted more. So this four-part blog series takes us one step back to the things you’ll be considering before migrating to a microservices architecture and applying workflow automation. In this third post in the series, we’ll dive deeper into architecture and discuss whether it’s better to run a workflow engine centralized or decentralized.
 
+<!--more-->
+
 You can find the [source code on GitHub](https://github.com/berndruecker/flowing-retail) for the simple order fulfillment application, introduced in the [first blog](https://blog.camunda.com/post/2020/02/the-microservices-workflow-automation-cheat-sheet/) in this series, available as the flowing-retail sample application which we use as an example in this blog.
 
 __Central or decentralized workflow engine?__
