@@ -19,7 +19,7 @@ If you want to use the workflow engine for work distribution - like we discussed
 
 A good background read on this is [Architecture options to run a workflow engine.](https://blog.bernd-ruecker.com/architecture-options-to-run-a-workflow-engine-6c2419902d91)
 
-{{< figure class="no-border" src="http://localhost:1313/post/2020/03/orchestrating-lambdas-using-camunda-cloud/monitoring.png" alt="monitoring" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/monitoring.png" alt="monitoring" >}}
 
 __Decentralized engines__
 
@@ -39,7 +39,7 @@ But often you still want to have a general overview, at least of end-to-end flow
 
 You can now send the most important events from the decentralized engines (e.g. workflow instance started, milestone reached, workflow instance failed or ended) to it. The central monitoring just shows the overview on a higher level and links back to the decentralized operating tools for details. In other words, the decentralized workflow engine handles all retry and failure handling logic and the central monitoring simply gives visibility into the overall flow.
 
-{{< figure class="no-border" src="http://localhost:1313/post/2020/03/orchestrating-lambdas-using-camunda-cloud/workflow-engine-monitor.png" alt="monitor" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/workflow-engine-monitor.png" alt="monitor" >}}
 
 
 In our own stack we allow certain tools to collect data from decentralized engines, e.g. [Camunda Optimize](https://camunda.com/products/optimize/).
@@ -49,7 +49,7 @@ __One Central Engine__
 
 To simplify operations, you can also run a central engine. This is a remote resource that microservices can connect to in order to deploy and execute workflows. Technically that might be via REST (Camunda BPM) or gRPC (Zeebe). Of course you could also leverage [Camunda Cloud](https://camunda.com/products/cloud/) as a managed workflow engine. 
 
-{{< figure class="no-border" src="http://localhost:1313/post/2020/03/orchestrating-lambdas-using-camunda-cloud/shipment.png" alt="camunda cloud" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/shipment.png" alt="camunda cloud" >}}
 
 
 - Implementation example: [https://github.com/berndruecker/flowing-retail/tree/master/kafka/java/order-zeebe](https://github.com/berndruecker/flowing-retail/tree/master/kafka/java/order-zeebe)
@@ -63,7 +63,7 @@ __Central Engine, that is used like a Decentralized Engine.__
 
 This approach requires explanation. What you can do in Camunda is to run the workflow engine as a library (e.g. using the [Spring Boot Starter](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/)) in a decentralized manner in different microservices. But you then connect all of these engines to a central database where they meet. This allows you to have central monitoring for free.
 
-{{< figure class="no-border" src="http://localhost:1313/post/2020/03/orchestrating-lambdas-using-camunda-cloud/order2.png" alt="camunda cloud" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/order2.png" alt="camunda cloud" >}}
 
 - Pro: Central monitoring available out-of-the-box.
 - Con: Less isolation between the microservices in terms of runtime data but also in terms of product versions, but actually moderated by features like [Rolling Upgrade](https://docs.camunda.org/manual/latest/update/rolling-update/) and [Deployment Aware Process Engine](https://docs.camunda.org/manual/latest/user-guide/process-engine/the-job-executor/#job-execution-in-heterogeneous-clusters).
@@ -81,7 +81,7 @@ However, a much more important question than where the engine itself runs is abo
 
 This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet)  - check it out if you want to dive even deeper into microservices!
 
-<div>
-<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-da776aec-b76e-4a90-a9b3-64d0f0033df7"><span class="hs-cta-node hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7" id="hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-da776aec-b76e-4a90-a9b3-64d0f0033df7" style="border-width:0px;" height="237" width="600" src="https://no-cache.hubspot.com/cta/default/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7.png"  alt="Save my spot"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, 'da776aec-b76e-4a90-a9b3-64d0f0033df7', {}); </script></span><!-- end HubSpot Call-to-Action Code --></div>
+
+<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-da776aec-b76e-4a90-a9b3-64d0f0033df7"><span class="hs-cta-node hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7" id="hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-da776aec-b76e-4a90-a9b3-64d0f0033df7" style="border-width:0px;" height="237" width="600" src="https://no-cache.hubspot.com/cta/default/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7.png"  alt="Save my spot"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, 'da776aec-b76e-4a90-a9b3-64d0f0033df7', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
 
 
