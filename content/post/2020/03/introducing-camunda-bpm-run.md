@@ -11,6 +11,8 @@ We are proud to announce **Camunda BPM Run**, a new distribution of Camunda BPM 
 
 Camunda BPM Run is highly configurable and can be operated without any Java knowledge.
 
+<!--more-->
+
 Run is for you if at least one of the following statements is true:
 
 * You need a [standalone process engine](https://docs.camunda.org/manual/latest/introduction/architecture/#standalone-remote-process-engine-server) accessible via REST API
