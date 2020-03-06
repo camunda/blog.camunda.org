@@ -81,7 +81,7 @@ Of course, you can also mix and match. For example, you could share one database
 
 However, a much more important question than where the engine itself runs is about ownership and governance of the process models - which is exactly what we’ll be discussing in the fourth and final installment of this blog series!
 
-This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet)  - check it out if you want to dive even deeper into microservices!
+This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com)  - check it out if you want to dive even deeper into microservices!
 
 
 <!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-da776aec-b76e-4a90-a9b3-64d0f0033df7"><span class="hs-cta-node hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7" id="hs-cta-da776aec-b76e-4a90-a9b3-64d0f0033df7"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-da776aec-b76e-4a90-a9b3-64d0f0033df7" style="border-width:0px;" height="237" width="600" src="https://no-cache.hubspot.com/cta/default/4513465/da776aec-b76e-4a90-a9b3-64d0f0033df7.png"  alt="Save my spot"/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, 'da776aec-b76e-4a90-a9b3-64d0f0033df7', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
