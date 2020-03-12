@@ -26,7 +26,7 @@ It is really essential that you distribute the ownership of parts of the busines
 
 __The “orchestration process”?__
 
-I am often asked: “But where is the orchestration process?” 
+I am often asked: “But where is the orchestration process?”
 That’s easy -- In my understanding of microservices, there is no such thing as an orchestration process. Often, people mean end-to-end business processes, like order fulfillment in the above example. Of course, the end-to-end process is highly visible and important, but it is domain logic like everything else and goes into a microservice boundary in our example the order microservice. In that sense the order microservice containing end-to-end orchestration logic might be very important — but organized the same like other microservices as e.g. payment.
 
 When saying “orchestration process,” some people mean domain logic that only involves the flow — so the respective microservice might not have other logic (no own data, no own programming code, etc.). That’s fine — but it should still be a microservice as even this logic needs clear responsibilities. And often the logic grows over time anyway.
@@ -42,7 +42,5 @@ __Summary__
 __Interested in learning more?__
 
 Watch Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation webinar, led by Bernd Ruecker, our Camunda Co-Founder and Chief technologist. He discussed how workflow automation supports the orchestration of microservices, ensuring seamless execution of business processes even in a case of a failure.
-
-<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-91976394-78e0-43f9-b003-c9a8e9fb9306"><span class="hs-cta-node hs-cta-91976394-78e0-43f9-b003-c9a8e9fb9306" id="hs-cta-91976394-78e0-43f9-b003-c9a8e9fb9306"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/91976394-78e0-43f9-b003-c9a8e9fb9306"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-91976394-78e0-43f9-b003-c9a8e9fb9306" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4513465/91976394-78e0-43f9-b003-c9a8e9fb9306.png"  alt="Get the webinar recording here. "/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, '91976394-78e0-43f9-b003-c9a8e9fb9306', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
 
 This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet-fc0a80dc25aa)  - check it out if you want to dive even deeper into microservices!
