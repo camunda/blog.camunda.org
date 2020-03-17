@@ -34,7 +34,7 @@ This architecture relies on a central bus for asynchronous communication. Differ
 - Implementation example: [https://github.com/berndruecker/flowing-retail/tree/master/kafka/java](https://github.com/berndruecker/flowing-retail/tree/master/kafka/java)
 - Pro: Temporal decoupling of microservices.
   - Event-driven architecture applied right can reduce coupling; many failure scenarios (like e.g. response messages that are missing) are transparent to the developer, so they think properly about these situations.
-- Con: Requires message or event bus as central component which is not easy to operate. 
+- Con: Requires message or event bus as central component which is not easy to operate.
    - Lack of operations tooling for these components leads to effort going into homegrown “message hospitals.” Most developers are not so familiar with asynchronous communication.
 
 __2: Point-to-point communication by request/response__
@@ -65,7 +65,7 @@ __Thoughts and recommendation__
 
 It’s hard to give a clear recommendation without knowing the full background of an individual case.  Normally I try to figure out what is already established in the company and base my decision on gut feeling about what can be successful in that environment.
 
-For example, if a customer doesn’t have any experience with Kafka or Messaging, it will be very hard to establish this on the go. So they might be better using a REST-based architecture, especially if, for example, they are deep into Spring Boot, making some of the challenges relatively easy to solve. However, if they strategically want to move towards more asynchronism, while I personally support that, I’d still want to make sure they are really able to handle it. 
+For example, if a customer doesn’t have any experience with Kafka or Messaging, it will be very hard to establish this on the go. So they might be better using a REST-based architecture, especially if, for example, they are deep into Spring Boot, making some of the challenges relatively easy to solve. However, if they strategically want to move towards more asynchronism, while I personally support that, I’d still want to make sure they are really able to handle it.
 
 If a customer already embraces [Domain-driven design (DDD)](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) and events, or even leverages frameworks like Akka or Axon, an event-driven approach that includes the workflow engine may be the best option.
 
@@ -75,10 +75,10 @@ In the next blog, we’ll be exploring more architecture and evaluating whether 
 
 This blog was originally published on [Bernd’s blog](https://blog.bernd-ruecker.com/the-microservice-workflow-automation-cheat-sheet-fc0a80dc25aa) - check it out if you want to dive even deeper into microservices!
 
-### Interested in learning even more? 
+### Interested in learning even more?
 
-Join Bernd Ruecker, our Camunda Co-Founder and Chief technologist, for his upcoming webinar titled, [Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/) on Wednesday March 11th, 2020. He‘ll discuss how workflow automation supports the orchestration of microservices, ensuring seamless execution of business processes even in a case of a failure. 
+Join Bernd Ruecker, our Camunda Co-Founder and Chief technologist, for his upcoming webinar titled, [Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/) on Wednesday March 11th, 2020. He‘ll discuss how workflow automation supports the orchestration of microservices, ensuring seamless execution of business processes even in a case of a failure.
 
-<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-de9e4c16-ba37-44ad-9ca5-081ec17a009b"><span class="hs-cta-node hs-cta-de9e4c16-ba37-44ad-9ca5-081ec17a009b" id="hs-cta-de9e4c16-ba37-44ad-9ca5-081ec17a009b"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/de9e4c16-ba37-44ad-9ca5-081ec17a009b"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-de9e4c16-ba37-44ad-9ca5-081ec17a009b" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4513465/de9e4c16-ba37-44ad-9ca5-081ec17a009b.png"  alt="You can register for the webinar here."/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, 'de9e4c16-ba37-44ad-9ca5-081ec17a009b', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
+<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-91976394-78e0-43f9-b003-c9a8e9fb9306"><span class="hs-cta-node hs-cta-91976394-78e0-43f9-b003-c9a8e9fb9306" id="hs-cta-91976394-78e0-43f9-b003-c9a8e9fb9306"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4513465/91976394-78e0-43f9-b003-c9a8e9fb9306"  target="_blank" ><img class="hs-cta-img" id="hs-cta-img-91976394-78e0-43f9-b003-c9a8e9fb9306" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4513465/91976394-78e0-43f9-b003-c9a8e9fb9306.png"  alt="Get the webinar recording here."/></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(4513465, '91976394-78e0-43f9-b003-c9a8e9fb9306', {}); </script></span><!-- end HubSpot Call-to-Action Code -->
 
 If you can’t make it to the webinar, no worries. Sign up anyway and we’ll send you the recording as soon as it’s complete.
