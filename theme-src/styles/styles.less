@@ -4,13 +4,12 @@
 
 @import (reference) "camunda-commons-ui/resources/less/sites/base.less";
 @import "camunda-commons-ui/resources/less/shared/base.less";
-@import "camunda-commons-ui/resources/less/shared/font-opensans.less";
 @import "camunda-commons-ui/resources/less/sites/_mixins.less";
 
 
 
-html,
-body {
+html body {
+  font-family: 'IBM Plex Sans'!important;
   min-height: 100%;
   position: relative;
 }
@@ -70,10 +69,11 @@ body > header {
   .brand-logo:before {
     color: @brand-primary;
     display: inline-block;
-    font-family: "bpmn";
+    font-family: "camunda-circle";
     font-style: normal;
     font-weight: normal;
-    content: '\e831';
+    content: '\e900';
+
   }
 
   .brand-name {
@@ -412,7 +412,7 @@ section {
 
   > .content {
     margin-top: @line-height-computed;// * 2;
-    font-family: @font-family-sans-serif;
+    font-family: 'IBM Plex Sans';
     font-size: 17px;
     line-height: 28px;
 
