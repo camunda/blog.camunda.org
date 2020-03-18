@@ -1,7 +1,7 @@
 +++
 author = "Joe Pappas"
 categories = ["Community"]
-date = "2020-03-18T08:00:00+01:00"
+date = "2020-03-17T08:00:00+01:00"
 title = "Migrating processes from other vendors to Camunda"
 +++
 

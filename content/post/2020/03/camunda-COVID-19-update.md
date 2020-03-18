@@ -1,7 +1,7 @@
 +++
 author = "Jakob Freund"
 categories = ["Community"]
-date = "2020-03-17T09:30:00+01:00"
+date = "2020-03-18T08:00:00+01:00"
 title = "Camunda COVID-19 Update"
 +++
 
