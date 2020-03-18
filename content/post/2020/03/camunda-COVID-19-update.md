@@ -2,7 +2,7 @@
 author = "Jakob Freund"
 categories = ["Community"]
 date = "2020-03-18T08:00:00+01:00"
-title = "Camunda COVID-19 Update"
+title = "Serving Customers, Caring for Colleagues: Camunda COVID-19"
 +++
 
 Given the rapidly evolving circumstances around COVID-19, I would like to give the larger Camunda user community an update on how we are working through these challenges, how our globally distributed team continues to develop and support our software and what we are doing
