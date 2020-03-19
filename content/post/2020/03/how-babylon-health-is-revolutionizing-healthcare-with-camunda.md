@@ -30,6 +30,8 @@ __Minimal Effort Implementation__
 
 {{< youtube iaBkDvzON78 >}}
 
+[Read the case study](https://camunda.com/case-studies/babylon-health/)
+
 Doogal Simpson, Technical Lead at Babylon joined us at CamundaCon Berlin 2019, explaining how Babylon leverages Camunda to keep track of thousands of patients in clinical pathways.
 
 The first deliverable for Babylon’s clinical workflows team was designed around Camunda BPM from the very beginning, making the implementation effort minimal. Even integrating with services across the company was straightforward because the team was easily able to build an API around Camunda, or modify specific components. Additionally, the support for several Java frameworks meant adding Camunda to a blank project was as easy as adding a dependency and some configuration.
@@ -44,4 +46,4 @@ On top of that, Babylon ensures consistency of treatment across all patients, cr
 
 __Interested in more?__
 
-Great! Check out our case study with the team from Babylon Health [link to customer page] and if you’d like to deep dive into the technical implementation watch this [great presentation](https://www.youtube.com/watch?v=m9U-W5wdO30) from Babylon Health Software Engineer Luca Mozza at Camunda Day London.
+Great! Check out our case study with the team from [Babylon Health](https://camunda.com/case-studies/babylon-health/) and if you’d like to deep dive into the technical implementation watch this [great presentation](https://www.youtube.com/watch?v=m9U-W5wdO30) from Babylon Health Software Engineer Luca Mozza at Camunda Day London.
