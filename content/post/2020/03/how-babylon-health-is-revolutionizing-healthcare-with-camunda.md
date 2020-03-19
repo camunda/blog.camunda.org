@@ -46,4 +46,4 @@ On top of that, Babylon ensures consistency of treatment across all patients, cr
 
 __Interested in more?__
 
-Great! Check out our case study with the team from Babylon Health [link to customer page](https://camunda.com/case-studies/babylon-health/) and if you’d like to deep dive into the technical implementation watch this [great presentation](https://www.youtube.com/watch?v=m9U-W5wdO30) from Babylon Health Software Engineer Luca Mozza at Camunda Day London.
+Great! Check out our case study with the team from [Babylon Health](https://camunda.com/case-studies/babylon-health/) and if you’d like to deep dive into the technical implementation watch this [great presentation](https://www.youtube.com/watch?v=m9U-W5wdO30) from Babylon Health Software Engineer Luca Mozza at Camunda Day London.
