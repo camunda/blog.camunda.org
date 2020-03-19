@@ -32,9 +32,9 @@ module.exports = function (grunt) {
           dest: '<%= setup.target %>/static/fonts/'
         }]
       },
-      commonsUiFonts: {
+      ibmplexsansFonts: {
         files: [{
-          cwd: 'node_modules/camunda-commons-ui/vendor/fonts/',
+          cwd: 'theme-src/static/fonts/',
           expand: true,
           src: ['**/*'],
           dest: '<%= setup.target %>/static/fonts/'
