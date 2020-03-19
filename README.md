@@ -137,6 +137,11 @@ The rest of the post is written in [markdown](https://help.github.com/articles/m
 {{< figure src="please-have-a-seat.jpg" alt="Picture of the office." title="Please have a seat." caption="We're ready!" attr="V. Vago" attrlink="http://twitter.com/zeropaper" >}}
 ```
 
+##### Embedding You Tube Videos
+
+Use the shortcode syntax {{< youtube add_your_id_here >}} 
+
+
 ##### Videos
 
 Consider embedding a video (`mp4`) instead of a `gif`. Videos are often considerably smaller and therefore more mobile-friendly.
@@ -170,7 +175,7 @@ Then create a pull request.
 ## Working on the theme
 
 If you need to make changes on the theme (templates, styles or scripts), you should first start the
-grunt task reponsible for the automatic compilation of the sources.
+grunt task responsible for the automatic compilation of the sources.
 
 ```
 grunt

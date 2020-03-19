@@ -1,7 +1,7 @@
 +++
 author = "Joe Pappas"
 categories = ["Community"]
-date = "2020-03-17T09:30:00+01:00"
+date = "2020-03-17T08:00:00+01:00"
 title = "Migrating processes from other vendors to Camunda"
 +++
 
@@ -40,6 +40,6 @@ Have a look at the tools, give them a try, and provide feedback as we’re alway
 
 __Still puzzling over importing processes from other vendors?__
 
-Join us for our virtual user conference, which will bring the Camunda Community together from all across the globe. We’re working on the finalising the details right now, but you can [sign up for updates](https://camunda.com/events/camundacon-updates/) and be the first to hear the news as it happens. 
+Join us for our virtual user conference, which will bring the Camunda Community together from all across the globe. We’re working on the finalising the details right now, but you can [sign up for updates](https://camunda.com/events/camundacon-updates/) and be the first to hear the news as it happens.
 
 Joe will walk through the obstacles you can run into when you attempt to migrate processes from vendors like IBM in his technical track: Why can’t I import this BPMN? and how we can help you overcome those challenges with freely available open-source converter utilities. He’ll discuss how they came to be, how they work and how you can use them.
