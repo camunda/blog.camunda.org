@@ -170,7 +170,7 @@ Then create a pull request.
 ## Working on the theme
 
 If you need to make changes on the theme (templates, styles or scripts), you should first start the
-grunt task reponsible for the automatic compilation of the sources.
+grunt task responsible for the automatic compilation of the sources.
 
 ```
 grunt
