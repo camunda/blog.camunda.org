@@ -1,5 +1,5 @@
 +++
-author = "Charley Mann"
+author = "Gottfried Sehringer"
 categories = ["Community"]
 date = "2020-03-23T09:30:00+01:00"
 tags = ["CamundaCon"]
