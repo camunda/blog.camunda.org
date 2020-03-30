@@ -11,6 +11,7 @@ We are happy to share the third alpha release of **Camunda BPM 7.13** with you!
 This release features the following improvements:
 
 * Feature Xxx
+* Deployment-Aware Batch Operations
 * ...
 * [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
 
@@ -26,6 +27,18 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Feature Xxx
 
 ...
+
+## Deployment-Aware Batch Operations
+
+With this release, all [batch operations](https://docs.camunda.org/manual/latest/user-guide/process-engine/batch-operations) that work on process-related elements, e.g. process instances, are deployment-aware.
+
+Since [Monitor Jobs](https://docs.camunda.org/manual/latest/user-guide/process-engine/batch#monitor-job) do not need any deployment-related resources anymore with this release as well,
+only [Seed Jobs](https://docs.camunda.org/manual/latest/user-guide/process-engine/batch#seed-job) and [Execution Jobs](https://docs.camunda.org/manual/latest/user-guide/process-engine/batch#execution-jobs) are affected by this. Technically, seed jobs and execution jobs will receive a `deploymentId` so [deployment-aware job executors](https://docs.camunda.org/manual/latest/user-guide/process-engine/the-job-executor#job-execution-in-heterogeneous-clusters) can pick up those jobs of a batch that need to be executed on their nodes.
+
+The deployment id of the seed job is chosen from a list of involved deployments. The list of deployments involved in a batch is derived from the elements of the batch operation, e.g. for chosen process instances the deployments their process definitions belong to are fetched. Execution jobs only contain elements of the same deployment and are bound to it as well.
+
+Make sure to check our [update guide](https://docs.camunda.org/manual/latest/update/minor/712-to-713#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
+
 
 ## Your Feedback Matters!
 
