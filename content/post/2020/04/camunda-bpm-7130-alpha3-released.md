@@ -14,6 +14,7 @@ This release features the following improvements:
 - Deployment-Aware Batch Operations
 - DMN 1.3 Support in Cockpit
 - Failed Activity ID in Cockpit
+- Progress on the Camunda Rest API OpenAPI documentation 
 - ...
 - [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
 
@@ -58,6 +59,28 @@ The new attribute can be found in these tables:
 - the process instance jobs tab
 - the incidents tabs
 - the history job logs
+
+## Progress on the Camunda Rest API OpenAPI documentation
+
+This alpha brings even more additions to the OpenAPI documentation started in Camunda 7.13-alpha2. Now, you can also 
+find documentation on the following endpoints:
+
+* Condition
+* Deployment
+* Engine
+* External Task
+* Message
+* Metrics
+* Process Instance
+* Signal
+* Schema Log
+* Task
+* Task Comment
+* Task Identity Link
+* Version
+
+If you are interested in our progress or if you want to check out the documentation, please feel free to download the 
+JAR file [here](https://app.camunda.com/nexus/repository/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/7.13.0-alpha3/camunda-engine-rest-openapi-7.13.0-alpha3.jar).
 
 ## New Supported Environments
 
