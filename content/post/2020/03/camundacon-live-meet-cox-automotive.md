@@ -1,7 +1,7 @@
 +++
 author = "Charley Mann"
 categories = ["Community"]
-date = "2020-03-31T09:30:00+01:00"
+date = "2020-03-31T08:00:00+01:00"
 tags = ["CamundaCon"]
 title = "CamundaCon Live - meet Cox Automotive"
 +++
