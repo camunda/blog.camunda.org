@@ -29,7 +29,6 @@ I find the following extensions very helpful:
 - [Camunda-bpm-process-test-coverage](https://github.com/camunda/camunda-bpm-process-test-coverage)
 - [camunda-bpm-mockito](https://github.com/camunda/camunda-bpm-mockito)
 
-
 __What’s motivating you to share your use case?__
 Being able to exchange ideas with fellow Camunda users and share my experience learning this new tool.
 
