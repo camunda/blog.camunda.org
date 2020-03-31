@@ -15,7 +15,6 @@ Ahead of [CamundaCon Live](https://www.camundacon.com/live/) - our free, virtual
 
 We spoke with Senior Software Engineer [Mary Rose Matira](https://www.camundacon.com/live/speakers/), who’ll be presenting: [Three Products - One Microservice Ecosystem at Cox Automotive](https://www.camundacon.com/live/agenda-day2/) at CamundaCon Live.
 
-
 __How long have you been using Camunda?__
 Roughly a year
 
