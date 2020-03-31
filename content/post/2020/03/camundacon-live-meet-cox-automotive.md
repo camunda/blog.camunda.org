@@ -1,7 +1,7 @@
 +++
 author = "Charley Mann"
 categories = ["Community"]
-date = "2020-03-31T09:30:00+01:00"
+date = "2020-03-31T08:00:00+01:00"
 tags = ["CamundaCon"]
 title = "CamundaCon Live - meet Cox Automotive"
 +++
@@ -14,7 +14,6 @@ Ahead of [CamundaCon Live](https://www.camundacon.com/live/) - our free, virtual
 [Cox Automotive](https://www.coxautoinc.com/), the world’s leader in vehicle remarketing services and digital marketing and software solutions for automotive dealers and consumers, has modernized its Dealer track Registration and Title processes by moving towards a microservice architecture - enabling multiple solutions from an ecosystem of services. Using Camunda, Cox Automotive was able to create three products from a single solution by developing independent processes to handle manual and automated tasks in unique ways.
 
 We spoke with Senior Software Engineer [Mary Rose Matira](https://www.camundacon.com/live/speakers/), who’ll be presenting: [Three Products - One Microservice Ecosystem at Cox Automotive](https://www.camundacon.com/live/agenda-day2/) at CamundaCon Live.
-
 
 __How long have you been using Camunda?__
 Roughly a year
