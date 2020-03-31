@@ -10,10 +10,12 @@ We are happy to share the third alpha release of **Camunda BPM 7.13** with you!
 
 This release features the following improvements:
 
-* Feature Xxx
-* Deployment-Aware Batch Operations
-* ...
-* [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
+- Feature Xxx
+- Deployment-Aware Batch Operations
+- DMN 1.3 Support in Cockpit
+- Failed Activity ID in Cockpit
+- ...
+- [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
@@ -39,6 +41,23 @@ The deployment id of the seed job is chosen from a list of involved deployments.
 
 Make sure to check our [update guide](https://docs.camunda.org/manual/latest/update/minor/712-to-713#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
 
+## DMN 1.3 Support in Cockpit
+
+With this release, Cockpit adds support for DMN 1.3, the next version of the DMN standard. If you edit and deploy DMN diagrams in Cockpit which use earlier versions of DMN, they will automatically be migrated to DMN 1.3.
+
+The Camunda engine already supports the DMN 1.3 namespace since the lase alpha release, so there are no more steps required to migrate. Make sure you have the latest version of [Camunda Modeler](https://camunda.com/download/modeler/) installed to edit DMN 1.3 files locally.
+
+## Failed Activity ID in Cockpit
+
+With the first alpha of 7.13, we included the id of the failed activity in jobs and incidents for quicker root causing of failures (see the [related blog post](https://blog.camunda.com/post/2020/01/camunda-bpm-7130-alpha1-released/#show-failed-activity-in-jobs-incidents)). To find the exception root causes even faster, you can now view the Failed Activity in the Cockpit Job log.
+
+{{< figure src="failing_activity_id.png" alt="Failing Activity in the Incidents Tab">}}
+
+The new attribute can be found in these tables:
+
+- the process instance jobs tab
+- the incidents tabs
+- the history job logs
 
 ## Your Feedback Matters!
 
