@@ -59,6 +59,10 @@ The new attribute can be found in these tables:
 - the incidents tabs
 - the history job logs
 
+## New Supported Environments
+
+With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
+
 ## Your Feedback Matters!
 
 With every release, we strive to improve Camunda BPM. To make this possible, we are reliant on your feedback. Feel free to share your ideas and suggestions with us.
