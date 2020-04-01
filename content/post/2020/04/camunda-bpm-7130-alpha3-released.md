@@ -15,7 +15,7 @@ This release features the following improvements:
 - DMN 1.3 Support in Cockpit
 - Failed Activity ID in Cockpit
 - Progress on the Camunda Rest API OpenAPI documentation 
-- ...
+- More Fine-Grained Historic Task Permissions
 - [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -82,6 +82,26 @@ find documentation on the following endpoints:
 If you are interested in our progress or if you want to check out the documentation, please feel free to download the 
 JAR file [here](https://app.camunda.com/nexus/repository/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/7.13.0-alpha3/camunda-engine-rest-openapi-7.13.0-alpha3.jar).
 
+## More Fine-Grained Historic Task Permissions
+
+The example process shown below has two tasks. The token starts waiting in **Evaluate Yourself**, and 
+the task is assigned to the employee Steve. When Steve enters his self-evaluation and completes 
+the task, the token moves further to **Evaluate Employee**, and the task is assigned to Steves manager 
+Kate.
+
+{{< figure class="no-border" src="historic-task-permissions-process.png" alt="Example Process" >}}
+
+Previously, Steve couldn't look up his self-evaluation after completing the task. With this release, 
+an additional historic task read permission is granted when a user is assigned to a task that allows 
+seeing the task-related history data (i. e., variable, detail & identity link log history).
+
+You can enable the feature with the help of a process engine configuration flag:
+```xml
+<property name="enableHistoricInstancePermissions">true</property>
+```
+
+You can read more about the feature in the [User Guide].
+
 ## New Supported Environments
 
 With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
@@ -91,3 +111,5 @@ With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
 With every release, we strive to improve Camunda BPM. To make this possible, we are reliant on your feedback. Feel free to share your ideas and suggestions with us.
 
 You can contact us by writing a post in the [forum](https://forum.camunda.org/).
+
+[User Guide]: https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions
