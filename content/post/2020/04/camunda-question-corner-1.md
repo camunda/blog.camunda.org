@@ -10,7 +10,7 @@ One of the things I enjoy the most, as part of the Developer Relations team, is 
 
 <!--more-->
 
-On Monday we did the first trail run of our new series: Camunda Question Corner. Myself [@NiallDeehan], Nele [@nele_lea] and Luca all decided to take some time to create an event where members of the community could get answers to questions they might have. It was also a chance for me to wear a tie. Being at home for 3 weeks has relegated me to the most casual corner of my wardrobe.
+On Monday we did the first trail run of our new series: Camunda Question Corner. Myself [@NiallDeehan](https://twitter.com/NiallDeehan), Nele [@nele_lea](https://twitter.com/nele_lea) and Luca all decided to take some time to create an event where members of the community could get answers to questions they might have. It was also a chance for me to wear a tie. Being at home for 3 weeks has relegated me to the most casual corner of my wardrobe.
 
 The idea was to take some questions that the community sent in and voted on, via a [slido page](https://app.sli.do/) on the Camunda Forum, and spend some time preparing really detailed answers. Alongside, we also dedicated a section to  answering live questions for the people who attended the event itself.
 
@@ -18,8 +18,11 @@ We recorded and uploaded our first Camunda Question Corner, so you can [check it
 
 The main topics covered in this session where
 - Performance of job executors in a cluster
+
 - Optimized performance in clusters
+
 - Understanding the factors of OptimisticLockingException
+
 - Camunda Careers
 
 During these sessions I also like to ensure that we branch out a bit - for instance you’ll probably notice that I’m very happy to take non-Camunda related questions - provided they’re about something I know something about. Which is why in this question corner we learned that Leinster is the best rugby team in Ireland and probably the world.
