@@ -10,9 +10,9 @@ We are happy to share the third alpha release of **Camunda BPM 7.13** with you!
 
 This release features the following improvements:
 
-- Camunda BPM Supports end-to-end DMN 1.3
+- Camunda BPM Supports DMN 1.3 End-to-End
 - Failed Activity ID in Cockpit
-- Progress on the Camunda Rest API OpenAPI documentation 
+- Progress on the Camunda Rest API OpenAPI Documentation 
 - More Fine-Grained Historic Task Permissions
 - Deployment-Aware Batch Operations
 - [12 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
@@ -27,7 +27,7 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 <!--more-->
 
 
-## Camunda BPM Supports end-to-end DMN 1.3
+## Camunda BPM Supports DMN 1.3 End-to-End
 
 Camunda BPM product supports DMN 1.3 now end-to-end (from deployment to end user).
 This release adds support in Cockpit for DMN 1.3, the next version of the DMN standard. If you edit and deploy DMN diagrams in Cockpit which use earlier versions of DMN, they will automatically be migrated to DMN 1.3.
@@ -46,7 +46,7 @@ The new attribute can be found in these tables:
 - the incidents tabs
 - the history job logs
 
-## Progress on the Camunda Rest API OpenAPI documentation
+## Progress on the Camunda Rest API OpenAPI Documentation
 
 This alpha brings even more additions to the OpenAPI documentation started in Camunda 7.13-alpha2. Now, you can also 
 find documentation on the following endpoints:
