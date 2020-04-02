@@ -5,6 +5,31 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/IBMPlexSans-Regular.eot") format("eot"), url("../fonts/IBMPlexSans-Regular.otf") format("otf"), url("../fonts/IBMPlexSans-Regular.ttf") format("truetype"), url("../fonts/IBMPlexSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Bold";
+  src: url("../fonts/IBMPlexSans-Bold.eot") format("eot"), url("../fonts/IBMPlexSans-Bold.otf") format("otf"), url("../fonts/IBMPlexSans-Bold.ttf") format("truetype"), url("../fonts/IBMPlexSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans Italic";
+  src: url("../fonts/IBMPlexSans-Italic.eot") format("eot"), url("../fonts/IBMPlexSans-Italic.otf") format("otf"), url("../fonts/IBMPlexSans-Italic.ttf") format("truetype"), url("../fonts/IBMPlexSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("../fonts/IBMPlexSans-BoldItalic.eot") format("eot"), url("../fonts/IBMPlexSans-BoldItalic.otf") format("otf"), url("../fonts/IBMPlexSans-BoldItalic.ttf") format("truetype"), url("../fonts/IBMPlexSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
 /* line 21, node_modules/bootstrap/less/normalize.less */
 body {
   margin: 0;
@@ -61,7 +86,8 @@ abbr[title] {
 /* line 123, node_modules/bootstrap/less/normalize.less */
 b,
 strong {
-  font-weight: bold;
+  font-family: 'IBM Plex Sans Bold';
+  font-weight: 700;
 }
 /* line 132, node_modules/bootstrap/less/normalize.less */
 dfn {
@@ -1505,7 +1531,7 @@ h6,
 .h5,
 .h6 {
   font-family: 'IBM Plex Sans', Helvetica, Arial, Verdana, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -1684,7 +1710,7 @@ mark,
 }
 /* line 107, node_modules/bootstrap/less/type.less */
 .text-primary {
-  color: #EB256D;
+  color: #FF8B00;
 }
 /* line 5, node_modules/bootstrap/less/mixins/text-emphasis.less */
 a.text-primary:hover,
@@ -1730,7 +1756,7 @@ a.text-danger:focus {
 /* line 126, node_modules/bootstrap/less/type.less */
 .bg-primary {
   color: #fff;
-  background-color: #EB256D;
+  background-color: #FF8B00;
 }
 /* line 5, node_modules/bootstrap/less/mixins/background-variant.less */
 a.bg-primary:hover,
@@ -2129,7 +2155,7 @@ pre code {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #EB256D;
+  background-color: #FF8B00;
 }
 /* line 146, node_modules/bootstrap/less/navs.less */
 .nav-stacked > li {
@@ -2843,12 +2869,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('../fonts/IBMPlexSans-Bold.eot') format('eot'), url('../fonts/IBMPlexSans-Bold.otf') format('otf'), url('../fonts/IBMPlexSans-Bold.ttf') format('ttf'), url('../fonts/IBMPlexSans-Italic.eot') format('eot'), url('../fonts/IBMPlexSans-Italic.woff') format('eot'), url('../fonts/IBMPlexSans-Italic.ttf') format('ttf'), url('../fonts/IBMPlexSans-Regular.woff') format('woff'), url('../fonts/IBMPlexSans-Regular.otf') format('otf'), url('../fonts/IBMPlexSans-Regular.eot') format('eot');
-}
+
 @font-face {
   font-family: 'camunda-circle';
   src: url('../fonts//camunda-circle.eot?6v9sgn');
@@ -2908,7 +2929,7 @@ body > header {
   box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5);
   transition: box-shadow 0.218s ease;
   height: 65px;
-  border-bottom: 3px solid #eb256d;
+  border-bottom: 3px solid #FF8B00;
   color: #777777;
   background-color: #fff;
   font-size: 14px;
@@ -2961,7 +2982,7 @@ body > header h1 .brand-logo {
 }
 /* line 65, ./theme-src/styles/styles.less */
 body > header .brand-logo:before {
-  color: #EB256D;
+  color: #FF8B00;
   display: inline-block;
   font-family: "camunda-circle";
   font-style: normal;
@@ -3667,12 +3688,7 @@ ul.pagination li.page {
 ul.pagination li.disabled a {
   color: #777777;
 }
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('../fonts/IBMPlexSans-Bold.eot') format('eot'), url('../fonts/IBMPlexSans-Bold.otf') format('otf'), url('../fonts/IBMPlexSans-Bold.ttf') format('ttf'), url('../fonts/IBMPlexSans-Italic.eot') format('eot'), url('../fonts/IBMPlexSans-Italic.woff') format('eot'), url('../fonts/IBMPlexSans-Italic.ttf') format('ttf'), url('../fonts/IBMPlexSans-Regular.woff') format('woff'), url('../fonts/IBMPlexSans-Regular.otf') format('otf'), url('../fonts/IBMPlexSans-Regular.eot') format('eot');
-}
+
 @font-face {
   font-family: 'bpmn';
   src: url('../fonts/bpmn.eot');
@@ -4491,7 +4507,7 @@ pre[class*="language-"] {
 }
 /* line 116, theme-src/styles/prism.less */
 .token.function {
-  color: #EB256D;
+  color: #FF8B00;
 }
 /* line 120, theme-src/styles/prism.less */
 .token.regex,

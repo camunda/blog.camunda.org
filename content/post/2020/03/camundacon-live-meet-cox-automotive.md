@@ -23,6 +23,7 @@ We are using Camunda as our backend processor, mostly utilizing the Java API for
 
 __Have you built any interesting extensions or can you recommend any that you’ve found helpful?__
 I find the following extensions very helpful:
+
 - [Camunda-bpm-assert-scenario](https://github.com/camunda/camunda-bpm-assert-scenario)
 - [Camunda-bpm-assert](https://github.com/camunda/camunda-bpm-assert)
 - [Camunda-bpm-process-test-coverage](https://github.com/camunda/camunda-bpm-process-test-coverage)
@@ -35,8 +36,11 @@ __Are there any CamundaCon presentations you’re looking forward to?__
 I’m looking forward to learning and hearing about Camunda Cloud, Process Metrics and the presentation from Ontario Teachers’ Pension Plan: [Putting All Together – Process Automation, Automated Testing and CI/CD.](https://www.camundacon.com/live/agenda-day1/)
 
 Don’t miss: __Three Products – One Microservice Ecosystem at Cox Automotive__
+
 - How we turned a solution that was originally meant to only process individual transactions into a fleet solution and an entirely separate lending solution
+
 - How to use Camunda Spring Boot Starter to control embedded engines
+
 - How process models can improve the deal handling experience and adjust capacity for new markets
 
 [Save your seat](https://www.camundacon.com/live/register/) at CamundaCon Live. Registration is completely free and you’ll get access to a suite of on-demand presentations after the conference. We look forward to connecting with you online.
