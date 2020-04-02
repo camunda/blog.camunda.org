@@ -17,6 +17,7 @@ The idea was to take some questions that the community sent in and voted on, via
 We recorded and uploaded our first Camunda Question Corner, so you can [check it out yourself:](https://youtu.be/3rUUqo67FO0?list=PLJG25HlmvsOXVyXPeorHCYzv5GNgI9w6Y)
 
 The main topics covered in this session where
+
 - Performance of job executors in a cluster
 
 - Optimized performance in clusters
