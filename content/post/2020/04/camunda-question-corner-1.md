@@ -17,6 +17,7 @@ The idea was to take some questions that the community sent in and voted on, via
 We recorded and uploaded our first Camunda Question Corner, so you can [check it out yourself:](https://youtu.be/3rUUqo67FO0?list=PLJG25HlmvsOXVyXPeorHCYzv5GNgI9w6Y)
 
 The main topics covered in this session where
+
 - Performance of job executors in a cluster
 
 - Optimized performance in clusters
@@ -28,9 +29,9 @@ The main topics covered in this session where
 During these sessions I also like to ensure that we branch out a bit - for instance you’ll probably notice that I’m very happy to take non-Camunda related questions - provided they’re about something I know something about. Which is why in this question corner we learned that Leinster is the best rugby team in Ireland and probably the world.
 
 As well as that, Nele was multitasking during the webinar... by baking bread! She even created a useful BPMN model to help understand it:
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/devrel/BPMN-model.png" alt="BPMN model" >}}
+{{< figure src="https://blog.camunda.com/post/2020/04/devrel/BPMN-model1.png" alt="BPMN model" >}}
 
 The bread in question survived and ended up looking pretty good:
-{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/devrel/question-corner.png" alt="Question corner crew" >}}
+{{< figure src="https://blog.camunda.com/post/2020/04/devrel/question-corner1.png" alt="Question corner crew" >}}
 
 For details of the next Camunda Question Corner planned for next Thursday just visit the [forum](https://forum.camunda.org/) - I’ll add a post to the top when the event is decided.
