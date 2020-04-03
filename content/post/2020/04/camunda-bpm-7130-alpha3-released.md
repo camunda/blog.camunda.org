@@ -15,6 +15,7 @@ This release features the following improvements:
 - Progress on the Camunda Rest API OpenAPI Documentation 
 - More Fine-Grained Historic Task Permissions
 - Deployment-Aware Batch Operations
+- New Supported Environments
 - [12 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha3)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -42,9 +43,9 @@ With the first alpha of 7.13, we included the id of the failed activity in jobs 
 
 The new attribute can be found in these tables:
 
-- the process instance jobs tab
-- the incidents tabs
-- the history job logs
+- the Process Instance Jobs tab
+- the Incidents tabs
+- the History Job logs
 
 ## Progress on the Camunda Rest API OpenAPI Documentation
 
@@ -61,8 +62,6 @@ find documentation on the following endpoints:
 * Signal
 * Schema Log
 * Task
-* Task Comment
-* Task Identity Link
 * Version
 
 If you are interested in our progress or if you want to check out the documentation, please feel free to download the 
@@ -97,13 +96,13 @@ only [Seed Jobs](https://docs.camunda.org/manual/latest/user-guide/process-engin
 
 The deployment id of the seed job is chosen from a list of involved deployments. The list of deployments involved in a batch is derived from the elements of the batch operation, e.g. for chosen process instances the deployments their process definitions belong to are fetched. Execution jobs only contain elements of the same deployment and are bound to it as well.
 
-Make sure to check our [update guide](https://docs.camunda.org/manual/latest/update/minor/712-to-713#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
+Make sure to check our [Update Guide](https://docs.camunda.org/manual/latest/update/minor/712-to-713#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
 
 ## New Supported Environments
 
 With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
 
-## Share your thoughts with us!
+## Share Your Thoughts with Us!
 
 Your feedback is really important to us, so please download **Camunda BPM 7.13.0-alpha3**, try it out, and let us know
 what you think about it.
