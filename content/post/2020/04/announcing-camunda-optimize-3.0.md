@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2020-04-03T12:00:00+00:00"
+date = "2020-04-03T10:00:00+00:00"
 title = "Announcing Optimize 3.0: Any Data Source, True End-to-End Process Visibility"
 +++
 
