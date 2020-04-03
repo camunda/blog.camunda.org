@@ -33,7 +33,7 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 Camunda BPM product supports DMN 1.3 now end-to-end (from deployment to end user).
 This release adds support in Cockpit for DMN 1.3, the next version of the DMN standard. If you edit and deploy DMN diagrams in Cockpit which use earlier versions of DMN, they will automatically be migrated to DMN 1.3.
 
-The Camunda engine already supports the DMN 1.3 namespace since the last alpha release, so there are no more steps required to migrate. Make sure you have the latest version of [Camunda Modeler](https://camunda.com/download/modeler/) installed to edit DMN 1.3 files locally and read all about in the [Modeler's blog post](https://blog.camunda.com/post/2020/03/camunda-modeler-4.0.0-alpha.1-released/).
+The Camunda engine already supports the DMN 1.3 namespace since the last alpha release, so there are no more steps required to migrate. Make sure you have the latest alpha version of [Camunda Modeler](https://downloads.camunda.cloud/release/camunda-modeler/4.0.0-alpha.1/) installed to edit DMN 1.3 files locally and read all about in the [Modeler's blog post](https://blog.camunda.com/post/2020/03/camunda-modeler-4.0.0-alpha.1-released/).
 
 ## Failed Activity ID in Cockpit
 
@@ -107,7 +107,7 @@ With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
 Your feedback is really important to us, so please download **Camunda BPM 7.13.0-alpha3**, try it out, and let us know
 what you think about it.
 
-You can contact us in the [forum](https://forum.camunda.org/), send a tweet to [@camunda](https://twitter.com/camunda),
+You can contact us in the [forum](https://forum.camunda.org/), send a tweet to [@Camunda](https://twitter.com/Camunda),
 or file a bug in [our ticket system](https://jira.camunda.com/secure/CreateIssue!default.jspa).
 
 [User Guide]: https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions
