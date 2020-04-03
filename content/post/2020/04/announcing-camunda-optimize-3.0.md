@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2020-03-30T00:00:00+00:00"
+date = "2020-04-03T12:00:00+00:00"
 title = "Announcing Optimize 3.0: Any Data Source, True End-to-End Process Visibility"
 +++
 
@@ -21,7 +21,7 @@ If you’d like to learn more about the release and ask our product team questio
 
 To get started with Optimize 3.0 right away, [you can download a 30-day Camunda Enterprise Edition trial](https://camunda.com/download/enterprise/).
 
-[Existing Camunda customers can download Optimize 3.0 using their enterprise credentials](https://docs.camunda.org/enterprise/download/#camunda-optimize).
+[Existing Camunda customers can download Optimize 3.0 using their enterprise credentials](https://docs.camunda.org/enterprise/download/#camunda-optimize). You can also view the [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15695).
 
 In the rest of this post, we’ll cover Process Events Monitoring and other new capabilities of Optimize 3.0 in more detail.
 
@@ -75,15 +75,10 @@ This business-friendly process can be analyzed and included in dashboards in Opt
 
 There are a number of different use-cases for Process Events Monitoring that have not been covered in detail in this blogpost. Simply try it out on your own and get started with Event Monitoring today:
 
+We have made available a detailed User Guide that explains everything you need to know step-by-step: [Event Monitoring User Guide](https://docs.camunda.org/optimize/3.0/user-guide/event-based-processes/)
 
-The best way is to watch the following how-to video that shows you step-by-step how to use the new capabilities based on a simple example.
-
-[INSERT short how-to video]
-
-We have also made available a detailed User Guide that explains everything you need to know step-by-step: [Event Monitoring User Guide](https://docs.camunda.org/optimize/3.0/user-guide/event-based-processes/)
-
-
-In case you are looking for a quick example on how to build your own connector to ingest CloudEvents, we provide a Kafka Example in our Optimize Example repository on GitHub.
+Our consulting team also published a small example for a simple setup of Optimize including Camunda Runtime Platform with Docker-Compose:
+[GitHub Example](https://github.com/camunda-consulting/code/tree/master/snippets/camunda-optimize/event-monitoring/getting-started)
 
 ## Improved Reporting, Dashboarding and Alerting
 
@@ -178,7 +173,7 @@ In order to get alerted on any external system, a webhook needs to be configured
 
 Once a Webhook has been configured in the configuration, users can easily select the external System when creating an Alert - even additionally to E-Mail:
 
-[screenshot from alert webhook creation]
+{{< figure src="alert-with-external-system.png" alt="Alert with external System" >}}
 
 ## Support for Elasticsearch 7
 
