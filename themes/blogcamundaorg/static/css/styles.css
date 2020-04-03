@@ -2929,7 +2929,7 @@ body > header {
   box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5);
   transition: box-shadow 0.218s ease;
   height: 65px;
-  border-bottom: 3px solid #FF8B00;
+  border-bottom: 6px solid #FF8B00;
   color: #777777;
   background-color: #fff;
   font-size: 14px;
