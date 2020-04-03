@@ -108,7 +108,7 @@ With this alpha release, Camunda BPM supports Java 14 and PostgreSQL 12.2.
 Your feedback is really important to us, so please download **Camunda BPM 7.13.0-alpha3**, try it out, and let us know
 what you think about it.
 
-You can contact us in the [forum](https://forum.camunda.org/), send a tweet to [@camundaBPM](http://twitter.com/camundaBPM),
+You can contact us in the [forum](https://forum.camunda.org/), send a tweet to [@camunda](https://twitter.com/camunda),
 or file a bug in [our ticket system](https://jira.camunda.com/secure/CreateIssue!default.jspa).
 
 [User Guide]: https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions
