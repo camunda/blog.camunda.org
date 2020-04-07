@@ -1441,7 +1441,7 @@ a {
 /* line 52, node_modules/bootstrap/less/scaffolding.less */
 a:hover,
 a:focus {
-  color: #004699;
+  color: #08563A;
   text-decoration: none;
 }
 /* line 58, node_modules/bootstrap/less/scaffolding.less */
@@ -1715,7 +1715,7 @@ mark,
 /* line 5, node_modules/bootstrap/less/mixins/text-emphasis.less */
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #ca1355;
+  color: #08563A;
 }
 /* line 110, node_modules/bootstrap/less/type.less */
 .text-success {
