@@ -29,7 +29,7 @@ The main topics covered in this session where
 During these sessions I also like to ensure that we branch out a bit - for instance you’ll probably notice that I’m very happy to take non-Camunda related questions - provided they’re about something I know something about. Which is why in this question corner we learned that Leinster is the best rugby team in Ireland and probably the world.
 
 As well as that, Nele was multitasking during the webinar... by baking bread! She even created a useful BPMN model to help understand it:
-{{< figure src="https://blog.camunda.com/post/2020/04/devrel/BPMN-model1.png" alt="BPMN model" >}}
+{{< figure src="https://blog.camunda.com/post/2020/04/devrel/BPMN-model2.png" alt="BPMN model" >}}
 
 The bread in question survived and ended up looking pretty good:
 {{< figure src="https://blog.camunda.com/post/2020/04/devrel/question-corner1.png" alt="Question corner crew" >}}
