@@ -1421,7 +1421,7 @@ body {
   font-family: 'IBM Plex Sans', Helvetica, Arial, Verdana, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  color: #555555;
+  color: #414042;
   background-color: #fff;
 }
 /* line 36, node_modules/bootstrap/less/scaffolding.less */
@@ -1435,13 +1435,13 @@ textarea {
 }
 /* line 48, node_modules/bootstrap/less/scaffolding.less */
 a {
-  color: #11C59B;
+  color: #10AD73;
   text-decoration: none;
 }
 /* line 52, node_modules/bootstrap/less/scaffolding.less */
 a:hover,
 a:focus {
-  color: #0b2d5f;
+  color: #004699;
   text-decoration: none;
 }
 /* line 58, node_modules/bootstrap/less/scaffolding.less */
@@ -1710,7 +1710,7 @@ mark,
 }
 /* line 107, node_modules/bootstrap/less/type.less */
 .text-primary {
-  color: #FF8B00;
+  color: #A7A9AC;
 }
 /* line 5, node_modules/bootstrap/less/mixins/text-emphasis.less */
 a.text-primary:hover,
@@ -1756,7 +1756,7 @@ a.text-danger:focus {
 /* line 126, node_modules/bootstrap/less/type.less */
 .bg-primary {
   color: #fff;
-  background-color: #FF8B00;
+  background-color: #A7A9AC;
 }
 /* line 5, node_modules/bootstrap/less/mixins/background-variant.less */
 a.bg-primary:hover,
@@ -2041,7 +2041,7 @@ pre code {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #11C59B;
+  border-color: #10AD73;
 }
 /* line 61, node_modules/bootstrap/less/navs.less */
 .nav .nav-divider {
@@ -2078,7 +2078,7 @@ pre code {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #11C59B;
+  color: #10AD73;
   cursor: default;
   background-color: #fff;
   border: 1px solid #eeeeee;
@@ -2155,7 +2155,7 @@ pre code {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #FF8B00;
+  background-color: #A7A9AC;
 }
 /* line 146, node_modules/bootstrap/less/navs.less */
 .nav-stacked > li {
@@ -2929,7 +2929,7 @@ body > header {
   box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5);
   transition: box-shadow 0.218s ease;
   height: 65px;
-  border-bottom: 6px solid #FF8B00;
+  border-bottom: 4px solid #A7A9AC;
   color: #777777;
   background-color: #fff;
   font-size: 14px;
@@ -2982,7 +2982,7 @@ body > header h1 .brand-logo {
 }
 /* line 65, ./theme-src/styles/styles.less */
 body > header .brand-logo:before {
-  color: #FF8B00;
+  color: #A7A9AC;
   display: inline-block;
   font-family: "camunda-circle";
   font-style: normal;
@@ -3097,7 +3097,7 @@ body > header .categories li:last-of-type:after {
 .page-content h3 a,
 .page-content h4 a,
 .page-content h5 a {
-  color: #555555;
+  color: #414042;
 }
 /* line 7, node_modules/camunda-commons-ui/resources/less/sites/_mixins.less */
 .page-content h1 a:hover,
@@ -3112,7 +3112,7 @@ body > header .categories li:last-of-type:after {
 .page-content h5 a:focus {
   text-decoration: none;
   outline: none;
-  color: #555555;
+  color: #414042;
 }
 /* line 30, node_modules/camunda-commons-ui/resources/less/sites/_mixins.less */
 .page-content h1 a:hover,
@@ -3599,7 +3599,7 @@ figure.clickable {
 }
 /* line 582, ./theme-src/styles/styles.less */
 figure.clickable > span {
-  border-color: #11C59B;
+  border-color: #10AD73;
 }
 /* line 586, ./theme-src/styles/styles.less */
 figure.clickable:before,
@@ -4507,7 +4507,7 @@ pre[class*="language-"] {
 }
 /* line 116, theme-src/styles/prism.less */
 .token.function {
-  color: #FF8B00;
+  color: #A7A9AC;
 }
 /* line 120, theme-src/styles/prism.less */
 .token.regex,
@@ -4555,7 +4555,7 @@ pre[class*="language-"] {
 /* line 24, theme-src/styles/search.less */
 .search-field input {
   outline: none;
-  color: #555555;
+  color: #414042;
   border: 1px solid #eeeeee;
   border-radius: 24px;
   padding: 0 24px 0 12px;
@@ -4579,7 +4579,7 @@ pre[class*="language-"] {
   background-color: rgba(238, 238, 238, 0.95);
   transform: translateY(-60px);
   transition: transform 0.218s ease, opacity 0.218s ease;
-  border: 1px solid #11C59B;
+  border: 1px solid #10AD73;
   border-top: none;
   box-shadow: 0 0 3px 0 rgba(17, 197, 155, 0.5);
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -4647,7 +4647,7 @@ pre[class*="language-"] {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  border-top: 1px solid #11C59B;
+  border-top: 1px solid #10AD73;
 }
 /* line 134, theme-src/styles/search.less */
 .search-results > footer button {
@@ -4658,7 +4658,7 @@ pre[class*="language-"] {
   width: 33%;
   z-index: 1;
   background-color: transparent;
-  color: #11C59B;
+  color: #10AD73;
   line-height: 28px;
   height: 26px;
   transition: color 0.218s ease, background-color 0.218s ease;
@@ -4671,19 +4671,19 @@ pre[class*="language-"] {
 }
 /* line 154, theme-src/styles/search.less */
 .search-results > footer button[disabled] {
-  color: #555555;
+  color: #414042;
   background-color: #eeeeee;
 }
 /* line 158, theme-src/styles/search.less */
 .search-results > footer button[disabled]:hover,
 .search-results > footer button[disabled]:focus {
-  color: #555555;
+  color: #414042;
   background-color: #eeeeee;
 }
 /* line 165, theme-src/styles/search.less */
 .search-results > footer button.search-close {
   width: 34%;
-  border: 0 solid #11C59B;
+  border: 0 solid #10AD73;
   border-width: 0 1px;
   z-index: 2;
 }
