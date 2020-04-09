@@ -22,9 +22,9 @@ We’re proud to be working with the incredible RemedyMatch - a logistics platfo
 {{< youtube QIhFcmSnDLQ >}}
 
 
-**“RemedyMatch is bridging the delivery bottlenecks during the COVID-19 pandemic and working hard to ensure the personal protection of those on the frontlines.” says Matthias Diener Head of Marketing at RemedyMatch.**
-
-**“We use Camunda as the backend of our logistics solution to make sure we can quickly and accurately match thousands of protective articles with people who need them each day, and then ensure they arrive as fast as possible, so our frontline workers are safe and able to continue their amazing efforts.”**
+> “RemedyMatch is bridging the delivery bottlenecks during the COVID-19 pandemic and working hard to ensure the personal protection of those on the frontlines.” says Matthias Diener Head of Marketing at RemedyMatch.
+>
+> “We use Camunda as the backend of our logistics solution to make sure we can quickly and accurately match thousands of protective articles with people who need them each day, and then ensure they arrive as fast as possible, so our frontline workers are safe and able to continue their amazing efforts.”
 
 __How do I get involved?__
 
