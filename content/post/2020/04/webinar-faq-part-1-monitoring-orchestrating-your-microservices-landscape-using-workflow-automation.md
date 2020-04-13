@@ -1,7 +1,7 @@
 +++
 author = "Bernd Ruecker"
 categories = ["Community"]
-date = "2020-04-13T09:00:00+01:00"
+date = "2020-04-13T08:00:00+01:00"
 tags = ["Microservices"]
 title = "Webinar FAQ Part 1: Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation"
 +++
