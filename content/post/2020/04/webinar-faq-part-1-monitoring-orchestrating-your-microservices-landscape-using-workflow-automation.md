@@ -75,7 +75,7 @@ In the orchestration scenario, I used the Camunda engine within the order fulfil
 
 - Of course you can use the audit data from the workflow engine to do further post-run analysis, but I did not dive into that in the webinar.
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic6.jpg" alt="BPMN model" >}}
+{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/cockpit.png" alt="BPMN model" >}}
 
 __Q: Are you going to continue to work on CMMN?__
 
