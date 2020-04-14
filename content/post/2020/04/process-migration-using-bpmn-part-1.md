@@ -50,12 +50,12 @@ What we are discussing here sounds a lot like a business process, doesn’t it? 
 In this use case, we have a process that loses a User Task from Version 1 to Version 2.
 Version 1 looks like this. Notice on path 2 that there is a "User Task 0".
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/process-migration/mypath-1.png" alt="process migration" >}}
+{{< figure title="" src="https://blog.camunda.com/post/2020/04/process-migration/case1.png" alt="process migration" >}}
 
 In __Version 2,__ "user task 0" no longer exists, so we need to migrate all existing tokens on "user task 0" to "user task 2" over on path 3. The problem is that the development team is telling us that if we do this token migration directly, then those process instances might not function properly. Some kind of "data massage" is required in order to make sure that migration from "user task 0" to "user task 2" happens without incident.
 (NOTE: For the purposes of this exercise, the actual data that needs to be prepped for this to work correctly is irrelevant and out of scope. Let us just pretend that many things need to be carefully changed for the migration to work correctly.)
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/process-migration/mypath-2.png" alt="process migration" >}}
+{{< figure title="" src="https://blog.camunda.com/post/2020/04/process-migration/case1v2.png" alt="process migration" >}}
 
 So the development team decides to use a "Migration Island" pattern for this migration. They will use the process migration functionality of Camunda to migrate tokens of "user task 0" from Version 1 to the "Migration Task" user task shown in Version 2. The only purpose of this "island" is to accept tokens during a process migration process. The process model design should allow no other means to arrive at this island in the flow.
 
