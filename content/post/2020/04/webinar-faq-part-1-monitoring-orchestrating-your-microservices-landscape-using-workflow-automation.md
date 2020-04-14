@@ -91,7 +91,7 @@ Yes, that is possible. It is not part of Camunda BPM out-of-the-box, at least no
 
 A great example is from LV1871, an insurance company in Germany. [You can read about it in this blog post](https://medium.com/@davidibl/dmn-manager-ed2afa73b221), the whole tooling is open source!
 
-{{< figure title="A bespoke DMN manager example from LV1871, which is available open-source." src="https://blog.camunda.com/post/2020/04/webinarfaq/pic2.png" alt="BPMN model" >}}
+{{< figure title="A bespoke DMN manager example from LV1871, which is available open-source." src="https://blog.camunda.com/post/2020/04/webinarfaq/0__ApbE6rP5pHXD8DY.gif" alt="BPMN model" >}}
 
 __Ready for more?__
 
