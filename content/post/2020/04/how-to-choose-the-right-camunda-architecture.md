@@ -94,11 +94,11 @@ Ready to get up and running on Camunda? Here are links to the distributions that
 - You’d like the option to use Java
 - A single team or project is used per engine
 - [https://start.camunda.com/](https://start.camunda.com/)
-- [Follow this tutorial](https://youtu.be/sHgf_EsQzfc?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv ):https://youtu.be/sHgf_EsQzfc?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv
+- [Follow this tutorial](https://youtu.be/sHgf_EsQzfc?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv ): https://youtu.be/sHgf_EsQzfc?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv
 
 ### Camunda Tomcat Distribution
 - Don’t mind using Java if needed
 - You want to orchestrate local services and/or distributed services
 - Many teams and projects are intended to share the same engine.
 - [https://camunda.com/download/](https://camunda.com/download/)
-- [Follow this tutorial](https://youtu.be/HxtZf5VD6lQ?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv ):https://youtu.be/HxtZf5VD6lQ?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv
+- [Follow this tutorial](https://youtu.be/HxtZf5VD6lQ?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv ): https://youtu.be/HxtZf5VD6lQ?list=PLJG25HlmvsOUnCziyJBWzcNh7RM5quTmv
