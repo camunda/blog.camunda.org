@@ -5,7 +5,7 @@ date = "2020-04-16T08:00:00+01:00"
 tags = ["orchestration", "deployment"]
 title = "How to choose the right Camunda architecture."
 +++
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/process-migration/choose-deploy.png" alt="Camunda Distro" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/process-migration/choose-deploy.png" alt="Camunda Distro" >}}
 
 ## Decide on the Granularity of your orchestration.
 
