@@ -26,7 +26,7 @@ __Q: How to present BPMN diagrams so that common people can understand it?__
 
 There is no simple answer to that. But in my experience most people can understand a basic subset of BPMN easily. For our [Real-Life BPMN book](https://www.amazon.com/dp/1086302095/), we created a chart showing the elements we see used most often in automation-related projects:
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic1.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/faq-part1.jpg" alt="BPMN model" >}}
 BPMN symbols grouped by the frequency they are used [from Real-Life BPMN](https://www.amazon.com/dp/1086302095/)
 
 You can typically express a lot with the subset of “Always” or “Frequently”. And these symbols are intuitive — at least with a bit of training or explanation on the go.But comprehensible models should also comply with certain best practices — you can find one example in [Create Readable Process Models](https://camunda.com/best-practices/creating-readable-process-models/).
