@@ -1,7 +1,7 @@
 +++
 author = "Mary Thengvall, Niall Deehan"
 categories = ["Community"]
-date = "2020-04-20T08:00:00+01:00"
+date = "2020-04-20T07:00:00+01:00"
 tags = ["Community"]
 title = "CamundaCon Live - Tips and Tricks to make most of Your Experience"
 +++
@@ -16,7 +16,7 @@ Plus you'll be able to interact with other attendees, including more than 4,300 
 
 It’s easy to join:
 
-__Slack registration link:__ [HERE](https://join.slack.com/t/camundacon/shared_invite/zt-dcgxco3b-qH33EA99IZTFRvdRNurnWA?utm_campaign=2020%20CamundaCon%20Live&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-8tPk-EQ3zpXsMQRifpbTPLv5zr5wLU4lfM6-LaoTS7F4aawq72gAn6GFk6WScSuzuPUw6k)
+__Slack registration link:__ **[HERE](https://join.slack.com/t/camundacon/shared_invite/zt-dcgxco3b-qH33EA99IZTFRvdRNurnWA?utm_campaign=2020%20CamundaCon%20Live&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-8tPk-EQ3zpXsMQRifpbTPLv5zr5wLU4lfM6-LaoTS7F4aawq72gAn6GFk6WScSuzuPUw6k)**
 
 __Slack workspace name:__ camundacon
 
