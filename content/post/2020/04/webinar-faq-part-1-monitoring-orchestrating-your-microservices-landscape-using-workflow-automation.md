@@ -6,8 +6,10 @@ tags = ["Microservices"]
 title = "Webinar FAQ Part 1: Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation"
 +++
 
-Back in March, I conducted the webinar: “[Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)”. You can [find the recording of the webinar online](https://camunda.com/learn/fulfillment/webinars/microservices-landscape-workflow-automation-thank-you/), as well as [the slides](https://www.slideshare.net/camunda/webinar-monitoring-orchestrating-your-microservices-landscape-using-workflow-automation). Not only was I overwhelmed by the number of attendees, but we also got a huge list of interesting questions before and, especially, during the webinar. I was able to answer some of these, but ran out of time to answer them all.
+Back in March, I conducted the webinar: “[Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)”. You can find the recording of the webinar online, as well as the slides. Not only was I overwhelmed by the number of attendees, but we also got a huge list of interesting questions before and, especially, during the webinar. I was able to answer some of these, but ran out of time to answer them all.
+
 <!--more-->
+
 So I want to answer all open questions in this series of seven blog posts covering:
 
 1. BPMN & modeling-related questions (6 answers)
