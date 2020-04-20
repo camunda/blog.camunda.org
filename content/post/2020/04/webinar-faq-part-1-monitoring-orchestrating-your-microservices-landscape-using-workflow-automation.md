@@ -6,8 +6,10 @@ tags = ["Microservices"]
 title = "Webinar FAQ Part 1: Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation"
 +++
 
-Back in March, I conducted the webinar: “[Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)”. You can [find the recording of the webinar online](https://camunda.com/learn/fulfillment/webinars/microservices-landscape-workflow-automation-thank-you/), as well as [the slides](https://www.slideshare.net/camunda/webinar-monitoring-orchestrating-your-microservices-landscape-using-workflow-automation). Not only was I overwhelmed by the number of attendees, but we also got a huge list of interesting questions before and, especially, during the webinar. I was able to answer some of these, but ran out of time to answer them all.
+Back in March, I conducted the webinar: “[Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)”. You can find the recording of the webinar online, as well as the slides. Not only was I overwhelmed by the number of attendees, but we also got a huge list of interesting questions before and, especially, during the webinar. I was able to answer some of these, but ran out of time to answer them all.
+
 <!--more-->
+
 So I want to answer all open questions in this series of seven blog posts covering:
 
 1. BPMN & modeling-related questions (6 answers)
@@ -26,7 +28,7 @@ __Q: How to present BPMN diagrams so that common people can understand it?__
 
 There is no simple answer to that. But in my experience most people can understand a basic subset of BPMN easily. For our [Real-Life BPMN book](https://www.amazon.com/dp/1086302095/), we created a chart showing the elements we see used most often in automation-related projects:
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic1.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/faq-part1.jpg" alt="BPMN model" >}}
 BPMN symbols grouped by the frequency they are used [from Real-Life BPMN](https://www.amazon.com/dp/1086302095/)
 
 You can typically express a lot with the subset of “Always” or “Frequently”. And these symbols are intuitive — at least with a bit of training or explanation on the go.But comprehensible models should also comply with certain best practices — you can find one example in [Create Readable Process Models](https://camunda.com/best-practices/creating-readable-process-models/).
@@ -43,15 +45,15 @@ __Q: Why do you name events and functions in the BPMN model in the same style? W
 
 This question might relate to this workflow model I created in the webinar when I talked about that [Camunda Optimize](https://camunda.com/products/optimize/) can do monitoring on pure events flowing around (even in scenarios where you do not use any workflow engine):
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic2.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic2.jpg" alt="BPMN model" >}}
 
 And there are indeed two flaws with this model — well spotted! First of all, it violates [our typical naming convention](https://camunda.com/best-practices/naming-bpmn-elements/), whereas every task is named with “object verb”, meaning that would result in:
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic3.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic3.jpg" alt="BPMN model" >}}
 
 While this is indeed better named, it has the downside that the exact event names are no longer shown. If you want to keep the event names from your application, we could model:
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic4.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic4.jpg" alt="BPMN model" >}}
 
 I do agree that this might be the most accurate way of modeling this situation. But in this case, I decided on tasks instead of events for two reasons:
 
@@ -61,7 +63,7 @@ I do agree that this might be the most accurate way of modeling this situation. 
 
 As this workflow model is “only” used in Optimize to project events onto, you have a bit of freedom anyway. So in this example, it might even be a good idea to model:
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic5.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic5.jpg" alt="BPMN model" >}}
 
 There is no right or wrong modeling here, at least, to my gut feeling. But I do agree that the model I did in the heat of the moment might not be the best choice to do in a real-life scenario.
 
@@ -75,7 +77,7 @@ In the orchestration scenario, I used the Camunda engine within the order fulfil
 
 - Of course you can use the audit data from the workflow engine to do further post-run analysis, but I did not dive into that in the webinar.
 
-{{< figure title="" src="https://blog.camunda.com/post/2020/04/webinarfaq/pic6.jpg" alt="BPMN model" >}}
+{{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/webinarfaq/cockpit.png" alt="BPMN model" >}}
 
 __Q: Are you going to continue to work on CMMN?__
 
@@ -91,7 +93,7 @@ Yes, that is possible. It is not part of Camunda BPM out-of-the-box, at least no
 
 A great example is from LV1871, an insurance company in Germany. [You can read about it in this blog post](https://medium.com/@davidibl/dmn-manager-ed2afa73b221), the whole tooling is open source!
 
-{{< figure title="A bespoke DMN manager example from LV1871, which is available open-source." src="https://blog.camunda.com/post/2020/04/webinarfaq/pic2.png" alt="BPMN model" >}}
+{{< figure class="no-border" title="A bespoke DMN manager example from LV1871, which is available open-source." src="https://blog.camunda.com/post/2020/04/webinarfaq/0__ApbE6rP5pHXD8DY.gif" alt="BPMN model" >}}
 
 __Ready for more?__
 
