@@ -42,7 +42,7 @@ __You only have to do this once__ - when you are logged in, you can seamlessly n
 
 __How do I join the discussion?__
 
-{{< figure class="no-border" title="The navigation bar is your way of interacting with speakers and attendees alike" src="https://blog.camunda.com/post/2020/04/camundaconlive/toolbar.png" alt="Nav Bar" >}}
+{{< figure class="no-border" title="The navigation bar is your way of interacting with speakers and attendees alike" src="https://blog.camunda.com/post/2020/04/camundaconlive/icons.png" alt="Nav Bar" >}}
 
 When you’re in a session, there are lots of ways you can interact with the wider Camunda Community. Use the buttons on the navigation bar to:
 
