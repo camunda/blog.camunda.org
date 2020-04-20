@@ -12,7 +12,7 @@ __Anything I need to do before joining CamundaCon Live?__
 
 Join us today on our exclusive CamundaCon Live Slack channel - it is live right now. This is where you can talk to Camunda experts including Camunda engineers and consultants, who’ll be on hand to answer any questions you have during the event.
 
-Plus you'll be able to interact with other attendees, including more than 4,300 software developers, architects and IT executives from more than 1,200 companies.
+Plus you'll be able to interact with other attendees, including more than 4,300 software developers, architects and IT executives from more than 3,000 companies.
 
 It’s easy to join:
 
