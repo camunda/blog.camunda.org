@@ -6,6 +6,8 @@ tags = ["BPMN", "Migration", "Process Execution", "Camundacon"]
 title = "Process Migration Using BPMN Part 1"
 +++
 
+_Please note:  This blog post is the Part One of a two part series.  If you are looking for Part Two then [ you can find it here.](https://blog.camunda.com/post/2020/04/process-migration-using-bpmn-part-2/)_
+
 If your organization relies on BPM and your process definitions are considered to have “long running” process instances (perhaps due to user tasks etc.), then there comes a time when your organization needs to define the process instance migration strategy. This blog will show you how to define your migration strategy as a business process and to use BPMN to help control different scenarios during your custom migration.
 
 <!--more-->
@@ -61,7 +63,7 @@ So the development team decides to use a "Migration Island" pattern for this mig
 
 The DevOps team also has a concern during this migration. They are concerned that there might be more than 50,000 instances to migrate on deployment night, and that the migration itself might cause unexpected load on the infrastructure. Therefore, they are asking the development team to migrate in controlled batches, setting a proper maximum number of process instances to migrate during each batch. For instance, let us say 500 at a time.
 
-__In Part 2 of this blog post, we will demonstrate the solution to this use case.__
+__[In Part 2 of this blog post](https://blog.camunda.com/post/2020/04/process-migration-using-bpmn-part-2/), we will demonstrate the solution to this use case.__
 If you can’t wait until Part 2, join me at [CamundaCon Live on April 23rd](https://www.camundacon.com/live/agenda-day1/), where I’ll demo this solution live in my presentation: __Process Migration 201: Tips, Tricks, and Techniques.__
 
 Plus if you would like to run some of these example projects yourself, please feel free to pull them from Git [here](https://github.com/camunda-consulting/migration-examples).
