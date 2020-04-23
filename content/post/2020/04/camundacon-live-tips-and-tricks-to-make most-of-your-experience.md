@@ -1,7 +1,7 @@
 +++
 author = "Mary Thengvall, Niall Deehan"
 categories = ["Community"]
-date = "2020-04-20T08:00:00+01:00"
+date = "2020-04-20T07:00:00+01:00"
 tags = ["Community"]
 title = "CamundaCon Live - Tips and Tricks to make most of Your Experience"
 +++
@@ -12,11 +12,11 @@ __Anything I need to do before joining CamundaCon Live?__
 
 Join us today on our exclusive CamundaCon Live Slack channel - it is live right now. This is where you can talk to Camunda experts including Camunda engineers and consultants, who’ll be on hand to answer any questions you have during the event.
 
-Plus you'll be able to interact with other attendees, including more than 4,300 software developers, architects and IT executives from more than 1,200 companies.
+Plus you'll be able to interact with other attendees, including more than 4,300 software developers, architects and IT executives from more than 3,000 companies.
 
 It’s easy to join:
 
-__Slack registration link:__ [HERE](https://join.slack.com/t/camundacon/shared_invite/zt-dcgxco3b-qH33EA99IZTFRvdRNurnWA?utm_campaign=2020%20CamundaCon%20Live&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-8tPk-EQ3zpXsMQRifpbTPLv5zr5wLU4lfM6-LaoTS7F4aawq72gAn6GFk6WScSuzuPUw6k)
+__Slack registration link:__ **[HERE](https://join.slack.com/t/camundacon/shared_invite/zt-dcgxco3b-qH33EA99IZTFRvdRNurnWA?utm_campaign=2020%20CamundaCon%20Live&utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-8tPk-EQ3zpXsMQRifpbTPLv5zr5wLU4lfM6-LaoTS7F4aawq72gAn6GFk6WScSuzuPUw6k)**
 
 __Slack workspace name:__ camundacon
 
@@ -42,7 +42,7 @@ __You only have to do this once__ - when you are logged in, you can seamlessly n
 
 __How do I join the discussion?__
 
-{{< figure class="no-border" title="The navigation bar is your way of interacting with speakers and attendees alike" src="https://blog.camunda.com/post/2020/04/camundaconlive/toolbar.png" alt="Nav Bar" >}}
+{{< figure class="no-border" title="The navigation bar is your way of interacting with speakers and attendees alike" src="https://blog.camunda.com/post/2020/04/camundaconlive/icons.png" alt="Nav Bar" >}}
 
 When you’re in a session, there are lots of ways you can interact with the wider Camunda Community. Use the buttons on the navigation bar to:
 
