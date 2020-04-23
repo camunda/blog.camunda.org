@@ -1,7 +1,7 @@
 +++
 author = "Gottfried Sehringer"
 categories = ["Community"]
-date = "2020-04-23T08:00:00+01:00"
+date = "2020-04-23T09:00:00+01:00"
 tags = ["CamundaCon"]
 title = "CamundaCon Live Opens for a Global Community of 6,000 Attendees"
 +++
