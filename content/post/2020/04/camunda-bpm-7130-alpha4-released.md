@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-04-30T07:30:00+00:00"
+date = "2020-04-26T07:30:00+00:00"
 title = "Camunda BPM 7.13.0-alpha4 Released"
 +++
 
@@ -11,6 +11,7 @@ We are happy to share the fourth alpha release of **Camunda BPM 7.13** with you!
 This release features the following improvements:
 
 - Read Permission for Historic Process Instances
+- Query for Definitions by Deployment Time
 - Features
 - [XXX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.13.0-alpha4)
 
@@ -39,6 +40,28 @@ Read more about the feature in the [User Guide].
 
 
 [user guide]: https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions
+
+## Query for Definitions by Deployment Time
+
+All Process and Decision Definitions receive a timestamp when deployed to the engine. Sometimes it
+would be useful to be able to query for only those definitions that were deployed after or at a
+given moment (e.g. to only fetch the definitions that were added after your last query).
+
+With this release we expanded the capabilities of the `ProcessDefinitionQuery` and the
+`DecisionDefinitionQuery` so you can do just that. Both queries now have filter and sort options
+for deployment time.
+
+```java
+query.deployedAfter(Date deployedAfter);
+query.deployedAt(Date deployedAt);
+query.orderByDeploymentTime().desc();
+```
+
+The same functionality was added to the equivalent REST endpoints. You can find the details
+described in the REST documentation for 
+
+* [GET /process-definition](https://docs.camunda.org/manual/latest/reference/rest/process-definition/get-query/)
+* [GET /decision-definition](https://docs.camunda.org/manual/latest/reference/rest/decision-definition/get-query/)
 
 ## Feature
 
