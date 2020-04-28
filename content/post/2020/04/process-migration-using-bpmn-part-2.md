@@ -1,7 +1,7 @@
 +++
 author = "Chris Allen"
 categories = ["Community"]
-date = "2020-04-22T08:00:00+01:00"
+date = "2020-04-28T08:00:00+01:00"
 tags = ["BPMN", "Migration", "Process Execution", "Camundacon"]
 title = "Process Migration Using BPMN Part 2"
 +++
