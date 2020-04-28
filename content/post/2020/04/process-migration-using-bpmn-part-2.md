@@ -6,7 +6,7 @@ tags = ["BPMN", "Migration", "Process Execution", "Camundacon"]
 title = "Process Migration Using BPMN Part 2"
 +++
 
-_Please note:  This blog post is the continuation of [Process Migration Using BPMN Part 1](https://blog.camunda.com/post/2020/04/process-migration-using-bpmn-part-1/)_
+This blog post is the continuation of [Process Migration Using BPMN Part 1](https://blog.camunda.com/post/2020/04/process-migration-using-bpmn-part-1/) - part of my presentation Process Migration 201: Tips Tricks and Techniques, at CamundaCon Live. Here, I’ll run through some migration solution examples.
 
 <!--more-->
 
