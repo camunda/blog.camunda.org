@@ -17,7 +17,6 @@ This release focuses on:
 
 The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=16012) are available in Jira.
 
-<!--more-->
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
