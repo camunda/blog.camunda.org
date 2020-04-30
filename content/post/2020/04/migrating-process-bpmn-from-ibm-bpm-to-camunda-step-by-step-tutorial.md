@@ -117,4 +117,4 @@ __java -jar__ ***yourGeneratedJarFile***.__jar “your input file” “your out
 
 That’s it! Please feel free to provide feedback in our [forum](https://forum.camunda.org/) and [watch this Git repository](https://github.com/camunda-consulting/migrate-to-camunda-tools) for additional converters as they become available.
 
-Plus, if you’re new to Camunda and want to get hands-on with our product stack for setting up and running processes, join our [Camund Code Studio](https://www.eventbrite.ca/e/camunda-code-studio-tickets-103236037768) on May 19th. This free, hands-on online workshop will get you up and running in just three hours, focusing on a Java and Spring Boot use case.
+Plus, if you’re new to Camunda and want to get hands-on with our product stack for setting up and running processes, join our [Camunda Code Studio](https://www.eventbrite.ca/e/camunda-code-studio-tickets-103236037768) on May 19th. This free, hands-on online workshop will get you up and running in just three hours, focusing on a Java and Spring Boot use case.
