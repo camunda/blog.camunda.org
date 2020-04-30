@@ -39,7 +39,7 @@ Exactly for this use case we added a new Plugin Point within Optimize which allo
 
 {{< figure src="process-instance-import.png" alt="Business Key Import" >}}
 
-In order to support you building such plugin we added an example to our [GitHub Repository](https://github.com/camunda/camunda-optimize-examples/tree/master/businesskey-import-plugin/).
+In order to support you building such a plugin we added an example to our [Optimize Example GitHub Repository](https://github.com/camunda/camunda-optimize-examples/tree/master/businesskey-import-plugin/).
 
 # What's Next?
 
