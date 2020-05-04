@@ -1,7 +1,7 @@
 +++
 author = "Gottfried Sehringer"
 categories = ["Community"]
-date = "2020-04-23T09:00:00+01:00"
+date = "2020-04-23T08:00:00+01:00"
 tags = ["CamundaCon"]
 title = "CamundaCon Live Opens for a Global Community of 6,000 Attendees"
 +++
@@ -10,7 +10,7 @@ It was just one month ago that we opened registration for our first global onlin
 
 <!--more-->
 
-While we miss seeing our community, customers, partners, and friends in person, we’re excited to get started. We have an outstanding agenda with 28 speakers and 24 sessions, and best of all, our virtual conference expands access to so many more people than would be otherwise possible. *__More than 6,000 people have registered__* for the two-day event, representing 4,000 organizations and more than 150 countries across six continents. Our passionate community is coming together from every corner of the globe.
+While we miss seeing our community, customers, partners, and friends in person, we’re excited to get started. We have an outstanding agenda with 28 speakers and 24 sessions, and best of all, our virtual conference expands access to so many more people than would be otherwise possible. ***More than 6,000 people have registered*** for the two-day event, representing 4,000 organizations and more than 150 countries across six continents. Our passionate community is coming together from every corner of the globe.
 
 And we have an agenda that’s not to be missed. Today’s sessions will open with a keynote by our CEO and Co-Founder Jakob Freund and will include insightful sessions with process automation experts from Societe Generale, Keller Williams, Ontario Teachers’ Pension Plan, and 24 Hour Fitness.  Alongside, deep-dive technical sessions from Camunda experts will cover security and migration strategies. Additionally, we’ll have an expert panel discussing the promise and peril of RPA, with experts from Nokia, Deutsche Telekom, and NatWest Group, moderated by Intellyx’s Jason Bloomberg.
 
