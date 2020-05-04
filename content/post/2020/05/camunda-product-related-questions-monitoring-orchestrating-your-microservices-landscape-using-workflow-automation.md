@@ -3,7 +3,7 @@ author = "Bernd Ruecker"
 categories = ["Community"]
 date = "2020-05-04T08:00:00+01:00"
 tags = ["Microservices"]
-title = "Webinar FAQ Part 1: Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation"
+title = "Camunda product-related Questions: Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation"
 +++
 
 Back in March, I conducted the webinar: “[Monitoring & Orchestrating Your Microservices Landscape using Workflow Automation](https://camunda.com/learn/webinars/microservices-landscape-workflow-automation/)”. Not only was I overwhelmed by the number of attendees, but we also got a huge list of interesting questions before and, especially, during the webinar. I was able to answer some of these, but ran out of time to answer them all. So I want to answer all open questions in this series of seven blog posts - you can click on the hyperlinks below to navigate to the other entries.
