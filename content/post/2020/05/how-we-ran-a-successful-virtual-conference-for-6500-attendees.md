@@ -1,12 +1,14 @@
 +++
 author = "Bernd Ruecker"
 categories = ["Community"]
-date = "2020-05-06T08:00:00+01:00"
+date = "2020-05-06T07:00:00+01:00"
 tags = ["CamundaCon", "CamundaConLive"]
 title = "How we ran a successful virtual conference for > 6500 attendees"
 +++
 
 {{< figure src="https://blog.camunda.com/post/2020/04/camundaconlive/camundacon_live_2020.png" alt=" Camundacon Live 2020" >}}
+
+<!--more-->
 
 We planned to hold CamundaCon in New York City at the end of April. Unfortunately, due to the global situation with COVID-19 we had to cancel, but we still wanted to hold an event for the community. So at the end of April  we ran [CamundaCon Live](https://www.camundacon.com/live/) and it was a huge success.
 
