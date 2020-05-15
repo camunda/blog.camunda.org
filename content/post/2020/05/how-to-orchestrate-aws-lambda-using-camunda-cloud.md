@@ -91,7 +91,7 @@ Talking about operations: Have a look at Camunda Cockpit and compare this to the
 
 Some comparison can also be found in [BPMN and Microservices Orchestration, Part 2 of 2: Graphical Models, Simplified Sagas, and Cross-functional Collaboration](https://zeebe.io/blog/2018/08/bpmn-microservices-orchestration-part-2-graphical-models/):
 
-{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/BPMN-AWS.jpg" alt="BPMN-AWS" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/BPMN-AWS.png" alt="BPMN-AWS" >}}
 
 I wrote about that in length in [BizDevOps — the true value proposition of workflow engines](https://blog.bernd-ruecker.com/bizdevops-the-true-value-proposition-of-workflow-engines-f342509ba8bb).
 
