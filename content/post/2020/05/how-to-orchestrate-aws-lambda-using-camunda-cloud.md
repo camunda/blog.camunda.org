@@ -1,7 +1,7 @@
 +++
 author = "Bernd Ruecker"
 categories = ["Community"]
-date = "2020-05-15T09:00:00+01:00"
+date = "2020-05-15T11:00:00+01:00"
 tags = ["CamundaconCloud","AWS"]
 title = "How to Orchestrate AWS Lambda using Camunda Cloud: Powerful Serverless Function Orchestration using BPMN and Cloud-Native Workflow Technology"
 +++
@@ -12,7 +12,7 @@ I recently spoke at the [AWS Community Summit](https://www.comsum.co.uk/) and wa
 
 The example I used in my talk was a trip booking, composed of a hotel booking, a rental car booking and a flight booking:
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Book-a-trip.png" alt="Book a trip" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Book-a-trip.png" alt="Book a trip" >}}
 
 This example raises a lot of questions about how the functions are coordinated to achieve this goal.
 
@@ -24,24 +24,24 @@ In the talk I discuss alternative approaches, for example to chain the lambdas b
 
 So ideally you want to express the orchestration logic somewhere. But these orchestrations are seldom simple. For example, you have to deal with flight bookings that don’t go through. In this case you cannot simply rollback the transaction of the hotel or rental car booking. Instead, you have to cancel or undo these bookings in your business logic. This is known as the [Saga Pattern](https://blog.bernd-ruecker.com/saga-how-to-implement-complex-business-transactions-without-two-phase-commit-e00aa41a1b1b) and can be expressed in [BPMN](https://camunda.com/bpmn/) relatively easy:
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Saga-pattern.png" alt="Saga pattern" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Saga-pattern.png" alt="Saga pattern" >}}
 
 __Orchestrating Lambdas With BPMN__
 In BPMN you can have service tasks where you can execute logic. This is a great place to invokes Lambdas. I will use [Camunda Cloud](https://camunda.com/de/products/cloud/) as managed workflow engine (based on [Zeebe](http://zeebe.io/)) that can execute such BPMN models. Workflow engine clusters can be created in self-service ([register for a free trial](https://camunda.com/de/products/cloud/)):
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Zeebe-clusters.png" alt="Zeebe clusters" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Zeebe-clusters.png" alt="Zeebe clusters" >}}
 
 In order to connect Zeebe to AWS Lambdas you can use the [Zeebe Lambda Worker](https://github.com/zeebe-io/zeebe-lambda-worker), which is available as community extension (early stage at the time or writing). This allows you to wire your Lambda invocations directly within your BPMN:
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Lambda.png" alt="Lambda" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Lambda.png" alt="Lambda" >}}
 
 You can use workflow variables to store data related to your workflow instance, for example the result of the hotel booking. These variables can be used at other places, e.g. to make decisions:
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Decisions.png" alt="Decisions" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/Decisions.png" alt="Decisions" >}}
 
 The Zeebe Lambda worker itself can be operated as Docker image. It subscribes to Zeebe and invokes Lambdas. It can run within your AWS account, so you don’t need to expose your Lambdas to the outside world. You could simply operate the worker e.g. via AWS Fargate. [Refer to the docs for details](https://github.com/zeebe-io/zeebe-lambda-worker).
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/EventBridge.png" alt="EventBridge" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/EventBridge.png" alt="EventBridge" >}}
 
 We currently spike [AWS EventBridge](https://aws.amazon.com/de/eventbridge/) support as an alternative to this worker, which could even ease the integration further.
 
@@ -63,6 +63,7 @@ Follow the read-me of [https://github.com/berndruecker/trip-booking-saga-serverl
 A complete walk-through recording is available here: [https://youtu.be/RqOSwinvl-U](https://youtu.be/RqOSwinvl-U)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RqOSwinvl-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 __Why BPMN for Lambda Orchestration?__
 
@@ -90,7 +91,7 @@ Talking about operations: Have a look at Camunda Cockpit and compare this to the
 
 Some comparison can also be found in [BPMN and Microservices Orchestration, Part 2 of 2: Graphical Models, Simplified Sagas, and Cross-functional Collaboration](https://zeebe.io/blog/2018/08/bpmn-microservices-orchestration-part-2-graphical-models/):
 
-{< figure title="" src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/BPMN-AWS.jpg" alt="BPMN-AWS" >}}
+{{< figure src="https://blog.camunda.com/post/2020/05/how-to-orchestrate-aws-lambda-using-camunda-cloud/BPMN-AWS.jpg" alt="BPMN-AWS" >}}
 
 I wrote about that in length in [BizDevOps — the true value proposition of workflow engines](https://blog.bernd-ruecker.com/bizdevops-the-true-value-proposition-of-workflow-engines-f342509ba8bb).
 
@@ -105,4 +106,4 @@ __Conclusion__
 
 This post quickly walked you through Lambda orchestration with BPMN and Camunda Cloud. This should give you some starting point for your own endeavors. While Step Functions might be the tool of choice for easy orchestrations, you might soon want to switch to a standardized, mature and widespread workflow language (BPMN), where the visualization can be understood by anyone. It will allow you to [orchestrate anything, anywhere](https://www.camundacon.com/live/hub/).
 
-If you want to see some real-world examples of AWS Lambda orchestration with BPMN - check out [this blog post from MINEKO](https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/), who use [Camunda Cloud](https://camunda.com/products/cloud/) and the [Zeebe workflow engine}(https://zeebe.io/).
+If you want to see some real-world examples of AWS Lambda orchestration with BPMN - check out [this blog post from MINEKO](https://blog.camunda.com/post/2020/03/orchestrating-lambdas-using-camunda-cloud/), who use [Camunda Cloud](https://camunda.com/products/cloud/) and the [Zeebe workflow engine](https://zeebe.io/).
