@@ -1,6 +1,6 @@
 +++
 author = "Volker Gersabeck, Catalina Moisuc"
-categories = ["Community"]
+categories = ["Cawemo"]
 tags = ["Cawemo", "Modelling"]
 date = "2020-04-29T09:00:00+01:00"
 title = "Cawemo Enterprise (On-Premises) 1.2 Released"
@@ -29,6 +29,8 @@ We are continuously improving our comparison feature based on user feedback that
 - In the visual diagram comparisons, we now show all changed implementation properties including the name of the property that was changed and the new value of it.
 - When elements in the diagram are removed, we not only show that the sequence flows have changed, but we also indicate in color and wording that the element was removed from the diagram. This way, users are better able to detect changes with a bigger impact.
 
+### Improved lists
+
 {{< figure class="no-border" src="https://blog.camunda.com/post/2020/04/cawemo12/new-entity-list.png" alt="entity list" >}}
 
 We put a lot of effort into making Cawemo more convenient to work with. Whenever you see a list of projects, diagrams, or collaborators, you see a consistent way of selecting, searching, or sorting these items.
@@ -44,6 +46,7 @@ For those of you that also work with other products from the Camunda Stack: this
 As an owner of an organization you can now not only manage who is part of the organization, but also see all the projects that exist within the organization. This way you get a better overview of what is happening within your organization. Next to the name of the project, the list also shows who has created each project. However, these could also be private projects, so unless you were invited directly to the project and already see it listed in the home view of Cawemo, you are not able to see its content or other details.
 
 ### Share your thoughts
+
 We love being in touch with our community!
 
 As a user in [https://cawemo.com](https://cawemo.com), you can send us a direct message through the “Provide feedback” form. We are also active in the [Camunda forum](https://forum.camunda.org/) and on [twitter @Camunda](https://twitter.com/Camunda).
