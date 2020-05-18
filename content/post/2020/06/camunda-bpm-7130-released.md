@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-05-29T09:00:00+01:00"
+date = "2020-06-02T09:00:00+01:00"
 title = "Camunda BPM 7.13.0 Released"
 
 +++
@@ -13,8 +13,17 @@ The release includes many new features. Here are some of the highlights:
 
 <!-- FEATURES LIST BEGINS -->
 
-* [FEATURE_NAME](/post/2020/05/camunda-bpm-7130-released/#ANCHOR)
-
+* [Camunda BPM Run](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
+* [OpenAPI Documentation](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
+* [DMN 1.3 and FEEL support](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
+* [Improved capabilities for Microservice Deployments]()
+  * [Hostnames in Job Logs]()
+  * [Deployment-aware batch jobs]()
+  * [Deployment-aware Asynchronous Cockpit operations]()
+* [Authorizations]()
+* [Webapp features]()
+  * [New Metrics]()
+  * [accurately display failed activity]()
 <!-- FEATURES LIST ENDS -->
 
 You can [download Camunda 7.13.0 for free](https://camunda.com/download/) or [run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -37,11 +46,52 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 <!-- FEATURES EXPLANATIONS BEGIN -->
 
-## FEATURE
+## Camunda BPM Run
+
+## OpenAPI Documentation
+
+## DMN 1.3 and FEEL support
+
+### DMN 1.3
+
+### FEEL
+
+## Improved capabilities for Microservice Deployments
+
+### Hostnames in Job Logs
+
+### Deployment-aware batch jobs
+
+### Deployment-aware Asynchronous Cockpit operations
+
+## New Authorizations
+
+### Historic Task Authorizations
+### Historic Process Instance Authorizations
+
+## Webapp features
+### New Metrics
+### Accurately display failed activity
+
+## Additional API functionalities
+<!--
+I can retrieve the definitions sorted by their deployment time
+Get List of Distinct External Task Topic Names
+Query tasks by list of process instance ids
+Event-Subscription-Queries in der REST API
+-->
 
 ## Additional Supported Environments
+Support for Java 14
+Support for Oracle 19c (also supported as of 7.12.2+)
+Support for PostgreSQL 12.2
+Support for Wildfly Application Server 19.0
 
 ## Retired Environments
+End of Support for Oracle WebLogic Server 12R1
+
+## Changes to Spring Boot Environments
+<!-- Context Path Changed -->
 
 <!-- FEATURES EXPLANATIONS END -->
 
