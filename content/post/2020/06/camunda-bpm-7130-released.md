@@ -13,24 +13,32 @@ The release includes many new features. Here are some of the highlights:
 
 <!-- FEATURES LIST BEGINS -->
 
-* [Camunda BPM Run](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
-* [OpenAPI Documentation](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
-* [DMN 1.3 and FEEL support](/post/2020/06/camunda-bpm-7130-released/#ANCHOR)
-* [Improved capabilities for Microservice Deployments]()
-  * [Hostnames in Job Logs]()
-  * [Deployment-aware batch jobs]()
-  * [Deployment-aware Asynchronous Cockpit operations]()
-* [Authorizations]()
-* [Webapp features]()
-  * [New Metrics]()
-  * [accurately display failed activity]()
+* [Camunda BPM Run](/post/2020/06/camunda-bpm-7130-released/#camunda-bpm-run)
+* [OpenAPI Documentation](/post/2020/06/camunda-bpm-7130-released/#openapi-documentation)
+* [DMN 1.3 and FEEL 1.2 support](/post/2020/06/camunda-bpm-7130-released/#dmn-1-3-and-feel-1-2-support)
+* [Improved capabilities for Microservice Deployments](/post/2020/06/camunda-bpm-7130-released/#improved-capabilities-for-microservice-deployments)
+  * [Hostnames in Job Logs](/post/2020/06/camunda-bpm-7130-released/#hostnames-in-job-logs)
+  * [Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations](/post/2020/06/camunda-bpm-7130-released/#deployment-aware-batch-jobs-and-asynchronous-cockpit-operations)
+* [New Authorizations](/post/2020/06/camunda-bpm-7130-released/#new-authorizations)
+  * [Historic Task Authorizations](/post/2020/06/camunda-bpm-7130-released/#historic-task-authorizations)
+  * [Historic Process Instance Authorizations](/post/2020/06/camunda-bpm-7130-released/#historic-process-instance-authorizations)
+* [Improved Webapp Functionality](/post/2020/06/camunda-bpm-7130-released/#improved-webapp-functionality)
+  * [New Metrics](/post/2020/06/camunda-bpm-7130-released/#new-metrics)
+  * [accurately display failed activity](/post/2020/06/camunda-bpm-7130-released/#accurately-display-failed-activity)
+* [Additional API Functionalities](/post/2020/06/camunda-bpm-7130-released/#additional-api-functionalities)
+* [Changes to Environments](/post/2020/06/camunda-bpm-7130-released/#changes-to-environments)
+  * [Context Paths in Spring Boot](/post/2020/06/camunda-bpm-7130-released/#context-paths-in-spring-boot)
+  * [Additional Supported Environments](/post/2020/06/camunda-bpm-7130-released/#additional-supported-environments)
+  * [Retired Environments](/post/2020/06/camunda-bpm-7130-released/#retired-environments)
 <!-- FEATURES LIST ENDS -->
 
 You can [download Camunda 7.13.0 for free](https://camunda.com/download/) or [run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
 Also included in the release:
 
-* [SIDE_PROJECT_NAME](https://github.com/camunda/PROJECT_REPO)
+* [Assert](https://github.com/camunda/camunda-bpm-assert) 6.0.0 for convenient testing of processes in Java
+* [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) 2.0.0 for JavaScript developers
+* [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) 1.3.1, which can be embedded in Java applications
 
 <!-- TODO: Make visible
 You can read all about these releases in the dedicated [blog post](/post/2020/05/LINK_TO_POST).
@@ -48,50 +56,161 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 ## Camunda BPM Run
 
+With Camunda BPM 7.13, we introduce a new distribution: Camunda BPM Run.
+Run can be operated as a standalone process engine without any java knowledge without compromising on configurability.
+
+It provides the Camunda web applications (Cockpit, Tasklist, Admin) and the REST API.
+This makes Camunda BPM Run perfect for use in Microservice orchestration or to get started with your project quickly.
+
+To get started, read up on the [Run release Blogpost](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/#starting-with-run), download it [here](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/) or check out the [User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/).
+
+
+<!-- Further Reading:
+
+* [Release Blog Post](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/)
+* [download Camunda BPM Run](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/)
+* [Camunda BPM Run User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/) -->
+
 ## OpenAPI Documentation
 
-## DMN 1.3 and FEEL support
+The Camunda REST-API provides a powerful interface to interact with the Process Engine.
 
-### DMN 1.3
+With the OpenAPI documentation, it is now even easier to integrate Camunda into your project.
+You can quickly test out the API using swagger and even generate a REST-Client in your favorite programming language. 
 
-### FEEL
+{{< figure src="openapi-swagger.png" alt="OpenAPI swagger">}}
+
+The generated REST Client can then be used to integrate your existing application into the workflow, or you can extend Camunda in the language of your choice. 
+
+Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification from [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/). 
+
+
+## DMN 1.3 and FEEL 1.2 support
+
+DMN allows you to model decisions and execute them inside your process. With this release, the DMN engine got even more powerful.
+
+Camunda BPM 7.13 supports the latest DMN 1.3 namespace as well as full coverage of FEEL 1.2. This means that you can use even more DMN notation elements like Input Expressions, Output Entries, and more!
+
+You can model DMN 1.3 Diagrams using the latest version of the [Camunda Modeler](https://camunda.com/download/modeler/). Check out the [introductory Blog Post](https://blog.camunda.com/post/2020/03/camunda-bpm-supports-dmn-feel-1.2/) which walks you through all the new features.
+
 
 ## Improved capabilities for Microservice Deployments
+This release includes improvements for the usage of Camunda in microservice architectures.
 
 ### Hostnames in Job Logs
+When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node.
 
-### Deployment-aware batch jobs
+To make debugging more comfortable and have your process running smoothly faster, we added the hostname of the executing server to the historic job log. This way, you know exactly on which node a specific job ran and can make adjustments accordingly.
 
-### Deployment-aware Asynchronous Cockpit operations
+{{< figure src="hostname-job-log.png" alt="Hostnames in Cockpit Job Log">}}
+
+Read more about it here:  
+
+* [Job Log Rest API](https://docs.camunda.org/7.13/latest/reference/rest/history/job-log/get-job-log-query/)
+
+### Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations
+
+When running Camunda on multiple nodes with different Process Applications, specific Jobs can only be executed on the server with the correct Process Application. This can lead to problems when batches are not deployment aware and are executed on the wrong server.
+
+<!-- Maybe add a Example image here -->
+
+With Camunda 7.13, all Batch Jobs are deployment aware. This makes sure that the Batch Jobs are always executed on the node with the correct Process Application. The same applies to asynchronously executed cockpit operations.
+
+Make sure to check our [Update Guide](https://docs.camunda.org/manual/7.13/update/minor/712-to-713/#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
+
 
 ## New Authorizations
+This release introduces improvements for history authorizations. Because SQL queries become more complex with these features, they are not enabled by default. You can enable them with the help of the process engine configuration flag:
+
+```xml
+<property name="enableHistoricInstancePermissions">true</property>
+```
+
+You can read more about the details and implications in the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions).
 
 ### Historic Task Authorizations
-### Historic Process Instance Authorizations
+When you worked on a task, you might want to go back and check your submission. 
+<!-- {{< figure class="no-border" src="historic-task-permissions-process.png" alt="Example Process" >}} -->
+With the historic Instance Permissions enabled, additional historic task permission is granted when a user is assigned a task. This way, you have access to all Task instances that you worked on and can review your work.
 
-## Webapp features
+### Historic Process Instance Authorizations
+Sometimes, you want to restrict which process instances a person can look at. This was already possible with the runtime authorizations, while the historic authorizations worked on a process definition level.  
+It is now possible to grant access to specific historic process instances only.
+
+
+## Improved Webapp Functionality
+
+With the Camunda Webapps, we strive to create an excellent tool for managing and operating your processes.  
+<!-- TODO: better wording here? -->
+
 ### New Metrics
-### Accurately display failed activity
+
+We added more Execution Metrics to the System Dashboard.
+
+Additional to the Flow Node Instances and Executed Decision Elements, we now also display the number of started Root Process Instances (RPI) and Executed Decision Instances (EDI).  
+{{< figure src="execution-metrics.png" alt="Admin System Dashboard">}}
+
+A Root Process Instance has no parent process instance, i.e., it is a top-level execution. A Decision Instance is a DMN decision table or a DMN Literal Expression. Read more about metrics in our [User Guide](https://docs.camunda.org/manual/7.13/user-guide/process-engine/metrics/).
+
+
+### Accurately Display Failed Activity
+
+Incidents during the execution can happen. In that case, the last transaction is rolled back, and an incident is created at the next activity. However, multiple activities can be grouped in one transaction, and the incident token does not indicate the correct activity.
+
+With the release of Camunda BPM 7.13, the failing activity ID is logged and displayed as well.
+
+{{< figure src="failing-activity-id.png" alt="Failed Activity ID in a Process">}}
+
 
 ## Additional API functionalities
-<!--
-I can retrieve the definitions sorted by their deployment time
-Get List of Distinct External Task Topic Names
-Query tasks by list of process instance ids
-Event-Subscription-Queries in der REST API
--->
 
-## Additional Supported Environments
-Support for Java 14
-Support for Oracle 19c (also supported as of 7.12.2+)
-Support for PostgreSQL 12.2
-Support for Wildfly Application Server 19.0
+This release also introduces multiple additions to the Java and REST API. You can now
 
-## Retired Environments
-End of Support for Oracle WebLogic Server 12R1
+* [Retrieve definitions sorted by their deployment time using `sortBy: deployTime`](https://docs.camunda.org/manual/develop/reference/rest/process-definition/get-query/)
+* [Retrieve a List of Distinct External Task Topic Names](https://docs.camunda.org/manual/develop/reference/rest/external-task/get-topic-names/)
+* [Query tasks by list of process instance ids using `processInstanceIdIn`](https://docs.camunda.org/manual/develop/reference/rest/task/get-query/)
+* [Retrieve Event-Subscriptions using the REST-API](https://docs.camunda.org/manual/develop/reference/rest/event-subscription/)
 
-## Changes to Spring Boot Environments
-<!-- Context Path Changed -->
+
+## Changes to Environments
+
+We strive to support the latest technologies and provide a wide range of supported environments.
+
+### Context Paths in Spring Boot
+<!-- Maybe in side-project Blogpost? -->
+
+We changed the default Spring Boot context paths to be in line with the deployment on an application server. The webapps will be available at `/camunda` (previously `/`) and the REST-API at `/engine-rest` (previously `/rest`).
+
+You can change this path in the configuration file. To recreate the old behavior, add the following lines to you `application.yaml`:
+
+```yaml
+camunda.bpm.webapp.application-path: '/'
+spring.jersey.application-path: '/rest'
+```
+
+Read more about the configuration options in our: 
+* [Spring Boot Configuration](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/configuration/)
+* [Spring Boot Rest API](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/rest-api/)
+
+
+### Additional Supported Environments
+With Camunda BPM 7.13, we added support for the following environments:
+
+* Java 14
+* Oracle 19c (also supported as of 7.12.2+)
+* PostgreSQL 12.2
+* Wildfly Application Server 19.0
+
+You can find a list of all supported environments [here](https://docs.camunda.org/manual/7.13/introduction/supported-environments/).
+
+### Retired Environments
+With this release, we end the support for the following environments:
+
+* Oracle WebLogic Server 12R1
+* Internet Explorer 11
+
+Dropping support of legacy environments enables us to support new technologies and provide a secure product. For more details, please read about the [Changes in Supported Environments](https://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-13).
+
 
 <!-- FEATURES EXPLANATIONS END -->
 
