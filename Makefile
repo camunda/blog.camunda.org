@@ -50,7 +50,7 @@ open:
 	linux-gnu) \
 		sleep 1 && xdg-open http://localhost:1313 & \
 		;; \
-	darwin) \
+	darwin|darwin19) \
 		sleep 1 && open http://localhost:1313 & \
 		;; \
 	*) \
