@@ -1,7 +1,7 @@
 +++
 author = "Jakob Freund"
 categories = ["Community"]
-date = "2020-05-14T09:00:00+01:00"
+date = "2020-05-20T09:00:00+01:00"
 tags = ["Camundaconlive"]
 title = "Is the Future of RPA Promising or Perilous"
 +++
@@ -47,6 +47,6 @@ Here are some key takeaways from the session that might be useful if you are beg
     </ul>
   </ul>
 </ol>
-I believe Deutsche Telekom, Nokia and NatWest are doing the right thing by digitizing and automating their business processes with the long-term in mind. 
+I believe Deutsche Telekom, Nokia and NatWest are doing the right thing by digitizing and automating their business processes with the long-term in mind.
 
 Our “Promise or Peril: The Future of RPA” panel discussion is available to [watch on-demand](https://gateway.on24.com/wcc/eh/2260438/lp/2323976/on-demand-panel-discussion-promise-or-perilthe-future-of-rpa) now on our CamundCon Live Hub. And feel free to [get in touch with us](https://camunda.com/contact/) if you’d like to learn more about how Camunda enables digital transformation.
