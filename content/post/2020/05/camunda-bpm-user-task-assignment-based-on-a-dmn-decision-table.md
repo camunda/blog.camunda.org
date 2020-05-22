@@ -13,7 +13,7 @@ which already supports the [DMN standard version 1.3](https://www.omg.org/spec/D
 
 __Example Process__
 
-This example uses a trivial [BPMN Process](http://snippets/task-assignment-dmn/src/main/resources/Approval.bpmn) consisting of a business rule task, implemented by a DMN file, and a user task, which gets assigned based on the output variables of the rules task. The data object reference shown in the diagram is only for documentation purposes. It has no technical implications and can be removed.
+This example uses a trivial BPMN Process consisting of a business rule task, implemented by a DMN file, and a user task, which gets assigned based on the output variables of the rules task. The data object reference shown in the diagram is only for documentation purposes. It has no technical implications and can be removed.
 
 {{< figure class="no-border teaser" src="Process-with-Business-Rule-Task-and-User-Task.png" alt="Process with Business Rule Task and User Task" caption="Process with Business Rule Task and User Task" >}}
 
