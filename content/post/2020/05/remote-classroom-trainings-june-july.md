@@ -15,46 +15,43 @@ tags:
   - "Microservices"
   - "Modeling"
 
-title: "Remote Classroom Trainings in June and July"
+title: "Remote Classroom Trainings for June and July"
 date: 2020-05-26T06:00:00Z
 
 ---
+We're gearing up for an online summer of training at Camunda!
 
+After [CamundaCon Live](https://www.camundacon.com/live/), we conducted our open classroom trainings remotely for the very first time and they were a _great success_.
+We had more than 50 participants from all over the world join our sessions held in American, European and Asian time-zones and we received fantastic feedback.
+A big thank you to all attendees, it was an absolute pleasure.
 
-After [CamundaCon Live](https://www.camundacon.com/live/), we conducted our open classroom trainings for the very first time remotely (as announced [here]({{< ref "../04/cclive-trainings.md" >}})) and it was a _great success_.
-We had more than 50 participants from literally all over the world joining our sessions held in American, European and Asian time-zones and we got fantastic feedback.
-A big thank you to all attendees, it was a pleasure.
-
-Of course, this encourages us to keep the format, at least for a while (you know, there is something out there that complicates on-site classroom trainings a bit).
-Hence, today I'm pleased to announce another set of remotely conducted open classroom trainings in June and July in American and European time-zone with our beloved friends:
+While on-site classroom trainings are not yet possible, your great feedback means we'll be keeping our new online format for the summer. Today I'm pleased to announce another set of remotely conducted open classroom trainings in June and July in American and European time-zones:
 
 - **Camunda BPM for Java Developers**
 - **Camunda and Microservices**
 - **BPMN 2.0 Training**
 
-> "So, why should I be interested in one or more of these guys?"
+> "So, why should I be interested in one or more of these?"
 
 Most important, you find yourself in a situation where workflow automation could come in handy.
-For example, _digital transformation_ is a thing in your company and you are part of it, either as a business stakeholder, enterprise architect, or software developer, or anything in this realm.
-Or, you're working on your pet project being tired of that hard-to-test spaghetti code that finds the next service to call given all these different cases and conditions.
-Maybe you are responsible for a system built upon a ton of micro-services that communicate wildly with each other and you wonder what actually happens with one request before the answer is generated.
+For example, _digital transformation_ is a thing in your company and you are part of it, either as a business stakeholder, enterprise architect, software developer, or anything in this realm.
+Maybe you're working on your pet project, tired of that hard-to-test spaghetti code that finds the next service to call given all these different cases and conditions.
+Or perhaps you're responsible for a system built upon a ton of micro-services that communicate wildly with each other and you wonder what actually happens with one request before the answer is generated.
 
-Surely, you heard about Camunda BPM and maybe already got your hands dirty on the one or the other tutorial and, no doubt, you liked it.
-Now, curious as you are, you want to bring yourself quickly in a position that allows you to start a Camunda project on a professional level, using all the fancy symbols of BPMN 2.0, creating robust, well-tested and easily operable and maintainable software that contains a workflow component.
+Surely, you've heard about Camunda BPM and maybe already got your hands dirty with a couple of tutorials and, hopefully, you liked it? Now, you want to move yourself quickly into a position that allows you to start a Camunda project on a professional level, using all the fancy symbols of BPMN 2.0, creating robust, well-tested and easily operable and maintainable software that contains a workflow component.
 
-With our BPMN 2.0 Training you'll accomplish step one.
-You learn all the symbols and how to leverage them to create comprehensible, comprehensive and just pretty process diagrams that communicate the logic of your business in the best way.
+#### Which Training is Right for Me?
 
-Having a nice process diagram in your hands, make the best out of it.
-**Software**.
-Join the Camunda BPM for Java Developers training or the Camunda BPM and Microservices training to learn all the nitty gritty details of how Camunda BPM automates BPMN-diagrams in a hands-on fashion with lots of exercises.
+Join the **Camunda BPM for Java Developers** training or the **Camunda BPM and Microservices** training to learn all the nitty gritty details of how Camunda BPM automates BPMN-diagrams in a hands-on fashion with lots of exercises.
 
 Camunda BPM for Java Developers focuses on Java Developers, both the more "classical" enterprise software development with application servers, but also cloud-native development with frameworks like Spring Boot.
 
 Camunda and Microservices focuses on distributed systems communicating via REST, events or message busses and Camunda BPM is "just" one player, either as part of one service or acting as an orchestrator.
-No Java skills required, you can use your favorite language(s).
+No Java skills required - you can use your favorite language(s).
 
-The trainings are held
+With our **BPMN 2.0 Training** you'll learn all the symbols and how to leverage them to create comprehensible, comprehensive and pretty process diagrams that communicate the logic of your business in the best way.
+
+The trainings are held:
 
 - 5 hours per day, over 5 days
 - split into a morning and an afternoon session
