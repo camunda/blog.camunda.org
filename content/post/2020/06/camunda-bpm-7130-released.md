@@ -46,7 +46,7 @@ You can read all about these releases in the dedicated [blog post](/post/2020/05
 
 <!--more-->
 
-For a complete list of the changes, please check out the [release notes](TODO) 
+For a complete list of the changes, please check out the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) 
 and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.13.0%20and%20status%20!%3D%20Closed). 
 And for patched security vulnerabilities, see our [security notices](https://docs.camunda.org/security/notices/).
 
@@ -56,27 +56,21 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 ## Camunda BPM Run
 
-With Camunda BPM 7.13, we introduce a new distribution: Camunda BPM Run.
-Run can be operated as a standalone process engine without any java knowledge without compromising on configurability.
+To provide non-Java Developers an easy way to get started with Camunda, we are proud to introduce a new distribution: Camunda BPM Run.
+Run can be operated as a standalone process engine without any java knowledge and without compromising on configurability.
 
-It provides the Camunda web applications (Cockpit, Tasklist, Admin) and the REST API.
-This makes Camunda BPM Run perfect for use in Microservice orchestration or to get started with your project quickly.
+It provides the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API.
+This also makes Camunda BPM Run perfect for use in microservice orchestration or to get your project up and running quickly.
 
 To get started, read up on the [Run release Blogpost](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/#starting-with-run), download it [here](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/) or check out the [User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/).
 
 
-<!-- Further Reading:
-
-* [Release Blog Post](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/)
-* [download Camunda BPM Run](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/)
-* [Camunda BPM Run User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/) -->
-
 ## OpenAPI Documentation
 
-The Camunda REST-API provides a powerful interface to interact with the Process Engine.
+We aim to make extending Camunda as straight forward as possible. To help you when developing external services, we now provide OpenAPI documentation for our REST API. OpenAPI is a standard that defines language-agnostic interfaces for REST-APIs. 
 
-With the OpenAPI documentation, it is now even easier to integrate Camunda into your project.
-You can quickly test out the API using swagger and even generate a REST-Client in your favorite programming language. 
+Using the OpenAPI documentation, you can interact with the Camunda Process Engine with minimal implementation effort.
+With many Tools already available, you can quickly test out the API using Swagger and even generate a REST-Client in your favorite programming language.
 
 {{< figure src="openapi-swagger.png" alt="OpenAPI swagger">}}
 
@@ -87,9 +81,9 @@ Get started by checking the [documentation](https://docs.camunda.org/manual/7.13
 
 ## DMN 1.3 and FEEL 1.2 support
 
-DMN allows you to model decisions and execute them inside your process. With this release, the DMN engine got even more powerful.
+DMN allows business analysts and stakeholders to model decisions that can be execute inside your process. With DMN 1.3 and FEEL 1.2, the DMN engine got even more powerful.
 
-Camunda BPM 7.13 supports the latest DMN 1.3 namespace as well as full coverage of FEEL 1.2. This means that you can use even more DMN notation elements like Input Expressions, Output Entries, and more!
+DMN 1.3 allows for easier diagram exchanges between vendors and FEEL 1.2 extends the variety of elements and functions you can use in Camunda BPM. This means that you can use even more DMN notation elements like Input Expressions, Output Entries, and more!
 
 You can model DMN 1.3 Diagrams using the latest version of the [Camunda Modeler](https://camunda.com/download/modeler/). Check out the [introductory Blog Post](https://blog.camunda.com/post/2020/03/camunda-bpm-supports-dmn-feel-1.2/) which walks you through all the new features.
 
@@ -104,9 +98,7 @@ To make debugging more comfortable and have your process running smoothly faster
 
 {{< figure src="hostname-job-log.png" alt="Hostnames in Cockpit Job Log">}}
 
-Read more about it here:  
-
-* [Job Log Rest API](https://docs.camunda.org/7.13/latest/reference/rest/history/job-log/get-job-log-query/)
+The new Data is also available in the [Camunda API](https://docs.camunda.org/7.13/latest/reference/rest/history/job-log/get-job-log-query/)
 
 ### Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations
 
@@ -141,7 +133,6 @@ It is now possible to grant access to specific historic process instances only.
 ## Improved Webapp Functionality
 
 With the Camunda Webapps, we strive to create an excellent tool for managing and operating your processes.  
-<!-- TODO: better wording here? -->
 
 ### New Metrics
 
@@ -215,9 +206,10 @@ Dropping support of legacy environments enables us to support new technologies a
 <!-- FEATURES EXPLANATIONS END -->
 
 ## And Much More
-There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](TODO) provide the details.
+There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) provide the details.
 
 ## Register for the Webinar
+If you’re not already registered, be sure to secure a spot at the free release webinars, which are offered in [German](TODO) and [English](TODO).
 
 ## Your Feedback Matters!
 
