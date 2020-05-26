@@ -40,9 +40,9 @@ Also included in the release:
 * [NodeJS External Task Client](https://github.com/camunda/camunda-external-task-client-js) 2.0.0 for JavaScript developers
 * [Java External Task Client](https://github.com/camunda/camunda-external-task-client-java) 1.3.1, which can be embedded in Java applications
 
-<!-- TODO: Make visible
-You can read all about these releases in the dedicated [blog post](/post/2020/05/LINK_TO_POST).
--->
+
+You can read all about these releases in the dedicated [blog post](/post/2020/06/camunda-bpm-7.13-side-projects-released).
+
 
 <!--more-->
 
