@@ -83,7 +83,7 @@ Get started by checking the [documentation](https://docs.camunda.org/manual/7.13
 
 DMN allows business analysts and stakeholders to model decisions that can be execute inside your process. With DMN 1.3 and FEEL 1.2, the DMN engine got even more powerful.
 
-DMN 1.3 allows for easier diagram exchanges between vendors and FEEL 1.2 extends the variety of elements and functions you can use in Camunda BPM. This means that you can use even more DMN notation elements like Input Expressions, Output Entries, and more!
+DMN 1.3 allows for easier diagram exchanges between vendors and FEEL 1.2 extends the FEEL coverage to more elements. FEEL can now be used in Input Expressions, Output Entries, and Literal Expressions.
 
 You can model DMN 1.3 Diagrams using the latest version of the [Camunda Modeler](https://camunda.com/download/modeler/). Check out the [introductory Blog Post](https://blog.camunda.com/post/2020/03/camunda-bpm-supports-dmn-feel-1.2/) which walks you through all the new features.
 
