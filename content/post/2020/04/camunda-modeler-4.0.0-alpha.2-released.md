@@ -14,7 +14,7 @@ We are happy to announce the release of Camunda Modeler v4.0.0-alpha.2. This rel
 
 ## Simplified DMN Modeling
 
-After adopting the latest DMN standard in the [last alpha release](https://blog.camunda.com/post/2020/03/camunda-modeler-4.0.0-alpha.1-released/), we're continuing to invest into our DMN modeler to make an even better tool for decision modeling. With the introduction of [automatic layout in the BPMN modeler](https://blog.camunda.com/post/2018/01/camunda-modeler-1120-alpha-2-released/), creating well laid out diagrams became both easier and faster. This alpha release finally brings this feature to the DRD editor of the Camunda Modeler.
+After adopting the latest DMN standard in the [last alpha release](https://blog.camunda.com/post/2020/03/camunda-modeler-4.0.0-alpha.1-released/), we're continuing to invest into our DMN modeler to make an even better tool for decision modeling. With the introduction of automatic placement of BPMN elements in Camunda Modeler v1.12.0, creating well laid out diagrams became both easier and faster. This alpha release finally brings this feature to the DRD editor of the Camunda Modeler.
 
 {{< figure class="no-border teaser" src="dmn.gif" alt="The new DRD top-down editing modeling" caption="The new DRD top-down editing modeling" >}}
 
