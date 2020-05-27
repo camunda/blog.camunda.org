@@ -56,12 +56,16 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 ## Camunda BPM Run
 
-To provide non-Java Developers an easy way to get started with Camunda, we are proud to introduce a new distribution: Camunda BPM Run.
-Run can be operated as a standalone process engine without any java knowledge and without compromising on configurability.
+# What is it?
+Say hello to the newest distribution: Camunda Run. Run is as a standalone process engine that requires no app server or java knowledge to get started.
 
-It provides the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API.
-This also makes Camunda BPM Run perfect for use in microservice orchestration or to get your project up and running quickly.
+Run is a perfect solution for your teams to orchestrate microservices and to get your projects up and running quickly. The distribution comes with the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API, offering you the complete Camunda BPMN functionality to automate and orchestrate any of your processes.
 
+# Why is it important?
+With Camunda Run, we make it even easier for you and your teams to get started and expand with Camunda - no java or application server knowledge required. Run is a highly flexible, lightweight Camunda distribution and empowers your teams to automate and orchestrate any of your business processes. 
+
+
+# How does it work?
 To get started, read up on the [Run release Blogpost](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/#starting-with-run), download it [here](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/) or check out the [User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/).
 
 
