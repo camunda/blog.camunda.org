@@ -110,9 +110,7 @@ The new data is also available in the [Camunda REST API](https://docs.camunda.or
 
 When running Camunda on multiple nodes with different process applications, specific jobs can only be executed on the server with the correct process application. This can lead to problems when batches are not deployment aware and are executed on the wrong server. With Camunda 7.13, all batch jobs are deployment aware.
 
-<!-- Maybe add an Example image here -->
-
- This makes sure that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
+This makes sure that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
 
 Make sure to check our [Update Guide](https://docs.camunda.org/manual/7.13/update/minor/712-to-713/#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
 
@@ -128,7 +126,6 @@ You can read more about the details and implications in the [User Guide](https:/
 
 ### Historic Task Authorizations
 When you worked on a task, you might want to go back and check your submission. 
-<!-- {{< figure class="no-border" src="historic-task-permissions-process.png" alt="Example Process" >}} -->
 With the historic instance permissions enabled, additional historic task permission is granted when a user is assigned a task. This way, you have access to all Task Instances that you worked on and can review your work.
 
 ### Historic Process Instance Authorizations
@@ -174,8 +171,6 @@ This release also introduces multiple additions to the Java and REST API. You ca
 We strive to support the latest technologies and provide a wide range of supported environments.
 
 ### Context Paths in Spring Boot
-<!-- Maybe in side-project blogpost? -->
-
 We changed the default Spring Boot context paths to be in line with the deployment on an application server. The webapps will be available at `/camunda` (previously `/`) and the REST API at `/engine-rest` (previously `/rest`).
 
 You can change this path in the configuration file. To recreate the old behavior, add the following lines to you `application.yaml`:
