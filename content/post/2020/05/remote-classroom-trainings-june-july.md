@@ -73,5 +73,5 @@ The trainings are held:
   - CEST (Berlin), July 13th - July 17th, [book now](https://www.eventbrite.com/e/bpmn-20-training-remote-tickets-104658592668)
 
 Didn't find a suitable time-slot?
-No worries, we have more: [Camunda Open Trainings](https://camunda.com/services/training/).
+More trainings will be announced soon, check: [Camunda Open Trainings](https://camunda.com/services/training/).
 Or approach us directly at info@camunda.com if you're interested in a private training.
