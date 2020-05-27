@@ -56,35 +56,41 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 ## Camunda BPM Run
 
-To provide non-Java developers an easy way to get started with Camunda, we are proud to introduce a new distribution: Camunda BPM Run.
-Run can be operated as a standalone process engine without any Java knowledge and without compromising on configurability.
+<!-- What -->
 
-It provides the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API.
-Camunda BPM Run is also perfect for use in microservice orchestration or to get your project up and running quickly.
+Say hello to the newest distribution: Camunda Run. Run is as a standalone process engine that requires no app server or java knowledge to get started.
 
+<!-- Why -->
+Run is a perfect solution for your teams to orchestrate microservices and to get your projects up and running quickly. The distribution comes with the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API, offering you the complete Camunda BPMN functionality to automate and orchestrate any of your processes.
+
+<!-- How -->
 To get started, read up on the [Run release blogpost](https://blog.camunda.com/post/2020/03/introducing-camunda-bpm-run/#starting-with-run), download it [here](https://downloads.camunda.cloud/release/camunda-bpm/run/7.13/) or check out the [User Guide](https://docs.camunda.org/manual/latest/user-guide/camunda-bpm-run/).
 
 
 ## OpenAPI Documentation
+<!-- What -->
 
-We aim to make extending Camunda as straight forward as possible. To help you when developing external services, we now provide OpenAPI documentation for our REST API. OpenAPI is a standard that defines language-agnostic interfaces for REST APIs. 
+We aim to make extending Camunda as straight forward as possible. To help you when developing external services, we now provide OpenAPI documentation for our REST API. OpenAPI is a standard that defines language-agnostic interfaces for REST APIs. Using the OpenAPI documentation, you can interact with the Camunda process engine with minimal implementation effort.
 
-Using the OpenAPI documentation, you can interact with the Camunda process engine with minimal implementation effort.
+<!-- Why -->
 With many tools already available, you can quickly test out the API using Swagger and even generate a REST client in your favorite programming language.
 
 {{< figure src="openapi-swagger.png" alt="OpenAPI swagger">}}
 
 The generated REST client can then be used to integrate your existing application into the workflow, or you can extend Camunda in the language of your choice. 
 
+<!-- How -->
 Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification from [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/). 
 
 
 ## DMN 1.3 and FEEL 1.2 Support
-
+<!-- What -->
 DMN allows business analysts and stakeholders to model decisions that can be executed inside your process. With DMN 1.3 and FEEL 1.2, the DMN engine got even more powerful.
 
+<!-- Why -->
 DMN 1.3 allows for easier diagram exchanges between vendors, and FEEL 1.2 extends the FEEL coverage to more elements. FEEL can now be used in input expressions, output entries, and literal expressions.
 
+<!-- How -->
 You can model DMN 1.3 diagrams using the latest version of the [Camunda Modeler](https://camunda.com/download/modeler/). Check out the [introductory blog post](https://blog.camunda.com/post/2020/03/camunda-bpm-supports-dmn-feel-1.2/) which walks you through all the new features.
 
 
@@ -92,9 +98,9 @@ You can model DMN 1.3 diagrams using the latest version of the [Camunda Modeler]
 This release includes improvements for the usage of Camunda in microservice architectures.
 
 ### Hostnames in Job Logs
-When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node.
+When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node. To make debugging more comfortable and have your process running smoothly faster, we added the hostname of the executing server to the historic job log. 
 
-To make debugging more comfortable and have your process running smoothly faster, we added the hostname of the executing server to the historic job log. This way, you know exactly on which node a specific job ran and can make adjustments accordingly.
+This way, you know exactly on which node a specific job ran and can make adjustments accordingly.
 
 {{< figure src="hostname-job-log.png" alt="Hostnames in Cockpit Job Log">}}
 
@@ -102,11 +108,11 @@ The new data is also available in the [Camunda REST API](https://docs.camunda.or
 
 ### Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations
 
-When running Camunda on multiple nodes with different process applications, specific jobs can only be executed on the server with the correct process application. This can lead to problems when batches are not deployment aware and are executed on the wrong server.
+When running Camunda on multiple nodes with different process applications, specific jobs can only be executed on the server with the correct process application. This can lead to problems when batches are not deployment aware and are executed on the wrong server. With Camunda 7.13, all batch jobs are deployment aware.
 
 <!-- Maybe add an Example image here -->
 
-With Camunda 7.13, all batch jobs are deployment aware. This makes sure that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
+ This makes sure that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
 
 Make sure to check our [Update Guide](https://docs.camunda.org/manual/7.13/update/minor/712-to-713/#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
 
@@ -129,19 +135,19 @@ With the historic instance permissions enabled, additional historic task permiss
 Sometimes, you want to restrict which process instances a person can access. This was already possible with the runtime authorizations, while the historic authorizations worked on a process definition level.  
 It is now possible to grant access to specific historic process instances only.
 
-
 ## Improved Webapp Functionality
 
 With the Camunda webapps, we strive to create an excellent tool for managing and operating your processes.  
 
 ### New Metrics
 
-We added more execution metrics to the system dashboard.
+We added more execution metrics to the system dashboard. Additional to the flow node instances and executed decision elements, we now also display the number of started Root Process Instances (RPI) and Executed Decision Instances (EDI).
 
-Additional to the flow node instances and executed decision elements, we now also display the number of started root process instances (RPI) and executed decision instances (EDI).  
 {{< figure src="execution-metrics.png" alt="Admin System Dashboard">}}
 
-A root process instance has no parent process instance; i.e., it is a top-level execution. A decision instance is a DMN decision table or a DMN literal expression. Read more about metrics in our [User Guide](https://docs.camunda.org/manual/7.13/user-guide/process-engine/metrics/).
+A Root Process Instance has no parent process instance; i.e., it is a top-level execution. An Executed Decision Instance is a DMN decision table or a DMN literal expression.
+
+Read more about metrics in our [User Guide](https://docs.camunda.org/manual/7.13/user-guide/process-engine/metrics/).
 
 
 ### Accurately Display Failed Activity
@@ -179,7 +185,7 @@ camunda.bpm.webapp.application-path: '/'
 spring.jersey.application-path: '/rest'
 ```
 
-Read more about the configuration options in our: 
+Read more about the configuration options in our  
 * [Spring Boot Configuration Guide](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/configuration/)
 * [Spring Boot REST API User Guide](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/rest-api/)
 
