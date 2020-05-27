@@ -108,7 +108,7 @@ You can read the details in the [Camunda BPM Run release post](https://blog.camu
 
 ## Register for the Webinar
 
-If you're not already registered, be sure to secure a spot at the free release webinars, which are offered in [German](TODO) and [English](TODO).
+If you're not already registered, be sure to secure a spot at the release webinar. You can register for free [here](TODO).
 
 ## Your Feedback Matters!
 

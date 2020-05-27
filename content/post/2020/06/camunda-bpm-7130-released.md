@@ -215,7 +215,7 @@ Dropping support of legacy environments enables us to support new technologies a
 There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) provide the details.
 
 ## Register for the Webinar
-If you're not already registered, be sure to secure a spot at the free release webinars, which are offered in [German](TODO) and [English](TODO).
+If you're not already registered, be sure to secure a spot at the release webinar. You can register for free [here](TODO).
 
 ## Your Feedback Matters!
 
