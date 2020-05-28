@@ -7,7 +7,7 @@ title = "More From Camunda BPM: NodeJS External Task Client, Spring Boot Starter
 
 +++
 
-We are excited to announce the following releases:
+Alongside our Camunda BPM 7.13.0 release, we're excited to announce the following releases:
 
 * [External Task Client 2.0.0 for NodeJS](/post/2020/06/camunda-bpm-7.13-side-projects-released/#nodejs-external-task-client-2-0-0)
 * [Assert 6.0.0](/post/2020/06/camunda-bpm-7.13-side-projects-released/#assert-6-0-0)
@@ -28,7 +28,7 @@ Node 8 support is deprecated with versions >2.0.0.
 
 
 ### Logging Levels in NodeJS Client
-In Production, you usually don't care about every time the client queries for new Jobs. These log entries make debugging harder because errors get buried. But during development, it is important to check if jobs are acquired and fetching works as expected.
+In production, you usually don't care about every time the client queries for new jobs. These log entries make debugging harder because errors get buried. But during development, it is important to check if jobs are acquired and fetching works as expected.
 
 To accommodate both use cases, the default logger now supports log levels. The default level is `info`. You can change the logging level like this:
 
@@ -70,12 +70,12 @@ Read more about the details [here](https://github.com/camunda/camunda-external-t
 
 ## Assert 6.0.0
 
-Assert helps you to test your processes conveniently in Java. The latest release adds more testing and convenience features to make checking your processes quick and thorough.
+Assert helps you test your processes conveniently in Java. The latest release adds more testing and convenience features to make checking your processes quick and thorough.
 
 Check out Assert on [Github](https://github.com/camunda/camunda-bpm-assert).
 
 ### Find Elements by Name
-Tests should be expressive. To aid in this, assert now has the convenience function `findId()`, which will search for the ID of an element with a particular name.
+Tests should be expressive. To aid in this, Assert now has the convenience function `findId()`, which will search for the ID of an element with a particular name.
 
 Tests that would typically contain a nondescriptive ID like 
 
@@ -100,7 +100,7 @@ assertThat(processInstance).isWaitingAt("JoiningGateway");
 ```
 
 ## Spring Boot Starter 7.13.0
-The Camunda Engine can be embedded into your Spring Boot Project by using the Spring Boot Starter.
+The Camunda Engine can be embedded into your Spring boot project using the Spring boot starter.
 
 Starting with the release Camunda BPM 7.13.0, Spring boot starter is now part of the core platform. Therefore, it will also follow the 7.x release cycle of the core platform in the future.
 
@@ -112,6 +112,6 @@ If you're not already registered, be sure to secure a spot at the release webina
 
 ## Your Feedback Matters!
 
-With every release, we strive to improve Camunda BPM. And we rely on your feedback! Feel free to share your ideas and suggestions with us.
+With every release, we strive to improve Camunda BPM, and we rely on your feedback! Feel free to share your ideas and suggestions with us.
 
 You can contact us via the [Camunda user forum](https://forum.camunda.org/).
