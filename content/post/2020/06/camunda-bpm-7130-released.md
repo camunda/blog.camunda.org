@@ -7,9 +7,9 @@ title = "Camunda BPM 7.13.0 Released"
 
 +++
 
-We are excited to announce that Camunda BPM Platform 7.13.0 is now available.
+We are excited to announce the Camunda BPM Platform 7.13.0 is now available, including many new features.
 
-The release includes many new features. Here are some of the highlights:
+Here are some of the highlights:
 
 <!-- FEATURES LIST BEGINS -->
 
@@ -18,7 +18,7 @@ The release includes many new features. Here are some of the highlights:
 * [DMN 1.3 and FEEL 1.2 Support](/post/2020/06/camunda-bpm-7130-released/#dmn-1-3-and-feel-1-2-support)
 * [Improved Capabilities for Microservice Deployments](/post/2020/06/camunda-bpm-7130-released/#improved-capabilities-for-microservice-deployments)
   * [Hostnames in Job Logs](/post/2020/06/camunda-bpm-7130-released/#hostnames-in-job-logs)
-  * [Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations](/post/2020/06/camunda-bpm-7130-released/#deployment-aware-batch-jobs-and-asynchronous-cockpit-operations)
+  * [Deployment Aware Batch Jobs and Asynchronous Cockpit Operations](/post/2020/06/camunda-bpm-7130-released/#deployment-aware-batch-jobs-and-asynchronous-cockpit-operations)
 * [New Authorizations](/post/2020/06/camunda-bpm-7130-released/#new-authorizations)
   * [Historic Task Authorizations](/post/2020/06/camunda-bpm-7130-released/#historic-task-authorizations)
   * [Historic Process Instance Authorizations](/post/2020/06/camunda-bpm-7130-released/#historic-process-instance-authorizations)
@@ -48,7 +48,7 @@ You can read all about these releases in the dedicated [blog post](/post/2020/06
 
 For a complete list of the changes, please check out the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) 
 and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.13.0%20and%20status%20!%3D%20Closed). 
-And for patched security vulnerabilities, see our [security notices](https://docs.camunda.org/security/notices/).
+For patched security vulnerabilities, see our [security notices](https://docs.camunda.org/security/notices/).
 
 If you want to dig deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.13.0).
 
@@ -58,7 +58,7 @@ If you want to dig deeper, you can find the source code on [GitHub](https://gith
 
 <!-- What -->
 
-Say hello to the newest distribution: Camunda Run. Run is as a standalone process engine that requires no app server or java knowledge to get started.
+Say hello to the newest distribution: Camunda Run. Run is a standalone process engine that requires no app server or Java knowledge to get started.
 
 <!-- Why -->
 Run is a perfect solution for your teams to orchestrate microservices and to get your projects up and running quickly. The distribution comes with the Camunda web applications (Cockpit, Tasklist, Admin) as well as the REST API, offering you the complete Camunda BPMN functionality to automate and orchestrate any of your processes.
@@ -80,12 +80,12 @@ With many tools already available, you can quickly test out the API using Swagge
 The generated REST client can then be used to integrate your existing application into the workflow, or you can extend Camunda in the language of your choice. 
 
 <!-- How -->
-Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification from [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/). 
+Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/). 
 
 
 ## DMN 1.3 and FEEL 1.2 Support
 <!-- What -->
-DMN allows business analysts and stakeholders to model decisions that can be executed inside your process. With DMN 1.3 and FEEL 1.2, the DMN engine got even more powerful.
+DMN allows business analysts and stakeholders to model decisions that can be executed inside your process. With DMN 1.3 and FEEL 1.2, the DMN engine becomes even more powerful.
 
 <!-- Why -->
 DMN 1.3 allows for easier diagram exchanges between vendors, and FEEL 1.2 extends the FEEL coverage to more elements. FEEL can now be used in input expressions, output entries, and literal expressions.
@@ -95,22 +95,22 @@ You can model DMN 1.3 diagrams using the latest version of the [Camunda Modeler]
 
 
 ## Improved Capabilities for Microservice Deployments
-This release includes improvements for the usage of Camunda in microservice architectures.
+This release includes improvements for using Camunda in microservice architectures.
 
 ### Hostnames in Job Logs
-When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node. To make debugging more comfortable and have your process running smoothly faster, we added the hostname of the executing server to the historic job log. 
+When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node. To make debugging easier and get your process running smoothly, faster, we added the hostname of the executing server to the historic job log. 
 
-This way, you know exactly on which node a specific job ran and can make adjustments accordingly.
+This way, you know exactly which node a specific job ran on, and can make adjustments accordingly.
 
 {{< figure src="hostname-job-log.png" alt="Hostnames in Cockpit Job Log">}}
 
 The new data is also available in the [Camunda REST API](https://docs.camunda.org/7.13/latest/reference/rest/history/job-log/get-job-log-query/)
 
-### Deployment-Aware Batch Jobs and Asynchronous Cockpit Operations
+### Deployment Aware Batch Jobs and Asynchronous Cockpit Operations
 
 When running Camunda on multiple nodes with different process applications, specific jobs can only be executed on the server with the correct process application. This can lead to problems when batches are not deployment aware and are executed on the wrong server. With Camunda 7.13, all batch jobs are deployment aware.
 
-This makes sure that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
+This ensures that the batch jobs are always executed on the node with the correct process application. The same applies to asynchronously executed cockpit operations.
 
 Make sure to check our [Update Guide](https://docs.camunda.org/manual/7.13/update/minor/712-to-713/#deployment-aware-batch-operations) for further details on this feature with regards to version updates.
 
@@ -149,7 +149,7 @@ Read more about metrics in our [User Guide](https://docs.camunda.org/manual/7.13
 
 ### Accurately Display Failed Activity
 
-Incidents during the execution can happen. In that case, the last transaction is rolled back, and an incident is created at the next activity. However, multiple activities can be grouped in one transaction, and the incident token does not indicate the correct activity.
+Incidents during execution can happen. In that case, the last transaction is rolled back, and an incident is created at the next activity. However, multiple activities can be grouped in one transaction, but the incident token does not indicate the correct activity.
 
 With the release of Camunda BPM 7.13, the failing activity ID is logged and displayed as well.
 
@@ -168,19 +168,19 @@ This release also introduces multiple additions to the Java and REST API. You ca
 
 ## Changes to Environments
 
-We strive to support the latest technologies and provide a wide range of supported environments.
+We aim to support the latest technologies and provide a wide range of supported environments.
 
 ### Context Paths in Spring Boot
 We changed the default Spring Boot context paths to be in line with the deployment on an application server. The webapps will be available at `/camunda` (previously `/`) and the REST API at `/engine-rest` (previously `/rest`).
 
-You can change this path in the configuration file. To recreate the old behavior, add the following lines to you `application.yaml`:
+You can change this path in the configuration file. To recreate the old behavior, add the following lines to your `application.yaml`:
 
 ```yaml
 camunda.bpm.webapp.application-path: '/'
 spring.jersey.application-path: '/rest'
 ```
 
-Read more about the configuration options in our  
+Read more about configuration options in our  
 * [Spring Boot Configuration Guide](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/configuration/)
 * [Spring Boot REST API User Guide](https://docs.camunda.org/manual/7.13/user-guide/spring-boot-integration/rest-api/)
 
@@ -201,19 +201,19 @@ With this release, we end the support for the following environments:
 * Oracle WebLogic Server 12R1
 * Internet Explorer 11
 
-Dropping support of legacy environments enables us to support new technologies and provide a secure product. For more details, please read about the [changes in supported environments](https://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-13).
+Dropping support of legacy environments means we can support new technologies and provide a secure product. For more details, please read about the [changes in supported environments](https://docs.camunda.org/enterprise/announcement/#camunda-bpm-7-13).
 
 
 <!-- FEATURES EXPLANATIONS END -->
 
 ## And Much More
-There are many smaller features and bug fixes in the release that are not included in this blog post. The [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) provide the details.
+There are many smaller features and bug fixes in the release that are not included in this blog post, but the [full release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) provide the details.
 
 ## Register for the Webinar
 If you're not already registered, be sure to secure a spot at the release webinar. You can register for free [here](TODO).
 
 ## Your Feedback Matters!
 
-With every release, we strive to improve Camunda BPM. And we rely on your feedback! Feel free to share your ideas and suggestions with us.
+With every release, we strive to improve Camunda BPM, and we rely on your feedback! Feel free to share your ideas and suggestions with us.
 
 You can contact us via the [Camunda user forum](https://forum.camunda.org/).
