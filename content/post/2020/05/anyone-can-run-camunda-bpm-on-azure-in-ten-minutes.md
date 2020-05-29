@@ -1,7 +1,7 @@
 +++
 author = "Robert Emsbach"
 categories = ["Community"]
-date = "2020-05-28T07:00:00+01:00"
+date = "2020-05-29T07:00:00+01:00"
 tags = ["Cloud","BPMN"]
 title = "Anyone can run Camunda BPM on Azure in 10 Minutes"
 +++
