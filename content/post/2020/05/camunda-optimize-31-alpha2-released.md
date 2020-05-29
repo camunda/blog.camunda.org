@@ -24,7 +24,7 @@ This release adds following new capabilities:
 * New User Task Reports in regards to Assignee & Candidate Groups
 
 
-The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa) are available in Jira.
+The [complete release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=16095) are available in Jira.
 
 You can [try out a free trial of Camunda Optimize](#how-to-get-it).
 
