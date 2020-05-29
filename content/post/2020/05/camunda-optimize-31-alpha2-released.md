@@ -97,7 +97,7 @@ Within the modal you can define which assignees (or candidate groups) should be 
 # New User Task Reports in regards to Assignee & Candidate Groups
 
 In Optimize 3.0 we added User Task Trend Analysis by introducing "group by start & end date" for User Tasks.
-With this release we go even further and allow you to distribute the information even further to look into Assignees or Candidate Groups.
+With this release we go even further and allow you to distribute the information by assignees or candidate groups.
 
 This functionality allows you to easily identify how many User Tasks have been completed by assignees at a certain period of time.
 
