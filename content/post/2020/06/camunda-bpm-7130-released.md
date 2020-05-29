@@ -216,4 +216,4 @@ If you're not already registered, be sure to secure a spot at the release webina
 
 With every release, we strive to improve Camunda BPM, and we rely on your feedback! Feel free to share your ideas and suggestions with us.
 
-You can contact us via the [Camunda user forum](https://forum.camunda.org/).
+You can contact us via the [Camunda user forum](https://forum.camunda.org/t/camunda-bpm-7-13-0-feature-feedback/20355).
