@@ -81,7 +81,7 @@ In the report edit mode you are able to see the applied filters with the help of
 
 ## Assignee and Candidate Group Filter
 
-When monitoring performance and execution of User Tasks assignees and candidate groups are an important ingredient.
+When monitoring performance and execution of User Tasks, assignees and candidate groups are an important ingredient.
 In order to make the analysis and monitoring more efficient we added Assignee and Candidate Group filters within this release.
 
 You will find the new *Assignee and Candidate Group Filters* within the Report Builder Filter menu:
