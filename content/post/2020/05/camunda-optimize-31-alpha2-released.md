@@ -2,7 +2,7 @@
 author = "Felix Mueller"
 categories = ["Camunda Optimize"]
 tags = ["Camunda Optimize", "Release Note"]
-date = "2020-05-27T00:00:00+00:00"
+date = "2020-05-29T00:00:00+00:00"
 title = "Camunda Optimize 3.1.0-alpha2 Released"
 +++
 
@@ -10,12 +10,15 @@ We’re excited to announce the release of Camunda Optimize 3.1.0-alpha2.
 
 In this second alpha release of Optimize 3.1.0, you can get an early look at many improvements and features in advance of the stable Optimize 3.1.0.
 
+<!--more-->
+
 This release adds following new capabilities:
+
 
 * Dashboard Filters
   - Instance State Filters
   - Process Start & End Date Filters
-* Flow Node and User Task filters
+* Flow Node and User Task Filters
   - Flow Node and User Task Duration Filter
   - Assignee and Candidate Group Filter
 * New User Task Reports in regards to Assignee & Candidate Groups
@@ -37,13 +40,13 @@ Dashboard Filters allow Dashboard Viewers to apply certain filters across all re
 
 Within this release we added Process Instance State and Start / End Date Filters for Dashboards. Additional filters are already on the horizon.
 
-In the following you can see how Dashboard Editors can add the filter:
+In the following you can see how Dashboard Editors can add the filters to a Dashboard:
 
 {{< figure src="dashboard-filters-editmode.png" alt="Dashboard Filters - Edit Mode" >}}
 
 ## State Filters
 
-Once applied the state filter can be used by a dashboard viewer like this:
+Once applied the state filter can be used by a Dashboard viewer like this:
 
 {{< figure src="dashboard-filters-state.png" alt="Dashboard Filters - Instance State Filtering" >}}
 
@@ -91,10 +94,19 @@ Within the modal you can define which assignees (or candidate groups) should be 
 
 {{< figure src="usertask-assignee-filter3.png" alt="User Task Assignee & Candidate Group 3" >}}
 
-# New capabilities for User Task Trend Analysis
+# New User Task Reports in regards to Assignee & Candidate Groups
 
+In Optimize 3.0 we added User Task Trend Analysis by introducing "group by start & end date" for User Tasks.
+With this release we go even further and allow you to distribute the information even further to look into Assignees or Candidate Groups.
 
+This functionality allows you to easily identify how many User Tasks have been completed by assignees at a certain period of time.
 
+You can find the new distribution capabilities in the Configuration Popover.
+
+{{< figure src="usertask-groupby-enddate-assignee-distribution1.png" alt="Assignee Trend Analysis 1">}}
+
+An example could look like this:
+{{< figure src="usertask-groupby-enddate-assignee-distribution2.png" alt="Assignee Trend Analysis 2">}}
 
 # What's Next?
 
