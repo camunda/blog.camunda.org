@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-06-02T09:00:00+01:00"
+date = "2020-06-02T14:30:00+01:00"
 title = "More From Camunda BPM: NodeJS External Task Client, Spring Boot Starter & Assert"
 
 +++
@@ -22,7 +22,7 @@ You can read all about the Camunda BPM 7.13.0 release in the dedicated [blog pos
 
 ## NodeJS External Task Client 2.0.0
 
-The [External Task Clients](https://docs.camunda.org/manual/7.13/user-guide/ext-client/) help you to decouple your services from the Workflow Engine – a common use case, for example, in microservices architectures. We've released version 2.0.0 of our [NodeJS client](https://github.com/camunda/camunda-external-task-client-js). 
+The [External Task Clients](https://docs.camunda.org/manual/7.13/user-guide/ext-client/) help you to decouple your services from the Workflow Engine – a common use case, for example, in microservices architectures. We've released version 2.0.0 of our [NodeJS client](https://github.com/camunda/camunda-external-task-client-js).
 
 Node 8 support is deprecated with versions >2.0.0.
 
@@ -77,7 +77,7 @@ Check out Assert on [Github](https://github.com/camunda/camunda-bpm-assert).
 ### Find Elements by Name
 Tests should be expressive. To aid in this, Assert now has the convenience function `findId()`, which will search for the ID of an element with a particular name.
 
-Tests that would typically contain a nondescriptive ID like 
+Tests that would typically contain a nondescriptive ID like
 
 ```Java
 assertThat(processInstance).isWaitingAt("Task_0834dhg");
