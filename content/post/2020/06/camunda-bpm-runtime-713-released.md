@@ -3,7 +3,7 @@ author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2020-06-02T09:00:00+01:00"
-title = "Camunda BPM 7.13.0 Released"
+title = "Camunda BPM Runtime 7.13 Released"
 
 +++
 
@@ -46,8 +46,8 @@ You can read all about these releases in the dedicated [blog post](/post/2020/06
 
 <!--more-->
 
-For a complete list of the changes, please check out the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532) 
-and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.13.0%20and%20status%20!%3D%20Closed). 
+For a complete list of the changes, please check out the [release notes](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10230&version=15532)
+and the list of [known issues](https://jira.camunda.com/issues/?jql=affectedVersion%20%3D%207.13.0%20and%20status%20!%3D%20Closed).
 For patched security vulnerabilities, see our [security notices](https://docs.camunda.org/security/notices/).
 
 If you want to dig deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.13.0).
@@ -77,10 +77,10 @@ With many tools already available, you can quickly test out the API using Swagge
 
 {{< figure src="openapi-swagger.png" alt="OpenAPI swagger">}}
 
-The generated REST client can then be used to integrate your existing application into the workflow, or you can extend Camunda in the language of your choice. 
+The generated REST client can then be used to integrate your existing application into the workflow, or you can extend Camunda in the language of your choice.
 
 <!-- How -->
-Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/). 
+Get started by checking the [documentation](https://docs.camunda.org/manual/7.13/reference/rest/openapi/) for usage and coverage, and download the specification [here](https://app.camunda.com/nexus/service/rest/repository/browse/camunda-bpm/org/camunda/bpm/camunda-engine-rest-openapi/).
 
 
 ## DMN 1.3 and FEEL 1.2 Support
@@ -98,7 +98,7 @@ You can model DMN 1.3 diagrams using the latest version of the [Camunda Modeler]
 This release includes improvements for using Camunda in microservice architectures.
 
 ### Hostnames in Job Logs
-When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node. To make debugging easier and get your process running smoothly, faster, we added the hostname of the executing server to the historic job log. 
+When operating Camunda in a cluster with multiple servers, some jobs might cause problems on a single node. To make debugging easier and get your process running smoothly, faster, we added the hostname of the executing server to the historic job log.
 
 This way, you know exactly which node a specific job ran on, and can make adjustments accordingly.
 
@@ -125,7 +125,7 @@ This release introduces improvements for history authorizations. Because SQL que
 You can read more about the details and implications in the [User Guide](https://docs.camunda.org/manual/latest/user-guide/process-engine/authorization-service/#historic-instance-permissions).
 
 ### Historic Task Authorizations
-When you worked on a task, you might want to go back and check your submission. 
+When you worked on a task, you might want to go back and check your submission.
 With the historic instance permissions enabled, additional historic task permission is granted when a user is assigned a task. This way, you have access to all Task Instances that you worked on and can review your work.
 
 ### Historic Process Instance Authorizations
