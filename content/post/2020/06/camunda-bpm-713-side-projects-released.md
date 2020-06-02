@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-06-02T14:30:00+01:00"
+date = "2020-06-02T14:30:00+02:00"
 title = "More From Camunda BPM: NodeJS External Task Client, Spring Boot Starter & Assert"
 
 +++
