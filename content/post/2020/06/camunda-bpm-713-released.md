@@ -19,9 +19,9 @@ And finally, the new release of the Camunda Modeler makes it possible to quickly
 
 ## New FEEL Engine, update to DMN 1.3 and improved DMN Modeling
 
-DMN support gets a big update as well! The release adds [a new FEEL Engine](https://blog.camunda.com/post/2020/06/camunda-bpm-runtime-713-released/), greatly expanding support of the FEEL expression language allowing you to implement more complex expressions in decisions. The release also updates the DMN namespace to the latest version of the DMN standard across the full Camunda stack. The Camunda Modeler [improves modeling of DRDs](#).
+DMN support gets a big update as well! The release adds [a new FEEL Engine](https://blog.camunda.com/post/2020/06/camunda-bpm-runtime-713-released/), greatly expanding support of the FEEL expression language allowing you to implement more complex expressions in decisions. The release also updates the DMN namespace to the latest version of the DMN standard across the full Camunda stack. The Camunda Modeler [improves modeling of DRDs](https://blog.camunda.com/post/2020/06/camunda-modeler-4.0.0-released/).
 
-{{< figure class="no-border teaser" src="modeling-of-drds.png" alt="improves modeling of DRDs">}}
+{{< figure class="no-border teaser" src="1-dmn.gif" alt="New DRD top-down editing modeling">}}
 
 ## Track Changes across Process Versions
 When working on a BPMN process within a team, it can be hard to track changes made by different people. The [latest version of Cawemo](https://blog.camunda.com/post/2020/04/cawemo-enterprise-on-premises-1-2-released/) that is included in this release makes it easy to track changes across multiple versions of a BPMN process by introducing visual diagram comparisons.
@@ -38,7 +38,7 @@ More details can be found in the blog posts for each Camunda product module:
 <ul>
 <li>[Camunda BPM: NodeJS External Task Client, Spring Boot Starter & Assert](https://blog.camunda.com/post/2020/06/camunda-bpm-713-side-projects-released/)</li>
 <li>[BPM Runtime 7.13](https://blog.camunda.com/post/2020/06/camunda-bpm-runtime-713-released/)</li>
-<li>[Modeler 4.0](#)</li>
+<li>[Modeler 4.0](https://blog.camunda.com/post/2020/06/camunda-modeler-4.0.0-released/)</li>
 <li>[Cawemo 1.2](https://blog.camunda.com/post/2020/04/cawemo-enterprise-on-premises-1-2-released/)</li>
 <li>[Optimize 3.0](https://blog.camunda.com/post/2020/04/announcing-camunda-optimize-3.0/)</li>
 </ul>
