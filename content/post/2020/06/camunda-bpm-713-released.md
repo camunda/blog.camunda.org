@@ -1,5 +1,5 @@
 +++
-author = "Camunda BPM Team"
+author = "Richard Weinberg"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2020-06-02T14:32:00+01:00"
