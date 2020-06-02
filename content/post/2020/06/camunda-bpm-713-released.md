@@ -2,7 +2,7 @@
 author = "Richard Weinberg"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-06-02T14:32:00+01:00"
+date = "2020-06-02T14:32:00+02:00"
 title = "Camunda BPM 7.13 Released"
 
 +++
