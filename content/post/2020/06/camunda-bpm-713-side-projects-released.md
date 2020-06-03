@@ -9,9 +9,9 @@ title = "More From Camunda BPM: NodeJS External Task Client, Spring Boot Starter
 
 Alongside our Camunda BPM 7.13.0 release, we're excited to announce the following releases:
 
-* [External Task Client 2.0.0 for NodeJS](/post/2020/06/camunda-bpm-7.13-side-projects-released/#nodejs-external-task-client-2-0-0)
-* [Assert 6.0.0](/post/2020/06/camunda-bpm-7.13-side-projects-released/#assert-6-0-0)
-* [Spring Boot Starter 7.13.0](/post/2019/12/camunda-bpm-7.13-side-projects-released/#spring-boot-starter-7-13-0)
+* [External Task Client 2.0.0 for NodeJS](/post/2020/06/camunda-bpm-713-side-projects-released/#nodejs-external-task-client-2-0-0)
+* [Assert 6.0.0](/post/2020/06/camunda-bpm-713-side-projects-released/#assert-6-0-0)
+* [Spring Boot Starter 7.13.0](/post/2020/06/camunda-bpm-713-side-projects-released/#spring-boot-starter-7-13-0)
 
 
 You can read all about the Camunda BPM 7.13.0 release in the dedicated [blog post](/post/2020/06/camunda-bpm-7130-released/).
