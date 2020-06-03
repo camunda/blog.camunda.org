@@ -8,7 +8,7 @@ title = "Camunda Modeler 4.0.0 Released"
 
 We are excited to announce the release of Camunda Modeler v4.0.0. This release introduces significant changes to the DMN editor, overhauls deployments from the Camunda Modeler, and adds error tracking.
 
-[Download the latest release](https://downloads.camunda.cloud/release/camunda-modeler/4.0.0-alpha.1/) and start modeling right away.
+[Download the latest release](https://camunda.com/download/modeler/) and start modeling right away.
 
 <!--more-->
 
