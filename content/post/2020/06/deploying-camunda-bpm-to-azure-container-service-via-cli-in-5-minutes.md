@@ -2,7 +2,7 @@
 author = "Rob Emsbach"
 categories = ["Community"]
 tags = ["BPM","Cloud"]
-date = "2020-06-04T14:00:00+02:00"
+date = "2020-06-04T09:00:00+02:00"
 title = "Deploying Camunda BPM to Azure Container Service via CLI in 5 Minutes"
 
 +++
