@@ -3,7 +3,7 @@ author = "Joe Pappas"
 categories = ["Community"]
 tags = ["BPMN", "Migration", "Community"]
 date = "2020-06-09T9:00:00+02:00"
-title = "Migrating processes from Pega to Camunda - Step-by-step Tutoria"
+title = "Migrating processes from Pega to Camunda - Step-by-step Tutorial"
 
 +++
 
