@@ -2,7 +2,7 @@
 author = "Niall Deehan"
 categories = ["Community"]
 tags = ["Release notes", "7.13", "BPMN", "Camunda Run"]
-date = "2020-06-11T09:00:00+02:00"
+date = "2020-06-11T10:00:00+02:00"
 title = "Camunda Release Highlights"
 
 +++
