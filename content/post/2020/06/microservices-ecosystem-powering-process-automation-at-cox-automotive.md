@@ -2,7 +2,7 @@
 author = "Christopher Rogers"
 categories = ["Community"]
 tags = ["CamundaCon Live"]
-date = "2020-06-16T10:00:00+02:00"
+date = "2020-06-16T11:00:00+02:00"
 title = "Microservices Ecosystem Powering Process Automation at Cox Automotive"
 
 +++
