@@ -7,7 +7,7 @@ title = "Getting Involved in Community Events This Summer"
 
 +++
 
-Our awesome community  is what makes us who we are. Passionate Camunda users like you organize events and activities around the world, and that’s something to celebrate!
+Our awesome community is what makes us who we are. Passionate Camunda users like you organize events and activities around the world, and that’s something to celebrate!
 
 With summer just around the corner, we’re excited to alert you to some great  virtual events that are scheduled. We also want to share some recent events and what made them so special, and perhaps give you an idea for organizing an event of your own.
 
