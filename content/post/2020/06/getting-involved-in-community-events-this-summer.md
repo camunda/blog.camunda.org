@@ -2,7 +2,7 @@
 author = "Luca Buchholz"
 categories = ["Community"]
 tags = ["DevRels", "Meetup", "Community"]
-date = "2020-06-18T09:00:00+02:00"
+date = "2020-06-18T08:00:00+02:00"
 title = "Getting Involved in Community Events This Summer"
 
 +++
