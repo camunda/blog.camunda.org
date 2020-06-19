@@ -24,7 +24,7 @@ We have enthusiastic meetup organizers around the world who usually bring the lo
 On May 4, [Ultimate Software](https://www.ultimatesoftware.com/) kicked off the first virtual Camunda meetup. [New Push](https://newpush.com/) presented their insightful Camunda use case, followed (again) by a talk by our consultant Ryan. In this presentation Ryan showcased the benefits of becoming an enterprise Camunda customer, followed by a demo of our new Optimize feature, "External Event Ingestion".
 
 
-{{< youtube N03wcNJsKB4 >}} <br><br>
+{{< youtube N03wcNJsKB4 >}} <br>
 
 
 Other User Groups brought their meetups online during the past month, including Camunda User Groups from [Southern Switzerland](https://www.meetup.com/Groupe-utilisateurs-Camunda-Suisse-Romande/), [Berlin](https://www.meetup.com/Camunda-User-Group-Berlin/) and [Brazil](https://www.meetup.com/Camunda-User-Group-Brazil/). One great aspect of these online events is that even more community folks have had the opportunity to join the fun. In fact, more than 220 people joined the Brazilian online meetup from all over Brazil.
