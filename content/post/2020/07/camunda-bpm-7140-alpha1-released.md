@@ -3,7 +3,7 @@ author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2020-06-15T12:00:00+00:00"
-title = "Camunda BPM 7.14.0-alpha1 Released"
+title = "Camunda BPM Runtime 7.14.0-alpha1 Released"
 +++
 
 We are happy to share the first alpha release of **Camunda BPM 7.14** with you!
