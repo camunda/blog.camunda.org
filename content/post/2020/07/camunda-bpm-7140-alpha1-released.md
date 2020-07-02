@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-06-15T12:00:00+00:00"
+date = "2020-07-02T07:30:00+00:00"
 title = "Camunda BPM Runtime 7.14.0-alpha1 Released"
 +++
 
@@ -10,12 +10,9 @@ We are happy to share the first alpha release of **Camunda BPM 7.14** with you! 
 
 This release features the following improvements:
 
-- Feature 1
-- Feature 2
-- Feature 3
 - Sending Telemetry
 - Java External Task Client 1.4.0-alpha1
-- [X Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha1)
+- [14 Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha1)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
 
@@ -25,12 +22,6 @@ Please also see the list of [known issues](https://jira.camunda.com/issues/?jql=
 If you want to dig in deeper, you can find the source code on [GitHub](https://github.com/camunda/camunda-bpm-platform/releases/tag/7.14.0-alpha1).
 
 <!--more-->
-
-## Feature 1
-
-## Feature 2
-
-## Feature 3
 
 ## Sending Telemetry
 
