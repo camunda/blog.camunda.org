@@ -27,7 +27,7 @@ The demo itself was done in two parts. __Process Modeling__ and __Process Execut
 
 For the [modeling portion of the demo](https://youtu.be/vhnO9inscbo?t=528) I showed our web modeler [Cawemo](http://cawemo.com/) in action. Under the hood Cawemo uses bpmn.io and it’s really cool to see how much you can build and extend that library.
 
-{{< figure class="no-border teaser" src="miwg-demo-diagram.png" alt="MIWG Demo" >}}
+{{< figure class="no-border teaser" src="image5.gif" alt="MIWG Demo" >}}
 
 I then exported the model to the fabled BPMN 2.0 XML and passed it along to Simon from Trisotech so that he could upload it and continue the fun.
 
@@ -39,7 +39,7 @@ When all vendors had gotten their opportunity to prove the interchange works we 
 * Cockpit’s [Heatmap](https://camunda.com/products/cockpit/)
 * Task management with [Tasklist](https://camunda.com/products/tasklist/)
 
-{{< figure class="no-border teaser" src="camunda-cockpit.png" alt="Camunda Cockpit" >}}
+{{< figure class="no-border teaser" src="image2.gif" alt="Camunda Cockpit" >}}
 
 We ended the session with a lovely long Q & A section in which I did my best to answer the Camunda questions that came my way.
 
