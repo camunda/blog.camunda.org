@@ -13,6 +13,7 @@ This release features the following improvements:
 - Feature 1
 - Feature 2
 - Feature 3
+- Sending Telemetry
 - [X Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha1)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -29,6 +30,13 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Feature 2
 
 ## Feature 3
+
+## Sending Telemetry
+
+With this alpha we are introducing an option to send telemetry data to Camunda. Such data will help us to have a better overview of product usage such as common enviornment setups. By default the feature it **disabled** and have to be explicitly enabled either with process engine configuration [option](https://docs.camunda.org/manual/latest/reference/deployment-descriptors/tags/process-engine/#initializeTelemetry) when setting up your Camunda instance or via Java/[REST](https://docs.camunda.org/manual/latest/reference/rest/telemetry/port-telemetry/) API later on whenever you decide to switch the option on or off. Please note the feature is still under development. Only if sending telemetry is enabled, the engine is going to send every 24 hours or upon engine stop the following data:
+* process engine installation id
+* process engine version and edition (`community` or `enterprise`)
+* database vendor and version
 
 ## Share Your Thoughts with Us!
 
