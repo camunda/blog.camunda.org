@@ -29,7 +29,11 @@ Alongside those changes, we improved a lot more to enhance the overall table edi
 
 ## DMN Overview Navigation
 
-...
+When working with complex DMN diagrams being able to navigate efficiently is crucial. We introduced a new means of navigating the DRD diagram elements without having to go back and forth between DRD and DRG element view.
+
+{{< figure class="no-border teaser" src="overview.png" alt="DMN Overview Navigation" caption="DMN Overview Navigation" >}}
+
+When working on a single decision table or literal expression, you can resize the overview or close hide it.
 
 ## Sending Telemetry
 
