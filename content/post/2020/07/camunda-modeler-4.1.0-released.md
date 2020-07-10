@@ -39,9 +39,7 @@ Note that we do not track any personal or identifiable data. This feature may al
 
 {{< figure class="no-border teaser" src="usage-statistics.png" alt="Enable Usage Statistics option in Privacy Preferences" caption="Enable Usage Statistics option in Privacy Preferences" >}}
 
-For now, we will only send the following two events to our servers:
-1. A simple ping message once every 24 hours.
-2. A message with diagram type, either DMN or BPMN, when a user opens a new diagram. We also send if element templates are used or not.
+Refer to [this document](https://github.com/camunda/camunda-modeler/tree/master/docs/telemetry) to see what exactly we are sending to our telemetry server.
 
 ## Looking Forward
 
