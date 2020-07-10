@@ -3,7 +3,7 @@ author = "Jakob Freund"
 categories = ["Community"]
 date = "2020-05-20T09:00:00+01:00"
 tags = ["Camundaconlive"]
-title = "Is the Future of RPA Promising or Perilous"
+title = "Is the Future of RPA Promising or Perilous?"
 +++
 
 I recently participated in a CamundaCon Live panel, led and moderated by Jason Bloomberg at [Intellyx](https://intellyx.com/), about how enterprises are currently using RPA. My fellow panelists (Vittorio Dal Bianco at Nokia, Marco Einacker at Deutsche Telekom and Paul Jones at NatWest) provided a fascinating look on the benefits and limitations of this much-discussed technology.
