@@ -6,28 +6,28 @@ date = "2020-07-14T14:00:00+02:00"
 title = "Camunda Modeler 4.1.0 Released"
 +++
 
-We are excited to announce the release of Camunda Modeler v4.1.0. This release introduces significant changes to the decision table editor and an improved way to navigate DMN diagrams.
+We are excited to announce the release of Camunda Modeler v4.1.0. This release introduces a new layout to the DMN decision table editor and a more efficient way to navigate DMN diagrams.
 
 [Download the latest release](https://camunda.com/download/modeler/) and start modeling right away.
 
 <!--more-->
 
-## Improved Decision Table Editing
+## New Decision Table Layout
 
-The understandability of decision tables is crucial for getting the overall logic of business decisions. We did a lot of work to improve the rendering and editing of our baked-in DMN decision table editor.
+Being able to reason about your decision tables without having to dig into details is crucial. As part of our ongoing effort to make the DMN editor an even better tool, we're introducing changes to the decision table layout to increase overall readability and, therefore, understandability. 
 
-Besides various design improvements, our goal was to make it easier for our users to understand the implications of their business rules. The result is an enhanced table header layout to give the most important facts at first hand. It includes explanations for the selected hit policy and clarity about the logical order of input and output clauses.
+These changes include more information about inputs and outputs and referring to the selected hit policy using their full name.
 
-{{< figure class="no-border teaser" src="decision-table-layout.gif" alt="Inspect the hit policy meaning after selecting it" caption="Inspect hit policy meaning after selecting it" >}}
+{{< figure class="no-border teaser" src="decision-table-layout.gif" alt="Hover the hit policy for further explanation" caption="Hover the hit policy for further explanation" >}}
 
-While doing those changes, we always incorporated our ongoing user research results. Hereby we identified a primary need in the ability to handle table sizes efficiently. This release addresses this need and now comes with a new feature to increase and decrease the width of separate columns. This will significantly improve the arrangement of larger cell contents to fit our user's needs.
+Furthermore, you can now resize decision table columns. Once you change a column's width, it will be remembered when re-opening the decision table.
 
-{{< figure class="no-border teaser" src="resize-table-columns.gif" alt="Resize Decision Table Columns" caption="Resize decision table columns" >}}
+{{< figure class="no-border teaser" src="resize-table-columns.gif" alt="Decision table columns can now be resized" caption="Decision table columns can now be resized" >}}
 
-Alongside those changes, we improved a lot more to enhance the overall table editing experience. We'd love to hear your feedback regarding this!
+Since this release introduces quite significant changes to the DMN editor we would love to hear your feedback.
 
 
-## DMN Overview Navigation
+## Navigating DMN Diagrams
 
 When working with complex DMN diagrams being able to navigate efficiently is crucial. We introduced a new means of navigating the DRD diagram elements without having to go back and forth between DRD and DRG element view.
 
@@ -35,11 +35,9 @@ When working with complex DMN diagrams being able to navigate efficiently is cru
 
 When working on a single decision table or literal expression, you can resize the overview or close hide it.
 
-## Sending Telemetry
+## Usage Statistics
 
-Another additional feature we ship with this release is usage statistics tracking. We do this to understand our users and their actions better in order to improve the product further.
-
-Note that we do not track any personal or identifiable data. This feature may always be switched on or off via `Help > Privacy Preferences > Enable Usage Statistics`. Per default, sending usage statistics is switched off.
+If you want to help us make the Camunda Modeler an even better product, you can now enable it to send usage statistics. No statistics will be sent without your permission. Go to `Help > Privacy Preferences` to enable and disable this feature.
 
 {{< figure class="no-border teaser" src="usage-statistics.png" alt="Enable Usage Statistics option in Privacy Preferences" caption="Enable Usage Statistics option in Privacy Preferences" >}}
 
@@ -47,7 +45,7 @@ Refer to [this document](https://github.com/camunda/camunda-modeler/tree/master/
 
 ## Looking Forward
 
-Read the [changelog](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md) to learn about all the features, bug fixes, and numerous additional improvements that made it into this release. [Download the new modeler](https://camunda.com/download/modeler/), give it a try, and, most importantly, give us feedback.
+Please read the [changelog](https://github.com/camunda/camunda-modeler/blob/master/CHANGELOG.md) to learn about all the features, bug fixes, and numerous additional improvements that made it into this release. [Download the new modeler](https://camunda.com/download/modeler/), give it a try, and, most importantly, give us feedback.
 
 Did we miss anything? Did you spot a bug, or would you like to suggest an improvement? Reach out to us via [our forums](https://forum.camunda.org/c/modeler), tweet us [@Camunda](https://twitter.com/Camunda) or file issues you found in the [Camunda Modeler issue tracker](https://github.com/camunda/camunda-modeler/issues/new/choose).
 
