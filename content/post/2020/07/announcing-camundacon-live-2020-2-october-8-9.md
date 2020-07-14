@@ -22,7 +22,7 @@ You can also expect another opportunity for genuine connection with fellow commu
 
 {{< figure class="no-border teaser" src="video-screen.png" alt="Niall Deehan at CamundaCon Live 2020.1" caption="Moderator and Developer Relations Advocate Niall Deehan went out of his way at CamundaCon Live 2020.1 to entertain 6,500 participants -- we can’t wait to see what he has in store for us in October." >}}
 
-As industry analyst and author [Sandy Kemsely summarized in her blog on CamundaCon Live](https://column2.com/2020/04/camundacon-live-2020-day-2-blockchain-interrupted-and-customer-case-studies-with-capital-one-and-goldman-sachs/):
+As industry analyst and author [Sandy Kemsley summarized in her blog on CamundaCon Live](https://column2.com/2020/04/camundacon-live-2020-day-2-blockchain-interrupted-and-customer-case-studies-with-capital-one-and-goldman-sachs/):
 
 _I mentioned on Twitter today that CamundaCon is now the gold standard for online conferences: all you other vendors who have conferences coming up, take note. I believe that the key contributors to this success are live (not pre-recorded) presentations, use of a discussion platform like Slack or Discord alongside the broadcast platform, full engagement of a large number of company participants in the discussion platform before/during/after presentations, and fast upload of the videos for on-demand watching. Keep in mind that a successful conference, whether in-person or online, allows people to have unscripted interactions: it’s not a one-way broadcast, it’s a big messy collaborative conversation._
 
