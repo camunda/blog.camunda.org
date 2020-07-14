@@ -1,8 +1,8 @@
 +++
 author = "Felix Mueller"
-categories = ["Execution"]
-tags = ["Release Note"]
-date = "2020-07-10T07:30:00+00:00"
+categories = ["Camunda Optimize"]
+tags = ["Camunda Optimize", "Release Note"]
+date = "2020-07-14T07:30:00+00:00"
 title = "Camunda Optimize 3.1 Released"
 +++
 
@@ -14,13 +14,15 @@ your automated workflows and decisions. Business-friendly reports,
 dashboards, and alerts make it possible to identify process bottlenecks
 and improve end-to-end processes.
 
+<!--more-->
+
 If you'd like to get started with Optimize 3.1 right away, [you can
 download the release
 here](https://docs.camunda.org/enterprise/download/#camunda-optimize)
 with your Camunda Enterprise Platform customer credentials.
 
 You can also use [Docker to run Camunda
-Optimize](https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/#production-docker-image-without-elasticsearch).
+Optimize](https://docs.camunda.org/optimize/3.1/technical-guide/setup/installation/#production-docker-image-without-elasticsearch).
 
 And if you're not yet a Camunda customer, [you can sign up
 here](https://camunda.com/download/enterprise/) for a free 30-day trial
@@ -28,7 +30,7 @@ of the Camunda Enterprise Platform, which includes Camunda Optimize.
 
 In the rest of this post, we'll highlight some of the [new capabilities
 introduced in
-Optimize](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15513)
+Optimize](https://jira.camunda.com/secure/ReleaseNote.jspa?projectId=10730&version=15606)
 3.1.
 
 ## Faster Process Insights and Increased Flexibility
@@ -43,8 +45,7 @@ flexibility.
 With Optimize 3.1 it is now possible to create reports within seconds.
 When creating process reports you can choose from most commonly used
 reports as templates for your process - or alternatively start with a
-blank report. A process preview helps you to understand if you have
-chosen the right process for your new report:
+blank report:
 
 {{< figure class="no-border teaser" src="image18.png" alt="" >}}
 
@@ -62,10 +63,7 @@ across all reports that have been added to a particular Dashboard:
 
 -   Viewers can easily make use of them on the Dashboard without having to open and edit every single report.
 
-Within this release we added Process Instance State, Start / End Date as
-well as Variable Filters for Dashboards.
-
-In the following you can see how Dashboard Editors can add the filters
+We added Dashboard Filters for Process Instance State, Start / End Date as well as Variable Filters. In the following you can see how Dashboard Editors can add the filters
 to a Dashboard:
 
 {{< figure class="no-border teaser" src="image21.png" alt="" >}}
@@ -101,8 +99,8 @@ configuration:
 
 {{< figure class="no-border teaser" src="image25.png" alt="" >}}
 
-Additionally, we also allow Dashboard viewers to directly inspect
-applied filters on a given Report:
+Additionally, we also allow Dashboard viewers to inspect
+applied filters on a given report:
 
 {{< figure class="no-border teaser" src="image20.png" alt="" >}}
 
@@ -134,7 +132,7 @@ stores these variables and therefore Optimize can make use of them
 efficiently.
 
 With this release we are improving the support of Process Variables by
-adding a new View "Variables" to the Report Builder. This allows you to
+adding a new View "Variables" to the report builder. This allows you to
 set up reports solely focusing on variable values of selected process
 instances. Monitoring process variables (over time or depending on
 context) can bring you strong insights for process improvement. As an
@@ -163,7 +161,7 @@ With the help of this new filter you can simply identify process
 instances where a certain flow node is taking longer or shorter than you
 expected.
 
-You can find the new *Flow Node Duration Filter* in the Report Edit mode
+You can find the new *Flow Node Duration Filter* in the report edit mode
 alongside the Process Instance Duration Filter under the category
 *Duration*.
 
@@ -188,17 +186,16 @@ analysis and monitoring more efficient we added Assignee and Candidate
 Group filters within this release.
 
 You will find the new *Assignee and Candidate Group Filters* within the
-Report Builder Filter menu:
+report builder filter menu:
 
-{{< figure class="no-border teaser" src="image2.png" alt="User Task Assignee & Candidate Group
-1" >}}
+{{< figure class="no-border teaser" src="image2.png" alt="User Task Assignee & Candidate Group 1" >}}
 
 Within the modal you can define which assignees (or candidate groups)
 should be included in the set of process instances you are looking at:
 
-{{< figure class="no-border teaser" src="image3.png" alt="" >}}
+{{< figure class="no-border teaser" src="image3.png" alt="User Task Assignee & Candidate Group 2" >}}
 
-{{< figure class="no-border teaser" src="image10.png" alt="" >}}
+{{< figure class="no-border teaser" src="image10.png" alt="User Task Assignee & Candidate Group 3" >}}
 
 ### Variable Filter Improvements
 
@@ -237,15 +234,13 @@ growing number of running instances can, in certain situations, lead to
 underperforming processes. Therefore it is extremely important to
 continuously monitor this number.
 
-The following screenshot shows how to set up such report:
+The following screenshot shows how to set up a running instance report:
 
-{{< figure class="no-border teaser" src="image23.png" alt="" >}}
+{{< figure class="no-border teaser" src="image23.png" alt="Running Instance Report" >}}
 
 On top of this, you can also combine this report with other process
 instance count reports to see within one visualization how many
-instances were started, ended and running in a certain period of time:
-
-\[screenshot 2\]
+instances were started, ended and running in a certain period of time.
 
 ### New User Task Reports in regards to Assignee & Candidate Groups
 
@@ -273,32 +268,25 @@ is related to data buckets. When grouping process data by date variables
 and number variables it is now possible to define the bucket sizes on
 your own.
 
-For date variables you can switch between the known options in the
-Configuration Popover:
+For date variables you can switch between the known options in the Configuration Popover:
 
-{{< figure class="no-border teaser" src="image15.png" alt="" >}}
+{{< figure class="no-border teaser" src="image15.png" alt="Date Variable Bucket Setting" >}}
 
 For number variables you have even more flexibility and can enter a
 width on your own:
 
-{{< figure class="no-border teaser" src="image24.png" alt="" >}}
+{{< figure class="no-border teaser" src="image24.png" alt="Number Variable Bucket Setting" >}}
 
 ## Process Data Import and Cleanup Improvements
 
 ### New Business Key Import Plugin Point
 
-Camunda BPM allows you to define a Business Key for every process
-instance. Within Optimize the Business Keys are available so that you
-can identify specific process instances easily.
+Camunda BPM allows you to define a business key for every process instance. Within Optimize the business keys are available so that you can identify specific process instances easily.
 
-Sometimes Business Keys can contain confidential information that need
-to be anonymized so that they can be used in Optimize. Exactly for this
-use case, we added a new Plugin Point within Optimize which allows you
-to hook into the Optimize import and adjust business keys during process
+Sometimes business keys can contain confidential information that need to be anonymized. For this use case, we added a new Plugin Point within Optimize which allows you to hook into the Optimize import and adjust business keys during process
 instance imports.
 
-You can find more detailed information [in our
-documentation](https://docs.camunda.org/optimize/3.1/technical-guide/plugins/businesskey-import/).
+You can find more detailed information [in our documentation](https://docs.camunda.org/optimize/3.1/technical-guide/plugins/businesskey-import/).
 
 ### History Cleanup for Event Based Processes
 
@@ -330,23 +318,22 @@ on selected processes, external events and defined traced IDs:
 In the first step you create a new Event Based Process by using the
 Autogenerate button:
 
-{{< figure class="no-border teaser" src="image9.png" alt="" >}}
+{{< figure class="" src="image9.png" alt="Autogeneration of Event Based Process 1" >}}
 
 Afterwards you select the sources you would like to use for your
 process:
 
-{{< figure class="no-border teaser" src="image7.png" alt="" >}}
+{{< figure class="" src="image7.png" alt="Autogeneration of Event Based Process 2" >}}
 
-Afterwards Optimize automatically proposes a process model based on the
-underlying process events:
+Optimize automatically proposes a process model based on the underlying process events:
 
-{{< figure class="no-border teaser" src="image11.png" alt="" >}}
+{{< figure class="" src="image11.png" alt="Autogeneration of Event Based Process 3" >}}
 
 Please note that Optimize does not include all underlying events, but
 uses a sample of data to show you results quickly. This means you can
 use the diagram as a starting point and easily adjust it in the edit
-mode as needed. We also have separate documentation on this new
-feature.
+mode as needed. [We also have separate documentation on this new
+feature](https://docs.camunda.org/optimize/3.1/user-guide/event-based-processes/#autogenerate).
 
 When generating process models based on events for monitoring purposes
 many edge cases exist, so we decided to add this as an experimental beta
@@ -356,12 +343,6 @@ feedback as well.
 
 ## How to get it
 
-If you want to give Camunda Optimize a try, you can download the release
-[here](https://docs.camunda.org/enterprise/download/#camunda-optimize)
-with your Enterprise customer credentials. Please sign up for a [[free
-30-day trial
-version]{.underline}](https://camunda.com/download/enterprise/).
+If you want to give Camunda Optimize a try, you can download the release [here](https://docs.camunda.org/enterprise/download/#camunda-optimize) with your Enterprise customer credentials. Please sign up for a [free 30-day trial version](https://camunda.com/download/enterprise/).
 
-If you're new to Optimize, we recommend that you watch the [Getting
-Started with Optimize in less than 5 Minutes
-video](https://camunda.com/learn/videos/getting-started-optimize/).
+If you're new to Optimize, we recommend that you watch the [Getting Started with Optimize in less than 5 Minutes video](https://camunda.com/learn/videos/getting-started-optimize/).
