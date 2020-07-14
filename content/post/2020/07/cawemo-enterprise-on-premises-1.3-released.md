@@ -2,7 +2,7 @@
 author = "Andreas Remdt"
 categories = ["Cawemo"]
 tags = ["Cawemo", "Modelling"]
-date = "2020-07-14T14:00:00+02:00"
+date = "2020-07-14T08:00:00+02:00"
 title = "Cawemo Enterprise (On-Premises) 1.3 Released"
 +++
 
@@ -48,7 +48,7 @@ For each deployed engine process and each synced modeler diagram, a milestone ge
 
 If your diagram has a related deployed process or modeler diagram, you can now create a milestone from either of those. A newly added menu allows you to either open the related diagram or create a new milestone in the diagram you are currently using.
 
-{{< figure class="no-border teaser" src="use-as-milestone.png" alt="### Create milestones from plugin projects" >}}
+{{< figure class="no-border teaser" src="use-as-milestone.png" width="400" alt="Create milestones from plugin projects" >}}
 
 ### Share your thoughts
 
