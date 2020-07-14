@@ -14,7 +14,7 @@ Cawemo is the BPMN process specification platform of the Camunda stack. Its main
 
 The main improvements in this release are:
 
-- Links to Call Activity are persisted in the XML as _calledElement_ and better manageable through the UI.
+- Call Activity Links are persisted in the XML as _calledElement_ and better manageable through the UI.
 - Related diagrams can be restored as milestones into the current diagram.
 - Single milestones can be deleted from synced modeler diagrams and deployed engine processes.
 
@@ -22,13 +22,13 @@ As a Camunda Enterprise customer, you can install or upgrade to version 1.3 foll
 
 ### Link a Call Activity
 
-When you add a new link to a Call Activity, the process ID of the child process is written to the `calledElement` attribute of the Call Activity. Assuming you would export both diagrams as BPMN 2.0 XML files and deploy them to the Camunda Engine, then the processes would already call each other correctly.
+When you add a new link to a Call Activity, the process ID of the child process is written to the `calledElement` attribute of the Call Activity. Assuming you would export both diagrams as BPMN 2.0 XML files and deploy them to the Camunda Engine, then the parent process would call its associated child process correctly.
 
 {{< figure class="no-border teaser" src="call-activity-links.png" alt="Showing links to the child process diagram" caption="Showing links to the child process diagram" >}}
 
 ### See all linked parent processes
 
-In Cawemo you can now also see all other process diagrams that would call the given (child) process. We offer an easy list of all such diagrams next to the specification text of the process.
+In Cawemo you can now also see all other process diagrams that would call the given (child) process. We offer a list to easily see and access all such diagrams next to the specification text of the process.
 
 {{< figure class="no-border teaser" src="process-diagram-links.png" alt="Showing links to the child process diagram" caption="Showing other process diagrams which are linking to the opened process diagram" >}}
 
@@ -36,11 +36,11 @@ Since multiple process diagrams can share the same process ID (e.g. when you hav
 
 ### See all links automatically for imported diagrams
 
-By using the process ID, we automatically add links to imported diagrams where we read and match the `calledElement` attribute. This way, you can simply import all your process diagrams to Cawemo and get an easy overview of how your processes are calling each other.
+By using the process ID, we automatically add links to imported diagrams where we read and match the `calledElement` attribute. This way, you can simply import all your process diagrams to Cawemo and easily get an overview of how your processes are linked together.
 
 ### Delete milestones from plugin projects
 
-For each deployed engine process and each pushed modeler diagram, a milestone gets created in Cawemo. Using the milestone menu, you can now delete individual milestones to decrease duplication or delete old versions.
+For each deployed engine process and each synced modeler diagram, a milestone gets created in Cawemo. Using the milestone menu, you can now delete individual milestones to decrease duplication or delete old versions.
 
 {{< figure class="no-border teaser" src="delete-milestones.png" alt="Delete milestones from plugin projects" >}}
 
