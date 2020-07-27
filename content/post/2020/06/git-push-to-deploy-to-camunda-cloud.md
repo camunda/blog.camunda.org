@@ -2,7 +2,7 @@
 author = "Josh Wulf"
 categories = ["Community"]
 tags = ["GitHub", "Use Cases", "Resources"]
-date = "2020-06-23T11:00:00+02:00"
+date = "2020-07-23T11:00:00+02:00"
 title = "Git push to deploy to Camunda Cloud"
 
 +++
