@@ -9,8 +9,8 @@ title = "How we automatically keep our Documentation Screenshots up to date"
 
 When you open the [Camunda User Guide](https://docs.camunda.org/manual/7.13/user-guide/), you’ll see that there are many screenshots explaining the different functions and options the product offers. We hope that you, as a user, find those screenshots helpful. But for us as developers, creating and keeping those screenshots up to date has always been a pain.
 
-{{< figure class="no-border teaser" src="camera.png" alt="Camera" >}}
-_[https://unsplash.com/photos/dDppsuM_UpE](https://unsplash.com/photos/dDppsuM_UpE)_
+{{< figure class="no-border teaser" src="/post/2020/07/how-we-automatically-keep-our-documentation-screenshots-up-to-date/camera.png" alt="Camera" >}}
+[https://unsplash.com/photos/dDppsuM_UpE](https://unsplash.com/photos/dDppsuM_UpE)
 
 <!--more-->
 
@@ -68,4 +68,4 @@ If the testcafe team implements this, we might come back to this topic once more
 
 {{< figure class="no-border teaser" src="photo.png" alt="Photo" >}}
 
-_[https://unsplash.com/photos/Ncj5R2Wdlh4](https://unsplash.com/photos/Ncj5R2Wdlh4)_
+[https://unsplash.com/photos/Ncj5R2Wdlh4](https://unsplash.com/photos/Ncj5R2Wdlh4)
