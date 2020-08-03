@@ -11,6 +11,7 @@ We are happy to share the second alpha release of **Camunda BPM 7.14** with you!
 This release features the following improvements:
 
 - Feature 1
+- Additional Supported Environments
 - [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha2)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -25,6 +26,12 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Feature 1
 
 Lorem ipsum dolor sit amet...
+
+## Additional Supported Environments
+
+Camunda BPM 7.14.0-alpha2 adds support for Microsoft SQL Server 2019. 
+
+You can read more about that on the [supported environments](https://docs.camunda.org/manual/latest/introduction/supported-environments/) documentation page.
 
 ## Share Your Thoughts with Us!
 
