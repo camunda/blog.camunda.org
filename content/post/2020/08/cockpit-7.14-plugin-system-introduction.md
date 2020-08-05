@@ -6,7 +6,7 @@ date = "2020-08-11T09:00:00+00:00"
 title = "All New Frontend Plugin System for Cockpit starting with Camunda BPM 7.14"
 +++
 
-We are happy to announce, that Camunda BPM 7.14 (scheduled for the end of July) includes an all new frontend plugin system for Cockpit. It replaces the current AngularJS 1.8 based plugin system and enables you to extend Cockpit with domain-specific information written in the web-technologies of your choice.
+We are happy to announce, that Camunda BPM 7.14 (scheduled for Tuesday, October 13th, 2020) includes an all new frontend plugin system for Cockpit. It replaces the current AngularJS 1.8 based plugin system and enables you to extend Cockpit with domain-specific information written in the web-technologies of your choice.
 
 <!-- more -->
 
