@@ -12,6 +12,7 @@ This release features the following improvements:
 
 - Feature 1
 - Additional Supported Environments
+- All New Frontend Plugin System for Cockpit
 - [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha2)
 
 You can [Download Camunda for free](https://camunda.com/download/) (click on Preview Release) or [Run it with Docker](https://hub.docker.com/r/camunda/camunda-bpm-platform/).
@@ -26,6 +27,12 @@ If you want to dig in deeper, you can find the source code on [GitHub](https://g
 ## Feature 1
 
 Lorem ipsum dolor sit amet...
+
+## All New Frontend Plugin System for Cockpit
+
+We are happy to announce an all new frontend plugin system for Cockpit. The new plugin system allows you to use the Javascript framework you are most familiar with, whether it be React, Angular, or just plain JavaScript.
+
+You can learn all about it in the [separate blogpost](https://blog.camunda.com/post/2020/08/cockpit-7.14-plugin-system-introduction/) where we walk you through the development of a plugin that uses React.
 
 ## Additional Supported Environments
 
