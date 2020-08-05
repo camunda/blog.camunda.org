@@ -3,27 +3,27 @@ author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
 date = "2020-08-11T09:00:00+00:00"
-title = "Introduction to the Cockpit 7.14 Plugin System"
+title = "All New Frontend Plugin System for Cockpit starting with Camunda BPM 7.14"
 +++
 
-With the second alpha release for 7.14, cockpit got a new Plugin system. It replaces the current Angular 1.8 based plugin system and enables you to extend cockpit with domain-specific information written in the web-technologies of your choice.
+We are happy to announce, that Camunda BPM 7.14 (scheduled for the end of July) includes an all new frontend plugin system for Cockpit. It replaces the current AngularJS 1.8 based plugin system and enables you to extend Cockpit with domain-specific information written in the web-technologies of your choice.
 
 <!-- more -->
 
 # What are Plugins
 Webapp Plugins are user extensions that provide custom functionality to Cockpit, Tasklist, and Admin, which Camunda does not provide out of the box. It allows you to embed domain-specific information into Camunda tooling without switching applications.  
 
-The 7.14 Plugin System allows you to use the Javascript Framework you are most familiar with, whether it be React, Angular, or just plain JavaScript. <!-- It also allows Camunda to migrate away from AngularJS and use more modern technologies. -->
+The new Plugin System allows you to use the Javascript Framework you are most familiar with, whether it be React, Angular, or just plain JavaScript. <!-- It also allows Camunda to migrate away from AngularJS and use more modern technologies. (Tassilo: I wouldn't mention this) -->
 
-Cockpit is the first App to receive a new Plugin System. Tasklist and Admin will behave the same as in 7.13.  
+Cockpit is the first Webapp to receive a new Plugin System. Tasklist and Admin will behave the same as in 7.13.  
 
 
 # Developing a Plugin
-In this step-by-step example, we will guide you through creating a Plugin that uses React to display all involved users in a Process Definition in a new tab. If you want to follow along, make sure you have a modern version of NodeJS and Camunda BPM 7.14.0-alpha2 installed. We will be using the Tomcat version for this example. Some Paths might be different if you are using another application server. 
+In this step-by-step example, we will guide you through creating a Plugin that uses React to display all involved users in a Process Definition in a new tab. If you want to follow along, make sure you have a modern version of NodeJS and Camunda BPM 7.14.0-alpha2 installed. We will be using the Tomcat distribution for this example. Some Paths might be different if you are using another application server. 
 You can find the final plugin in our Git Repository.
 
 ## The Interface
-Let's have a look at the Plugin API and how to integrate it into cockpit. Let's a look at this Hello World Plugin:
+Let's have a look at the Plugin API and how to integrate it into Cockpit. Let's a look at this "Hello World" Plugin:
 
 ```Javascript
 // plugin.js
@@ -41,7 +41,7 @@ export default {
 Let's go through it line by line:
 <!-- Alternative: Let's have a look at the most important Attributes. For a full explanation of all attributes, check the documentation. Then only talk about JS Module, pluginPoint and render function -->
 
-  * `export default {}`: The is a JavaScript Module which exports an Object. If you have multiple plugins in one file, you can also export an array of Objects.
+  * `export default {}`: Is a JavaScript Module which exports an Object. If you have multiple plugins in one file, you can also export an array of Objects.
   *  `id: "involvedUsers"`: The unique ID of our plugin
   *  `pluginPoint: "cockpit.processDefinition.runtime.tab"`: The pluginPoint property describes where the plugin will be rendered. They correspond to the list of Plugin-Points shown in the [docs](https://docs.camunda.org/manual/7.13/webapps/cockpit/extend/plugins/#plugin-points) <!-- TODO: Change link to new docs which also has the passed arguments? -->
   *  `priority: 9`: The order of our Plugins, highest is first
@@ -110,12 +110,20 @@ export default {
   }
 };
 ```
-As you have noticed, we also added an `unmount` function and cached the container instance. While the plugin will work without it, it is good practice to unmount and clean up all your components.
+As you have noticed, we also added an `unmount` function and cached the container instance. While the plugin will work without it, it is good practice to unmount and clean up all your components to avoid memory leaks.
 
 
 To deploy the react plugin, we will have to bundle it first. For this, we will install rollup and a few plugins so we can transpile the JSX we just wrote:
 <!-- maybe link to a package? -->
-`npm install --save-dev rollup @babel/core @rollup/plugin-babel @babel/preset-react @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-replace`
+```
+npm install --save-dev rollup \
+    @babel/core \
+    @rollup/plugin-babel \
+    @babel/preset-react \
+    @rollup/plugin-commonjs \
+    @rollup/plugin-node-resolve \ 
+    @rollup/plugin-replace
+```
 
 Now we can configure our bundle in the `rollup.config.js`. We will have to transpile JSX using babel, include all external modules, and replace `NODE_ENV` flags. The final configuration looks like this:
 
@@ -152,7 +160,7 @@ When you deploy it, it should look like this:
 ## Writing your Plugin
 
 The rest of the development is up to you: you can use the Camunda API to fetch data and react hooks for state management. We will not go into details in this step, as all the Camunda-specific steps are behind us.
-If you want to add custom CSS, you can extend the user-styles.css in the webapp folder.
+If you want to add custom CSS, you can extend the `user-styles.css` in the webapp folder.
 
 Here are some ideas for you to continue with the development:
   * minify the bundle using uglify
