@@ -2,7 +2,7 @@
 author = "Camunda BPM Team"
 categories = ["Execution"]
 tags = ["Release Note"]
-date = "2020-08-11T09:00:00+00:00"
+date = "2020-08-01T09:00:00+00:00"
 title = "Camunda BPM Runtime 7.14.0-alpha2 Released"
 +++
 
@@ -12,6 +12,7 @@ This release features the following improvements:
 
 - Feature 1
 - Additional Supported Environments
+- Support for Spring Boot 2.3
 - All New Frontend Plugin System for Cockpit
 - [XX Bug Fixes](https://jira.camunda.com/issues/?jql=issuetype%20%3D%20%22Bug%20Report%22%20AND%20fixVersion%20%3D%207.14.0-alpha2)
 
@@ -39,6 +40,14 @@ You can learn all about it in the [separate blogpost](https://blog.camunda.com/p
 Camunda BPM 7.14.0-alpha2 adds support for Microsoft SQL Server 2019. 
 
 You can read more about that on the [supported environments](https://docs.camunda.org/manual/latest/introduction/supported-environments/) documentation page.
+
+## Support for Spring Boot 2.3
+
+The Spring Boot version in the Camunda Spring Boot Starter has been upgraded to version 2.3.1. 
+This allows to use the latest features of Spring Boot together with the Starter, e.g. using it together with Java 14.
+
+You can check out the [Spring Boot Release Notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.3-Release-Notes) 
+and our [Spring Boot Starter documentation](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/) for further insights.
 
 ## Share Your Thoughts with Us!
 
