@@ -40,11 +40,11 @@ Let's go through it line by line:
 
   * `export default {}`: Is a JavaScript Module which exports an Object. If you have multiple plugins in one file, you can also export an array of Objects.
   *  `id: "involvedUsers"`: The unique ID of our plugin
-  *  `pluginPoint: "cockpit.processDefinition.runtime.tab"`: The pluginPoint property describes where the plugin will be rendered. They correspond to the list of Plugin-Points shown in the [docs](https://github.com/camunda/camunda-bpm-webapp/blob/master/ui/cockpit/docs/plugins.md)
+  *  `pluginPoint: "cockpit.dashboard"`: The pluginPoint property describes where the plugin will be rendered. They correspond to the list of Plugin-Points shown in the [docs](https://github.com/camunda/camunda-bpm-webapp/blob/master/ui/cockpit/docs/plugins.md)
   * `priority: 10`: If there are multiple Plugins at the same plugin point, the one with the highest priority will be at the top.
-  * `render: (node, { CSRFToken })`: The heart of our plugin, here is where we can extend cockpit. The render function receives two arguments: a DOM node in which we can render our content, and an Object with additional information. What will be passed as additional information depends on the plugin point. On the Dashboard, we only receive the CSRF token, which we will use later to make REST requests.
+  * `render: (node, { CSRFToken })`: The heart of our plugin, here is where we can extend Cockpit. The render function receives two arguments: a DOM node in which we can render our content, and an Object with additional information. What will be passed as additional information depends on the plugin point. On the Dashboard, we only receive the CSRF token, which we will use later to make REST requests.
 
-To register it, save the file in your cockpit scripts folder. On Tomcat, this would be `server/apache-tomcat-{version}/webapps/camunda/app/cockpit/scripts`. Lastly, we register it in the `config.js` by adding it to the customScripts field:
+To register it, save the file in your Cockpit scripts folder. On Tomcat, this would be `server/apache-tomcat-{version}/webapps/camunda/app/cockpit/scripts`. Lastly, we register it in the `config.js` by adding it to the customScripts field:
 
 ```Javascript
 // config.js
