@@ -41,7 +41,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "load-grunt-tasks": "^5.1.0",
     "lodash.template": "3.6.2",
-    "prismjs": "1.2.0",
+    "prismjs": "1.23.0",
     "xhr": "2.2.0"
   },
   "dependencies": {
