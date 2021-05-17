@@ -1,3 +1,10 @@
+# Archived / not used anymore**
+
+
+--------
+Old content
+
+
 # Camunda BPM Team Blog
 
 ## How to write a Blog Post
