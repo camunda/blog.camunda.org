@@ -7,7 +7,7 @@ Old content
 
 # Camunda BPM Team Blog
 
-## How to write a Blog Post
+## How to write a Blog Post?
 
 ## TL,DR: (linux and osx with docker)
 
@@ -132,7 +132,7 @@ Lets walk through this and look into this in more detail:
 * `tags`: further categorize your post using tags. You can use any tag you want, it does not have to pre exist.
 * `draft`: value `true` means that the post is a draft. Draft posts are not published automatically.
 
-More information on the hugo front matter can be found here: https://gohugo.io/content/front-matter/
+More information on the hugo front matter can be found [here](https://gohugo.io/content/front-matter/).
 
 #### The markdown content.
 
